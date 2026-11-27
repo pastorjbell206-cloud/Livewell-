@@ -1,0 +1,661 @@
+{
+  "slug": "core-doctrines",
+  "title": "The core doctrines, from Scripture",
+  "for": "I want to know what the Bible teaches",
+  "subtitle": "Twelve short sessions, one doctrine each, from Scripture and God to the life to come, traced to the Bible and the Study Bible, with first things confessed plainly.",
+  "intro": [
+    "Christians don't hold a list of separate opinions. They believe one story about one God, and doctrine is the church's careful way of saying what that story holds. These twelve sessions take the core doctrines one at a time, from Scripture to the end of all things, and trace each one to the Bible and to the Study Bible's doctrine studies.",
+    "Where the creeds speak, these sessions say plainly what the church confesses. Where faithful Christians differ, they say that too, and point ahead to the next track, which gives those questions room. You can come as a believer going deeper or as an outsider who wants to know what Christians actually think. Both are welcome."
+  ],
+  "leader": {
+    "about": [
+      "This guide is for anyone leading a small group through The core doctrines, from Scripture. The group suits believers who want to know what they believe and why, and outsiders who want to hear what the church actually teaches from the people who teach it. The leader's task is to keep the group in the text of Scripture, to say plainly what the creeds confess, and to leave room where faithful Christians differ.",
+      "Each person reads the session, opens its page and does what it asks before the group meets. The meeting doesn't repeat the teaching. It talks over what people found, using the group guide for that session, which is gathered below in order with the page each session opens and the question it asks."
+    ],
+    "sections": [
+      {
+        "id": "group",
+        "title": "The group",
+        "body": [
+          "Four to ten people is a good size. Meet for about seventy-five minutes, once a week or once a fortnight, for twelve meetings, and keep the end time you promised. The doctrine pages are long, so say at the start that no one needs to read every word, only enough to bring one thing they noticed. A leader doesn't need to be a theologian. A leader needs to have done the reading and to be willing to admit not knowing."
+        ]
+      },
+      {
+        "id": "room",
+        "title": "The room",
+        "body": [
+          "A table works best, with Bibles open in front of everyone, in print or on a phone, and paper for notes. Make it plain at the first meeting that anyone may pass on any question, that the group will disagree about some things and that this is allowed, and that no one has to pray aloud. What people say about their own lives stays in the room, unless someone is in danger."
+        ]
+      },
+      {
+        "id": "order",
+        "title": "The order of a meeting",
+        "body": [
+          "About seventy-five minutes, in this order. Keep to the times loosely and to the end time strictly."
+        ],
+        "steps": [
+          "Ten minutes: the opening question, once round the circle. Anyone may pass.",
+          "Ten minutes: one person reads the verse aloud, and the passage around it, while the others follow.",
+          "Thirty-five minutes: the three questions to talk over, in order. Ask where each answer is found, in Scripture or on the page.",
+          "Ten minutes: what each person found in the reading, and one question it raised.",
+          "Five minutes: the prayer prompt, in the group's own words.",
+          "Five minutes: name the next doctrine and the page it opens, and say when you will meet."
+        ]
+      },
+      {
+        "id": "hard",
+        "title": "When a hard question comes",
+        "body": [
+          "When a disputed question comes up, first ask what order it is: essential to the faith itself, dividing faithful churches but not the faith, or a question with room for both views in one congregation. The Trinity, the person of Christ, the resurrection and salvation by grace are first-order, and the session says so plainly. The age of the earth, the gifts of the Spirit and the millennium are not, and the group should leave them open.",
+          "Let each view be stated in a form its own defenders would accept before anyone argues against it. If no one knows the answer, write the question down and bring it back the next week. An outsider's honest objection is a gift to the group, not an interruption."
+        ]
+      },
+      {
+        "id": "hurting",
+        "title": "When someone is hurting",
+        "body": [
+          "Doctrine is never only doctrine. A session on sin can land on someone who cannot stop punishing themselves, and a session on the last things can land on someone who has just lost a parent. When the study touches someone's life, stop and listen. Thank them for saying it, don't explain their suffering for them, and don't hurry back to the outline. Ask whether they would like the group to go on or to pause, and speak with them on their own afterwards.",
+          "If someone says that a partner, a leader or anyone else is harming them or a child, take it seriously and don't promise to keep it secret. A child who may be in danger is a matter for the authorities, not only for the group."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "When to point someone to Find Help",
+        "body": [
+          "Point someone to Find Help when what they carry has become too heavy to set down: grief that has taken their sleep or appetite for weeks, fear or guilt that will not let them rest, harm done to them at home or in a church, or any sign that they no longer want to be alive. The Find Help page on this site lists places to turn, and its lines for help right now are open day and night. If anyone is in danger now, call your local emergency number. A leader is a friend in that moment, not a counsellor, and the kindest thing is often to stay with the person while they make the first call."
+        ]
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "n": 1,
+      "title": "Scripture: God has spoken",
+      "minutes": 10,
+      "teaching": [
+        "Every doctrine in this track rests on a prior one: that God has spoken, and that the Bible is where his speaking has been written down. Christians describe two kinds of revelation. Creation, conscience and the ordinary goodness of life tell everyone something of God. But the God who made the stars is known by name only because he spoke and acted in history, with Abraham, with Israel, and finally in Jesus Christ. Scripture is the record and witness of that speaking. Paul's claim is stronger than that the Bible inspires its readers: “All Scripture is God-breathed” (2 Timothy 3:16).",
+        "Every great tradition confesses that, and it is also where some real differences begin. Christians agree that the Bible is God's word and has authority over the church. They differ on how to describe its truthfulness in matters of history and nature, and on how many books the Old Testament holds: Protestant Bibles have sixty-six books in all, Catholic Bibles seventy-three. The Study Bible sets out each view in its own terms. Start with what is shared. A Christian opens the Bible expecting to be addressed by God, and corrected by him, not only informed."
+      ],
+      "open": {
+        "kind": "doctrine",
+        "label": "Revelation, in the Study Bible",
+        "href": "/study/bible/doctrines/revelation",
+        "why": "How God makes himself known, in creation and in his word, traced through Scripture, with the views of the Bible's truthfulness set out fairly."
+      },
+      "also": [
+        {
+          "kind": "doctrine",
+          "label": "The canon of Scripture, in the Study Bible",
+          "href": "/study/bible/doctrines/canon",
+          "why": "Which books the church receives as Scripture and why, with the Protestant, Catholic, Orthodox and Anglican answers each in its own voice."
+        },
+        {
+          "kind": "answer",
+          "label": "Why would anyone trust the Bible?",
+          "href": "/answers/why-would-anyone-trust-the-bible",
+          "why": "The Honest Answer for the reader who doubts the Bible can be trusted at all, taking the objection seriously first."
+        }
+      ],
+      "question": "When you open the Bible, do you expect to be informed, inspired or addressed by God, and why?",
+      "do": "Read Psalm 19 in one sitting. Mark where it turns from the heavens to the law of the LORD, and note what it says each one does.",
+      "verse": {
+        "ref": "2 Timothy 3:16-17",
+        "text": "All Scripture is God-breathed and is useful for instruction, for conviction, for correction, and for training in righteousness, so that the man of God may be complete, fully equipped for every good work."
+      },
+      "group": {
+        "open": "What has made the Bible hard or easy for you to trust?",
+        "discuss": [
+          "What is the difference between creation's witness to God and the Bible's?",
+          "Why do Christians who agree the Bible is God's word still describe its truthfulness differently?",
+          "What would change in how you read if you expected to be addressed rather than informed?"
+        ],
+        "pray": "Ask God to speak through Scripture as the group reads it, and to give patience with the parts that are hard."
+      }
+    },
+    {
+      "n": 2,
+      "title": "God and his attributes",
+      "minutes": 10,
+      "teaching": [
+        "Scripture never sets out to prove that God exists. It begins with him and tells you what he is like. The church gathered what it heard into the attributes of God. He is from himself, depending on nothing. He is present everywhere, knows all things and can do all that power can do. He does not change in his being or his promises. These are the attributes God does not share with his creatures, and they mean he is not a larger, older version of us. He is of a different order entirely, and that is the ground under every promise he makes.",
+        "Then there are the attributes he shares in part with the people made in his image: holiness, love, justice, faithfulness and mercy. When God showed himself to Moses, he did it by announcing his character: “The LORD, the LORD God, is compassionate and gracious, slow to anger, abounding in loving devotion and faithfulness” (Exodus 34:6). That sentence is echoed again and again through the Old Testament. Christians have argued over how far to press some of these ideas, whether God can suffer and how his knowledge fits human freedom. They confess together that God is good all the way through."
+      ],
+      "open": {
+        "kind": "doctrine",
+        "label": "The attributes of God, in the Study Bible",
+        "href": "/study/bible/doctrines/attributes",
+        "why": "What Scripture says God is like, from his holiness and power to his love and faithfulness, with the history of the church's thinking about each."
+      },
+      "also": [
+        {
+          "kind": "theology",
+          "label": "What are the attributes of God?",
+          "href": "/theology/doctrine/divine-attributes",
+          "why": "Classical theism explained, each perfection named and the hardest questions pressed against it, stated by its own best defenders."
+        },
+        {
+          "kind": "doctrine",
+          "label": "The names of God, in the Study Bible",
+          "href": "/study/bible/doctrines/names-of-god",
+          "why": "The names by which God makes himself known in Scripture, and what each one tells his people about him."
+        }
+      ],
+      "question": "Which of God's attributes do you find most comforting, and which most unsettling?",
+      "do": "Read Exodus 34:1-9 and then Jonah 4. Notice how Jonah quotes God's own description of himself back to him, and why it made him angry.",
+      "verse": {
+        "ref": "Psalm 90:2",
+        "text": "Before the mountains were born or You brought forth the earth and the world, from everlasting to everlasting You are God."
+      },
+      "group": {
+        "open": "If you had to describe God in three words, what would they be?",
+        "discuss": [
+          "Why does it matter that God depends on nothing and no one?",
+          "How do God's holiness and his love fit together in Exodus 34?",
+          "Where might our picture of God be smaller than the one Scripture gives?"
+        ],
+        "pray": "Praise God for one attribute named in this session, and ask to know him as he has described himself."
+      }
+    },
+    {
+      "n": 3,
+      "title": "The Trinity",
+      "minutes": 10,
+      "teaching": [
+        "Christians confess one God. Israel's great confession, “Hear, O Israel: The LORD our God, the LORD is One” (Deuteronomy 6:4), was never revised. Yet the New Testament writers, Jews raised on that confession, speak of the Father, the Son and the Holy Spirit as each fully God, and they baptize in one name of all three. The doctrine of the Trinity is not a puzzle invented by philosophers. It is the church's way of keeping everything Scripture says about God without trimming any of it to fit.",
+        "The church's language took centuries to settle: one being, three persons. The Father is not the Son, the Son is not the Spirit, and there are not three gods. Each easy simplification fails some part of the witness. Modalism makes the three into masks worn by one person, Arianism makes the Son a creature, and tritheism makes three gods. Nicaea in 325 and Constantinople in 381 drew the lines. This is first-order: the creeds bind it, and every great tradition confesses it. It also means that love is older than creation, because God has never been alone."
+      ],
+      "open": {
+        "kind": "doctrine",
+        "label": "The Trinity, in the Study Bible",
+        "href": "/study/bible/doctrines/trinity",
+        "why": "The one God who is Father, Son and Holy Spirit, traced through both testaments, with the councils and the errors they refused."
+      },
+      "also": [
+        {
+          "kind": "answer",
+          "label": "How can God be three and one?",
+          "href": "/answers/how-can-god-be-three-and-one",
+          "why": "The Honest Answer to the objection that the Trinity is a contradiction, with what the doctrine does and does not claim."
+        },
+        {
+          "kind": "creed",
+          "label": "The Athanasian Creed",
+          "href": "/resources/creeds/athanasian-creed",
+          "why": "The Western creed that sets out the Trinity at length, with notes on what each careful phrase was ruling out."
+        }
+      ],
+      "question": "What picture of the Trinity have you heard, and which part of the truth does it lose?",
+      "do": "Read Matthew 3:13-17 and 2 Corinthians 13:14. Note where the Father, the Son and the Spirit each appear, and what each one does.",
+      "verse": {
+        "ref": "2 Corinthians 13:14",
+        "text": "The grace of the Lord Jesus Christ, and the love of God, and the fellowship of the Holy Spirit be with all of you."
+      },
+      "group": {
+        "open": "Have you ever tried to explain the Trinity to someone? How did it go?",
+        "discuss": [
+          "Why did the church refuse each simpler answer: modalism, Arianism and tritheism?",
+          "How does the Trinity change what it means to say that God is love?",
+          "Why might it be wiser to confess this mystery than to explain it away?"
+        ],
+        "pray": "Worship the Father, the Son and the Holy Spirit, and give thanks that God has never been alone."
+      }
+    },
+    {
+      "n": 4,
+      "title": "Creation and the image of God",
+      "minutes": 10,
+      "teaching": [
+        "The Bible begins with God making a world he calls good, from nothing but his word. Creation is not divine, and it is not an accident. It is a gift with a giver. At the height of the account stands a sentence that has shaped more of the world than most people realize: “So God created man in His own image; in the image of God He created him; male and female He created them” (Genesis 1:27). Kings in the ancient world set up statues of themselves to mark where they ruled. God makes living images, and gives the work of tending his world to every human being.",
+        "Christians have read the image in several ways: as reason and moral sense, as a calling to rule on God's behalf, as a relationship with him. Most hold more than one. What they agree on is the part that matters on a Tuesday. Every person you meet, the newborn and the very old, the stranger and the enemy, bears God's image, and no one may treat them as a thing. How old the earth is and how to read the days of Genesis 1 are questions faithful Christians answer differently, and the site sets out four views. The image of God is not among the open questions."
+      ],
+      "open": {
+        "kind": "doctrine",
+        "label": "The image of God, in the Study Bible",
+        "href": "/study/bible/doctrines/image",
+        "why": "What it means that human beings are made in God's image, from Genesis to Christ, the true image, with the main readings set side by side."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "Creation and the image of God",
+          "href": "/study/explorer/watch/image-of-god",
+          "why": "A short film on the world God made good and the people he made to reflect him in it."
+        },
+        {
+          "kind": "theology",
+          "label": "How should Christians read Genesis 1?",
+          "href": "/theology/doctrine/origins",
+          "why": "Four views of Genesis 1 and the age of the earth, each stated at its strongest, sorted as a question on which Christians may differ."
+        }
+      ],
+      "question": "Whom do you find it hardest to see as bearing God's image, and why?",
+      "do": "Read Genesis 1:26-2:3 and Psalm 8. Then choose one person you will see this week whom you are tempted to overlook, and treat them deliberately as God's image.",
+      "verse": {
+        "ref": "Genesis 1:27",
+        "text": "So God created man in His own image; in the image of God He created him; male and female He created them."
+      },
+      "group": {
+        "open": "What do you think makes human beings different from other creatures, if anything?",
+        "discuss": [
+          "Why might it matter that God gives the work of ruling to every human being, not only to kings?",
+          "How would our churches change if we treated every person as bearing God's image?",
+          "Why does the age of the earth stay an open question among Christians, while the image of God does not?"
+        ],
+        "pray": "Give thanks that you were made in God's image, and pray for the people the group named as hardest to see that way."
+      }
+    },
+    {
+      "n": 5,
+      "title": "Sin",
+      "minutes": 10,
+      "teaching": [
+        "The Bible's account of what went wrong begins with trust, not rules. In Genesis 3 the serpent's question is whether God can be believed, and the first sin is a reach for what God had not given. What follows is less a list of broken laws than a ruin of relationships: shame between the man and the woman, hiding from God, a curse on the ground, and at last death. Paul names the result plainly: “for all have sinned and fall short of the glory of God” (Romans 3:23). Sin is not first something you do. It is a condition you are in, which is why trying harder never cures it.",
+        "Christians agree that every person since Adam is caught in sin and cannot climb out alone. They describe the inheritance differently. The Augustinian and Reformed tradition speaks of guilt and corruption received from Adam. Wesleyans stress a corruption met by God's grace going before every person. The Orthodox speak of ancestral sin, an inheritance of mortality more than of guilt. Pelagius, who taught that people could simply choose not to sin, was condemned by the early church. The doctrine is humbling and also kind. Your failures are not the strangest thing about you, and the gospel was made for exactly this."
+      ],
+      "open": {
+        "kind": "doctrine",
+        "label": "Sin, in the Study Bible",
+        "href": "/study/bible/doctrines/sin",
+        "why": "What Scripture means by sin, from Eden to the cross, with the church's long argument about its nature and reach."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "What sin is",
+          "href": "/study/explorer/watch/what-sin-is",
+          "why": "A short film on sin as a broken relationship with God, not only a broken rule, made for families and plain for anyone."
+        },
+        {
+          "kind": "theology",
+          "label": "What is original sin?",
+          "href": "/theology/doctrine/sin",
+          "why": "Three Christian traditions on original sin, Augustinian and Reformed, Wesleyan and Arminian, and Eastern Orthodox, each in its own words."
+        },
+        {
+          "kind": "story",
+          "label": "The Bible's story: the fall",
+          "href": "/study/bible/story/fall",
+          "why": "The part of the Bible's story where trust breaks, and the first promise that God will not leave it broken."
+        }
+      ],
+      "question": "Do you think of sin more as wrong actions or as a condition, and how does the difference change what would fix it?",
+      "do": "Read Genesis 3 slowly. Write down each step from the serpent's question to the man and woman hiding, and notice where you recognize yourself.",
+      "verse": {
+        "ref": "Romans 3:23-24",
+        "text": "for all have sinned and fall short of the glory of God, and are justified freely by His grace through the redemption that is in Christ Jesus."
+      },
+      "care": [
+        "Sometimes guilt that will not lift needs more than a Bible verse. It can be part of anxiety, depression or a habit of the mind that keeps returning to the same fear. That is not a failure of faith. Talk with a pastor or a friend you trust. If the fear will not let you rest, a counsellor or a doctor can help too, and the Find Help page on this site lists places to turn.",
+        "If you are a person whose conscience never rests, who keeps checking whether you have really believed, hear John's words: “Even if our hearts condemn us, God is greater than our hearts, and He knows all things” (1 John 3:20). Such fear can be part of anxiety or a habit of the mind, and that is not a failure of faith. Talk with a pastor or a friend you trust, and if the fear will not let you rest, a counsellor or a doctor can help too. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What did you learn about sin as a child, and did it help or harm?",
+        "discuss": [
+          "Why might it matter that the first sin was a failure of trust rather than a broken rule?",
+          "How do the Reformed, Wesleyan and Orthodox accounts of original sin differ, and what do they share?",
+          "How can the doctrine of sin be humbling and kind at the same time?"
+        ],
+        "pray": "Confess silently what is yours to confess, and give thanks that the gospel was made for sinners."
+      }
+    },
+    {
+      "n": 6,
+      "title": "The person of Christ",
+      "minutes": 10,
+      "teaching": [
+        "The question every reader of the Gospels must answer is who Jesus is. He slept in a boat, wept for a friend and grew hungry. He also forgave people, stilled a storm and accepted worship. His first followers, most of them Jews, had met someone who broke their categories, and the church spent four centuries finding words exact enough to say what they had seen. John put it in one sentence: “The Word became flesh and made His dwelling among us” (John 1:14). Every early error took one half of that sentence and let go of the other.",
+        "In 451 the Council of Chalcedon gave the answer most Christians still confess: one person, the Son, in two natures, truly God and truly man, without confusion or change, without division or separation. It is not an explanation of how. It is a fence around a mystery, keeping out the views that make Jesus only a man, God in a human costume, or two persons sharing a body. This is first-order. If Jesus is only a man, he cannot keep his promise to make all things new. If he is not truly one of us, he never stood where we stand."
+      ],
+      "open": {
+        "kind": "creed",
+        "label": "The Chalcedonian Definition",
+        "href": "/resources/creeds/chalcedonian-definition",
+        "why": "The council's statement of 451 on the one person of Christ in two natures, with notes on the errors each phrase was written against."
+      },
+      "also": [
+        {
+          "kind": "theology",
+          "label": "Who is Jesus?",
+          "href": "/theology/doctrine/christology",
+          "why": "Every view the early church considered about Christ, stated in its own best voice before the church judged it."
+        },
+        {
+          "kind": "history",
+          "label": "Nicaea to Chalcedon",
+          "href": "/theology/history/the-great-councils",
+          "why": "The church history lesson on the councils that wrote the creeds, the people who fought over these words, and why."
+        }
+      ],
+      "question": "Which half of Chalcedon's confession, truly God or truly man, do you find it easier to forget?",
+      "do": "Read Hebrews 4:14-5:10. Mark each place the writer speaks of Jesus as truly human, and each place he speaks of him as more than a man.",
+      "verse": {
+        "ref": "Colossians 2:9",
+        "text": "For in Christ all the fullness of the Deity dwells in bodily form."
+      },
+      "group": {
+        "open": "When you picture Jesus, do you more easily picture him as God or as a man?",
+        "discuss": [
+          "What is lost if Jesus is only a great man, and what is lost if he only seemed human?",
+          "Why might the council have built a fence around the mystery rather than try to explain it?",
+          "How does it help in a hard week that Jesus truly stood where we stand?"
+        ],
+        "pray": "Worship Christ as truly God, and give thanks that he became truly one of us."
+      }
+    },
+    {
+      "n": 7,
+      "title": "The atonement",
+      "minutes": 10,
+      "teaching": [
+        "The cross is the center of the Christian faith, and the New Testament describes what happened there with several pictures at once. It is a sacrifice, the one Israel's offerings pointed toward. It is a substitution, the righteous bearing what the guilty deserved: “He was pierced for our transgressions, He was crushed for our iniquities” (Isaiah 53:5). It is a ransom that frees captives, a victory over sin, death and the devil, and the reconciliation of enemies. No council ever chose one picture and discarded the rest. The creeds say simply that he was crucified for us.",
+        "The church has gathered these pictures into models. Penal substitution holds that Christ bore the penalty of sin in our place. Satisfaction, following Anselm in 1098, holds that he offered the perfect obedience our sin owed to God. Christus Victor holds that he broke the powers that held us captive. Moral influence stresses a love that melts resistance, and the governmental view a cross that upholds God's just rule so that he can forgive. Many Christians hold more than one and argue about which holds the others together. All of them refuse to call the cross an accident, or an example only."
+      ],
+      "open": {
+        "kind": "doctrine",
+        "label": "The atonement, in the Study Bible",
+        "href": "/study/bible/doctrines/atonement",
+        "why": "How a holy God and sinful people are brought together, traced from Israel's sacrifices to the cross, with each model stated by its defenders."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "Why did Jesus die?",
+          "href": "/study/explorer/watch/why-jesus-died",
+          "why": "A short film on the cross at the center of the Bible's story, and what it accomplished."
+        },
+        {
+          "kind": "chapter",
+          "label": "Isaiah 53, passage by passage",
+          "href": "/study/bible/isaiah/53#plain",
+          "why": "The servant who suffers for others, with plain notes on the passage the New Testament quotes so often of Jesus."
+        },
+        {
+          "kind": "film",
+          "label": "Sacrifice and the Lamb",
+          "href": "/study/explorer/watch/the-lamb",
+          "why": "A short film that follows the lamb from Abraham and the Passover to the Lamb of God."
+        }
+      ],
+      "question": "Which picture of the cross has meant most to you, and which have you neglected?",
+      "do": "Read Isaiah 52:13-53:12 slowly. Then read Mark 10:45 and Colossians 2:13-15, and name which picture of the cross each passage uses.",
+      "verse": {
+        "ref": "2 Corinthians 5:21",
+        "text": "God made Him who knew no sin to be sin on our behalf, so that in Him we might become the righteousness of God."
+      },
+      "care": [
+        "Sometimes guilt that will not lift needs more than a Bible verse. It can be part of anxiety, depression or a habit of the mind that keeps returning to the same fear. That is not a failure of faith. Talk with a pastor or a friend you trust. If the fear will not let you rest, a counsellor or a doctor can help too, and the Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What were you taught about why Jesus died?",
+        "discuss": [
+          "Why might the New Testament need several pictures to describe one event?",
+          "Which model seems strongest to you, and what would its own defenders say it protects?",
+          "What changes in you when you hear that the cross was for us, not only an example to us?"
+        ],
+        "pray": "Give thanks for the cross in the words of the picture that has meant most to you, and pray for anyone carrying guilt."
+      }
+    },
+    {
+      "n": 8,
+      "title": "Salvation: grace, faith, justification",
+      "minutes": 10,
+      "teaching": [
+        "Salvation in Scripture is God's rescue of people who could not rescue themselves, and three words carry most of it. Grace is God's favor given to people who have not earned it and cannot. Faith is the empty hand that receives it, trust in the one who promised. Justification is God's verdict that a sinner is right with him, not because of what the sinner has done but because of what Christ has done. Paul gathers all three in one sentence: “For it is by grace you have been saved through faith, and this not from yourselves; it is the gift of God” (Ephesians 2:8).",
+        "In the sixteenth century the Reformation turned on how these words fit together. Luther and the Reformers taught that sinners are justified by faith alone, with Christ's righteousness counted to them. The Council of Trent answered that justification includes the renewal God works within. The disagreement was real and it cost a great deal. In 1999 Lutherans and Catholics signed a joint declaration saying they share a basic understanding of justification by grace through faith, while still differing on parts of it. Every tradition agrees on what matters most. No one earns their way to God. Salvation is received, not achieved."
+      ],
+      "open": {
+        "kind": "doctrine",
+        "label": "Justification, in the Study Bible",
+        "href": "/study/bible/doctrines/justification",
+        "why": "God's verdict that the sinner is right with him, traced through Scripture and through the debates of the Reformation, with each side stated fairly."
+      },
+      "also": [
+        {
+          "kind": "doctrine",
+          "label": "Faith, in the Study Bible",
+          "href": "/study/bible/doctrines/faith",
+          "why": "What Scripture means by faith, from Abraham to the letters, and why it is trust in a person, not a feeling."
+        },
+        {
+          "kind": "film",
+          "label": "Grace: the gift no one earns",
+          "href": "/study/explorer/watch/grace",
+          "why": "A short film on grace through the Bible's story, made for families and plain enough for anyone."
+        },
+        {
+          "kind": "history",
+          "label": "The Reformation",
+          "href": "/theology/history/the-reformation",
+          "why": "The church history lesson on the century when the question of how a sinner is made right with God divided the Western church."
+        }
+      ],
+      "question": "Where do you still find yourself trying to earn what Scripture says is given?",
+      "do": "Read Romans 3:21-4:8. Mark every place Paul uses the words grace, faith, gift or credited, and write down what Abraham did and did not do.",
+      "verse": {
+        "ref": "Ephesians 2:8-9",
+        "text": "For it is by grace you have been saved through faith, and this not from yourselves; it is the gift of God, not by works, so that no one can boast."
+      },
+      "care": [
+        "If you are a person whose conscience never rests, who keeps checking whether you have really believed, hear John's words: “Even if our hearts condemn us, God is greater than our hearts, and He knows all things” (1 John 3:20). Such fear can be part of anxiety or a habit of the mind, and that is not a failure of faith. Talk with a pastor or a friend you trust, and if the fear will not let you rest, a counsellor or a doctor can help too. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Have you ever been given something you could not repay? How did it feel to receive it?",
+        "discuss": [
+          "How would you explain grace, faith and justification to a friend, in one sentence each?",
+          "What did Protestants and Catholics disagree about in the sixteenth century, and what did they say together in 1999?",
+          "Why is receiving a gift sometimes harder than earning a wage?"
+        ],
+        "pray": "Give thanks for grace no one in the group earned, and pray for anyone who still feels they must."
+      }
+    },
+    {
+      "n": 9,
+      "title": "The Holy Spirit",
+      "minutes": 10,
+      "teaching": [
+        "The Holy Spirit is the person of the Trinity many Christians know least, though Scripture shows him at work everywhere. He gives life at creation, speaks through the prophets, raises Jesus to life and is poured out on the church at Pentecost. In a believer's life he brings new birth, joins the believer to Christ, assures them they are God's children, and slowly makes them holy. Jesus promised that “when the Spirit of truth comes, He will guide you into all truth” (John 16:13). The Christian life is not a program of self-improvement. It is the Spirit's work in you.",
+        "Every tradition confesses the Spirit as Lord and giver of life, worshiped with the Father and the Son. Christians differ on his gifts. Cessationists hold that the miraculous gifts of the apostles' day, tongues and prophecy among them, ended with that age. Continuationists hold that every gift continues. Many stand between, open but cautious. Each view has serious defenders and reads Scripture carefully, and the site sets them side by side. They agree on the fruit: love, joy, peace, patience, kindness, goodness, faithfulness, gentleness and self-control. No gift is a substitute for that."
+      ],
+      "open": {
+        "kind": "doctrine",
+        "label": "The Holy Spirit, in the Study Bible",
+        "href": "/study/bible/doctrines/spirit",
+        "why": "Who the Spirit is and what he does, from Genesis to Revelation, with where Christians agree and where they differ."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "The Holy Spirit in a believer",
+          "href": "/study/explorer/watch/spirit-in-a-believer",
+          "why": "A short film on what the Spirit does in the life of someone who trusts Christ."
+        },
+        {
+          "kind": "theology",
+          "label": "Who is the Holy Spirit, and do his gifts continue?",
+          "href": "/theology/doctrine/holy-spirit",
+          "why": "Cessationist, continuationist and open but cautious views, each stated by its own best defenders."
+        },
+        {
+          "kind": "doctrine",
+          "label": "Sanctification, in the Study Bible",
+          "href": "/study/bible/doctrines/sanctification",
+          "why": "How the Spirit makes believers holy over a lifetime, and how the traditions describe that slow work."
+        }
+      ],
+      "question": "Where have you seen the fruit of the Spirit grow in someone over many years?",
+      "do": "Read Galatians 5:16-26. Choose the fruit of the Spirit you see least in yourself, and ask God for it each morning this week.",
+      "verse": {
+        "ref": "Galatians 5:22-23",
+        "text": "But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, and self-control. Against such things there is no law."
+      },
+      "group": {
+        "open": "What did the churches you have known teach, or avoid, about the Holy Spirit?",
+        "discuss": [
+          "Why might the Spirit be the person of the Trinity Christians know least?",
+          "What would the strongest defender of each view of the gifts want you to understand about it?",
+          "How is the Spirit's slow work of holiness different from self-improvement?"
+        ],
+        "pray": "Ask the Spirit for the fruit each person named, and give thanks for the people in whom you have seen it grow."
+      }
+    },
+    {
+      "n": 10,
+      "title": "The church and its practices",
+      "minutes": 10,
+      "teaching": [
+        "The church is not a building or a club of the like-minded. In the New Testament it is the people God has called out and gathered to himself, the body of Christ and the household of God. Its first members gave themselves to the apostles' teaching, to fellowship, “to the breaking of bread and to prayer” (Acts 2:42). The Reformers named the marks of a true church: the word rightly preached and the sacraments rightly given, and many added discipline. The church is where faith is meant to be lived with others, not managed alone.",
+        "Christ gave his church two practices, baptism and the Lord's Supper. Every tradition keeps them, and nearly every tradition differs on them: who should be baptized, what happens at the table, and whether they are sacraments that convey grace or ordinances that signify it. Churches also differ on how they are governed. Those questions get their own sessions in the next track. What is shared is larger. Christ is the head of the church, and he gave it to you as a family, flawed and holy at once, because faith was never meant to be a private hobby."
+      ],
+      "open": {
+        "kind": "doctrine",
+        "label": "The church, in the Study Bible",
+        "href": "/study/bible/doctrines/church",
+        "why": "What Scripture means by the church, with the history of the marks of a true church and where the traditions differ."
+      },
+      "also": [
+        {
+          "kind": "doctrine",
+          "label": "The sacraments, in the Study Bible",
+          "href": "/study/bible/doctrines/sacraments",
+          "why": "Baptism and the Lord's Supper traced through Scripture, with each tradition's understanding stated in its own terms."
+        },
+        {
+          "kind": "film",
+          "label": "What the church is",
+          "href": "/study/explorer/watch/the-church",
+          "why": "A short film on the church as God's people, gathered by the Spirit around Jesus."
+        },
+        {
+          "kind": "life",
+          "label": "Church membership and commitment",
+          "href": "/life/church-membership-and-commitment",
+          "why": "The everyday-life guide on belonging to one congregation for the long haul, and why it is worth the cost."
+        }
+      ],
+      "question": "What has made belonging to a church hard, or good, for you?",
+      "do": "Read Acts 2:37-47. List what the first church did together, and mark one thing on that list you could take part in this week.",
+      "verse": {
+        "ref": "Acts 2:42",
+        "text": "They devoted themselves to the apostles’ teaching and to the fellowship, to the breaking of bread and to prayer."
+      },
+      "care": [
+        "If you have been harmed by someone in a church, and were told to forgive and say nothing, what happened to you may have been wrong. Please talk with someone you trust outside that situation. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What is the best thing a church has ever done for you?",
+        "discuss": [
+          "Why might the first church's life in Acts 2 include fellowship and meals, not only teaching and prayer?",
+          "Why do you think Christians who agree on so much still differ on baptism and the Supper?",
+          "What would it look like for a church to be a family rather than a service people attend?"
+        ],
+        "pray": "Pray for the church you belong to, or the one you are looking for, and for its leaders by name."
+      }
+    },
+    {
+      "n": 11,
+      "title": "The last things",
+      "minutes": 10,
+      "teaching": [
+        "Christian hope looks forward to a real event. The same Jesus who was crucified and raised will come again, in person and in public glory, to raise the dead, judge the world and set everything right. The church calls this eschatology, the doctrine of the last things, and it covers what happens at death, the return of Christ, the final judgment and the destiny of the world. Scripture holds out the return as the believer's hope, “as we await the blessed hope and glorious appearance of our great God and Savior Jesus Christ” (Titus 2:13).",
+        "Christians confess the return and the judgment together; the creeds bind both. They differ on much of the rest: the thousand years of Revelation 20, the order of events, the state of believers between death and resurrection, and how to understand hell. The site takes each of those questions seriously, every view in its own voice. Don't let the arguments hide what is shared. History is not going in circles, and it is not going toward nothing. It is going toward a person, and every believer who has died is safe with him."
+      ],
+      "open": {
+        "kind": "doctrine",
+        "label": "The return of Christ, in the Study Bible",
+        "href": "/study/bible/doctrines/return",
+        "why": "What Scripture says about Christ's coming again, with the main views of the millennium and the end each stated fairly."
+      },
+      "also": [
+        {
+          "kind": "doctrine",
+          "label": "Between death and resurrection, in the Study Bible",
+          "href": "/study/bible/doctrines/intermediate",
+          "why": "What Scripture says of believers who have died before Christ returns, and the views Christians hold about that waiting."
+        },
+        {
+          "kind": "theology",
+          "label": "How does it end?",
+          "href": "/theology/doctrine/last-things",
+          "why": "Four views of the millennium and the end, sorted as a question on which faithful Christians differ, each in its own voice."
+        },
+        {
+          "kind": "answer",
+          "label": "Is hell forever, or does it end?",
+          "href": "/answers/is-hell-forever-or-does-it-end",
+          "why": "The Honest Answer on the hardest of the last things, with the church's main positions set out before any conclusion."
+        }
+      ],
+      "question": "Does the return of Christ feel to you more like a hope, a threat or a puzzle?",
+      "do": "Read 1 Thessalonians 4:13-5:11. Write down what Paul says Christians know about the end, and what he says they do not.",
+      "verse": {
+        "ref": "Titus 2:13",
+        "text": "as we await the blessed hope and glorious appearance of our great God and Savior Jesus Christ."
+      },
+      "care": [
+        "Grief is not a lack of faith. If your grief is so heavy that you cannot carry it, please tell someone: a pastor, a friend, a doctor or a counsellor. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What were you taught about the end times, and how did it make you feel?",
+        "discuss": [
+          "Why might the creeds bind the return and the judgment, but not a view of the millennium?",
+          "How does Paul use the hope of Christ's return to comfort grieving people in 1 Thessalonians 4?",
+          "What changes in how you live if history is going toward a person?"
+        ],
+        "pray": "Pray for anyone who is grieving, and ask for a hope in Christ's return that steadies rather than frightens."
+      }
+    },
+    {
+      "n": 12,
+      "title": "The life to come",
+      "minutes": 10,
+      "teaching": [
+        "The Bible doesn't end with souls floating away from a burned-out earth. It ends with a city coming down, God making his home with his people, and a renewed creation where “He will wipe away every tear from their eyes” (Revelation 21:4). The life to come is the hope of resurrection bodies in a new heaven and a new earth, where righteousness is at home. What God made good in Genesis is not thrown away but healed. Christians who have died are with Christ now, and they are waiting, as the whole creation is, for that day.",
+        "This changes the ordinary. If the body will be raised, the body matters now. If creation will be renewed, the work of your hands is not wasted. If the dead in Christ will rise, grief is real but not final. The doctrines in this track are not twelve opinions to file away. They are one story, from a God who speaks, through a world made, broken and redeemed, to a home he is still preparing. The church has hoped for it for two thousand years. What remains is whether you will hope for it with them."
+      ],
+      "open": {
+        "kind": "doctrine",
+        "label": "The new creation, in the Study Bible",
+        "href": "/study/bible/doctrines/new-creation",
+        "why": "The promise of a new heaven and a new earth, traced from the prophets to the last chapters of Revelation."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "The life to come",
+          "href": "/study/explorer/watch/life-to-come",
+          "why": "A short film on the new creation and the people who wait for it."
+        },
+        {
+          "kind": "story",
+          "label": "The Bible's story: new creation",
+          "href": "/study/bible/story/new-creation",
+          "why": "The last part of the Bible's whole story, where everything that went wrong in the beginning is put right."
+        },
+        {
+          "kind": "track",
+          "label": "The tracks: next, Where faithful Christians differ, fairly",
+          "href": "/tracks",
+          "why": "Next in What Christians Believe: eight sessions on the questions that divide faithful churches, each view stated in its strongest voice."
+        }
+      ],
+      "question": "If the life to come is a renewed creation, what in your present life feels most worth carrying into it?",
+      "do": "Read Revelation 21:1-22:5 in one sitting. Write down three things that are there and three that are gone, and keep the list.",
+      "verse": {
+        "ref": "2 Peter 3:13",
+        "text": "But in keeping with God’s promise, we are looking forward to a new heaven and a new earth, where righteousness dwells."
+      },
+      "care": [
+        "Grief is not a lack of faith. If your grief is so heavy that you cannot carry it, please tell someone: a pastor, a friend, a doctor or a counsellor. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "When you imagine heaven, what do you picture, and where did that picture come from?",
+        "discuss": [
+          "How is a renewed creation different from the picture of souls in the clouds?",
+          "Which of the twelve doctrines in this track has changed your view of God most?",
+          "How might the hope of the life to come change the way we work, grieve or care for bodies?"
+        ],
+        "pray": "Give thanks for the hope of the new creation, and pray for those in the group who are waiting, grieving or unsure."
+      }
+    }
+  ]
+}
