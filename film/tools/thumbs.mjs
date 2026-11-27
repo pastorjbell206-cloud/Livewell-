@@ -7,6 +7,8 @@ import fs from "node:fs";
 import path from "node:path";
 
 const films = JSON.parse(fs.readFileSync("client/src/data/narrated-films.json", "utf8")).films;
+// A finished film not yet on the site is named on the command line; its title comes from its script.
+for (const s of process.argv.slice(2)) if (!films.some((f) => f.slug === s) && fs.existsSync(`film/${s}/script.json`)) films.push({ slug: s, title: JSON.parse(fs.readFileSync(`film/${s}/script.json`, "utf8")).title });
 const idx = JSON.parse(fs.readFileSync("client/public/explorer/index.json", "utf8"));
 const items = Array.isArray(idx) ? idx : idx.films || idx.items;
 const kind = Object.fromEntries(items.map((i) => [i.slug || i.id, i.kind || i.group]));
@@ -24,7 +26,7 @@ const page = (f) => {
   if (!sub && big.length > 16) { const w = big.split(" "); let best = 1, d = 1e9; for (let i = 1; i < w.length; i++) { const x = Math.abs(w.slice(0, i).join(" ").length - w.slice(i).join(" ").length); if (x < d) { d = x; best = i; } } lines = [w.slice(0, best).join(" "), w.slice(best).join(" ")]; }
   const longest = Math.max(...lines.map((l) => l.length));
   const size = lines.length === 2 ? (longest <= 14 ? 104 : longest <= 18 ? 92 : 78) : sub ? (longest <= 9 ? 138 : longest <= 14 ? 116 : 92) : (longest <= 9 ? 150 : 124);
-  const label = LABEL[kind[f.slug]] || "A short film";
+  const label = LABEL[kind[f.slug]] || (f.slug.startsWith("apol-") ? "Is the Bible reliable?" : f.slug.startsWith("doc-") ? "What Christians believe" : f.slug.startsWith("hist-") ? "Church history" : "A short film");
   return `<!doctype html><meta charset="utf-8"><style>
 @font-face{font-family:"Display";font-style:normal;font-weight:400 600;src:url(data:font/woff2;base64,${font("cormorant-garamond-400-latin.woff2")}) format("woff2");}
 @font-face{font-family:"Display";font-style:italic;font-weight:400;src:url(data:font/woff2;base64,${font("cormorant-garamond-400-italic-latin.woff2")}) format("woff2");}
