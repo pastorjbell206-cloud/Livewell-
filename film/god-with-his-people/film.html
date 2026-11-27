@@ -1,0 +1,302 @@
+<!doctype html>
+<!-- "God with his people". God is never drawn: his presence is only a soft mustard light (never above 0.12) or
+     its absence. Cherubim are a label, never figures. Jesus is the one upright mustard bar. The temple's fall is
+     kept brief (a sibling film covers it): the outline goes faint and dashed, nothing burns on screen.
+     People are plain ink dots, all alike. Words and timing come from script.json and timeline.json.
+     Open with ?t=42 to freeze on second 42. -->
+<html lang="en"><head><meta charset="utf-8"><title>God with his people</title></head><body>
+<script src="../lib/engine.js"></script>
+<script>
+Film.make((F) => {
+  const { el, txt, set, op, draw, line, move, clamp, ease, up, span, mix, rng, S, E, world, INK, BONE, WARM, MUTED, STONE, MUSTARD, LINE, CHAR } = F;
+  const SC = Object.fromEntries(window.SCRIPT.chapters.map((c) => [c.id, c])), END = F.VOICE_END, PAPER = "#FBF9F5", GY = 470, R = rng(23);
+  const at = (id, k, f) => S(id, k) + (E(id, k) - S(id, k)) * f;
+  const dot = (p, x, y, r = 10) => el("circle", { cx: x, cy: y, r, fill: INK }, p);
+  const verse = (ch, cx, y, size, max, big) => { const g = el("g", {}, world), words = `“${ch.scripture.text}”`.split(" "), out = []; let cur = "";
+    words.forEach((w) => { if ((cur + " " + w).trim().length > max && cur) { out.push(cur); cur = w; } else cur = (cur + " " + w).trim(); }); out.push(cur);
+    const lh = Math.round(size * 1.2); out.forEach((r, i) => txt(g, "disp", cx, y + i * lh, r, size));
+    txt(g, "lab", cx, y + (out.length - 1) * lh + Math.round(size * 0.62) + 14, `${ch.scripture.reference.toUpperCase()} · BEREAN STANDARD BIBLE`, big ? 17 : 14); return g; };
+  const lab = (p, x, y, s, size = 15) => txt(p, "lab", x, y, s, size);
+  // God's presence: soft light only, never above 0.12
+  const defs = el("defs", {}, world), grad = el("radialGradient", { id: "glow", cx: "50%", cy: "50%", r: "50%" }, defs);
+  el("stop", { offset: "0", "stop-color": MUSTARD, "stop-opacity": 1 }, grad); el("stop", { offset: "0.6", "stop-color": MUSTARD, "stop-opacity": 0.75 }, grad); el("stop", { offset: "1", "stop-color": MUSTARD, "stop-opacity": 0 }, grad);
+  const glow = (p, x, y, w, h) => el("rect", { x, y, width: w, height: h, fill: "url(#glow)" }, p);
+  const lit = (e, v) => op(e, Math.min(0.12, v));
+  const sline = (p, d, w = 3, c = INK) => el("path", { d, fill: "none", stroke: c, "stroke-width": w, "stroke-linecap": "round", "stroke-linejoin": "round" }, p);
+  const tree = (p, x, h, w) => { const g = el("g", {}, p), y = GY - h; sline(g, `M${x} ${GY} V${y + 8}`);
+    el("path", { d: `M${x - w} ${y + 10} Q${x - w - 8} ${y - 30} ${x - w * 0.3} ${y - 38} Q${x + w * 0.2} ${y - 58} ${x + w * 0.8} ${y - 28} Q${x + w + 10} ${y + 4} ${x + w * 0.4} ${y + 16} Q${x - w * 0.2} ${y + 26} ${x - w} ${y + 10} Z`, fill: WARM, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, g); return g; };
+  const cloudD = "M-130 0 Q-136 -30 -100 -36 Q-84 -62 -44 -52 Q-20 -76 18 -56 Q50 -70 72 -44 Q116 -46 128 -14 Q140 0 120 0 Z";
+  // the temple, side view, facing east (to the right): Most Holy Place, hall, porch
+  const TEMPLE = "M430 470 V380 H520 V330 H760 V280 H810 V470 M520 380 V470 M760 330 V470";
+  const ground = line(world, "M-20 470 H1300", { "stroke-width": 3 });
+
+  // ================= 1 garden: trees, a path, light walking along it =================
+  const A0 = S("garden", 0), A1 = S("garden", 1);
+  const gA = el("g", {}, world);
+  const gPath = el("path", { d: "M70 466 C200 446 300 470 400 456 S600 446 720 460 S820 466 880 468", fill: "none", stroke: STONE, "stroke-width": 2.5, "stroke-dasharray": "3 10", "stroke-linecap": "round" }, gA);
+  const trees = [[150, 110, 44], [300, 150, 56], [440, 100, 40], [700, 124, 48]].map(([x, h, w]) => tree(gA, x, h, w));
+  const walkLight = glow(world, 0, 250, 110, 230);
+  const pair = [dot(world, 540, 459), dot(world, 604, 459)];
+  const vA = verse(SC.garden, 640, 148, 34, 46, true);
+
+  // ================= 2 shut: sent out east, the gate shut, the light inside =================
+  const B0 = S("shut", 0), B1 = S("shut", 1), B2 = S("shut", 2);
+  const gB = el("g", {}, world);
+  const fence = line(gB, "M820 410 H50", { "stroke-width": 3 });
+  const posts = [...Array(10)].map((_, i) => sline(gB, `M${90 + i * 76} 410 V470`, 2.5, STONE));
+  const gateG = el("g", {}, gB); sline(gateG, "M820 470 V372 M884 470 V372", 4);
+  const leaf = el("g", {}, gateG); [0, 1, 2, 3].forEach((k) => el("line", { x1: 0, x2: 1, y1: 0, y2: 0, stroke: INK, "stroke-width": 3, "stroke-linecap": "round", "data-k": k }, leaf));
+  const leafBars = [...leaf.children];
+  const cherub = lab(gB, 900, 346, "CHERUBIM · EAST SIDE", 14);
+  const qB = txt(world, "disp", 1000, 360, "?", 80, { fill: STONE });
+  const vB = verse(SC.shut, 640, 126, 24, 62, false);
+
+  // ================= 3 tent: Sinai, the plan, a tent in the middle of the camp =================
+  const C0 = S("tent", 0), C1 = S("tent", 1), C2 = S("tent", 2), C3 = S("tent", 3);
+  const gC = el("g", {}, world);
+  const sinai = el("g", {}, world); line(sinai, "M930 470 L1080 270 L1240 470", { stroke: LINE, "stroke-width": 3, "stroke-dashoffset": 0 }); lab(sinai, 1080, 252, "SINAI", 14);
+  const plan = el("g", {}, gC);
+  el("rect", { x: 520, y: 250, width: 240, height: 150, fill: PAPER, stroke: INK, "stroke-width": 3 }, plan);
+  const planLines = [line(plan, "M545 290 H735 V370 H545 Z", { stroke: STONE, "stroke-width": 2.5 }), line(plan, "M600 310 H670 V350 H600 Z", { "stroke-width": 2.5 }), line(plan, "M622 310 V350", { "stroke-width": 2.5 })];
+  const tentG = el("g", {}, world);
+  const court = el("g", {}, tentG); sline(court, "M470 428 H810", 2.5, STONE); [...Array(9)].forEach((_, i) => sline(court, `M${470 + i * 42.5} 428 V470`, 2.5, STONE));
+  const tentFill = el("rect", { x: 580, y: 382, width: 120, height: 88, fill: WARM }, tentG);
+  const tentLight = el("rect", { x: 582, y: 470, width: 116, height: 0, fill: MUSTARD }, tentG);
+  const tentLine = line(tentG, "M580 470 V382 H700 V470 M572 384 H708", { "stroke-width": 3 });
+  const camp = []; const rowsC = [[459, 9, 34], [438, 7, 30], [421, 6, 27]];
+  rowsC.forEach(([y, r, gap], ri) => { for (let x = 120 + ri * 12; x < 455; x += gap) if (!(ri === 0 && x > 256 && x < 344)) camp.push({ e: dot(world, x, y, r), x, y, d: R() }); for (let x = 840 - ri * 12; x < 1170; x += gap) camp.push({ e: dot(world, x, y, r), x, y, d: R() }); });
+  const calf = el("g", {}, world);
+  el("rect", { x: 280, y: 452, width: 44, height: 18, fill: WARM, stroke: INK, "stroke-width": 2.5 }, calf);
+  el("rect", { x: 286, y: 428, width: 28, height: 14, rx: 3, fill: STONE, stroke: INK, "stroke-width": 2 }, calf);
+  sline(calf, "M290 442 V452 M297 442 V452 M304 442 V452 M310 442 V452", 2.5);
+  el("rect", { x: 312, y: 418, width: 10, height: 12, rx: 2, fill: STONE, stroke: INK, "stroke-width": 2 }, calf); sline(calf, "M314 418 L311 410 M320 418 L323 410", 2);
+  const moses = dot(world, 820, 459);
+  const vC = verse(SC.tent, 640, 150, 36, 44, true);
+
+  // ================= 4 filled: the cloud settles, light fills the tent; shakan and mishkan =================
+  const D0 = S("filled", 0), D1 = S("filled", 1), D2 = S("filled", 2);
+  const cloud = el("path", { d: cloudD, fill: MUTED, stroke: STONE, "stroke-width": 2.5, "stroke-linejoin": "round" }, world);
+  const tentGlow = glow(world, 470, 300, 340, 190);
+  const words = el("g", {}, world);
+  const wL = el("g", {}, words); txt(wL, "ital", 300, 300, "shakan", 46); lab(wL, 300, 330, "TO SETTLE", 14); const wLl = el("path", { d: "M360 312 Q440 300 500 330", fill: "none", stroke: STONE, "stroke-width": 2.5, "stroke-dasharray": "4 8", "stroke-linecap": "round" }, wL);
+  const wR = el("g", {}, words); txt(wR, "ital", 980, 300, "mishkan", 46); lab(wR, 980, 330, "TABERNACLE", 14); el("path", { d: "M910 314 Q820 320 712 392", fill: "none", stroke: STONE, "stroke-width": 2.5, "stroke-dasharray": "4 8", "stroke-linecap": "round" }, wR);
+  const vD = verse(SC.filled, 640, 148, 34, 50, true);
+  const qD = txt(world, "disp", 640, 250, "?", 96, { fill: MUSTARD });
+
+  // ================= 5 temple: the cloud again; heaven cannot contain him; the place to pray toward =================
+  const P0 = S("temple", 0), P1 = S("temple", 1), P2 = S("temple", 2);
+  const gT = el("g", {}, world);
+  const tFill = el("path", { d: "M430 470 V380 H520 V330 H760 V280 H810 V470 Z", fill: WARM }, gT);
+  const tDark = el("path", { d: "M430 470 V380 H520 V330 H760 V280 H810 V470 Z", fill: STONE }, gT);
+  const tLight = el("rect", { x: 432, y: 470, width: 376, height: 0, fill: MUSTARD }, gT);
+  const tLine = line(gT, TEMPLE, { "stroke-width": 3 });
+  const tDoor = el("rect", { x: 774, y: 412, width: 24, height: 58, fill: CHAR }, gT);
+  const tDash = el("path", { d: TEMPLE, fill: "none", stroke: STONE, "stroke-width": 2.5, "stroke-dasharray": "5 9", "stroke-linecap": "round" }, world);
+  const priests = [850, 884, 918, 952].map((x) => dot(world, x, 459));
+  const heaven = glow(world, -120, 90, 1520, 500);
+  const pray = el("g", {}, world);
+  [100, 150, 200, 250].forEach((x) => dot(pray, x, 459)); [1030, 1080, 1130, 1180].forEach((x) => dot(pray, x, 459));
+  const prayLines = [line(pray, "M250 430 Q340 330 428 400", { stroke: STONE, "stroke-width": 2.5 }), line(pray, "M1030 430 Q930 330 812 380", { stroke: STONE, "stroke-width": 2.5 })];
+  const labTemple = lab(world, 620, 506, "JERUSALEM · ABOUT 960 BC");
+  const labPray = lab(world, 640, 506, "THE PLACE TO PRAY TOWARD");
+  const vP = verse(SC.temple, 640, 140, 34, 48, true);
+
+  // ================= 6 leaves: threshold, east gate, mountain east; brief; the exiles; the return =================
+  const L0 = S("leaves", 0), L1 = S("leaves", 1), L2 = S("leaves", 2);
+  const east = el("g", {}, world);
+  sline(east, "M940 470 V384 M992 470 V384 M930 384 H1002", 4);
+  line(east, "M1060 470 L1170 330 L1280 470", { stroke: LINE, "stroke-width": 3, "stroke-dashoffset": 0 });
+  const stops = [[800, "THRESHOLD"], [966, "EAST GATE"], [1170, "MOUNTAIN"]].map(([x, s]) => lab(east, x, 500, s, 12));
+  const glory = glow(world, 0, 300, 120, 180);
+  const labEz = lab(world, 640, 540, "EZEKIEL IN EXILE · ABOUT 592 BC");
+  const lab586 = lab(world, 620, 540, "586 BC");
+  const exiles = el("g", {}, world); [[70, 459], [110, 459], [150, 459], [190, 459], [230, 459], [90, 438], [130, 438], [170, 438], [210, 438]].forEach(([x, y]) => dot(exiles, x, y, y < 450 ? 7 : 9));
+  const labEx = lab(exiles, 150, 506, "EXILES");
+  const exGlow = glow(world, 20, 340, 260, 150);
+  const vL = verse(SC.leaves, 640, 132, 26, 60, false);
+
+  // ================= 7 immanuel: the word, then one upright bar =================
+  const I0 = S("immanuel", 0), I1 = S("immanuel", 1);
+  const gI = el("g", {}, world);
+  txt(gI, "disp", 640, 330, "Immanuel", 120); txt(gI, "ital", 640, 392, "“God with us”", 40); lab(gI, 640, 436, "MATTHEW 1:23 · BEREAN STANDARD BIBLE", 15);
+  const bar = el("rect", { x: 633, width: 14, rx: 3, fill: MUSTARD }, world);
+  const gable = line(world, "M556 470 V350 L640 284 L724 350 V470", { stroke: STONE, "stroke-width": 2.5 });
+  const barGlow = glow(world, 520, 250, 240, 240);
+
+  // ================= 8 word: he pitched his tent; four more times in Revelation =================
+  const W0 = S("word", 0), W1 = S("word", 1), W2 = S("word", 2), W3 = S("word", 3);
+  const tent1 = line(world, "M640 470 L690 396 L740 470 M690 396 V470", { "stroke-width": 3 });
+  const skeno = el("g", {}, world); txt(skeno, "ital", 940, 330, "skēnoō", 50); lab(skeno, 940, 364, "TO PITCH A TENT", 14);
+  const tents4 = [880, 950, 1020, 1090].map((x) => line(world, `M${x - 24} 470 L${x} 434 L${x + 24} 470`, { "stroke-width": 3 }));
+  const labRev = lab(world, 985, 506, "REVELATION", 14);
+  const vW = verse(SC.word, 640, 150, 36, 44, true);
+
+  // ================= 9 church: the veil torn; a temple made of people; in every place =================
+  const K0 = S("church", 0), K1 = S("church", 1), K2 = S("church", 2), K3 = S("church", 3);
+  const veil = el("g", {}, world), veilGlow = glow(veil, 560, 240, 160, 240);
+  const halves = [[540, 640], [640, 740]].map(([a, b]) => { const g = el("g", {}, veil); el("rect", { x: a, y: 236, width: 100, height: 234, fill: WARM, stroke: INK, "stroke-width": 3 }, g); [0.25, 0.5, 0.75].forEach((f) => sline(g, `M${a + 100 * f} 248 V462`, 2, LINE)); return g; });
+  sline(veil, "M526 232 H754", 5);
+  const tear = line(veil, "M640 236 L646 290 L636 340 L645 400 L640 470", { "stroke-width": 3 });
+  const labVeil = lab(world, 640, 506, "TOP TO BOTTOM");
+  const outline = el("path", { d: "M500 470 V340 L640 252 L780 340 V470" }, world); outline.setAttribute("display", "none");
+  const people = [...Array(30)].map((_, i) => ({ e: dot(world, 0, 0, 9), sx: 40 + R() * 1200, f: i / 29, d: R() }));
+  const churchGlow = glow(world, 480, 250, 320, 230);
+  const labPl = lab(world, 640, 506, "YOU · PLURAL");
+  const groups = [[150, 0.0], [320, 0.15], [960, 0.3], [1130, 0.45]].map(([x, dl]) => { const g = el("g", {}, world); [[-30, 459], [-10, 459], [10, 459], [30, 459], [-20, 440], [0, 440], [20, 440]].forEach(([dx, y]) => dot(g, x + dx, y, y < 450 ? 7 : 9)); const gl = glow(g, x - 70, 380, 140, 100); return { g, gl, dl }; });
+  const vK = verse(SC.church, 640, 140, 34, 48, true);
+  const qK = txt(world, "disp", 640, 210, "?", 96, { fill: MUSTARD });
+
+  // ================= 10 differ: two equal cards on a level beam =================
+  const Q0 = S("differ", 0), Q1 = S("differ", 1), Q2 = S("differ", 2), Q3 = S("differ", 3);
+  const gQ = el("g", {}, world), beam = el("g", {}, gQ);
+  sline(gQ, "M640 470 V236", 4);
+  sline(beam, "M260 234 H1020", 4); sline(beam, "M455 234 V270 M825 234 V270", 2.5, STONE);
+  el("rect", { x: 300, y: 270, width: 310, height: 184, fill: PAPER, stroke: INK, "stroke-width": 3 }, beam);
+  el("rect", { x: 670, y: 270, width: 310, height: 184, fill: PAPER, stroke: INK, "stroke-width": 3 }, beam);
+  const card = (x, head, names) => { const g = el("g", {}, beam); head.forEach((h, i) => txt(g, "disp", x, 326 + i * 36, h, 30)); names.forEach((n, i) => lab(g, x, 404 + i * 20, n, 12)); return g; };
+  const eden = [card(455, ["The first", "sanctuary"], ["GORDON WENHAM · 1986", "G. K. BEALE · 2004"]), card(825, ["A royal garden more", "than a sanctuary"], ["DANIEL BLOCK · 2013"])];
+  const ezek = [card(455, ["Built in a", "coming kingdom"], ["DISPENSATIONAL READERS"]), card(825, ["Fulfilled in Christ", "and the church"], ["MOST REFORMED, CATHOLIC", "AND ORTHODOX READERS,", "MANY PROTESTANTS"])];
+  const qQ = txt(gQ, "disp", 640, 200, "?", 80, { fill: STONE });
+  const topEden = lab(gQ, 640, 212, "EDEN"), topEz = lab(gQ, 640, 212, "EZEKIEL'S TEMPLE"), topDeb = lab(gQ, 640, 212, "STILL DEBATED");
+  const house = el("g", {}, gQ); el("path", { d: TEMPLE, fill: "none", stroke: INK, "stroke-width": 7, "stroke-linecap": "round", "stroke-linejoin": "round", transform: "translate(640 196) scale(0.36) translate(-620 -470)" }, house);
+  lab(house, 640, 112, "HIS FATHER'S HOUSE", 13);
+
+  // ================= 11 home: the city comes down, light everywhere, no temple in it =================
+  const H0 = S("home", 0), H1 = S("home", 1), H2 = S("home", 2), H3 = S("home", 3);
+  const everywhere = glow(world, -300, -60, 1880, 840);
+  const city = el("g", {}, world);
+  el("path", { d: "M560 290 L616 250 H796 L740 290 Z", fill: PAPER, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, city);
+  el("path", { d: "M740 290 L796 250 V430 L740 470 Z", fill: MUTED, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, city);
+  el("rect", { x: 560, y: 290, width: 180, height: 180, fill: WARM, stroke: INK, "stroke-width": 3 }, city);
+  [335, 380, 425].forEach((y) => sline(city, `M572 ${y} H728`, 2, LINE));
+  const noTemple = el("path", { d: TEMPLE, fill: "none", stroke: STONE, "stroke-width": 6, "stroke-dasharray": "10 16", "stroke-linecap": "round", transform: "translate(650 452) scale(0.34) translate(-620 -470)" }, world);
+  const dwellers = [380, 418, 456, 494, 830, 868, 906, 944, 982].map((x) => dot(world, x, 459));
+  const labNo = lab(world, 680, 506, "NO TEMPLE IN THE CITY"), labCube = lab(world, 680, 506, "THE CITY · A CUBE");
+  const small = el("g", {}, world);
+  el("path", { d: "M300 410 L318 398 H378 L360 410 Z", fill: PAPER, stroke: INK, "stroke-width": 2.5, "stroke-linejoin": "round" }, small);
+  el("path", { d: "M360 410 L378 398 V458 L360 470 Z", fill: MUTED, stroke: INK, "stroke-width": 2.5, "stroke-linejoin": "round" }, small);
+  el("rect", { x: 300, y: 410, width: 60, height: 60, fill: WARM, stroke: INK, "stroke-width": 2.5 }, small);
+  lab(small, 330, 506, "MOST HOLY PLACE", 13);
+  const gH = el("g", {}, world);
+  const hPath = el("path", { d: "M40 466 C140 448 220 470 320 458 S480 450 556 466", fill: "none", stroke: STONE, "stroke-width": 2.5, "stroke-dasharray": "3 10", "stroke-linecap": "round" }, gH);
+  const hTrees = [[110, 120, 46], [250, 96, 38]].map(([x, h, w]) => tree(gH, x, h, w));
+  const vH = verse(SC.home, 640, 148, 34, 48, true);
+
+  F.title("God with his people", 70);
+  F.endCard(SC.home.titleCard, END + 0.7);
+  return (t) => {
+    const outAll = 1 - up(t, END + 0.55, 0.5);
+    draw(ground, up(t, A0 - 0.6, 1.6)); op(ground, outAll);
+    // ----- 1 garden -----
+    const aOut = 1 - up(t, C0 - 0.9, 0.8);
+    op(gA, up(t, A0 - 0.2, 0.8) * aOut); trees.forEach((g, i) => { const a = up(t, A0 + 0.3 + i * 0.5, 0.8); op(g, a); g.setAttribute("transform", `translate(0 ${(14 * (1 - a)).toFixed(1)})`); });
+    op(gPath, up(t, A0 + 2.4, 1.0));
+    const walk = up(t, A1 + 0.3, 5.6), home1 = up(t, B1, 3.0), lx = mix(mix(90, 640, walk), 280, home1);
+    set(walkLight, { x: (lx + 6 * Math.sin(t * 0.9)).toFixed(1) }); lit(walkLight, up(t, A1, 1.0) * 0.11 * (1 - up(t, C0 - 0.9, 0.8)));
+    // the man and his wife: appear, hide among the trees, then go out east past the gate
+    const hide = up(t, B0, 1.1), out = up(t, B0 + 1.3, 1.9), camp0 = up(t, C2 - 0.4, 0.8);
+    pair.forEach((p, i) => { const x = mix(mix(540 + i * 64, 400 + i * 48, hide), 980 + i * 64, out); op(p, up(t, A1 + 0.2, 0.6) * (1 - camp0)); set(p, { cx: x.toFixed(1), cy: (459 - 4 * Math.abs(Math.sin(t * 6 + i)) * ((hide > 0.02 && hide < 0.98) || (out > 0.02 && out < 0.98) ? 1 : 0)).toFixed(1) }); });
+    op(vA, span(t, A1 - 0.2, B0 - 0.2, 0.5));
+    // ----- 2 shut -----
+    op(gB, up(t, B1 - 0.4, 0.6) * aOut); draw(fence, up(t, B1 - 0.2, 1.6)); posts.forEach((p, i) => op(p, up(t, B1 + 0.2 + (9 - i) * 0.1, 0.3)));
+    const shut = up(t, B1 + 0.4, 1.4); leafBars.forEach((b, k) => set(b, { x1: 824, x2: (824 + 56 * shut).toFixed(1), y1: 392 + k * 22, y2: 392 + k * 22 })); op(leaf, shut > 0.01 ? 1 : 0);
+    op(cherub, up(t, B1 + 0.8, 0.6));
+    op(qB, span(t, B2 - 0.1, C0 - 0.2, 0.5)); qB.setAttribute("transform", `translate(0 ${(3 * Math.sin(t * 2)).toFixed(1)})`);
+    op(vB, span(t, B1 - 0.1, B2 - 0.1, 0.5));
+    // ----- 3 tent -----
+    const cOut = 1 - up(t, P0 - 0.7, 0.7);
+    op(sinai, up(t, C0 - 0.3, 0.8) * (1 - up(t, D0 + 0.4, 0.8)));
+    op(gC, span(t, C0 - 0.1, C1 + 0.6, 0.6)); planLines.forEach((l, i) => draw(l, up(t, C0 + 0.6 + i * 0.7, 1.0)));
+    plan.setAttribute("transform", `translate(0 ${(40 * up(t, C1 - 0.2, 1.0)).toFixed(1)})`);
+    const tIn = up(t, C1 + 0.2, 1.6); op(tentG, up(t, C1, 0.6) * cOut); draw(tentLine, tIn); op(tentFill, up(t, C1 + 1.2, 0.8)); op(court, up(t, C1 + 1.4, 0.8));
+    camp.forEach((c) => { const a = up(t, C2 + c.d * 2.2, 0.6); op(c.e, a * cOut); c.e.setAttribute("cy", (c.y - 10 * (1 - a)).toFixed(1)); });
+    op(calf, span(t, C3 + 0.2, D0 + 0.4, 0.7));
+    // Moses: up the mountain to plead, back down to the tent door, stopped at it
+    const mUp = up(t, C3 + 1.0, 3.0), mDown = up(t, D0 + 0.2, 2.4), mDoor = up(t, at("filled", 1, 0.62), 1.0);
+    let mx = mUp < 0.45 ? mix(820, 940, mUp / 0.45) : mix(940, 1010, (mUp - 0.45) / 0.55);
+    mx = mix(mx, 790, mDown); mx = mix(mx, 744 + 4 * Math.sin(Math.PI * mDoor) * 0, mDoor);
+    const my = mx > 940 && mDown < 0.5 ? 459 - (mx - 940) * 1.33 : 459;
+    set(moses, { cx: mx.toFixed(1), cy: my.toFixed(1) }); op(moses, up(t, C3 + 0.6, 0.5) * cOut);
+    op(vC, span(t, C1 - 0.3, C3 - 0.3, 0.5));
+    // ----- 4 filled -----
+    const cDown = up(t, D0, 3.0), cLift = up(t, P0 - 0.8, 1.4), cAgain = up(t, at("temple", 0, 0.35), 2.2), cGo = up(t, P1 - 0.2, 1.2);
+    op(cloud, up(t, D0 - 0.2, 1.0) * (1 - cLift) + cAgain * (1 - cGo));
+    const cy = cAgain > 0 ? mix(200, 330, cAgain) : mix(mix(260, 382, cDown), 200, cLift), cx = cAgain > 0 ? 640 : 640;
+    move(cloud, cx + 4 * Math.sin(t * 0.7), cy + 2 * Math.sin(t * 1.1));
+    const fill = up(t, at("filled", 0, 0.55), 2.4); set(tentLight, { y: (470 - 86 * fill).toFixed(1), height: (86 * fill).toFixed(1) }); lit(tentLight, 0.12 * fill * cOut);
+    lit(tentGlow, 0.07 * fill * cOut * (1 + 0.15 * Math.sin(t * 1.5)));
+    op(words, span(t, D1 - 0.1, D2 - 0.2, 0.6)); op(wL, up(t, D1, 0.6)); op(wR, up(t, at("filled", 1, 0.3), 0.6));
+    op(vD, span(t, D0 - 0.2, D1 - 0.1, 0.5));
+    op(qD, span(t, D2 + 0.6, P0 - 0.3, 0.7));
+    // ----- 5 temple -----
+    const tOut = 1 - up(t, S("immanuel", 0) - 0.8, 0.7);
+    const tIn2 = up(t, P0 - 0.2, 2.0);
+    op(gT, up(t, P0 - 0.4, 0.6) * tOut); draw(tLine, tIn2); op(tFill, up(t, P0 + 1.2, 0.8)); op(tDoor, up(t, P0 + 1.4, 0.6));
+    const fallen = up(t, L1 + 0.2, 1.6);
+    op(tLine, 1 - fallen); op(tFill, up(t, P0 + 1.2, 0.8) * (1 - fallen)); op(tDoor, up(t, P0 + 1.4, 0.6) * (1 - fallen));
+    const tl = up(t, at("temple", 0, 0.45), 2.2), leave = up(t, at("leaves", 0, 0.3), 1.4);
+    set(tLight, { y: (470 - 190 * tl).toFixed(1), height: (190 * tl).toFixed(1) });
+    const wide = up(t, P1 + 0.3, 2.2) * (1 - up(t, P2, 1.6));
+    lit(tLight, 0.12 * tl * (1 - 0.5 * wide) * (1 - leave)); lit(heaven, 0.06 * wide);
+    priests.forEach((p, i) => { const a = up(t, P0 + 0.8 + i * 0.15, 0.5), back = up(t, at("temple", 0, 0.75) + i * 0.08, 1.4); op(p, a * (1 - up(t, L0 - 0.5, 0.6))); p.setAttribute("cx", (mix(830 + i * 34, 930 + i * 44, back)).toFixed(1)); });
+    op(labTemple, span(t, P0 + 0.6, P2 - 0.2, 0.6));
+    op(pray, span(t, P2 - 0.2, L0 - 0.2, 0.6)); prayLines.forEach((l) => draw(l, up(t, P2 + 0.6, 1.4))); op(labPray, span(t, P2 + 0.3, L0 - 0.2, 0.6));
+    op(vP, span(t, P1 - 0.3, P2 - 0.1, 0.5));
+    // ----- 6 leaves -----
+    const darken = up(t, at("leaves", 0, 0.85), 1.6); op(tDark, 0.28 * darken * (1 - fallen) * tOut);
+    op(east, up(t, L0 - 0.2, 0.8) * (1 - up(t, L2 - 0.4, 0.8)));
+    const g1 = up(t, at("leaves", 0, 0.3), 1.4), g2 = up(t, at("leaves", 0, 0.52), 1.4), g3 = up(t, at("leaves", 0, 0.74), 1.6), ret = up(t, at("leaves", 2, 0.5), 2.6);
+    stops.forEach((s, i) => op(s, up(t, at("leaves", 0, 0.32 + i * 0.22), 0.5)));
+    const gx = mix(mix(mix(mix(475, 800, g1), 966, g2), 1170, g3), 620, ret);
+    set(glory, { x: (gx - 60).toFixed(1), y: (300 - 30 * g3 * (1 - ret)).toFixed(1) });
+    lit(glory, 0.12 * up(t, at("leaves", 0, 0.28), 0.5) * (1 - 0.6 * up(t, L1 - 0.4, 0.8) * (1 - ret)) * (1 - up(t, S("immanuel", 0) - 0.8, 0.7)));
+    op(labEz, span(t, L0 + 0.3, L1 - 0.2, 0.6)); op(lab586, span(t, L1 + 0.2, L2 - 0.2, 0.5));
+    const renew = up(t, at("leaves", 2, 0.55), 1.6); op(tDash, (0.6 * fallen * (1 - renew) + renew) * tOut);
+    op(exiles, span(t, L2 - 0.2, S("immanuel", 0) - 0.4, 0.7)); lit(exGlow, 0.1 * span(t, L2 + 0.3, at("leaves", 2, 0.6), 0.8));
+    op(vL, span(t, L0 - 0.2, L1 - 0.2, 0.5));
+    // ----- 7 immanuel -----
+    const iIn = up(t, I0 - 0.3, 0.9), iUp = up(t, I1 - 0.4, 1.2), iOut = 1 - up(t, W0 - 0.6, 0.6);
+    op(gI, iIn * iOut * (1 - 0.0 * iUp)); gI.setAttribute("transform", `translate(640 ${(330 - 150 * iUp).toFixed(1)}) scale(${mix(1, 0.62, iUp).toFixed(3)}) translate(-640 -330)`);
+    const bh = 140 * up(t, I1 - 0.1, 1.2), bx = mix(633, 553, up(t, W0 - 0.2, 1.4));
+    set(bar, { x: bx.toFixed(1), y: (470 - bh).toFixed(1), height: Math.max(0.1, bh).toFixed(1) }); op(bar, (bh > 0.5 ? 1 : 0) * (1 - up(t, at("church", 0, 0.25), 0.9)));
+    op(gable, span(t, I1, W0 + 0.6, 0.6)); draw(gable, up(t, I1 + 0.4, 1.6));
+    set(barGlow, { x: (bx - 113).toFixed(1) }); lit(barGlow, (0.08 * up(t, I1 + 0.6, 1.2) + 0.03 * up(t, W3, 1.4)) * (1 - up(t, at("church", 0, 0.25), 0.9)));
+    // ----- 8 word -----
+    const wOut = 1 - up(t, K0 - 0.6, 0.7);
+    draw(tent1, up(t, at("word", 0, 0.5), 1.4)); op(tent1, wOut);
+    op(skeno, span(t, W1 - 0.1, K0 - 0.6, 0.6)); skeno.setAttribute("transform", `translate(0 ${(-60 * up(t, W2 - 0.3, 1.0)).toFixed(1)})`);
+    tents4.forEach((l, i) => { draw(l, up(t, W2 + 0.4 + i * 0.45, 0.6)); op(l, wOut); }); op(labRev, span(t, W2 + 0.6, K0 - 0.6, 0.6));
+    op(vW, span(t, W0 - 0.3, W2 - 0.3, 0.5));
+    // ----- 9 church -----
+    const vOut = 1 - up(t, K1 + 1.0, 0.8);
+    op(veil, up(t, K0 - 0.2, 0.8) * vOut); draw(tear, up(t, at("church", 0, 0.42), 1.3));
+    const part = up(t, at("church", 0, 0.68), 1.6); halves.forEach((h, i) => h.setAttribute("transform", `translate(${((i ? 1 : -1) * 62 * part).toFixed(1)} 0)`));
+    lit(veilGlow, 0.12 * part); op(labVeil, span(t, at("church", 0, 0.45), K1 + 0.6, 0.6));
+    const L = outline.getTotalLength(), qOut = 1 - up(t, Q0 - 0.6, 0.6);
+    people.forEach((p) => { const a = up(t, K1 + 0.6 + p.d * 1.6, 2.2), pt = outline.getPointAtLength(p.f * L); op(p.e, up(t, K1 + 0.2 + p.d * 0.8, 0.5) * qOut);
+      set(p.e, { cx: mix(p.sx, pt.x, a).toFixed(1), cy: (mix(459, pt.y, a) - 6 * Math.sin(Math.PI * a)).toFixed(1) }); });
+    lit(churchGlow, 0.09 * up(t, at("church", 1, 0.7), 1.6) * qOut);
+    op(labPl, span(t, K2 + 0.2, K3 - 0.1, 0.5));
+    groups.forEach((g) => { const a = up(t, at("church", 2, 0.45 + g.dl * 0.6), 0.7); op(g.g, a * qOut); lit(g.gl, 0.07 * a); });
+    op(vK, span(t, K1 - 0.3, K2 + 0.4, 0.5));
+    op(qK, span(t, K3 + 0.5, Q0 - 0.4, 0.7));
+    // ----- 10 differ -----
+    const dOut = 1 - up(t, H0 - 0.8, 0.7);
+    op(gQ, up(t, Q0 - 0.3, 0.8) * dOut); beam.setAttribute("transform", `rotate(${(0.5 * Math.sin(t * 0.8)).toFixed(3)} 640 234)`);
+    op(qQ, span(t, Q0 + 0.2, Q1 - 0.1, 0.5));
+    eden.forEach((c, i) => op(c, span(t, at("differ", 1, 0.32 + i * 0.3), Q2 - 0.1, 0.6))); op(topEden, span(t, Q1 + 0.1, Q2 - 0.1, 0.5));
+    ezek.forEach((c, i) => op(c, up(t, Q2 + 0.4 + i * 3.2, 0.6) * (1 - 0.55 * up(t, Q3 + 0.3, 1.0)))); op(topEz, span(t, Q2 + 0.2, Q3 - 0.1, 0.5));
+    op(topDeb, span(t, Q3 + 0.1, at("differ", 3, 0.5), 0.5)); op(house, up(t, at("differ", 3, 0.55), 0.8));
+    // ----- 11 home -----
+    const down2 = up(t, H0 - 0.5, 3.0);
+    op(city, up(t, H0 - 0.6, 0.6) * outAll); city.setAttribute("transform", `translate(0 ${(-420 * (1 - down2)).toFixed(1)})`);
+    lit(everywhere, 0.1 * down2 * outAll * (1 + 0.1 * Math.sin(t * 1.3)));
+    op(noTemple, span(t, H1 - 0.3, at("home", 1, 0.75), 0.6) * (1 - 0.0)); noTemple.setAttribute("opacity", (0.9 * span(t, H1 - 0.3, at("home", 1, 0.75), 0.6) * (1 - up(t, at("home", 1, 0.4), 1.0) * 0.85)).toFixed(3));
+    dwellers.forEach((d, i) => { op(d, up(t, H0 + 2.6 + i * 0.12, 0.5) * outAll); if (i < 4) d.setAttribute("cx", ([380, 418, 456, 494][i] + 56 * up(t, H3 + 0.4, 4.0)).toFixed(1)); });
+    op(labNo, span(t, H1 + 0.1, H2 - 0.1, 0.5)); op(labCube, span(t, H2 + 0.2, H3 - 0.1, 0.5)); op(small, span(t, H2, H3 + 0.4, 0.6));
+    op(gH, up(t, H3 - 0.2, 0.8) * outAll); hTrees.forEach((g, i) => op(g, up(t, H3 + i * 0.4, 0.6)));
+    op(vH, span(t, at("home", 0, 0.3), H1 - 0.2, 0.5));
+  };
+});
+</script>
+</body></html>
