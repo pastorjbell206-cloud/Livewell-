@@ -1,0 +1,129 @@
+{
+  "title": "Not one sparrow",
+  "note": "Doctrine film, written 2026-11-27 from the Study Bible doctrine page /study/bible/doctrines/providence. Every fact comes from client/public/bible/doctrines/providence.json (sections named in facts.md). Where Christians differ, the film names the three accounts in the file's differ section, in the file's order, each in one line of about the same length, and takes no side. Scripture is the Berean Standard Bible, copied from client/public/bible/text/.",
+  "page": "/study/bible/doctrines/providence",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "question",
+      "kicker": "The question",
+      "level": 0.2,
+      "lines": [
+        "Some days everything falls into place. Other days it all falls apart.",
+        "Is anyone holding any of this? Or is it all just chance?"
+      ]
+    },
+    {
+      "id": "confess",
+      "kicker": "What the church confesses",
+      "level": 0.3,
+      "lines": [
+        "The church's answer is an old word. Providence.",
+        "It means God's continuing care for the world He made.",
+        "Rain and harvest, the rise and fall of kings, and ordinary people's choices all fall within His care.",
+        "He keeps all things in being. He acts in and with what His creatures really do. And He directs everything toward its appointed end."
+      ]
+    },
+    {
+      "id": "joseph",
+      "kicker": "One event, two intentions",
+      "level": 0.4,
+      "lines": [
+        "The Old Testament's great story of providence is Joseph.",
+        "His brothers sell him out of envy. He's falsely accused and imprisoned. But at each step, the Lord is with him.",
+        "Years later he tells his brothers that what they intended for evil, God intended for good, to preserve many lives.",
+        "One event, two intentions. The brothers are guilty of theirs, and God's purpose is good. Joseph doesn't excuse them, and he doesn't call the evil good."
+      ]
+    },
+    {
+      "id": "quiet",
+      "kicker": "What looks like chance",
+      "level": 0.5,
+      "lines": [
+        "Ruth, a widow, goes out to gather grain and happens to come to the field of Boaz. The reader sees a hand she doesn't.",
+        "Proverbs says even the cast lot, which looks like pure chance, is decided by the Lord.",
+        "But Job and Ecclesiastes keep this from becoming a formula. Providence is real, and it isn't transparent."
+      ]
+    },
+    {
+      "id": "sparrows",
+      "kicker": "What Jesus taught",
+      "level": 0.55,
+      "lines": [
+        "Jesus makes providence a reason not to be afraid.",
+        "Are not two sparrows sold for a penny? Yet not one of them will fall to the ground apart from the will of your Father.",
+        "But He won't make it an easy answer to suffering. Of eighteen people killed when a tower at Siloam fell, He said they weren't worse sinners than others."
+      ],
+      "scripture": {
+        "reference": "Matthew 10:29",
+        "translation": "Berean Standard Bible",
+        "text": "Are not two sparrows sold for a penny? Yet not one of them will fall to the ground apart from the will of your Father.",
+        "spoken": true
+      }
+    },
+    {
+      "id": "cross",
+      "kicker": "The cross",
+      "level": 0.65,
+      "lines": [
+        "The cross is the greatest case of the pattern seen in Joseph.",
+        "Peter said Jesus was delivered up by God's set plan, and put to death by lawless hands.",
+        "The act was lawless, and those who did it were guilty. It was also God's plan to save the world."
+      ]
+    },
+    {
+      "id": "history",
+      "kicker": "An old argument",
+      "level": 0.7,
+      "lines": [
+        "The first Christians taught this in a world already arguing about it.",
+        "Stoics taught something close to impersonal fate. Epicureans said the gods took no interest in the world.",
+        "They rejected both. God is personal, He cares, and His rule doesn't erase human responsibility."
+      ]
+    },
+    {
+      "id": "differ",
+      "kicker": "Where Christians differ",
+      "level": 0.75,
+      "lines": [
+        "Christians have long disagreed about how God's rule fits with free human choices.",
+        "In the Reformed and Thomist account, God ordains all that comes to pass, even free choices, which stay genuinely human and responsible. Evil remains wholly the creature's.",
+        "In the Arminian and Wesleyan account, God governs and knows all things, but gives people real freedom to choose otherwise. He permits much He doesn't cause, including sin.",
+        "In the Molinist account, God knows what any free creature would freely do in any situation, and chose a world where His purposes come about through free choices.",
+        "Each one points to Scripture for its answer."
+      ]
+    },
+    {
+      "id": "life",
+      "kicker": "What it changes",
+      "level": 0.85,
+      "lines": [
+        "In 1563 the Heidelberg Catechism said providence teaches patience in hard times, thankfulness in good ones, and trust for the future.",
+        "That trust isn't knowing why each thing happens. Joseph saw his story only years later. Job was never told why.",
+        "It frees you to plan and work without believing everything depends on you.",
+        "When wrong is done to you, you can name it, grieve it, and still expect that the God who turned the cross into the world's salvation hasn't let go of your life."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "Make your plans the way the letter of James teaches. If the Lord is willing.",
+        "A man’s heart plans his course, but the LORD determines his steps.",
+        "Take the next step. The world isn't yours to carry."
+      ],
+      "scripture": {
+        "reference": "Proverbs 16:9",
+        "translation": "Berean Standard Bible",
+        "text": "A man’s heart plans his course, but the LORD determines his steps.",
+        "spoken": true
+      },
+      "titleCard": [
+        "The world isn't yours to carry.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}
