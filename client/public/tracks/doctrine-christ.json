@@ -1,0 +1,610 @@
+{
+  "slug": "doctrine-christ",
+  "title": "The person and work of Christ",
+  "for": "I want to know who Jesus is and what he did",
+  "subtitle": "Eleven sessions on who Jesus is and what he did, from the promise of the Messiah to his return, so you can state each doctrine, trace it to Scripture and explain it to someone else.",
+  "intro": [
+    "The question at the center of the Christian faith is the one Jesus put to his disciples near Caesarea Philippi, when he asked who they said he was. These eleven sessions take that question slowly: the promise of the Messiah, the Son made flesh, truly God and truly man, one person in two natures, his three offices, the cross, the empty tomb, his reign now and his return.",
+    "Each session aims at four things. By its end you should be able to say the doctrine in your own words, show where it comes from in Scripture, say why the church holds it, and explain it simply to someone else. What the creeds confess is confessed plainly here. Where faithful Christians differ, each view is given in the form its own defenders would sign, and the question is left open. The track goes further than The core doctrines, from Scripture, and it helps to have met them there first."
+  ],
+  "leader": {
+    "about": [
+      "This guide is for anyone leading a group through The person and work of Christ. It suits believers who want to know what they confess about Jesus and why, and it suits a thoughtful outsider who wants to hear the church's claims about him stated carefully. The leader's task is to keep the group close to the text of Scripture, to say plainly what the creeds confess, and to give room where faithful Christians differ.",
+      "Each person reads the session, opens its page and does what it asks before the group meets. The meeting doesn't repeat the teaching. It talks over what people found, and it always gives someone the chance to explain the doctrine aloud in their own words, because the aim of the track is that every member could explain Jesus to a friend."
+    ],
+    "sections": [
+      {
+        "id": "group",
+        "title": "The group",
+        "body": [
+          "Four to ten people is a good size. Meet for about seventy-five minutes, weekly or fortnightly, for eleven meetings, and keep the end time you promised. Several sessions open long pages, so say at the start that no one needs to read every word, only enough to bring one thing they noticed and one question. A leader doesn't need to be a theologian, only to have done the reading and to be willing to say when they don't know."
+        ]
+      },
+      {
+        "id": "room",
+        "title": "The room",
+        "body": [
+          "A table works best, with Bibles open in print or on a phone, and paper for notes. Say at the first meeting that anyone may pass on any question, that disagreement on open questions is welcome, and that no one has to pray aloud. What people say about their own lives stays in the room, unless someone is in danger."
+        ]
+      },
+      {
+        "id": "order",
+        "title": "The order of a meeting",
+        "body": [
+          "About seventy-five minutes, in this order. Keep to the times loosely and to the end time strictly."
+        ],
+        "steps": [
+          "Ten minutes: the opening question, once round the circle. Anyone may pass.",
+          "Ten minutes: one person reads the verse aloud with the passage around it, while the others follow.",
+          "Thirty minutes: the three questions to talk over, in order. Ask where each answer is found, in Scripture or on the page.",
+          "Ten minutes: two people explain the session's doctrine in their own words, as if to a friend who has never heard it.",
+          "Ten minutes: what each person did with the session's task, and one question it raised.",
+          "Five minutes: the prayer prompt, in the group's own words, and the date of the next meeting."
+        ]
+      },
+      {
+        "id": "hard",
+        "title": "When a hard question comes",
+        "body": [
+          "Some questions in this track are first-order: that Jesus is truly God and truly man, one person, crucified for us, bodily raised, reigning and coming again. Confess these plainly, without apology and without heat. Others are not: which picture of the cross holds the rest together, the order of events at the end, whether Christ could have given way to temptation. Let each view be stated in a form its own defenders would accept, and leave those questions open.",
+          "When a skeptic in the group presses an objection, thank them, and give the objection its full weight before anyone answers it. If no one knows the answer, write the question down and bring it back the next week."
+        ]
+      },
+      {
+        "id": "hurting",
+        "title": "When someone is hurting",
+        "body": [
+          "A track about Jesus will touch people's lives. The session on his humanity can land on someone who feels abandoned by God, the session on the cross on someone who cannot forgive themselves, and the sessions on the resurrection and his return on someone who has just buried a parent. When that happens, stop and listen. Thank them for saying it, don't explain their suffering for them, and don't hurry back to the outline. Speak with them on their own afterwards.",
+          "If someone says that anyone is harming them or a child, take it seriously and don't promise to keep it secret. A child who may be in danger is a matter for the authorities, not only for the group."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "When to point someone to Find Help",
+        "body": [
+          "Point someone to Find Help when what they carry has grown too heavy to set down: grief that has taken their sleep or appetite for weeks, guilt or fear that will not let them rest, harm done to them at home or in a church, or any sign that they no longer want to be alive. The Find Help page on this site lists places to turn, and its lines for help right now are open day and night. If anyone is in danger now, call your local emergency number. A leader is a friend in that moment, not a counsellor, and the kindest thing is often to stay with the person while they make the first call."
+        ]
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "n": 1,
+      "title": "The promise of the Messiah",
+      "minutes": 10,
+      "teaching": [
+        "Jesus did not arrive unannounced. After the resurrection, on the road to Emmaus, two disciples heard him read their own Scriptures back to them: “beginning with Moses and all the Prophets, He explained to them what was written in all the Scriptures about Himself” (Luke 24:27). The promise runs through the whole Old Testament like a thread. In Eden God speaks of the woman's offspring who will crush the serpent's head. To Abraham he promises a blessing for all nations. To David he promises a throne that will last forever. The prophets add a child called Mighty God, a servant who suffers for others, and one like a son of man who receives an everlasting kingdom.",
+        "Messiah is the Hebrew word for anointed, and Christ is the same word in Greek. It is a title, not a surname. By the first century many Jews were waiting for an anointed king who would free Israel, and few expected him to suffer, which is why the disciples were so slow to understand. The church holds that Jesus is the Messiah because the apostles read the whole Old Testament as pointing to him, and because they learned to read it that way from him. To say who Jesus is, you start where he started: with a promise God made long before, kept in a way no one predicted."
+      ],
+      "open": {
+        "kind": "doctrine",
+        "label": "The Messiah, in the Study Bible",
+        "href": "/study/bible/doctrines/messiah",
+        "why": "The hope of an anointed one traced from Genesis through the kings and prophets to Jesus, with what first-century Jews expected and how the church read the promises."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "The king",
+          "href": "/study/explorer/watch/the-king",
+          "why": "A short film following the promised king from David's throne to the one the Gospels call the Son of David."
+        },
+        {
+          "kind": "chapter",
+          "label": "2 Samuel 7, passage by passage",
+          "href": "/study/bible/2-samuel/7#plain",
+          "why": "God's promise to David of a house and a throne forever, with plain notes on why the New Testament hears Jesus in it."
+        },
+        {
+          "kind": "study-tool",
+          "label": "Follow a verse: cross-references",
+          "href": "/study/cross-references",
+          "why": "Start from a promise such as Isaiah 9:6 and follow where the rest of Scripture takes it up."
+        }
+      ],
+      "question": "Which Old Testament promise would you point to first if a friend asked why Christians call Jesus the Christ, and what does it tell you about him?",
+      "do": "Read 2 Samuel 7:8-16 and Luke 1:30-33 side by side. Then write two sentences, in your own words, explaining to a friend what the title Christ means and why Christians give it to Jesus.",
+      "verse": {
+        "ref": "Luke 24:27",
+        "text": "And beginning with Moses and all the Prophets, He explained to them what was written in all the Scriptures about Himself."
+      },
+      "group": {
+        "open": "What did you assume the word Christ meant when you first heard it?",
+        "discuss": [
+          "Why might the first disciples have struggled to see a suffering Messiah in their Scriptures?",
+          "How does reading the Old Testament as one long promise change the way you read it?",
+          "Which promise in this session would you find hardest to explain to someone outside the faith, and why?"
+        ],
+        "pray": "Give thanks that God keeps his promises, and ask for patience to read the whole of Scripture as one story that leads to Christ."
+      }
+    },
+    {
+      "n": 2,
+      "title": "The incarnation and the virgin birth",
+      "minutes": 10,
+      "teaching": [
+        "The incarnation is the claim that the eternal Son of God became a human being without ceasing to be God. He did not begin to exist at Bethlehem. He took up a human life he had not had before. Paul says he “emptied Himself, taking the form of a servant, being made in human likeness” (Philippians 2:7), and John says “The Word became flesh and made His dwelling among us” (John 1:14). The church has never read that as God turning into a man and leaving heaven empty. It reads it as the Son adding humanity to his deity, so that God himself lived a human life from the inside.",
+        "Matthew and Luke both say that Jesus was conceived by the Holy Spirit and born of Mary, a virgin. They tell it from different sides, Joseph's in Matthew and Mary's in Luke, and neither treats it as decoration. The creeds kept it because it guards the incarnation: Jesus is truly born of a woman, and his life begins with an act of God rather than a human decision. Skeptics answer that wondrous births are common in ancient legend, and the case page weighs that objection at its strongest. The doctrine is not a claim that sex is shameful. It is a claim that salvation begins with God."
+      ],
+      "open": {
+        "kind": "doctrine",
+        "label": "The incarnation, in the Study Bible",
+        "href": "/study/bible/doctrines/incarnation",
+        "why": "The Son of God made flesh, traced from the promises of God dwelling with his people to John 1, with the church's long argument over what it means."
+      },
+      "also": [
+        {
+          "kind": "case",
+          "label": "The virgin birth",
+          "href": "/questions/jesus/the-virgin-birth",
+          "why": "The case for the faith on the virgin birth, with the parallel-legend objection stated fairly and what the two Gospel accounts do and do not claim."
+        },
+        {
+          "kind": "chapter",
+          "label": "Philippians 2, passage by passage",
+          "href": "/study/bible/philippians/2#plain",
+          "why": "Paul's hymn of the Son who emptied himself, with plain notes on what he gave up and what he did not."
+        },
+        {
+          "kind": "creed",
+          "label": "The Nicene Creed",
+          "href": "/resources/creeds/nicene-creed",
+          "why": "The creed that confesses the Son came down from heaven and was made man, with notes on the words the council chose."
+        }
+      ],
+      "question": "Why does it matter that the Son took on a real human life rather than only appearing in one?",
+      "do": "Read Luke 1:26-38 and Philippians 2:5-11. Then explain the incarnation in three plain sentences, as you would to a twelve-year-old, without using the word incarnation.",
+      "verse": {
+        "ref": "Galatians 4:4-5",
+        "text": "But when the time had fully come, God sent His Son, born of a woman, born under the law, to redeem those under the law, that we might receive our adoption as sons."
+      },
+      "group": {
+        "open": "What did Christmas mean to you as a child, and what does it mean now?",
+        "discuss": [
+          "What is the difference between God turning into a man and the Son adding humanity to himself?",
+          "Why do you think the creeds kept the virgin birth when they left so much else out?",
+          "How would you answer, honestly and without scorn, someone who says the virgin birth is just another ancient legend?"
+        ],
+        "pray": "Give thanks that the Son of God took on our flesh, and ask to understand more of what it cost him to come."
+      }
+    },
+    {
+      "n": 3,
+      "title": "Fully God: the New Testament evidence",
+      "minutes": 10,
+      "teaching": [
+        "The New Testament's claim that Jesus is God does not hang on one verse. It runs through the earliest sources. In Mark, the Gospel most scholars date first, Jesus tells a paralyzed man his sins are forgiven, and the scribes hear it exactly as it was meant: “Who can forgive sins but God alone?” (Mark 2:7). John opens with the Word who “was God” (John 1:1) and closes with Thomas, faced with the risen Jesus, saying “My Lord and my God” (John 20:28). Paul, writing before any Gospel, takes Isaiah's words about the LORD alone, that every knee will bow to him, and applies them to Jesus.",
+        "The strongest objection deserves its full weight. Bart Ehrman, an agnostic scholar, argues that the first followers believed God had exalted a man, and that the higher claims grew later. The case page sets out his argument in its own terms, and it also notes what he grants: that within about twenty years Paul wrote of a Christ who existed before he was born. Jews who would bow to no idol were praying to Jesus within a few years of the crucifixion. The church confesses his deity because the earliest witnesses already did, and because a Jesus who is less than God could not do what the gospel says he did."
+      ],
+      "open": {
+        "kind": "case",
+        "label": "Did Jesus claim to be God?",
+        "href": "/questions/jesus/did-jesus-claim-to-be-god",
+        "why": "The case for the faith on Jesus' own claims, read from the earliest sources and not only from John, with the skeptical reading stated first."
+      },
+      "also": [
+        {
+          "kind": "case",
+          "label": "How did Jesus become God?",
+          "href": "/questions/jesus/how-did-jesus-become-god",
+          "why": "Bart Ehrman's account of how belief in Jesus' deity grew, set out fairly, then weighed against what the earliest letters already say."
+        },
+        {
+          "kind": "chapter",
+          "label": "John 20, passage by passage",
+          "href": "/study/bible/john/20#plain",
+          "why": "The empty tomb and Thomas's confession, with plain notes on how John's Gospel ends where it began, with the Word who is God."
+        }
+      ],
+      "question": "Which piece of evidence for Jesus' deity would you find hardest to explain away, and why?",
+      "do": "Read Mark 2:1-12 and Philippians 2:5-11. Then write, in your own words, how a first-century Jew could worship Jesus without believing in two gods.",
+      "verse": {
+        "ref": "John 1:1",
+        "text": "In the beginning was the Word, and the Word was with God, and the Word was God."
+      },
+      "care": [
+        "Sometimes guilt that will not lift needs more than a Bible verse. It can be part of anxiety, depression or a habit of the mind that keeps returning to the same fear. That is not a failure of faith. Talk with a pastor or a friend you trust. If the fear will not let you rest, a counsellor or a doctor can help too, and the Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "When did you first hear someone say that Jesus is God, and what did you make of it?",
+        "discuss": [
+          "Why does it matter that the claim appears in Mark and in Paul, not only in John?",
+          "What does Ehrman's argument get right, and where does the earliest evidence press against it?",
+          "How could Jews who confessed that God is one worship Jesus without abandoning that confession?"
+        ],
+        "pray": "Worship Jesus as Lord and God, and pray for one person you know who finds that claim hard to accept."
+      }
+    },
+    {
+      "n": 4,
+      "title": "Fully man: temptation, weakness and growth",
+      "minutes": 10,
+      "teaching": [
+        "Believers can easily make Jesus less human than the Gospels do. He was born and nursed. He “grew in wisdom and stature” (Luke 2:52), which means there were things the boy did not yet know. He was hungry, tired enough to sleep through a storm, and moved to tears at a friend's grave. In Gethsemane he asked that the cup pass from him. Hebrews insists that he was “tempted in every way that we are, yet was without sin” (Hebrews 4:15). His temptations were real. He felt their pull, and he did not give way.",
+        "The early church fought for his humanity as hard as for his deity. Some said he only seemed to have a body. Apollinarius taught that the divine Word took the place of a human mind in him. The church refused both, and Gregory of Nazianzus gave the reason: what Christ did not take up, he did not heal. If he had no human mind, our minds are not saved. Christians still debate whether he could have given way to temptation, and they agree that he did not. The comfort is concrete. Whatever weakness you bring to prayer, he has carried it, and he is not ashamed to call you his own."
+      ],
+      "open": {
+        "kind": "chapter",
+        "label": "Hebrews 4, passage by passage",
+        "href": "/study/bible/hebrews/4#plain",
+        "why": "The great high priest who sympathizes with our weakness, with plain notes on what it means that he was tempted as we are."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Luke 2, passage by passage",
+          "href": "/study/bible/luke/2#plain",
+          "why": "The birth and boyhood of Jesus, ending with the verse that says he grew in wisdom and stature."
+        },
+        {
+          "kind": "chapter",
+          "label": "Mark 14, passage by passage",
+          "href": "/study/bible/mark/14#plain",
+          "why": "Gethsemane, where Jesus is deeply troubled and asks that the cup pass from him, with plain notes on what his prayer shows."
+        },
+        {
+          "kind": "film",
+          "label": "Who Jesus is",
+          "href": "/study/explorer/watch/who-jesus-is",
+          "why": "A short film on Jesus as truly God and truly one of us, made for families and plain for anyone."
+        }
+      ],
+      "question": "Which part of Jesus' humanity, his growing, his tiredness, his tears or his temptation, do you find it hardest to take seriously?",
+      "do": "Read Hebrews 4:14-16 and Mark 14:32-42. Then write one sentence you could say to a friend in a hard week about why it matters that Jesus was truly human.",
+      "verse": {
+        "ref": "Hebrews 4:15",
+        "text": "For we do not have a high priest who is unable to sympathize with our weaknesses, but we have one who was tempted in every way that we are, yet was without sin."
+      },
+      "care": [
+        "If you feel forsaken right now and the feeling will not lift, please tell someone you trust, a pastor, a friend or a doctor. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "When you picture Jesus in the Gospels, what is he usually doing?",
+        "discuss": [
+          "What would be lost if Jesus only seemed to be human?",
+          "What does Gregory of Nazianzus's argument, that what is not taken up is not healed, say about salvation?",
+          "How does Gethsemane change the way you pray when you are struggling?"
+        ],
+        "pray": "Bring your weaknesses honestly to Christ, and give thanks that he knows them from the inside."
+      }
+    },
+    {
+      "n": 5,
+      "title": "One person in two natures",
+      "minutes": 10,
+      "teaching": [
+        "By the fifth century the church had heard nearly every way of getting Jesus wrong. Arius made the Son a creature, and Nicaea answered him in 325. Apollinarius took away his human mind, and Constantinople answered in 381. Nestorius spoke as if the divine Son and the man Jesus were two subjects sharing a body, which is why the Council of Ephesus in 431 insisted that Mary could be called the God-bearer: the one she bore was the Son of God himself. Eutyches went the other way and blended the natures into a third thing. Chalcedon, in 451, answered him and the rest together.",
+        "Chalcedon confessed one person in two natures, without confusion, without change, without division, without separation. The first pair keeps the natures distinct, and the second keeps the person one. The definition does not explain how this can be. It marks the edges of a mystery so that no one falls off either side. The Oriental Orthodox churches, the Coptic, Ethiopian and Armenian among them, did not accept its wording and preferred Cyril's language of one incarnate nature, while rejecting Eutyches and confessing Christ fully God and fully man. That he is one person, truly God and truly man, is first-order."
+      ],
+      "open": {
+        "kind": "theology",
+        "label": "Who is Jesus?",
+        "href": "/theology/doctrine/christology",
+        "why": "Every view the early church weighed about Christ, each stated in its own best voice, before the councils judged them and the reasons they gave."
+      },
+      "also": [
+        {
+          "kind": "creed",
+          "label": "The Chalcedonian Definition",
+          "href": "/resources/creeds/chalcedonian-definition",
+          "why": "The council's own statement of 451, with notes on the error each careful phrase was written to shut out."
+        },
+        {
+          "kind": "essay",
+          "label": "The Council of Nicaea: what was decided in 325",
+          "href": "/writing/the-council-of-nicaea-what-was-decided-in-325",
+          "why": "What Nicaea actually settled about the Son, and what popular stories about the council get wrong."
+        },
+        {
+          "kind": "theology",
+          "label": "The glossary of theology",
+          "href": "/theology/glossary",
+          "why": "Plain definitions of the hard words in this session, among them hypostatic union, nature, person and God-bearer."
+        }
+      ],
+      "question": "Which of the errors Chalcedon refused do you hear most often today, perhaps in your own way of thinking about Jesus?",
+      "do": "Read the Chalcedonian Definition slowly. Then explain to a friend, in your own words and in under a minute, why Jesus is not half God and half man.",
+      "verse": {
+        "ref": "John 1:14",
+        "text": "The Word became flesh and made His dwelling among us. We have seen His glory, the glory of the one and only Son from the Father, full of grace and truth."
+      },
+      "group": {
+        "open": "Growing up, did you picture Jesus as more God than man, or more man than God?",
+        "discuss": [
+          "Why do you think it took the church four centuries to settle on these words?",
+          "What would be lost if the two natures were mixed, and what if the one person were divided?",
+          "Why might a fence around a mystery be wiser than an explanation of it?"
+        ],
+        "pray": "Worship the one Lord Jesus Christ, truly God and truly man, and ask for a mind that loves the truth more than tidiness."
+      }
+    },
+    {
+      "n": 6,
+      "title": "Prophet, priest and king",
+      "minutes": 10,
+      "teaching": [
+        "Israel was led by three kinds of anointed servant. The prophet spoke God's word to the people, the priest brought the people to God with sacrifice and prayer, and the king ruled and defended them on God's behalf. Each office failed in the hands of the people who held it, and each became a promise. Moses foretold a prophet like himself, and said of him, “You must listen to him” (Deuteronomy 18:15). A psalm of David names a king who is also “a priest forever in the order of Melchizedek” (Psalm 110:4). The New Testament sees all three meet in Jesus, and the title Christ, the anointed one, already holds them together.",
+        "The threefold office is a way of ordering what Scripture says, not a verse of Scripture itself. Some church fathers used it, John Calvin made it standard, and Lutherans, Catholics and many others use it now. Its value is balance. Some Christians know Jesus mostly as a teacher, some mostly as a sacrifice, some mostly as a ruler, and each picture alone shrinks him. As prophet he is God's last word. As priest he offered himself and still prays for his people. As king he reigns now and will put every enemy under his feet."
+      ],
+      "open": {
+        "kind": "doctrine",
+        "label": "Christ's three offices, in the Study Bible",
+        "href": "/study/bible/doctrines/offices",
+        "why": "Prophet, priest and king traced from Moses, Aaron and David to Jesus, with the history of the idea and what it guards against."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Hebrews 7, passage by passage",
+          "href": "/study/bible/hebrews/7#plain",
+          "why": "Melchizedek, the king who was also a priest, and why Hebrews sees in him the pattern of Jesus' priesthood."
+        },
+        {
+          "kind": "psalms",
+          "label": "Pray Psalm 110",
+          "href": "/tools/pray-the-psalms?psalm=110",
+          "why": "The psalm of the priest-king, prayed slowly, the Old Testament passage the New Testament returns to most."
+        }
+      ],
+      "question": "Which of the three offices do you lean on least, and what would change if you trusted Jesus in that one too?",
+      "do": "Read Hebrews 1:1-4. Find where the passage shows Jesus as prophet, as priest and as king, and write each down in a sentence of your own.",
+      "verse": {
+        "ref": "Hebrews 7:25",
+        "text": "Therefore He is able to save completely those who draw near to God through Him, since He always lives to intercede for them."
+      },
+      "group": {
+        "open": "When you hear the words priest or king, what comes to mind first, and does it help or hinder?",
+        "discuss": [
+          "Why might it matter that Jesus holds all three offices at once, rather than one of them?",
+          "Where does the church tend to shrink Jesus to a single office?",
+          "What difference does it make that Jesus is praying for his people now?"
+        ],
+        "pray": "Give thanks that Christ speaks, intercedes and reigns, and ask for grace to listen to him, draw near to him and obey him."
+      }
+    },
+    {
+      "n": 7,
+      "title": "The cross: how the pictures fit together",
+      "minutes": 10,
+      "teaching": [
+        "The New Testament describes the cross with several pictures at once, and four of them stand out. Substitution: “He Himself bore our sins in His body on the tree” (1 Peter 2:24). Ransom: the Son of Man came “to give His life as a ransom for many” (Mark 10:45). Victory: “having disarmed the powers and authorities, He made a public spectacle of them, triumphing over them by the cross” (Colossians 2:15). Example: Christ suffered for you, “leaving you an example, that you should follow in His footsteps” (1 Peter 2:21).",
+        "The pictures answer different questions. Victory names what was defeated: sin, death and the powers. Ransom names the cost and the freedom. Substitution names how, the righteous one standing in the place of the guilty. Example names the life that follows, and an example alone cannot rescue anyone. Many Reformed and Baptist Christians put substitution at the center, and LiveWell is written by a Baptist pastor who does. Others, following Gustaf Aulén, put victory there. Critics fear substitution sets the Father against the Son, and its defenders answer that “God was reconciling the world to Himself in Christ” (2 Corinthians 5:19). Which picture holds the others is argued. That he died for us is not."
+      ],
+      "open": {
+        "kind": "doctrine",
+        "label": "The atonement, in the Study Bible",
+        "href": "/study/bible/doctrines/atonement",
+        "why": "Each model of the cross stated by its own defenders, from penal substitution to Christus Victor, with the texts each one rests on."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Mark 10, passage by passage",
+          "href": "/study/bible/mark/10#plain",
+          "why": "The ransom saying in its setting, spoken to disciples arguing about who would be greatest."
+        },
+        {
+          "kind": "chapter",
+          "label": "Colossians 2, passage by passage",
+          "href": "/study/bible/colossians/2#plain",
+          "why": "The record of debt nailed to the cross and the powers disarmed, with plain notes on Paul's picture of victory."
+        }
+      ],
+      "question": "Which picture of the cross has meant most to you, and what would you lose if it were the only one you had?",
+      "do": "Read 1 Peter 2:21-25 slowly. Then explain to a friend, in four sentences, one for each picture, what Jesus did on the cross.",
+      "verse": {
+        "ref": "Mark 10:45",
+        "text": "For even the Son of Man did not come to be served, but to serve, and to give His life as a ransom for many."
+      },
+      "care": [
+        "Sometimes guilt that will not lift needs more than a Bible verse. It can be part of anxiety, depression or a habit of the mind that keeps returning to the same fear. That is not a failure of faith. Talk with a pastor or a friend you trust. If the fear will not let you rest, a counsellor or a doctor can help too, and the Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What were you taught, growing up, about why Jesus died?",
+        "discuss": [
+          "Why might the New Testament need several pictures to describe one event?",
+          "State the strongest objection to substitution, and then the strongest answer its defenders give.",
+          "Why can an example alone never be the whole of what the cross means?"
+        ],
+        "pray": "Give thanks for the cross in the words of whichever picture means most to you, and pray for anyone who cannot yet believe they are forgiven."
+      }
+    },
+    {
+      "n": 8,
+      "title": "The resurrection as event",
+      "minutes": 10,
+      "teaching": [
+        "Christians do not confess the resurrection as a symbol of hope or a way of saying his teaching lives on. They confess that the body laid in the tomb on Friday was raised on Sunday, transformed and never to die again. Paul hands on a summary he had himself received, which most scholars date to within a few years of the crucifixion: “that He was buried, that He was raised on the third day according to the Scriptures, and that He appeared to Cephas and then to the Twelve” (1 Corinthians 15:4-5). And Paul stakes everything on it: “if Christ has not been raised, our preaching is worthless, and so is your faith” (1 Corinthians 15:14).",
+        "The event carries meaning the church has drawn out ever since. It is God's verdict on Jesus, declaring him Son of God with power. It is the firstfruits, the first sheaf of a harvest that will include everyone who belongs to him. And it is bodily. The risen Jesus ate fish and invited his friends to touch him, so God means to renew his creation, not to escape it. Skeptics have offered alternatives, from a moved body to visions born of grief, and the case pages weigh each one at its strongest. The bodily resurrection is first-order. On Paul's own terms, a faith without it is not worth keeping."
+      ],
+      "open": {
+        "kind": "case",
+        "label": "The appearances and the alternatives",
+        "href": "/questions/jesus/the-appearances-and-the-alternatives",
+        "why": "The early list of witnesses, and each alternative explanation stated at its strongest before the evidence is weighed against it."
+      },
+      "also": [
+        {
+          "kind": "case",
+          "label": "The empty tomb",
+          "href": "/questions/jesus/the-empty-tomb",
+          "why": "The case for the empty tomb as history, with the strongest skeptical readings answered on their own terms."
+        },
+        {
+          "kind": "chapter",
+          "label": "1 Corinthians 15, passage by passage",
+          "href": "/study/bible/1-corinthians/15#plain",
+          "why": "Paul's long chapter on the resurrection of Jesus and of the body, with plain notes on the early creed it begins with."
+        },
+        {
+          "kind": "doctrine",
+          "label": "The resurrection, in the Study Bible",
+          "href": "/study/bible/doctrines/resurrection",
+          "why": "The hope of resurrection traced from the Old Testament to Easter and the last day, with what the church has always confessed."
+        }
+      ],
+      "question": "If the resurrection did not happen, what would be left of Christianity, and what would be left of your own hope?",
+      "do": "Read 1 Corinthians 15:1-28. Then explain to a friend, in three sentences, why Christians say the resurrection was an event and not a metaphor.",
+      "verse": {
+        "ref": "1 Corinthians 15:20",
+        "text": "But Christ has indeed been raised from the dead, the firstfruits of those who have fallen asleep."
+      },
+      "care": [
+        "If you are grieving someone who has died, these verses do not ask you to stop grieving. Jesus wept at his friend's grave (John 11:35). Paul says believers grieve, but not “like the rest, who are without hope” (1 Thessalonians 4:13). If your grief is so heavy that you cannot carry it, please tell someone: a pastor, a friend, a doctor or a counsellor. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Have you ever heard the resurrection described as a symbol, and what did you make of it?",
+        "discuss": [
+          "Why does Paul refuse to treat the resurrection as optional?",
+          "Which alternative explanation do you find most serious, and how does the evidence press against it?",
+          "What does a bodily resurrection say about how God regards the physical world, and your own body?"
+        ],
+        "pray": "Give thanks that Christ is risen, and pray by name for anyone in the group who is grieving."
+      }
+    },
+    {
+      "n": 9,
+      "title": "The ascension and his present reign",
+      "minutes": 10,
+      "teaching": [
+        "Forty days after Easter, Luke says, Jesus was taken up before his disciples' eyes. The ascension is easy to skip, as if it were only the way he left. The New Testament treats it as an enthronement. The Old Testament verse it quotes or echoes more than any other is about this: “The LORD said to my Lord: Sit at My right hand until I make Your enemies a footstool for Your feet” (Psalm 110:1). To sit at a king's right hand was to share his throne. God raised Christ and “seated Him at His right hand in the heavenly realms, far above all rule and authority” (Ephesians 1:20-21).",
+        "His reign is not on hold. Christ rules now, though not yet unopposed, and three things follow. A human being, still bearing our nature, is at the Father's right hand, so humanity has a future in God. He intercedes for his people, which means you are prayed for by the one who knows you best. And he has poured out the Spirit, which is why he told the disciples it was for their good that he go. The church's confidence in a hostile world does not rest on winning. It rests on a throne that is already occupied."
+      ],
+      "open": {
+        "kind": "doctrine",
+        "label": "Christ's ascension and reign, in the Study Bible",
+        "href": "/study/bible/doctrines/exaltation",
+        "why": "The risen Christ taken up and seated at God's right hand, traced from Psalm 110 to Revelation, with what his present reign means."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Acts 1, passage by passage",
+          "href": "/study/bible/acts/1#plain",
+          "why": "Luke's account of the ascension and the promise of the Spirit, with plain notes on the two men in white."
+        },
+        {
+          "kind": "study-tool",
+          "label": "Follow a verse: cross-references",
+          "href": "/study/cross-references",
+          "why": "Follow Psalm 110:1 into the New Testament and see how many writers reach for it to say who Jesus is."
+        }
+      ],
+      "question": "What changes in an ordinary week if Jesus is reigning now, and not only someday?",
+      "do": "Use the cross-references page to follow Psalm 110:1 into the New Testament. Note two places it appears, and write one sentence on what each writer uses it to say.",
+      "verse": {
+        "ref": "Acts 2:33",
+        "text": "Exalted, then, to the right hand of God, He has received from the Father the promised Holy Spirit and has poured out what you now see and hear."
+      },
+      "group": {
+        "open": "What did you picture, as a child, when you heard that Jesus went up into heaven?",
+        "discuss": [
+          "Why might the New Testament treat the ascension as an enthronement rather than a departure?",
+          "How does it change prayer to know that Jesus is interceding for you now?",
+          "Where does the church act as if the throne were empty, or as if it had to win to be safe?"
+        ],
+        "pray": "Worship Christ who reigns, and bring to him one situation where his rule feels far away."
+      }
+    },
+    {
+      "n": 10,
+      "title": "His return",
+      "minutes": 10,
+      "teaching": [
+        "As the disciples stared into the sky, two men in white told them: “This same Jesus, who has been taken from you into heaven, will come back in the same way you have seen Him go into heaven” (Acts 1:11). The return of Christ is not a side doctrine. Every creed confesses it: he will come again in glory to judge the living and the dead, and his kingdom will have no end. It is personal, because it is the same Jesus. It is public, seen by all. And it is the day the world is finally put right, with the resurrection of the body and the new creation.",
+        "Christians differ on the shape of the end: whether the thousand years of Revelation 20 are now or still to come, and whether believers will be taken up before a great tribulation. Those are second-order questions, and the track on where Christians differ gives each view room. What all share is first-order. Jesus said no one knows the day or the hour, so setting dates is disobedience, however earnest. Judgment is held by the one who was judged for us. And the right posture is the one the Bible ends with, which is longing: “Come, Lord Jesus” (Revelation 22:20)."
+      ],
+      "open": {
+        "kind": "doctrine",
+        "label": "Christ's return, in the Study Bible",
+        "href": "/study/bible/doctrines/return",
+        "why": "The second coming traced through the Gospels, the letters and Revelation, with the views on the millennium and the tribulation each stated fairly."
+      },
+      "also": [
+        {
+          "kind": "reading-guide",
+          "label": "How to read apocalyptic writing",
+          "href": "/study/bible/guides/reading-apocalyptic",
+          "why": "How books like Daniel and Revelation speak, in symbols and visions, so you can read them without fear or calendars."
+        },
+        {
+          "kind": "film",
+          "label": "The life to come",
+          "href": "/study/explorer/watch/life-to-come",
+          "why": "A short film on the hope the Bible ends with: the risen Christ, the resurrection of the body and a world made new."
+        }
+      ],
+      "question": "Does the thought of Christ's return comfort you, unsettle you, or hardly cross your mind, and why?",
+      "do": "Read Acts 1:6-11 and 1 Thessalonians 4:13-18. Then write down, in your own words, what every Christian confesses about his return and what is left open.",
+      "verse": {
+        "ref": "Titus 2:13",
+        "text": "as we await the blessed hope and glorious appearance of our great God and Savior Jesus Christ."
+      },
+      "care": [
+        "If you are grieving someone who has died, these verses do not ask you to stop grieving. Jesus wept at his friend's grave (John 11:35). Paul says believers grieve, but not “like the rest, who are without hope” (1 Thessalonians 4:13). If your grief is so heavy that you cannot carry it, please tell someone: a pastor, a friend, a doctor or a counsellor. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What were you taught about the end times, and how did it leave you feeling?",
+        "discuss": [
+          "Why is the return of Christ first-order when the millennium is not?",
+          "Why might it be a comfort that the judge is the one who was judged for us?",
+          "What would it look like for a church to long for his return without setting dates?"
+        ],
+        "pray": "Ask together for Christ's coming, in the Bible's last prayer, and pray for those in the group who are waiting in grief."
+      }
+    },
+    {
+      "n": 11,
+      "title": "Explaining Jesus to someone who admires him",
+      "minutes": 10,
+      "teaching": [
+        "Many people admire Jesus and stop there. Thomas Jefferson cut the miracles and the claims out of his Gospels and kept the moral teaching, and plenty of thoughtful people still hold Jefferson's Jesus. The view deserves respect. But the teaching people admire and the claims they set aside come from the same mouth, in the oldest sources. C. S. Lewis argued that a man who said what Jesus said must be a liar, a lunatic or the Lord. The Honest Answer grants that the argument is often used too quickly, because legend and honest mistake are real options, and it takes the time to meet them.",
+        "So explain it simply, and in order. Start with what your friend already admires, the Sermon on the Mount, and show that the same sermon sets Jesus' word beside the law given at Sinai. Then name what he did: forgave sins, accepted worship, said he would sit at God's right hand. Then name what happened: an empty tomb, and witnesses who saw him alive. Then stop, and let his own question stand: “Who do you say I am?” (Mark 8:29). You are not asked to win. You are asked to be honest about who he said he was, and to have answered it yourself."
+      ],
+      "open": {
+        "kind": "answer",
+        "label": "Was Jesus just a good teacher?",
+        "href": "/answers/was-jesus-just-a-good-teacher",
+        "why": "The Honest Answer that states the good-teacher view at its strongest, from Jefferson to modern scholars, before showing why the earliest sources make it hard to hold."
+      },
+      "also": [
+        {
+          "kind": "essay",
+          "label": "The historical Jesus",
+          "href": "/writing/the-historical-jesus",
+          "why": "What historians of every belief can say about Jesus of Nazareth, and where history hands the question back to the reader."
+        },
+        {
+          "kind": "howto",
+          "label": "How to answer hard questions about the faith",
+          "href": "/how-tos/wn-how-to-answer-hard-questions-about-the-faith",
+          "why": "Practical help for the conversation itself: listening first, admitting what you don't know, and answering without winning."
+        },
+        {
+          "kind": "track",
+          "label": "Next: The Holy Spirit and the church",
+          "href": "/tracks",
+          "why": "Next in Theology in Depth is The Holy Spirit and the church: who the Spirit is, what he does in a believer, and what the church is for."
+        }
+      ],
+      "question": "If a friend told you Jesus was a great moral teacher and nothing more, what would you say first?",
+      "do": "Write out, in five sentences or fewer, how you would explain who Jesus is to that friend: what he taught, what he claimed, what happened after. Then read it aloud once, and change anything that sounds like a sales pitch.",
+      "verse": {
+        "ref": "John 20:31",
+        "text": "But these are written so that you may believe that Jesus is the Christ, the Son of God, and that by believing you may have life in His name."
+      },
+      "care": [
+        "Sometimes guilt that will not lift needs more than a Bible verse. It can be part of anxiety, depression or a habit of the mind that keeps returning to the same fear. That is not a failure of faith. Talk with a pastor or a friend you trust. If the fear will not let you rest, a counsellor or a doctor can help too, and the Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Who in your life admires Jesus but would not call him Lord?",
+        "discuss": [
+          "What is true and worth honoring in the view that Jesus was a great teacher?",
+          "Why does the good-teacher view sit uneasily with the earliest sources?",
+          "How can you speak about Jesus to a friend honestly, without needing to win the argument?"
+        ],
+        "pray": "Pray by name for the friend you thought of, and ask for honesty and courage when the conversation comes."
+      }
+    }
+  ]
+}

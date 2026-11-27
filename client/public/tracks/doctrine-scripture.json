@@ -1,0 +1,518 @@
+{
+  "slug": "doctrine-scripture",
+  "title": "The doctrine of Scripture",
+  "for": "I want to know why we trust the Bible",
+  "subtitle": "Ten sessions on what Christians mean when they call the Bible God's word: how God speaks, what inspiration means, which books belong, how they reached us, and how to explain your trust to a friend.",
+  "intro": [
+    "Most Christians trust the Bible long before they can say why. That isn't a fault; a child trusts bread before knowing how it was baked. But a faith that means to last, and to be shared, needs to know what it is standing on. These ten sessions go beneath the first doctrine of the core track and ask the harder questions: what it means that Scripture is breathed out by God, where the human writers fit, which books belong and who decided, and whether what you read is what was written.",
+    "Where the church confesses together, the sessions say so plainly: God has spoken, and Scripture carries his authority. Where faithful Christians differ, over inerrancy, the Apocrypha and the place of tradition, each view is set out as its own defenders would put it, and the question is left with you. By the end you should be able to say what you believe about the Bible, show where that belief comes from, and explain it to a friend who doesn't share it."
+  ],
+  "leader": {
+    "about": [
+      "This guide is for anyone leading a small group through The doctrine of Scripture. It suits Christians who have trusted the Bible without being able to say why, and it suits the friend who doesn't trust it and wants to hear the reasons from people willing to admit the hard parts. The leader's task is to keep the group close to the text, to say plainly what the whole church confesses about Scripture, and to give each tradition a fair hearing where faithful Christians differ.",
+      "Each person reads the session, opens its page and does what it asks before the group meets. The meeting doesn't repeat the teaching. It talks over what people found, using the group guide for that session, gathered below in order with the page each session opens and the question it asks."
+    ],
+    "sections": [
+      {
+        "id": "group",
+        "title": "The group",
+        "body": [
+          "Four to ten people is a good size. Meet for about seventy-five minutes, once a week or once a fortnight, for ten meetings, and keep the end time you promised. Several pages in this track are long, so say at the start that no one needs to read every word, only enough to bring one thing they noticed and one question it raised. A leader doesn't need to be a scholar of manuscripts or councils. A leader needs to have done the reading and to be willing to say, plainly, that they don't know."
+        ]
+      },
+      {
+        "id": "room",
+        "title": "The room",
+        "body": [
+          "A table works best, with Bibles open, in print or on a phone, and if people bring different translations, so much the better: the differences will teach something. Make it plain at the first meeting that anyone may pass on any question, that some members will hold different views of inerrancy or the canon and that this is allowed, and that no one has to pray aloud. What people say about their own lives stays in the room, unless someone is in danger."
+        ]
+      },
+      {
+        "id": "order",
+        "title": "The order of a meeting",
+        "body": [
+          "About seventy-five minutes, in this order. Keep to the times loosely and to the end time strictly."
+        ],
+        "steps": [
+          "Ten minutes: the opening question, once round the circle. Anyone may pass.",
+          "Ten minutes: one person reads the verse aloud, and the passage around it, while the others follow.",
+          "Thirty-five minutes: the three questions to talk over, in order. Ask where each answer comes from, in Scripture or on the page.",
+          "Ten minutes: what each person did with the session's task, and what it showed them.",
+          "Five minutes: the prayer prompt, in the group's own words.",
+          "Five minutes: name the next session and the page it opens, and say when you will meet."
+        ]
+      },
+      {
+        "id": "hard",
+        "title": "When a hard question comes",
+        "body": [
+          "This track invites hard questions, and a member who brings a contradiction or a disputed manuscript to the table is doing what the track asks. First ask what order the question is. That God has spoken and that Scripture carries his authority is confessed by the whole church. How best to describe its truthfulness, the extent of the Old Testament and the place of tradition divide faithful churches but not the faith, and the group should leave them open.",
+          "Let each view be stated in a form its own defenders would accept before anyone argues against it. When no one knows the answer, write the question down and bring it back the next week. Don't rescue the Bible with an answer you aren't sure of; a skeptic will trust an honest not-yet more than a confident guess."
+        ]
+      },
+      {
+        "id": "hurting",
+        "title": "When someone is hurting",
+        "body": [
+          "Questions about the Bible are rarely only about the Bible. Someone may have been beaten with verses, told that a question was rebellion, or taught a view of Scripture that broke when they met their first hard passage, and the track can bring that back. When it does, stop and listen. Thank them for saying it, don't argue with their story, and don't hurry back to the outline. Ask whether they would like the group to go on or to pause, and speak with them on their own afterwards.",
+          "If someone says that a leader, a partner or anyone else is harming them or a child, take it seriously and don't promise to keep it secret. A child who may be in danger is a matter for the authorities, not only for the group."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "When to point someone to Find Help",
+        "body": [
+          "Point someone to Find Help when what they carry has become too heavy to set down: harm done to them in a church or at home, fear or guilt that will not let them rest, grief that has taken their sleep for weeks, or any sign that they no longer want to be alive. The Find Help page on this site lists places to turn, and its lines for help right now are open day and night. If anyone is in danger now, call your local emergency number. A leader is a friend in that moment, not a counsellor, and the kindest thing is often to stay with the person while they make the first call."
+        ]
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "n": 1,
+      "title": "God makes himself known",
+      "minutes": 10,
+      "teaching": [
+        "Before there is a doctrine of Scripture there is a doctrine of revelation, and the order matters. Human beings don't climb up to God by cleverness; God comes down and speaks. The church has long described two ways he does it. General revelation is what everyone receives through the world itself, the conscience and the ordinary goodness of life. Paul says that “since the creation of the world God’s invisible qualities, His eternal power and divine nature, have been clearly seen” (Romans 1:20). The skeptic who stands under a night sky and senses that it is too much to be an accident isn't imagining things. The psalmist would say the sky is speaking.",
+        "But general revelation has limits. It tells you that God is, and something of his power, but not his name, his promises, or what he has done about the wreckage of the world. For that, God spoke and acted in history: to Abraham, through Moses and the prophets, and finally in a person. Hebrews puts the whole arc in one sentence: “On many past occasions and in many different ways, God spoke to our fathers through the prophets. But in these last days He has spoken to us by His Son” (Hebrews 1:1-2). Scripture is the written witness to that special revelation, kept so that what God said and did would not be lost."
+      ],
+      "open": {
+        "kind": "theology",
+        "label": "How does God speak to us?",
+        "href": "/theology/doctrine/revelation",
+        "why": "The site's full treatment of revelation, with each tradition's account of how God speaks set out in the words its own defenders would use."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Psalm 19, passage by passage",
+          "href": "/study/bible/psalms/19#plain",
+          "why": "The psalm that moves from the sky's wordless speech to the law of the LORD, the two kinds of revelation in one poem."
+        },
+        {
+          "kind": "film",
+          "label": "Why can't I see God?",
+          "href": "/study/explorer/watch/why-cant-i-see-god",
+          "why": "A short film made for families on why God is unseen and how he has made himself known, most of all in Jesus."
+        }
+      ],
+      "question": "What has creation, or your own conscience, told you about God, and what has it left unsaid?",
+      "do": "Spend five minutes outside tonight and read Psalm 19:1-6 under the open sky. Then read verses 7 to 11 and write down what the second half gives that the first half cannot.",
+      "verse": {
+        "ref": "Hebrews 1:1-2",
+        "text": "On many past occasions and in many different ways, God spoke to our fathers through the prophets. But in these last days He has spoken to us by His Son, whom He appointed heir of all things, and through whom He made the universe."
+      },
+      "group": {
+        "open": "Where have you felt most strongly that there must be a God, and what did that moment tell you?",
+        "discuss": [
+          "Why does general revelation tell us that God is but not who he is?",
+          "What is the difference between God speaking through prophets and speaking by his Son?",
+          "If creation already speaks of God, why does anyone need a Bible at all?"
+        ],
+        "pray": "Give thanks that God has not stayed silent, and ask for ears to hear him in creation and in Scripture."
+      }
+    },
+    {
+      "n": 2,
+      "title": "Breathed out by God",
+      "minutes": 10,
+      "teaching": [
+        "Paul's word in 2 Timothy 3:16 is theopneustos, breathed out by God. It doesn't say that God breathed into the writings to make them inspiring, the way a good poem inspires. It says Scripture came out from God, the way breath comes from a mouth. Peter adds how this happened with the prophets: “men spoke from God as they were carried along by the Holy Spirit” (2 Peter 1:21). His picture is a ship under sail. The sailors are really at work, but the wind is what moves the ship. Inspiration is God's act through human beings, so that what they wrote is what he meant to say.",
+        "It helps to know what inspiration doesn't mean. It doesn't mean that everything said in the Bible is approved by it: Job's friends speak for chapters, and at the end God says they have not spoken of him accurately. It doesn't mean, for most Christians, that the writers took dictation in a trance. Christians who agree that every book is God-breathed still differ on how the breath and the pen worked together, from the verbal-plenary view to the dynamic view, and those are second-order questions. That the Bible is breathed out by God is not."
+      ],
+      "open": {
+        "kind": "theology",
+        "label": "What does it mean that the Bible is inspired?",
+        "href": "/theology/doctrine/inspiration",
+        "why": "Four views of how inspiration worked, from dictation to encounter, each in its defenders' own terms, with the ground they share named first."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "2 Peter 1, passage by passage",
+          "href": "/study/bible/2-peter/1#plain",
+          "why": "Peter's account of the prophets carried along by the Spirit, read with the eyewitness claim that comes just before it."
+        },
+        {
+          "kind": "study",
+          "label": "Walk through 2 Timothy 3",
+          "href": "/study/bible/2-timothy/3?study=walk",
+          "why": "The guided seven-step study of the chapter where Paul calls all Scripture God-breathed, so you read the claim in its own setting."
+        }
+      ],
+      "question": "What changes in how you read a hard passage if you believe it was breathed out by God and written by a real person?",
+      "do": "Read Job 42:7-9. Then write one sentence on how a book can record the friends' long speeches truly and still say they were wrong.",
+      "verse": {
+        "ref": "2 Peter 1:21",
+        "text": "For no such prophecy was ever brought forth by the will of man, but men spoke from God as they were carried along by the Holy Spirit."
+      },
+      "group": {
+        "open": "What did you assume inspiration meant before this session?",
+        "discuss": [
+          "How is God-breathed different from inspiring?",
+          "Why might the church care that the writers were not simply taking dictation?",
+          "Which of the four views on the page seems strongest to you, and what would its critics say?"
+        ],
+        "pray": "Ask the Spirit who carried the writers along to open the Scriptures to the group as you read them together."
+      }
+    },
+    {
+      "n": 3,
+      "title": "Human writers, human voices",
+      "minutes": 10,
+      "teaching": [
+        "Open the Bible anywhere and you'll hear different voices. Amos writes like a herdsman, because he was one. Paul argues, interrupts himself, and sends his letters by the hand of a scribe. Luke tells his reader that he did research, “having carefully investigated everything from the beginning” (Luke 1:3). Mark is in a hurry; John circles back. The Bible isn't one style pressed onto many pens. The writers kept their vocabulary, their temperament, their education and their setting, and God used all of it.",
+        "The church calls this the double authorship of Scripture. Every word is fully God's and fully the human writer's, not half and half. Many Christians have seen a likeness to the incarnation in it: the Word made flesh didn't stop being truly human, and the written word doesn't stop being truly human either. That is why reading well means attending to the writer's own world, kind of writing and purpose. The Chicago Statement of 1978, the classic statement of the inerrancy view, says the same in its own terms: God used the writers' distinct personalities and literary styles and did not override them."
+      ],
+      "open": {
+        "kind": "study-tool",
+        "label": "The 66 books at a glance",
+        "href": "/study/books-at-a-glance",
+        "why": "Every book's own shape set side by side, so you can see how different the writers, their purposes and their kinds of writing are."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Luke 1, passage by passage",
+          "href": "/study/bible/luke/1#plain",
+          "why": "Luke's own preface on his sources and his research, the clearest place where a writer tells you how he worked."
+        },
+        {
+          "kind": "film",
+          "label": "The Bible: how we got it",
+          "href": "/study/explorer/watch/the-bible",
+          "why": "A short film on many writers, spoken words written down and copies made by hand, made for families but clear at any age."
+        }
+      ],
+      "question": "Which writer of Scripture sounds most like himself to you, and what does God say through that voice that another voice couldn't?",
+      "do": "Read Luke 1:1-4 and then Amos 7:14-15. Write down what each man tells you about who he was and how he came to write or speak.",
+      "verse": {
+        "ref": "Luke 1:3-4",
+        "text": "Therefore, having carefully investigated everything from the beginning, it seemed good also to me to write an orderly account for you, most excellent Theophilus, so that you may know the certainty of the things you have been taught."
+      },
+      "group": {
+        "open": "Which book of the Bible do you find hardest to read, and is it the content or the voice?",
+        "discuss": [
+          "What does it mean to say the Bible is fully God's word and fully human words?",
+          "How does knowing that Luke did research change the way you read his Gospel?",
+          "Where does the likeness to the incarnation help, and where could it mislead?"
+        ],
+        "pray": "Give thanks that God speaks through ordinary human voices, and ask for patience with the writers whose voices are unfamiliar."
+      }
+    },
+    {
+      "n": 4,
+      "title": "The authority of Scripture",
+      "minutes": 10,
+      "teaching": [
+        "To say the Bible has authority is to say it has the right to tell you what is true and what to do, even when you disagree. That authority doesn't come from the church that gathered it, from the scholars who study it, or from how useful it feels. It comes from God, whose word it is. The clearest reason Christians hold it is Jesus himself. He settled arguments by quoting it, answered the devil with it in the wilderness, and said in passing, as if it went without saying, that “the Scripture cannot be broken” (John 10:35). A disciple takes his view of the Bible from his teacher.",
+        "Authority is easy to confess and hard to live under. Every reader is tempted to keep the verses that agree and quietly retire the rest. There is a plain test of whether the Bible is your authority: find the place where it corrects you, not your neighbor, and see what you do there. The church has failed that test in every century, and each of us fails it too. That is why the Reformers called Scripture the norm that norms every other norm. The creeds, the preacher, the tradition and the reader's own conscience all stand under it."
+      ],
+      "open": {
+        "kind": "theology",
+        "label": "What is the Bible, and can we trust it?",
+        "href": "/theology/doctrine/scripture",
+        "why": "The site's long treatment of Scripture's authority, with detailed inerrancy, infallibility and the confessional and catholic view each stated in the voice of those who hold it."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "John 10, passage by passage",
+          "href": "/study/bible/john/10#plain",
+          "why": "The chapter where Jesus says Scripture cannot be broken, read inside the argument where he says it."
+        },
+        {
+          "kind": "essay",
+          "label": "The Bible Assumes You Will Be Wrong",
+          "href": "/writing/the-bible-assumes-you-will-be-wrong",
+          "why": "An essay on reading Scripture as the book that corrects its readers, its friends included, rather than the one that confirms them."
+        }
+      ],
+      "question": "Where has the Bible told you something you didn't want to hear, and what did you do with it?",
+      "do": "Read Matthew 4:1-11. Note each time Jesus answers with Scripture, and write down which book he quotes each time and what that suggests about how he regarded it.",
+      "verse": {
+        "ref": "Psalm 119:89",
+        "text": "Your word, O LORD, is everlasting; it is firmly fixed in the heavens."
+      },
+      "group": {
+        "open": "Who or what has had the final say in your life when you were deciding what is true?",
+        "discuss": [
+          "Why does the source of the Bible's authority matter more than how useful it feels?",
+          "What does Jesus' own use of Scripture tell you about how he regarded it?",
+          "Where is the church today most tempted to set Scripture under something else?"
+        ],
+        "pray": "Ask for the honesty to let Scripture correct the group where it most needs correcting, and for grace in the correcting."
+      }
+    },
+    {
+      "n": 5,
+      "title": "Inerrancy and infallibility",
+      "minutes": 12,
+      "teaching": [
+        "Christians who agree that the Bible is God's word still argue about how to describe its truthfulness. Full inerrancy holds that Scripture, rightly read, is without error in everything it affirms, history and the natural world included. Its classic statement is the Chicago Statement on Biblical Inerrancy, drafted in 1978 by a gathering of evangelical scholars. It applies inerrancy to the original manuscripts and allows for round numbers, the ordinary language of sunrise and the conventions of ancient writing. Its defenders, following B. B. Warfield, argue that a Bible which errs where it can be checked gives no secure footing where it can't.",
+        "Infallibility holds that Scripture never fails in what God gave it to do, to make people “wise for salvation through faith in Christ Jesus” (2 Timothy 3:15), and that its descriptions of nature speak in the language of their day. Its defenders, such as G. C. Berkouwer, hold Scripture's authority as firmly as anyone and locate its truthfulness in what it intends to teach. Both sides claim to be guarding the same trust. The site treats this as a question that divides faithful Christians but not the faith, and the page sets out each view, including limited inerrancy, so you can weigh it yourself."
+      ],
+      "open": {
+        "kind": "theology",
+        "label": "What is biblical inerrancy?",
+        "href": "/theology/doctrine/inerrancy",
+        "why": "Full inerrancy, infallibility for faith and practice, and limited inerrancy, each stated in its strongest form, with why every side claims to defend the same trust."
+      },
+      "also": [
+        {
+          "kind": "doctrine",
+          "label": "Revelation, in the Study Bible",
+          "href": "/study/bible/doctrines/revelation",
+          "why": "Its section on where Christians differ sets detailed inerrancy, infallibility, the catholic view and Karl Barth's view side by side."
+        },
+        {
+          "kind": "case",
+          "label": "Numbers in Samuel, Kings and Chronicles",
+          "href": "/questions/contradictions/numbers-in-samuel-kings-and-chronicles",
+          "why": "A test case: parallel histories that give different numbers, the objection at full strength, and how careful readers account for the difference."
+        }
+      ],
+      "question": "When you meet a hard discrepancy in the Bible, what would each view tell you to do with it, and which do you find more honest?",
+      "do": "Read 2 Samuel 10:18 and 1 Chronicles 19:18 side by side. Write down how a defender of inerrancy and a defender of infallibility might each explain the difference.",
+      "verse": {
+        "ref": "Proverbs 30:5",
+        "text": "Every word of God is flawless; He is a shield to those who take refuge in Him."
+      },
+      "group": {
+        "open": "Have you ever been told that one error would bring the whole Bible down, and how did that land on you?",
+        "discuss": [
+          "What is each view trying to protect, put in its defenders' own words?",
+          "Why does the Chicago Statement apply inerrancy to the original manuscripts rather than to any copy or translation?",
+          "Why treat this as a question that divides churches but not the faith, and what would be lost if it were made a test of faith?"
+        ],
+        "pray": "Pray for charity between Christians who describe Scripture's truthfulness differently, and for trust in the God who speaks through it."
+      }
+    },
+    {
+      "n": 6,
+      "title": "Which books, and who decided",
+      "minutes": 12,
+      "teaching": [
+        "The canon is the list of books the church receives as Scripture. The word comes from the Greek for a measuring rod, so the books are both a list and a rule. A popular story says a council or an emperor voted the Bible into being. The history is slower and more interesting. The church inherited Israel's Scriptures and read the apostles' Gospels and letters in its gatherings from the start. It asked of each book whether it came from the apostles or their circle, agreed with the faith they taught, and had been used widely and long. Athanasius' Easter letter of 367 lists the twenty-seven New Testament books we have today.",
+        "Protestants describe the church as recognizing the canon rather than creating it, as sheep know their shepherd's voice. The Old Testament is where real differences remain. Protestant Bibles follow the Hebrew Scriptures, sixty-six books in all. The Catholic Church, confirming its list at Trent in 1546, receives seven more, the deuterocanonical books such as Tobit and Sirach. The Orthodox read a wider set still. Anglicans and Lutherans kept these books to be read for example of life but not to establish doctrine, following Jerome. Each communion gives reasons its own scholars would sign, and the pages set them out."
+      ],
+      "open": {
+        "kind": "reading-guide",
+        "label": "How the books were chosen",
+        "href": "/study/bible/guides/canon",
+        "why": "The Study Bible's guide to how the books were gathered and recognized, from Israel's Scriptures to the lists of the fourth century."
+      },
+      "also": [
+        {
+          "kind": "theology",
+          "label": "Why the Apocrypha is disputed",
+          "href": "/theology/doctrine/apocrypha",
+          "why": "The Catholic, Orthodox and Protestant positions on the disputed books, each in the words of its own defenders, a difference between communions rather than within one."
+        },
+        {
+          "kind": "essay",
+          "label": "Who Decided What Books Are in the Bible?",
+          "href": "/writing/who-decided-what-books-are-in-the-bible",
+          "why": "An essay on the popular story that a council voted the Bible into being, and on what the history actually shows."
+        }
+      ],
+      "question": "Does it matter to you whether the church created the canon or recognized it, and why?",
+      "do": "Look at the contents page of your own Bible. Count its books, find out which tradition's list it follows, and write down one reason that tradition gives for its list.",
+      "verse": {
+        "ref": "Luke 24:27",
+        "text": "And beginning with Moses and all the Prophets, He explained to them what was written in all the Scriptures about Himself."
+      },
+      "group": {
+        "open": "Before this session, how did you think the Bible's books were chosen?",
+        "discuss": [
+          "What three questions did the early church ask of a book, and why those three?",
+          "Why do Protestants, Catholics and Orthodox differ on the Old Testament but agree on the New?",
+          "What would a Catholic friend say about the Protestant canon, in the best form of the argument?"
+        ],
+        "pray": "Give thanks for the generations who kept, copied and read the Scriptures, and pray for the churches that read them differently."
+      }
+    },
+    {
+      "n": 7,
+      "title": "From the writers to your hands",
+      "minutes": 12,
+      "teaching": [
+        "No original manuscript of any biblical book survives, and the same is true of nearly every ancient book. What we have are copies, made by hand for well over a thousand years before printing. Skeptics are right that copyists made mistakes, and right that the copies differ in many small ways. The discipline of textual criticism compares the manuscripts, thousands of them in Greek for the New Testament alone, and works back toward what was first written. Most of the differences are spelling, word order and slips of the eye that change nothing a reader would notice.",
+        "Where a reading is genuinely uncertain, modern Bibles tell you in a note, which is honesty rather than cover-up. The longer ending of Mark and the woman caught in adultery are the best-known cases, and no belief of the faith rests on either. The church confesses that inspiration belongs to what the writers wrote, and that God has kept his word through ordinary, careful, fallible copying. Christians differ on which manuscripts best preserve it; they agree that it has been preserved. The prophet's line stands over the whole story: “the word of our God stands forever” (Isaiah 40:8)."
+      ],
+      "open": {
+        "kind": "case",
+        "label": "More differences than words?",
+        "href": "/questions/text/more-variants-than-words",
+        "why": "The skeptic's strongest form of the manuscript objection, granted where it is true, and what the differences among the copies actually are."
+      },
+      "also": [
+        {
+          "kind": "theology",
+          "label": "Can we trust the manuscripts?",
+          "href": "/theology/doctrine/textual-criticism",
+          "why": "The positions on which manuscripts best preserve the text, from reasoned eclecticism to the Textus Receptus, with the skeptical challenge stated fairly."
+        },
+        {
+          "kind": "reading-guide",
+          "label": "How we got the New Testament",
+          "href": "/study/bible/guides/how-we-got-the-new-testament",
+          "why": "The Study Bible's guide to how the apostles' writings were copied, gathered and passed on to every later generation."
+        }
+      ],
+      "question": "Does knowing that the copies differ make you trust the Bible less or more, and why?",
+      "do": "Find the note in your Bible at Mark 16:9 or John 7:53. Read it, then write in a sentence what it tells you and why a translator would include it.",
+      "verse": {
+        "ref": "Isaiah 40:8",
+        "text": "The grass withers and the flowers fall, but the word of our God stands forever."
+      },
+      "group": {
+        "open": "Have you ever been told the Bible was changed over the centuries, and where did you hear it?",
+        "discuss": [
+          "Why does a note about a disputed reading count as honesty rather than weakness?",
+          "What does it mean that inspiration belongs to what the writers wrote, not to any later copy?",
+          "How would you answer a friend who calls the Bible a game of telephone, conceding what is true first?"
+        ],
+        "pray": "Give thanks for the copyists and scholars whose care has kept the text, and pray for those who first met the Bible through suspicion."
+      }
+    },
+    {
+      "n": 8,
+      "title": "Clear enough, and enough",
+      "minutes": 10,
+      "teaching": [
+        "Two more claims belong to the doctrine of Scripture. The first is clarity. It doesn't mean every passage is easy; Peter admits of Paul's letters that “Some parts of his letters are hard to understand” (2 Peter 3:16). It means that what a person needs to know to be saved and to follow Christ is plain enough for an ordinary reader using ordinary means, as the Westminster Confession of 1646 put it. That conviction drove the Reformers to put the Bible into the languages people spoke, Luther's New Testament of 1522 among them, and it still sends you to read for yourself.",
+        "The second is sufficiency. Scripture gives everything needed for salvation and for a life that pleases God; nothing essential has to be added from outside it. That doesn't make it a textbook for everything. It won't tell you how to set a bone or file a tax return, and it doesn't forbid medicine, science or counsel. It means no one may bind your conscience with a rule God hasn't given. Moses drew the line long ago: “The secret things belong to the LORD our God, but the things revealed belong to us and to our children forever” (Deuteronomy 29:29)."
+      ],
+      "open": {
+        "kind": "history",
+        "label": "The plain sense: the Reformers and the Bible in every hand",
+        "href": "/theology/history/the-plain-sense",
+        "why": "The church history lesson on the Reformers, the printing press and the Bible in every hand, where the claim of clarity changed who could read."
+      },
+      "also": [
+        {
+          "kind": "study",
+          "label": "How to study the Bible",
+          "href": "/study/how-to-study",
+          "why": "The site's one method for reading a passage well, the ordinary means by which a clear Scripture becomes an understood one."
+        },
+        {
+          "kind": "life",
+          "label": "What do Proverbs and Ecclesiastes teach about wisdom?",
+          "href": "/life/wisdom-for-all-of-life",
+          "why": "How Scripture forms wisdom for the many questions it gives no rule about, which is how a sufficient Bible meets an ordinary week."
+        }
+      ],
+      "question": "Where have you been told you needed something beyond Scripture to please God, and was it a rule God had given?",
+      "do": "Read Psalm 119:97-105 slowly. Write down every thing the psalmist says God's word does, and mark the ones you have known for yourself.",
+      "verse": {
+        "ref": "Psalm 119:105",
+        "text": "Your word is a lamp to my feet and a light to my path."
+      },
+      "group": {
+        "open": "What part of the Bible did you first find clear, and what part still feels closed?",
+        "discuss": [
+          "What does the clarity of Scripture claim, and what does it not claim?",
+          "How can sufficiency guard a conscience against rules God has not given?",
+          "Why is it a misuse of sufficiency to set it against medicine, science or counselling?"
+        ],
+        "pray": "Ask for clear sight of what is plain in Scripture and humility about what is hard, and for freedom from burdens God has not laid."
+      }
+    },
+    {
+      "n": 9,
+      "title": "Scripture and tradition",
+      "minutes": 12,
+      "teaching": [
+        "Every Christian reads the Bible with help: a translation, a preacher, a creed, a way of reading learned from someone. The question is how that help relates to Scripture. The Reformers taught sola scriptura, Scripture alone as the only infallible rule. They didn't mean reading alone, without the church; they kept the creeds and read the church fathers closely. They meant that every tradition must be tested by Scripture and can be corrected by it. Jesus did exactly that when he told the Pharisees, “you nullify the word of God by the tradition you have handed down” (Mark 7:13).",
+        "Catholic teaching, set out at Trent and again in the Second Vatican Council's Dei Verbum of 1965, holds that Scripture and apostolic Tradition flow from one source, and that the church's teaching office serves the word by interpreting it. The Orthodox see Scripture as the heart of Holy Tradition, the church's living memory. Both point to Paul's charge to hold the traditions taught “whether by speech or by letter” (2 Thessalonians 2:15), and to the plain fact that the church was reading the Bible before its list was settled. Each answer is held by serious Christians, and each puts a question to the others that deserves an answer."
+      ],
+      "open": {
+        "kind": "compare",
+        "label": "The Christian traditions",
+        "href": "/theology/traditions",
+        "why": "How the great Christian traditions agree and differ, Scripture and tradition among the questions, each stated as its own people would state it."
+      },
+      "also": [
+        {
+          "kind": "creed",
+          "label": "The Westminster Confession",
+          "href": "/resources/creeds/westminster-confession-summary",
+          "why": "Its first chapter is the classic Protestant statement of Scripture's authority, clarity and sufficiency, condensed here with notes on its history."
+        },
+        {
+          "kind": "essay",
+          "label": "Are Catholics and Protestants Both Christians?",
+          "href": "/writing/are-catholics-and-protestants-both-christians",
+          "why": "An essay on what the two traditions share at the root and where they truly part, written to be fair to both."
+        }
+      ],
+      "question": "Which traditions shape the way you read the Bible, and how would you know if one of them was wrong?",
+      "do": "Write down three habits of reading you were taught: a translation, a rule, a teacher. Next to each, write how you could test it by Scripture.",
+      "verse": {
+        "ref": "2 Thessalonians 2:15",
+        "text": "Therefore, brothers, stand firm and cling to the traditions we taught you, whether by speech or by letter."
+      },
+      "group": {
+        "open": "Who taught you to read the Bible, and what did they pass on without saying so?",
+        "discuss": [
+          "What did the Reformers mean by Scripture alone, and what did they not mean?",
+          "What is the strongest Catholic or Orthodox argument for reading Scripture within Tradition?",
+          "How does Mark 7 test the traditions of every church, our own included?"
+        ],
+        "pray": "Give thanks for those who handed on the faith, and ask for the humility to let Scripture correct what we were handed."
+      }
+    },
+    {
+      "n": 10,
+      "title": "Why you trust the Bible, said to a friend",
+      "minutes": 12,
+      "teaching": [
+        "Sooner or later someone asks why you trust an old book. The honest answer isn't a single proof; it is a set of reasons that hold together. The New Testament survives in more manuscripts, closer to its writing, than any classical work, which shows that its wording can be known, though not by itself that it is true. The Gospels read as testimony, written within living memory of the events. The Bible tells the truth about its own heroes. Its center, the resurrection of Jesus, is a claim about history that can be weighed. And Jesus, if he is who he said, treated these Scriptures as God's word.",
+        "Explaining it to a friend also means conceding what is true in the objection. There are hard passages. The copies differ. The church has used the Bible to wound people, and we are not innocent of that. Say so before you answer. And notice that the deepest reason Christians trust Scripture is not a theory about a book. It is trust in the God who speaks in it and the Christ it points to, which the church has long said the Spirit confirms in the reader. That is why the best answer to your friend may finally be to read one Gospel through together and let it speak for itself."
+      ],
+      "open": {
+        "kind": "answer",
+        "label": "Why would anyone trust the Bible?",
+        "href": "/answers/why-would-anyone-trust-the-bible",
+        "why": "The Honest Answer written for the person who doesn't trust it, which takes the objection seriously before it gives its reasons."
+      },
+      "also": [
+        {
+          "kind": "howto",
+          "label": "How to answer hard questions about the faith",
+          "href": "/how-tos/wn-how-to-answer-hard-questions-about-the-faith",
+          "why": "Practical counsel on answering a friend's question with gentleness, honesty and patience, including how to say you don't know."
+        },
+        {
+          "kind": "case",
+          "label": "Is the New Testament better preserved than Homer?",
+          "href": "/questions/text/compared-with-other-ancient-books",
+          "why": "The familiar comparison with other ancient books, checked honestly, with what it proves and what it doesn't."
+        },
+        {
+          "kind": "track",
+          "label": "The tracks",
+          "href": "/tracks",
+          "why": "Next in Theology in Depth: The doctrine of God, ten sessions on who God is, the name he gave Moses, his attributes, his rule and the Trinity."
+        }
+      ],
+      "question": "If a friend asked you tomorrow why you trust the Bible, what would you say in three sentences?",
+      "do": "Write your three sentences down. Then read them as a skeptical friend would, mark the weakest claim, and either strengthen it or concede it honestly.",
+      "verse": {
+        "ref": "1 Peter 3:15",
+        "text": "Always be prepared to give a defense to everyone who asks you the reason for the hope that is in you."
+      },
+      "group": {
+        "open": "Who in your life would be most likely to ask why you trust the Bible?",
+        "discuss": [
+          "Which of the reasons is strongest for you, and which is weakest?",
+          "What objection to the Bible deserves to be conceded before it is answered?",
+          "Why might the best answer be an invitation to read a Gospel together rather than an argument?"
+        ],
+        "pray": "Pray by name for a friend who doesn't trust the Bible, and ask for gentleness and respect when the question comes."
+      }
+    }
+  ]
+}
