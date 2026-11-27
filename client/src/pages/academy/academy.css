@@ -113,3 +113,23 @@
   body:has(.ac-cert) .ac-cert{position:absolute;left:0;top:0;width:100%;max-width:none;margin:0;box-shadow:none;border:0;padding:0}
   .ac-cert__frame{padding:36px 48px 24px}
 }
+
+/* The five levels of the road (2026-11-27). */
+.ac-levels-nav{list-style:none;margin:var(--s-3) 0 var(--s-4);padding:0;display:flex;flex-wrap:wrap;gap:10px 0}
+.ac-levels-nav li{display:flex;align-items:center}
+.ac-levels-nav li+li::before{content:"";width:22px;height:1.5px;background:var(--borderdk);margin:0 6px}
+.ac-levels-nav a{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:4px 14px 4px 4px;border-radius:999px;background:var(--card);border:1px solid var(--border);font-family:var(--U);font-size:14.5px;font-weight:500;color:var(--ink);text-decoration:none;transition:border-color .2s var(--ease)}
+.ac-levels-nav a:hover,.ac-levels-nav a:focus-visible{border-color:var(--ink)}
+.ac-levels-nav li.is-going .ac-road__n{border-color:var(--mustard);border-width:2px}
+.ac-levels-nav li.is-done .ac-road__n{background:var(--ink);border-color:var(--ink);color:var(--bone)}
+.ac-level{scroll-margin-top:96px;margin:0 0 var(--s-5)}
+.ac-level__head{display:grid;grid-template-columns:auto minmax(0,1fr);gap:var(--s-3);align-items:center;margin:0 0 var(--s-3);padding-top:var(--s-3);border-top:1.5px solid var(--ink)}
+.ac-level__n{display:grid;place-items:center;width:64px;height:64px;border-radius:50%;border:1.5px solid var(--art-ink);background:var(--art-paper);font-family:var(--F);font-size:32px;line-height:1;color:var(--ink)}
+.ac-level__kicker{margin:0 0 4px}
+.ac-level__title{margin:0;font-family:var(--F);font-weight:400;font-size:clamp(1.6rem,1.3rem + 1vw,2.2rem);line-height:1.1;letter-spacing:-.01em;color:var(--ink)}
+.ac-level__line{margin:4px 0 0;font-family:var(--U);font-size:15px;line-height:1.5;color:var(--ink-muted)}
+.ac-graduate{margin-top:var(--s-2)}
+@media (max-width:640px){
+  .ac-levels-nav li+li::before{width:10px;margin:0 3px}
+  .ac-level__n{width:48px;height:48px;font-size:24px}
+}

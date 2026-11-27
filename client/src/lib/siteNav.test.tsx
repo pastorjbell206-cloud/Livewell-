@@ -9,7 +9,7 @@
  * siteCatalog.test.ts.
  */
 import { DISCIPLINES } from "@/pages/preview/disciplines";
-import { ACADEMY_PROGRAMS, MENU_DOORS, menuDoorForPath } from "@/components/nav/menu";
+import { ACADEMY_PROGRAMS, ACADEMY_ROOMS, MENU_DOORS, menuDoorForPath } from "@/components/nav/menu";
 import { describe, it, expect, vi, afterEach } from "vitest";
 import fs from "node:fs";
 import path from "node:path";
@@ -117,7 +117,12 @@ describe("the header", () => {
       expect(isRoute(d.page.href), d.page.href).toBe(true);
       for (const r of d.rooms) expect(isRoute(r.href), `${d.name}: ${r.href}`).toBe(true);
     }
-    const programs = JSON.parse(fs.readFileSync(path.join(ROOT, "client/public/academy/programs.json"), "utf8")).programs as { slug: string; title: string }[];
+    const academy = JSON.parse(fs.readFileSync(path.join(ROOT, "client/public/academy/programs.json"), "utf8"));
+    const programs = academy.programs as { slug: string; title: string; beside?: boolean }[];
+    // The Academy's rooms: each level by its own title, then the programs beside the road.
+    const levels = academy.levels as { n: number; title: string }[];
+    expect(ACADEMY_ROOMS.slice(0, levels.length).map((r) => r.name)).toEqual(levels.map((l) => `Level ${l.n}: ${l.title}`));
+    expect(ACADEMY_ROOMS.slice(levels.length).map((r) => r.href)).toEqual(programs.filter((p) => p.beside).map((p) => `/academy/${p.slug}`));
     expect(ACADEMY_PROGRAMS.map((p) => p.slug).sort()).toEqual(programs.map((p) => p.slug).sort());
     for (const p of ACADEMY_PROGRAMS) expect(programs.find((x) => x.slug === p.slug)?.title, p.slug).toBe(p.title);
     expect(MENU_DOORS[0].rooms.map((r) => r.href)).toEqual(DISCIPLINES.map((d) => `/explore/${d.id}`));

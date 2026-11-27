@@ -1,5 +1,5 @@
 /**
- * The LiveWell Academy (/academy): ten programs, each a few tracks in order
+ * The LiveWell Academy (/academy): programs in five levels, each a few tracks in order
  * (client/public/academy/programs.json; its gate is scripts/validate-academy.mjs).
  * A track is the site's one unit of learning (lib/tracks.ts); a program only
  * orders tracks. Progress is the tracks' own record on this device
@@ -24,10 +24,20 @@ export interface Program {
   tracks: string[];
   /** A program for a particular reader (teenagers, a family) beside the main road, not a step on it. */
   beside?: boolean;
+  /** The level of the road the program sits on (1 to 5); none for a program beside the road. */
+  level?: number;
+}
+
+/** One level of the road (James, 2026-11-27: from first reading the Bible to explaining it to others). */
+export interface Level {
+  n: number;
+  title: string;
+  line: string;
 }
 
 export interface Programs {
   about: string;
+  levels: Level[];
   programs: Program[];
 }
 
@@ -37,6 +47,14 @@ const isObject = (x: unknown): x is Record<string, unknown> =>
 export const isPrograms = (x: unknown): x is Programs =>
   isObject(x) &&
   typeof x.about === "string" &&
+  Array.isArray(x.levels) &&
+  x.levels.every(
+    l =>
+      isObject(l) &&
+      typeof l.n === "number" &&
+      typeof l.title === "string" &&
+      typeof l.line === "string"
+  ) &&
   Array.isArray(x.programs) &&
   x.programs.every(
     p =>
@@ -48,7 +66,8 @@ export const isPrograms = (x: unknown): x is Programs =>
       typeof p.plate === "string" &&
       Array.isArray(p.tracks) &&
       p.tracks.every(t => typeof t === "string") &&
-      (p.beside === undefined || typeof p.beside === "boolean")
+      (p.beside === undefined || typeof p.beside === "boolean") &&
+      (p.level === undefined || typeof p.level === "number")
   );
 
 export const fetchPrograms = () =>
@@ -57,8 +76,13 @@ export const fetchPrograms = () =>
 export const ACADEMY_PATH = "/academy";
 export const LEARNED_PATH = "/academy/learned";
 export const programHref = (slug: string) => `/academy/${slug}`;
-export const certificateHref = (kind: "track" | "program", slug: string) =>
-  `/academy/certificate/${kind}/${slug}`;
+export const certificateHref = (
+  kind: "track" | "program" | "academy",
+  slug: string
+) => `/academy/certificate/${kind}/${slug}`;
+/** The certificate for the whole road: every program on every level finished. */
+export const GRADUATE_HREF = certificateHref("academy", "road");
+export const levelAnchor = (n: number) => `level-${n}`;
 
 /** The plain notice every certificate, and every page that offers one, carries. */
 export const UNACCREDITED =
@@ -115,6 +139,22 @@ export function programProgress(
     complete: total > 0 && done >= total,
   };
 }
+
+/** The programs on the road (not beside it), in order. */
+export const roadPrograms = (all: Program[]) => all.filter(p => !p.beside);
+
+/**
+ * The whole road as one program: every track of every program on every
+ * level. Finishing it earns the graduate certificate (GRADUATE_HREF).
+ */
+export const roadAsProgram = (all: Program[]): Program => ({
+  slug: "road",
+  title: "The LiveWell Academy",
+  reader: "",
+  outcome: "",
+  plate: "lectern",
+  tracks: roadPrograms(all).flatMap(p => p.tracks),
+});
 
 /** Minutes a program asks, in all: the sum of its sessions. */
 export const programMinutes = (p: Program, briefs: Map<string, TrackBrief>) =>

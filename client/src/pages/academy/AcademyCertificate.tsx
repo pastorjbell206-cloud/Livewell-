@@ -21,6 +21,7 @@ import {
   programHref,
   programProgress,
   readName,
+  roadAsProgram,
   saveName,
   type Program,
 } from "@/lib/academy";
@@ -39,7 +40,12 @@ const longDate = (iso: string | null) =>
 
 export default function AcademyCertificate() {
   const [, params] = useRoute("/academy/certificate/:kind/:slug");
-  const kind = params?.kind === "program" ? "program" : "track";
+  const kind =
+    params?.kind === "program"
+      ? "program"
+      : params?.kind === "academy"
+        ? "academy"
+        : "track";
   const slug = params?.slug ?? "";
   const { data, retry } = useAcademy();
   const { progress } = useTracksProgress();
@@ -54,7 +60,21 @@ export default function AcademyCertificate() {
     back: string;
   } | null = null;
   if (data) {
-    if (kind === "program") {
+    if (kind === "academy") {
+      // The whole road: every program on every level (the graduate certificate).
+      if (slug === "road") {
+        const p = roadAsProgram(data.programs.programs);
+        const pr = programProgress(p, data.briefs, progress);
+        what = {
+          title: "The LiveWell Academy",
+          done: pr.done,
+          total: pr.total,
+          tracks: tracksOf(p, data.briefs),
+          program: p,
+          back: ACADEMY_PATH,
+        };
+      }
+    } else if (kind === "program") {
       const p = data.programs.programs.find(x => x.slug === slug);
       if (p) {
         const pr = programProgress(p, data.briefs, progress);
@@ -202,21 +222,22 @@ export default function AcademyCertificate() {
                       />
                     </span>
                     <h1 className="ac-cert__title">
-                      Certificate of Completion
+                      {kind === "academy"
+                        ? "Graduate Certificate"
+                        : "Certificate of Completion"}
                     </h1>
                     <p className="ac-cert__small">This records that</p>
                     <p className="ac-cert__name">
                       {name.trim() || "Your name"}
                     </p>
                     <p className="ac-cert__small">
-                      has completed the{" "}
-                      {kind === "program" ? "program" : "track"}
+                      {kind === "academy"
+                        ? "has completed all five levels of"
+                        : `has completed the ${kind === "program" ? "program" : "track"}`}
                     </p>
                     <p className="ac-cert__what">{what.title}</p>
                     <p className="ac-cert__small">
-                      {kind === "program"
-                        ? `${what.tracks.length} tracks, `
-                        : ""}
+                      {kind !== "track" ? `${what.tracks.length} tracks, ` : ""}
                       {what.total} sessions of guided study in Scripture, about{" "}
                       {hours} {hours === 1 ? "hour" : "hours"} in all
                     </p>

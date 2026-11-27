@@ -1,5 +1,32 @@
 {
-  "about": "The LiveWell Academy: ten programs that take a reader from never having opened the Bible to reading it well, knowing what the church believes and why, and living it. Each program is a few tracks in order; each track is a few sessions of about ten minutes. It is free, it is kept on your device, and its certificates are unaccredited.",
+  "about": "The LiveWell Academy: a free curriculum in five levels that takes a reader from first opening the Bible to understanding it whole, knowing what Christians believe and why, and being able to explain it to others. Each program is a few tracks in order; each track is a few sessions of about ten minutes. It is kept on your device, and its certificates are unaccredited.",
+  "levels": [
+    {
+      "n": 1,
+      "title": "Start",
+      "line": "First questions, and first steps for someone new to faith."
+    },
+    {
+      "n": 2,
+      "title": "Read the whole Bible",
+      "line": "The Bible as one story, and how to study any page of it for yourself."
+    },
+    {
+      "n": 3,
+      "title": "Know the books",
+      "line": "Eleven books of the Bible read closely, chapter by chapter."
+    },
+    {
+      "n": 4,
+      "title": "Know what we believe, and why",
+      "line": "The creed, every major doctrine in depth, and the church's long story."
+    },
+    {
+      "n": 5,
+      "title": "Live it, and explain it",
+      "line": "The faith carried into ordinary life, and the reasons for it given to others."
+    }
+  ],
   "programs": [
     {
       "slug": "exploring",
@@ -7,6 +34,7 @@
       "reader": "Not sure any of it is true? Start here.",
       "outcome": "You will be able to say what Christians actually claim about Jesus, weigh the evidence for and against, and give the strongest objections a fair hearing.",
       "plate": "lantern",
+      "level": 1,
       "tracks": [
         "skeptical",
         "who-was-jesus",
@@ -19,6 +47,7 @@
       "reader": "Just started following Jesus, or coming back? Start here.",
       "outcome": "You will know the gospel well enough to explain it, have the habits of prayer and Bible reading in place, and know what to do when you fail or doubt.",
       "plate": "house",
+      "level": 1,
       "tracks": [
         "new-to-this",
         "first-habits",
@@ -31,6 +60,7 @@
       "reader": "Never read the Bible, or only in pieces? Start here.",
       "outcome": "You will be able to tell the whole Bible as one story, from creation to new creation, and place any book or passage inside it.",
       "plate": "books",
+      "level": 2,
       "tracks": [
         "big-story",
         "old-testament",
@@ -43,6 +73,7 @@
       "reader": "Want to read a passage for yourself and understand it?",
       "outcome": "You will be able to study any passage on your own: observe it, read it as the kind of writing it is, place it in its world, follow its words, and apply it honestly.",
       "plate": "lens",
+      "level": 2,
       "tracks": [
         "study-method",
         "reading-by-genre",
@@ -51,17 +82,34 @@
       ]
     },
     {
+      "slug": "ot-books",
+      "title": "Deep in the Old Testament",
+      "reader": "Ready to know the Old Testament's great books well?",
+      "outcome": "You will have read five books of the Old Testament closely: the beginning, the exodus, the prayers, the wisdom and the prophet who saw the servant.",
+      "plate": "jars",
+      "level": 3,
+      "tracks": [
+        "genesis",
+        "exodus",
+        "psalms",
+        "proverbs",
+        "isaiah"
+      ]
+    },
+    {
       "slug": "books",
-      "title": "Deep in One Book",
-      "reader": "Ready to know one book of the Bible well?",
-      "outcome": "You will have read five books of the Bible closely, chapter by chapter, from the first story of Genesis to Paul's letter to the Romans.",
+      "title": "Deep in the New Testament",
+      "reader": "Ready to know the Gospels, Acts and the letters well?",
+      "outcome": "You will have read six books of the New Testament closely, chapter by chapter, from Mark's Gospel to Revelation.",
       "plate": "book",
+      "level": 3,
       "tracks": [
         "mark",
         "john",
-        "genesis",
-        "psalms",
-        "romans"
+        "acts",
+        "romans",
+        "hebrews",
+        "revelation"
       ]
     },
     {
@@ -70,6 +118,7 @@
       "reader": "Want to know what the church has always believed, and why?",
       "outcome": "You will be able to explain the creed line by line, trace each core doctrine to Scripture, and state the views on contested questions fairly.",
       "plate": "lectern",
+      "level": 4,
       "tracks": [
         "apostles-creed",
         "core-doctrines",
@@ -78,53 +127,93 @@
       ]
     },
     {
+      "slug": "theology",
+      "title": "Theology in Depth",
+      "reader": "Ready to understand each doctrine, from Scripture?",
+      "outcome": "You will be able to state each major doctrine in your own words, show where it comes from in Scripture, say why the church holds it, and explain it simply.",
+      "plate": "arch",
+      "level": 4,
+      "tracks": [
+        "doctrine-scripture",
+        "doctrine-god",
+        "doctrine-christ",
+        "doctrine-spirit-church",
+        "doctrine-salvation",
+        "doctrine-last-things"
+      ]
+    },
+    {
       "slug": "history",
       "title": "Church History",
       "reader": "Want to know how we got here?",
       "outcome": "You will know the church's story across two thousand years, its councils, its failures and its renewals, and how each age read the Bible.",
       "plate": "basilica",
+      "level": 4,
       "tracks": [
         "church-history",
         "culture-and-the-bible"
       ]
     },
     {
-      "slug": "teens",
-      "title": "Faith for Teenagers",
-      "reader": "Thirteen to eighteen? This is yours.",
-      "outcome": "You will have weighed whether it is true, seen the Bible's whole story, and thought hard about who you are and how to live it now.",
-      "plate": "compass",
-      "tracks": [
-        "teens-is-it-true",
-        "teens-big-story",
-        "teens-who-am-i"
-      ],
-      "beside": true
-    },
-    {
       "slug": "living",
       "title": "Living It",
       "reader": "Want the faith to carry the weight of an ordinary week?",
-      "outcome": "You will have brought Scripture to bear on marriage, work, money, rest, grief and forgiveness, with the church's long wisdom beside you.",
+      "outcome": "You will have brought Scripture to bear on marriage, work, money, rest, grief, friendship and the big decisions, with the church's long wisdom beside you.",
       "plate": "table",
+      "level": 5,
       "tracks": [
         "living-marriage",
         "living-work-money",
-        "living-hard-seasons"
+        "living-hard-seasons",
+        "living-relationships",
+        "living-guidance"
+      ]
+    },
+    {
+      "slug": "explain",
+      "title": "Explain It",
+      "reader": "Ready to give the reasons, and pass it on?",
+      "outcome": "You will be able to say what you believe and why, answer the questions your friends ask with gentleness and respect, and help someone else grow.",
+      "plate": "letter",
+      "level": 5,
+      "tracks": [
+        "why-we-believe",
+        "answering-questions",
+        "explaining-the-faith",
+        "teaching-others"
+      ]
+    },
+    {
+      "slug": "teens",
+      "title": "Faith for Teenagers",
+      "reader": "Thirteen to eighteen? This is yours.",
+      "outcome": "You will have weighed whether it is true, seen the Bible's whole story, learned to grow and to face hard things, and be able to talk about your faith with your friends.",
+      "plate": "compass",
+      "beside": true,
+      "tracks": [
+        "teens-is-it-true",
+        "teens-big-story",
+        "teens-who-am-i",
+        "teens-growing",
+        "teens-hard-things",
+        "teens-explaining"
       ]
     },
     {
       "slug": "home",
       "title": "Faith at Home",
       "reader": "Leading a family? Start at the table.",
-      "outcome": "You will have a way to lead faith at home that fits your children's ages, answers their hard questions honestly, and follows the church's year together.",
+      "outcome": "You will have a way to lead faith at home for every age from three to sixteen, answer your children's hard questions honestly, carry them through hard seasons, and keep the church's year together.",
       "plate": "jar",
+      "beside": true,
       "tracks": [
         "family",
         "parents-guide",
+        "family-little-ones",
+        "family-children",
+        "family-hard-times",
         "family-church-year"
-      ],
-      "beside": true
+      ]
     }
   ]
 }

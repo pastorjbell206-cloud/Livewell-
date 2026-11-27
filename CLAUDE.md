@@ -897,18 +897,26 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
   academies in the world ... go from not understanding the Bible to being
   able to fully understand the Bible ... multiple tracks ... certificates.
   Let people know that's unaccredited")**: `/academy` arranges the tracks
-  into ten programs, read from `client/public/academy/programs.json` (gate:
+  into programs on one road of five levels (James, the same day: "from the
+  very just to start to read the Bible ... to really being able to fully
+  understand the Bible ... understand what we believe, why we believe it,
+  and to be able to explain it to other people"): Start, Read the whole
+  Bible, Know the books, Know what we believe and why, Live it and explain
+  it; Faith for Teenagers and Faith at Home stand beside the road. Read
+  from `client/public/academy/programs.json` (gate:
   `scripts/validate-academy.mjs`; every written track belongs to exactly one
   program). A program only orders tracks; progress is the tracks' own record
   (`livewell-progress-tracks-v1`), never a second store. `/academy/<program>`
   lays out its tracks as a path; `/academy/learned` ("What I've learned")
   shows the reader's sessions and own answers; a finished track or program
-  prints a certificate at `/academy/certificate/<track|program>/<slug>` with
+  prints a certificate at `/academy/certificate/<track|program>/<slug>`, and
+  the whole road a graduate certificate at `/academy/certificate/academy/road`, with
   the name the reader types (kept on the device, `livewell-academy-name-v1`).
   Every certificate, and every page that offers one, carries the
   unaccredited notice (`UNACCREDITED` in `lib/academy.ts`). No account, no
-  fee, nothing sent. The menu's Academy door lists the programs
-  (`ACADEMY_PROGRAMS` in `components/nav/menu.ts`). `docs/work/academy/`
+  fee, nothing sent. The menu's Academy door lists the five levels and the
+  two programs beside the road (`ACADEMY_ROOMS` in `components/nav/menu.ts`;
+  `ACADEMY_PROGRAMS` there names every program by its own title). `docs/work/academy/`
   holds the curriculum and the brief for writing a track.
 - **The films' recorded voice (2026-11-22; James: "continue to add these")**:
   Listen on a Bible Explorer film plays one small MP3 a frame, a level

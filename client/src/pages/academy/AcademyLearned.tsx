@@ -13,10 +13,12 @@ import { SEOMeta } from "@/components/SEOMeta";
 import InnerHead from "@/components/art/InnerHead";
 import {
   ACADEMY_PATH,
+  GRADUATE_HREF,
   certificateHref,
   doneIn,
   programHref,
   programProgress,
+  roadAsProgram,
   trackComplete,
 } from "@/lib/academy";
 import { sessionHref, trackHref } from "@/lib/tracks";
@@ -43,6 +45,9 @@ export default function AcademyLearned() {
   const programCerts = data
     ? programs.filter(p => programProgress(p, data.briefs, progress).complete)
     : [];
+  const graduated = data
+    ? programProgress(roadAsProgram(programs), data.briefs, progress).complete
+    : false;
   const under = data
     ? programs.filter(p => {
         const pr = programProgress(p, data.briefs, progress);
@@ -118,7 +123,11 @@ export default function AcademyLearned() {
                     <strong>{begun.length}</strong> tracks begun
                   </span>
                   <span>
-                    <strong>{trackCerts.length + programCerts.length}</strong>{" "}
+                    <strong>
+                      {trackCerts.length +
+                        programCerts.length +
+                        (graduated ? 1 : 0)}
+                    </strong>{" "}
                     certificates
                   </span>
                 </p>
@@ -127,6 +136,18 @@ export default function AcademyLearned() {
                   <div className="ac-certs">
                     <h2 className="tk-h2">Your certificates</h2>
                     <ul>
+                      {graduated && (
+                        <li>
+                          <Award
+                            aria-hidden="true"
+                            size={22}
+                            strokeWidth={1.6}
+                          />
+                          <Link href={GRADUATE_HREF}>
+                            Graduate: The LiveWell Academy
+                          </Link>
+                        </li>
+                      )}
                       {programCerts.map(p => (
                         <li key={`p-${p.slug}`}>
                           <Award
