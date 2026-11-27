@@ -4,12 +4,13 @@
  * answer at an address that names no discipline.
  */
 import { describe, it, expect } from "vitest";
-import { screen } from "@testing-library/react";
+import { screen, within } from "@testing-library/react";
 import { Route, Switch } from "wouter";
 
 import { renderWithProviders } from "@/test/harness";
 import { allEntries, entryById } from "@/lib/siteCatalog";
-import { DISCIPLINES } from "./disciplines";
+import { isPublicEssay } from "@/lib/shelf";
+import { DISCIPLINES, DISCIPLINE_ESSAYS } from "./disciplines";
 import PreviewDiscipline from "./PreviewDiscipline";
 
 const CATALOGUE = new Set(allEntries().map((e) => e.href));
@@ -28,10 +29,22 @@ describe("/preview/explore/<discipline>", () => {
     const { unmount } = open(d.id);
     expect(screen.getByRole("heading", { level: 1, name: d.name })).toBeTruthy();
     expect(document.querySelector('meta[name="robots"]')?.getAttribute("content")).toBe("noindex, follow");
-    for (const id of d.doors) expect(screen.getByRole("heading", { level: 2, name: entryById(id)!.name })).toBeTruthy();
+    const rooms = within(screen.getByRole("region", { name: "The rooms" }));
+    for (const id of d.doors) expect(rooms.getByRole("link", { name: new RegExp(`^${entryById(id)!.name}`) })).toHaveAttribute("href", entryById(id)!.href);
+    const nav = screen.getByRole("navigation", { name: "The eight disciplines" });
+    expect(nav.querySelector('[aria-current="page"]')?.textContent).toBe(d.name);
     const hrefs = Array.from(document.querySelectorAll("main a[href]")).map((a) => a.getAttribute("href")!);
-    for (const href of hrefs) expect(CATALOGUE.has(href) || href.startsWith("#") || href.startsWith("/preview/"), href).toBe(true);
+    for (const href of hrefs)
+      expect(CATALOGUE.has(href) || href.startsWith("#") || href.startsWith("/preview/") || href === "/writing" || (href.startsWith("/writing/") && isPublicEssay(href.slice(9))), href).toBe(true);
     unmount();
+  });
+
+  it("offers six public essays for every discipline", () => {
+    for (const d of DISCIPLINES) {
+      const list = DISCIPLINE_ESSAYS[d.id] ?? [];
+      expect(list, d.id).toHaveLength(6);
+      for (const slug of list) expect(isPublicEssay(slug), `${d.id}: ${slug}`).toBe(true);
+    }
   });
 
   it("answers plainly at an address that names no discipline", () => {
