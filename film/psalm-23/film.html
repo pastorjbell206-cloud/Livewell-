@@ -1,0 +1,340 @@
+<!doctype html>
+<!-- "Psalm 23: the LORD is my shepherd". Gentle and quiet. God is never drawn: only a mustard wash at 0.12 or
+     less, beside the walker in the valley, inside the tent and in the open door. Jesus is one upright mustard bar
+     at the gate. Sheep are plain rounded bodies with a featureless head, no eyes. People are ink dots, all alike.
+     Enemies and predators are low shadow shapes with no features. Grief and death are named, never drawn.
+     Words and timing come from script.json and timeline.json. Open with ?t=42 to freeze on second 42. -->
+<html lang="en"><head><meta charset="utf-8"><title>Psalm 23</title></head><body>
+<script src="../lib/engine.js"></script>
+<script>
+Film.make((F) => {
+  const { el, txt, set, op, draw, line, move, clamp, ease, up, span, mix, rng, S, E, world, INK, BONE, WARM, MUTED, STONE, MUSTARD, LINE, CHAR } = F;
+  const SC = Object.fromEntries(window.SCRIPT.chapters.map((c) => [c.id, c])), END = F.VOICE_END, PAPER = "#FBF9F5", GY = 470, R = rng(23);
+  const at = (id, k, f) => S(id, k) + (E(id, k) - S(id, k)) * f;
+  const lin = (t, a, d) => clamp((t - a) / d);
+  const dot = (p, x, y, r = 10) => el("circle", { cx: x, cy: y, r, fill: INK }, p);
+  const sl = (p, d, a = {}) => el("path", { d, fill: "none", stroke: INK, "stroke-width": 3, "stroke-linecap": "round", "stroke-linejoin": "round", ...a }, p);
+  const verse = (ch, cx, y, size, max, big) => { const g = el("g", {}, world), words = `“${ch.scripture.text}”`.split(" "), out = []; let cur = "";
+    words.forEach((w) => { if ((cur + " " + w).trim().length > max && cur) { out.push(cur); cur = w; } else cur = (cur + " " + w).trim(); }); out.push(cur);
+    const lh = Math.round(size * 1.2); out.forEach((r, i) => txt(g, "disp", cx, y + i * lh, r, size));
+    txt(g, "lab", cx, y + (out.length - 1) * lh + Math.round(size * 0.62) + 14, `${ch.scripture.reference.toUpperCase()} · BEREAN STANDARD BIBLE`, big ? 17 : 14); return g; };
+  // a sheep: one rounded body and a plain head, no face; origin is where the legs meet the ground
+  const sheep = (p, x, y, s = 1) => { const g = el("g", {}, p), body = el("g", {}, g), legs = el("g", {}, g);
+    [-22, -8, 10, 24].forEach((lx) => el("line", { x1: lx, x2: lx, y1: 8, y2: 26, stroke: INK, "stroke-width": 4, "stroke-linecap": "round" }, legs));
+    el("rect", { x: -38, y: -24, width: 76, height: 40, rx: 20, fill: PAPER, stroke: INK, "stroke-width": 3 }, body);
+    el("path", { d: "M30 -26 Q52 -30 56 -14 Q56 -2 40 -4 Q30 -6 30 -16 Z", fill: STONE }, body);
+    const o = { g, body, legs, s }; place(o, x, y, 0, 0); return o; };
+  const place = (o, x, y, lie = 0, bob = 0) => { move(o.g, x, y - 26 * o.s, o.s); o.body.setAttribute("transform", `translate(0 ${(10 * lie - bob).toFixed(2)})`); op(o.legs, 1 - lie); };
+  const goblet = (p) => { const g = el("g", {}, p); el("path", { d: "M-40 -70 H40 Q40 -20 0 -14 Q-40 -20 -40 -70 Z", fill: PAPER, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, g);
+    sl(g, "M0 -14 V20 M-24 22 H24"); return g; };
+  const shadow = (p, a = 0.5) => el("path", { d: "M-60 0 Q-58 -38 -14 -44 Q26 -48 50 -32 L72 -28 Q80 -16 66 -10 L62 0 Z", fill: CHAR, opacity: a }, p);
+  const tufts = (p, x0, x1, n, y = GY) => { let d = ""; for (let i = 0; i < n; i++) { const x = x0 + (x1 - x0) * (i + R() * 0.6) / n; d += `M${x.toFixed(0)} ${y} l-6 -14 M${x.toFixed(0)} ${y} l5 -17 `; } return sl(p, d, { stroke: STONE, "stroke-width": 2.5 }); };
+
+  // ---- every time used, from the timeline ----
+  const A0 = S("shepherd", 0), A1 = S("shepherd", 1), A2 = S("shepherd", 2), A3 = S("shepherd", 3);
+  const B0 = S("david", 0), B1 = S("david", 1);
+  const C0 = S("pastures", 0), C1 = S("pastures", 1), C2 = S("pastures", 2), cPause = at("pastures", 2, 0.39);
+  const D0 = S("paths", 0), D1 = S("paths", 1), D2 = S("paths", 2);
+  const V0 = S("valley", 0), V1 = S("valley", 1), V2 = S("valley", 2), V3 = S("valley", 3);
+  const R0 = S("rod", 0), R1 = S("rod", 1), R2 = S("rod", 2);
+  const T0 = S("table", 0), T1 = S("table", 1), T2 = S("table", 2), T3 = S("table", 3);
+  const U0 = S("cup", 0), U1 = S("cup", 1);
+  const P0 = S("pursued", 0), P1 = S("pursued", 1), P2 = S("pursued", 2);
+  const H0 = S("house", 0), H1 = S("house", 1), H2 = S("house", 2);
+  const G0 = S("good-shepherd", 0), G1 = S("good-shepherd", 1), G2 = S("good-shepherd", 2), G3 = S("good-shepherd", 3);
+
+  const ground = line(world, "M-20 470 H1300", { "stroke-width": 3 });
+
+  // ================= 1 shepherd: kings called themselves shepherds; the king is the sheep =================
+  const g1 = el("g", {}, world);
+  const people = [500, 547, 594, 686, 733, 780].map((x) => dot(g1, x, 459));
+  const crook = line(g1, "M790 470 V300 Q790 266 762 266 Q738 266 738 290", { "stroke-width": 4.5 });
+  const crown = el("g", {}, g1);
+  el("path", { d: "M-62 32 L-62 -18 L-32 8 L0 -38 L32 8 L62 -18 L62 32 Z", fill: WARM, stroke: INK, "stroke-width": 3.5, "stroke-linejoin": "round" }, crown);
+  el("rect", { x: -62, y: 20, width: 124, height: 6, fill: MUSTARD }, crown);
+  const labHam = txt(g1, "lab", 640, 530, "HAMMURABI OF BABYLON · 18TH CENTURY BC", 15);
+  const labDav = txt(g1, "lab", 640, 530, "DAVID · TO SHEPHERD ISRAEL", 15);
+  const one = sheep(world, 640, GY, 1);
+  const vA = verse(SC.shepherd, 640, 180, 52, 30, true);
+
+  // ================= 2 david: an author or a collection; prayed in every generation =================
+  const g2 = el("g", {}, world);
+  const vB = verse(SC.david, 640, 180, 46, 40, true);
+  const left2 = el("g", {}, g2), right2 = el("g", {}, g2);
+  const dSheep = sheep(left2, 330, GY, 0.8); dot(left2, 430, 459);
+  txt(left2, "lab", 370, 522, "TRADITIONAL READERS", 15); txt(left2, "lab", 370, 548, "DAVID KEPT SHEEP", 13);
+  [0, 1, 2, 3].forEach((i) => { const x = 870 + i * 16, y = 360 - i * 12; el("rect", { x, y, width: 74, height: 96, fill: PAPER, stroke: INK, "stroke-width": 3 }, right2); });
+  el("line", { x1: 958, x2: 1008, y1: 330, y2: 330, stroke: STONE, "stroke-width": 2.5, "stroke-linecap": "round" }, right2);
+  txt(right2, "lab", 940, 522, "MANY MODERN SCHOLARS", 15); txt(right2, "lab", 940, 548, "A COLLECTION", 13);
+  const div2 = line(g2, "M640 330 V470", { stroke: LINE, "stroke-width": 2.5 });
+  const gens = [...Array(20)].map((_, i) => dot(g2, 166 + i * 50, 459, 8));
+  const labGen = txt(g2, "lab", 640, 522, "EVERY GENERATION", 15);
+
+  // ================= 3 pastures: dry hills; grass and still water far away; lying down =================
+  const g3 = el("g", {}, world);
+  const hills = line(g3, "M-20 430 Q150 330 330 382 T700 360 T1060 372 T1300 336", { stroke: LINE, "stroke-width": 3 });
+  const dry = sl(g3, [...Array(16)].map((_, i) => { const x = 40 + i * 50 + R() * 20, y = 430 + R() * 26; return `M${x.toFixed(0)} ${y.toFixed(0)} h12`; }).join(" "), { stroke: LINE, "stroke-width": 2.5 });
+  const grass = el("g", {}, g3);
+  el("ellipse", { cx: 960, cy: 472, rx: 200, ry: 13, fill: MUTED }, grass); tufts(grass, 780, 1150, 14);
+  const pool = el("g", {}, g3); el("ellipse", { cx: 1190, cy: 470, rx: 70, ry: 11, fill: WARM, stroke: INK, "stroke-width": 2.5 }, pool);
+  const ripple = el("path", { d: "M1160 470 h40", stroke: LINE, "stroke-width": 2, "stroke-linecap": "round" }, pool);
+  const far = line(g3, "M260 420 Q700 250 1130 440", { stroke: STONE, "stroke-width": 2.5, "stroke-dasharray": "0.012 0.018" });
+  far.removeAttribute("stroke-dashoffset");
+  const flock3 = [120, 202, 284, 366].map((x) => ({ x, o: sheep(g3, x, GY, 0.8) }));
+  const vC = verse(SC.pastures, 640, 160, 36, 46, true);
+  const qC = txt(world, "disp", 640, 300, "?", 110, { fill: MUSTARD });
+
+  // ================= 4 paths: the right path and dead ends; for his name's sake =================
+  const g4 = el("g", {}, world), PY = 300;
+  const mainPath = line(g4, `M40 ${PY} H1240`, { "stroke-width": 4 });
+  const spurs = [[320, -1], [520, 1], [760, -1], [960, 1]].map(([x, s]) => line(g4, `M${x} ${PY} Q${x + 30} ${PY + s * 50} ${x + 80} ${PY + s * 96} M${x + 64} ${PY + s * 108} L${x + 96} ${PY + s * 84}`, { stroke: STONE, "stroke-width": 3 }));
+  const nameLine = line(g4, `M40 ${PY + 12} H1240`, { stroke: MUSTARD, "stroke-width": 4 });
+  const labDead = txt(g4, "lab", 840, 172, "DEAD ENDS", 14), labRight = txt(g4, "lab", 1120, 280, "RIGHT PATHS", 14);
+  const labName = txt(g4, "lab", 640, 470, "FOR THE SAKE OF HIS NAME", 15);
+  const flock4 = [0, 1, 2, 3].map((i) => sheep(g4, 0, PY, 0.55));
+  const vD = verse(SC.paths, 640, 150, 32, 52, false);
+
+  // ================= 5 valley: the path drops into a ravine; company in it =================
+  const g5 = el("g", {}, world);
+  const RAV = "M-20 300 H300 C390 300 400 520 490 520 H790 C880 520 890 300 980 300 H1300";
+  const defs = el("defs", {}, world), clip = el("clipPath", { id: "ravine" }, defs);
+  el("path", { d: "M300 300 C390 300 400 520 490 520 H790 C880 520 890 300 980 300 Z" }, clip);
+  const dark = el("g", { "clip-path": "url(#ravine)" }, g5);
+  el("rect", { x: 280, y: 290, width: 720, height: 240, fill: CHAR, opacity: 0.16 }, dark);
+  const hatch = sl(dark, [...Array(34)].map((_, i) => `M${260 + i * 22} 540 L${360 + i * 22} 290`).join(" "), { stroke: STONE, "stroke-width": 2, opacity: 0.55 });
+  const ravPath = line(g5, RAV, { "stroke-width": 4 });
+  const geo = el("path", { d: RAV, fill: "none", stroke: "none" }, g5), GL = geo.getTotalLength();
+  const around = line(g5, "M300 300 Q640 140 980 300", { stroke: STONE, "stroke-width": 2.5, "stroke-dasharray": "0.015 0.02" }); around.removeAttribute("stroke-dashoffset");
+  const companion = el("rect", { width: 30, height: 104, rx: 15, fill: MUSTARD }, g5);
+  const walker = dot(g5, 0, 0);
+  const labShadow = txt(g5, "lab", 640, 572, "TRADITIONALLY, THE SHADOW OF DEATH", 15), labDark = txt(g5, "lab", 640, 572, "OR SIMPLY, DEEP DARKNESS", 15);
+  const hes = [220, 310, 400, 490].map((x) => txt(g5, "lab", x, 214, "HE", 20));
+  const labAbout = txt(g5, "lab", 355, 246, "ABOUT HIM", 13);
+  const youT = txt(g5, "ital", 800, 222, "You", 58), labTo = txt(g5, "lab", 800, 252, "TO HIM", 13);
+  const vV = verse(SC.valley, 640, 136, 30, 56, false);
+
+  // ================= 6 rod: a club and a hooked stick, standing between =================
+  const g6 = el("g", {}, world);
+  const guardWash = el("rect", { x: 540, y: 220, width: 200, height: 250, rx: 20, fill: MUSTARD }, g6);
+  const rod = el("g", {}, g6); el("line", { x1: 590, x2: 590, y1: 470, y2: 392, stroke: INK, "stroke-width": 7, "stroke-linecap": "round" }, rod); el("rect", { x: 577, y: 360, width: 26, height: 40, rx: 12, fill: INK }, rod);
+  const staff = line(g6, "M700 470 V270 Q700 232 668 232 Q640 232 640 260", { "stroke-width": 5 });
+  const labRod = txt(g6, "lab", 590, 506, "ROD", 15), labStaff = txt(g6, "lab", 700, 506, "STAFF", 15);
+  const flock6 = [130, 210, 290, 370].map((x) => sheep(g6, x, GY, 0.7));
+  const hunters = [960, 1090, 1220].map((x) => { const g = el("g", {}, g6); shadow(g, 0.42); return { g, x }; });
+  const vR = verse(SC.rod, 640, 160, 40, 50, true);
+
+  // ================= 7 table: a guest in the tent; enemies outside =================
+  const g7 = el("g", {}, world);
+  const TENT = "M400 470 L520 290 H760 L880 470";
+  const tentFill = el("path", { d: TENT + " Z", fill: WARM }, g7);
+  const tentWash = el("path", { d: TENT + " Z", fill: MUSTARD }, g7);
+  const tent = line(g7, TENT, { "stroke-width": 3.5 });
+  const poles = sl(g7, "M520 290 V470 M760 290 V470", { stroke: STONE, "stroke-width": 2.5 });
+  const table = el("g", {}, g7);
+  el("rect", { x: 560, y: 420, width: 170, height: 12, rx: 4, fill: PAPER, stroke: INK, "stroke-width": 3 }, table); sl(table, "M580 432 V470 M710 432 V470");
+  const smallCup = el("g", { transform: "translate(612 420) scale(0.42) translate(0 -22)" }, table); goblet(smallCup);
+  el("path", { d: "M652 420 Q678 394 704 420 Z", fill: WARM, stroke: INK, "stroke-width": 2.5, "stroke-linejoin": "round" }, table);
+  const guest = dot(g7, 0, 459);
+  const pursuers = [0, 1, 2, 3].map(() => dot(g7, 0, 459));
+  const vT = verse(SC.table, 640, 156, 38, 46, true);
+  const qT = txt(world, "disp", 640, 236, "?", 100, { fill: MUSTARD });
+
+  // ================= 8 cup: oil on the head; the cup runs over =================
+  const g8 = el("g", {}, world);
+  const guest8 = dot(g8, 440, 457, 13);
+  const flask = el("g", {}, g8); el("path", { d: "M-16 -30 H16 V20 Q16 30 0 30 Q-16 30 -16 20 Z M-7 -30 V-44 H7 V-30", fill: WARM, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, flask);
+  const drops = [0, 1, 2].map(() => el("ellipse", { rx: 4, ry: 6, fill: MUSTARD }, g8));
+  const sheen = el("path", { d: "M428 446 Q440 438 452 446", stroke: MUSTARD, "stroke-width": 4, "stroke-linecap": "round", fill: "none" }, g8);
+  const big = el("g", { transform: "translate(800 430) scale(1.8)" }, g8);
+  const cclip = el("clipPath", { id: "bowl" }, defs); el("path", { d: "M-40 -70 H40 Q40 -20 0 -14 Q-40 -20 -40 -70 Z" }, cclip);
+  goblet(big);
+  const wine = el("rect", { x: -44, width: 88, fill: MUSTARD, "clip-path": "url(#bowl)" }, big);
+  const spill = ["M40 -70 Q50 -62 47 -36 Q44 -6 50 20", "M-40 -70 Q-50 -60 -46 -30 Q-43 0 -48 20"].map((d) => line(big, d, { stroke: MUSTARD, "stroke-width": 2.4 }));
+  const puddle = el("ellipse", { cx: 0, cy: 23, rx: 0, ry: 2.5, fill: MUSTARD }, big);
+  const labOil = txt(g8, "lab", 440, 520, "WELCOME AND HONOR", 15), labCup = txt(g8, "lab", 800, 520, "LAVISH GENEROSITY", 15);
+  const labMore = txt(g8, "ital", 640, 232, "more than safety", 46);
+  const vU = verse(SC.cup, 640, 160, 40, 50, true);
+
+  // ================= 9 pursued: goodness and loyal love follow the walker =================
+  const g9 = el("g", {}, world);
+  const ticks = [...Array(13)].map((_, i) => el("line", { x1: 120 + i * 64, x2: 120 + i * 64, y1: 478, y2: 490, stroke: STONE, "stroke-width": 2.5, "stroke-linecap": "round" }, g9));
+  const hunters9 = [0, 1, 2].map(() => dot(g9, 0, 459));
+  const trail = [0, 1].map(() => el("path", { fill: "none", stroke: MUSTARD, "stroke-width": 4.5, "stroke-linecap": "round" }, g9));
+  const labGood = txt(g9, "lab", 0, 420, "GOODNESS", 13), labMercy = txt(g9, "lab", 0, 512, "MERCY", 13), labChesed = txt(g9, "lab", 0, 512, "CHESED", 13);
+  const walker9 = dot(g9, 0, 459);
+  const chesed = el("g", {}, world); txt(chesed, "ital", 640, 222, "chesed", 72); txt(chesed, "lab", 640, 266, "LOVING DEVOTION · LOYAL LOVE", 15);
+  const vP = verse(SC.pursued, 640, 156, 36, 46, true);
+
+  // ================= 10 house: the road ends at an open house =================
+  const g10 = el("g", {}, world);
+  const field = el("g", {}, g10); el("ellipse", { cx: 210, cy: 472, rx: 150, ry: 12, fill: MUTED }, field); tufts(field, 80, 340, 10);
+  const fieldSheep = [170, 260].map((x) => sheep(field, x, GY, 0.6)); fieldSheep.forEach((s) => place(s, s === fieldSheep[0] ? 170 : 260, GY, 1));
+  const house = el("g", {}, g10);
+  el("rect", { x: 940, y: 344, width: 170, height: 126, fill: PAPER, stroke: INK, "stroke-width": 3.5 }, house);
+  el("path", { d: "M918 350 L1025 270 L1132 350", fill: "none", stroke: INK, "stroke-width": 3.5, "stroke-linecap": "round", "stroke-linejoin": "round" }, house);
+  const doorLight = el("rect", { x: 1004, y: 390, width: 44, height: 80, fill: MUSTARD }, house);
+  el("rect", { x: 1004, y: 390, width: 44, height: 80, fill: "none", stroke: INK, "stroke-width": 3 }, house);
+  const leaf = el("path", { d: "M1004 390 L984 400 V476 L1004 470 Z", fill: WARM, stroke: INK, "stroke-width": 2.5, "stroke-linejoin": "round" }, house);
+  const heb = el("g", {}, g10); txt(heb, "lab", 400, 188, "HEBREW, AS TRADITIONALLY READ", 14); txt(heb, "ital", 400, 240, "I will return", 46);
+  const grk = el("g", {}, g10); txt(grk, "lab", 780, 188, "ANCIENT GREEK", 14); txt(grk, "ital", 780, 240, "dwell", 46);
+  const labField = txt(g10, "lab", 210, 522, "A FIELD", 15), labHouse = txt(g10, "lab", 1025, 522, "A HOUSE", 15);
+  const vH = verse(SC.house, 640, 166, 38, 46, true);
+
+  // ================= 11 good shepherd: scattered sheep gathered; the bar at the gate; the valley =================
+  const g11 = el("g", {}, world);
+  const rav11 = el("g", {}, g11); const rav11Path = line(rav11, RAV, { stroke: STONE, "stroke-width": 3 });
+  const dark11 = el("g", { "clip-path": "url(#ravine)" }, rav11); el("rect", { x: 280, y: 290, width: 720, height: 240, fill: CHAR, opacity: 0.12 }, dark11);
+  const fold = el("g", {}, g11);
+  sl(fold, "M360 470 H920", { stroke: INK });
+  const scat = [...Array(8)].map((_, i) => { const a = [[120, 380], [260, 540], [1140, 410], [1010, 560], [180, 300], [1180, 300], [420, 590], [880, 330]][i];
+    const b = [[490, 412], [545, 412], [735, 412], [790, 412], [470, 404], [810, 404], [520, 400], [760, 400]][i]; return { a, b, o: sheep(g11, a[0], a[1], 0.5) }; });
+  const walls = el("g", {}, fold);
+  el("rect", { x: 430, y: 418, width: 172, height: 52, fill: WARM, stroke: INK, "stroke-width": 3 }, walls);
+  el("rect", { x: 678, y: 418, width: 172, height: 52, fill: WARM, stroke: INK, "stroke-width": 3 }, walls);
+  sl(walls, "M430 444 H602 M678 444 H850 M480 418 V444 M540 444 V470 M560 418 V444 M720 444 V470 M760 418 V444 M800 444 V470", { stroke: STONE, "stroke-width": 2 });
+  const barWash = el("rect", { x: 590, y: 300, width: 100, height: 172, rx: 30, fill: MUSTARD }, g11);
+  const bar = el("rect", { width: 16, height: 140, rx: 8, fill: MUSTARD }, g11);
+  const hired = dot(g11, 300, 459), labHired = txt(g11, "lab", 300, 506, "A HIRED HAND", 14);
+  const wolf = el("g", {}, g11); shadow(wolf, 0.6);
+  const vG = verse(SC["good-shepherd"], 640, 156, 36, 46, true);
+
+  F.title("Psalm 23");
+  F.endCard(SC["good-shepherd"].titleCard, END + 0.7);
+
+  return (t) => {
+    const outAll = 1 - up(t, END + 0.55, 0.5);
+    // ground: fields, then the map and the ravine, then fields again
+    draw(ground, up(t, A0 - 0.6, 1.6));
+    op(ground, outAll * (1 - up(t, D0 - 0.8, 0.7) + up(t, R0 - 0.6, 0.7)) * (1 - up(t, G3 - 0.2, 0.8)));
+    if (t > G0 - 0.8) op(ground, outAll * (1 - up(t, G0 - 0.6, 0.6)) * 1);
+
+    // ----- 1 -----
+    const sheepIn = up(t, A0 + 0.8, 1.2), morph = up(t, A3 + 0.2, 2.2), gone1 = 1 - up(t, A2 - 0.2, 0.8);
+    const oneOut = 1 - up(t, B0 + 0.2, 0.7);
+    op(one.g, (t < A3 ? sheepIn * gone1 : morph) * oneOut);
+    place(one, 640 + (t < A3 ? 0 : 0), GY, 0, Math.abs(Math.sin(t * 1.3)) * 2 * (t < A2 ? 1 : 0));
+    if (t >= A3) one.g.setAttribute("transform", `translate(640 ${GY - 26}) scale(${mix(0.55, 1, morph).toFixed(3)})`);
+    op(vA, span(t, A1 - 0.3, A2 + 0.4, 0.5));
+    const c1 = up(t, A2 + 0.6, 1.0); op(g1, up(t, A2 + 0.2, 0.6) * (1 - up(t, B0 - 0.4, 0.6)));
+    people.forEach((p, i) => { op(p, up(t, A2 + 0.8 + i * 0.15, 0.4) * (1 - up(t, A3 + 0.3 + i * 0.08, 0.6))); p.setAttribute("cy", (459 - 2 * Math.abs(Math.sin(t * 1.5 + i))).toFixed(1)); });
+    draw(crook, up(t, at("shepherd", 2, 0.12), 1.2)); op(crook, 1 - up(t, A3 + 0.1, 0.8));
+    const cs = mix(1, 0.4, morph); move(crown, 640, mix(330 + 3 * Math.sin(t * 1.2), 420, morph), cs); op(crown, c1 * (1 - morph));
+    op(labHam, span(t, at("shepherd", 2, 0.2), at("shepherd", 2, 0.66), 0.5)); op(labDav, span(t, at("shepherd", 2, 0.72), A3 + 0.2, 0.5));
+
+    // ----- 2 -----
+    const out2 = 1 - up(t, C0 - 0.6, 0.6); op(g2, up(t, B0 - 0.3, 0.6) * out2);
+    op(vB, up(t, B0 - 0.2, 0.7) * out2);
+    const bPanels = at("david", 0, 0.25), bSch = at("david", 0, 0.6);
+    op(left2, span(t, bPanels, B1 + 0.2, 0.7)); op(right2, span(t, bSch, B1 + 0.2, 0.7)); draw(div2, up(t, bPanels + 0.3, 0.8)); op(div2, 1 - up(t, B1 - 0.2, 0.6));
+    place(dSheep, 330, GY, 0, Math.abs(Math.sin(t * 1.4)) * 2);
+    const gk = lin(t, B1 + 0.4, 4.0) * 20; gens.forEach((d, i) => { op(d, clamp(gk - i) * (0.45 + 0.55 * clamp(1 - (gk - i) / 6))); });
+    op(labGen, up(t, B1 + 1.0, 0.7));
+
+    // ----- 3 -----
+    const out3 = 1 - up(t, D0 - 0.6, 0.6); op(g3, up(t, C0 - 0.4, 0.6) * out3);
+    draw(hills, up(t, C0 - 0.3, 1.8)); op(dry, up(t, C0 + 0.6, 1.0));
+    op(grass, up(t, at("pastures", 0, 0.5), 1.0)); op(pool, up(t, at("pastures", 0, 0.6), 1.0)); ripple.setAttribute("transform", `translate(${(10 * Math.sin(t * 0.8)).toFixed(1)} 0)`);
+    op(far, span(t, at("pastures", 0, 0.6), C1 + 1.5, 0.8)); far.setAttribute("stroke-dashoffset", (-t * 0.01).toFixed(3));
+    const walk3 = mix(0, 280, lin(t, C0, C1 - C0)) + mix(0, 400, ease(lin(t, C1, at("pastures", 1, 0.8) - C1))), lie3 = up(t, at("pastures", 1, 0.75), 1.4);
+    flock3.forEach((f, i) => place(f.o, f.x + walk3, GY, lie3, (1 - lie3) * Math.abs(Math.sin(t * 3 + i)) * 3));
+    op(vC, span(t, C1 - 0.3, cPause - 0.2, 0.5));
+    op(qC, span(t, cPause, D0 - 0.4, 0.8)); qC.setAttribute("transform", `translate(0 ${(3 * Math.sin(t * 1.4)).toFixed(1)})`);
+
+    // ----- 4 -----
+    const out4 = 1 - up(t, V0 + 1.6, 1.0); op(g4, up(t, D0 - 0.3, 0.6));
+    op(mainPath, out4 * up(t, D0 - 0.3, 0.6)); draw(mainPath, up(t, D0 - 0.2, 2.0));
+    spurs.forEach((s, i) => { draw(s, up(t, D1 + 0.2 + i * 0.45, 0.9)); op(s, (1 - 0.5 * up(t, D2, 0.8)) * (1 - up(t, V0 - 0.6, 0.6))); });
+    draw(nameLine, up(t, D2 + 0.6, 2.6)); op(nameLine, 1 - up(t, V0 - 0.6, 0.6));
+    op(labDead, span(t, D1 + 1.6, D2 + 0.3, 0.6)); op(labRight, span(t, D1 + 1.0, V0 - 0.4, 0.6)); op(labName, span(t, D2 + 0.4, V0 - 0.4, 0.6));
+    const sx4 = mix(80, 560, lin(t, D0, V0 - D0));
+    flock4.forEach((o, i) => { place(o, sx4 - i * 46, PY, 0, Math.abs(Math.sin(t * 3 + i)) * 2.5); op(o.g, up(t, D0 + 0.4 + i * 0.2, 0.6) * (1 - up(t, V0 - 0.6, 0.6))); });
+    op(vD, span(t, D0 - 0.3, D1 + 0.2, 0.5));
+
+    // ----- 5 -----
+    const out5 = 1 - up(t, R0 - 0.6, 0.6); op(g5, up(t, V0 - 0.4, 0.5) * out5);
+    draw(ravPath, up(t, V0 - 0.4, 2.2)); op(dark, up(t, V0 + 1.2, 1.6));
+    hatch.setAttribute("transform", `translate(${(4 * Math.sin(t * 0.5)).toFixed(1)} 0)`);
+    const wp = mix(0.1, 0.49, ease(lin(t, V1 - 0.3, V2 + 0.6 - (V1 - 0.3)))) + 0.09 * lin(t, V3, R0 - V3);
+    const pt = geo.getPointAtLength(wp * GL), wy = pt.y - 10 - 2 * Math.abs(Math.sin(t * 2.6)) * (t > V1 - 0.3 && t < V2 + 0.6 || t > V3 ? 1 : 0);
+    set(walker, { cx: pt.x.toFixed(1), cy: wy.toFixed(1) }); op(walker, up(t, V0 + 1.0, 0.6));
+    const cl = up(t, at("valley", 1, 0.72), 1.2) * (0.085 + 0.03 * up(t, at("valley", 3, 0.75), 1.2));
+    set(companion, { x: (pt.x + 18).toFixed(1), y: (pt.y - 104).toFixed(1) }); op(companion, cl + 0.006 * Math.sin(t * 1.6) * (cl > 0 ? 1 : 0));
+    op(labShadow, span(t, at("valley", 0, 0.42), at("valley", 0, 0.7), 0.5)); op(labDark, span(t, at("valley", 0, 0.72), V1 + 0.6, 0.5));
+    hes.forEach((h, i) => op(h, span(t, V2 + 0.5 + i * 0.35, V3 - 0.2, 0.4) * (1 - 0.6 * up(t, at("valley", 2, 0.62), 0.6))));
+    op(labAbout, span(t, V2 + 1.6, V3 - 0.2, 0.4)); op(youT, span(t, at("valley", 2, 0.62), V3 - 0.2, 0.6)); op(labTo, span(t, at("valley", 2, 0.7), V3 - 0.2, 0.5));
+    draw(around, 1); op(around, span(t, at("valley", 3, 0.36), at("valley", 3, 0.66), 0.6));
+    op(vV, span(t, V1 - 0.3, V2 + 0.2, 0.5));
+
+    // ----- 6 -----
+    const out6 = 1 - up(t, T0 - 0.6, 0.6); op(g6, up(t, R0 - 0.3, 0.6) * out6);
+    op(rod, up(t, R1 + 0.2, 0.6)); rod.setAttribute("transform", `translate(0 ${(30 * (1 - up(t, R1 + 0.2, 0.9))).toFixed(1)})`);
+    draw(staff, up(t, R1 + 1.4, 1.4)); op(labRod, up(t, R1 + 0.7, 0.5)); op(labStaff, up(t, R1 + 2.2, 0.5));
+    op(guardWash, up(t, R2 + 0.8, 1.4) * (0.08 + 0.02 * Math.sin(t * 1.4)));
+    flock6.forEach((o, i) => { place(o, [130, 210, 290, 370][i], GY, 0, Math.abs(Math.sin(t * 1.2 + i)) * 1.5); op(o.g, up(t, R2 - 0.2 + i * 0.15, 0.6)); });
+    const creep = up(t, R2 + 0.6, 2.4), back = up(t, at("rod", 2, 0.7), 1.6);
+    hunters.forEach((h, i) => { op(h.g, up(t, R2 + 0.4 + i * 0.2, 0.8)); move(h.g, h.x + mix(160, 0, creep) + 40 * back + 3 * Math.sin(t * 0.9 + i), GY); });
+    op(vR, span(t, R0 - 0.3, R1 + 0.6, 0.5));
+
+    // ----- 7 -----
+    const out7 = 1 - up(t, U0 - 0.6, 0.6); op(g7, up(t, T0 - 0.3, 0.6) * out7);
+    draw(tent, up(t, T0, 1.8)); op(tentFill, up(t, T0 + 1.0, 1.0) * 0.55); op(poles, up(t, T0 + 1.4, 0.8)); op(table, up(t, T1 - 0.3, 0.8));
+    op(tentWash, up(t, at("table", 2, 0.25), 1.6) * 0.1);
+    const run = ease(lin(t, T2 + 0.2, 2.8)); set(guest, { cx: mix(-30, 500, run).toFixed(1), cy: (459 - 3 * Math.abs(Math.sin(t * 7)) * (run > 0 && run < 1 ? 1 : 0)).toFixed(1) }); op(guest, up(t, T2, 0.3));
+    const chase = ease(lin(t, T2 + 0.9, 3.4));
+    pursuers.forEach((p, i) => { const stop = 240 + i * 42; set(p, { cx: mix(-90 - i * 50, stop, chase).toFixed(1), cy: (459 - (chase > 0 && chase < 1 ? 3 * Math.abs(Math.sin(t * 7 + i)) : 0)).toFixed(1) }); op(p, up(t, T2 + 0.8, 0.4) * 0.42); });
+    op(vT, span(t, T1 - 0.3, T2 + 0.3, 0.5));
+    op(qT, span(t, T3 - 0.1, U0 - 0.4, 0.8)); qT.setAttribute("transform", `translate(0 ${(3 * Math.sin(t * 1.4)).toFixed(1)})`);
+
+    // ----- 8 -----
+    const out8 = 1 - up(t, P0 - 0.6, 0.6); op(g8, up(t, U0 - 0.3, 0.6) * out8);
+    const tilt = up(t, U0 + 0.4, 0.9); move(flask, 470, 320, 1, -110 * tilt); op(flask, 1 - up(t, U1 + 1.5, 0.8));
+    drops.forEach((d, i) => { const ph = ((t - (U0 + 1.2) - i * 0.5) % 1.5 + 1.5) % 1.5, live = t > U0 + 1.2 + i * 0.5 && t < U1 + 1.2; set(d, { cx: 447, cy: (300 + 140 * clamp(ph / 0.9)).toFixed(1) }); op(d, live ? (ph < 0.9 ? 1 : 0) : 0); });
+    op(sheen, up(t, U0 + 2.2, 0.8));
+    const lvl = up(t, U0 + 0.3, 2.4); set(wine, { y: mix(-12, -72, lvl).toFixed(1), height: mix(0, 62, lvl).toFixed(1) });
+    spill.forEach((s, i) => draw(s, up(t, U0 + 2.4 + i * 0.3, 1.6))); set(puddle, { rx: (34 * up(t, U0 + 3.6, 1.6) + Math.sin(t * 1.5)).toFixed(1) });
+    op(labOil, up(t, U1 + 0.2, 0.6)); op(labCup, up(t, at("cup", 1, 0.45), 0.6)); op(labMore, up(t, at("cup", 1, 0.78), 0.8));
+    op(vU, span(t, U0 - 0.3, U1 + 0.3, 0.5));
+
+    // ----- 9 -----
+    const in9 = up(t, P0 - 0.3, 0.6), out9 = 1 - up(t, H1 + 0.6, 0.8);
+    op(g9, in9 * outAll);
+    const wx = mix(160, 820, lin(t, P0, H0 - P0)) + mix(0, 196, ease(lin(t, H0, 3.0)));
+    const atDoor = up(t, H0 + 2.6, 0.8);
+    set(walker9, { cx: wx.toFixed(1), cy: (459 - 2.5 * Math.abs(Math.sin(t * 2.6)) * (1 - atDoor)).toFixed(1) }); op(walker9, up(t, P0 - 0.2, 0.6) * (1 - up(t, G0 - 0.6, 0.6)));
+    const bright = up(t, at("pursued", 2, 0.45), 1.4), tl = 230 * up(t, P0 + 0.4, 2.0);
+    trail.forEach((p, k) => { let d = ""; for (let i = 0; i <= 24; i++) { const x = wx - 34 - tl * i / 24, y = (k ? 466 : 448) + 4 * Math.sin(x / 40 - t * 1.2 + k * 2); d += (i ? " L" : "M") + x.toFixed(1) + " " + y.toFixed(1); }
+      p.setAttribute("d", d); op(p, (0.55 + 0.35 * bright) * out9); });
+    set(labGood, { x: (wx - 150).toFixed(1) }); set(labMercy, { x: (wx - 150).toFixed(1) }); set(labChesed, { x: (wx - 150).toFixed(1) });
+    op(labGood, span(t, P0 + 1.2, H0 - 0.2, 0.6)); op(labMercy, span(t, P0 + 1.6, P1 + 0.8, 0.6)); op(labChesed, span(t, P1 + 1.0, H0 - 0.2, 0.6));
+    op(chesed, span(t, P1 + 0.2, P2 - 0.1, 0.7));
+    const hunt = span(t, at("pursued", 2, 0.22), at("pursued", 2, 0.5), 0.6);
+    hunters9.forEach((h, i) => { set(h, { cx: (wx - 330 - i * 48 - 40 * up(t, at("pursued", 2, 0.4), 1.2)).toFixed(1) }); op(h, hunt * 0.42); });
+    ticks.forEach((k, i) => op(k, (t > P2 ? up(t, P2 + 0.1 + i * 0.28, 0.4) * 0.8 : 0) * (1 - up(t, H2 - 0.6, 0.6))));
+    op(vP, span(t, P0 - 0.3, P1 + 0.3, 0.5));
+
+    // ----- 10 -----
+    const out10 = 1 - up(t, G0 - 0.6, 0.6); op(g10, up(t, H0 - 0.6, 0.8) * out10);
+    op(house, up(t, H0 - 0.8, 1.0)); leaf.setAttribute("transform", `translate(${(-4 * up(t, H0 + 1.4, 1.2)).toFixed(1)} 0)`);
+    op(doorLight, up(t, H0 + 1.2, 1.4) * (0.1 + 0.015 * Math.sin(t * 1.3)));
+    op(heb, span(t, at("house", 1, 0.05), H2, 0.7)); op(grk, span(t, at("house", 1, 0.3), H2, 0.7));
+    op(field, up(t, H2 - 0.4, 1.0)); op(labField, up(t, H2 + 0.3, 0.6)); op(labHouse, up(t, H2 + 0.8, 0.6));
+    op(vH, span(t, H0 - 0.3, H1 + 0.3, 0.5));
+
+    // ----- 11 -----
+    op(g11, up(t, G0 - 0.4, 0.6) * outAll);
+    const gather = ease(lin(t, at("good-shepherd", 0, 0.3), 4.6)), foldOut = 1 - up(t, G3 + 0.2, 1.0);
+    op(fold, up(t, G0, 0.8) * foldOut);
+    scat.forEach((s, i) => { place(s.o, mix(s.a[0], s.b[0], gather), mix(s.a[1], s.b[1], gather), 0, Math.abs(Math.sin(t * 2.5 + i)) * 2 * (gather > 0 && gather < 1 ? 1 : 0)); op(s.o.g, up(t, G0 + i * 0.12, 0.6) * foldOut); });
+    const barIn = up(t, at("good-shepherd", 0, 0.82), 1.2), desc = ease(lin(t, at("good-shepherd", 3, 0.5), 3.0));
+    const bx = 632, by = mix(330, 380, desc); set(bar, { x: bx, y: by.toFixed(1) }); op(bar, barIn);
+    set(barWash, { y: (by - 30).toFixed(1) }); op(barWash, up(t, G2 + 0.6, 1.2) * (0.08 + 0.02 * Math.sin(t * 1.3)));
+    op(hired, span(t, G2 - 0.2, at("good-shepherd", 2, 0.7), 0.5)); op(labHired, span(t, G2, at("good-shepherd", 2, 0.4), 0.5));
+    const flee = ease(lin(t, at("good-shepherd", 2, 0.3), 1.8)); set(hired, { cx: mix(300, -40, flee).toFixed(1), cy: (459 - (flee > 0 && flee < 1 ? 3 * Math.abs(Math.sin(t * 8)) : 0)).toFixed(1) });
+    const wIn = ease(lin(t, at("good-shepherd", 2, 0.12), 3.0)), wOut = ease(lin(t, at("good-shepherd", 2, 0.78), 2.0));
+    move(wolf, mix(1340, 1000, wIn) + 180 * wOut, GY); op(wolf, (1 - wOut) * up(t, at("good-shepherd", 2, 0.1), 0.5));
+    op(rav11, up(t, G3 + 0.2, 1.2)); draw(rav11Path, up(t, G3 + 0.2, 2.2));
+    op(vG, span(t, G1 - 0.3, G2 + 0.3, 0.5));
+  };
+});
+</script>
+</body></html>
