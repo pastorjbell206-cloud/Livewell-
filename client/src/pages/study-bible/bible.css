@@ -188,7 +188,7 @@
 .bk-words{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(260px,100%),1fr));gap:12px}
 .bk-words li{position:relative;padding:var(--s-3);padding-left:calc(var(--s-3) + 30px);background:var(--card);border:1.5px solid var(--art-ink)}
 .bk-words svg{position:absolute;left:var(--s-3);top:calc(var(--s-3) + 4px);color:var(--ink-muted)}
-.bk-words h3{margin:0 0 4px;font-family:var(--F);font-size:1.3rem;font-weight:500;color:var(--ink)}
+.bk-words h3,.bk-words h4{margin:0 0 4px;font-family:var(--F);font-size:1.3rem;font-weight:500;color:var(--ink)}
 .bk-words p{margin:0;font-family:var(--font-reading);font-size:16px;line-height:1.55;color:var(--ink)}
 .bk-tl__chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 var(--s-4)}
 .bk-tl__chips button{min-height:44px;padding:0 16px;border:1.5px solid var(--art-ink);border-radius:999px;background:var(--card);color:var(--ink);font-family:var(--U);font-size:14px;cursor:pointer}

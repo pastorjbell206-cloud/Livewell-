@@ -1501,6 +1501,63 @@ html{-webkit-tap-highlight-color:transparent}
 .lw-newline svg{flex:none;color:var(--ink-muted)}
 .lw-newline a{display:inline-flex;align-items:center;min-height:44px;font-weight:500;color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1.5px;text-underline-offset:.2em}
 
+/* ─── THE SIMPLER PAGES (preview/simpler, 2026-11-27) ──────────────────
+ * .lw-picks: the few big, quiet cards a page leads with (DoorCards: one
+ * picture, a title, one line). Four across on a laptop, two on a tablet,
+ * and on a phone one per row, the picture beside the words, so a thumb
+ * reaches each. .lw-all (SeeAll.tsx): "See everything in ...", one row that
+ * opens the rest of a door in place. .lw-next (NextStep.tsx): the band
+ * before the footer that says what to do now. .lw-fold: a part of a long
+ * page closed to its title, opened in place. Tokens only. */
+.lw-picks{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--s-5) var(--s-4)}
+.lw-picks--3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.lw-picks>li{display:flex}
+.lw-picks>li>.lw-door{flex:1}
+.lw-picks .lw-door__t{font-size:clamp(1.5rem,1.2rem + .8vw,1.875rem)}
+.lw-picks .lw-door__f{font-size:15px}
+@media (max-width:1000px){.lw-picks,.lw-picks--3{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){
+  .lw-picks,.lw-picks--3{grid-template-columns:minmax(0,1fr);gap:var(--s-2)}
+  .lw-picks .lw-door{flex-direction:row;align-items:center;gap:16px;min-height:96px}
+  .lw-picks .lw-door .lw-frame-fig{flex:0 0 42%;max-width:168px}
+  .lw-picks .lw-door__text{margin-top:0;min-width:0}
+  .lw-picks .lw-door__t{font-size:23px}
+  .lw-picks .lw-door__f{font-size:14.5px}
+  .lw-picks .lw-door:hover .lw-frame{transform:none;box-shadow:none}
+}
+.lw-picks-foot{margin:var(--s-4) 0 0}
+
+.lw-all{margin:0;border-top:1.5px solid var(--ink);border-bottom:1.5px solid var(--ink)}
+.lw-all>summary{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:60px;padding:8px 0;font-family:var(--F);font-weight:400;font-size:clamp(1.375rem,1.15rem + .7vw,1.75rem);line-height:1.15;color:var(--ink);cursor:pointer;list-style:none}
+.lw-all>summary::-webkit-details-marker{display:none}
+.lw-all>summary small{display:block;font-family:var(--U);font-size:14px;color:var(--ink-muted);margin-top:4px}
+.lw-all>summary svg{flex:none;transition:transform .2s var(--motion-ease)}
+.lw-all[open]>summary svg{transform:rotate(180deg)}
+.lw-all>summary:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.lw-all__body{padding:var(--s-2) 0 var(--s-4)}
+.lw-all__body>*+*{margin-top:var(--s-4)}
+.tl-folds .lw-all+.lw-all{border-top:0}
+.tl-folds .lw-all{scroll-margin-top:72px}
+
+.lw-next__in{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:var(--s-2) var(--s-5)}
+.lw-next__title{font-family:var(--F);font-weight:400;font-size:var(--fs-h2);line-height:1.08;letter-spacing:-.015em;color:var(--ink);margin:10px 0 0;text-wrap:balance}
+.lw-next__line{font-family:var(--U);font-size:17px;line-height:1.55;color:var(--ink-muted);margin:10px 0 0;max-width:52ch}
+.lw-next__acts{display:flex;flex-wrap:wrap;gap:12px}
+.lw-next__acts .btn{gap:8px}
+@media (max-width:760px){.lw-next__in{grid-template-columns:minmax(0,1fr)}.lw-next__acts{margin-top:var(--s-1)}.lw-next__acts .btn{flex:1 1 100%}}
+
+.lw-folds{list-style:none;margin:0;padding:0;border-top:1.5px solid var(--ink)}
+.lw-fold{border-bottom:1px solid var(--borderdk);scroll-margin-top:88px}
+.lw-fold>summary{display:flex;align-items:center;gap:14px;min-height:60px;padding:10px 0;cursor:pointer;list-style:none;color:var(--ink)}
+.lw-fold>summary::-webkit-details-marker{display:none}
+.lw-fold>summary:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.lw-fold__n{flex:none;width:28px;font-family:var(--U);font-size:13px;font-weight:500;color:var(--ink-muted)}
+.lw-fold__h{flex:1;min-width:0;margin:0;font-family:var(--F);font-weight:400;font-size:clamp(1.3rem,1.1rem + .6vw,1.625rem);line-height:1.2;color:var(--ink)}
+.lw-fold>summary>svg{flex:none;color:var(--ink-muted);transition:transform .2s var(--motion-ease)}
+.lw-fold[open]>summary>svg{transform:rotate(180deg)}
+.lw-fold__body{padding:0 0 var(--s-4) 42px}
+@media (max-width:640px){.lw-fold__body{padding-left:0}}
+
 /* ── Tools door (/tools, unit tools, 2026-11-18) ──────────────────────────────
  * ToolTile (components/art/ToolTile.tsx) in .lw-tools: the kit's ruled icon
  * square, the tool's one name, its job, and a quiet line of time and what it
@@ -1859,6 +1916,10 @@ html{-webkit-tap-highlight-color:transparent}
 .home-road{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;border:1px solid var(--borderdk);border-radius:var(--radius-pill);background:transparent;color:var(--ink);font-family:var(--U);font-weight:500;font-size:14px;line-height:1.2;text-decoration:none;white-space:nowrap}
 .home-road:hover{border-color:var(--ink)}
 @media (max-width:900px){.home-roads{margin-top:var(--s-1)}}
+/* The hero's one way to begin (the simpler home, 2026-11-27): Start here, and the whole site behind a quiet link. */
+.home-start{display:flex;flex-wrap:wrap;align-items:center;gap:8px 24px;margin:var(--s-3) 0 0}
+.home-start__all{display:inline-flex;align-items:center;min-height:44px;font-family:var(--U);font-weight:500;font-size:15px;color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1.5px;text-underline-offset:.25em}
+@media (max-width:900px){.home-start{margin-top:var(--s-2)}}
 
 /* THE FAMILY DOOR (pages/Family.tsx, pages/family/WeekGlance.tsx): tonight
    beside the table plate, the week in four rows, the How to shelf as four

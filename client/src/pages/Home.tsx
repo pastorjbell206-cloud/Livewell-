@@ -1,6 +1,14 @@
 /**
  * Home: the front door, drawn as a gallery.
  *
+ * The simpler page (2026-11-27): the first screen says what LiveWell is and
+ * gives one way to begin, Start here (and the whole site behind a quiet
+ * link), in place of the seven chips of /start. Then four big cards, the 66
+ * books, the essays and books, James, and the next step. The question
+ * picker, the second tonight band and the history strip live on their own
+ * doors (/topics, /family, /theology/history), where they always were; their
+ * pieces are kept in pages/home/. The notes below are the page as built.
+ *
  * The first screen is Plate I (the road), James's headline, the one sentence
  * that says what the site is for, and Find (one field: a passage or a
  * question), with tonight's family devotion under it. On a phone the plate
@@ -34,15 +42,14 @@ import RoadPlate from "@/components/art/RoadPlate";
 import PlateFrame from "@/components/art/PlateFrame";
 import Plate, { type PlateName } from "@/components/art/Plate";
 import DoorCard from "@/components/art/DoorCard";
+import NextStep from "@/components/art/NextStep";
 import { useNear } from "@/components/art/useNear";
 import { BOOK_SHELF } from "@/lib/bookShelf";
 import { liveChannels } from "@/lib/channels";
 import { HOME_HEADLINE, HOME_LINE, HOME_WHO, HOME_LINKED_HREF, HOME_LINKED_WORD, META_DESCRIPTION } from "@/lib/positioning";
 import { START_WITH, isPublicEssay, overrideMeta, shelfEntry } from "@/lib/shelf";
-import { followHash } from "@/lib/followHash";
 import HomeFind from "./home/HomeFind";
 import TonightSlot, { readShellLines } from "./home/TonightSlot";
-import { ROAD_CHIPS } from "./home/roadChips";
 import HomeLatest from "./home/HomeLatest";
 import "./home/home.css";
 
@@ -92,9 +99,6 @@ function Tonight() {
 
 /* The things to touch, each its own chunk. */
 const BibleShelf = lazy(() => import("./home/BibleShelf"));
-const QuestionPicker = lazy(() => import("./home/QuestionPicker"));
-const TonightTable = lazy(() => import("./home/TonightTable"));
-const HistoryStrip = lazy(() => import("./home/HistoryStrip"));
 
 /** A box that holds the piece's height (home.css) until the piece arrives. */
 function Piece({ name, children }: { name: string; children: ReactNode }) {
@@ -114,51 +118,34 @@ interface Door {
   note?: string;
 }
 
-/** The first five doors: the large one, then four beside it. */
+/**
+ * Four ways in, as big quiet cards: what most first visits come for. Start
+ * here is the hero's one button; every other door is in the header, and the
+ * whole site is one link away ("See everything on LiveWell").
+ */
 const DOORS: Door[] = [
   { title: "Read the Study Bible", href: "/study/bible", plate: "book", note: "Notes on every chapter" },
-  { title: "Church history", href: "/theology/history", plate: "basilica", note: "From Pentecost to today" },
   { title: "Hard questions", href: "/topics", plate: "lantern", note: "Straight answers" },
   { title: "Family", href: "/family", plate: "house", note: "Tonight's devotion" },
-  // /start has a way in for every reader, not only someone new (walk 2026-11, finding 24).
-  { title: "Start here", href: "/start", plate: "tree", note: "Wherever you are" },
+  { title: "Church history", href: "/theology/history", plate: "basilica", note: "From Pentecost to today" },
 ];
 
 /**
- * The other five, smaller. The first was "Context and creeds" on /study, from
- * when that page held both; the creeds now sit under History, so the card
- * takes the context half under its one name, Bible background (lib/siteCatalog),
- * and opens that page (the walk of 2026-11-23, finding 3).
+ * The one way to begin, in the first screen: Start here (/start, where a
+ * reader picks the one that sounds like them), and the whole site behind a
+ * quiet link. scripts/prerender-heads.mjs writes the same markup into the
+ * static hero.
  */
-const MORE_DOORS: Door[] = [
-  { title: "Bible background", href: "/resources/context", plate: "jar" },
-  { title: "Tools", href: "/tools", plate: "compass" },
-  { title: "Essays", href: "/writing", plate: "quill" },
-  { title: "Books", href: "/books", plate: "books" },
-  { title: "Find James", href: "/connect", plate: "letter" },
-];
-
-/**
- * "Start where you are": the choices of /start as one quiet row of chips
- * (home/roadChips.ts). A road opens on /start; the doubter's and the pastor's
- * chips open their one page.
- */
-function RoadChips() {
+function StartHere() {
   return (
-    <nav className="home-roads" aria-labelledby="home-roads-label">
-      <p id="home-roads-label" className="home-roads__label">
-        Start where you are
-      </p>
-      <ul className="home-roads__list">
-        {ROAD_CHIPS.map((r) => (
-          <li key={r.id}>
-            <Link href={r.href} className="home-road" onClick={() => followHash(r.href)}>
-              {r.chip}
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </nav>
+    <p className="home-start">
+      <Link href="/start" className="btn">
+        Start here
+      </Link>
+      <Link href="/explore" className="home-start__all">
+        See everything on LiveWell
+      </Link>
+    </p>
   );
 }
 
@@ -169,8 +156,6 @@ function leadEssay() {
   const rewrite = overrideMeta(slug);
   return { slug, title: rewrite?.title ?? shelfEntry(slug)?.title ?? slug };
 }
-
-const two = (n: number) => String(n).padStart(2, "0");
 
 function SectionHead({ eyebrow, title, link, id }: { eyebrow: string; title: string; link?: { href: string; label: string }; id: string }) {
   return (
@@ -229,8 +214,8 @@ export default function Home() {
             <HomeFind />
             {/* Tonight's devotion, Continue, and the Advent line; empty when there is nothing to show. */}
             <Tonight />
-            {/* The choices of /start, one chip each: five roads, and the doubter's and the pastor's page. */}
-            <RoadChips />
+            {/* One way to begin. */}
+            <StartHere />
           </div>
           <PlateFrame className="home-hero__art" ratio={null} number="Plate I" title="The road">
             <RoadPlate />
@@ -238,21 +223,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* TEN WAYS IN. Not called doors: the menu's seven doors are the site's doors. */}
+      {/* FOUR WAYS IN. Not called doors: the menu's seven doors are the site's doors. */}
       <section className="home-sec home-sec--doors" aria-labelledby="home-doors-title">
         <div className="home-wrap">
-          <SectionHead id="home-doors-title" eyebrow="Ten ways in" title="Where to begin." link={{ href: "/explore", label: "See everything on LiveWell" }} />
-          <ul className="home-doors">
-            {DOORS.map((d, i) => (
-              <li key={d.href} className={i === 0 ? "home-doors__lead" : undefined}>
-                <DoorCard {...d} number={two(i + 1)} variant={i === 0 ? "lead" : undefined} />
-              </li>
-            ))}
-          </ul>
-          <ul className="home-doors-more">
-            {MORE_DOORS.map((d, i) => (
+          <SectionHead id="home-doors-title" eyebrow="Four ways in" title="Where to begin." link={{ href: "/explore", label: "See everything on LiveWell" }} />
+          <ul className="lw-picks">
+            {DOORS.map((d) => (
               <li key={d.href}>
-                <DoorCard {...d} number={two(i + DOORS.length + 1)} variant="row" />
+                <DoorCard {...d} />
               </li>
             ))}
           </ul>
@@ -270,54 +248,6 @@ export default function Home() {
           />
           <Piece name="shelf">
             <BibleShelf />
-          </Piece>
-        </div>
-      </section>
-
-      {/* A HARD QUESTION, ASKED STRAIGHT */}
-      <section className="home-sec" aria-labelledby="home-ask-title">
-        <div className="home-wrap home-two">
-          <PlateFrame className="home-two__art">
-            <Plate name="tomb" />
-          </PlateFrame>
-          <div>
-            <p className="home-eyebrow">Hard questions</p>
-            <h2 id="home-ask-title" className="home-h2">
-              Ask it straight.
-            </h2>
-            <Piece name="ask">
-              <QuestionPicker />
-            </Piece>
-          </div>
-        </div>
-      </section>
-
-      {/* TONIGHT AT THE TABLE */}
-      <section className="home-sec home-sec--warm" aria-labelledby="home-table-title">
-        <div className="home-wrap home-two home-two--flip">
-          <div>
-            <p className="home-eyebrow">Tonight at the table</p>
-            <Piece name="table">
-              <TonightTable />
-            </Piece>
-          </div>
-          <PlateFrame className="home-two__art">
-            <Plate name="table" />
-          </PlateFrame>
-        </div>
-      </section>
-
-      {/* CHURCH HISTORY: two thousand years on one line. */}
-      <section className="home-sec home-sec--dark" aria-labelledby="home-history-title">
-        <div className="home-wrap">
-          <SectionHead
-            id="home-history-title"
-            eyebrow="Church history"
-            title="Two thousand years on one line."
-            link={{ href: "/theology/history", label: "The whole course" }}
-          />
-          <Piece name="history">
-            <HistoryStrip />
           </Piece>
         </div>
       </section>
@@ -422,6 +352,22 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <NextStep
+        tone="bone"
+        title="Not sure where to begin?"
+        line="Pick the one that sounds like you."
+        action={
+          <Link href="/start" className="btn">
+            Start here
+          </Link>
+        }
+        second={
+          <Link href="/help" className="btn btn--quiet">
+            Find Help
+          </Link>
+        }
+      />
     </Layout>
   );
 }

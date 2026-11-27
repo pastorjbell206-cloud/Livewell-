@@ -32,11 +32,15 @@ function publicFetch(): typeof fetch {
 afterEach(() => vi.unstubAllGlobals());
 
 describe("Mark's teaching introduction", () => {
-  it("opens with a contents list that reaches every part, the lists, the timeline and the map", () => {
+  it("lists every part, the lists, the timeline and the map as rows that open in place, the first one open", () => {
     renderWithProviders(<BookTeaching book={MARK} teaching={intro.teaching!} />);
-    const links = within(screen.getByRole("navigation", { name: "Contents of the guide to Mark" })).getAllByRole("link");
-    expect(links).toHaveLength(intro.teaching!.parts.length + 5);
-    for (const a of links) expect(document.getElementById(a.getAttribute("href")!.slice(1))).toBeTruthy();
+    const rows = Array.from(screen.getByRole("list", { name: "Contents of the guide to Mark" }).children);
+    expect(rows).toHaveLength(intro.teaching!.parts.length + 4);
+    const folds = rows.map((r) => r.querySelector("details")!);
+    // Each row is a fold with the id a link uses (#who, #map), and only the first is open.
+    expect(folds.map((d) => d.id)).toEqual([...intro.teaching!.parts.map((p) => p.id), "hard-passages", "key-words", "timeline", "map"]);
+    expect(folds.map((d) => d.open)).toEqual(folds.map((_, i) => i === 0));
+    expect(document.getElementById("deeper")).toBeTruthy();
     // The hard passages open their verse in the chapter.
     expect(screen.getByRole("link", { name: "Mark 2:26" }).getAttribute("href")).toBe("/study/bible/mark/2#v26");
   });
@@ -98,7 +102,7 @@ describe("John's teaching introduction, from the same parts", () => {
 
   it("has its own part on 'the Jews', its hard passages and its own Go deeper pages", () => {
     renderWithProviders(<BookTeaching book={JOHN} teaching={jn.teaching!} />);
-    expect(screen.getByRole("heading", { level: 2, name: "‘The Jews’ in John" })).toBeTruthy();
+    expect(screen.getByRole("heading", { level: 3, name: "‘The Jews’ in John" })).toBeTruthy();
     expect(screen.getByRole("link", { name: "John 8:44" }).getAttribute("href")).toBe("/study/bible/john/8#v44");
     expect(screen.getByRole("link", { name: /Jewish life in Jesus's day/ }).getAttribute("href")).toBe("/resources/context/world/jewish-life-in-jesus-day");
   });
@@ -118,8 +122,8 @@ describe("Luke's teaching introduction, from the same parts", () => {
 
   it("has its parts on history and on the Jewish people, its hard passages and its own Go deeper pages", () => {
     renderWithProviders(<BookTeaching book={LUKE} teaching={lk.teaching!} />);
-    expect(screen.getByRole("heading", { level: 2, name: "Luke and the history of his day" })).toBeTruthy();
-    expect(screen.getByRole("heading", { level: 2, name: "Luke and the Jewish people" })).toBeTruthy();
+    expect(screen.getByRole("heading", { level: 3, name: "Luke and the history of his day" })).toBeTruthy();
+    expect(screen.getByRole("heading", { level: 3, name: "Luke and the Jewish people" })).toBeTruthy();
     expect(screen.getByRole("link", { name: "Luke 2:2" }).getAttribute("href")).toBe("/study/bible/luke/2#v2");
     expect(screen.getByRole("link", { name: "Luke 23:34" }).getAttribute("href")).toBe("/study/bible/luke/23#v34");
     expect(screen.getByRole("link", { name: /The Roman world/ }).getAttribute("href")).toBe("/resources/context/world/roman-world");
@@ -140,8 +144,8 @@ describe("Acts's teaching introduction, Luke's second volume", () => {
 
   it("has its parts on Paul's letters and on the Jewish people, its hard passages and its own Go deeper pages", () => {
     renderWithProviders(<BookTeaching book={ACTS} teaching={ac.teaching!} />);
-    expect(screen.getByRole("heading", { level: 2, name: "Acts and Paul's letters" })).toBeTruthy();
-    expect(screen.getByRole("heading", { level: 2, name: "Acts and the Jewish people" })).toBeTruthy();
+    expect(screen.getByRole("heading", { level: 3, name: "Acts and Paul's letters" })).toBeTruthy();
+    expect(screen.getByRole("heading", { level: 3, name: "Acts and the Jewish people" })).toBeTruthy();
     expect(screen.getByRole("link", { name: "Acts 2:38" }).getAttribute("href")).toBe("/study/bible/acts/2#v38");
     expect(screen.getByRole("link", { name: "Acts 5:5" }).getAttribute("href")).toBe("/study/bible/acts/5#v5");
     expect(within(document.getElementById("map")!).getByText(/The second follows Paul's travels from Antioch through Asia Minor, Macedonia and Greece, and by sea to Rome\./)).toBeTruthy();
@@ -203,9 +207,9 @@ describe("Genesis's teaching introduction, the first Old Testament book", () => 
 
   it("has its parts on authorship, its neighbors and its readers, its hard passages, and its own Go deeper pages without the Gospel ones", () => {
     renderWithProviders(<BookTeaching book={GENESIS} teaching={gn.teaching!} />);
-    expect(screen.getByRole("heading", { level: 2, name: "Who wrote it, and how we know" })).toBeTruthy();
-    expect(screen.getByRole("heading", { level: 2, name: "Genesis and its neighbors" })).toBeTruthy();
-    expect(screen.getByRole("heading", { level: 2, name: "How Jews and Christians have read it" })).toBeTruthy();
+    expect(screen.getByRole("heading", { level: 3, name: "Who wrote it, and how we know" })).toBeTruthy();
+    expect(screen.getByRole("heading", { level: 3, name: "Genesis and its neighbors" })).toBeTruthy();
+    expect(screen.getByRole("heading", { level: 3, name: "How Jews and Christians have read it" })).toBeTruthy();
     expect(screen.getByRole("link", { name: "Genesis 9:20-27" }).getAttribute("href")).toBe("/study/bible/genesis/9#v25");
     expect(screen.getByRole("link", { name: "Genesis 3:15" }).getAttribute("href")).toBe("/study/bible/genesis/3#v15");
     const deeper = document.getElementById("deeper")!;

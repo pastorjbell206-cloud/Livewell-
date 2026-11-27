@@ -22,6 +22,9 @@
  * three-question quiz after it. The path to help is at the foot of every
  * road. The roads live in lib/startRoad.json so the prerender script can list
  * them; start.test.tsx checks every link and every count the copy states.
+ *
+ * The simpler page (2026-11-27): the page ends on its next step, the
+ * three-question quiz, for the reader who cannot pick a card.
  */
 import { useEffect, useRef, useState, type MouseEvent } from "react";
 import { Link } from "wouter";
@@ -31,6 +34,7 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import PageHead from "@/components/art/PageHead";
 import PlateFrame from "@/components/art/PlateFrame";
+import NextStep from "@/components/art/NextStep";
 import Plate from "@/components/art/Plate";
 import { SAVE_FAILED } from "@/components/TakeItWithYou";
 import { scrollBehavior } from "@/lib/motion";
@@ -306,6 +310,19 @@ export default function Start() {
           </p>
         </div>
       </section>
+
+      {/* The road for someone new already ends on the quiz (NewRoadFoot). */}
+      {open?.id !== "new" && (
+        <NextStep
+          title="Not sure which one is you?"
+          line={`${road.quiz.link} ${road.quiz.after}`}
+          action={
+            <Link href={road.quiz.href} className="btn">
+              {road.quiz.link}
+            </Link>
+          }
+        />
+      )}
     </Layout>
   );
 }

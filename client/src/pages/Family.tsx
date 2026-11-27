@@ -18,6 +18,12 @@
  *    parenting, marriage, the tools) as four closed rows, every link kept.
  *    The path to help stays open at the foot.
  *
+ * The simpler page (2026-11-27): the rooms are four big cards (the Bible
+ * films joined them, since a parent looks for a film here); the how-to
+ * shelf (the teen years inside its teenager's row) and the rest of the home
+ * are one list of closed
+ * rows, "More help for the home", every link kept; then the next step.
+ *
  * The page was fifteen phone screens long. The two pull-quote bands and the
  * long card descriptions are gone; no link and no path to help was removed.
  * Tonight comes from the static year map and the reader's own calendar
@@ -46,6 +52,7 @@ import { SKEPTIC_TRACK_LIVE } from "@/lib/skepticTrack";
 import AdventAtTheTable from "@/components/AdventAtTheTable";
 import { RemindMe } from "@/components/RemindMe";
 import Layout from "@/components/Layout";
+import NextStep from "@/components/art/NextStep";
 import { SEOMeta } from "@/components/SEOMeta";
 import PageHead from "@/components/art/PageHead";
 import SectionHead from "@/components/art/SectionHead";
@@ -72,6 +79,7 @@ const ROOMS: { title: string; note: string; href: string; plate: PlateName }[] =
   { title: "All family devotions", note: "A year of weekly devotions, and the seasons", href: "/family/devotions", plate: "book" },
   { title: "The family catechism", note: "One question and answer at a time", href: "/family/catechism", plate: "quill" },
   { title: "Family reading plans", note: "A passage a day, together", href: "/family/reading-plans", plate: "sundial" },
+  { title: WATCH.name, note: "Short films to watch together", href: WATCH.href, plate: "lantern" },
 ];
 
 /**
@@ -247,7 +255,7 @@ export default function Family() {
       <section className="home-sec home-sec--warm" aria-labelledby="fm-rooms-title">
         <div className="home-wrap">
           <SectionHead icon={HomeIcon} label="The rooms" title="Everything for the table." id="fm-rooms-title" />
-          <ul className="lw-rooms">
+          <ul className="lw-picks">
             {ROOMS.map((r) => (
               <li key={r.href}>
                 <DoorCard {...r} />
@@ -268,57 +276,41 @@ export default function Family() {
         </div>
       </section>
 
-      {/* HOW TO: the first questions a parent asks, every link kept. */}
-      <section className="home-sec" aria-labelledby="fm-howto-title">
+      {/* MORE HELP FOR THE HOME: the how-to shelf, the teen years and the rest of the home, each a closed row; every link kept. Then help. */}
+      <section className="home-sec" aria-labelledby="fm-more-title">
         <div className="home-wrap">
-          <SectionHead icon={Lightbulb} label="How to" title="Help for the hard parts." id="fm-howto-title" />
-          <ul className="fm-howto">
+          <SectionHead icon={Lightbulb} label="How to" title="More help for the home." id="fm-more-title" />
+          <div className="fm-more">
             {HOW_TO.map(({ title, icon: Icon, links }) => (
-              <li key={title}>
-                <h3 className="fm-howto__title">
+              <details key={title} className="fm-fold">
+                <summary>
                   <span className="lw-tile__icon" aria-hidden="true">
                     <Icon size={22} strokeWidth={1.75} />
                   </span>
                   {title}
-                </h3>
-                <ul className="fm-links">
-                  {links.map((l) => (
-                    <li key={l.label}>
-                      <Link href={l.href}>{l.label}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </li>
+                  <ChevronDown aria-hidden="true" size={18} strokeWidth={1.75} className="fm-chev" />
+                </summary>
+                <div className="fm-fold__body">
+                  <ul className="fm-links">
+                    {links.map((l) => (
+                      <li key={l.label}>
+                        <Link href={l.href}>{l.label}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                  {/* The teen years: the pieces written for them, with the teenager's row. */}
+                  {title === "If you have a teenager" && (
+                    <ul className="lw-tiles" aria-label="The teen years">
+                      {TEENS.map((t) => (
+                        <li key={t.name}>
+                          <IconTile {...t} />
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              </details>
             ))}
-          </ul>
-          <p className="lw-newline">
-            <Sprout aria-hidden="true" size={22} strokeWidth={1.75} />
-            <span>
-              Why it matters: <Link href="/topics/raising-children-in-a-secular-age">How do we hand the faith to our kids in a secular age?</Link>
-            </span>
-          </p>
-        </div>
-      </section>
-
-      {/* THE TEEN YEARS */}
-      <section className="home-sec home-sec--warm" aria-labelledby="fm-teens-title">
-        <div className="home-wrap">
-          <SectionHead icon={MessagesSquare} label="For teenagers" title="The teen years." id="fm-teens-title" />
-          <ul className="lw-tiles">
-            {TEENS.map((t) => (
-              <li key={t.name}>
-                <IconTile {...t} />
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      {/* THE REST OF THE HOME, closed until opened; every link kept. Then help. */}
-      <section className="home-sec" aria-labelledby="fm-more-title">
-        <div className="home-wrap">
-          <SectionHead icon={HomeIcon} label="More for the home" title="For every kind of home." id="fm-more-title" />
-          <div className="fm-more">
             <details className="fm-fold">
               <summary>
                 <span className="lw-tile__icon" aria-hidden="true">
@@ -350,6 +342,12 @@ export default function Family() {
               </details>
             ))}
           </div>
+          <p className="lw-newline">
+            <Sprout aria-hidden="true" size={22} strokeWidth={1.75} />
+            <span>
+              Why it matters: <Link href="/topics/raising-children-in-a-secular-age">How do we hand the faith to our kids in a secular age?</Link>
+            </span>
+          </p>
           <p className="lw-newline fm-help">
             <LifeBuoy aria-hidden="true" size={22} strokeWidth={1.75} />
             <span>
@@ -359,6 +357,21 @@ export default function Family() {
           </p>
         </div>
       </section>
+
+      <NextStep
+        title="A devotion a week, together."
+        line="A passage, a question to talk about, and a prayer, in about ten minutes."
+        action={
+          <Link href="/family/devotions" className="btn">
+            All family devotions
+          </Link>
+        }
+        second={
+          <Link href="/family/catechism" className="btn btn--quiet">
+            The family catechism
+          </Link>
+        }
+      />
     </Layout>
   );
 }

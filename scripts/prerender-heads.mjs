@@ -1517,23 +1517,10 @@ function homeHeroHtml() {
   // would not fit them (lib/home-tonight-slot.mjs). No script sits inside the hero:
   // the parser waits at a script for the stylesheet and may paint what it has, and on
   // a phone that painted the words before Plate I, which then pushed them down. Under
-  // the slot, the choices of /start as one
-  // row of chips, as Home draws them (pages/home/roadChips.ts): a road opens on /start,
-  // a reader's page opens itself.
-  const start = readJsonSafe("client/src/lib/startRoad.json") || {};
-  const choice = new Map([
-    ...(start.roads || []).map((r) => [r.id, { chip: r.chip, href: `/start#${r.id}` }]),
-    ...(start.pages || []).map((p) => [p.id, { chip: p.chip, href: p.href }]),
-  ]);
-  const chips = (start.order || (start.roads || []).map((r) => r.id))
-    .map((id) => choice.get(id))
-    .filter(Boolean)
-    .map((c) => `<li><a class="home-road" href="${esc(c.href)}">${esc(c.chip)}</a></li>`)
-    .join("");
-  const roads = chips
-    ? `
-              <nav class="home-roads" aria-labelledby="home-roads-label"><p id="home-roads-label" class="home-roads__label">Start where you are</p><ul class="home-roads__list">${chips}</ul></nav>`
-    : "";
+  // the slot, the one way to begin, as Home draws it (StartHere in pages/Home.tsx):
+  // Start here, and the whole site behind a quiet link.
+  const roads = `
+              <p class="home-start"><a href="/start" class="btn">Start here</a><a href="/explore" class="home-start__all">See everything on LiveWell</a></p>`;
   return `
         <section class="home-hero">
           <div class="home-hero__inner">
