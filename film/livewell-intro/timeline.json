@@ -1,0 +1,117 @@
+{
+ "length": 72.4,
+ "chapters": [
+  {
+   "id": "welcome",
+   "kicker": "Welcome",
+   "level": 0.25,
+   "start": 1.7,
+   "end": 10.66,
+   "lines": [
+    {
+     "text": "Maybe you're not sure Christianity is true. Maybe you've believed for years and want to go deeper. LiveWell is for both.",
+     "start": 2.6,
+     "end": 9.76
+    }
+   ]
+  },
+  {
+   "id": "bible",
+   "kicker": "The Bible",
+   "level": 0.35,
+   "start": 9.86,
+   "end": 17.64,
+   "lines": [
+    {
+     "text": "Start with the Bible. Read any chapter with notes beside it, or watch one of more than a hundred short films.",
+     "start": 10.76,
+     "end": 16.74
+    }
+   ]
+  },
+  {
+   "id": "questions",
+   "kicker": "Hard questions",
+   "level": 0.45,
+   "start": 16.84,
+   "end": 28.0,
+   "lines": [
+    {
+     "text": "Bring your hardest questions. Does God exist? Can I trust the Bible? Each answer gives the objection at its strongest, the evidence, and what's still open.",
+     "start": 17.74,
+     "end": 27.1
+    }
+   ]
+  },
+  {
+   "id": "history",
+   "kicker": "Church history",
+   "level": 0.45,
+   "start": 27.2,
+   "end": 33.3,
+   "lines": [
+    {
+     "text": "Walk through the church's story in fourteen lessons, from the apostles to today.",
+     "start": 28.1,
+     "end": 32.4
+    }
+   ]
+  },
+  {
+   "id": "family",
+   "kicker": "Families",
+   "level": 0.5,
+   "start": 32.5,
+   "end": 43.06,
+   "lines": [
+    {
+     "text": "For families and homeschoolers: a devotion for every week of the year, a catechism for kids, and an illustrated Bible map for ages seven to sixteen.",
+     "start": 33.4,
+     "end": 42.16
+    }
+   ]
+  },
+  {
+   "id": "academy",
+   "kicker": "The Academy",
+   "level": 0.55,
+   "start": 42.26,
+   "end": 54.22,
+   "lines": [
+    {
+     "text": "Want a path? The LiveWell Academy takes you step by step through ten programs, from exploring Christianity to faith for teenagers, with a certificate for your own study.",
+     "start": 43.16,
+     "end": 53.32
+    }
+   ]
+  },
+  {
+   "id": "writing",
+   "kicker": "Essays and books",
+   "level": 0.55,
+   "start": 53.42,
+   "end": 59.82,
+   "lines": [
+    {
+     "text": "And James Bell's essays and books carry the hardest questions of faith and culture further.",
+     "start": 54.32,
+     "end": 58.92
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.35,
+   "start": 59.02,
+   "end": 66.301,
+   "lines": [
+    {
+     "text": "Connecting the depth of theology to the weight of everyday life. Start wherever you are.",
+     "start": 59.92,
+     "end": 65.401
+    }
+   ]
+  }
+ ]
+}
