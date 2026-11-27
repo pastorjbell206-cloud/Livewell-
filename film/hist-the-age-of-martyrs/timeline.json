@@ -1,0 +1,260 @@
+{
+ "length": 258.47,
+ "chapters": [
+  {
+   "id": "question",
+   "kicker": "The question",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 17.18,
+   "lines": [
+    {
+     "text": "Many picture the early church under Rome as one long manhunt, legions combing the provinces for believers.",
+     "start": 2.6,
+     "end": 9.16
+    },
+    {
+     "text": "That picture is wrong. The real question is harder. Why would anyone die rather than say one word?",
+     "start": 9.8,
+     "end": 16.28
+    }
+   ]
+  },
+  {
+   "id": "rome",
+   "kicker": "What Rome wanted",
+   "level": 0.3,
+   "start": 16.38,
+   "end": 42.02,
+   "lines": [
+    {
+     "text": "From Nero in 64 until 313, persecution was mostly local and occasional, the work of mobs and governors.",
+     "start": 17.28,
+     "end": 25.44
+    },
+    {
+     "text": "Around 112 a governor named Pliny wrote to the emperor Trajan. Trajan answered, don't seek Christians out, but punish any who are accused and won't recant.",
+     "start": 26.12,
+     "end": 36.44
+    },
+    {
+     "text": "So the church lived legal enough to grow, and illegal enough to die.",
+     "start": 37.16,
+     "end": 41.12
+    }
+   ]
+  },
+  {
+   "id": "gesture",
+   "kicker": "A pinch of incense",
+   "level": 0.4,
+   "start": 41.22,
+   "end": 59.0,
+   "lines": [
+    {
+     "text": "Rome didn't want agreement. It wanted a gesture. A pinch of incense, a word calling Caesar lord, and the accused walked free.",
+     "start": 42.12,
+     "end": 50.24
+    },
+    {
+     "text": "Rome had room for one more god. It couldn't tolerate refusal, and Christians would worship Jesus and no one else.",
+     "start": 50.98,
+     "end": 58.1
+    }
+   ]
+  },
+  {
+   "id": "witnesses",
+   "kicker": "The witnesses",
+   "level": 0.45,
+   "start": 58.2,
+   "end": 79.94,
+   "lines": [
+    {
+     "text": "Around 165 the philosopher Justin was put to death in Rome. Asked to sacrifice, he said no right-thinking person deserts truth for falsehood.",
+     "start": 59.1,
+     "end": 69.64
+    },
+    {
+     "text": "In 177, in Lyons, a slave girl named Blandina, whom her friends thought too frail to hold out, died still confessing Christ.",
+     "start": 70.3,
+     "end": 79.04
+    }
+   ]
+  },
+  {
+   "id": "perpetua",
+   "kicker": "Perpetua and Felicity",
+   "level": 0.55,
+   "start": 79.14,
+   "end": 110.86,
+   "lines": [
+    {
+     "text": "In 203, in Carthage, a twenty-two-year-old mother named Perpetua was arrested with a pregnant slave, Felicity.",
+     "start": 80.04,
+     "end": 87.36
+    },
+    {
+     "text": "In her prison diary, her father begs her, weeping, to think of her nursing son and say the word.",
+     "start": 88.06,
+     "end": 94.0
+    },
+    {
+     "text": "She points to a water jug. Can it be called anything but what it is? Neither can she. She is a Christian.",
+     "start": 94.72,
+     "end": 101.76
+    },
+    {
+     "text": "She and Felicity died together. A philosopher, a slave, a young mother, and not one would say the word.",
+     "start": 102.28,
+     "end": 109.96
+    }
+   ]
+  },
+  {
+   "id": "storms",
+   "kicker": "The storms",
+   "level": 0.65,
+   "start": 110.06,
+   "end": 156.22,
+   "lines": [
+    {
+     "text": "Then plague, invasion and inflation shook the empire. Emperors looking for a cause found the people who wouldn't sacrifice.",
+     "start": 110.96,
+     "end": 118.68
+    },
+    {
+     "text": "In 250 Decius ordered everyone to sacrifice and carry a certificate proving it. Many died. Many more complied.",
+     "start": 119.32,
+     "end": 127.62
+    },
+    {
+     "text": "In 258 Cyprian, bishop of Carthage, was executed. He met the sentence with the words, thanks be to God.",
+     "start": 128.26,
+     "end": 135.94
+    },
+    {
+     "text": "In 303 Diocletian ordered churches torn down, Scriptures burned, and at last everyone made to sacrifice.",
+     "start": 136.62,
+     "end": 144.38
+    },
+    {
+     "text": "In 311 a dying Galerius granted grudging toleration. Two years later Constantine made the faith legal.",
+     "start": 144.94,
+     "end": 151.82
+    },
+    {
+     "text": "Rome hadn't grown kind. It had given up.",
+     "start": 152.62,
+     "end": 155.32
+    }
+   ]
+  },
+  {
+   "id": "lapsed",
+   "kicker": "The ones who failed",
+   "level": 0.75,
+   "start": 155.42,
+   "end": 189.54,
+   "lines": [
+    {
+     "text": "Most Christians weren't heroes. Later the lapsed, who had given in, came back ashamed, asking to return.",
+     "start": 156.32,
+     "end": 163.66
+    },
+    {
+     "text": "A Roman priest named Novatian said they could never be restored. His case was serious. The martyrs had died rather than say the word.",
+     "start": 164.36,
+     "end": 172.64
+    },
+    {
+     "text": "Cyprian and the larger church chose a slower, harder way. The lapsed could return through real repentance, case by case.",
+     "start": 173.3,
+     "end": 180.82
+    },
+    {
+     "text": "After all, the church's own Lord had been abandoned by every man He trained.",
+     "start": 181.38,
+     "end": 185.84
+    },
+    {
+     "text": "Then everyone deserted Him and fled.",
+     "start": 186.42,
+     "end": 188.64
+    }
+   ]
+  },
+  {
+   "id": "forgiven",
+   "kicker": "A company of the forgiven",
+   "level": 0.85,
+   "start": 188.74,
+   "end": 203.64,
+   "lines": [
+    {
+     "text": "And afterward, on a beach, He fed them breakfast.",
+     "start": 189.64,
+     "end": 192.56
+    },
+    {
+     "text": "Jesus came and took the bread and gave it to them, and He did the same with the fish.",
+     "start": 193.14,
+     "end": 197.66
+    },
+    {
+     "text": "The body of Christ isn't a hall of the undefeated. It's a company of the forgiven.",
+     "start": 198.18,
+     "end": 202.74
+    }
+   ]
+  },
+  {
+   "id": "seed",
+   "kicker": "The seed",
+   "level": 0.7,
+   "start": 202.84,
+   "end": 229.5,
+   "lines": [
+    {
+     "text": "Around 197 Tertullian told Rome the blood of Christians is seed. True, but deaths alone argued no one into faith.",
+     "start": 203.74,
+     "end": 212.52
+    },
+    {
+     "text": "Christians stayed in plague cities and nursed the dying, pagans too. They took in abandoned babies and seated slave beside senator.",
+     "start": 213.24,
+     "end": 221.32
+    },
+    {
+     "text": "The church refused to make dying a strategy. Courage was demanded when the hour came, never as a performance.",
+     "start": 222.04,
+     "end": 228.6
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 228.7,
+   "end": 252.372,
+   "lines": [
+    {
+     "text": "Within a century, Christians held the empire's power and began to reach for the sword. The people of the catacombs became the people of the courtroom.",
+     "start": 229.6,
+     "end": 237.86
+    },
+    {
+     "text": "What held the martyrs up was a settled conviction that Jesus was Lord and Caesar was not.",
+     "start": 238.56,
+     "end": 243.8
+    },
+    {
+     "text": "Most of us have never been asked their question. The era asks for more than admiration. It asks whom we worship.",
+     "start": 244.48,
+     "end": 251.472
+    }
+   ]
+  }
+ ]
+}

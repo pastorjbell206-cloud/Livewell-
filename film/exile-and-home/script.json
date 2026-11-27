@@ -1,0 +1,180 @@
+{
+  "title": "Exile and coming home",
+  "note": "Written on 2026-11-27 from the Bible Explorer film of the same slug (its older captions, think question and ledger rows), the doctrine page on exile, and the Study Bible notes on Genesis 3, Psalm 137, Jeremiah 29, Isaiah 40, Ezra 1 and 3, Nehemiah 9 and Revelation 21; every claim is sourced in film/exile-and-home/facts.md, and Scripture is the Berean Standard Bible, checked by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/exile-and-home",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "song",
+      "kicker": "A song far from home",
+      "level": 0.2,
+      "lines": [
+        "Exiles sit by the rivers of a great empire. Asked for a song from home, they hang their harps on the trees.",
+        "How can we sing a song of the LORD in a foreign land?",
+        "The whole Bible asks it. In Scripture, home is the place where God dwells with his people."
+      ],
+      "scripture": {
+        "reference": "Psalm 137:4",
+        "text": "How can we sing a song of the LORD in a foreign land?",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "garden",
+      "kicker": "The first exile",
+      "level": 0.25,
+      "lines": [
+        "It starts in a garden. After the first sin, God sent the man out and stationed cherubim on the east side of the Garden of Eden, along with a whirling sword of flame to guard the way to the tree of life.",
+        "Exile is what sin does: separation from God and from the place of blessing. Remember that guarded way."
+      ],
+      "scripture": {
+        "reference": "Genesis 3:24",
+        "text": "stationed cherubim on the east side of the Garden of Eden, along with a whirling sword of flame to guard the way to the tree of life",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "egypt",
+      "kicker": "Out of Egypt",
+      "level": 0.3,
+      "lines": [
+        "Abraham lived in the promised land as a foreigner. His family went down to Egypt and became slaves. Then God said: I have indeed seen the affliction of My people in Egypt.",
+        "The exodus became Israel's great homecoming, the pattern for every rescue after it."
+      ],
+      "scripture": {
+        "reference": "Exodus 3:7",
+        "text": "I have indeed seen the affliction of My people in Egypt",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "babylon",
+      "kicker": "By the rivers",
+      "level": 0.4,
+      "lines": [
+        "The law and the prophets had warned that a broken covenant would end in scattering.",
+        "Samaria fell to Assyria in 722 BC. In 587 or 586 BC, Babylon burned Jerusalem and its temple and carried many away.",
+        "By the rivers of Babylon we sat and wept when we remembered Zion. Scripture doesn't hurry past that grief.",
+        "Yet through Ezekiel God said: I have been a sanctuary for them in the countries to which they have gone."
+      ],
+      "scripture": {
+        "reference": "Psalm 137:1",
+        "text": "By the rivers of Babylon we sat and wept when we remembered Zion.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "letter",
+      "kicker": "Build houses",
+      "level": 0.45,
+      "lines": [
+        "Jeremiah wrote to the exiles, against every instinct: Build houses and settle down. Plant gardens and eat their produce.",
+        "Seek the prosperity of the city to which I have sent you as exiles. Pray to the LORD on its behalf.",
+        "Pause here. Pray for the city that carried you away? What would that take?",
+        "Return would come after seventy years, so most adults who first heard the letter would die in Babylon. The hope was real, and long."
+      ],
+      "scripture": {
+        "reference": "Jeremiah 29:7",
+        "text": "Seek the prosperity of the city to which I have sent you as exiles. Pray to the LORD on its behalf",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "comfort",
+      "kicker": "Comfort, comfort",
+      "level": 0.45,
+      "lines": [
+        "Another voice speaks to the exiles: Comfort, comfort My people, says your God. It pictures the way home as a new exodus.",
+        "Who wrote these chapters is debated. Tradition says Isaiah of Jerusalem, in the eighth century BC, speaking ahead; most critical scholars say an unnamed prophet of the exile. Either way, they speak to exiles."
+      ],
+      "scripture": {
+        "reference": "Isaiah 40:1",
+        "text": "Comfort, comfort My people",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "return",
+      "kicker": "The long road back",
+      "level": 0.55,
+      "lines": [
+        "In 539 BC Cyrus of Persia took Babylon and let the exiles go: may he go to Jerusalem in Judah and build the house of the LORD.",
+        "They laid the new temple's foundation. Many shouted for joy; the old, who had seen the first temple, wept.",
+        "Years later, back in the land, a prayer still confessed: here we are today as slaves in the land You gave our fathers."
+      ],
+      "scripture": {
+        "reference": "Ezra 1:3",
+        "text": "may he go to Jerusalem in Judah and build the house of the LORD",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "over",
+      "kicker": "Were they home?",
+      "level": 0.5,
+      "lines": [
+        "Weigh a fair question. Was the exile over?",
+        "The older reading says yes: God kept his word under Cyrus, and the promises bigger than the return are fulfilled in Christ.",
+        "N. T. Wright argues that many Jews of Jesus' day believed the exile hadn't truly ended, and that Jesus announced its end. Scholars still weigh both."
+      ]
+    },
+    {
+      "id": "jesus",
+      "kicker": "The way home opened",
+      "level": 0.6,
+      "lines": [
+        "Mark opens with Isaiah's words to the exiles: Prepare the way for the Lord. The good news begins as God coming back to his people.",
+        "Jesus told of a father who ran to his son, embraced him, and kissed him. John writes that Jesus would die to gather the scattered children of God."
+      ],
+      "scripture": {
+        "reference": "Mark 1:3",
+        "text": "Prepare the way for the Lord",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "strangers",
+      "kicker": "Foreigners on the way",
+      "level": 0.55,
+      "lines": [
+        "Yet Peter still calls believers foreigners and exiles. Hebrews says: here we do not have a permanent city, but we are looking for the city that is to come.",
+        "That isn't escape from the world, and no nation is the promised home. Like Jeremiah's exiles, believers seek the good of the city where they live."
+      ],
+      "scripture": {
+        "reference": "Hebrews 13:14",
+        "text": "here we do not have a permanent city, but we are looking for the city that is to come",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "city",
+      "kicker": "Home at last",
+      "level": 0.7,
+      "lines": [
+        "At the end, a loud voice from the throne: Behold, the dwelling place of God is with man, and He will dwell with them.",
+        "The tree of life, guarded since Genesis, stands by the river. The exile from Eden ends not with a return to the garden, but with a garden city where God lives with his people.",
+        "Paul says it to those once far off: you are no longer strangers and foreigners."
+      ],
+      "scripture": {
+        "reference": "Revelation 21:3",
+        "text": "Behold, the dwelling place of God is with man, and He will dwell with them",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      },
+      "titleCard": [
+        "Exile is what sin does. Coming home is what grace does.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

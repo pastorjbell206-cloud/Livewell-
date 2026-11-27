@@ -1,0 +1,266 @@
+{
+ "length": 243.65,
+ "chapters": [
+  {
+   "id": "question",
+   "kicker": "The question",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 14.4,
+   "lines": [
+    {
+     "text": "What do you do with something you wish you'd never done?",
+     "start": 2.6,
+     "end": 5.22
+    },
+    {
+     "text": "You can hide it, excuse it, or despair over it.",
+     "start": 5.88,
+     "end": 8.86
+    },
+    {
+     "text": "Or you can turn around. The Bible calls that repentance.",
+     "start": 9.46,
+     "end": 13.5
+    }
+   ]
+  },
+  {
+   "id": "turn",
+   "kicker": "A change of direction",
+   "level": 0.3,
+   "start": 13.6,
+   "end": 34.4,
+   "lines": [
+    {
+     "text": "Repentance is turning back to God. It includes sorrow for sin, but it's more than regret.",
+     "start": 14.5,
+     "end": 19.9
+    },
+    {
+     "text": "It's a change of mind that becomes a change of direction, away from sin and toward the God who offers mercy.",
+     "start": 20.56,
+     "end": 26.9
+    },
+    {
+     "text": "Forgiveness is God's side of the turning. He releases the guilty from the debt of their sin, freely.",
+     "start": 27.6,
+     "end": 33.5
+    }
+   ]
+  },
+  {
+   "id": "seek",
+   "kicker": "A God who seeks",
+   "level": 0.42,
+   "start": 33.6,
+   "end": 61.8,
+   "lines": [
+    {
+     "text": "When the first man and woman hide among the trees, the LORD God calls out, Where are you?",
+     "start": 34.5,
+     "end": 39.56
+    },
+    {
+     "text": "King David commits adultery and murder. Confronted by the prophet Nathan, he says, I have sinned against the LORD.",
+     "start": 40.3,
+     "end": 47.28
+    },
+    {
+     "text": "Nathan answers, The LORD has taken away your sin. The consequences in David's house remain, but the sin is gone.",
+     "start": 48.0,
+     "end": 55.94
+    },
+    {
+     "text": "Isaiah urges the wicked to return to the LORD, for He will freely pardon.",
+     "start": 56.66,
+     "end": 60.9
+    }
+   ]
+  },
+  {
+   "id": "son",
+   "kicker": "A son comes home",
+   "level": 0.55,
+   "start": 61.0,
+   "end": 86.64,
+   "lines": [
+    {
+     "text": "Jesus said He came to call sinners to repentance.",
+     "start": 61.9,
+     "end": 64.6
+    },
+    {
+     "text": "In His story of a lost son, the young man comes to his senses and heads home, a confession ready.",
+     "start": 65.2,
+     "end": 71.08
+    },
+    {
+     "text": "So he got up and went to his father. But while he was still in the distance, his father saw him and was filled with compassion. He ran to his son, embraced him, and kissed him.",
+     "start": 71.74,
+     "end": 82.82
+    },
+    {
+     "text": "The father doesn't wait for the speech to be finished.",
+     "start": 83.56,
+     "end": 85.74
+    }
+   ]
+  },
+  {
+   "id": "two",
+   "kicker": "Remorse or repentance",
+   "level": 0.64,
+   "start": 85.84,
+   "end": 105.48,
+   "lines": [
+    {
+     "text": "The Gospels set two failures side by side. Judas, filled with remorse, gave back the silver.",
+     "start": 86.74,
+     "end": 93.16
+    },
+    {
+     "text": "Peter had denied Jesus three times. Jesus restored him with three questions and a commission.",
+     "start": 93.86,
+     "end": 99.52
+    },
+    {
+     "text": "The difference wasn't the size of the sin. It was where each man turned.",
+     "start": 100.2,
+     "end": 104.58
+    }
+   ]
+  },
+  {
+   "id": "history",
+   "kicker": "No sin too great",
+   "level": 0.72,
+   "start": 104.68,
+   "end": 139.38,
+   "lines": [
+    {
+     "text": "In 250, during the Decian persecution, many Christians sacrificed to the gods.",
+     "start": 105.58,
+     "end": 111.16
+    },
+    {
+     "text": "Cyprian of Carthage supported taking them back after penance. Novatian, at Rome, refused.",
+     "start": 111.72,
+     "end": 118.18
+    },
+    {
+     "text": "The church's mainstream held that no sin is beyond forgiveness for the one who repents.",
+     "start": 118.84,
+     "end": 123.46
+    },
+    {
+     "text": "Jesus warned that whoever blasphemes against the Holy Spirit will never be forgiven.",
+     "start": 124.16,
+     "end": 128.7
+    },
+    {
+     "text": "That has generally been understood as a settled, hardened rejection of the Spirit's witness to Christ, not a single failure a troubled believer fears he has committed.",
+     "start": 129.4,
+     "end": 138.48
+    }
+   ]
+  },
+  {
+   "id": "differ",
+   "kicker": "Where Christians differ",
+   "level": 0.8,
+   "start": 138.58,
+   "end": 192.42,
+   "lines": [
+    {
+     "text": "Christians differ on how repentance fits with faith, and on confession.",
+     "start": 139.48,
+     "end": 143.38
+    },
+    {
+     "text": "Reformed Christians teach that repentance is God's gift to a new heart, rising with faith and lasting for life.",
+     "start": 144.12,
+     "end": 150.42
+    },
+    {
+     "text": "Lutherans teach that the law exposes sin and troubles the conscience, the gospel creates faith, and repentance is a daily return to baptism.",
+     "start": 151.1,
+     "end": 159.76
+    },
+    {
+     "text": "Wesleyans teach that grace awakens a sinner to repent, ordinarily before justifying faith, and that believers keep repenting of sin that remains.",
+     "start": 160.6,
+     "end": 169.36
+    },
+    {
+     "text": "Catholic and Orthodox Christians hold that Christ gave His apostles authority to forgive sins, and that sins after baptism are forgiven through a sacrament.",
+     "start": 169.6,
+     "end": 178.46
+    },
+    {
+     "text": "In Catholic teaching, a priest pronounces absolution in Christ's name. The Orthodox speak of confession above all as healing.",
+     "start": 179.14,
+     "end": 186.94
+    },
+    {
+     "text": "Lutherans keep private confession and absolution too, as a gift.",
+     "start": 187.58,
+     "end": 191.52
+    }
+   ]
+  },
+  {
+   "id": "life",
+   "kicker": "For an ordinary day",
+   "level": 0.85,
+   "start": 191.62,
+   "end": 225.52,
+   "lines": [
+    {
+     "text": "Repentance isn't punishing yourself. You don't have to feel sorry enough before God will listen.",
+     "start": 192.52,
+     "end": 197.74
+    },
+    {
+     "text": "It's concrete. Zacchaeus paid people back.",
+     "start": 198.22,
+     "end": 201.02
+    },
+    {
+     "text": "Those forgiven are to forgive, giving up the claim to repay and handing the wrong to God, who judges justly.",
+     "start": 201.66,
+     "end": 208.48
+    },
+    {
+     "text": "Forgiving is often slow, especially after deep harm. It isn't forgetting or excusing. Trust needs the offender's repentance, and time to rebuild.",
+     "start": 209.06,
+     "end": 218.6
+    },
+    {
+     "text": "It doesn't require a victim to return to danger, or to hide a crime from those charged with justice.",
+     "start": 219.24,
+     "end": 224.62
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 224.72,
+   "end": 237.545,
+   "lines": [
+    {
+     "text": "If we confess our sins, He is faithful and just to forgive us our sins and to cleanse us from all unrighteousness.",
+     "start": 225.62,
+     "end": 232.92
+    },
+    {
+     "text": "The door stands open. The call is to turn.",
+     "start": 233.54,
+     "end": 236.645
+    }
+   ]
+  }
+ ]
+}

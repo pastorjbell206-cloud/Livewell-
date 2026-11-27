@@ -1,0 +1,74 @@
+"""Batch 17 film: "The kingdom of God" (kingdom-of-god), a "big idea" film about the kingdom Jesus announced: God's rule
+over all, Daniel's stone, "the kingdom of God is near", the kingdom present in what Jesus did and "in your midst", the
+parables of the mustard seed, the leaven and the treasure, "already and not yet", where Christians differ, the seventh
+trumpet, and the prayer "Your kingdom come". Rebuilt from the Bible Explorer film client/public/explorer/films/
+kingdom-of-god.json (its "older" captions, think question and differ note) and its rows in
+docs/work/elite/explorer-ledger.md ("kingdom 1" to "kingdom 7", "kingdom, differ", "kingdom, left out"); the doctrine page
+client/public/bible/doctrines/kingdom.json; and the Study Bible notes for Daniel 2, Mark 1, Matthew 6, Matthew 13,
+Luke 17, Romans 14 and Revelation 11 (client/public/bible/notes/<book>/<chapter>.json). The old film has no care line.
+The sibling film the-king keeps David, the Messiah as king, the donkey, the thorns and "My kingdom is not of this world";
+none is repeated here. Views on the kingdom and the church, on "within you" or "among you", and on the four empires of
+Daniel 2 are named fairly and no side is taken; the millennium is named, not argued. No modern nation, party or ruler
+is named. Scripture is the Berean Standard Bible, checked by film/tools/write-script.py."""
+import sys; sys.path.insert(0, "film/tools")
+from importlib import import_module
+write = import_module("write-script").write
+NOTE = "Written on 2026-11-27 from the Bible Explorer film of the same slug (its older captions, think question, differ note and ledger rows), the doctrine page on the kingdom, and the Study Bible notes on Daniel 2, Mark 1, Matthew 6 and 13, Luke 17, Romans 14 and Revelation 11; every claim is sourced in film/kingdom-of-god/facts.md, and Scripture is the Berean Standard Bible, checked by film/tools/write-script.py."
+S = lambda ref, text, spoken=False: {"reference": ref, "text": text, "spoken": spoken}
+P = lambda b: f"/study/explorer/watch/{b}"
+END = "LiveWell by James Bell"
+
+write("kingdom-of-god", "The kingdom of God", P("kingdom-of-god"), [
+  {"id": "prayer", "kicker": "Your kingdom come", "level": 0.2, "lines": [
+    "By around AD 100, an early Christian manual, the Didache, told believers to pray this three times a day.",
+    "Your kingdom come, Your will be done, on earth as it is in heaven.",
+    "Weigh a fair question. If God is already king, why ask for his kingdom to come?"],
+   "scripture": S("Matthew 6:10", "Your kingdom come, Your will be done, on earth as it is in heaven.", True)},
+  {"id": "over-all", "kicker": "It rules over all", "level": 0.25, "lines": [
+    "The Bible never doubts that God rules. The LORD has established His throne in heaven, and His kingdom rules over all.",
+    "But its story is that rule refused, then reclaimed. The kingdom of God is God's rule breaking into a world in rebellion, to set it right."],
+   "scripture": S("Psalm 103:19", "The LORD has established His throne in heaven, and His kingdom rules over all.", True)},
+  {"id": "stone", "kicker": "Not by human hands", "level": 0.3, "lines": [
+    "In Daniel, a king dreams of a statue of four metals: kingdoms, one after another. A stone cut out, but not by human hands, shatters it and fills the earth.",
+    "In the days of those kings, the God of heaven will set up a kingdom that will never be destroyed.",
+    "Readers differ on which empires the metals mean. All agree every human kingdom is temporary."],
+   "scripture": S("Daniel 2:44", "the God of heaven will set up a kingdom that will never be destroyed", True)},
+  {"id": "near", "kicker": "The kingdom is near", "level": 0.4, "lines": [
+    "Centuries later, the first words Mark reports from Jesus are news. The time is fulfilled, he said, and the kingdom of God is near.",
+    "The Greek word, basileia, most often means reign, not territory, as Gustaf Dalman argued in 1898. God had begun to act as king.",
+    "Does near mean coming soon, or already arriving? Scholars debate it. Mark's story suggests both."],
+   "scripture": S("Mark 1:15", "the kingdom of God is near", True)},
+  {"id": "upon-you", "kicker": "Come upon you", "level": 0.45, "lines": [
+    "You could see it in his work. He healed the sick, fed the hungry and welcomed sinners.",
+    "And he said, if I drive out demons by the Spirit of God, then the kingdom of God has come upon you."],
+   "scripture": S("Matthew 12:28", "if I drive out demons by the Spirit of God, then the kingdom of God has come upon you", True)},
+  {"id": "midst", "kicker": "In your midst", "level": 0.5, "lines": [
+    "Pharisees asked when it would come. Not with observable signs, Jesus said. For you see, the kingdom of God is in your midst.",
+    "The Greek, entos hymon, can mean within you or among you. Origen and the King James read within. Most modern translations say among, since he was speaking to opponents. Serious scholars defend both."],
+   "scripture": S("Luke 17:21", "the kingdom of God is in your midst", True)},
+  {"id": "seed", "kicker": "A mustard seed", "level": 0.55, "lines": [
+    "What kind of kingdom? Jesus answered from ordinary life. The kingdom of heaven is like a mustard seed that a man planted in his field.",
+    "Kingdom of heaven is Matthew's phrase for the kingdom of God: God's reign, not a place in the sky.",
+    "The seed was proverbially tiny. Then a woman mixes leaven into flour, enough bread for a crowd. One point: a small, hidden start, and a great end."],
+   "scripture": S("Matthew 13:31", "The kingdom of heaven is like a mustard seed that a man planted in his field.", True)},
+  {"id": "treasure", "kicker": "Treasure in a field", "level": 0.6, "lines": [
+    "The kingdom of heaven is like treasure hidden in a field. When a man found it, he hid it again, and in his joy he went and sold all he had and bought that field.",
+    "A merchant finds one precious pearl and does the same. Pause here and ask yourself: what would be worth everything you have?"],
+   "scripture": S("Matthew 13:44", "The kingdom of heaven is like treasure hidden in a field. When a man found it, he hid it again, and in his joy he went and sold all he had and bought that field.", True)},
+  {"id": "already", "kicker": "Already, not yet", "level": 0.65, "lines": [
+    "So is it here, or still coming? Johannes Weiss and Albert Schweitzer said Jesus expected the end soon. C. H. Dodd answered in 1935 that it had already arrived.",
+    "A middle view, set out by George Eldon Ladd and others, won wide agreement: already and not yet. Come in Jesus, present wherever his rule is received, complete when he returns.",
+    "Paul names its shape now: For the kingdom of God is not a matter of eating and drinking, but of righteousness, peace, and joy in the Holy Spirit."],
+   "scripture": S("Romans 14:17", "For the kingdom of God is not a matter of eating and drinking, but of righteousness, peace, and joy in the Holy Spirit.", True)},
+  {"id": "differ", "kicker": "Where Christians differ", "level": 0.6, "lines": [
+    "Christians differ on the kingdom and the church. Catholic teaching calls the church its seed and beginning. Many Protestants call the kingdom God's reign, and the church those who've received it.",
+    "Others speak of two kingdoms, of Christ's claim on every sphere of life, or of a reign still promised to Israel. Views on the thousand years differ too.",
+    "The church has rejected any teaching that makes the kingdom a nation or a party, or shrinks it to a private feeling."]},
+  {"id": "forever", "kicker": "Forever and ever", "level": 0.75, "lines": [
+    "At Revelation's seventh trumpet, loud voices in heaven call out:",
+    "The kingdom of the world has become the kingdom of our Lord and of His Christ, and He will reign forever and ever.",
+    "Kingdom, singular: not two rules side by side forever, but one rule reclaimed.",
+    "It has come, so there's no need to despair. It isn't complete, so there's no need to pretend."],
+   "scripture": S("Revelation 11:15", "The kingdom of the world has become the kingdom of our Lord and of His Christ, and He will reign forever and ever.", True),
+   "titleCard": ["It has come near. It is still coming. Your kingdom come.", END]},
+], NOTE)

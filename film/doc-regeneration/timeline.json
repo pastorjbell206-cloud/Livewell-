@@ -1,0 +1,250 @@
+{
+ "length": 232.94,
+ "chapters": [
+  {
+   "id": "question",
+   "kicker": "The question",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 12.18,
+   "lines": [
+    {
+     "text": "Can a person really change? Not just try harder, but change at the root?",
+     "start": 2.6,
+     "end": 7.1
+    },
+    {
+     "text": "Christians answer with two familiar words. Born again.",
+     "start": 7.68,
+     "end": 11.28
+    }
+   ]
+  },
+  {
+   "id": "confess",
+   "kicker": "What Christians confess",
+   "level": 0.3,
+   "start": 11.38,
+   "end": 24.48,
+   "lines": [
+    {
+     "text": "Theologians call it regeneration, God's act of giving spiritual life to people who can't give it to themselves.",
+     "start": 12.28,
+     "end": 18.5
+    },
+    {
+     "text": "It's the Holy Spirit's work inside a person, and it shows in a changed life.",
+     "start": 19.08,
+     "end": 23.58
+    }
+   ]
+  },
+  {
+   "id": "heart",
+   "kicker": "Trouble in the heart",
+   "level": 0.4,
+   "start": 23.68,
+   "end": 42.46,
+   "lines": [
+    {
+     "text": "The Old Testament finds the trouble in the heart, which in Hebrew is the center of thought, will and desire.",
+     "start": 24.58,
+     "end": 30.9
+    },
+    {
+     "text": "Before the flood, the Lord sees that every inclination of the human heart is evil. After it, he says so again. The flood cleansed the earth, but not the heart.",
+     "start": 31.66,
+     "end": 41.56
+    }
+   ]
+  },
+  {
+   "id": "promise",
+   "kicker": "A new heart",
+   "level": 0.5,
+   "start": 41.66,
+   "end": 60.84,
+   "lines": [
+    {
+     "text": "Through Ezekiel, a priest among the exiles in Babylon, God commands his people to make themselves a new heart.",
+     "start": 42.56,
+     "end": 49.16
+    },
+    {
+     "text": "Then he promises to give them one, a heart of flesh for a heart of stone.",
+     "start": 49.86,
+     "end": 54.04
+    },
+    {
+     "text": "Next, Ezekiel sees a valley of dry bones. Breath enters them, and they live.",
+     "start": 54.72,
+     "end": 59.94
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "kicker": "By night",
+   "level": 0.55,
+   "start": 60.04,
+   "end": 81.6,
+   "lines": [
+    {
+     "text": "Nicodemus, a Pharisee on the ruling council, comes to Jesus by night.",
+     "start": 60.94,
+     "end": 65.14
+    },
+    {
+     "text": "Jesus replied, \u201cTruly, truly, I tell you, no one can see the kingdom of God unless he is born again.\u201d",
+     "start": 65.86,
+     "end": 72.84
+    },
+    {
+     "text": "The Greek word can mean again, or from above. Nicodemus hears the first. Many interpreters think both are meant.",
+     "start": 73.6,
+     "end": 80.7
+    }
+   ]
+  },
+  {
+   "id": "apostles",
+   "kicker": "A new creation",
+   "level": 0.6,
+   "start": 80.8,
+   "end": 96.08,
+   "lines": [
+    {
+     "text": "Paul calls anyone in Christ a new creation.",
+     "start": 81.7,
+     "end": 84.32
+    },
+    {
+     "text": "He also writes that God saved us through the washing of new birth and renewal by the Holy Spirit.",
+     "start": 84.9,
+     "end": 90.04
+    },
+    {
+     "text": "And Peter writes that believers are born again through the living and enduring word of God.",
+     "start": 90.66,
+     "end": 95.18
+    }
+   ]
+  },
+  {
+   "id": "history",
+   "kicker": "Through the centuries",
+   "level": 0.65,
+   "start": 95.28,
+   "end": 113.84,
+   "lines": [
+    {
+     "text": "The early church tied the new birth closely to baptism. Around the year 155, Justin Martyr wrote that believers were brought to water and regenerated.",
+     "start": 96.18,
+     "end": 105.68
+    },
+    {
+     "text": "In the eighteenth century, revivals made the new birth their banner, in the preaching of George Whitefield and John Wesley.",
+     "start": 106.42,
+     "end": 112.94
+    }
+   ]
+  },
+  {
+   "id": "differ",
+   "kicker": "Where Christians differ",
+   "level": 0.75,
+   "start": 113.04,
+   "end": 176.3,
+   "lines": [
+    {
+     "text": "Christians differ on two questions. First, the order of faith and new birth.",
+     "start": 113.94,
+     "end": 118.46
+    },
+    {
+     "text": "Reformed Christians teach that people dead in sin can't believe until God makes them alive. So the new birth comes first, in logic if not in time.",
+     "start": 119.24,
+     "end": 128.52
+    },
+    {
+     "text": "Wesleyan and Arminian Christians teach that no one turns to God by their own power, but grace goes before, so a person can believe or refuse. When they believe, God gives the new birth.",
+     "start": 129.3,
+     "end": 141.06
+    },
+    {
+     "text": "Second, baptism. Jesus spoke of being born of water and the Spirit.",
+     "start": 141.68,
+     "end": 146.36
+    },
+    {
+     "text": "Catholic, Orthodox and Lutheran churches, and many Anglicans, teach that God gives the new birth through baptism, to infants as well as adults, a gift to be lived in faith and repentance.",
+     "start": 146.96,
+     "end": 157.7
+    },
+    {
+     "text": "Baptists and other believers' churches teach that the Spirit gives new birth through the word when a person believes, and baptism is its public sign, for those who profess faith.",
+     "start": 157.9,
+     "end": 168.94
+    },
+    {
+     "text": "All of them confess the new birth as God's work by his Spirit, not a fresh start you make yourself.",
+     "start": 169.72,
+     "end": 175.4
+    }
+   ]
+  },
+  {
+   "id": "life",
+   "kicker": "In ordinary life",
+   "level": 0.85,
+   "start": 175.5,
+   "end": 209.98,
+   "lines": [
+    {
+     "text": "That's humbling. Nicodemus was a respected teacher, and still had to be born again.",
+     "start": 176.4,
+     "end": 181.32
+    },
+    {
+     "text": "It's hopeful, too. No one is too far gone. Ezekiel's dry bones lived by the breath God sent.",
+     "start": 182.04,
+     "end": 188.44
+    },
+    {
+     "text": "People come to faith in many ways, some suddenly, some so gradually they can't name the day.",
+     "start": 189.14,
+     "end": 194.8
+    },
+    {
+     "text": "What matters is the signs of life now. Trust in Christ, love for other believers, a desire to do right, a readiness to confess sin.",
+     "start": 195.46,
+     "end": 204.66
+    },
+    {
+     "text": "Those signs are often weak. A newborn is still newly born.",
+     "start": 205.34,
+     "end": 209.08
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 209.18,
+   "end": 226.836,
+   "lines": [
+    {
+     "text": "The wind blows where it wishes. You hear its sound, but you do not know where it comes from or where it is going. So it is with everyone born of the Spirit.\u201d",
+     "start": 210.08,
+     "end": 218.94
+    },
+    {
+     "text": "The new birth starts a life that will grow, the first taste of the renewal God has promised the whole creation.",
+     "start": 219.76,
+     "end": 225.936
+    }
+   ]
+  }
+ ]
+}

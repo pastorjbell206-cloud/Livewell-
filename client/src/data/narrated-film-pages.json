@@ -98,5 +98,10 @@
   "/study/explorer/watch/the-king": "the-king",
   "/study/explorer/watch/covenant": "covenant",
   "/study/explorer/watch/the-lamb": "the-lamb",
-  "/study/explorer/watch/why-blood": "why-blood"
+  "/study/explorer/watch/why-blood": "why-blood",
+  "/study/bible/doctrines/regeneration": "doc-regeneration",
+  "/study/bible/doctrines/repentance": "doc-repentance",
+  "/study/bible/doctrines/worship": "doc-worship",
+  "/theology/history/the-apostolic-age": "hist-the-apostolic-age",
+  "/theology/history/the-age-of-martyrs": "hist-the-age-of-martyrs"
 }

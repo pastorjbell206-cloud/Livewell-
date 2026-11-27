@@ -1,0 +1,285 @@
+{
+ "length": 260.83,
+ "chapters": [
+  {
+   "id": "question",
+   "kicker": "The question",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 19.1,
+   "lines": [
+    {
+     "text": "Were the missionaries of the 1800s heroes, or agents of empire?",
+     "start": 2.6,
+     "end": 6.7
+    },
+    {
+     "text": "In 1790 the Christian map was mostly Europe, with old and honorable exceptions.",
+     "start": 7.46,
+     "end": 13.02
+    },
+    {
+     "text": "But Protestants, born claiming the Bible for everyone, had sent almost no one.",
+     "start": 13.5,
+     "end": 18.2
+    }
+   ]
+  },
+  {
+   "id": "carey",
+   "kicker": "Kettering, 1792",
+   "level": 0.3,
+   "start": 18.3,
+   "end": 44.18,
+   "lines": [
+    {
+     "text": "In 1792 a Baptist shoemaker, William Carey, argued that Christians must use means, not just wait on God.",
+     "start": 19.2,
+     "end": 27.02
+    },
+    {
+     "text": "Ministers at Kettering formed a missionary society, and Carey sailed for India, never to come home.",
+     "start": 27.7,
+     "end": 33.42
+    },
+    {
+     "text": "He lost a child and waited seven years for a first convert. By his death in 1834, his mission had printed Scripture in over forty languages.",
+     "start": 34.06,
+     "end": 43.28
+    }
+   ]
+  },
+  {
+   "id": "wave",
+   "kicker": "Others followed",
+   "level": 0.4,
+   "start": 43.38,
+   "end": 65.64,
+   "lines": [
+    {
+     "text": "In Burma, Ann Judson kept her husband Adoniram alive in prison so he could finish the Burmese Bible.",
+     "start": 44.28,
+     "end": 50.34
+    },
+    {
+     "text": "She died in 1826, one of thousands of missionary women whose graves mark the century.",
+     "start": 51.0,
+     "end": 56.48
+    },
+    {
+     "text": "In 1865 Hudson Taylor founded the China Inland Mission. Its people wore Chinese dress and went far up-country.",
+     "start": 57.16,
+     "end": 64.74
+    }
+   ]
+  },
+  {
+   "id": "entangled",
+   "kicker": "The entanglement",
+   "level": 0.5,
+   "start": 64.84,
+   "end": 96.34,
+   "lines": [
+    {
+     "text": "David Livingstone preached Christianity, commerce and civilization as one package. The last two would cost the first dearly.",
+     "start": 65.74,
+     "end": 73.2
+    },
+    {
+     "text": "Treaties ending the Opium Wars forced China open, and the faith arrived beside a drug most missionaries despised.",
+     "start": 73.84,
+     "end": 80.36
+    },
+    {
+     "text": "Many shared the era's racial contempt, and treated European customs as Christian requirements.",
+     "start": 81.12,
+     "end": 86.34
+    },
+    {
+     "text": "In 1900 the Boxer Rising killed thousands of Chinese Christians, and scores of missionary families, as agents of foreign power.",
+     "start": 86.92,
+     "end": 95.44
+    }
+   ]
+  },
+  {
+   "id": "ledger",
+   "kicker": "Not the whole account",
+   "level": 0.6,
+   "start": 95.54,
+   "end": 122.6,
+   "lines": [
+    {
+     "text": "Yet missionaries like William Knibb of Jamaica helped end slavery across the British Empire.",
+     "start": 96.44,
+     "end": 101.32
+    },
+    {
+     "text": "And they translated. Scripture in a people's own tongue said God spoke their language and had no favorite race.",
+     "start": 101.98,
+     "end": 108.8
+    },
+    {
+     "text": "Converts read Exodus, where God spoke these words.",
+     "start": 109.42,
+     "end": 112.52
+    },
+    {
+     "text": "\u201cI am the LORD your God, who brought you out of the land of Egypt, out of the house of slavery.",
+     "start": 113.16,
+     "end": 118.58
+    },
+    {
+     "text": "The empires shipped a book that condemned them.",
+     "start": 119.46,
+     "end": 121.7
+    }
+   ]
+  },
+  {
+   "id": "workforce",
+   "kicker": "The real workforce",
+   "level": 0.65,
+   "start": 121.8,
+   "end": 147.7,
+   "lines": [
+    {
+     "text": "The word missionary calls up a white face. Yet local believers did most of the evangelizing.",
+     "start": 122.7,
+     "end": 128.06
+    },
+    {
+     "text": "African catechists walked bush paths, and Chinese Bible women went house to house. Pacific islander teachers went island to island.",
+     "start": 128.66,
+     "end": 136.56
+    },
+    {
+     "text": "The histories made them scenery. They were the engine.",
+     "start": 137.18,
+     "end": 140.0
+    },
+    {
+     "text": "In India, Pandita Ramabai rescued widows and orphans and translated Scripture into Marathi.",
+     "start": 140.78,
+     "end": 146.8
+    }
+   ]
+  },
+  {
+   "id": "crowther",
+   "kicker": "Samuel Ajayi Crowther",
+   "level": 0.75,
+   "start": 146.9,
+   "end": 178.04,
+   "lines": [
+    {
+     "text": "Samuel Ajayi Crowther, a Yoruba boy seized by slave raiders in 1821, was freed at sea.",
+     "start": 147.8,
+     "end": 154.56
+    },
+    {
+     "text": "He led the translation of the Yoruba Bible, and in 1864 became the first African Anglican bishop.",
+     "start": 155.16,
+     "end": 162.08
+    },
+    {
+     "text": "Race-proud younger Englishmen dismantled his work and humiliated him until he died in 1891. His successor was white.",
+     "start": 162.34,
+     "end": 170.9
+    },
+    {
+     "text": "It took most of a century to unlearn the lesson that Africans could be converts but never leaders.",
+     "start": 171.56,
+     "end": 177.14
+    }
+   ]
+  },
+  {
+   "id": "edinburgh",
+   "kicker": "Edinburgh, 1910",
+   "level": 0.85,
+   "start": 177.24,
+   "end": 207.26,
+   "lines": [
+    {
+     "text": "In 1910 more than twelve hundred delegates met at Edinburgh's World Missionary Conference, full of confidence.",
+     "start": 178.14,
+     "end": 184.88
+    },
+    {
+     "text": "Fewer than twenty came from Asia's younger churches, and almost none from Africa.",
+     "start": 185.46,
+     "end": 189.9
+    },
+    {
+     "text": "V. S. Azariah of India thanked the missionaries for their sacrifices, then asked for what they'd rarely given.",
+     "start": 190.5,
+     "end": 196.8
+    },
+    {
+     "text": "Not money, not workers. Friends.",
+     "start": 197.4,
+     "end": 199.24
+    },
+    {
+     "text": "Within sixty years the empires were gone, and the young churches outgrew the ones that sent them.",
+     "start": 199.76,
+     "end": 206.36
+    }
+   ]
+  },
+  {
+   "id": "differ",
+   "kicker": "Where Christians differ",
+   "level": 0.6,
+   "start": 206.46,
+   "end": 234.66,
+   "lines": [
+    {
+     "text": "The missions preached, taught and healed. Christians still differ on how word and deed fit together.",
+     "start": 207.36,
+     "end": 213.36
+    },
+    {
+     "text": "Catholic teaching joins proclaiming Christ to works of charity, and says true evangelization must proclaim Jesus.",
+     "start": 214.02,
+     "end": 220.88
+    },
+    {
+     "text": "Orthodox churches see the liturgy as the heart of witness, meant to overflow into the world.",
+     "start": 221.46,
+     "end": 226.6
+    },
+    {
+     "text": "Many Protestants put preaching first, mercy flowing from it. Others call word and deed one witness.",
+     "start": 227.36,
+     "end": 233.76
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 233.86,
+   "end": 254.731,
+   "lines": [
+    {
+     "text": "So hold two truths together. The gospel really reached the whole world, at great cost, sped by empires it didn't control.",
+     "start": 234.76,
+     "end": 242.66
+    },
+    {
+     "text": "The peoples who received it sorted the treasure from the packaging better than the senders did.",
+     "start": 243.3,
+     "end": 247.7
+    },
+    {
+     "text": "God used the ships without blessing the cargo. He'd done it before, with Roman roads.",
+     "start": 248.5,
+     "end": 253.831
+    }
+   ]
+  }
+ ]
+}
