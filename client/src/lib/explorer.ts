@@ -168,7 +168,20 @@ export interface Film {
   share?: FilmShareCut;
   /** Video files of the film kept on the site, by shape (scripts/export-film-video.mjs). */
   video?: Partial<Record<"square" | "vertical" | "wide", { href: string; mb: number }>>;
+  /**
+   * The film's video on the LiveWell YouTube channel: the 11-character id from
+   * its address (youtube.com/watch?v=<id>). James, 2026-11-26. The page links
+   * it beside Share; the site still plays the film itself.
+   */
+  youtube?: string;
 }
+
+/** A YouTube video id as YouTube writes it: 11 letters, digits, "-" or "_". */
+export const isYouTubeId = (id: unknown): id is string => typeof id === "string" && /^[A-Za-z0-9_-]{11}$/.test(id);
+
+/** The address of a film's video on YouTube, or null when it has none (or a malformed one). */
+export const youTubeHref = (film: Pick<Film, "youtube">): string | null =>
+  isYouTubeId(film.youtube) ? `https://www.youtube.com/watch?v=${film.youtube}` : null;
 
 export interface ExplorerIndex {
   stops: StopSummary[];

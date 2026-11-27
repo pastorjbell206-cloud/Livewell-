@@ -28,7 +28,7 @@
 .lw-door--lead>.lw-frame-fig{flex:1;display:flex;flex-direction:column}
 .lw-door--lead>.lw-frame-fig>.lw-frame{flex:1;display:flex;flex-direction:column}
 .lw-door--lead .lw-frame__in{flex:1;aspect-ratio:auto!important;min-height:240px}
-.home-doors-more{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:var(--s-3);margin-top:var(--s-5);padding-top:var(--s-3);border-top:1.5px solid var(--ink)}
+.home-doors-more{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:var(--s-3);margin-top:var(--s-5);padding-top:var(--s-4);border-top:1px solid var(--border)}
 .home-doors-more .lw-door__t{font-size:clamp(1.25rem,1rem + .7vw,1.5rem)}
 .home-doors-more .lw-door__text{margin-top:10px}
 
@@ -244,3 +244,10 @@
   .hh-ev{grid-template-columns:78px minmax(0,1fr) 18px}
   .hh-ev b{font-size:21px}
 }
+
+/* The softer finish of the discipline pages (James, 2026-11-27): rounded frames on the pictures below the hero. */
+.home-sec .lw-frame{border-radius:14px;overflow:hidden}
+.home-sec .home-book__cover{border-radius:4px}
+.home-sec .ht-pane{border-radius:14px}
+.home-piece--reel{min-height:560px}
+@media (max-width:900px){.home-piece--reel{min-height:720px}}

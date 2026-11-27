@@ -4,10 +4,11 @@
  * The first screen is Plate I (the road), James's headline, the one sentence
  * that says what the site is for, and Find (one field: a passage or a
  * question), with tonight's family devotion under it. On a phone the plate
- * runs edge to edge above the headline. Then ten ways in as picture
- * cards, and the things a visitor can touch: the 66 books on one shelf, a
- * hard question asked straight, tonight at the table, and two thousand
- * years of church history on one line. Then the latest writing and the
+ * runs edge to edge above the headline. Then the eight disciplines as
+ * picture cards with six more ways in beneath, the Bible films playing in
+ * place, and the things a visitor can touch: a hard question asked straight,
+ * the 66 books on one shelf, tonight at the table, and two thousand years of
+ * church history on one line. Then the latest writing and the
  * books, and the ways to find James, with Find Help beside them. No
  * photograph of James here (his standing note); /about has it.
  *
@@ -44,6 +45,7 @@ import HomeFind from "./home/HomeFind";
 import TonightSlot, { readShellLines } from "./home/TonightSlot";
 import { ROAD_CHIPS } from "./home/roadChips";
 import HomeLatest from "./home/HomeLatest";
+import DisciplineCards from "./explore/DisciplineCards";
 import "./home/home.css";
 
 /*
@@ -95,6 +97,7 @@ const BibleShelf = lazy(() => import("./home/BibleShelf"));
 const QuestionPicker = lazy(() => import("./home/QuestionPicker"));
 const TonightTable = lazy(() => import("./home/TonightTable"));
 const HistoryStrip = lazy(() => import("./home/HistoryStrip"));
+const FilmReel = lazy(() => import("./preview/PreviewFilms"));
 
 /** A box that holds the piece's height (home.css) until the piece arrives. */
 function Piece({ name, children }: { name: string; children: ReactNode }) {
@@ -114,24 +117,15 @@ interface Door {
   note?: string;
 }
 
-/** The first five doors: the large one, then four beside it. */
-const DOORS: Door[] = [
-  { title: "Read the Study Bible", href: "/study/bible", plate: "book", note: "Notes on every chapter" },
-  { title: "Church history", href: "/theology/history", plate: "basilica", note: "From Pentecost to today" },
-  { title: "Hard questions", href: "/topics", plate: "lantern", note: "Straight answers" },
-  { title: "Family", href: "/family", plate: "house", note: "Tonight's devotion" },
-  // /start has a way in for every reader, not only someone new (walk 2026-11, finding 24).
-  { title: "Start here", href: "/start", plate: "tree", note: "Wherever you are" },
-];
-
 /**
- * The other five, smaller. The first was "Context and creeds" on /study, from
- * when that page held both; the creeds now sit under History, so the card
- * takes the context half under its one name, Bible background (lib/siteCatalog),
- * and opens that page (the walk of 2026-11-23, finding 3).
+ * Beside the eight disciplines (pages/explore/DisciplineCards, James,
+ * 2026-11-27: "this is how I want the homepage as well"), the six other ways
+ * in, small. Start here, for every reader (the walk of 2026-11-23, finding
+ * 24); Family; and the four the menu's other doors hold.
  */
 const MORE_DOORS: Door[] = [
-  { title: "Bible background", href: "/resources/context", plate: "jar" },
+  { title: "Start here", href: "/start", plate: "tree", note: "Wherever you are" },
+  { title: "Family", href: "/family", plate: "house", note: "Tonight's devotion" },
   { title: "Tools", href: "/tools", plate: "compass" },
   { title: "Essays", href: "/writing", plate: "quill" },
   { title: "Books", href: "/books", plate: "books" },
@@ -169,8 +163,6 @@ function leadEssay() {
   const rewrite = overrideMeta(slug);
   return { slug, title: rewrite?.title ?? shelfEntry(slug)?.title ?? slug };
 }
-
-const two = (n: number) => String(n).padStart(2, "0");
 
 function SectionHead({ eyebrow, title, link, id }: { eyebrow: string; title: string; link?: { href: string; label: string }; id: string }) {
   return (
@@ -238,38 +230,27 @@ export default function Home() {
         </div>
       </section>
 
-      {/* TEN WAYS IN. Not called doors: the menu's seven doors are the site's doors. */}
+      {/* EIGHT WAYS IN: the disciplines, each its own page (/explore/<discipline>), then six more. */}
       <section className="home-sec home-sec--doors" aria-labelledby="home-doors-title">
         <div className="home-wrap">
-          <SectionHead id="home-doors-title" eyebrow="Ten ways in" title="Where to begin." link={{ href: "/explore", label: "See everything on LiveWell" }} />
-          <ul className="home-doors">
-            {DOORS.map((d, i) => (
-              <li key={d.href} className={i === 0 ? "home-doors__lead" : undefined}>
-                <DoorCard {...d} number={two(i + 1)} variant={i === 0 ? "lead" : undefined} />
-              </li>
-            ))}
-          </ul>
+          <SectionHead id="home-doors-title" eyebrow="Eight ways in" title="Where to begin." link={{ href: "/explore", label: "See everything on LiveWell" }} />
+          <DisciplineCards />
           <ul className="home-doors-more">
-            {MORE_DOORS.map((d, i) => (
+            {MORE_DOORS.map((d) => (
               <li key={d.href}>
-                <DoorCard {...d} number={two(i + DOORS.length + 1)} variant="row" />
+                <DoorCard {...d} variant="row" />
               </li>
             ))}
           </ul>
         </div>
       </section>
 
-      {/* THE STUDY BIBLE: all 66 books on one shelf. */}
-      <section className="home-sec home-sec--dark" aria-labelledby="home-shelf-title">
+      {/* THE FILMS: one group at a time, playing in place. */}
+      <section className="home-sec home-sec--dark" aria-labelledby="home-films-title">
         <div className="home-wrap">
-          <SectionHead
-            id="home-shelf-title"
-            eyebrow="The Study Bible"
-            title="The whole Bible on one shelf."
-            link={{ href: "/study/bible", label: "Open the Study Bible" }}
-          />
-          <Piece name="shelf">
-            <BibleShelf />
+          <SectionHead id="home-films-title" eyebrow="Bible films" title="Press play on the whole story." link={{ href: "/study/films", label: "Every film" }} />
+          <Piece name="reel">
+            <FilmReel start="story" />
           </Piece>
         </div>
       </section>
@@ -289,6 +270,21 @@ export default function Home() {
               <QuestionPicker />
             </Piece>
           </div>
+        </div>
+      </section>
+
+      {/* THE STUDY BIBLE: all 66 books on one shelf. */}
+      <section className="home-sec home-sec--dark" aria-labelledby="home-shelf-title">
+        <div className="home-wrap">
+          <SectionHead
+            id="home-shelf-title"
+            eyebrow="The Study Bible"
+            title="The whole Bible on one shelf."
+            link={{ href: "/study/bible", label: "Open the Study Bible" }}
+          />
+          <Piece name="shelf">
+            <BibleShelf />
+          </Piece>
         </div>
       </section>
 

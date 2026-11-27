@@ -131,9 +131,16 @@ export const titlePlan = (film, config) => [
 /** A hash of the exact words a file speaks and the voice that speaks them. */
 export function planHash(units, config) {
   const { voice, lang, speed, gaps } = config;
+  // The Kokoro engine hashes exactly as it always has, so its files stay
+  // current; another engine adds its name and settings, so switching engines
+  // makes every file stale and --check fails until they are made again.
+  const engine =
+    config.engine && config.engine !== "kokoro"
+      ? { engine: config.engine, settings: config[config.engine] ?? {} }
+      : {};
   return crypto
     .createHash("sha256")
-    .update(JSON.stringify({ v: 1, voice, lang, speed, gaps, units }))
+    .update(JSON.stringify({ v: 1, voice, lang, speed, gaps, ...engine, units }))
     .digest("hex")
     .slice(0, 20);
 }
