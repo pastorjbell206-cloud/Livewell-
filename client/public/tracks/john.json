@@ -648,9 +648,9 @@
         },
         {
           "kind": "track",
-          "label": "The Academy's tracks",
-          "href": "/tracks",
-          "why": "Every track on the site, including the next in this program, which goes back to the first book and the beginning John echoed."
+          "label": "Deep in one: Genesis",
+          "href": "/tracks/genesis",
+          "why": "The next track in this program goes back to the first book of the Bible and the beginning that John echoed."
         }
       ],
       "question": "Jesus restored Peter at a fire like the one where he failed. What failure of yours do you think Jesus means to meet you at?",

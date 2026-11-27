@@ -537,8 +537,8 @@
         },
         {
           "kind": "track",
-          "label": "The tracks: next, The New Testament, section by section",
-          "href": "/tracks",
+          "label": "The New Testament, section by section",
+          "href": "/tracks/new-testament",
           "why": "The next track in this program takes the New Testament one section at a time, beginning with the world between the testaments."
         }
       ],

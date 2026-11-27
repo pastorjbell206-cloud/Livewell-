@@ -11,8 +11,7 @@
     "about": [
       "This guide is for anyone leading a group of parents through For parents: leading faith at home, or two parents working through it together. The group is for parents and grandparents of children of any age, whether they grew up in church or never saw faith at home at all. A leader doesn't need to be a model parent. A leader needs to be honest about their own failures, gentle with others' guilt, and steady in pointing past technique to the grace of God.",
       "Each person reads the session and opens its page before the group meets. The meeting doesn't repeat the teaching. It talks over what happened at home that week, using the group guide for each session, gathered below in order."
-    ]
-    ,
+    ],
     "sections": [
       {
         "id": "group",
@@ -451,9 +450,9 @@
         },
         {
           "kind": "track",
-          "label": "Next in Faith at Home: The church year at home",
-          "href": "/tracks",
-          "why": "The next track in this program, listed with all the tracks, follows the church's year at the family table from Advent to ordinary time."
+          "label": "The church year at home",
+          "href": "/tracks/family-church-year",
+          "why": "The next track in this program follows the church’s year at the family table, from Advent to ordinary time."
         }
       ],
       "question": "What story of God's faithfulness, from Scripture or from your own family, do you most want your children to carry?",

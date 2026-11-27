@@ -438,8 +438,8 @@
         },
         {
           "kind": "track",
-          "label": "All the tracks",
-          "href": "/tracks",
+          "label": "Word studies, cross-references and the study tools",
+          "href": "/tracks/study-tools",
           "why": "The next track in this program, Word studies, cross-references and the study tools, shows how to dig deeper into any passage on your own."
         }
       ],

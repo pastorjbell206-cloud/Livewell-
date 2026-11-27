@@ -506,9 +506,9 @@
         },
         {
           "kind": "track",
-          "label": "Next: the tracks of the Academy",
-          "href": "/tracks",
-          "why": "Where to go next: the Bible's Big Story, which follows the whole Bible from creation to new creation, and every other track."
+          "label": "The whole Bible as one story",
+          "href": "/tracks/big-story",
+          "why": "Where to go next: the Bible’s Big Story, which follows the whole Bible from creation to new creation."
         }
       ],
       "question": "Which of your objections are reasons, which are wounds, and which are both?",

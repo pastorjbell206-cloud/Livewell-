@@ -70,7 +70,7 @@ export default function Tracks() {
     <Layout>
       <SEOMeta
         title="Tracks: Short Sessions in Order, Step by Step"
-        description="Short sessions in order, each with a leader's guide: new to faith, the skeptic, stepping back, going deeper, a family, and Mark a chapter at a time."
+        description="Every track of the LiveWell Academy: short sessions in order, each with a leader's guide, from first questions and the Bible's story to study, doctrine, history and daily life."
         url="https://www.livewellbyjamesbell.co/tracks"
       />
       <div className="tk-page">
@@ -84,6 +84,10 @@ export default function Tracks() {
         <section className="tk-sec" aria-labelledby="tk-ready">
           <div className="tk-in">
             {next && <ContinueLine next={next} />}
+            <p className="tk-p">
+              Every track here belongs to a program of the <Link href="/academy">LiveWell Academy</Link>, which sets them in order from your first questions to reading the Bible well, with a
+              certificate for each one you finish.
+            </p>
             <p className="tk-label">
               <Milestone aria-hidden="true" size={18} strokeWidth={1.75} />
               Ready now

@@ -579,8 +579,8 @@
         },
         {
           "kind": "track",
-          "label": "The tracks: next, The Old Testament, section by section",
-          "href": "/tracks",
+          "label": "The Old Testament, section by section",
+          "href": "/tracks/old-testament",
           "why": "The next track in this program takes the Old Testament one section at a time, now that you know where each fits."
         }
       ],

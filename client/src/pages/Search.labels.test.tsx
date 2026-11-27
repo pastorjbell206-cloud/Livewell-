@@ -59,8 +59,10 @@ describe("a hub page's search label", () => {
       ),
     );
     renderWithProviders(<Search />);
-    const result = await screen.findByRole("link", { name: /Paul's travels/ }, { timeout: 8000 });
-    expect(result).toHaveAttribute("href", "/study/explorer/pauls-travels");
+    // Track sessions that open the map also name it, so find the map's own result by its address.
+    const links = await screen.findAllByRole("link", { name: /Paul's travels/ }, { timeout: 8000 });
+    const result = links.find((a) => a.getAttribute("href") === "/study/explorer/pauls-travels")!;
+    expect(result).toBeTruthy();
     expect(within(result).getByText("Bible films")).toBeInTheDocument();
     expect(screen.queryByText("Main Pages")).toBeNull();
   });

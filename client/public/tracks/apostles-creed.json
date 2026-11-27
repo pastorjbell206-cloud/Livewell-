@@ -506,8 +506,8 @@
         },
         {
           "kind": "track",
-          "label": "The tracks: next, The core doctrines, from Scripture",
-          "href": "/tracks",
+          "label": "The core doctrines, from Scripture",
+          "href": "/tracks/core-doctrines",
           "why": "Next in What Christians Believe: twelve sessions that trace the faith the creed confesses back into Scripture, one doctrine at a time."
         }
       ],

@@ -399,8 +399,8 @@
         },
         {
           "kind": "track",
-          "label": "All the tracks",
-          "href": "/tracks",
+          "label": "Reading each kind of book in the Bible",
+          "href": "/tracks/reading-by-genre",
           "why": "The next track in this program, Reading each kind of book in the Bible, shows how law, story, poetry, prophecy and letters each ask to be read."
         }
       ],

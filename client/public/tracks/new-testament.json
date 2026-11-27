@@ -522,8 +522,8 @@
         },
         {
           "kind": "track",
-          "label": "The tracks: next, How to Study",
-          "href": "/tracks",
+          "label": "How to study a passage: seven steps",
+          "href": "/tracks/study-method",
           "why": "You know the shape of the whole library now. The How to Study program teaches you to read any page of it for yourself."
         }
       ],

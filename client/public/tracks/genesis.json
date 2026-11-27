@@ -624,9 +624,9 @@
         },
         {
           "kind": "track",
-          "label": "The tracks, and Deep in one: the Psalms",
-          "href": "/tracks",
-          "why": "Every track on the site. The next in this program is Deep in one: the Psalms, ten sessions on praying the prayers Jesus prayed."
+          "label": "Deep in one: the Psalms",
+          "href": "/tracks/psalms",
+          "why": "The next track in this program, Deep in one: the Psalms, gives ten sessions to praying the prayers Jesus prayed."
         }
       ],
       "question": "Joseph could say God meant it for good only years later. What in your life are you still too close to see?",
