@@ -1,0 +1,539 @@
+{
+  "slug": "first-habits",
+  "title": "The habits of a Christian life",
+  "for": "I want to grow, not just start",
+  "subtitle": "Ten short sessions on the habits the church has kept longest: Scripture, prayer, Sunday, the Table, fasting, rest, giving, friendship and confession, and a simple rule of life to hold them.",
+  "intro": [
+    "This track is for someone who has begun to follow Jesus and wants the faith to take root in an ordinary week. It follows New to faith, or coming back, and it assumes you know who Jesus is and why he died and rose. It has ten sessions of about ten minutes, and you can take them a day apart or a week apart. Nothing here is timed, and nothing counts the days you miss.",
+    "Each session takes up one habit the church has kept for centuries. You read a short teaching, open one page or tool on this site and use it, then come back for one question, one thing to do and one verse to keep. None of these habits earns God's love. They are ways of staying near it. If you can, go through the track with a friend or a small group; each session has a guide for a group at the bottom."
+  ],
+  "leader": {
+    "about": [
+      "This guide is for anyone leading a small group through The habits of a Christian life, or meeting with one friend to go through it together. The group is for people who have begun to follow Jesus and want to grow, often after finishing New to faith, or coming back. A leader doesn't need to have mastered these habits. A leader needs to be practising them honestly, to admit where they struggle, and to keep pointing the group to grace rather than to performance.",
+      "Each person reads the session and opens its page before the group meets. The meeting doesn't repeat the teaching. It talks over what people found and how the week's one thing to do went, using the group guide for that session, which is gathered below in order."
+    ],
+    "sections": [
+      {
+        "id": "group",
+        "title": "The group",
+        "body": [
+          "Three to eight people is a good size, and two work well too. Meet for about seventy-five minutes, once a week, for ten meetings, and keep the end time you promised. Because the track is about habits, the group itself becomes one of them: the same day, the same time, the same place. Some people will try every practice and some only one or two. Both are welcome, and no one should leave a meeting feeling behind."
+        ]
+      },
+      {
+        "id": "room",
+        "title": "The room",
+        "body": [
+          "A kitchen table or a living room works well. Have a Bible for each person and the session open on a phone or printed. Say plainly at the first meeting that anyone may pass on any question, that what people share about their own lives stays in the room unless someone is in danger, and that no one has to pray aloud. For the session on confession, remind the group that the practice is for one or two trusted friends, not for the whole circle."
+        ]
+      },
+      {
+        "id": "order",
+        "title": "The order of a meeting",
+        "body": [
+          "About seventy-five minutes, in this order. Keep to the times loosely and to the end time strictly."
+        ],
+        "steps": [
+          "Ten minutes: the opening question, once round the circle. Anyone may pass.",
+          "Ten minutes: how each person got on with last week's one thing to do, told without boasting and without shame.",
+          "Five minutes: one person reads the session's verse aloud.",
+          "Thirty minutes: the three questions to talk over, in order, leaving room for the questions people bring.",
+          "Ten minutes: the prayer prompt, in your own words. Nobody has to pray aloud.",
+          "Ten minutes: name the next session and its one thing to do, and say when you will meet."
+        ]
+      },
+      {
+        "id": "hard",
+        "title": "When a hard question comes",
+        "body": [
+          "Some habits in this track are kept differently by different churches: baptism and the Lord's Supper, the Sabbath and Sunday, the tithe, the seasons of fasting. Where Christians differ, say what they share and that faithful people differ, and send each person to their own pastor and church. The track takes no side on these, and the group shouldn't need to either.",
+          "The harder question is often personal: why a habit that helped someone else feels dead for them, or why they keep failing at it. Don't hurry to fix it. Say that dry seasons are common, that the church has always known them, and that a habit kept through a dry season is no less real for being dry."
+        ]
+      },
+      {
+        "id": "hurting",
+        "title": "When someone is hurting",
+        "body": [
+          "Talk about habits can stir up old hurt: a church that used disciplines as a weapon, a home where religion meant rules and fear, a struggle with food that makes fasting dangerous. When that comes into the room, stop and listen. Thank the person for saying it, don't argue them out of it, and don't hurry back to the session. Make it plain that no one is required to fast from food, and that health comes first.",
+          "If someone says that a partner, a leader or anyone else is harming them or a child, take it seriously and don't promise to keep it secret. A child who may be in danger is a matter for the authorities, not only for the group."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "When to point someone to Find Help",
+        "body": [
+          "Point someone to Find Help when what they carry has become too heavy to set down: guilt that will not lift, a struggle with eating or with a habit they cannot break alone, grief that has taken their sleep, harm done to them at home or in a church, or any sign that they no longer want to be alive. The Find Help page on this site lists places to turn, and its lines for help right now are open day and night. If anyone is in danger now, call your local emergency number. A leader is a friend in that moment, not a counsellor."
+        ]
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "n": 1,
+      "title": "Why habits, if it's all grace",
+      "minutes": 10,
+      "teaching": [
+        "Grace is how the Christian life begins, and it's also how the Christian life goes on. You didn't earn your way in, and you won't earn your way forward. Yet Paul could tell a church he loved to keep working at what God had given them, because “it is God who works in you to will and to act on behalf of His good purpose” (Philippians 2:13). The work is real, and it's yours, and it rests on a deeper work that isn't yours at all. Dallas Willard liked to say that grace is opposed to earning, not to effort.",
+        "The church has always known this. Within a few centuries of Jesus, Christians were going out to the Egyptian desert to pray, fast and work with their hands, and around 529 Benedict of Nursia wrote a short rule for monks that has ordered lives ever since. Ordinary believers kept simpler versions: set times of prayer, fasts on set days, the Lord's day kept. Habits don't make God love you. They put you, again and again, in the places where he has promised to be found."
+      ],
+      "open": {
+        "kind": "life",
+        "label": "What Does It Mean to Be a Disciple of Jesus?",
+        "href": "/life/discipleship-following-jesus",
+        "why": "A longer guide to what following Jesus asks of an ordinary life, and why discipleship is learned by practice over years rather than in a moment."
+      },
+      "also": [
+        {
+          "kind": "doctrine",
+          "label": "Sanctification, through the whole Bible",
+          "href": "/study/bible/doctrines/sanctification",
+          "why": "The Study Bible's doctrine study on growing holy: what Scripture promises, what it asks, and where Christians have differed about what to expect in this life."
+        },
+        {
+          "kind": "history",
+          "label": "The First Monks: Why Christians Went to the Desert",
+          "href": "/theology/history/the-desert-and-the-rule",
+          "why": "The church history lesson on Antony, the desert, and the short rule Benedict wrote, the long root of the habits in this track."
+        }
+      ],
+      "question": "Which habit of the Christian life do you most wish you had, and what has kept you from it so far?",
+      "do": "Write down how a normal week of yours actually goes, hour by hour if you can, without judging it. Keep the page; you'll need it in the last session.",
+      "verse": {
+        "ref": "Philippians 2:13",
+        "text": "For it is God who works in you to will and to act on behalf of His good purpose."
+      },
+      "group": {
+        "open": "What is one habit, good or bad, that has shaped you more than you expected?",
+        "discuss": [
+          "What is the difference between earning God's love and training to live near it, and why does the difference matter?",
+          "Why do you think Christians in every century have needed set times and practices rather than good intentions alone?",
+          "Where in an ordinary week does trying harder tend to run out for you?"
+        ],
+        "pray": "Give thanks that the Christian life rests first on God's work, and ask for steadiness to begin one small habit this week."
+      }
+    },
+    {
+      "n": 2,
+      "title": "A daily time with Scripture",
+      "minutes": 10,
+      "teaching": [
+        "Most Christians who stop reading the Bible don't stop because they decide to. They stop because they never decided when. A daily time with Scripture holds best when three plain choices are made in advance: a time, a place and a plan. The time can be early or late, ten minutes or thirty. The place can be a kitchen chair. The plan matters most, because a reader with no plan opens at random, lands somewhere bewildering, and quietly gives up. The psalm that opens the Psalter describes the person who delights in God's law, and “on His law he meditates day and night” (Psalm 1:2).",
+        "Meditating isn't speed. It's closer to chewing. Read a passage slowly, then ask what it shows about God, what it shows about people, and what it asks of you today. Mark the line that stops you. If you miss a day, don't try to catch up by racing through three chapters; pick up where you are. A plan is a servant, not a scorekeeper. Over months the habit does what no single morning can. It fills your mind with the Bible's own words, so that when a hard day comes, they're already there."
+      ],
+      "open": {
+        "kind": "plan",
+        "label": "Eight Weeks With an Open Bible",
+        "href": "/plans/reading-the-bible",
+        "why": "An eight-week reading plan for a first-time reader or someone coming back: Mark first, then the one story, the Psalms, the hard pages, and a way to keep going."
+      },
+      "also": [
+        {
+          "kind": "howto",
+          "label": "How to Actually Read the Bible",
+          "href": "/how-tos/sf-how-to-actually-read-the-bible",
+          "why": "Practical help for the daily sitting itself: where to begin, how slowly to go, and what to do with a passage you don't understand."
+        },
+        {
+          "kind": "reading-guide",
+          "label": "What is the Bible?",
+          "href": "/study/bible/guides/what-is-the-bible",
+          "why": "A short guide to the book you're now reading every day: how it is put together, and how its many books make one whole."
+        },
+        {
+          "kind": "plan",
+          "label": "The whole Bible in story order, through 2027",
+          "href": "/study/bible/guides/whole-story-2027",
+          "why": "When the eight weeks are done, a plan that reads every chapter of the Bible across the 365 days of 2027, in the order of its story."
+        }
+      ],
+      "question": "When and where in your day could ten minutes with Scripture actually fit, and what would have to move?",
+      "do": "Choose your time, your place and your plan, and write all three down. Begin Eight Weeks With an Open Bible tomorrow, and mark one line each day that stops you.",
+      "verse": {
+        "ref": "Psalm 1:2",
+        "text": "But his delight is in the Law of the LORD, and on His law he meditates day and night."
+      },
+      "group": {
+        "open": "Have you ever kept a daily habit for a long stretch? What helped it last?",
+        "discuss": [
+          "Why might a plan matter more than enthusiasm for a habit of reading Scripture?",
+          "What is the difference between reading the Bible quickly and meditating on it?",
+          "How would you want to respond to yourself on the morning after you miss a day?"
+        ],
+        "pray": "Ask God for a hunger for his word, and for faithfulness to keep a small daily time with it in the weeks ahead."
+      }
+    },
+    {
+      "n": 3,
+      "title": "Prayer that grows",
+      "minutes": 10,
+      "teaching": [
+        "Prayer usually starts as asking, and that's good; Jesus told his followers to ask. But prayer that only asks stays small. When the disciples watched Jesus pray, one of them said, “Lord, teach us to pray” (Luke 11:1), and Jesus gave them words that work less like a script than a pattern. The Lord's Prayer moves from God's name, kingdom and will to daily bread, forgiveness and protection. In 1535 Martin Luther wrote a short letter to his barber on how to pray, and he advised going slowly through that prayer line by line, letting each line open into your own words.",
+        "The other school of prayer is the Psalms. They are prayers God put in the Bible for his people to pray back, and they hold every weather of the heart: praise, thanks, anger, confusion, longing. Dietrich Bonhoeffer argued that we learn to speak to God the way a child learns to speak, by taking up the words a father has spoken until they become our own. Praying a psalm slowly also keeps prayer honest. It lets you bring to God what you actually feel, and then it turns you toward who he actually is."
+      ],
+      "open": {
+        "kind": "psalms",
+        "label": "Pray Psalm 103 slowly",
+        "href": "/tools/pray-the-psalms?psalm=103",
+        "why": "A tool that walks you through one psalm a few lines at a time, with room to answer in your own words. Psalm 103 is a psalm of thanks."
+      },
+      "also": [
+        {
+          "kind": "guide",
+          "label": "The Lord's Prayer",
+          "href": "/studyguides/the-lords-prayer",
+          "why": "A study guide that takes the prayer Jesus taught one line at a time, for reading alone or working through with a group."
+        },
+        {
+          "kind": "doctrine",
+          "label": "Prayer, through the whole Bible",
+          "href": "/study/bible/doctrines/prayer",
+          "why": "The Study Bible's doctrine study follows prayer through Scripture, with the questions Christians still ask about what prayer is and does."
+        },
+        {
+          "kind": "film",
+          "label": "Psalms: the prayer book of the Bible",
+          "href": "/study/explorer/watch/book-psalms",
+          "why": "A short film on the Psalms as a whole: what kinds of prayer they hold and why the church has prayed them for so long."
+        }
+      ],
+      "question": "Which line of the Lord's Prayer is hardest for you to pray honestly, and why?",
+      "do": "For five days, pray through the Lord's Prayer one line at a time, stopping after each line to add a sentence of your own. Then pray one psalm slowly with the tool.",
+      "verse": {
+        "ref": "Luke 11:1",
+        "text": "One day in a place where Jesus had just finished praying, one of His disciples requested, “Lord, teach us to pray, just as John taught his disciples.”"
+      },
+      "group": {
+        "open": "Who taught you to pray, if anyone, and what did you learn from them?",
+        "discuss": [
+          "Why might Jesus have given a pattern for prayer rather than leaving prayer entirely up to us?",
+          "The Psalms include anger and confusion. What does it mean that God put prayers like that in his book?",
+          "What usually crowds prayer out of your day, and what would it take to give it a fixed place?"
+        ],
+        "pray": "Pray through the Lord's Prayer together slowly, pausing after each line so that anyone who wishes can add a few words of their own."
+      }
+    },
+    {
+      "n": 4,
+      "title": "Sunday and the gathered church",
+      "minutes": 10,
+      "teaching": [
+        "From the beginning, Christians met on the first day of the week, the day of the resurrection. Luke writes, “On the first day of the week we came together to break bread” (Acts 20:7). Around the year 150, Justin Martyr explained to the Roman emperor what Christians did on the day called Sunday: they read from the apostles and the prophets, listened to teaching, prayed together, and shared bread and wine. The shape has changed less in nineteen centuries than most people imagine. When you sit with your church on a Sunday, you're doing one of the oldest things Christians do.",
+        "Gathering is a habit, and like any habit it's easy to lose. A late night, a sick child, a week away, and a month has gone. The early church kept to it because something happens in the gathering that doesn't happen alone. The word is preached to people who can't preach it to themselves, the weak are carried by the strong, and the body of Christ becomes visible in one room. Go when you don't feel like it. Go early enough to meet someone. Over years, the people you sit beside become the people who carry you."
+      ],
+      "open": {
+        "kind": "life",
+        "label": "Why Does Church Membership Still Matter?",
+        "href": "/life/church-membership-and-commitment",
+        "why": "A longer guide on belonging to a local church: what membership has meant, why it's resisted now, and what it gives to you and asks of you."
+      },
+      "also": [
+        {
+          "kind": "doctrine",
+          "label": "Worship, through the whole Bible",
+          "href": "/study/bible/doctrines/worship",
+          "why": "The Study Bible's doctrine study follows worship through the whole of Scripture, with the questions Christians still ask about it."
+        },
+        {
+          "kind": "essay",
+          "label": "Do I have to go to church to be a Christian?",
+          "href": "/writing/do-i-have-to-go-to-church-to-be-a-christian",
+          "why": "An essay that takes the question seriously, including the reasons people stop going, and answers it from Scripture and the church's long history."
+        }
+      ],
+      "question": "What makes it hardest for you to be with your church on a Sunday, and what could you change about it?",
+      "do": "This Sunday, arrive ten minutes early and stay ten minutes after. Learn one new person's name, and ask how you might pray for them during the week.",
+      "verse": {
+        "ref": "Acts 2:42",
+        "text": "They devoted themselves to the apostles’ teaching and to the fellowship, to the breaking of bread and to prayer."
+      },
+      "group": {
+        "open": "What did Sunday look like in the home you grew up in?",
+        "discuss": [
+          "Justin Martyr's description of worship is nearly nineteen centuries old. What surprises you about how little it has changed?",
+          "What can happen in a gathered church that can't happen when you follow Jesus alone?",
+          "How could this group help one another keep the habit of gathering through a hard month?"
+        ],
+        "pray": "Pray for the church each person belongs to, or is looking for, and for the people who lead and serve it."
+      }
+    },
+    {
+      "n": 5,
+      "title": "Baptism and the Table, lived",
+      "minutes": 10,
+      "teaching": [
+        "Christians agree that Jesus gave his church two signs to keep, baptism and the Lord's Supper. They differ, sometimes deeply, over who should be baptized and what happens at the Table. Some baptize infants into the covenant family, and some baptize only those who confess faith. Some believe Christ is truly present in the bread and wine, and some receive the meal as a memorial. Those questions are real, and the pages linked here set them out fairly. This session asks something else: whatever your church practices, how do you live from these two signs between Sundays?",
+        "Martin Luther taught in his Large Catechism that the whole Christian life is a daily baptism, not a second washing but a daily turning from the old self and rising into the new, which is what baptism first signed. The Table draws you forward. Paul tells the Corinthians, “Each one must examine himself before he eats of the bread and drinks of the cup” (1 Corinthians 11:28), and he reminds them that they eat as one body. Come to the Table having made peace where you can, knowing the bread is shared with people you didn't choose."
+      ],
+      "open": {
+        "kind": "life",
+        "label": "What Does Baptism Mean, and Why Does It Matter?",
+        "href": "/life/baptism-and-the-new-life",
+        "why": "A longer guide on what baptism means and why it matters for the rest of a Christian's life, not only for the day itself."
+      },
+      "also": [
+        {
+          "kind": "life",
+          "label": "What Does the Lord's Supper Actually Mean?",
+          "href": "/life/the-lords-supper-and-the-table",
+          "why": "A companion guide on the Supper: what Jesus did at the table, and how a church that shares the meal is shaped by it."
+        },
+        {
+          "kind": "essay",
+          "label": "Babies or believers: why Christians baptize differently",
+          "href": "/writing/babies-or-believers-why-christians-baptize-differently",
+          "why": "An essay that sets out both views of baptism in the form their own defenders would recognize, and leaves you room to weigh them."
+        },
+        {
+          "kind": "doctrine",
+          "label": "Baptism and the Supper, through the whole Bible",
+          "href": "/study/bible/doctrines/sacraments",
+          "why": "The Study Bible's doctrine study on the two signs, from their roots in the Old Testament to the early church, with the differences named."
+        }
+      ],
+      "question": "If you've been baptized, what would it change on an ordinary Tuesday to remember it, and if you haven't, what is holding you back?",
+      "do": "Before your church next shares the Lord's Supper, take ten minutes to read 1 Corinthians 11:23-29 and make right one thing that needs making right. If you haven't been baptized, ask your pastor about it.",
+      "verse": {
+        "ref": "1 Corinthians 10:17",
+        "text": "Because there is one loaf, we who are many are one body; for we all partake of the one loaf."
+      },
+      "group": {
+        "open": "What do you remember about the first baptism or communion service you ever saw?",
+        "discuss": [
+          "Churches differ on baptism and the Supper. What do all of them share, and why might that matter more than it first seems?",
+          "What does it mean to live from your baptism rather than only look back on it?",
+          "Paul says those who share one loaf are one body. Whom might that make harder to avoid?"
+        ],
+        "pray": "Give thanks for the signs Jesus left his church, and ask for peace where peace is needed before you next share the Table."
+      }
+    },
+    {
+      "n": 6,
+      "title": "Fasting",
+      "minutes": 10,
+      "teaching": [
+        "Jesus didn't say if you fast. He said “When you fast” (Matthew 6:16), and he assumed his followers would. One of the earliest Christian writings outside the New Testament, the Didache, tells believers to fast on Wednesdays and Fridays. For most of the church's history, ordinary Christians have gone without food at set times, and many still keep the forty days of Lent. Fasting isn't a diet, and it isn't a way to twist God's arm. It's hunger turned toward God, a way of letting the body remind the soul that it doesn't live on bread alone.",
+        "Begin small. Skip one meal, drink water, and give the time you would have spent eating to God, in prayer or in a psalm. When the hunger comes, let it be a prompt: this is what wanting God is meant to feel like. Fasting tends to bring up what's hidden, the irritability and the small comforts you lean on more than you knew, and that's part of its use. Not everyone should fast from food. If you've struggled with eating, are pregnant or nursing, have diabetes or take regular medicine, talk to a doctor first, and fast from something else instead."
+      ],
+      "open": {
+        "kind": "howto",
+        "label": "How to Fast",
+        "href": "/how-tos/sf-how-to-fast",
+        "why": "A practical guide to a first fast, from choosing what to go without to what to do with the hunger when it comes."
+      },
+      "also": [
+        {
+          "kind": "help",
+          "label": "How do I fast, and what is Lent for?",
+          "href": "/help/fasting",
+          "why": "Begins with your health, names who should talk to a doctor before fasting from food, and explains the season of Lent."
+        },
+        {
+          "kind": "life",
+          "label": "What Does the Bible Say About Food, Feasting, and Fasting?",
+          "href": "/life/food-and-the-table",
+          "why": "Fasting belongs beside feasting. This guide sets the two together, so that going without never turns into contempt for good gifts."
+        }
+      ],
+      "question": "What do you reach for when you're restless or low, and what might going without it for a day show you?",
+      "do": "Choose one meal this week to skip, or, if fasting from food isn't wise for you, one evening without your phone. Give that time to prayer, and notice what the hunger stirs up.",
+      "verse": {
+        "ref": "Matthew 4:4",
+        "text": "But Jesus answered, “It is written: ‘Man shall not live on bread alone, but on every word that comes from the mouth of God.’”"
+      },
+      "group": {
+        "open": "Have you ever gone without something for a while on purpose? What did you learn?",
+        "discuss": [
+          "Why do you think Jesus assumed his followers would fast?",
+          "How can fasting go wrong, and how does Jesus guard against that in Matthew 6:16-18?",
+          "What would a fast that turned outward, toward someone in need, look like for you?"
+        ],
+        "pray": "Ask God to make you hungry for him, and to show each person whether and how to fast in this season of their life."
+      }
+    },
+    {
+      "n": 7,
+      "title": "Sabbath and rest",
+      "minutes": 10,
+      "teaching": [
+        "The command to rest comes with creation itself. God made the world and rested on the seventh day, and Israel was told to stop work one day in seven. Jesus didn't abolish the day; he restored its purpose when he said, “The Sabbath was made for man, not man for the Sabbath” (Mark 2:27). Rest isn't a reward you earn by finishing. It's a gift you receive by stopping, and it tells the truth about you: the world keeps turning while you sleep, and God doesn't need you to hold it up.",
+        "Christians have kept this in different ways, and faithful people still differ. The Reformed and Puritan tradition holds that the Sabbath command is permanent and moved to the Lord's day at the resurrection. Many Lutherans, Anglicans and Catholics see the Sabbath as fulfilled in Christ and keep Sunday as a day of worship and gladness. Seventh-day Adventists and Seventh Day Baptists keep the seventh day still. Whatever your conviction, the practice has the same bones: a set time each week when you stop working, stop buying and stop proving, and rest in God's company."
+      ],
+      "open": {
+        "kind": "howto",
+        "label": "How to Keep a Sabbath",
+        "href": "/how-tos/sf-how-to-keep-a-sabbath",
+        "why": "A practical guide to setting aside one day: what to stop, what to begin, and what to do when the week won't let you."
+      },
+      "also": [
+        {
+          "kind": "doctrine",
+          "label": "The Sabbath, through the whole Bible",
+          "href": "/study/bible/doctrines/sabbath",
+          "why": "The Study Bible's doctrine study traces the Sabbath through Scripture and sets out the views Christians hold on how it binds today."
+        },
+        {
+          "kind": "essay",
+          "label": "Should Christians keep the Sabbath?",
+          "href": "/writing/should-christians-keep-the-sabbath",
+          "why": "An essay that weighs the question with each view stated fairly, for the reader who wants the argument and not only the practice."
+        }
+      ],
+      "question": "What would you have to stop doing, or stop believing about yourself, to rest for one whole day?",
+      "do": "Pick a day and a time for a weekly rest, even half a day to begin. Decide in advance what you won't do in it, and one good thing you will.",
+      "verse": {
+        "ref": "Mark 2:27",
+        "text": "Then Jesus declared, “The Sabbath was made for man, not man for the Sabbath.”"
+      },
+      "group": {
+        "open": "What does a truly restful day look like for you, if you've ever had one?",
+        "discuss": [
+          "Why might it be easier to work hard than to rest well?",
+          "Christians differ on how the Sabbath relates to Sunday. What do all the views share?",
+          "What could a day of rest look like in a home with small children, or for someone who works weekends?"
+        ],
+        "pray": "Give thanks for the gift of rest, and ask for the trust to stop when the work is not finished."
+      }
+    },
+    {
+      "n": 8,
+      "title": "Giving and serving",
+      "minutes": 10,
+      "teaching": [
+        "Jesus spoke about money often, and he spoke of it as a rival master, not a neutral tool. Giving is how a Christian loosens its grip. Paul tells the Corinthians, “Each one should give what he has decided in his heart to give, not out of regret or compulsion. For God loves a cheerful giver” (2 Corinthians 9:7). Christians differ on whether the tithe, a tenth, still binds believers; some hold it as a floor, others as a wise guide. Most agree that giving should be decided ahead, given regularly and given gladly, beginning with your own church and the poor near you.",
+        "Serving is giving with your hands. The gifts the Spirit gives aren't trophies; they're tools for building up other people. Most churches have more needs than people to meet them: children's classes, meals for new parents, chairs to set out, someone to visit the housebound. Start with something small and ordinary, and stay with it long enough to be relied on. You may find a gift you didn't know you had. You'll certainly meet people you'd never have met. Generosity with money and with time come from the same place, a heart given more than it could repay."
+      ],
+      "open": {
+        "kind": "howto",
+        "label": "How to Start Giving Generously",
+        "href": "/how-tos/wm-how-to-start-giving-generously",
+        "why": "A practical guide for someone who has never given regularly: where to begin, how much, and how to make it a settled habit."
+      },
+      "also": [
+        {
+          "kind": "life",
+          "label": "Why Should Christians Give Their Money Away?",
+          "href": "/life/generosity-and-the-open-hand",
+          "why": "The longer case from Scripture and the church's history for why giving belongs to following Jesus and is not an optional extra."
+        },
+        {
+          "kind": "self-check",
+          "label": "Spiritual gifts",
+          "href": "/tools/spiritual-gifts",
+          "why": "A self-check that helps you notice where you might serve, as a starting point for a conversation with your church, not a verdict."
+        }
+      ],
+      "question": "If your bank statement and your calendar were read aloud, what would they say you love?",
+      "do": "Decide an amount or a proportion to give each month and set it up so it happens without remembering. Then ask your church where they most need one more pair of hands.",
+      "verse": {
+        "ref": "2 Corinthians 9:7",
+        "text": "Each one should give what he has decided in his heart to give, not out of regret or compulsion. For God loves a cheerful giver."
+      },
+      "group": {
+        "open": "Who is the most generous person you've known, and what made them that way?",
+        "discuss": [
+          "Why do you think Jesus treated money as a rival to God rather than a neutral tool?",
+          "Christians differ on the tithe. What do the views share about how and why to give?",
+          "Where does this group see a need, in the church or nearby, that someone here could meet?"
+        ],
+        "pray": "Give thanks for what God has given each of you, and ask for open hands with money and with time."
+      }
+    },
+    {
+      "n": 9,
+      "title": "Friendship, confession, and your story",
+      "minutes": 10,
+      "teaching": [
+        "Christian growth doesn't happen alone. Many of the New Testament's commands are written to a plural you, and many are about each other: carry one another's burdens, encourage one another, pray for one another. James goes further than most of us would: “Therefore confess your sins to each other and pray for each other so that you may be healed” (James 5:16). In Life Together, Dietrich Bonhoeffer argued that a person who confesses to a brother or sister is no longer alone with what they've done, and that hiding is what keeps it strong.",
+        "Confession needs a safe friend, not a crowd: one or two mature believers you trust, who keep confidences and point you back to Christ's forgiveness. The same friendship is where your story is first told. You don't need a dramatic conversion to have something to say. The man born blind in John 9 had no theology to offer the authorities, only what had happened to him, and it was enough. When a friend asks why you believe, tell them honestly, briefly and without pressure, and then listen to their story as carefully as you'd want yours heard."
+      ],
+      "open": {
+        "kind": "howto",
+        "label": "How to Confess Sin and Walk in Repentance",
+        "href": "/how-tos/sf-how-to-confess-sin-and-walk-in-repentance",
+        "why": "A practical guide to confession, to God and to a trusted friend, and to the slower work of turning from what you've confessed."
+      },
+      "also": [
+        {
+          "kind": "life",
+          "label": "Why Is It So Hard to Make Real Friends as an Adult?",
+          "href": "/life/friendship-against-isolation",
+          "why": "Why deep friendship is hard to find now, and what it takes to build the kind of friendship that can hold a confession."
+        },
+        {
+          "kind": "howto",
+          "label": "How to Tell Your Story",
+          "href": "/how-tos/wn-how-to-tell-your-story",
+          "why": "Help for putting what Jesus has done in your life into a few honest minutes, without pressure and without performance."
+        },
+        {
+          "kind": "chapter",
+          "label": "John 9, passage by passage",
+          "href": "/study/bible/john/9#plain",
+          "why": "The man born blind tells only what happened to him, and it is enough. Each passage explained in plain words under the text."
+        }
+      ],
+      "question": "Who is one person you could be fully honest with, and what would it take to ask them?",
+      "do": "Write your story in a few hundred words: life before, how you came to Jesus, and what has changed. Ask one trusted believer to meet, and when you're ready, tell them one thing you've kept hidden.",
+      "verse": {
+        "ref": "James 5:16",
+        "text": "Therefore confess your sins to each other and pray for each other so that you may be healed. The prayer of a righteous man has great power to prevail."
+      },
+      "care": [
+        "Sometimes guilt that will not lift needs more than a Bible verse. It can be part of anxiety, depression or a habit of the mind that keeps returning to the same fear. That is not a failure of faith. Talk with a pastor or a friend you trust. If the fear will not let you rest, a counsellor or a doctor can help too, and the Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Who was a true friend to you when you needed one?",
+        "discuss": [
+          "Why might confessing to another person help in ways that private confession sometimes doesn't?",
+          "What makes a friend safe to confess to, and what makes one unsafe?",
+          "The man born blind only told what had happened to him. What would it sound like to tell your story that simply?"
+        ],
+        "pray": "Ask God for one or two friends who can be trusted with the truth, and for courage to be that friend to someone else."
+      }
+    },
+    {
+      "n": 10,
+      "title": "A rule of life",
+      "minutes": 10,
+      "teaching": [
+        "You now have more habits in front of you than anyone could begin at once, and trying to begin them all is the surest way to keep none. The church's old answer is a rule of life. The word rule comes from the Latin regula, a straightedge, and the picture often used is a trellis: a frame that doesn't make anything grow but holds the vine up so it can. A rule is a short written pattern for your days and weeks, chosen for the person you actually are, not the one you wish you were. Benedict's own rule was modest on purpose.",
+        "Take out the week you wrote down in the first session. Choose a few practices you can actually keep: a daily time in Scripture and prayer, Sunday with your church, a weekly rest, regular giving, a friend you meet with. Write them down. Look at the rule again every few months, and when life changes, change the rule. You'll miss days. Everyone does. The rule is there to bring you back, not to grade you. These habits are learned over decades, and the God who began the work in you is patient with the learning."
+      ],
+      "open": {
+        "kind": "tool",
+        "label": "Build a rule of life",
+        "href": "/tools/rule-of-life",
+        "why": "A tool for choosing a few rhythms across prayer, rest and more, and writing them into one simple rule you can keep."
+      },
+      "also": [
+        {
+          "kind": "howto",
+          "label": "How to Build a Rule of Life",
+          "href": "/how-tos/sf-how-to-build-a-rule-of-life",
+          "why": "A longer guide to the idea: starting from honesty rather than ambition, and building a rule for the life you actually have."
+        },
+        {
+          "kind": "track",
+          "label": "Next in New to Faith: Your questions, taken seriously",
+          "href": "/tracks/stepped-back",
+          "why": "The next track in this program, for the seasons when faith goes quiet, a church has hurt you, or the old answers stop holding."
+        }
+      ],
+      "question": "What is the smallest rule of life you could actually keep for the next three months?",
+      "do": "Write your rule on one card: no more than five practices, each with a time. Put it where you'll see it, and set a date three months from now to look at it again.",
+      "verse": {
+        "ref": "Psalm 90:12",
+        "text": "So teach us to number our days, that we may present a heart of wisdom."
+      },
+      "group": {
+        "open": "Which of the habits in this track has surprised you most?",
+        "discuss": [
+          "Why does a rule built for the person you wish you were tend to fail?",
+          "Which practice from this track would you most want help keeping, and how could this group help?",
+          "How do you want to respond to yourself on the days you miss?"
+        ],
+        "pray": "Ask God to establish the work of your hands, and give thanks for the patience with which he forms his people over a lifetime."
+      }
+    }
+  ]
+}

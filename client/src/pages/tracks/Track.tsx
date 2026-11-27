@@ -5,7 +5,7 @@
  * print. The data is client/public/tracks/<slug>.json (lib/tracks.ts).
  */
 import { Link, useRoute } from "wouter";
-import { ArrowRight, Check, Lock, Milestone, RotateCcw, Users } from "lucide-react";
+import { ArrowRight, Award, Check, Lock, Milestone, RotateCcw, Users } from "lucide-react";
 
 import Layout from "@/components/Layout";
 import LoadFailed from "@/components/LoadFailed";
@@ -17,6 +17,7 @@ import { TRACKS_PATH, fetchTrack, kindLabel, leaderHref, nextSession, printHref,
 import { ProgressBar, useLoad, useTracksProgress } from "./parts";
 import "./tracks.css";
 import NarratedFilm from "@/components/NarratedFilm";
+import { UNACCREDITED, certificateHref, fetchPrograms, programHref, trackComplete } from "@/lib/academy";
 
 export default function Track() {
   const [, params] = useRoute("/tracks/:slug");
@@ -27,6 +28,9 @@ export default function Track() {
   const total = track?.sessions.length ?? 0;
   const next = track ? nextSession(entry, total) : null;
   const road = roadById(track?.road ?? null);
+  const { data: programs } = useLoad("academy-programs", fetchPrograms);
+  const program = programs?.programs.find((p) => p.tracks.includes(slug));
+  const finished = trackComplete(entry, total);
 
   const startOver = () => {
     if (!window.confirm("Start this track over? Your place and your answers on this device will be cleared.")) return;
@@ -116,6 +120,14 @@ export default function Track() {
                   <Lock aria-hidden="true" size={18} strokeWidth={1.75} />
                   <span>Your place and your answers are kept on this device only. There is no account, and nothing is sent anywhere.</span>
                 </p>
+                {finished && (
+                  <div className="tk-cert">
+                    <Award aria-hidden="true" size={28} strokeWidth={1.5} />
+                    <p className="tk-p">
+                      You have finished all {total} sessions. <Link href={certificateHref("track", slug)}>Print your certificate</Link>. {UNACCREDITED}
+                    </p>
+                  </div>
+                )}
                 {!kept && <p className="tk-note tk-note--alert">{SAVE_FAILED}</p>}
                 {entry && (
                   <button type="button" className="tk-quiet-btn" onClick={startOver}>
@@ -148,6 +160,11 @@ export default function Track() {
                 {road && (
                   <p className="tk-p">
                     The shorter road this track grew from is still on the Start page: <Link href={roadHref(road.id)}>{road.note.toLowerCase()}</Link>.
+                  </p>
+                )}
+                {program && (
+                  <p className="tk-p">
+                    This track is part of <Link href={programHref(program.slug)}>{program.title}</Link>, a program of the LiveWell Academy.
                   </p>
                 )}
                 <p className="tk-p">

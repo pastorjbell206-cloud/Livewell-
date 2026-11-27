@@ -1,0 +1,424 @@
+{
+  "slug": "teens-is-it-true",
+  "title": "Is any of it true?",
+  "for": "I'm a teenager with questions",
+  "subtitle": "Eight short sessions for a teenager who wants honest answers: God, the Bible, Jesus, the resurrection, science, suffering, other religions, and what to do with doubt.",
+  "intro": [
+    "This track is for teenagers who have questions and are tired of being told not to ask them. Each session takes about six minutes: a short reading, a film or a page that states the objection fairly before it replies, one question, one thing to do, and one verse.",
+    "Nothing here asks you to pretend. Where Christians don't know, the pages say so. Where they disagree, you'll see more than one answer. Take it alone, with a friend, with a youth group, or with a parent who's willing to think it through with you."
+  ],
+  "leader": {
+    "about": [
+      "This guide is for a youth leader or a parent taking teenagers through Is any of it true? The group can hold teenagers who believe, teenagers who don't, and teenagers who aren't sure, and it is better when it does. Nobody is there to be won. The leader's task is to keep the questions honest and the room safe for disagreement, and to let the films and pages do the arguing.",
+      "Each person takes the session on their own first: a short reading, a film or a page, and a passage. The meeting doesn't repeat the teaching. It talks over what people found, using the group guide for that session, which is gathered below in order with the page each session opens and the question it asks."
+    ],
+    "sections": [
+      {
+        "id": "group",
+        "title": "The group",
+        "body": [
+          "Three to eight teenagers is a good size for a youth group, small enough that the quiet ones speak. A parent and one teenager can use the same guide at a kitchen table or in the car. Meet for about forty-five minutes, eight times, and keep the end time you promised. A leader doesn't need every answer. A leader needs to be honest, curious, and slow to lecture, and it helps to have a second trusted adult present whenever a group meets."
+        ]
+      },
+      {
+        "id": "room",
+        "title": "The room",
+        "body": [
+          "Pick somewhere ordinary: a living room, a kitchen, a corner with snacks. Sit in a circle so nobody faces a teacher. Phones can stay out for the film and the page, then go face down. Say at the first meeting that anyone may pass on any question, that what people share stays in the room unless someone is in danger, and that nobody will be made to pray aloud or to decide anything."
+        ]
+      },
+      {
+        "id": "order",
+        "title": "The order of a meeting",
+        "body": [
+          "About forty-five minutes, in this order. Keep to the times loosely and to the end time strictly."
+        ],
+        "steps": [
+          "Five minutes: the opening question, once round the circle. Anyone may pass.",
+          "Ten minutes: watch the session's film or look at its page together, if not everyone has.",
+          "Five minutes: one person reads the verse aloud, with a few verses around it.",
+          "Twenty minutes: the three questions to talk over, in order. Let a silence sit before you fill it.",
+          "Five minutes: the prayer prompt for those who pray, and quiet for everyone else, then name the next session."
+        ]
+      },
+      {
+        "id": "hard",
+        "title": "When a hard question comes",
+        "body": [
+          "Teenagers often test whether a question is really welcome before they ask the one they care about. Welcome every one. Say what is true in an objection before answering it, and never treat a question as rebellion or a bad attitude. If nobody knows, say so, write it down, and bring something back next time. Don't hurry to the reply. A sixteen-year-old can tell when an answer was ready before the question was finished.",
+          "Where Christians themselves disagree, say so plainly and show more than one answer. A leader who admits not knowing earns more trust than one who always has a line ready."
+        ]
+      },
+      {
+        "id": "hurting",
+        "title": "When someone is hurting",
+        "body": [
+          "Some questions come with a wound attached: a family breaking up, a friend lost, a parent who is ill, a church that did harm. When that happens, stop the discussion. Listen, thank the person for saying it, and don't explain their pain for them. Afterwards, speak with them, with another adult nearby, and ask what would help.",
+          "If a young person says that anyone is harming them, or that they have thought about harming themselves, take it seriously and never promise to keep it secret. A youth leader may be required by law, and by the church's own policy, to report harm to a child; know that policy before the first meeting. A parent should get help the same day."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "When to point someone to Find Help",
+        "body": [
+          "Point a teenager, or their parent, to Find Help when something has become too heavy to carry: worry that stops sleep or school, sadness that will not lift, harm at home or anywhere else, or any sign that they no longer want to be alive. The Find Help page on this site lists places to turn, and its lines for help right now are open day and night. If anyone is in danger now, call your local emergency number. Stay with the young person while help is reached."
+        ]
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "n": 1,
+      "title": "Does God exist?",
+      "minutes": 6,
+      "teaching": [
+        "Start with the oldest form of the question, which is stranger than it sounds. Why is there anything here at all, rather than nothing? Everything you've ever seen came from something else, and science can trace that chain a very long way back. What it can't tell you is why there's a chain in the first place. The film takes that argument slowly. It says what the argument shows, what it doesn't, and where to find the best case against it. It won't hand you the God of the Bible. It asks whether 'nothing' is really the simpler answer."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "Does God exist?",
+        "href": "/study/explorer/watch/does-god-exist",
+        "why": "Six pictures on why anything exists at all: what that argument shows, what it leaves unproved, and where to weigh the case against it."
+      },
+      "also": [
+        {
+          "kind": "answer",
+          "label": "Does God actually exist?",
+          "href": "/answers/does-god-actually-exist",
+          "why": "A short, straight answer to the biggest question, with the strongest objections stated before any reply is given."
+        },
+        {
+          "kind": "case",
+          "label": "Who made God?",
+          "href": "/questions/god/who-made-god",
+          "why": "The obvious comeback, taken seriously: if everything needs a cause, what caused God, and whose job is it to prove anything?"
+        }
+      ],
+      "question": "If everything you can see needs an explanation, does the universe as a whole need one too, or can it just be there?",
+      "do": "Write down, in one sentence, the strongest reason you have for doubting that God exists, or for believing he does. Keep the page. The last session asks for it back.",
+      "verse": {
+        "ref": "Acts 17:27",
+        "text": "God intended that they would seek Him and perhaps reach out for Him and find Him, though He is not far from each one of us."
+      },
+      "care": [
+        "If you are afraid that you have fallen away from God, that fear is not usually the mark of someone who has. Read Romans 8:38-39 slowly. Talk with a pastor or a friend you trust. If the fear will not let you rest, a counsellor can help too, and the Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What's one question about God that you've never had a straight answer to?",
+        "discuss": [
+          "The film says the argument doesn't prove everything. Why might that make it more believable rather than less?",
+          "Is 'the universe just exists' a simpler answer than 'God made it', or does it leave something out?",
+          "Paul told a crowd in Athens that God is not far from any of them. What would make God feel near, or far, to you?"
+        ],
+        "pray": "Those who pray can give thanks that honest questions are welcome, and ask for minds that keep looking. Anyone who doesn't pray can sit with their own question in the quiet."
+      }
+    },
+    {
+      "n": 2,
+      "title": "Can you trust the Bible?",
+      "minutes": 6,
+      "teaching": [
+        "Here's a fair worry. The Bible is old, it was copied by hand for centuries, and you've played the telephone game. Some of that worry is right: copyists made mistakes, and scholars can show you exactly where. But the telephone game runs down one line, and the Bible's copies spread out along many lines at once, across countries and languages, so the mistakes can be compared and caught. That shows the text we read is close to what was first written. It doesn't prove that what was written is true. Those are two different questions, and both deserve an answer."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "Is the Bible true?",
+        "href": "/study/explorer/watch/is-the-bible-true",
+        "why": "Eight pictures on how the Bible was copied, what can be checked, what that proves, and what it honestly does not."
+      },
+      "also": [
+        {
+          "kind": "case",
+          "label": "Copies of copies",
+          "href": "/questions/text/copies-of-copies",
+          "why": "The telephone-game objection at full strength, and what the surviving handwritten copies can and cannot tell us about the originals."
+        },
+        {
+          "kind": "reading-guide",
+          "label": "How We Got the New Testament",
+          "href": "/study/bible/guides/how-we-got-the-new-testament",
+          "why": "How the books were written, gathered and recognized, so you know the real history instead of the internet version."
+        }
+      ],
+      "question": "What would you need to know about an old book before you'd trust what it says happened?",
+      "do": "Pick one thing the film says can be checked, and one thing it says can't. Write them side by side, and notice which one matters more to you.",
+      "verse": {
+        "ref": "Luke 1:3-4",
+        "text": "Therefore, having carefully investigated everything from the beginning, it seemed good also to me to write an orderly account for you, most excellent Theophilus, so that you may know the certainty of the things you have been taught."
+      },
+      "group": {
+        "open": "Where do you usually get your information about the Bible: church, school, the internet, or somewhere else?",
+        "discuss": [
+          "Why is the telephone game a good picture of the worry, and where does the picture break down?",
+          "Is 'the text was copied carefully' the same as 'the text is true'? What's the difference?",
+          "Luke says he investigated carefully before he wrote. Does that change how you read him?"
+        ],
+        "pray": "Those who pray can ask for honesty in reading, and for patience with the questions that stay open. Anyone who doesn't pray can name one question they'd like answered."
+      }
+    },
+    {
+      "n": 3,
+      "title": "Did Jesus exist?",
+      "minutes": 6,
+      "teaching": [
+        "Online you'll meet people who say Jesus was made up. It's worth knowing that almost no historian of the ancient world agrees, believer or not. Bart Ehrman, an agnostic scholar who doesn't believe Jesus rose, wrote a whole book, Did Jesus Exist?, arguing that he certainly did. Writers outside the Bible mention him too. The Roman historian Tacitus records that Christ was executed under Pontius Pilate, and the Jewish historian Josephus names James as the brother of Jesus. So the real question isn't whether he lived. It's who he was."
+      ],
+      "open": {
+        "kind": "case",
+        "label": "Did Jesus even exist?",
+        "href": "/questions/jesus/did-jesus-exist",
+        "why": "The claim that the evidence is too thin, stated fairly, then the sources historians actually use, inside the Bible and outside it."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "Who Jesus is",
+          "href": "/study/explorer/watch/who-jesus-is",
+          "why": "Seven pictures on who Christians say Jesus is, fully God and fully human, and the question he asked his own friends."
+        },
+        {
+          "kind": "book",
+          "label": "Mark",
+          "href": "/study/bible/mark",
+          "why": "The shortest account of his life, quick enough to read in one sitting, so you can meet the person historians argue about."
+        }
+      ],
+      "question": "If nearly every historian agrees Jesus lived, what question about him is still left for you?",
+      "do": "Read the first chapter of Mark in one go. Write down one thing Jesus does or says that surprised you.",
+      "verse": {
+        "ref": "Mark 8:29",
+        "text": "“But what about you?” Jesus asked. “Who do you say I am?” Peter answered, “You are the Christ.”"
+      },
+      "group": {
+        "open": "Have you ever heard someone say Jesus never existed? What made it sound convincing?",
+        "discuss": [
+          "Why might an agnostic historian's view on this carry weight with a skeptic?",
+          "Agreeing that Jesus lived is a long way from agreeing he is God. What sits in the gap?",
+          "Jesus asked his friends who they said he was. How would you answer today, honestly?"
+        ],
+        "pray": "Those who pray can ask to see Jesus as he really is, not as anyone has painted him. Anyone who doesn't pray can hold his question in mind for a minute."
+      }
+    },
+    {
+      "n": 4,
+      "title": "Did he rise?",
+      "minutes": 6,
+      "teaching": [
+        "This is the claim everything else hangs on, and the first Christians said so themselves. Paul wrote that “if Christ has not been raised, your faith is futile” (1 Corinthians 15:17). A faith that hands you the test that could sink it is unusual. Most historians who study this, whatever they believe, accept a few facts: Jesus was crucified, his followers became convinced they had seen him alive again, and an enemy of the movement, Paul, changed sides. The question is what best explains those facts. The film sets out the other explanations fairly. Weigh them yourself."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "Did Jesus really come back to life?",
+        "href": "/study/explorer/watch/did-jesus-come-back-to-life",
+        "why": "Seven pictures on the facts most historians grant, the other explanations people offer, and what history can and cannot show."
+      },
+      "also": [
+        {
+          "kind": "answer",
+          "label": "Did the resurrection actually happen?",
+          "href": "/answers/did-the-resurrection-actually-happen",
+          "why": "The case against first, then the case for, with an honest word on what any historical argument can and cannot prove."
+        },
+        {
+          "kind": "chapter",
+          "label": "1 Corinthians 15, passage by passage",
+          "href": "/study/bible/1-corinthians/15#plain",
+          "why": "The earliest written list of people who said they saw him, with plain notes on what Paul claims and why."
+        }
+      ],
+      "question": "Of the explanations for what happened that first Easter, which seems strongest to you, and why?",
+      "do": "List the explanations the film names down one side of a page. Next to each, write the one fact it struggles hardest to explain.",
+      "verse": {
+        "ref": "1 Corinthians 15:14",
+        "text": "And if Christ has not been raised, our preaching is worthless, and so is your faith."
+      },
+      "group": {
+        "open": "If you could ask one of the first witnesses a single question, what would it be?",
+        "discuss": [
+          "Why would Paul admit that the whole faith fails if the resurrection didn't happen?",
+          "Which other explanation in the film did you find most reasonable, and what does it leave unexplained?",
+          "Does it matter to you whether this really happened, or only whether the story is meaningful?"
+        ],
+        "pray": "Those who pray can give thanks for the hope of the resurrection and ask to weigh the evidence honestly. Anyone who doesn't pray can sit with the question of what would follow if it were true."
+      }
+    },
+    {
+      "n": 5,
+      "title": "Science and faith",
+      "minutes": 6,
+      "teaching": [
+        "You may have been told you have to pick one: science or God. That story is younger than it sounds. Many who built modern science believed in God, and the Belgian priest Georges Lemaître first proposed the idea that became the Big Bang. Still, the conflict isn't invented. The church condemned Galileo, and it was wrong to, and some scientists say the universe needs no maker. The film separates two kinds of question: how the world works, which science answers, and why there's a world at all, which it can't. Christians still disagree about how to read Genesis and the age of the earth."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "Are science and the Bible enemies?",
+        "href": "/study/explorer/watch/science-and-the-bible",
+        "why": "Seven pictures on the old war story, two kinds of question, a God who isn't in the gaps, and where Christians still disagree."
+      },
+      "also": [
+        {
+          "kind": "answer",
+          "label": "Do I have to choose between faith and science?",
+          "href": "/answers/do-i-have-to-choose-between-faith-and-science",
+          "why": "The conflict view at its strongest, then why many scientists, past and present, have found no need to choose."
+        },
+        {
+          "kind": "case",
+          "label": "Galileo and the war",
+          "href": "/questions/science/galileo-and-the-war",
+          "why": "What the church actually did to Galileo, why it was wrong, and whether one trial proves a war that never ended."
+        }
+      ],
+      "question": "Is there a question that matters to you which science, by its nature, can't answer?",
+      "do": "Write down one scientific fact that amazes you. Next to it, write the 'why' question it raises that no lab could settle.",
+      "verse": {
+        "ref": "Psalm 19:1",
+        "text": "The heavens declare the glory of God; the skies proclaim the work of His hands."
+      },
+      "group": {
+        "open": "Have you ever felt you had to keep quiet about faith in a science class, or about science at church?",
+        "discuss": [
+          "What's the difference between asking how the world works and asking why it exists?",
+          "The church got Galileo wrong. What should Christians learn from that, and what shouldn't they conclude?",
+          "Where do Christians genuinely disagree about Genesis, and why is it fine for them to disagree?"
+        ],
+        "pray": "Those who pray can give thanks for a world worth studying and for the people who study it well. Anyone who doesn't pray can name one thing in nature that astonishes them."
+      }
+    },
+    {
+      "n": 6,
+      "title": "Why bad things happen",
+      "minutes": 6,
+      "teaching": [
+        "This is the strongest reason people give for not believing, and it deserves to be stated at full strength. If God is all-powerful and good, why does a kid get cancer? Christians don't have a neat answer, and the ones who pretend to usually make things worse. What the Bible does offer is surprising: whole psalms of people shouting this exact question at God, and a God who doesn't silence them. It also offers a God who didn't stay away from pain but came into it, all the way to a cross. That isn't an explanation. It's a different kind of answer."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "Why do bad things happen?",
+        "href": "/study/explorer/watch/why-bad-things-happen",
+        "why": "Eight pictures on what Christians can honestly say about suffering, what they cannot, and the hope they hold anyway."
+      },
+      "also": [
+        {
+          "kind": "answer",
+          "label": "If God is good, why is there so much suffering?",
+          "href": "/answers/if-god-is-good-why-suffering",
+          "why": "The argument from evil stated as its defenders state it, followed by the replies Christians give and the limits of those replies."
+        },
+        {
+          "kind": "psalms",
+          "label": "Pray Psalm 13",
+          "href": "/tools/pray-the-psalms?psalm=13",
+          "why": "A short psalm that complains to God out loud, so you can see that the question belongs inside the Bible."
+        }
+      ],
+      "question": "Does the problem of suffering feel to you more like an argument, or more like something that has happened to you or someone you love?",
+      "do": "Read Psalm 13 out loud. Notice that it's in the Bible, and that it complains to God without being told off for it.",
+      "verse": {
+        "ref": "Psalm 13:1",
+        "text": "How long, O LORD? Will You forget me forever? How long will You hide Your face from me?"
+      },
+      "care": [
+        "If you are suffering now, for your faith or for any other reason, you do not have to carry it alone. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "When you hear about something terrible in the news, what's your first question?",
+        "discuss": [
+          "Why do quick answers to suffering so often make people angrier?",
+          "What changes, if anything, if God himself suffered rather than watching from a distance?",
+          "Psalm 13 is a complaint, and it's Scripture. What does that say about bringing anger or confusion to God?"
+        ],
+        "pray": "Those who pray can quietly name someone they know who is hurting and ask for comfort and help. Anyone who doesn't pray can hold that person in mind for a moment."
+      }
+    },
+    {
+      "n": 7,
+      "title": "So many religions",
+      "minutes": 6,
+      "teaching": [
+        "If you'd been born in another country, you'd very possibly follow another faith. That's true, and it's a serious point, but notice what it shows. Where you were born explains how you came to hold a belief. It doesn't tell you whether the belief is true, and that cuts both ways, because it's just as true of atheists. The religions don't all say the same thing, and respecting them means hearing the differences. Christianity's claim is specific: that God came in one person, at one time and place. Christians answer differently about people who never heard of Jesus, and the film sets out each answer."
+      ],
+      "open": {
+        "kind": "case",
+        "label": "Only a Christian because of where you were born?",
+        "href": "/questions/religions/only-a-christian-because-of-where-you-were-born",
+        "why": "The birthplace objection stated at its strongest, what it shows about belief, and what it cannot show about truth."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "What about people who never heard?",
+          "href": "/study/explorer/watch/never-heard",
+          "why": "What Christians confess together, what the Bible says and leaves unsaid, and three answers faithful Christians give, with no side taken."
+        },
+        {
+          "kind": "answer",
+          "label": "Is Jesus really the only way to God?",
+          "href": "/answers/is-jesus-the-only-way",
+          "why": "Why the claim sounds arrogant, what it actually says, and why Christians hold it without despising anyone who disagrees."
+        }
+      ],
+      "question": "Is it possible to believe one religion is true and still treat people of every religion with real respect?",
+      "do": "Ask someone who holds a different faith, or none, what they believe about God and why. Listen all the way through without arguing.",
+      "verse": {
+        "ref": "John 14:6",
+        "text": "Jesus answered, “I am the way and the truth and the life. No one comes to the Father except through Me.”"
+      },
+      "group": {
+        "open": "Do you have friends who believe something very different from you? What's that like?",
+        "discuss": [
+          "If upbringing shapes belief, does that make every belief equally likely to be true?",
+          "What's the difference between saying all religions are the same and treating people of all religions with respect?",
+          "Jesus' claim in John 14:6 is narrow. Why might a narrow claim still be a loving one, or why not?"
+        ],
+        "pray": "Those who pray can pray for friends of other faiths and of none, by name if they wish, asking good for them. Anyone who doesn't pray can think of one of those friends with gratitude."
+      }
+    },
+    {
+      "n": 8,
+      "title": "What to do with your doubts",
+      "minutes": 6,
+      "teaching": [
+        "Doubt isn't the opposite of faith, and the Bible doesn't hide it. On a mountain in Galilee the disciples saw Jesus risen, and “they worshiped Him, but some doubted” (Matthew 28:17). A desperate father told Jesus, “I do believe; help my unbelief!” (Mark 9:24), and Jesus helped him. Doubt kept to yourself tends to grow in the dark. Doubt brought into the open, to a friend, a parent, a pastor or a good book, can be tested. You've spent eight sessions testing. The question now isn't whether you have doubts. It's what you'll do with them."
+      ],
+      "open": {
+        "kind": "skeptics",
+        "label": "For skeptics",
+        "href": "/skeptics",
+        "why": "The strongest objections stated first, short answers, and longer reading, all at your own pace, for whichever question is still open."
+      },
+      "also": [
+        {
+          "kind": "howto",
+          "label": "How to handle doubt",
+          "href": "/how-tos/ss-how-to-handle-doubt",
+          "why": "Practical steps for carrying a hard question honestly, without pretending it's gone and without letting it run everything."
+        },
+        {
+          "kind": "track",
+          "label": "The Bible's story, start to finish",
+          "href": "/tracks/teens-big-story",
+          "why": "The next eight sessions in this program walk through the whole Bible as one story, from the garden to the city."
+        }
+      ],
+      "question": "What's one doubt you've never said out loud, and who could you safely say it to?",
+      "do": "Take out the sentence you wrote in the first session. Under it, write honestly where you stand now. Then tell one person you trust.",
+      "verse": {
+        "ref": "Mark 9:24",
+        "text": "Immediately the boy’s father cried out, “I do believe; help my unbelief!”"
+      },
+      "care": [
+        "If you are afraid that you have fallen away from God, that fear is not usually the mark of someone who has. Read Romans 8:38-39 slowly. Talk with a pastor or a friend you trust. If the fear will not let you rest, a counsellor can help too, and the Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Since the first session, what has changed, if anything, in the way you hold your questions?",
+        "discuss": [
+          "Some disciples doubted while looking at the risen Jesus. Why do you think Matthew kept that in?",
+          "What's the difference between doubt that looks for answers and doubt that has stopped looking?",
+          "Who are the safe people you could take a hard question to, and what makes them safe?"
+        ],
+        "pray": "Those who pray can give thanks for every honest question asked in these weeks and ask for faith that keeps looking. Anyone who doesn't pray can name the question they will keep carrying."
+      }
+    }
+  ]
+}

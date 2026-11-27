@@ -1,0 +1,478 @@
+{
+  "slug": "living-work-money",
+  "title": "Work, money and rest",
+  "for": "I want my work and money to mean something",
+  "subtitle": "Eight short sessions on the working week: work as God made it and as it now hurts, calling in ordinary jobs, ambition, money and enough, the Sabbath, attention, and work in the light of new creation.",
+  "intro": [
+    "This track is for an adult who spends most waking hours working, earning, spending and worrying about all three, and suspects the faith ought to have more to say about Monday than it usually does. It has eight sessions of about ten minutes, and you can take them a day or a week apart.",
+    "Every session begins with something you already feel at work or at the kitchen table, goes underneath it to the cause, and ends with a way of seeing you can carry into rooms the session never names. Each one opens a page on this site, asks one question, gives you one thing to do and one verse to keep. Nothing here is financial advice."
+  ],
+  "leader": {
+    "about": [
+      "This guide is for anyone leading a group through Work, money and rest, whether a small group from church, a few colleagues over lunch, or one friend meeting another. The group is for working adults of any kind of work, paid or unpaid, at home or in an office, in a trade or between jobs. A leader doesn't need to be a business owner or a financial expert, and shouldn't play one.",
+      "Each person reads the session and opens its page before the group meets. The meeting doesn't repeat the teaching. It talks over what people found, using the group guide for that session, gathered below in order."
+    ],
+    "sections": [
+      {
+        "id": "group",
+        "title": "The group",
+        "body": [
+          "Four to ten people is a good size. Mix kinds of work where you can, since a nurse, a builder, a parent at home and a manager will see things in each session that the others miss. Meet for about seventy-five minutes, once a week, for eight meetings, and keep the end time, since tired workers will come back to a group that respects their evenings."
+        ]
+      },
+      {
+        "id": "room",
+        "title": "The room",
+        "body": [
+          "A table with coffee works better than rows of chairs. Make it plain at the first meeting that no one has to say what they earn, owe or give, that what people share about their work stays in the room, and that anyone may pass on any question. Money talk can shame people quickly, so keep it about principles and practices, not anyone's numbers."
+        ]
+      },
+      {
+        "id": "order",
+        "title": "The order of a meeting",
+        "body": [
+          "About seventy-five minutes, in this order. Keep to the times loosely and to the end time strictly."
+        ],
+        "steps": [
+          "Ten minutes: the opening question, once round the circle. Anyone may pass.",
+          "Five minutes: one person reads the verse aloud, and the passage around it when the session opens a chapter.",
+          "Thirty-five minutes: the three questions to talk over, in order.",
+          "Ten minutes: how each person got on with the session's one thing to do, for anyone who wants to say.",
+          "Ten minutes: the prayer prompt, in your own words. Nobody has to pray aloud.",
+          "Five minutes: name the next session and the page it opens, and say when you will meet."
+        ]
+      },
+      {
+        "id": "hard",
+        "title": "When a hard question comes",
+        "body": [
+          "Some questions divide faithful Christians: whether the Sabbath command binds Christians today and how, whether a tithe is required, how much wealth a Christian may keep. Set out the views fairly, as the sessions do, and send people to their own pastor for the rest.",
+          "When someone asks a specific question about debt, tax, investment or a job decision, don't answer as an expert. Say plainly that the group is not a source of financial or legal advice, and help them find someone qualified where they live."
+        ]
+      },
+      {
+        "id": "hurting",
+        "title": "When someone is hurting",
+        "body": [
+          "A group about work will meet people who have just lost a job, who are drowning in debt, who are burned out, or who are being mistreated at work. When that comes into the room, stop and listen. Don't explain their situation for them or offer quick fixes, and speak with them on their own afterwards.",
+          "Shame about money and work runs deep, and a careless word can make someone stop coming. Never suggest that hardship is a sign of too little faith or too little giving."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "When to point someone to Find Help",
+        "body": [
+          "Point someone to Find Help when what they carry has become too heavy for the group: burnout that has taken their sleep and health, money trouble that frightens them, the loss of a job that has sunk them, or any harm done to them at work. The Find Help page on this site lists places to turn, including pages for job loss, money and burnout. If anyone is in danger now, call your local emergency number."
+        ]
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "n": 1,
+      "title": "Work before anything went wrong",
+      "minutes": 10,
+      "teaching": [
+        "Most of us learned, without anyone saying it, that work is the curse and the weekend is the reward. Monday is what you survive in order to reach the parts of life where God is. Genesis says otherwise. Before anything has gone wrong in the story, “the LORD God took the man and placed him in the Garden of Eden to cultivate and keep it” (Genesis 2:15). Work belongs to the good creation. It was not invented afterwards as a punishment.",
+        "God himself is the first worker in Genesis: making, ordering, separating, naming. People made in his image share that work, bringing order and fruit out of the raw goodness of the world. Many readers have noticed that the two verbs in Genesis 2:15 are later used of the priests serving at the tabernacle, as if the garden were the first sanctuary and tending it the first worship. That doesn't make every job easy or every workplace good. It means the work of your hands was meant, from the beginning, to be done with God and for him."
+      ],
+      "open": {
+        "kind": "story",
+        "label": "Creation",
+        "href": "/study/bible/story/creation",
+        "why": "The first act of the Bible's story, where God works and makes people in his image to share that work."
+      },
+      "also": [
+        {
+          "kind": "life",
+          "label": "What does the Bible say about work and calling?",
+          "href": "/life/work-as-worship",
+          "why": "The longer guide to the dignity of work and its idolatry, held together, with the Reformers and Scripture as witnesses."
+        },
+        {
+          "kind": "doctrine",
+          "label": "Work",
+          "href": "/study/bible/doctrines/work",
+          "why": "What the whole Bible teaches about work, gathered as one doctrine from Genesis to Revelation."
+        },
+        {
+          "kind": "howto",
+          "label": "How to See Your Work as Worship",
+          "href": "/how-tos/wm-how-to-see-your-work-as-worship",
+          "why": "How to recover the goodness of work on an ordinary Monday, in a job you may not have chosen."
+        }
+      ],
+      "question": "If your work was meant to be good from the beginning, what part of what you do each week is closest to that goodness?",
+      "do": "At the end of one working day this week, name one thing you made, mended, ordered or tended, and thank God for it by name.",
+      "verse": {
+        "ref": "Genesis 2:15",
+        "text": "Then the LORD God took the man and placed him in the Garden of Eden to cultivate and keep it."
+      },
+      "group": {
+        "open": "What was your first paid job, and what did it teach you about work?",
+        "discuss": [
+          "Where did you learn that work is a curse and Sunday is the reward?",
+          "Genesis shows God as a worker before people work. How does that change the way you see your own work?",
+          "What kinds of work does our culture treat as beneath notice, and how does Genesis 2 answer that?"
+        ],
+        "pray": "Give thanks for the work each person does, paid or unpaid, and pray for anyone in the group whose work feels meaningless."
+      }
+    },
+    {
+      "n": 2,
+      "title": "Why work hurts",
+      "minutes": 10,
+      "teaching": [
+        "And yet work hurts. The commute, the manager, the project that comes to nothing, the body that wears out. Genesis names why. After the first disobedience God says to Adam, “cursed is the ground because of you; through toil you will eat of it all the days of your life” (Genesis 3:17). The work itself is not cursed, but the ground is, and so labour becomes toil: frustrated, exhausting and often fruitless. Ecclesiastes is honest about it. The Teacher asks what anyone gets for all his striving, since “even at night, his mind does not rest” (Ecclesiastes 2:23).",
+        "Two answers to that ache are both wrong. One makes work an idol that must supply meaning, worth and identity, and burnout follows when it can't. The other gives up and treats work as pointless drudgery to be endured. The Teacher, having found work empty as a source of ultimate meaning, still calls the simple ability to enjoy it a gift: “this is from the hand of God” (Ecclesiastes 2:24). Work can be good without being everything. Much exhaustion comes from asking it to be what only God can be."
+      ],
+      "open": {
+        "kind": "chapter",
+        "label": "Ecclesiastes 2, passage by passage",
+        "href": "/study/bible/ecclesiastes/2#plain",
+        "why": "The Teacher's honest audit of a life spent working, and the small, stubborn gift he finds at the end of it."
+      },
+      "also": [
+        {
+          "kind": "story",
+          "label": "The fall",
+          "href": "/study/bible/story/fall",
+          "why": "The second act of the Bible's story, where the good world is broken and work becomes toil."
+        },
+        {
+          "kind": "plan",
+          "label": "Eight Weeks for When Work Has Burned You Out",
+          "href": "/plans/work-burnout",
+          "why": "A slower plan of daily reading for someone whose work has taken more than it should."
+        },
+        {
+          "kind": "help",
+          "label": "I'm burned out at work",
+          "href": "/help/work-burnout",
+          "why": "When exhaustion has gone beyond tiredness into sleep, health and hope, a place to start finding help."
+        }
+      ],
+      "question": "What are you asking your work to give you that it was never able to give?",
+      "do": "Write down one way your work has become toil and one way it is still a gift. Keep both on the same page, and pray over each.",
+      "verse": {
+        "ref": "Ecclesiastes 2:24",
+        "text": "Nothing is better for a man than to eat and drink and enjoy his work. I have also seen that this is from the hand of God."
+      },
+      "care": [
+        "If you are suffering now, for your faith or for any other reason, you do not have to carry it alone. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What part of your work most often feels like toil?",
+        "discuss": [
+          "Genesis says the ground is cursed, not work itself. Why does that distinction matter on a bad Monday?",
+          "Which is the bigger temptation for you: making work an idol, or giving up on it as meaningless?",
+          "How can someone enjoy their work as a gift without needing it to be everything?"
+        ],
+        "pray": "Pray for anyone in the group who is exhausted by their work, and for the grace to receive work as a gift again."
+      }
+    },
+    {
+      "n": 3,
+      "title": "Calling in an ordinary job",
+      "minutes": 10,
+      "teaching": [
+        "Ask a room of Christians who has a calling and the pastors and missionaries raise their hands, while everyone else assumes their job is just a job. That split has a history. By the late Middle Ages, vocation had come to mean the religious life, and the prayers of a monk counted for more than the harvest of a farmer. Martin Luther pushed hard against this. He taught that the farmer, the mother and the magistrate serve God in their stations as truly as any monk, because God feeds and governs the world through ordinary hands.",
+        "Paul wrote to slaves in Colossae, people with no choice of work at all: “Whatever you do, work at it with your whole being, for the Lord and not for men” (Colossians 3:23). Calling is less a hidden plan to decode than faithfulness where you are now: doing the work well, treating people justly, telling the truth in the meeting. That doesn't mean every job is right to stay in, and discerning a change is real work. It means no honest work is beneath God's notice."
+      ],
+      "open": {
+        "kind": "howto",
+        "label": "How to Discern Your Calling",
+        "href": "/how-tos/wm-how-to-discern-your-calling",
+        "why": "Calling as obedience in the place you already are, and how to weigh a change without tormenting yourself."
+      },
+      "also": [
+        {
+          "kind": "guide",
+          "label": "Work and Vocation: a Bible study",
+          "href": "/studyguides/work-and-vocation",
+          "why": "A study guide on faith and your job, for a group that wants to go further with Scripture than one session allows."
+        },
+        {
+          "kind": "howto",
+          "label": "How to Live a Quiet Witness at Work",
+          "href": "/how-tos/wn-how-to-live-a-quiet-witness-at-work",
+          "why": "How faith shows itself at work mostly through the quality and honesty of the work, not speeches."
+        },
+        {
+          "kind": "essay",
+          "label": "Does God have a plan for my life?",
+          "href": "/writing/does-god-have-a-plan-for-my-life",
+          "why": "An essay on the anxious search for God's one perfect plan, and what Scripture actually promises instead."
+        }
+      ],
+      "question": "Who are the people your work serves, even indirectly, and how would you work differently if you saw them as the ones God sent you to?",
+      "do": "Pick one task you usually rush or resent, and do it this week as well as you can, for the Lord and the people it serves.",
+      "verse": {
+        "ref": "Colossians 3:23-24",
+        "text": "Whatever you do, work at it with your whole being, for the Lord and not for men, because you know that you will receive an inheritance from the Lord as your reward. It is the Lord Christ you are serving."
+      },
+      "group": {
+        "open": "Have you ever thought of your job as a calling? Why or why not?",
+        "discuss": [
+          "Why do you think Christians came to rank the work of pastors above the work of everyone else?",
+          "Paul's words to slaves assumed they had no choice of work. What does that say to someone who feels stuck in their job?",
+          "What is one ordinary way faithfulness could look different in your workplace this week?"
+        ],
+        "pray": "Pray for each person's workplace by name, and for the people they will serve there this week."
+      }
+    },
+    {
+      "n": 4,
+      "title": "Ambition and contentment",
+      "minutes": 10,
+      "teaching": [
+        "Ambition gets two opposite sermons. One baptizes the hustle and calls the grind a virtue; the other treats any drive as pride. Both miss the real question, which is what the drive is for and what it is running from. Much ambition is a private audit, a ledger of wins and losses that we treat as a verdict on our worth. That is why success never quite satisfies and failure feels like a sentence. The ledger can't be balanced, because it was never meant to bear that weight.",
+        "Paul was as driven as anyone in the New Testament, and he said contentment had to be learned: “I have learned to be content regardless of my circumstances” (Philippians 4:11). Contentment is not the absence of wanting. It is trust that our worth was settled before the work began. Once that is true, a holy ambition becomes possible: to do excellent work for the good of others, to want more for them than for ourselves, and to hand the outcome back to God."
+      ],
+      "open": {
+        "kind": "life",
+        "label": "Is ambition a sin?",
+        "href": "/life/ambition-and-rest",
+        "why": "A Christian reckoning with holy and hollow ambition, the idolatry of the hustle, and the rest of a soul that has handed over the outcome."
+      },
+      "also": [
+        {
+          "kind": "life",
+          "label": "Why do we measure ourselves by success and failure?",
+          "href": "/life/success-and-failure",
+          "why": "On the private ledger most of us keep, and why only the gospel survives both the promotion and the failure."
+        },
+        {
+          "kind": "wisdom",
+          "label": "What the Bible says about contentment",
+          "href": "/wisdom/contentment",
+          "why": "The passages that teach contentment as something learned, gathered in one place to read slowly."
+        },
+        {
+          "kind": "howto",
+          "label": "How to Fight the Idol of Success",
+          "href": "/how-tos/wm-how-to-fight-the-idol-of-success",
+          "why": "Practical ways to loosen the grip of success on your sense of worth without giving up on good work."
+        }
+      ],
+      "question": "What would you still want to achieve if your worth were already settled and nobody was keeping score?",
+      "do": "Write down what you are most ambitious for at the moment. Next to it, write who else it would serve. Pray over whatever the second column shows you.",
+      "verse": {
+        "ref": "Philippians 4:12",
+        "text": "I know how to live humbly, and I know how to abound. I am accustomed to any and every situation—to being filled and being hungry, to having plenty and having need."
+      },
+      "group": {
+        "open": "Which sermon about ambition did you hear growing up: hustle harder, or don't want too much?",
+        "discuss": [
+          "What does your private ledger of wins and losses look like, and who taught you to keep it?",
+          "Paul says contentment is learned. What has taught you contentment, if anything has?",
+          "What would holy ambition look like in your line of work?"
+        ],
+        "pray": "Pray for contentment that is not laziness and ambition that is not pride, and for anyone in the group facing a recent failure."
+      }
+    },
+    {
+      "n": 5,
+      "title": "Money, enough and giving",
+      "minutes": 12,
+      "teaching": [
+        "The pressure to have more is everywhere, and much of what we own we are renting from lenders we will never meet. Jesus spoke about money more often than about most subjects, and he named it as a rival master. Paul is careful about where the danger lies: “the love of money is the root of all kinds of evil” (1 Timothy 6:10), not money itself. Proverbs knows the trap of debt just as plainly: “the borrower is slave to the lender” (Proverbs 22:7). A household can be comfortable and still not be free.",
+        "The wisdom here is a direction rather than a formula: learn what enough is, get free of debt where you can, and give first rather than last. Proverbs prays for neither poverty nor riches. John Wesley, preaching on the use of money, urged Christians to gain all they could, save all they could and give all they could, and he kept his own living modest as his income rose. This session is not financial advice. For decisions about debt, budgets, tax or investments, find a qualified adviser where you live."
+      ],
+      "open": {
+        "kind": "life",
+        "label": "Why did Jesus treat money as a rival god?",
+        "href": "/life/money-and-the-heart",
+        "why": "A Christian reckoning with money as a master, with contentment, debt and generosity, and the freedom of having enough."
+      },
+      "also": [
+        {
+          "kind": "howto",
+          "label": "How to Get Out of Debt",
+          "href": "/how-tos/wm-how-to-get-out-of-debt",
+          "why": "Debt as a kind of bondage, and a way toward freedom told without shame and without easy promises."
+        },
+        {
+          "kind": "essay",
+          "label": "Is money the root of all evil?",
+          "href": "/writing/is-money-the-root-of-all-evil",
+          "why": "What Paul actually said about money and its love, read in context rather than as a slogan."
+        },
+        {
+          "kind": "self-check",
+          "label": "Financial health check",
+          "href": "/tools/financial-health",
+          "why": "A short self-check that helps you see where you stand before you decide what to change."
+        }
+      ],
+      "question": "How would you know if you already had enough?",
+      "do": "Decide on one gift you will give this month, a real amount set aside before other spending, and give it quietly.",
+      "verse": {
+        "ref": "1 Timothy 6:6-8",
+        "text": "Of course, godliness with contentment is great gain. For we brought nothing into the world, so we cannot carry anything out of it. But if we have food and clothing, we will be content with these."
+      },
+      "care": [
+        "If you gave money because you were pressed or frightened, or because someone promised that God would pay you back, and the return never came, that was not your failure. You were not lacking in faith. The promise was wrong. It may help to talk with a pastor or a friend you trust. If you are in money trouble now, look for a trusted adviser where you live; these notes are not financial advice. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What did money feel like in the home you grew up in: scarce, plentiful, or never mentioned?",
+        "discuss": [
+          "Jesus calls money a master. In what ways does it give orders in ordinary lives like ours?",
+          "Why is it so hard to say what enough is, and what would help you say it?",
+          "Why might giving first, before other spending, change a person more than giving what is left over?"
+        ],
+        "pray": "Pray for anyone in the group under the weight of debt or money worry, and for open hands for all of you."
+      }
+    },
+    {
+      "n": 6,
+      "title": "Sabbath and rest",
+      "minutes": 10,
+      "teaching": [
+        "We are exhausted and quietly proud of it. Busyness has become the proof that we matter, and rest feels like falling behind. The command to keep the Sabbath is given twice in the law, with two reasons. In Exodus, rest copies God's own rest after creation. In Deuteronomy, rest is freedom: “Remember that you were a slave in the land of Egypt” (Deuteronomy 5:15). A people who had worked without end under Pharaoh were commanded to stop, and to let their servants and even their animals stop too.",
+        "Christians differ on how the command applies now. Some keep the Lord's Day as a Christian Sabbath; others see it fulfilled in the rest Christ gives, and keep one day in seven as wisdom rather than law. Both agree with Jesus that “The Sabbath was made for man, not man for the Sabbath” (Mark 2:27). Abraham Joshua Heschel called the Sabbath a palace in time. Rest is a weekly act of trust that the world does not depend on you, because it never did."
+      ],
+      "open": {
+        "kind": "howto",
+        "label": "How to Keep a Sabbath",
+        "href": "/how-tos/sf-how-to-keep-a-sabbath",
+        "why": "How to begin keeping a day of rest when the work is never finished and stopping feels impossible."
+      },
+      "also": [
+        {
+          "kind": "life",
+          "label": "What is Sabbath rest, and how do you keep it?",
+          "href": "/life/rest-and-the-sabbath",
+          "why": "The longer guide to rest as gift and as resistance, and the trust it takes to stop."
+        },
+        {
+          "kind": "essay",
+          "label": "Should Christians keep the Sabbath?",
+          "href": "/writing/should-christians-keep-the-sabbath",
+          "why": "The views Christians hold on the Sabbath today, set out fairly, for anyone who wants the argument as well as the practice."
+        },
+        {
+          "kind": "doctrine",
+          "label": "Sabbath",
+          "href": "/study/bible/doctrines/sabbath",
+          "why": "The Sabbath across the whole Bible, from God's rest in Genesis to the rest that remains for God's people."
+        }
+      ],
+      "question": "What do you believe would happen if you stopped working for a whole day each week?",
+      "do": "Choose a block of time this week, at least half a day, with no paid work, no errands and no screens for work. Notice what you feel when you stop.",
+      "verse": {
+        "ref": "Mark 2:27",
+        "text": "Then Jesus declared, “The Sabbath was made for man, not man for the Sabbath.”"
+      },
+      "group": {
+        "open": "When did you last feel truly rested?",
+        "discuss": [
+          "Deuteronomy ties the Sabbath to freedom from slavery. What might you be enslaved to that rest would expose?",
+          "Christians differ on whether the Sabbath command still binds. What do both views agree on?",
+          "What makes it hardest for people in this group to stop?"
+        ],
+        "pray": "Pray for the trust to rest, and for anyone in the group whose work or circumstances make rest almost impossible."
+      }
+    },
+    {
+      "n": 7,
+      "title": "Technology and attention",
+      "minutes": 10,
+      "teaching": [
+        "You notice it when you try to read a long chapter, or pray for ten minutes, or listen to a child without glancing at a screen. Attention has frayed. That is no accident. Much of what lives on our phones is designed to hold our attention, because attention is what it sells. Most of us never chose this formation. It happened in our hands, hours a day, while we were busy, and it has followed us into our work, our marriages and our prayers.",
+        "Simone Weil wrote that attention is the rarest and purest form of generosity. What we attend to, we come to love, and over time we become like what we love. Paul tells the Philippians to fix their minds on whatever is true, honorable, right and pure (Philippians 4:8). The wisdom is not to throw the phone away. It is to decide in advance where your attention will go: a time without screens, the phone out of the bedroom, a morning that begins with Scripture or silence before the feed."
+      ],
+      "open": {
+        "kind": "life",
+        "label": "How does your phone shape your attention and soul?",
+        "href": "/life/technology-and-attention",
+        "why": "Attention as a spiritual battleground, and what the ancient practices of the church offer a generation formed by the feed."
+      },
+      "also": [
+        {
+          "kind": "howto",
+          "label": "How to Unhook From Your Screens",
+          "href": "/how-tos/body-how-to-unhook-from-your-screens",
+          "why": "Plain, workable steps for taking your attention back from a device built to keep it."
+        },
+        {
+          "kind": "guide",
+          "label": "Attention: a Bible study",
+          "href": "/studyguides/attention",
+          "why": "A study guide on technology and distraction, for a group that wants to go further with Scripture."
+        },
+        {
+          "kind": "wisdom",
+          "label": "What the Bible says about technology and distraction",
+          "href": "/wisdom/technology-and-distraction",
+          "why": "The passages that speak to a scattered mind, gathered in one place to read slowly."
+        }
+      ],
+      "question": "Where did your attention go yesterday, and is that where you would have chosen to give your love?",
+      "do": "For one week, keep your phone out of the room where you sleep, and spend the first ten minutes of each morning with Scripture or silence before any screen.",
+      "verse": {
+        "ref": "Psalm 90:12",
+        "text": "So teach us to number our days, that we may present a heart of wisdom."
+      },
+      "group": {
+        "open": "What is the first thing you look at in the morning?",
+        "discuss": [
+          "Weil said attention is a form of generosity. Who in your life is getting the least of your attention?",
+          "How has distraction affected your work, your relationships or your prayer?",
+          "What is one shared practice this group could try for a week, and how would you hold each other to it?"
+        ],
+        "pray": "Pray for undivided attention: to God, to the people nearest you, and to the work in front of you."
+      }
+    },
+    {
+      "n": 8,
+      "title": "Work in the light of new creation",
+      "minutes": 12,
+      "teaching": [
+        "Some of us suspect our work doesn't finally matter. The spreadsheet will be deleted, the house will be sold, the career will be forgotten. If the world is simply going to be thrown away, then only religious work really counts, and everything else is filling time. The Bible's ending says something different. Isaiah pictures God's people in the renewed world building houses and living in them, planting vineyards and eating their fruit. Revelation pictures the kings of the earth bringing their glory into the holy city.",
+        "Paul ends his long chapter on the resurrection not with an escape but with work: “your labor in the Lord is not in vain” (1 Corinthians 15:58). We don't know how our work carries over into the new creation, and we shouldn't pretend to. But because God raises bodies rather than discarding them, faithful work done in his name is not wasted. You will go back to the same job on Monday. What you are doing there is not small."
+      ],
+      "open": {
+        "kind": "chapter",
+        "label": "1 Corinthians 15, passage by passage",
+        "href": "/study/bible/1-corinthians/15#plain",
+        "why": "Paul's chapter on the resurrection of the body, which ends by telling ordinary workers their labour is not in vain."
+      },
+      "also": [
+        {
+          "kind": "doctrine",
+          "label": "New creation",
+          "href": "/study/bible/doctrines/new-creation",
+          "why": "What the whole Bible says about the world made new, and why it is renewal rather than replacement."
+        },
+        {
+          "kind": "story",
+          "label": "New creation",
+          "href": "/study/bible/story/new-creation",
+          "why": "The last act of the Bible's story, where heaven and earth are joined and the work of history is gathered in."
+        },
+        {
+          "kind": "track",
+          "label": "When life is heavy",
+          "href": "/tracks/living-hard-seasons",
+          "why": "The next track in Living It is for the seasons when work and money are the least of what you carry."
+        }
+      ],
+      "question": "If your work is not in vain, what in it would you do differently, and what would you stop worrying about?",
+      "do": "Read Isaiah 65:17-25 slowly. Then name one piece of your own work you will do this week as if it might last.",
+      "verse": {
+        "ref": "1 Corinthians 15:58",
+        "text": "Therefore, my beloved brothers, be steadfast and immovable. Always excel in the work of the Lord, because you know that your labor in the Lord is not in vain."
+      },
+      "group": {
+        "open": "What work have you done that you hope lasts?",
+        "discuss": [
+          "Why do so many Christians assume only religious work will matter in the end?",
+          "Isaiah pictures people building and planting in the new creation. What does that suggest about the work you do now?",
+          "Looking back over these eight sessions, what has changed in how you see your Monday?"
+        ],
+        "pray": "Pray for each person's work in the coming week, that it would be done in the Lord and not in vain."
+      }
+    }
+  ]
+}

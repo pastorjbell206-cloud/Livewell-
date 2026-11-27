@@ -1,0 +1,357 @@
+{
+  "slug": "study-tools",
+  "title": "Word studies, cross-references and the study tools",
+  "for": "I want to dig deeper into a passage",
+  "subtitle": "Six short sessions on the tools of careful study: what a translation is, a word study done well, cross-references, the key words and themes of the whole Bible, the hard passages, and a habit for life.",
+  "intro": [
+    "This track is for someone who has learned to study a passage and wants to go further into it. It teaches the tools the Study Bible on this site offers, what each can do, and the mistakes careful readers learn to avoid with each. It has six sessions of about ten minutes, with a little reading between them.",
+    "Each session works the same way. You read a few short paragraphs, then open one page and use it, then come back to one question, one thing to do, and one verse to keep. It follows How to study a passage: seven steps, Reading each kind of book in the Bible and The world the Bible was written in, and it ends with a plan for keeping on. Each session ends with a guide for a group."
+  ],
+  "leader": {
+    "about": [
+      "This guide is for anyone leading a small group through Word studies, cross-references and the study tools. The group is for people who already study the Bible and want to use its tools well: translations, word studies, cross-references, themes and the notes on hard passages. The leader's task is to keep the tools in the service of the text, so that the group digs deeper into the passage and never past it.",
+      "Each person reads the session, opens its page, and tries the tool on the passage it names before the group meets. The meeting doesn't repeat the teaching. It compares what people found, using the group guide for that session, which is gathered below in order with the page each session opens and the question it asks."
+    ],
+    "sections": [
+      {
+        "id": "group",
+        "title": "The group",
+        "body": [
+          "Four to ten people is a good size. Meet for about seventy-five minutes, once a week, for six meetings, and keep the end time you promised. Each session asks people to try a tool between meetings, so make sure everyone can reach the site on a phone or a computer. A leader doesn't need to know Hebrew or Greek. A leader needs to have tried the tools, and to be willing to say when they don't know."
+        ]
+      },
+      {
+        "id": "room",
+        "title": "The room",
+        "body": [
+          "A table works best, with Bibles open in front of everyone, in more than one translation if you have them, and a screen or two for the study pages. Make it plain at the first meeting that anyone may pass on any question, that the group will disagree about some things and that this is allowed, and that no one has to read or pray aloud. What people say about their own lives stays in the room, unless someone is in danger."
+        ]
+      },
+      {
+        "id": "order",
+        "title": "The order of a meeting",
+        "body": [
+          "About seventy-five minutes, in this order. Keep to the times loosely and to the end time strictly."
+        ],
+        "steps": [
+          "Ten minutes: the opening question, once round the circle. Anyone may pass.",
+          "Fifteen minutes: open the session's tool together and let one person show what they found with it.",
+          "Ten minutes: one person reads the passage aloud while the others follow, in different translations if you have them.",
+          "Twenty-five minutes: the three questions to talk over, in order. Ask whether the tool clarified the passage or pulled the group away from it.",
+          "Five minutes: the prayer prompt, in your own words.",
+          "Five minutes: name the next session and the tool it opens, and say when you will meet."
+        ]
+      },
+      {
+        "id": "hard",
+        "title": "When a hard question comes",
+        "body": [
+          "Tools raise questions: why translations differ, whether a word really means what a preacher said it means, what to do with a passage that troubles the conscience. Treat each as a good question. Let the person who prefers another translation, or who reads a word differently, state their case in a form they would accept before anyone answers it. On the hard passages, state the objection at its strongest, the way a thoughtful skeptic would.",
+          "If no one knows the answer, write the question down and bring it back the next week. Hold firmly what the creeds confess, and keep an open hand where faithful readers have long differed."
+        ]
+      },
+      {
+        "id": "hurting",
+        "title": "When someone is hurting",
+        "body": [
+          "A study group is never only study. A hard passage about violence can land on someone who has known violence, and a passage about God's silence can land on someone who has been praying into silence for months. When the study touches someone's life, stop and listen. Thank them for saying it, don't explain their suffering for them, and don't hurry back to the tool. Ask whether they would like the group to go on or to pause, and speak with them on their own afterwards.",
+          "If someone says that a partner, a leader or anyone else is harming them or a child, take it seriously and don't promise to keep it secret. A child who may be in danger is a matter for the authorities, not only for the group."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "When to point someone to Find Help",
+        "body": [
+          "Point someone to Find Help when what they carry has become too heavy to set down: sorrow that has taken their sleep or appetite for weeks, a weight on the conscience that will not let them rest, harm done to them at home or in a church, or any sign that they no longer want to be alive. The Find Help page on this site lists places to turn, and its lines for help right now are open day and night. If anyone is in danger now, call your local emergency number. A leader is a friend in that moment, not a counsellor."
+        ]
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "n": 1,
+      "title": "What a translation is, and why they differ",
+      "minutes": 10,
+      "teaching": [
+        "Unless you read Hebrew, Aramaic and Greek, you read the Bible in translation, and every translation is a set of choices. Some translations stay close to the form of the original, word for word where English allows, so you can see its repetitions and its order. Others aim to carry the meaning in natural English, thought for thought, so idioms that would puzzle a modern reader come through clearly. Each approach has real strengths and real costs, and serious scholars have given their lives to both.",
+        "The Study Bible on this site reads the Berean Standard Bible, which sits between the two, leaning slightly one way or the other as the passage requires. No translation is neutral, and none is useless. It is worth remembering that the New Testament writers themselves often quoted the Old Testament from a Greek translation, the Septuagint, and were content to call it Scripture. So read one translation steadily, check a second where a verse matters, and let the differences send you to the notes, where the translators' choices are often explained."
+      ],
+      "open": {
+        "kind": "reading-guide",
+        "label": "Why Translations Differ",
+        "href": "/study/bible/guides/translations",
+        "why": "Word-for-word and thought-for-thought, the choices every translator faces, the history of the English Bible, and how to read small capitals, brackets and footnotes."
+      },
+      "also": [
+        {
+          "kind": "context",
+          "label": "What Is the Septuagint, and Why Does It Matter?",
+          "href": "/resources/context/septuagint-and-scripture",
+          "why": "The Greek translation of the Hebrew Scriptures the apostles so often quoted, and what that says about translation and Scripture."
+        },
+        {
+          "kind": "reading-guide",
+          "label": "How We Got the New Testament",
+          "href": "/study/bible/guides/how-we-got-the-new-testament",
+          "why": "Papyri, codices and thousands of manuscripts behind modern Bibles, and an honest account of what the differences between them do and do not change."
+        },
+        {
+          "kind": "film",
+          "label": "The Bible: how we got it",
+          "href": "/study/explorer/watch/the-bible",
+          "why": "A short film on how the Bible came to us: many writers, words written down, copies made by hand, and translations into new languages."
+        }
+      ],
+      "question": "Which translation do you usually read, and do you know which way it leans and why?",
+      "do": "Read Psalm 23 in the Berean Standard Bible and in one other translation. Write down every difference you notice, and for one of them, say which you prefer and what the other one gains.",
+      "verse": {
+        "ref": "Psalm 119:130",
+        "text": "The unfolding of Your words gives light; it informs the simple."
+      },
+      "group": {
+        "open": "Have you ever read something translated from another language and felt something was lost, or gained?",
+        "discuss": [
+          "What are the strengths of a word-for-word translation, and what are the strengths of a thought-for-thought one?",
+          "What does it suggest that the apostles were willing to quote Scripture from a Greek translation?",
+          "Where did the group find two translations of Psalm 23 differing, and did either difference change the meaning?"
+        ],
+        "pray": "Give thanks for the translators and copyists who carried the Scriptures into the language of the group, and pray for those who still have none."
+      }
+    },
+    {
+      "n": 2,
+      "title": "A word study done right",
+      "minutes": 15,
+      "teaching": [
+        "A word study starts with the passage, not the dictionary. Find the word behind the English, read what range of meanings it has, see where else this writer uses it, and then ask which of those meanings fits this sentence. Most of the time the answer is plain, and the study simply makes you surer. Done well, it is one of the most rewarding things a reader can do. Done badly, it can make the Bible say things no first reader ever heard.",
+        "Careful readers name a few common mistakes. One is reading a word's root or later history into every use: the Greek word for power gave English the word dynamite, but Paul knew nothing of an explosive invented in the nineteenth century. Another is pouring every meaning a word can have into one sentence at once. A third is assuming a change of word must mean a change of meaning. In John 21 Jesus asks Peter about love with one verb and Peter answers with another. Many preachers have built on the difference, while many commentators note that John uses both verbs for the Father's love of the Son (John 3:35; 5:20) and read it as variation. Weigh both."
+      ],
+      "open": {
+        "kind": "study-tool",
+        "label": "Study a Bible word",
+        "href": "/study/word",
+        "why": "Find a Hebrew or Greek word, read its dictionary entry, see how often each book uses it, and read every verse where it appears."
+      },
+      "also": [
+        {
+          "kind": "study",
+          "label": "Study John 21, step by step",
+          "href": "/study/bible/john/21?study=walk",
+          "why": "The guided study on John 21. Its key-words step lays out the two verbs for love and the case each side makes."
+        },
+        {
+          "kind": "chapter",
+          "label": "John 21 with its notes",
+          "href": "/study/bible/john/21",
+          "why": "Breakfast by the sea and Peter restored, with notes on every verse, including the three questions and their answers."
+        }
+      ],
+      "question": "Have you ever heard a sermon point built on a single word, and how would you now check whether it holds?",
+      "do": "Read John 21:15-19. Open the word pages for both verbs translated love, and read three other verses where John uses each. Write down whether you think the change of verb carries weight, and why.",
+      "verse": {
+        "ref": "2 Timothy 2:15",
+        "text": "Make every effort to present yourself approved to God, an unashamed workman who accurately handles the word of truth."
+      },
+      "group": {
+        "open": "Is there a word you use that means something different to you than it does to the people around you?",
+        "discuss": [
+          "Why is it a mistake to read a word's root or later history into every place it is used?",
+          "How does the group weigh the two readings of the verbs for love in John 21?",
+          "What would change in how you listen to sermons and read books if you checked word claims for yourself?"
+        ],
+        "pray": "Pray for the care to handle the word of truth accurately, and for the humility to be corrected when a favourite reading does not hold."
+      }
+    },
+    {
+      "n": 3,
+      "title": "Cross-references: Scripture interpreting Scripture",
+      "minutes": 10,
+      "teaching": [
+        "Christians have long held that the best interpreter of Scripture is Scripture itself. Augustine advised readers to let the plainer passages throw light on the more obscure, and the Reformers made it a rule that Scripture interprets Scripture. Jesus did this on the road to Emmaus: “And beginning with Moses and all the Prophets, He explained to them what was written in all the Scriptures about Himself” (Luke 24:27). Hebrews 1 does it in miniature, gathering line after line from the Psalms and the prophets to show who the Son is.",
+        "Cross-references are the tool for this, and like every tool they can be misused. Some point to a passage that shares a word but not a meaning, and following them can lead you a long way from where you started. So check each one in its own chapter, and ask whether it truly speaks to the verse you began with. Let the clear help the unclear, and never the other way round. Used well, cross-references teach you to hear the Bible as one long conversation, with each voice heard in its own place."
+      ],
+      "open": {
+        "kind": "study-tool",
+        "label": "Follow a verse: cross-references",
+        "href": "/study/cross-references",
+        "why": "Start from any verse and follow the passages that point to it or that it points to, beginning from the verses most often linked."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Hebrews 1 with its notes",
+          "href": "/study/bible/hebrews/1",
+          "why": "A chapter built from Old Testament quotations, with notes on where each comes from and the hard question of how Hebrews applies them to Jesus."
+        },
+        {
+          "kind": "chapter",
+          "label": "Luke 24 with its notes",
+          "href": "/study/bible/luke/24",
+          "why": "The road to Emmaus, where the risen Jesus opens the Scriptures to two disciples, with notes on every verse."
+        }
+      ],
+      "question": "Which cross-reference, followed to its own chapter, turned out to say something different from what you expected?",
+      "do": "Read Hebrews 1. Follow each quotation back to the psalm or prophet it comes from, read a few verses around it, and write down what the original setting adds to how Hebrews uses it.",
+      "verse": {
+        "ref": "Luke 24:27",
+        "text": "And beginning with Moses and all the Prophets, He explained to them what was written in all the Scriptures about Himself."
+      },
+      "group": {
+        "open": "Who is someone whose words you understand better because you know the rest of what they have said?",
+        "discuss": [
+          "What does it mean to let Scripture interpret Scripture, and where can that principle be misused?",
+          "What did the group find when they followed the quotations in Hebrews 1 back to their sources?",
+          "If Jesus opened all the Scriptures about himself, how should that shape the way we read the Old Testament?"
+        ],
+        "pray": "Ask the risen Christ to open the Scriptures to the group as he did on the road to Emmaus, and give thanks for the one story they tell."
+      }
+    },
+    {
+      "n": 4,
+      "title": "Key words and themes across the whole Bible",
+      "minutes": 10,
+      "teaching": [
+        "Some words and themes run through the whole Bible and bind its books together. Follow one and you start to see the shape of the whole. Take God's dwelling with his people. He walks in a garden, then tells Israel to build a sanctuary so that he may dwell among them. The temple is filled with his glory. Then “The Word became flesh and made His dwelling among us” (John 1:14), and at the end a voice from the throne announces that the dwelling place of God is with man. One thread runs from the first page to the last.",
+        "Themes are a gift, but they can also become a lens that flattens. Once you've found a favourite theme, it's tempting to see it everywhere and to hear every book saying the same thing. The pages on key words and themes on this site join books only where the books themselves use the same word or title, and that restraint is worth copying. Follow a theme where the text leads, let each book say what it says about it, and notice where a book surprises you."
+      ],
+      "open": {
+        "kind": "study-tool",
+        "label": "Key words of the Bible",
+        "href": "/study/words",
+        "why": "The words the book pages mark as key, with what each means and where it runs through the Bible, read from the books' own notes."
+      },
+      "also": [
+        {
+          "kind": "study-tool",
+          "label": "Themes of the Bible",
+          "href": "/study/themes",
+          "why": "The themes the book pages name, joined only where the books give the same title, so you can follow one through the whole canon."
+        },
+        {
+          "kind": "film",
+          "label": "God with his people",
+          "href": "/study/explorer/watch/god-with-his-people",
+          "why": "A short film following one thread through the whole Bible, from a garden to a tent, a temple, a person and a new world."
+        },
+        {
+          "kind": "film",
+          "label": "Promises that build: the covenants",
+          "href": "/study/explorer/watch/covenant",
+          "why": "A short film following the covenants, from Noah's rainbow to the cup Jesus shared, each laid on the one before."
+        }
+      ],
+      "question": "Which theme have you followed through the Bible, and where did a book surprise you by saying something you didn't expect about it?",
+      "do": "Choose one key word or theme. Find it in three books from different parts of the Bible, read the passage in each, and write one sentence on what each book adds that the others don't.",
+      "verse": {
+        "ref": "John 1:14",
+        "text": "The Word became flesh and made His dwelling among us. We have seen His glory, the glory of the one and only Son from the Father, full of grace and truth."
+      },
+      "group": {
+        "open": "Is there a thread that runs through your own life, something that keeps coming back in different forms?",
+        "discuss": [
+          "What did the group see by following God's dwelling with his people from the garden to the end of Revelation?",
+          "How can a favourite theme become a lens that flattens the Bible, and how would you guard against it?",
+          "Which key word or theme would you most like to follow further, and why?"
+        ],
+        "pray": "Give thanks that God has come to dwell with his people in Christ, and pray that each person would see the one story more clearly."
+      }
+    },
+    {
+      "n": 5,
+      "title": "Sitting with a hard passage",
+      "minutes": 15,
+      "teaching": [
+        "Every honest reader of the Bible meets passages that trouble the conscience: wars of conquest, laws that seem harsh, prayers for vengeance, God's silence when his people cry out. A thoughtful skeptic puts the objection plainly. If a book contains these things, how can it be the word of a good God? That question deserves to be heard at full strength, not hurried past. Many Christians have felt its weight themselves, and the prophet Habakkuk asked God how long he would hear the cry of violence and not save.",
+        "Sitting with a hard passage means neither hiding it nor resolving it too quickly. Read it in its chapter and its book. Learn what its world was like. Read what the notes and the church's best readers have said, and notice where they disagree. Then be honest about what remains. Some hard passages open up with study, and some stay hard. Scripture itself says that “The secret things belong to the LORD our God, but the things revealed belong to us” (Deuteronomy 29:29). Trust grows not when every question is closed but when you have looked at it honestly and still found God faithful."
+      ],
+      "open": {
+        "kind": "study-tool",
+        "label": "Hard passages",
+        "href": "/study/hard-passages",
+        "why": "The hard questions the Study Bible's notes take up, from every book, each linked to its chapter and its note, with Find Help in reach."
+      },
+      "also": [
+        {
+          "kind": "answer",
+          "label": "Did God command genocide?",
+          "href": "/answers/did-god-command-genocide",
+          "why": "An Honest Answer to one of the hardest questions in the Old Testament, stating the objection at its strongest before answering it."
+        },
+        {
+          "kind": "context",
+          "label": "Why Is the Old Testament So Violent?",
+          "href": "/resources/context/the-violence-of-the-old-testament",
+          "why": "An honest look at the violence in the Old Testament, read in its ancient world and in the light of the whole Bible."
+        }
+      ],
+      "question": "Which passage in the Bible troubles you most, and have you ever sat with it long enough to read it in its own chapter?",
+      "do": "Choose one hard passage from the list. Read its whole chapter, then its note, then write down what became clearer, what stayed hard, and one honest prayer about what stayed hard.",
+      "verse": {
+        "ref": "Deuteronomy 29:29",
+        "text": "The secret things belong to the LORD our God, but the things revealed belong to us and to our children forever, so that we may follow all the words of this law."
+      },
+      "group": {
+        "open": "Is there a question about the Bible you once thought you weren't allowed to ask?",
+        "discuss": [
+          "How would you state the strongest objection to a hard passage, in words a thoughtful skeptic would agree with?",
+          "What is the difference between resolving a hard passage too quickly and sitting with it honestly?",
+          "What does it say about the Bible that it keeps Habakkuk's complaint, and many like it, inside its pages?"
+        ],
+        "pray": "Bring the hard passages and the questions they raise honestly to God, and pray for anyone in the group whose questions have become heavy to carry."
+      },
+      "care": [
+        "If you feel forsaken right now and the feeling will not lift, please tell someone you trust, a pastor, a friend or a doctor. The Find Help page on this site lists places to turn."
+      ]
+    },
+    {
+      "n": 6,
+      "title": "A habit of study for life",
+      "minutes": 10,
+      "teaching": [
+        "Study isn't a course you finish. It's a habit you keep, and the habit matters more than any single tool. A simple rhythm serves most people well: read a whole book through, study one chapter a week with the seven steps, keep a notebook, and use the tools when a question sends you to them. A plan helps on the days when you don't know where to begin. Joshua was told to keep the Book of the Law on his lips and meditate on it day and night, not to master it once and move on.",
+        "Keep one warning close. Ecclesiastes says there is no end to the making of many books and that much study wearies the body, and Paul says that knowledge puffs up while love builds up. It is possible to become skilled with every tool here and still use the Bible mainly to win arguments or to feel above other readers. The point of study is to know God and to love the people he puts beside you. The next step in the Academy is to know one book deeply, and Deep in one: the Gospel of Mark is waiting."
+      ],
+      "open": {
+        "kind": "plan",
+        "label": "Plans for reading the Bible",
+        "href": "/study/plans",
+        "why": "Reading plans for every pace, from a few weeks to a whole year, so that study becomes a habit you return to rather than an effort you remember."
+      },
+      "also": [
+        {
+          "kind": "howto",
+          "label": "How to Memorize Scripture",
+          "href": "/how-tos/sf-how-to-memorize-scripture",
+          "why": "A practical guide to keeping verses by heart, so that what you study goes with you through the day."
+        },
+        {
+          "kind": "tool",
+          "label": "Memorize Scripture",
+          "href": "/tools/scripture-memory",
+          "why": "A tool that brings a verse back after one, three, seven, fourteen and thirty days, so the verses you keep stay kept."
+        },
+        {
+          "kind": "track",
+          "label": "Deep in one: the Gospel of Mark",
+          "href": "/tracks/mark",
+          "why": "The next program in the Academy: one book studied deeply, chapter by chapter, using everything this track and the ones before it have taught."
+        }
+      ],
+      "question": "What would a realistic rhythm of study look like in your actual week, and what usually gets in its way?",
+      "do": "Choose a reading plan and the time of day you will keep it. Write your rhythm on one card: what you will read, when, and which chapter you will study with the seven steps this week.",
+      "verse": {
+        "ref": "Joshua 1:8",
+        "text": "This Book of the Law must not depart from your mouth; meditate on it day and night, so that you may be careful to do everything written in it. For then you will prosper and succeed in all you do."
+      },
+      "group": {
+        "open": "What is a habit you have kept for years, and what helped you keep it?",
+        "discuss": [
+          "What rhythm of study is realistic for each person in the group, and how could the group help each other keep it?",
+          "How can study become a way of feeling above other readers, and what guards against that?",
+          "What has studying the Bible this way changed in how each person reads it, or in how they live?"
+        ],
+        "pray": "Pray for faithfulness in small daily reading, and that all the group's study would end in love for God and for the people beside them."
+      }
+    }
+  ]
+}

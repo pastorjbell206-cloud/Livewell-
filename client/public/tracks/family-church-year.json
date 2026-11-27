@@ -1,0 +1,465 @@
+{
+  "slug": "family-church-year",
+  "title": "The church year at home",
+  "for": "I want our family to keep the seasons",
+  "subtitle": "Eight sessions on keeping the church's year at the family table: Advent, Christmas and Epiphany, Lent, Holy Week, Easter, Pentecost and the long ordinary weeks, each with something to do together.",
+  "intro": [
+    "This track is for parents and households who want the year itself to tell the story of Jesus at home. It follows the track for parents in Faith at Home, and it assumes a family that already sits down together, at least some nights. Churches keep the Christian year fully, lightly or hardly at all, and this track takes none of them as the standard. It offers the seasons as a gift to use as your own church does.",
+    "There are eight sessions of about ten minutes, one for each season and one to begin. Each has a short teaching, one page on this site to open, and then one question, one thing to do at the table and one verse to keep. You can take them in order, or come back to each when its season arrives."
+  ],
+  "leader": {
+    "about": [
+      "This guide is for anyone leading a group of parents through The church year at home, or two parents going through it together. The group is for households from any church, including churches that keep only Christmas and Easter. A leader doesn't need to know the calendar well. A leader needs to keep the focus on the story each season tells, and to make sure no family feels lesser for keeping the year differently from another.",
+      "Each person reads the session and opens its page before the group meets. The meeting talks over what happened at the family table, using the group guide for each session, gathered below in order. A group can meet weekly through the eight sessions, or meet once at the start of each season through a whole year."
+    ],
+    "sections": [
+      {
+        "id": "group",
+        "title": "The group",
+        "body": [
+          "Four to ten parents is a good size. Meet for about seventy-five minutes and keep the end time you promised. If the group meets through a year, at the start of each season, a meal together fits the subject well; a shared table is the best way to talk about keeping one. Families from different churches will keep the seasons differently, and that difference is part of what the group can learn from."
+        ]
+      },
+      {
+        "id": "room",
+        "title": "The room",
+        "body": [
+          "A kitchen table works best, with the season's few things on it: four candles for Advent, something red at Pentecost. Have a Bible for each person and the session open. Say at the first meeting that anyone may pass on any question, that no family's practice is on trial, that what is said about homes stays in the room unless someone is in danger, and that no one has to pray aloud."
+        ]
+      },
+      {
+        "id": "order",
+        "title": "The order of a meeting",
+        "body": [
+          "About seventy-five minutes, in this order. Keep to the times loosely and to the end time strictly."
+        ],
+        "steps": [
+          "Ten minutes: the opening question, once round the circle. Anyone may pass.",
+          "Ten minutes: how the last session's table practice went at home, including what fell apart.",
+          "Five minutes: one person reads the session's verse aloud.",
+          "Thirty minutes: the three questions to talk over, in order, with room for ideas families bring.",
+          "Ten minutes: the prayer prompt, in your own words. Nobody has to pray aloud.",
+          "Ten minutes: name the next season and what each family will try, and say when you will meet."
+        ]
+      },
+      {
+        "id": "hard",
+        "title": "When a hard question comes",
+        "body": [
+          "Some will ask whether keeping the church year is biblical at all, and the question deserves respect. Some Reformed and Puritan churches set aside every holy day but the Lord's day for that very reason, and Paul left the keeping of days to each believer's conscience. Say so plainly, and let each family follow its own church.",
+          "Other questions are about dates: why Easter moves, why East and West keep it on different Sundays, when Lent begins. Answer only what you know, and look up the rest together. The track gives dates only where the church calendar fixes them."
+        ]
+      },
+      {
+        "id": "hurting",
+        "title": "When someone is hurting",
+        "body": [
+          "Holidays are hard for many families. Christmas can mark an empty chair, Easter a grave not long filled, and a season of family traditions can be painful for a parent whose marriage has ended or whose child has turned away. When that comes into the room, stop and listen. Don't explain the grief, and don't hurry back to the session. The church's year has room for sorrow; Advent and Holy Week are full of it."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "When to point someone to Find Help",
+        "body": [
+          "Point someone to Find Help when what they carry has grown too heavy: grief that the holidays have made unbearable, a home where someone is not safe, a child who may be in danger, or any sign that a person no longer wants to go on. The Find Help page on this site lists places to turn, and its lines for help right now are open day and night. If anyone is in danger now, call your local emergency number. A leader is a friend in that moment, not a counsellor."
+        ]
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "n": 1,
+      "title": "What the church year is",
+      "minutes": 10,
+      "teaching": [
+        "Long before calendars ran on school terms and tax deadlines, God gave Israel a year shaped by feasts and holy days: Passover, the Feast of Weeks, the Day of Atonement, the Feast of Tabernacles. Each one retold part of the story. The church inherited that rhythm. Easter grew out of Passover, and Pentecost passed into the Christian year as the feast of the Spirit. Over the centuries the church arranged its year around the life of Christ: waiting in Advent, his birth at Christmas, his showing to the nations at Epiphany, the road to the cross in Lent, the cross and the empty tomb, the Spirit's coming, and the long ordinary weeks of following him.",
+        "Christians keep this year in different ways, and none of them is lesser. Catholic, Orthodox, Anglican and Lutheran churches keep the full calendar. Many free churches keep Christmas and Easter and only some of the rest. Some Reformed and Puritan churches set aside every holy day but the Lord's day, because they found no command for them in Scripture. Paul left such days to conscience: “One person regards a certain day above the others, while someone else considers every day alike. Each one should be fully convinced in his own mind” (Romans 14:5). A family can keep the seasons as a gift, not a rule."
+      ],
+      "open": {
+        "kind": "reading-guide",
+        "label": "The Calendar and Festivals",
+        "href": "/study/bible/guides/calendar-and-festivals",
+        "why": "How Israel kept its year, how its feasts shaped the Christian year, and the old debates over Sunday, the Sabbath and the date of Easter."
+      },
+      "also": [
+        {
+          "kind": "compare",
+          "label": "The Christian traditions",
+          "href": "/theology/traditions",
+          "why": "How the main Christian traditions differ and what they share, so a family can see where its own church stands and why."
+        },
+        {
+          "kind": "howto",
+          "label": "How to Build Family Traditions That Form Faith",
+          "href": "/how-tos/fam-how-to-build-family-traditions-that-form-faith",
+          "why": "A practical guide to the small repeated traditions that teach children what a family loves, without making them a burden."
+        }
+      ],
+      "question": "What does your family's year already revolve around, and what would it mean to let the life of Christ shape it?",
+      "do": "At the table, draw a large circle and divide it into the seasons. Many churches use purple for Advent and Lent, white for Christmas and Easter, red for Pentecost and green for ordinary time. Mark today, and pin it up.",
+      "verse": {
+        "ref": "Ecclesiastes 3:1",
+        "text": "To everything there is a season, and a time for every purpose under heaven"
+      },
+      "group": {
+        "open": "What holiday or season meant the most in your home growing up, and why?",
+        "discuss": [
+          "Why might God have given Israel a year of feasts and not only commands?",
+          "Churches keep the Christian year fully, lightly or not at all. What does each approach rightly guard?",
+          "What does your family's calendar currently teach your children about what matters most?"
+        ],
+        "pray": "Give thanks for the story the church tells across a year, and ask for wisdom to keep its seasons as a gift in your home."
+      }
+    },
+    {
+      "n": 2,
+      "title": "Advent",
+      "minutes": 10,
+      "teaching": [
+        "Advent means coming. It's the four Sundays before Christmas, and it begins the church's year with waiting rather than celebration. Christians have used these weeks to remember Israel's long wait for the Messiah and to look ahead to Christ's coming again. The prophet spoke into a dark time: “The people walking in darkness have seen a great light” (Isaiah 9:2), and a child would be born to carry the government on his shoulders. Advent lets children feel the ache of waiting before the gift arrives, and that ache is part of how Christmas comes to mean something.",
+        "The simplest practice is four candles where the family eats. Light one on the first Sunday, two on the second, and so on, so that the room grows brighter as Christmas comes. Read a short prophecy by the light, say one sentence about waiting for the King, and pray. The hardest part is not skipping ahead while everything around you is already celebrating. Let the waiting be real. The family Advent devotions on this site run from the first of December to Christmas Day, one short reading a night, walking from the first promise to the manger."
+      ],
+      "open": {
+        "kind": "howto",
+        "label": "How to Keep Advent as a Family",
+        "href": "/how-tos/fam-how-to-keep-advent-as-a-family",
+        "why": "A practical guide to keeping Advent with children: four candles, a prophecy a week, and the discipline of not rushing ahead to Christmas."
+      },
+      "also": [
+        {
+          "kind": "devotion",
+          "label": "The Long Wait Begins",
+          "href": "/family/devotions/advent-1",
+          "why": "The first of twenty-five Advent devotions for the family table, beginning with the promise God made on the day everything broke."
+        },
+        {
+          "kind": "chapter",
+          "label": "Isaiah 9, passage by passage",
+          "href": "/study/bible/isaiah/9#plain",
+          "why": "The prophecy of the child born to us, explained in plain words, to read by candlelight on an Advent evening."
+        }
+      ],
+      "question": "What is your family waiting for right now, and how could Advent give that waiting words?",
+      "do": "Before the first Sunday of Advent, set four candles where your family eats. On that Sunday light one, read Isaiah 9:2-7 aloud, and pray one sentence about waiting for the King.",
+      "verse": {
+        "ref": "Isaiah 9:6",
+        "text": "For unto us a child is born, unto us a son is given, and the government will be upon His shoulders. And He will be called Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace."
+      },
+      "group": {
+        "open": "What is the longest you've ever had to wait for something good?",
+        "discuss": [
+          "Why might the church begin its year with waiting rather than with celebration?",
+          "What makes it hard for a family to keep Advent when everyone around them is already celebrating Christmas?",
+          "How can Advent hold both Israel's waiting for the Messiah and the church's waiting for his return?"
+        ],
+        "pray": "Pray for patience in waiting, and for the children in your homes to learn to long for the right things."
+      }
+    },
+    {
+      "n": 3,
+      "title": "Christmas and Epiphany",
+      "minutes": 10,
+      "teaching": [
+        "In the church's calendar Christmas isn't a day but a season of twelve days, which ends with the feast of Epiphany on January 6, though some churches keep Epiphany on a nearby Sunday. In the West, Epiphany remembers the wise men from the east who followed a star to the child: “When they saw the star, they rejoiced with great delight” (Matthew 2:10). They were Gentiles, outsiders to Israel's promises, and their coming shows that the child was born for the nations. Eastern churches, at the same feast, chiefly remember Jesus' baptism, where the Father and the Spirit show who he is.",
+        "That gives a family two weeks to keep celebrating after the shops have moved on. Keep the lights on, and read the Christmas story in pieces through the twelve days. On Epiphany, let the youngest move the wise men across the room to the manger, or chalk the year over the front door, an old custom in some churches for blessing a home for the year ahead. Then talk about who the outsiders are in your town and your children's school, the people who don't seem to belong. The child the magi worshipped came for them too."
+      ],
+      "open": {
+        "kind": "chapter",
+        "label": "Matthew 2, passage by passage",
+        "href": "/study/bible/matthew/2#plain",
+        "why": "The visit of the magi, explained in plain words under the text, for reading aloud at the table on Epiphany."
+      },
+      "also": [
+        {
+          "kind": "devotion",
+          "label": "He Is Here",
+          "href": "/family/devotions/advent-25",
+          "why": "The Christmas Day devotion from the family Advent set, for the morning the waiting ends and the twelve days begin."
+        },
+        {
+          "kind": "film",
+          "label": "A blessing for all nations",
+          "href": "/study/explorer/watch/all-nations",
+          "why": "A short film on God's promise to bless every nation through Abraham, the promise the magi's visit shows coming true."
+        },
+        {
+          "kind": "story",
+          "label": "The Bible's story: Christ",
+          "href": "/study/bible/story/christ",
+          "why": "The part of the Bible's one story where the promised King arrives, to set Christmas inside the whole of Scripture."
+        }
+      ],
+      "question": "Who are the outsiders in your children's world, and how might the magi's story change how your family sees them?",
+      "do": "Keep one Christmas light burning through the twelve days. On Epiphany, read Matthew 2:1-12 aloud and let a child move the wise men to the manger, or bless your doorway for the year.",
+      "verse": {
+        "ref": "Matthew 2:10",
+        "text": "When they saw the star, they rejoiced with great delight."
+      },
+      "group": {
+        "open": "When does Christmas usually end in your home, and how does that feel?",
+        "discuss": [
+          "What changes when Christmas is a season rather than a single day?",
+          "Why does it matter that the first worshippers from outside Israel were foreigners following a star?",
+          "What would it look like for your family to welcome an outsider during these twelve days?"
+        ],
+        "pray": "Give thanks that Christ came for the nations, and pray for the outsiders your family will meet this year."
+      }
+    },
+    {
+      "n": 4,
+      "title": "Lent",
+      "minutes": 10,
+      "teaching": [
+        "Lent is the season of preparation before Easter, shaped by Jesus' forty days in the wilderness: “After fasting forty days and forty nights, He was hungry” (Matthew 4:2). In Western churches it begins on Ash Wednesday, and its forty days leave out the Sundays, which are always feast days. Eastern churches begin their Great Lent on a Monday and count it in their own way. For most of the church's history Lent has been a time of fasting, prayer and giving to the poor, and many churches mark its first day with ashes and the reminder that we are dust.",
+        "A family can keep Lent simply. Choose together one thing to give up that you'll miss often, like dessert or screens after dinner, and decide where the money or time you save will go. Children shouldn't go without meals; a treat is enough. Each time someone misses the thing, say why out loud: we're getting ready for Easter. Lent is also a season of turning around. Read the parable of the son who came home, and let the children hear that the father ran to meet him. A fast aimed at love for others is the kind Isaiah says God chooses."
+      ],
+      "open": {
+        "kind": "howto",
+        "label": "How to Keep Lent and Easter as a Family",
+        "href": "/how-tos/fam-how-to-keep-lent-and-easter-as-a-family",
+        "why": "A practical guide to Lent with children: what to give up together, where to send what you save, and how to walk the road to Easter."
+      },
+      "also": [
+        {
+          "kind": "devotion",
+          "label": "Turning Around",
+          "href": "/family/devotions/repentance",
+          "why": "A family devotion on repentance as turning around, short enough for the table on any evening in Lent."
+        },
+        {
+          "kind": "help",
+          "label": "How do I fast, and what is Lent for?",
+          "href": "/help/fasting",
+          "why": "Starts with health, says who should not fast from food, and explains Lent, which many churches keep and others do not."
+        },
+        {
+          "kind": "chapter",
+          "label": "Matthew 4, passage by passage",
+          "href": "/study/bible/matthew/4#plain",
+          "why": "Jesus' forty days in the wilderness, the story Lent is shaped by, explained in plain words under the text."
+        }
+      ],
+      "question": "What could your family give up together this Lent, and where should what you save go?",
+      "do": "Before Ash Wednesday, decide as a family one thing to give up and one person or cause to receive what you save. Put a jar on the table for it.",
+      "verse": {
+        "ref": "Joel 2:13",
+        "text": "So rend your hearts and not your garments, and return to the LORD your God. For He is gracious and compassionate, slow to anger, abounding in loving devotion. And He relents from sending disaster."
+      },
+      "group": {
+        "open": "Have you ever given something up for Lent, and what was it like?",
+        "discuss": [
+          "Why might the church prepare for Easter with forty days of going without?",
+          "How can a family keep a fast from becoming a contest of willpower or pride?",
+          "What do children learn from going without something for a season and giving away what they save?"
+        ],
+        "pray": "Ask God for hearts that turn back to him, and for your family's Lent to be aimed at love for others."
+      }
+    },
+    {
+      "n": 5,
+      "title": "Holy Week",
+      "minutes": 10,
+      "teaching": [
+        "Holy Week is the last week of Lent, from Palm Sunday to the Saturday before Easter, and it walks the story of Jesus' final days. On Palm Sunday he rode into Jerusalem on a donkey while the crowds shouted hosanna. On Thursday he washed his disciples' feet, shared the Passover meal and gave them a new command; the old name Maundy Thursday comes from the Latin word for command. On Friday he was crucified, and on Saturday his body lay in the tomb. The family devotions for Holy Week walk it one day at a time, ending at the empty tomb.",
+        "The great temptation is to skip from the palms straight to Easter, sparing the children the sorrow in between. Don't. On Thursday, wash one another's hands or feet at the table and read John 13. On Friday, keep the house quiet, read the death of Jesus plainly, and let the evening be sober. Children can carry sorrow when a parent carries it with them, and the sorrow is part of what makes Sunday good news. Jesus told his friends, “As I have loved you, so you also must love one another” (John 13:34), on the night before he died for them."
+      ],
+      "open": {
+        "kind": "devotion",
+        "label": "The Wrong Kind of King",
+        "href": "/family/devotions/holy-week-1",
+        "why": "The first of eight Holy Week devotions for the family table, beginning on Palm Sunday with the king who came on a donkey."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "John 13, passage by passage",
+          "href": "/study/bible/john/13#plain",
+          "why": "Jesus washes his disciples' feet and gives the new command, explained in plain words for reading aloud on Thursday."
+        },
+        {
+          "kind": "film",
+          "label": "Sacrifice and the Lamb",
+          "href": "/study/explorer/watch/the-lamb",
+          "why": "A short film on the Passover lamb and the cross, to help older children see why Jesus went to the cross at Passover."
+        },
+        {
+          "kind": "doctrine",
+          "label": "The atonement, through the whole Bible",
+          "href": "/study/bible/doctrines/atonement",
+          "why": "For the parent who wants to answer an older child's question about the cross well: what Scripture says Jesus' death accomplished."
+        }
+      ],
+      "question": "Which day of Holy Week would your family most want to skip, and what might it teach you if you didn't?",
+      "do": "On Thursday of Holy Week, wash one another's hands at the table and read John 13:1-15. On Friday, keep the evening quiet and read John 19 together.",
+      "verse": {
+        "ref": "John 13:34",
+        "text": "A new commandment I give you: Love one another. As I have loved you, so you also must love one another."
+      },
+      "care": [
+        "If your grief is so heavy that you cannot carry it, please tell someone: a pastor, a friend, a doctor or a counsellor. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What do you remember of Good Friday from your childhood, if anything?",
+        "discuss": [
+          "Why is it tempting to hurry children from Palm Sunday to Easter?",
+          "What does washing one another's feet teach that words alone cannot?",
+          "How can a parent let a child feel the sorrow of Good Friday without overwhelming them?"
+        ],
+        "pray": "Give thanks for the love Jesus showed in his last week, and ask for grace to walk it slowly with your children."
+      }
+    },
+    {
+      "n": 6,
+      "title": "Easter",
+      "minutes": 10,
+      "teaching": [
+        "Easter is the center of the Christian year. It falls on a different date each year because it's a movable feast, set by the moon after the spring equinox, and Western and Eastern churches often keep it on different Sundays because they reckon it by different calendars. The Council of Nicaea in 325 agreed that the whole church should keep it on a Sunday, the day of the resurrection. Nor is Easter only one day. The church keeps it as a season of fifty days, ending at Pentecost, because one morning isn't long enough to take in what happened.",
+        "After the weeks of going without and a quiet Friday, let Easter be loud. Break the fast with a feast, bring back the thing you gave up, sing the loud songs, and greet each other with the old words many churches still use: Christ is risen; he is risen indeed. Then keep it going. Through the fifty days, read one resurrection appearance a week at the table: the empty tomb, the road to Emmaus, breakfast on the beach. The angels' question stands over every grave: “Why do you look for the living among the dead? He is not here; He has risen” (Luke 24:5-6)."
+      ],
+      "open": {
+        "kind": "devotion",
+        "label": "He Is Not Here",
+        "href": "/family/devotions/holy-week-8",
+        "why": "The last of the Holy Week devotions, for Easter morning at the family table, reading the angel's words at the empty tomb."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "The resurrection",
+          "href": "/study/explorer/watch/the-resurrection",
+          "why": "A short film on what the first witnesses saw and why the church has staked everything on it, for the family to watch on Easter."
+        },
+        {
+          "kind": "chapter",
+          "label": "Luke 24, passage by passage",
+          "href": "/study/bible/luke/24#plain",
+          "why": "The empty tomb and the road to Emmaus, explained in plain words, for reading at the table in the first weeks of Easter."
+        },
+        {
+          "kind": "doctrine",
+          "label": "The resurrection, through the whole Bible",
+          "href": "/study/bible/doctrines/resurrection",
+          "why": "The doctrine study traces resurrection hope through Scripture, for parents who want to answer older children's questions well."
+        }
+      ],
+      "question": "How could your family make Easter last longer than one morning this year?",
+      "do": "On Easter morning greet each other with the old words, Christ is risen, he is risen indeed. Then choose one resurrection story to read at the table each week until Pentecost.",
+      "verse": {
+        "ref": "Luke 24:5-6",
+        "text": "Why do you look for the living among the dead? He is not here; He has risen!"
+      },
+      "care": [
+        "If your grief is so heavy that you cannot carry it, please tell someone: a pastor, a friend, a doctor or a counsellor. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What made Easter feel like a celebration, or not, when you were young?",
+        "discuss": [
+          "Why might the church keep Easter for fifty days rather than one?",
+          "How can a family celebrate loudly without the joy becoming only about sweets and new clothes?",
+          "How does the resurrection change the way a family speaks about graves and loss?"
+        ],
+        "pray": "Give thanks that Christ is risen, and pray for anyone in your homes who is carrying loss this Easter."
+      }
+    },
+    {
+      "n": 7,
+      "title": "Pentecost",
+      "minutes": 10,
+      "teaching": [
+        "Pentecost comes fifty days after Easter, and it was a feast before it was a Christian one. Israel kept the Feast of Weeks seven weeks after Passover, giving thanks for the harvest. At that feast, with Jerusalem full of pilgrims from many nations, the Holy Spirit came on the disciples, and the visitors heard them speak in their own languages. Peter told the crowd that the promise was wider than they had imagined: “This promise belongs to you and your children and to all who are far off” (Acts 2:39). Many Christians call Pentecost the church's birthday.",
+        "Many churches wear red at Pentecost, for the tongues of fire. A family can set something red on the table, read Acts 2 aloud, and talk about the Spirit who lives in every believer, not only in the first disciples. Pentecost also turns a family outward. The Spirit came so that the good news would cross every border of language and nation. Learn a greeting or a short prayer in another language, pray for a church in another country by name, or invite a neighbor from another place to your table. The promise was for the children too."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "The Holy Spirit through the Bible",
+        "href": "/study/explorer/watch/holy-spirit",
+        "why": "A short film following the Spirit from creation to Pentecost, to watch together before reading Acts 2 at the table."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Acts 2, passage by passage",
+          "href": "/study/bible/acts/2#plain",
+          "why": "The day of Pentecost and Peter's sermon, explained in plain words under the text, for reading aloud as a family."
+        },
+        {
+          "kind": "devotion",
+          "label": "God Who Lives Close",
+          "href": "/family/devotions/the-holy-spirit",
+          "why": "A family devotion on the Holy Spirit, short enough for the table on Pentecost Sunday or any evening after it."
+        },
+        {
+          "kind": "story",
+          "label": "The Bible's story: the church and the Spirit",
+          "href": "/study/bible/story/church-spirit",
+          "why": "The part of the Bible's one story that begins at Pentecost, as the good news goes out to the nations."
+        }
+      ],
+      "question": "Where does the Spirit seem to be turning your family outward, toward people unlike you?",
+      "do": "On Pentecost Sunday, put something red on the table, read Acts 2:1-12 aloud, and pray together for one church in another country by name.",
+      "verse": {
+        "ref": "Acts 2:39",
+        "text": "This promise belongs to you and your children and to all who are far off"
+      },
+      "group": {
+        "open": "Have you ever been somewhere you couldn't understand the language? What was it like?",
+        "discuss": [
+          "Why might God have sent the Spirit at a harvest feast full of pilgrims from other nations?",
+          "What does it mean for your children that the promise is for you and your children?",
+          "How could your family welcome someone from another nation or language this year?"
+        ],
+        "pray": "Pray for the Spirit's work in each member of your family, and for a church in another nation by name."
+      }
+    },
+    {
+      "n": 8,
+      "title": "Ordinary time",
+      "minutes": 10,
+      "teaching": [
+        "After Pentecost comes the longest stretch of the church's year, running until Advent, with a shorter stretch after Epiphany. Many churches call these weeks ordinary time, a name taken from the counting of the weeks rather than from dullness; others call them the Sundays after Pentecost or after Trinity. No great event is remembered, and the color is usually green, the color of growing things. Most of a Christian life is lived in ordinary time: school runs, work, meals, small faithfulness repeated. The church's year teaches a family that these weeks are holy too.",
+        "So the practice for ordinary time is the plainest one: keep the table. A short devotion, a question from the catechism, a chapter from a reading plan, a prayer for the day just gone. The weekly family devotions on this site carry no season, and they're made for exactly these weeks. When the year turns again to Advent, your children will have learned something no single feast could teach them, that God is as near on an unremarkable Tuesday in August as on Easter morning. Most of faith is kept in the weeks no one celebrates."
+      ],
+      "open": {
+        "kind": "devotion",
+        "label": "The family devotions",
+        "href": "/family/devotions",
+        "why": "Seventy-two weekly devotions for the family table, grouped by subject, for the long ordinary weeks between the feasts."
+      },
+      "also": [
+        {
+          "kind": "plan",
+          "label": "Family reading plans",
+          "href": "/family/reading-plans",
+          "why": "Plans for reading the Bible together through the ordinary weeks: Mark, the Psalms, or the Old Testament story."
+        },
+        {
+          "kind": "catechism",
+          "label": "The family catechism",
+          "href": "/family/catechism",
+          "why": "One question a week through the ordinary weeks, with a shorter answer for children and a verse to learn together."
+        },
+        {
+          "kind": "track",
+          "label": "Back to the start of Faith at Home: Start at the table tonight",
+          "href": "/tracks/family",
+          "why": "The first track in this program, for building the habit of the family table, which now has a whole year to hang on."
+        }
+      ],
+      "question": "What small practice could your family keep through the ordinary weeks, when no feast is calling for it?",
+      "do": "Choose one weekly devotion to read together each week from now until Advent, and mark on your family's church-year circle where you are.",
+      "verse": {
+        "ref": "Psalm 118:24",
+        "text": "This is the day that the LORD has made; we will rejoice and be glad in it."
+      },
+      "group": {
+        "open": "What is an ordinary day in your home like, from morning to night?",
+        "discuss": [
+          "Why might the longest season of the church's year be the one in which nothing dramatic is remembered?",
+          "What does it teach children that God is as near in August as at Easter?",
+          "Which practice from this track would your family most want to keep next year?"
+        ],
+        "pray": "Give thanks for the ordinary days God gives, and ask for faithfulness at the family table through the weeks no one celebrates."
+      }
+    }
+  ]
+}

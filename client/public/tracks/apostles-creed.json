@@ -1,0 +1,535 @@
+{
+  "slug": "apostles-creed",
+  "title": "The Apostles' Creed, line by line",
+  "for": "I want to know what Christians confess",
+  "subtitle": "Ten short sessions on the oldest summary of Christian belief: what each line of the Apostles' Creed claims, where Scripture says it, and why the church chose those words.",
+  "intro": [
+    "The Apostles' Creed is the oldest summary of Christian belief still in common use. Western churches say it at baptisms and on Sundays, and its faith is shared by Christians East and West. It is short enough to learn in an afternoon. These ten sessions take it a line at a time: what each clause claims, where Scripture says it, and what the church was refusing when it chose those words.",
+    "You don't need to believe all of it to begin. A curious reader is welcome to learn what the church has always confessed and why. A believer who has said these words for years may find that they were heavier, and stranger, than they seemed. Each session opens one page of the site, asks one question and gives you one verse to keep."
+  ],
+  "leader": {
+    "about": [
+      "This guide is for anyone leading a small group through The Apostles' Creed, line by line. The group suits believers who have said the creed for years without stopping over it, people new to faith, and curious outsiders who want to know what Christians actually confess. The leader's task is to keep the group close to Scripture and to the creed's own words, and to let honest hesitation be spoken aloud.",
+      "Each person reads the session, opens its page and does what it asks before the group meets. The meeting doesn't repeat the teaching. It talks over what people found, using the group guide for that session, which is gathered below in order with the page each session opens and the question it asks."
+    ],
+    "sections": [
+      {
+        "id": "group",
+        "title": "The group",
+        "body": [
+          "Four to ten people is a good size. Meet for about seventy-five minutes, once a week or once a fortnight, for ten meetings, and keep the end time you promised. Each session asks for a short reading between meetings, so say so at the start and let each person do what they can. A leader doesn't need to be a theologian. A leader needs to have read the session and opened its page, and to be willing to admit not knowing."
+        ]
+      },
+      {
+        "id": "room",
+        "title": "The room",
+        "body": [
+          "A table works best, with Bibles open and the creed printed for everyone. Say at the first meeting that anyone may pass on any question, that doubts and hesitations may be spoken aloud, and that no one has to pray aloud. Some will have said the creed all their lives and some will be reading it for the first time; both are welcome. What people say about their own lives stays in the room, unless someone is in danger."
+        ]
+      },
+      {
+        "id": "order",
+        "title": "The order of a meeting",
+        "body": [
+          "About seventy-five minutes, in this order. Keep to the times loosely and to the end time strictly."
+        ],
+        "steps": [
+          "Five minutes: say the Apostles' Creed together, slowly, from the printed page.",
+          "Ten minutes: the opening question, once round the circle. Anyone may pass.",
+          "Ten minutes: one person reads the session's verse aloud, and the passage around it, while the others follow.",
+          "Thirty-five minutes: the three questions to talk over, in order. Ask where each answer is found, in Scripture or on the page.",
+          "Ten minutes: the prayer prompt, in the group's own words, with silence for those who would rather not pray aloud.",
+          "Five minutes: name the next session, its line of the creed and the page it opens, and say when you will meet."
+        ]
+      },
+      {
+        "id": "hard",
+        "title": "When a hard question comes",
+        "body": [
+          "Some clauses are hard to accept, the virgin birth and the resurrection most of all, and the group may hold people who don't accept them yet. Thank the person who asks. Let the objection be stated at its strongest before anyone answers, and use the pages the sessions open, which grant what is true in an objection before they answer it. If no one knows, write the question down and bring it back the next week.",
+          "Hold the line where the creed holds it, plainly and without anger. Where Christians read a clause in more than one way, as with he descended into hell or the communion of saints, set out the readings fairly and leave room for each."
+        ]
+      },
+      {
+        "id": "hurting",
+        "title": "When someone is hurting",
+        "body": [
+          "The creed speaks of suffering, death, burial and judgment, and those words can land on someone who has just buried a parent or is afraid of dying. When that happens, stop and listen. Thank them for saying it, don't explain their pain for them, and don't hurry back to the outline. Ask whether they would like the group to go on or to pause, and speak with them on their own afterwards.",
+          "If someone says that a partner, a leader or anyone else is harming them or a child, take it seriously and don't promise to keep it secret. A child who may be in danger is a matter for the authorities, not only for the group."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "When to point someone to Find Help",
+        "body": [
+          "Point someone to Find Help when what they carry has become too heavy to set down: grief that has taken their sleep or appetite for weeks, fear or guilt that will not let them rest, harm done to them at home or in a church, or any sign that they no longer want to be alive. The Find Help page on this site lists places to turn, and its lines for help right now are open day and night. If anyone is in danger now, call your local emergency number. A leader is a friend in that moment, not a counsellor, and the kindest thing is often to stay with the person while they make the first call."
+        ]
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "n": 1,
+      "title": "What a creed is, and why the church wrote them",
+      "minutes": 10,
+      "teaching": [
+        "Before the church had a New Testament bound in one volume, it had a few sentences it asked people to say aloud. The oldest is three words long: “Jesus is Lord” (Romans 10:9). By the second century, a convert standing in the water at Rome was asked three questions, about the Father, the Son and the Holy Spirit, and answered each one aloud before being baptized. Those answers grew, over several centuries, into the Apostles' Creed. The apostles didn't write it, whatever a later legend said about each of the twelve adding a line. It is their teaching, gathered by the people who received it.",
+        "A creed is not a substitute for the Bible, and it isn't a password. It is a summary the church agreed to hold in common, short enough to memorize and sharp enough to rule things out. Every line of this one was shaped against a live alternative, which is why it sounds so concrete: born, suffered, crucified, buried. The next nine sessions ask what each clause claims, where Scripture says it, and what the church was refusing when it chose those words. A creed is meant to be said with others. You are joining a sentence the church has been saying for well over a thousand years."
+      ],
+      "open": {
+        "kind": "creed",
+        "label": "The Apostles' Creed, with notes",
+        "href": "/resources/creeds/apostles-creed",
+        "why": "The full text, with plain notes on its history, the baptismal questions behind it, and the alternative each loaded phrase was written to answer."
+      },
+      "also": [
+        {
+          "kind": "history",
+          "label": "Councils and Creeds",
+          "href": "/theology/history/councils-and-creeds",
+          "why": "The church history lesson on how the creeds came to be written, and why the church thought exact words were worth the trouble."
+        },
+        {
+          "kind": "theology",
+          "label": "The glossary",
+          "href": "/theology/glossary",
+          "why": "Short definitions of the words these sessions use, from creed and council to catholic, incarnation and resurrection, for when a term stops you."
+        }
+      ],
+      "question": "Which line of the Apostles' Creed do you find easiest to say, and which would you hesitate over?",
+      "do": "Read the creed aloud, slowly, once. Then copy it out by hand and keep the page where you will see it for the ten sessions.",
+      "verse": {
+        "ref": "Jude 1:3",
+        "text": "Beloved, although I made every effort to write to you about the salvation we share, I felt it necessary to write and urge you to contend earnestly for the faith entrusted once for all to the saints."
+      },
+      "group": {
+        "open": "Did you grow up saying a creed, or is this the first time you have read one closely?",
+        "discuss": [
+          "The creed grew out of questions asked at baptism. What changes when a statement of belief is something said aloud in front of others?",
+          "Why might the early church have wanted a summary short enough to memorize, when so few people owned books?",
+          "A creed rules some things out. Is that a strength or a weakness, and why?"
+        ],
+        "pray": "Give thanks for the people who carried the faith to you, and ask for an honest mind and a willing heart through these sessions."
+      }
+    },
+    {
+      "n": 2,
+      "title": "God the Father Almighty, maker of heaven and earth",
+      "minutes": 10,
+      "teaching": [
+        "The creed's first claim is about who God is before it says anything about what he made. He is Father, and the church has always heard that first as the Father of the Son, a relationship with no beginning, and only then as the Father of everyone adopted into his family. Almighty translates the Greek word pantokrator, the one who holds all things. It doesn't mean a God who does whatever you could dream up. It means nothing in heaven or on earth sits outside his rule, including the things that unsettle you most.",
+        "Maker of heaven and earth sounds obvious until you meet the alternative. In the second century Marcion taught that the God of Israel, who made the world, was a lesser god than the Father of Jesus, and Gnostic teachers called matter a mistake. The creed answers in its first line: the Father of Jesus made the world, and he is not embarrassed by it. Scripture opens the same way: “In the beginning God created the heavens and the earth” (Genesis 1:1). Your body, the soil in the garden and the stars overhead are his work, so they matter."
+      ],
+      "open": {
+        "kind": "doctrine",
+        "label": "Creation, in the Study Bible",
+        "href": "/study/bible/doctrines/creation",
+        "why": "The doctrine traced from Genesis through the Psalms and prophets into the New Testament, with what the church has held and where Christians differ."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "Who God is: Father, Son and Holy Spirit",
+          "href": "/study/explorer/watch/who-god-is",
+          "why": "A short film on the God the creed confesses, made for families and plain enough to share with anyone meeting these words for the first time."
+        },
+        {
+          "kind": "story",
+          "label": "The Bible's story: creation",
+          "href": "/study/bible/story/creation",
+          "why": "The first part of the Bible's whole story, where the world is made good and given to human beings to tend."
+        }
+      ],
+      "question": "If the world is God's good work, what in your ordinary week would you treat differently?",
+      "do": "Spend five minutes looking closely at one made thing, a leaf, a hand or a cloud. Then read Psalm 104 and notice how much the psalmist names.",
+      "verse": {
+        "ref": "Isaiah 40:28",
+        "text": "Do you not know? Have you not heard? The LORD is the everlasting God, the Creator of the ends of the earth. He will not grow tired or weary; His understanding is beyond searching out."
+      },
+      "group": {
+        "open": "When you hear the word Almighty, what picture of God comes to mind first?",
+        "discuss": [
+          "Why does it matter that the creed calls God Father before it calls him Maker?",
+          "Marcion wanted a God with nothing to do with the messy world. Where do Christians still feel that pull?",
+          "How might believing that matter is good change the way we treat bodies, food or the earth?"
+        ],
+        "pray": "Thank God for one thing he made that you noticed this week, and ask to see the world as his work."
+      }
+    },
+    {
+      "n": 3,
+      "title": "Jesus Christ, his only Son, our Lord",
+      "minutes": 10,
+      "teaching": [
+        "Four phrases carry the creed's weight here. Jesus is a human name, the Greek form of Joshua, meaning the LORD saves, and it was common in first-century Galilee. Christ is not a surname. It is the Greek word for Messiah, the anointed king Israel's prophets had promised. When Peter said “You are the Christ, the Son of the living God” (Matthew 16:16), he was saying that the promises now had a face. His only Son says more again. Others are called children of God by adoption. This Son is the Son by nature, which is why the church would later confess him to be of one being with the Father.",
+        "Our Lord is the most dangerous phrase of the four. The Greek Old Testament used kyrios, Lord, in place of God's own name, and the first Christians, most of them Jews, gave that word to Jesus and prayed to him. They also lived in an empire that called Caesar lord. To say Jesus is Lord was a claim about worship and a claim about allegiance, and some paid for it with everything they had. The creed asks you to say it with a possessive. He is not a teacher admired from a distance. He is the one you belong to."
+      ],
+      "open": {
+        "kind": "answer",
+        "label": "Was Jesus just a good teacher?",
+        "href": "/answers/was-jesus-just-a-good-teacher",
+        "why": "The Honest Answer to the most common way of honoring Jesus while declining his claims, taken seriously before it is answered."
+      },
+      "also": [
+        {
+          "kind": "case",
+          "label": "Did Jesus claim to be God?",
+          "href": "/questions/jesus/did-jesus-claim-to-be-god",
+          "why": "The case for the faith on what Jesus said and did that led his first followers to worship him, with the strongest objection stated first."
+        },
+        {
+          "kind": "doctrine",
+          "label": "The Messiah, in the Study Bible",
+          "href": "/study/bible/doctrines/messiah",
+          "why": "How the promise of an anointed king runs from David through the prophets to Jesus, so that the word Christ carries its full weight."
+        }
+      ],
+      "question": "Which of the four, Jesus, Christ, only Son or Lord, is hardest for you to say and mean?",
+      "do": "Read Philippians 2:5-11 slowly, twice. Mark where Paul speaks of Jesus as a servant and where he speaks of him as Lord.",
+      "verse": {
+        "ref": "Philippians 2:11",
+        "text": "and every tongue confess that Jesus Christ is Lord, to the glory of God the Father."
+      },
+      "group": {
+        "open": "What did you think the word Christ meant before this session?",
+        "discuss": [
+          "Why would Jewish believers, raised to worship one God, have come to call Jesus Lord and pray to him?",
+          "How did calling Jesus Lord set early Christians at odds with Rome, and where might it set us at odds now?",
+          "What is the difference between admiring Jesus and belonging to him?"
+        ],
+        "pray": "Ask to know Jesus as the creed names him, and pray for anyone in the group still weighing who he is."
+      }
+    },
+    {
+      "n": 4,
+      "title": "Conceived by the Holy Spirit, born of the virgin Mary",
+      "minutes": 10,
+      "teaching": [
+        "This clause makes two claims in one breath. Conceived by the Holy Spirit says that Jesus' origin is from God: he wasn't a good man later raised to divine status. Born of the virgin Mary says that his humanity is real: he had a mother with a name, a birth and a body that grew. Against teachers who said Christ only seemed to be human, the creed names the woman who carried him. Matthew tells the story from Joseph's side and Luke from Mary's, and the angel's words to her are plain: “The Holy Spirit will come upon you, and the power of the Most High will overshadow you” (Luke 1:35).",
+        "Skeptics raise objections worth hearing. Isaiah's Hebrew word means a young woman, Mark and Paul never tell the story, and the ancient world told of heroes fathered by gods. The case for the faith grants what is true there and answers the rest: the Greek word Matthew quotes was chosen by Jewish translators long before Christ, and the Gospels describe no union at all, only the power of God. History can't prove a miracle. The church confesses this one because it guards the center. The Son of God did not merely visit our flesh. He took it, from the beginning."
+      ],
+      "open": {
+        "kind": "case",
+        "label": "The virgin birth",
+        "href": "/questions/jesus/the-virgin-birth",
+        "why": "The objection at its strongest, from Isaiah's Hebrew to the pagan parallels, with what is granted and what history can and cannot show."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Luke 1, passage by passage",
+          "href": "/study/bible/luke/1#plain",
+          "why": "Mary's side of the story, with plain notes on the angel's words, her question and her song."
+        },
+        {
+          "kind": "doctrine",
+          "label": "The incarnation, in the Study Bible",
+          "href": "/study/bible/doctrines/incarnation",
+          "why": "The doctrine this clause guards: the eternal Son took a full human nature, body and soul, without ceasing to be God."
+        }
+      ],
+      "question": "What would be lost if Jesus had only seemed to be human, or had only become divine later?",
+      "do": "Read Luke 1:26-38 and Matthew 1:18-25 side by side. Write down one thing each account tells you that the other leaves out.",
+      "verse": {
+        "ref": "Galatians 4:4-5",
+        "text": "But when the time had fully come, God sent His Son, born of a woman, born under the law, to redeem those under the law, that we might receive our adoption as sons."
+      },
+      "group": {
+        "open": "When you first heard of the virgin birth, did it seem beautiful, strange or simply unlikely?",
+        "discuss": [
+          "Why do you think the creed names Mary, when it names so few people?",
+          "Which of the skeptic's objections seems strongest to you, and how does the case for the faith answer it?",
+          "How does it change your view of ordinary bodies to confess that God's Son grew in one?"
+        ],
+        "pray": "Give thanks that the Son took real flesh, and pray for honest minds as the group weighs what is hard to accept."
+      }
+    },
+    {
+      "n": 5,
+      "title": "Suffered under Pontius Pilate, crucified, buried, descended",
+      "minutes": 10,
+      "teaching": [
+        "Only three people are named in the Apostles' Creed, and one of them is a Roman governor. Pontius Pilate is there as a date stamp. Christianity doesn't claim that a timeless truth was glimpsed in a dream. It claims that something happened in a province of Rome under a particular administration, and the Roman historian Tacitus, no friend of Christians, records that Christ was executed under Pilate. Then come the verbs: suffered, crucified, died, buried. Each one closes a door. He didn't faint, he didn't escape, and his death was not an appearance. A body was laid in a tomb.",
+        "The clause he descended into hell entered the creed last, and Christians read it in more than one way. The older sense is that he went down to the dead: he truly entered the realm of the dead, as every human being does. Many in East and West have also read it as Christ proclaiming his victory there, drawing on the words “He also went and preached to the spirits in prison” (1 Peter 3:19). Calvin and the Heidelberg Catechism read it as the hell Christ bore on the cross, forsaken in our place. Some churches say he descended to the dead; a few leave the line out. Each reading guards one thing: his death went all the way down."
+      ],
+      "open": {
+        "kind": "chapter",
+        "label": "1 Peter 3, passage by passage",
+        "href": "/study/bible/1-peter/3#plain",
+        "why": "Plain notes on one of the hardest passages in the New Testament, the spirits in prison, with the ways Christians have read it."
+      },
+      "also": [
+        {
+          "kind": "case",
+          "label": "Did Jesus even exist?",
+          "href": "/questions/jesus/did-jesus-exist",
+          "why": "What writers who were not Christians recorded about Jesus, including his execution under Pilate, set out with the doubts fairly stated."
+        },
+        {
+          "kind": "film",
+          "label": "Why did Jesus die?",
+          "href": "/study/explorer/watch/why-jesus-died",
+          "why": "A short film on why the cross stands at the center of the creed, and of the Bible's whole story."
+        }
+      ],
+      "question": "Why do you think the creed spends five verbs on Jesus' suffering and death, and none on his teaching?",
+      "do": "Read Mark 15 in one sitting. Notice each time Pilate appears, and how ordinary the details of the burial are.",
+      "verse": {
+        "ref": "1 Peter 3:18",
+        "text": "For Christ also suffered for sins once for all, the righteous for the unrighteous, to bring you to God. He was put to death in the body but made alive in the Spirit,"
+      },
+      "care": [
+        "If you feel forsaken right now and the feeling will not lift, please tell someone you trust, a pastor, a friend or a doctor. The Find Help page on this site lists places to turn.",
+        "Grief is not a lack of faith. If your grief is so heavy that you cannot carry it, please tell someone: a pastor, a friend, a doctor or a counsellor. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Have you ever stood at a graveside and thought about what it means that Jesus was buried?",
+        "discuss": [
+          "Why might it matter to a skeptic that the creed names a Roman official?",
+          "Which reading of he descended into hell seems strongest to you, and what does each one protect?",
+          "If Christ's death went all the way down, what does that say to someone who feels God is far away?"
+        ],
+        "pray": "Pray for anyone who is grieving or feels forsaken, and give thanks that Christ went into death and was not held there."
+      }
+    },
+    {
+      "n": 6,
+      "title": "The third day he rose again",
+      "minutes": 10,
+      "teaching": [
+        "Everything else in the creed leans on this clause, and Paul says so without hedging: “And if Christ has not been raised, your faith is futile; you are still in your sins” (1 Corinthians 15:17). The resurrection is not offered as a symbol of hope, or a way of saying that his teaching lived on. The first witnesses were talking about a body, a tomb found empty, and meals eaten with a man they had watched die. Jews of the time expected a resurrection of everyone at the end of history. Nobody expected one man to rise in the middle of it.",
+        "That claim can be weighed, and the Honest Answer this session opens weighs it fairly: the facts most historians grant, the alternatives that have been proposed, and why each one strains. It won't force anyone to believe, and it isn't meant to. But the creed says he rose from the dead, not that he rose in our hearts, and it gives a day. If it happened, death is not the last word about anyone you have buried. If it didn't, Paul himself says Christians are to be pitied more than anyone."
+      ],
+      "open": {
+        "kind": "answer",
+        "label": "Did the resurrection actually happen?",
+        "href": "/answers/did-the-resurrection-actually-happen",
+        "why": "The Honest Answer on the claim the whole faith rests on: the agreed facts, the rival explanations, and what the evidence can and cannot do."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "The resurrection",
+          "href": "/study/explorer/watch/the-resurrection",
+          "why": "A short film on the empty tomb and the risen Jesus, and why the first Christians could not stop talking about it."
+        },
+        {
+          "kind": "chapter",
+          "label": "1 Corinthians 15, passage by passage",
+          "href": "/study/bible/1-corinthians/15#plain",
+          "why": "Paul's long chapter on the resurrection, with plain notes on the early creed he hands on and the list of witnesses."
+        }
+      ],
+      "question": "If the resurrection happened, what in your life would it change first?",
+      "do": "Read 1 Corinthians 15:1-28. List every person and group Paul names as witnesses, and notice how early he says he received this.",
+      "verse": {
+        "ref": "1 Corinthians 15:20",
+        "text": "But Christ has indeed been raised from the dead, the firstfruits of those who have fallen asleep."
+      },
+      "care": [
+        "Grief is not a lack of faith. If your grief is so heavy that you cannot carry it, please tell someone: a pastor, a friend, a doctor or a counsellor. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What has made the resurrection easier or harder for you to believe?",
+        "discuss": [
+          "Why does Paul stake the whole faith on one event, rather than on Jesus' teaching?",
+          "Which alternative explanation have you heard most often, and how does the Honest Answer handle it?",
+          "How would a bodily resurrection change the way Christians grieve?"
+        ],
+        "pray": "Give thanks for the risen Christ, and pray for those in the group who have buried someone they love."
+      }
+    },
+    {
+      "n": 7,
+      "title": "He ascended, is seated, and will come to judge",
+      "minutes": 10,
+      "teaching": [
+        "Forty days after Easter, Luke says, Jesus was taken up while his friends watched. The ascension is easy to skip, but the creed doesn't skip it. It means the risen Jesus did not die a second time or fade into a memory. He went, body and all, to the Father, and he is seated at the right hand, the place of authority Psalm 110 had promised to the Lord's king. Seated also means finished: the sacrifice is done. Christians differ on whether the right hand is a place or God's power everywhere, but they agree on what it means. A human being, scarred and risen, now reigns.",
+        "From there he shall come to judge the living and the dead. The old wording, the quick and the dead, simply meant the living. Judgment is not a comfortable word, and it shouldn't be made into one. But notice who the judge is: the man who was judged unjustly under Pilate. For everyone who has suffered a wrong that no court put right, this clause is good news, because evil will not have the last word. It also means that no one is beyond accounting, the reader included. The angels asked the disciples why they stood staring at the sky. He would come back the same way."
+      ],
+      "open": {
+        "kind": "doctrine",
+        "label": "The exaltation of Christ, in the Study Bible",
+        "href": "/study/bible/doctrines/exaltation",
+        "why": "The resurrection, ascension and seat at God's right hand traced through Scripture, with the questions on which Christians differ set out fairly."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Acts 1, passage by passage",
+          "href": "/study/bible/acts/1#plain",
+          "why": "Luke's account of the ascension and the promise that this same Jesus will come back, with plain notes."
+        },
+        {
+          "kind": "doctrine",
+          "label": "Judgment, in the Study Bible",
+          "href": "/study/bible/doctrines/judgment",
+          "why": "What Scripture says about the final judgment, who the judge is, and why the hope of justice runs through both testaments."
+        }
+      ],
+      "question": "Does the thought of Christ as judge bring you more comfort or more unease, and why?",
+      "do": "Read Acts 1:1-11 and Hebrews 1:1-4. Write one sentence on what it means for your week that Jesus is seated and reigning now.",
+      "verse": {
+        "ref": "Acts 1:11",
+        "text": "“Men of Galilee,” they said, “why do you stand here looking into the sky? This same Jesus, who has been taken from you into heaven, will come back in the same way you have seen Him go into heaven.”"
+      },
+      "care": [
+        "If you are being hurt, at home, at work or in a church, tell someone you trust and get help. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What did you picture the ascension looking like, if you pictured it at all?",
+        "discuss": [
+          "Why might the creed bother to say that Jesus is seated, and not only that he went to heaven?",
+          "How does it change the meaning of judgment that the judge was himself judged unjustly?",
+          "Who in our world most needs to hear that evil will not have the last word?"
+        ],
+        "pray": "Pray for people who have suffered wrongs no court has put right, and ask for honest hearts before the one who will judge."
+      }
+    },
+    {
+      "n": 8,
+      "title": "Believing in the Holy Spirit",
+      "minutes": 10,
+      "teaching": [
+        "The Apostles' Creed gives the Holy Spirit a single line, and some Christians have lived as though that were his size. Scripture gives him far more. The Spirit hovers over the waters at creation, fills the prophets, overshadows Mary, comes down on Jesus at his baptism, and is poured out at Pentecost. Jesus called him another Advocate, one like himself, who would be with his people forever. He is not a force or a mood. He is a person who teaches, intercedes and can be grieved, and the creed sets him beside the Father and the Son as the one in whom the church puts its trust.",
+        "When some in the fourth century made the Spirit a creature, the Nicene Creed of 381 answered at length: the Lord, the giver of life, worshiped and glorified with the Father and the Son. The Apostles' Creed shows what he does by what it lists next: the church, the communion of saints, forgiveness, resurrection and life. The Spirit is not an extra for unusually spiritual people. Every line that follows is his work. Christians differ on how his gifts are given today, but they agree that no one confesses Jesus as Lord except by him."
+      ],
+      "open": {
+        "kind": "doctrine",
+        "label": "The Holy Spirit, in the Study Bible",
+        "href": "/study/bible/doctrines/spirit",
+        "why": "Who the Spirit is and what he does, from Genesis to Revelation, with the history of the church's confession and where Christians differ."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "The Holy Spirit through the Bible",
+          "href": "/study/explorer/watch/holy-spirit",
+          "why": "A short film that follows the Spirit from the waters of creation to Pentecost and the life of the church."
+        },
+        {
+          "kind": "creed",
+          "label": "The Nicene Creed",
+          "href": "/resources/creeds/nicene-creed",
+          "why": "The creed of 381, whose long article on the Spirit answered those who made him a creature, with notes on its key words."
+        }
+      ],
+      "question": "Do you think of the Holy Spirit more as a force, a feeling or a person, and where did that picture come from?",
+      "do": "Read John 14:15-27 and Romans 8:1-17. Write down every verb of which the Spirit is the subject.",
+      "verse": {
+        "ref": "Romans 8:16",
+        "text": "The Spirit Himself testifies with our spirit that we are God’s children."
+      },
+      "group": {
+        "open": "What were you taught about the Holy Spirit growing up, if anything?",
+        "discuss": [
+          "Why do you think the Apostles' Creed gives the Spirit so few words, and the Nicene Creed so many more?",
+          "Which of the lines that follow, the church, forgiveness, resurrection or life, most surprises you as the Spirit's work?",
+          "Where Christians differ about the Spirit's gifts today, what do they all still share?"
+        ],
+        "pray": "Ask the Spirit to teach the group and make Jesus known, and pray for one another by name."
+      }
+    },
+    {
+      "n": 9,
+      "title": "The holy catholic church, the communion of saints",
+      "minutes": 10,
+      "teaching": [
+        "Catholic here means universal. Ignatius of Antioch, early in the second century, is the first writer known to call the church catholic, meaning the whole church, everywhere, joined to Christ. The word did not yet name one communion over against others, and Protestants who say the creed are using a word that belongs to them as much as to anyone. Holy doesn't mean the church behaves well. It plainly doesn't always. It means God has set it apart for himself. The creed places the church inside its article on the Spirit, because the church is what the Spirit makes, not what its members assemble.",
+        "The communion of saints is the claim that all who belong to Christ share one life in him, across every age. For many Protestants it means the fellowship of all believers, past and present. Catholic and Orthodox Christians also hold that the saints in glory pray for the church on earth, and they ask for those prayers. Either way, the church is larger than the people in your room and older than any building. When you sit in a pew or a folding chair, you sit with Augustine, with Perpetua, and with your grandmother if she trusted Christ. That changes how you treat the person beside you."
+      ],
+      "open": {
+        "kind": "doctrine",
+        "label": "The church, in the Study Bible",
+        "href": "/study/bible/doctrines/church",
+        "why": "What Scripture means by the church, the body of Christ and household of God, with what the great traditions hold and where they differ."
+      },
+      "also": [
+        {
+          "kind": "essay",
+          "label": "Are Catholics and Protestants both Christians?",
+          "href": "/writing/are-catholics-and-protestants-both-christians",
+          "why": "An essay that sets out what divides Catholics and Protestants and what they share, including the creed's word catholic."
+        },
+        {
+          "kind": "life",
+          "label": "The church as family",
+          "href": "/life/the-church-as-family",
+          "why": "The everyday-life guide on what it means to belong to the people of God, beyond attending a service."
+        }
+      ],
+      "question": "When you hear the word church, do you picture a building, a denomination, your own congregation or something larger?",
+      "do": "Look up catholic and communion of saints in the glossary. Then pray for one congregation near you that is not your own, by name.",
+      "verse": {
+        "ref": "Ephesians 2:19",
+        "text": "Therefore you are no longer strangers and foreigners, but fellow citizens with the saints and members of God’s household,"
+      },
+      "care": [
+        "If you have been harmed by someone in a church, and were told to forgive and say nothing, what happened to you may have been wrong. Please talk with someone you trust outside that situation. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Has the word catholic ever made you uneasy when saying the creed?",
+        "discuss": [
+          "If holy means set apart rather than well behaved, how does that change the way you see the church's failures?",
+          "How do Protestants, Catholics and Orthodox each understand the communion of saints, and what do they share?",
+          "Who in the communion of saints, past or present, has shaped your faith most?"
+        ],
+        "pray": "Give thanks for the whole church across the world and the centuries, and pray for a church near you that is not your own."
+      }
+    },
+    {
+      "n": 10,
+      "title": "Forgiveness, the resurrection of the body, life everlasting",
+      "minutes": 10,
+      "teaching": [
+        "The creed's last three lines are what the Spirit gives. First comes the forgiveness of sins, the only moral claim in the whole creed, and it is not a demand but a gift. The church doesn't confess that Christians are better people. It confesses that they are forgiven people, which is why it can afford to tell the truth about its own failures. John puts it simply: “If we confess our sins, He is faithful and just to forgive us our sins and to cleanse us from all unrighteousness” (1 John 1:9).",
+        "Then the resurrection of the body. Not the escape of a soul from its flesh, which Greek philosophy already offered, but the body raised and remade, as Christ's was. Christian hope is physical, which is why Christians cared for the sick and buried their dead with honor. And the life everlasting is not endless time in a waiting room. It is life with God in a renewed creation, the thing the whole creed has been moving toward. The creed doesn't end with an argument. It ends with a promise about your own body and the bodies of everyone you have buried, and it leaves you to decide what to do with it."
+      ],
+      "open": {
+        "kind": "doctrine",
+        "label": "The resurrection, in the Study Bible",
+        "href": "/study/bible/doctrines/resurrection",
+        "why": "The hope of the body raised, traced from the Old Testament's first glimpses to Christ's rising and the promise for all who are his."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "The life to come",
+          "href": "/study/explorer/watch/life-to-come",
+          "why": "A short film on the new creation the creed's last line points to, and what it means for the people who wait for it."
+        },
+        {
+          "kind": "life",
+          "label": "Facing death",
+          "href": "/life/facing-death",
+          "why": "The everyday-life guide for anyone facing their own death or a loved one's, held in the hope of the resurrection."
+        },
+        {
+          "kind": "track",
+          "label": "The core doctrines, from Scripture",
+          "href": "/tracks/core-doctrines",
+          "why": "Next in What Christians Believe: twelve sessions that trace the faith the creed confesses back into Scripture, one doctrine at a time."
+        }
+      ],
+      "question": "Which of the creed's last three lines do you most need to be true?",
+      "do": "Say the whole creed aloud from memory if you can, or from the page you copied in the first session. Then underline the one line that now weighs most with you.",
+      "verse": {
+        "ref": "Romans 8:11",
+        "text": "And if the Spirit of Him who raised Jesus from the dead is living in you, He who raised Christ Jesus from the dead will also give life to your mortal bodies through His Spirit, who lives in you."
+      },
+      "care": [
+        "Sometimes guilt that will not lift needs more than a Bible verse. It can be part of anxiety, depression or a habit of the mind that keeps returning to the same fear. That is not a failure of faith. Talk with a pastor or a friend you trust. If the fear will not let you rest, a counsellor or a doctor can help too, and the Find Help page on this site lists places to turn.",
+        "Grief is not a lack of faith. If your grief is so heavy that you cannot carry it, please tell someone: a pastor, a friend, a doctor or a counsellor. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What do you imagine when you think of life after death, and where did that picture come from?",
+        "discuss": [
+          "Why might forgiveness be the only moral claim the creed makes?",
+          "How is the resurrection of the body different from a soul going to heaven, and why does the difference matter?",
+          "Having said the creed line by line, which clause do you now hold most firmly, and which are you still weighing?"
+        ],
+        "pray": "Give thanks for forgiveness, pray for those in the group who are grieving, and ask for a hope that reaches the body."
+      }
+    }
+  ]
+}

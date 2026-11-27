@@ -1,0 +1,547 @@
+{
+  "slug": "new-testament",
+  "title": "The New Testament, section by section",
+  "for": "I want to understand the New Testament",
+  "subtitle": "Ten short sessions on the New Testament one section at a time: the world it was born into, the four Gospels, Acts, the letters, Revelation, and how the twenty-seven books were recognized.",
+  "intro": [
+    "The New Testament is shorter than the Old and feels more familiar, which can make it harder to read well. Most people meet it in single verses, and a verse pulled out of a letter or a Gospel can be made to say almost anything. This track takes the twenty-seven books one section at a time: what each kind of writing is, who it was written for, and how it fits the story the Old Testament began.",
+    "It follows The Old Testament, section by section, and the two tracks before it. There are ten sessions of about ten minutes. You read a few paragraphs, open one page on this site, then come back for one question, one thing to do and one verse to keep. Each session has a guide for a group at the bottom."
+  ],
+  "leader": {
+    "about": [
+      "This guide is for anyone leading a small group through The New Testament, section by section, or sitting down with one friend to go through it together. The group is for adults who know the outline of the Bible's story and now want to understand the New Testament's books: the world they came from, how a Gospel and a letter work, and how the church came to hold these twenty-seven. A leader doesn't need to read Greek. A leader needs to have read a little ahead, and to keep asking what a passage meant to the people who first heard it.",
+      "Each person reads the session and opens its page before the group meets. The meeting doesn't repeat the teaching. It talks over what people found, using the group guide for that session, which is gathered below in order with the page each session opens and the question it asks."
+    ],
+    "sections": [
+      {
+        "id": "group",
+        "title": "The group",
+        "body": [
+          "Three to eight people is a good size, and two work just as well. Meet for about seventy-five minutes, once a week, for ten meetings, and keep the end time you promised. Several sessions ask people to read a whole short book in one sitting, so give the group the week and remind them which book is next."
+        ]
+      },
+      {
+        "id": "room",
+        "title": "The room",
+        "body": [
+          "A kitchen table works well. Have a Bible for each person, printed if possible, and a screen if the group will watch a film together. Make it plain at the first meeting that anyone may pass on any question, that no one has to read or pray aloud, and that what people say about their own lives stays in the room unless someone is in danger."
+        ]
+      },
+      {
+        "id": "order",
+        "title": "The order of a meeting",
+        "body": [
+          "About seventy-five minutes, in this order. Keep to the times loosely and to the end time strictly."
+        ],
+        "steps": [
+          "Ten minutes: the opening question, once round the circle. Anyone may pass.",
+          "Fifteen minutes: read aloud the passage the session's thing to do names, or a short letter whole.",
+          "Thirty minutes: the three questions to talk over, in order. Leave room for the questions people bring themselves.",
+          "Ten minutes: the prayer prompt, for those who pray, in their own words. Nobody has to pray aloud.",
+          "Ten minutes: name the next section and the page it opens, and say when you will meet."
+        ]
+      },
+      {
+        "id": "hard",
+        "title": "When a hard question comes",
+        "body": [
+          "The New Testament raises its own hard questions: whether the Gospels contradict each other, who wrote the letters that carry Paul's name, how the books were chosen, what Revelation's beasts and numbers mean. Welcome them. The reading guides and the case for the faith set out the views fairly. If no one knows, say so, write it down, and bring something back.",
+          "Where faithful Christians differ, as they do on the thousand years in Revelation, on how Paul and James fit together, or on church order in the pastoral letters, set out the views the pages give and leave the question open. What the creeds confess, Christ crucified, risen and coming again, the sessions state plainly."
+        ]
+      },
+      {
+        "id": "hurting",
+        "title": "When someone is hurting",
+        "body": [
+          "The New Testament was written to people under pressure: churches in conflict, believers losing their trade or their reputation, a pastor in chains. Someone in the room will be under pressure too. When someone's own story comes into the room, stop and listen. Thank them for saying it, don't explain their suffering for them, and don't hurry them back to the session. Ask whether they would like the group to go on or to pause, and speak with them on their own afterwards.",
+          "If someone says that anyone is harming them or a child, take it seriously and don't promise to keep it secret. A child who may be in danger is a matter for the authorities, not only for the group."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "When to point someone to Find Help",
+        "body": [
+          "Point someone to Find Help when what they carry has become too heavy to set down: grief that has taken their sleep or appetite for weeks, guilt or fear that will not let them rest, harm done to them at home or in a church, or any sign that they no longer want to be alive. The Find Help page on this site lists places to turn, and its lines for help right now are open day and night. If anyone is in danger now, call your local emergency number. A leader is a friend in that moment, not a counsellor, and the kindest thing is often to stay with the person while they make the first call."
+        ]
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "n": 1,
+      "title": "The world between the testaments",
+      "minutes": 10,
+      "teaching": [
+        "Turn the page from Malachi to Matthew and more than four centuries pass without a word. The Old Testament ends with a small temple community under Persia. When Matthew opens, Judea is ruled by Herod under Rome, Jews speak Aramaic and Greek, synagogues stand in every town, Pharisees and Sadducees argue in the temple courts, and many are waiting for a Messiah. Nothing in the Old Testament explains how that world came to be. The centuries between explain it.",
+        "Alexander the Great conquered the region in 332 BC, and Greek became the common language. The Torah was translated into Greek in Alexandria, the beginning of the Septuagint, the Bible many first Christians read. In 167 BC Antiochus IV outlawed Judaism and set up an altar to Zeus on the temple altar. The Maccabees revolted, retook the temple and won a kingdom of their own, until Rome took Jerusalem in 63 BC. Those years shaped every party and every hope you will meet in the Gospels."
+      ],
+      "open": {
+        "kind": "reading-guide",
+        "label": "Between the Testaments",
+        "href": "/study/bible/guides/between-the-testaments",
+        "why": "From Nehemiah to Jesus in five periods, with a table of dates and a last section on what these centuries gave the New Testament."
+      },
+      "also": [
+        {
+          "kind": "context",
+          "label": "Who were the Pharisees, Sadducees and Essenes?",
+          "href": "/resources/context/pharisees-sadducees-essenes",
+          "why": "The groups that argue with Jesus in the Gospels, each described as it understood itself."
+        },
+        {
+          "kind": "study-tool",
+          "label": "The Bible's timeline",
+          "href": "/study/timeline",
+          "why": "See the gap between the testaments as a stretch of real years, with the empires that ruled it."
+        }
+      ],
+      "question": "Which part of the world Jesus was born into do you think most shaped how people heard him?",
+      "do": "Read Malachi 4 and Matthew 1. Write down what the last page of the Old Testament is waiting for and how the first page of the New answers it.",
+      "verse": {
+        "ref": "Galatians 4:4",
+        "text": "But when the time had fully come, God sent His Son, born of a woman, born under the law,"
+      },
+      "group": {
+        "open": "What did you think happened between the Old and New Testaments, if you thought about it at all?",
+        "discuss": [
+          "Why would a time of persecution and revolt make people long for a Messiah?",
+          "What difference does it make that the first Christians read their Bible in Greek?",
+          "Paul says God sent his Son when the time had fully come. What about that world made it a fitting time?"
+        ],
+        "pray": "For those who pray: pray for people who live under rulers who do not let them worship freely."
+      }
+    },
+    {
+      "n": 2,
+      "title": "The four Gospels, and why four",
+      "minutes": 10,
+      "teaching": [
+        "A Gospel is not a modern biography, and not a myth. The word means good news, and in the Roman world it was used for announcements like a victory or the birth of an heir. The four Gospels are closest to the ancient lives of famous people, but they slow down for the last week and give a third or more of their pages to it. Matthew, Mark and Luke share much material and are called the Synoptic Gospels, from a word for seeing together. Most scholars think Mark was written first; a minority, following the early church, hold that Matthew was.",
+        "Why four, and not one tidy account? By about AD 180 Irenaeus was arguing that there are four Gospels and could be no more or fewer, and Tatian wove the four into a single story, which shows these four were already the material to work with. The church kept four portraits of one person rather than one blended picture. Where they differ, they are often looking at the same scene from different sides."
+      ],
+      "open": {
+        "kind": "reading-guide",
+        "label": "Reading the Gospels",
+        "href": "/study/bible/guides/reading-gospels",
+        "why": "What kind of book a Gospel is, who wrote them and when, the Synoptic problem, how John differs, and how to read them across and down."
+      },
+      "also": [
+        {
+          "kind": "case",
+          "label": "Why these four Gospels and not the rest?",
+          "href": "/questions/authors/four-gospels-and-the-rest",
+          "why": "For anyone who has heard of other gospels left out, the evidence for why these four were received and others were not."
+        },
+        {
+          "kind": "case",
+          "label": "The Synoptic problem",
+          "href": "/questions/authors/the-synoptic-problem",
+          "why": "How Matthew, Mark and Luke relate to one another, and the theories scholars hold, set out fairly."
+        }
+      ],
+      "question": "Would you trust four accounts that differ in details more or less than one account that never varies, and why?",
+      "do": "Read the feeding of the five thousand in Mark 6:30-44 and John 6:1-15. Write down what both tell, and what only one of them notices.",
+      "verse": {
+        "ref": "Luke 1:3-4",
+        "text": "Therefore, having carefully investigated everything from the beginning, it seemed good also to me to write an orderly account for you, most excellent Theophilus, so that you may know the certainty of the things you have been taught."
+      },
+      "group": {
+        "open": "Have you ever heard two people describe the same event very differently?",
+        "discuss": [
+          "Why do you think the Gospels give so much of their space to Jesus' last week?",
+          "What would have been lost if the church had blended the four into one?",
+          "Luke says he investigated carefully. What does that tell you about the kind of book he thought he was writing?"
+        ],
+        "pray": "For those who pray: ask to see Jesus more clearly as you read, and bring any question you have about the Gospels honestly."
+      }
+    },
+    {
+      "n": 3,
+      "title": "Matthew, Mark, Luke and John",
+      "minutes": 15,
+      "teaching": [
+        "Each Gospel has its own emphasis. Matthew opens with Jesus as the son of David and the son of Abraham, gathers his teaching into five great blocks, and keeps saying that the Scriptures were fulfilled. It is the Gospel most concerned to show Jesus as Israel's promised king. Mark is short and fast, with the word immediately again and again, and it turns on Peter's answer about who Jesus is. From there the road leads to the cross, and Mark's Jesus came not to be served but to serve and to give his life.",
+        "Luke writes an orderly account, follows a long road to Jerusalem, and keeps the poor, women, foreigners and the lost in the centre of the frame. It has a second volume, Acts. John tells the story differently, with long conversations, seven signs, and sayings in which Jesus names himself: the bread of life, the light of the world, the good shepherd. It states its purpose plainly: these things are written so that you may believe. Read all four and you hear one person from four sides."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "Mark: the story at a run",
+        "href": "/study/explorer/watch/book-mark",
+        "why": "The shortest Gospel as a whole: its speed, its hinge at Peter's answer, and the way of the cross."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "Matthew: God with us",
+          "href": "/study/explorer/watch/book-matthew",
+          "why": "The son of David and of Abraham, five great blocks of teaching, fulfillment and all nations."
+        },
+        {
+          "kind": "film",
+          "label": "Luke: good news for the lost",
+          "href": "/study/explorer/watch/book-luke",
+          "why": "An orderly account, the long road to Jerusalem, good news to the poor and the lost found."
+        },
+        {
+          "kind": "film",
+          "label": "John: the Word made flesh",
+          "href": "/study/explorer/watch/book-john",
+          "why": "Its opening, its signs, the sayings in which Jesus names himself, believing and life."
+        }
+      ],
+      "question": "Which of the four portraits of Jesus do you find yourself most drawn to, and which do you most need?",
+      "do": "Read the opening chapter of each Gospel this week. Write one line for each saying where it starts the story and why that start fits it.",
+      "verse": {
+        "ref": "John 20:31",
+        "text": "But these are written so that you may believe that Jesus is the Christ, the Son of God, and that by believing you may have life in His name."
+      },
+      "group": {
+        "open": "If you had to describe a close friend to a stranger, where would you begin?",
+        "discuss": [
+          "Matthew begins with Abraham and David, John with the beginning of everything. What does each opening tell you about the writer's aim?",
+          "Luke keeps outsiders at the centre. Who would be at the centre if the story were told in your town?",
+          "John says he wrote so that readers would believe. How does that change the way you read him?"
+        ],
+        "pray": "For those who pray: give thanks for one thing about Jesus you saw more clearly this week."
+      }
+    },
+    {
+      "n": 4,
+      "title": "Acts: from Jerusalem to Rome",
+      "minutes": 10,
+      "teaching": [
+        "Acts is Luke's second volume, and it follows the apostles from Jerusalem to Rome over roughly thirty years. Its shape is given in its first chapter: witnesses in Jerusalem, in Judea and Samaria, and to the ends of the earth. The first half follows Peter in Jerusalem and beyond. The second follows Paul across Asia Minor and Greece, usually starting in the synagogue and then turning to the Gentiles, and ends with him under guard in Rome, still teaching.",
+        "Acts is less the story of the apostles than of what the Spirit does through them. The great question in it is whether Gentiles must become Jews to follow Jesus, and the council in Jerusalem in Acts 15 is the hinge. Some fixed points help date it: Claudius expelled the Jews from Rome around AD 49, and an inscription at Delphi dates Gallio's time as proconsul to about AD 51 or 52. Many of Paul's letters were written along the roads Acts describes."
+      ],
+      "open": {
+        "kind": "explorer",
+        "label": "Paul's travels in the Bible Explorer",
+        "href": "/study/explorer/pauls-travels",
+        "why": "Follow Paul city by city on the map, and see which letters were written to the places he went."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "Acts: to the ends of the earth",
+          "href": "/study/explorer/watch/book-acts",
+          "why": "Luke's second volume as a whole: the road from Jerusalem to Rome, the Spirit, witness and its cost."
+        },
+        {
+          "kind": "study-tool",
+          "label": "The Bible atlas",
+          "href": "/study/atlas",
+          "why": "Find Antioch, Philippi, Corinth, Ephesus and Rome, and see the sea lanes that carried the message."
+        }
+      ],
+      "question": "What do you think it cost the first Jewish believers to welcome Gentiles as equals?",
+      "do": "Read Acts 15:1-21. Write down the question the council faced, the answer it gave, and the reasons it gave for the answer.",
+      "verse": {
+        "ref": "Acts 2:42",
+        "text": "They devoted themselves to the apostles’ teaching and to the fellowship, to the breaking of bread and to prayer."
+      },
+      "group": {
+        "open": "Have you ever moved somewhere new and had to learn its ways?",
+        "discuss": [
+          "How does Acts 1:8 work as a table of contents for the whole book?",
+          "Why do you think the question of the Gentiles was so hard, and so important?",
+          "Acts ends with Paul still teaching under guard. Why might Luke have ended there?"
+        ],
+        "pray": "For those who pray: pray for churches in places where following Jesus is costly, and for your own church's welcome."
+      }
+    },
+    {
+      "n": 5,
+      "title": "Paul's letters, and how a letter works",
+      "minutes": 10,
+      "teaching": [
+        "Paul's thirteen letters are not in the order he wrote them. They are arranged, with one exception, by length, first the letters to churches from Romans down to 2 Thessalonians, then the letters to individuals from 1 Timothy down to Philemon. Galatians or 1 Thessalonians is probably the earliest. Each is a real letter, using the ordinary pattern of a Greek letter of the time, which Paul fills with the gospel: where a letter would open with greetings, he writes grace and peace.",
+        "Reading a letter is like hearing one side of a phone call. Paul and his readers shared things neither needed to say: what had happened in the church, what had been asked, what he taught on an earlier visit. So the first task is to work out what the letter meant to them, and only then ask what it means now. A letter read in one sitting, as its first hearers heard it read aloud, makes sense in a way a page of verses never does."
+      ],
+      "open": {
+        "kind": "reading-guide",
+        "label": "Reading the Letters",
+        "href": "/study/bible/guides/reading-letters",
+        "why": "The ancient letter and its pattern, secretaries and couriers, reading someone else's mail, and the debates over who wrote which letter."
+      },
+      "also": [
+        {
+          "kind": "context",
+          "label": "Which cities did Paul write to?",
+          "href": "/resources/context/the-cities-of-paul",
+          "why": "Corinth, Ephesus, Rome and the rest as they were, so you can picture the people who first heard each letter."
+        },
+        {
+          "kind": "case",
+          "label": "Did Paul invent Christianity?",
+          "href": "/questions/authors/did-paul-invent-christianity",
+          "why": "A common claim about Paul, set out at its strongest and weighed against the letters and the Gospels."
+        }
+      ],
+      "question": "What changes when you read a letter whole instead of a verse at a time?",
+      "do": "Read Philippians straight through in one sitting, aloud if you can. Then write down what you think was happening in that church.",
+      "verse": {
+        "ref": "Colossians 4:16",
+        "text": "After this letter has been read among you, make sure that it is also read in the church of the Laodiceans, and that you in turn read the letter from Laodicea."
+      },
+      "group": {
+        "open": "What is the most important letter you have ever received?",
+        "discuss": [
+          "Why do you think Paul replaced the ordinary greeting with grace and peace?",
+          "What did reading Philippians whole show you that single verses never had?",
+          "How careful should we be about applying a letter written to one church to our own?"
+        ],
+        "pray": "For those who pray: pray for a church you know, as Paul did, naming what you are thankful for in it."
+      }
+    },
+    {
+      "n": 6,
+      "title": "Romans and Galatians",
+      "minutes": 10,
+      "teaching": [
+        "Galatians is Paul's most urgent letter. Teachers had come to churches he founded and told the Gentile believers they must be circumcised and keep the Law of Moses to belong fully to God's people. Paul answers that nothing can be added to Christ. Abraham himself was counted righteous by trusting God's promise, before the Law was given, and those who trust Christ are Abraham's children, Jew and Gentile at one table. The letter ends with freedom and the fruit of the Spirit.",
+        "Romans is Paul's longest letter, written to a church he had not yet visited, and it sets out the same good news more fully. It names what is wrong with the whole human race, not just one part of it: “for all have sinned and fall short of the glory of God, and are justified freely by His grace through the redemption that is in Christ Jesus” (Romans 3:23-24). Then it shows what God has done, the new life of the Spirit, and one people made from Jew and Gentile. Christians have argued over its pages for centuries, and they are worth the argument."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "Romans: the good news, set out",
+        "href": "/study/explorer/watch/book-romans",
+        "why": "Romans as a whole letter: its theme, its large blocks, what is wrong, what God has done, and one people from Jew and Gentile."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "Galatians: nothing added to Christ",
+          "href": "/study/explorer/watch/book-galatians",
+          "why": "An urgent letter about who belongs, Abraham and the Law, one table, and freedom in the Spirit."
+        },
+        {
+          "kind": "context",
+          "label": "What did grace mean in a world built on patronage?",
+          "href": "/resources/context/patronage-and-grace",
+          "why": "Paul's first hearers knew grace as a patron's gift, and this shows what he kept of that word and what he overturned."
+        },
+        {
+          "kind": "doctrine",
+          "label": "Justification in the Study Bible",
+          "href": "/study/bible/doctrines/justification",
+          "why": "The word at the centre of both letters, traced through Scripture, with the ways the churches have understood it."
+        }
+      ],
+      "question": "What do people today try to add to Christ as the price of belonging?",
+      "do": "Read Galatians in one sitting. Then read Romans 3:21-31 and write down, in your own words, what Paul says God has done.",
+      "verse": {
+        "ref": "Ephesians 2:8-9",
+        "text": "For it is by grace you have been saved through faith, and this not from yourselves; it is the gift of God, not by works, so that no one can boast."
+      },
+      "care": [
+        "Sometimes guilt that will not lift needs more than a Bible verse. It can be part of anxiety, depression or a habit of the mind that keeps returning to the same fear. That is not a failure of faith. Talk with a pastor or a friend you trust. If the fear will not let you rest, a counsellor or a doctor can help too, and the Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Have you ever felt you had to earn your place somewhere?",
+        "discuss": [
+          "Why was the question of circumcision so serious for Paul, and what is its equivalent now?",
+          "Romans says all have fallen short. How does that change the way we see people on the other side of any line?",
+          "If grace is a gift, what is the right way to respond to it?"
+        ],
+        "pray": "For those who pray: give thanks for grace you did not earn, and pray for anyone who believes they have to earn God's love."
+      }
+    },
+    {
+      "n": 7,
+      "title": "The prison letters and the pastoral letters",
+      "minutes": 10,
+      "teaching": [
+        "Four of Paul's letters say they were written in chains: Ephesians, Philippians, Colossians and Philemon. They are some of the most joyful pages he wrote. Ephesians praises God for making one new people from Jew and Gentile. Philippians, a thank-you letter to old friends, holds joy beside imprisonment. Colossians sings of Christ as the one in whom all things hold together. Philemon, a single page, asks a master to welcome back his runaway slave Onesimus as a brother.",
+        "The pastoral letters, 1 and 2 Timothy and Titus, are written to Paul's co-workers about leading churches: teaching that is sound, leaders of good character, care for widows and the household of faith. Scholars debate their authorship more than any of Paul's letters. Many think followers wrote them in Paul's name after his time; others defend Paul's authorship. The churches have read them as Scripture either way, and their concern is the same as Paul's: that the good news be handed on faithfully."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "Philippians: joy in chains",
+        "href": "/study/explorer/watch/book-philippians",
+        "why": "A thank-you letter from prison: joy beside chains, the mind of Christ, and all counted as loss to know him."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "Ephesians: one new people in Christ",
+          "href": "/study/explorer/watch/book-ephesians",
+          "why": "Praise that turns into teaching, grace, one new people from Jew and Gentile, and a life worthy of the call."
+        },
+        {
+          "kind": "context",
+          "label": "What are the household codes in Ephesians and Colossians?",
+          "href": "/resources/context/household-codes-in-context",
+          "why": "The instructions to husbands, wives, children, masters and slaves, read against the household rules of their world."
+        },
+        {
+          "kind": "book",
+          "label": "Open 1 Timothy in the Study Bible",
+          "href": "/study/bible/1-timothy",
+          "why": "Its introduction sets out the authorship debate fairly, and the notes walk the letter chapter by chapter."
+        }
+      ],
+      "question": "How can someone write about joy from a prison cell, and what would it take for you to do the same?",
+      "do": "Read Philemon, the shortest of Paul's letters, in one sitting. Write down what Paul asks and what he leaves for Philemon to decide.",
+      "verse": {
+        "ref": "2 Timothy 3:16-17",
+        "text": "All Scripture is God-breathed and is useful for instruction, for conviction, for correction, and for training in righteousness, so that the man of God may be complete, fully equipped for every good work."
+      },
+      "group": {
+        "open": "Who handed the faith on to you, or tried to?",
+        "discuss": [
+          "Philippians is full of joy, and Paul is in chains. What kind of joy is that?",
+          "Paul asks Philemon to welcome a slave as a brother. What would that have changed in a Roman household?",
+          "The pastoral letters care about the character of leaders. Why does character matter so much in a church?"
+        ],
+        "pray": "For those who pray: pray for people in prison, and for the leaders of your church by name."
+      }
+    },
+    {
+      "n": 8,
+      "title": "Hebrews and the general letters",
+      "minutes": 10,
+      "teaching": [
+        "After Paul come Hebrews and seven letters called general, because most were written to the church at large. Hebrews names no author and has no opening greeting; most read it as a written sermon for believers tired of believing. It honours the old covenant as God's gift and shows Jesus as the Son through whom God has spoken last and best, and the great high priest. James reads like a book of wisdom, sharp and practical, insisting that real faith shows itself in what you do.",
+        "First Peter writes to believers scattered across Asia Minor who felt like strangers in their own towns, and gives them a living hope. Second Peter reads like a farewell. The letters of John, written to shaken churches, keep returning to light, love and the Jesus who was seen and touched. Jude is a short, urgent warning. Several of these books were debated longer than the rest, and Luther in 1522 judged James less highly than Paul. The church kept them all, and the conversation between James and Paul is worth having rather than settling quickly."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "Hebrews: hold on to Jesus",
+        "href": "/study/explorer/watch/book-hebrews",
+        "why": "A sermon for tired believers: the Son through whom God has spoken, the old covenant honoured, the great high priest."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "James: faith that works",
+          "href": "/study/explorer/watch/book-james",
+          "why": "Wisdom in the form of a letter, trials, faith that is alive, and how James and Paul fit together."
+        },
+        {
+          "kind": "film",
+          "label": "1 Peter: hope for strangers",
+          "href": "/study/explorer/watch/book-1-peter",
+          "why": "A letter to strangers: a living hope, God's people, and doing good without striking back."
+        },
+        {
+          "kind": "film",
+          "label": "1 John: so that you may know",
+          "href": "/study/explorer/watch/book-1-john",
+          "why": "A sermon to shaken churches, hands that touched, and three marks of knowing God."
+        }
+      ],
+      "question": "Where are you more like the tired believers Hebrews was written for, or the comfortable ones James was written for?",
+      "do": "Read James in one sitting. Then read Galatians 2:16 and James 2:24 side by side, and write down what you think each writer is guarding against.",
+      "verse": {
+        "ref": "Hebrews 1:1-2",
+        "text": "On many past occasions and in many different ways, God spoke to our fathers through the prophets. But in these last days He has spoken to us by His Son, whom He appointed heir of all things, and through whom He made the universe."
+      },
+      "group": {
+        "open": "When have you felt tired of believing, or tired of trying?",
+        "discuss": [
+          "Hebrews calls the old covenant God's gift and still says something better has come. How can both be true?",
+          "Paul says we are justified by faith, and James says faith without works is not enough. How might they fit together?",
+          "First Peter calls Christians strangers. Where do you feel most like a stranger, and is that good or bad?"
+        ],
+        "pray": "For those who pray: pray for anyone you know who is tired of believing, and for a faith that shows in what you do this week."
+      }
+    },
+    {
+      "n": 9,
+      "title": "Revelation, read as its first readers heard it",
+      "minutes": 10,
+      "teaching": [
+        "Revelation was written by a prophet named John, exiled on Patmos, to seven real churches in the Roman province of Asia. They lived in cities where loyalty to Rome was shown by worshiping the emperor, and refusing could cost a trade, a reputation, or a life. The book belongs to a kind of writing called apocalyptic, familiar from Daniel: visions full of symbols, numbers and beasts that pull back the curtain on history to show who really rules. Read it first as a letter to those churches, not as a coded newspaper about our own time.",
+        "Christians have read its visions in four main ways, placing most of its events in the first centuries, across church history, at the end of history, or as a picture of every age. On the thousand years of chapter 20 they hold three views, and the question has never divided the creeds. All agree on what the creeds confess: Christ will come again. And all see the centre of the book in chapter 5, where the Lion of Judah turns out to be a Lamb who was slain."
+      ],
+      "open": {
+        "kind": "reading-guide",
+        "label": "Reading Revelation and Daniel",
+        "href": "/study/bible/guides/reading-apocalyptic",
+        "why": "What an apocalypse is, how its symbols and numbers work, the four ways of reading Revelation and the three views of the thousand years."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "Revelation: the Lamb on the throne",
+          "href": "/study/explorer/watch/book-revelation",
+          "why": "Letters to seven churches, a throne, a Lamb who was slain, the ways Christians read its visions, and all things made new."
+        },
+        {
+          "kind": "context",
+          "label": "What did gospel and Lord mean under Caesar?",
+          "href": "/resources/context/gospel-against-empire",
+          "why": "Words like gospel and Lord already belonged to the emperor, and this shows what it meant to give them to Jesus."
+        }
+      ],
+      "question": "What would Revelation have meant to a believer in a city that demanded worship of the emperor?",
+      "do": "Read Revelation 4 and 5 in one sitting. Write down who is on the throne, who is worthy, and why.",
+      "verse": {
+        "ref": "Revelation 21:5",
+        "text": "And the One seated on the throne said, “Behold, I make all things new.”"
+      },
+      "care": [
+        "If you are suffering now, for your faith or for any other reason, you do not have to carry it alone. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What have you heard about the book of Revelation, and from whom?",
+        "discuss": [
+          "How does reading Revelation as a letter to seven real churches change it?",
+          "Why do you think the Lion turns out to be a slain Lamb?",
+          "Christians have held different views of the thousand years and stayed brothers and sisters. What makes that possible?"
+        ],
+        "pray": "For those who pray: pray for believers who are paying a price for their faith today, and give thanks that Christ will come again."
+      }
+    },
+    {
+      "n": 10,
+      "title": "The canon: how the twenty-seven were recognized",
+      "minutes": 10,
+      "teaching": [
+        "No council invented the New Testament. Paul's letters were being read aloud and passed between churches while he lived, and by about AD 200 the core was agreed across the churches: the four Gospels, Acts, Paul's letters, 1 Peter and 1 John. A few shorter books were debated longer. The first list to name exactly the twenty-seven is a letter of Athanasius in 367, and the councils of Hippo in 393 and Carthage in 397 recorded what their churches already read. The early church looked for a book's link to the apostles, its agreement with the faith they taught, its use across the churches, and its age.",
+        "Christians explain why that process can be trusted in different ways: Protestants often point to the Spirit's witness in believers, Catholics to the Spirit's guidance of the church's teaching, and the Orthodox to the continuous tradition of the worshiping church. The history can be told the same way by all three. What it leaves you with is a library that has already been tested by centuries of readers. The next question is yours: how will you read it?"
+      ],
+      "open": {
+        "kind": "reading-guide",
+        "label": "How the Books Were Chosen",
+        "href": "/study/bible/guides/canon",
+        "why": "What canon means, how the Old and New Testaments took shape, the books read but not received, and what the early church looked for."
+      },
+      "also": [
+        {
+          "kind": "case",
+          "label": "Did Constantine decide what went into the Bible?",
+          "href": "/questions/authors/did-constantine-decide-the-bible",
+          "why": "A claim many have heard, weighed against the lists and letters from before and after his time."
+        },
+        {
+          "kind": "reading-guide",
+          "label": "How We Got the New Testament",
+          "href": "/study/bible/guides/how-we-got-the-new-testament",
+          "why": "Papyri, codices and thousands of manuscripts: what the differences between copies are, and what they do and do not change."
+        },
+        {
+          "kind": "track",
+          "label": "How to study a passage: seven steps",
+          "href": "/tracks/study-method",
+          "why": "You know the shape of the whole library now. The How to Study program teaches you to read any page of it for yourself."
+        }
+      ],
+      "question": "Does it matter to you whether the church created the canon or recognized it, and why?",
+      "do": "Pick one New Testament book you have not yet read whole in these sessions. Read it in one sitting this week, and write down what it adds to the library.",
+      "verse": {
+        "ref": "2 Peter 3:15-16",
+        "text": "Consider also that our Lord’s patience brings salvation, just as our beloved brother Paul also wrote you with the wisdom God gave him. He writes this way in all his letters, speaking in them about such matters."
+      },
+      "group": {
+        "open": "Before this session, how did you think the books of the Bible were chosen?",
+        "discuss": [
+          "Which of the early church's four tests seems most important to you, and why?",
+          "What do you make of the fact that a few books were debated for centuries and still kept?",
+          "Having gone through the whole Bible in these tracks, what will you read next, and how?"
+        ],
+        "pray": "For those who pray: give thanks for the people who copied, carried and kept these books, and for each person in the group by name."
+      }
+    }
+  ]
+}

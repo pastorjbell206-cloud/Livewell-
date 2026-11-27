@@ -251,6 +251,7 @@ const STATIC_PAGES = [
   { url: "/downloads", priority: "0.75", changefreq: "weekly" },
   { url: "/study/bible", priority: "0.9", changefreq: "monthly" },
   { url: "/study/plans", priority: "0.8", changefreq: "monthly" },
+  { url: "/academy", priority: "0.9", changefreq: "monthly" },
   { url: "/tracks", priority: "0.8", changefreq: "monthly" },
   { url: "/wisdom", priority: "0.8", changefreq: "monthly" },
   { url: "/how-tos", priority: "0.75", changefreq: "monthly" },
@@ -329,6 +330,10 @@ function manifestPages() {
   // track's leader's guide when it has one (/tracks/:slug/leader) and the whole
   // track to print (/tracks/:slug/print), from the tracks index
   // (scripts/build-tracks-index.mjs).
+  // The Academy's programs (/academy/:program), from client/public/academy/programs.json.
+  if (fs.existsSync("client/public/academy/programs.json")) {
+    for (const p of JSON.parse(fs.readFileSync("client/public/academy/programs.json", "utf8")).programs) pages.push({ url: `/academy/${p.slug}`, priority: "0.8", changefreq: "monthly" });
+  }
   if (fs.existsSync("client/public/tracks/index.json")) {
     for (const t of JSON.parse(fs.readFileSync("client/public/tracks/index.json", "utf8")).tracks) {
       pages.push({ url: `/tracks/${t.slug}`, priority: "0.8", changefreq: "monthly" });

@@ -1,0 +1,474 @@
+{
+  "slug": "living-marriage",
+  "title": "Marriage that lasts",
+  "for": "I want a stronger marriage",
+  "subtitle": "Eight short sessions on what marriage is for and how it is kept: covenant, conflict, forgiveness, intimacy, money, the long seasons, and what to do when a marriage is in trouble.",
+  "intro": [
+    "This track is for a husband or a wife who wants their marriage to carry more weight than it does now, whether the marriage is young or forty years old, steady or strained. It has eight sessions of about ten minutes. You can take them alone, but they work best taken by both of you, a week apart, with a conversation after each.",
+    "Every session starts where marriages actually hurt, goes underneath to the cause, and ends somewhere Scripture and the long memory of the church can help. Each one opens a page on this site, asks one question, gives you one thing to do and one verse to keep. If your marriage is not safe, start with the last session, and with Find Help."
+  ],
+  "leader": {
+    "about": [
+      "This guide is for anyone leading a group of couples through Marriage that lasts, or a mentor couple meeting with one younger couple. The group is for married people who want to understand what marriage is for and to keep it well. A leader doesn't need a perfect marriage. A leader needs to be honest about their own, to keep confidences, and to know when a couple needs more help than a group can give.",
+      "Each couple reads the session and opens its page before the group meets, and ideally talks it over together at home first. The meeting doesn't repeat the teaching. It talks over what people found, using the group guide for that session, gathered below in order."
+    ],
+    "sections": [
+      {
+        "id": "group",
+        "title": "The group",
+        "body": [
+          "Three to five couples is a good size, and one mentor couple with one other couple works just as well. Meet for about seventy-five minutes, once a week, for eight meetings. Couples should come together where they can, but a husband or wife whose spouse won't come is welcome, and must never be made to feel like half a member."
+        ]
+      },
+      {
+        "id": "room",
+        "title": "The room",
+        "body": [
+          "A living room is better than a classroom. Make it plain at the first meeting that no one shares anything private about their spouse without their spouse's agreement, that what is said stays in the room unless someone is in danger, and that anyone may pass on any question. The session on intimacy is discussed in general terms only. Nobody describes their own marriage bed to the group."
+        ]
+      },
+      {
+        "id": "order",
+        "title": "The order of a meeting",
+        "body": [
+          "About seventy-five minutes, in this order. Keep to the times loosely and to the end time strictly, since many couples will have paid for a babysitter."
+        ],
+        "steps": [
+          "Ten minutes: the opening question, once round the circle. Anyone may pass.",
+          "Five minutes: one person reads the verse aloud, and the passage around it when the session opens a chapter.",
+          "Thirty-five minutes: the three questions to talk over, in order.",
+          "Ten minutes: how each couple got on with the session's one thing to do, for anyone who wants to say.",
+          "Ten minutes: the prayer prompt, in your own words. Nobody has to pray aloud.",
+          "Five minutes: name the next session and the page it opens, and say when you will meet."
+        ]
+      },
+      {
+        "id": "hard",
+        "title": "When a hard question comes",
+        "body": [
+          "Some questions divide faithful churches: what headship and submission ask of a marriage today, and when divorce and remarriage are permitted. The sessions set out the views as their own holders would, and the leader should do the same, without steering the group to the leader's own church's answer. Say what Christians agree on, say that they differ, and send couples to their own pastor for the rest.",
+          "When a question touches a couple's own marriage directly, don't settle it in the group. Offer to talk afterwards, and know which pastor or counsellor you would send them to."
+        ]
+      },
+      {
+        "id": "hurting",
+        "title": "When someone is hurting",
+        "body": [
+          "A marriage group will bring hidden trouble into the light: an affair, a spouse who has gone cold, a marriage that is ending, grief over children who never came. When it comes, stop and listen, thank the person for trusting the group, and don't offer a quick fix. Speak with them on their own afterwards.",
+          "If anyone says their spouse is violent, threatening or controlling, or that they or their children are afraid at home, take it seriously and don't promise to keep it secret. Never counsel anyone to stay in reach of harm for the sake of the covenant, and never press them to forgive quickly. Their safety comes first."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "When to point someone to Find Help",
+        "body": [
+          "Point a couple or a spouse to Find Help when the trouble is beyond what a group can carry: abuse of any kind, an affair being worked through, a marriage near its end, addiction, or a spouse sunk in depression. The Find Help page on this site lists places to turn, and its page for a marriage falling apart is a good first door. If anyone is in danger now, call your local emergency number. A leader is a friend in that moment, not a counsellor."
+        ]
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "n": 1,
+      "title": "What marriage is for",
+      "minutes": 12,
+      "teaching": [
+        "Most of us were handed a picture of marriage long before we read a word of Scripture: the wedding as the summit, romance as the fuel, and a spouse as the person who will finally make us happy. When that picture fails, as it does in every marriage sooner or later, people conclude they married the wrong person. Genesis starts somewhere else. The first thing called not good in a good world is a man alone: “It is not good for the man to be alone” (Genesis 2:18). The word for helper there is a word the Old Testament also uses of God himself, so it carries no hint of a lesser person. Then comes the sentence Jesus quotes: a man leaves, is united to his wife, and the two become one flesh.",
+        "Paul takes that sentence and says something startling about it: “This mystery is profound, but I am speaking about Christ and the church” (Ephesians 5:32). Marriage is for more than the two people in it. It is a living picture of Christ's love. Christians read the verses around it in two ways. Complementarians hold that husband and wife are equal in worth but given different callings, the husband to lead by laying his life down and the wife to give her submission freely, never to have it taken. Egalitarians read “Submit to one another out of reverence for Christ” (Ephesians 5:21) as governing the whole passage, so that each yields to the other. Both are held by Christians who honour Scripture. Neither permits a marriage run on control."
+      ],
+      "open": {
+        "kind": "chapter",
+        "label": "Ephesians 5, passage by passage",
+        "href": "/study/bible/ephesians/5#plain",
+        "why": "The notes set out both readings of head and submit, each as its own holders would put it, and say plainly what Christians on both sides agree on."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Genesis 2, passage by passage",
+          "href": "/study/bible/genesis/2#plain",
+          "why": "Where marriage begins: a man alone, a helper fit for him, and the one-flesh sentence that Jesus and Paul both quote."
+        },
+        {
+          "kind": "life",
+          "label": "Why do marriages drift apart?",
+          "href": "/life/marriage-the-long-covenant",
+          "why": "The long guide to marriage as covenant, with a careful section on the two ways Christians order the roles of husband and wife."
+        }
+      ],
+      "question": "What did you expect marriage to give you, and where did that expectation come from?",
+      "do": "Read Ephesians 5:21-33 aloud, with your spouse if you can. Each of you name one line that asks something hard of you, not of the other.",
+      "verse": {
+        "ref": "Genesis 2:24",
+        "text": "For this reason a man will leave his father and mother and be united to his wife, and they will become one flesh."
+      },
+      "care": [
+        "Nothing in this passage asks anyone to stay where they or their children are in danger. If you are being hurt, at home, at work or in a church, tell someone you trust and get help. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What picture of marriage did you grow up with, from your parents, your church or the films you watched?",
+        "discuss": [
+          "Genesis calls being alone the first thing that is not good. What does it change to see marriage as God's answer to loneliness rather than a reward for finding the right person?",
+          "Paul says marriage pictures Christ and the church. Where does that picture lift your marriage, and where does it expose it?",
+          "Christians who love Scripture read Ephesians 5:22-33 in two ways. What do both readings agree a husband owes his wife, and a wife her husband?"
+        ],
+        "pray": "Give thanks for the gift of marriage, and pray for each couple in the room by name, that their marriages would show something true about Christ's love."
+      }
+    },
+    {
+      "n": 2,
+      "title": "Covenant, not contract",
+      "minutes": 10,
+      "teaching": [
+        "We live by contracts, and do well by them. A contract protects interests: each side does its part as long as the other does, and either may leave when the other fails to deliver. Much of modern marriage quietly runs on those terms, which is why so many marriages end not in a blowup but in a drift, two people each waiting for the other to go first. Robert Bellah and his colleagues, in Habits of the Heart (1985), named the deeper cause: an individualism in which the self and its fulfilment are the final measure, so that every bond is kept only while it serves.",
+        "A covenant works the other way round. Its terms are persons, not performance. All through Scripture God binds himself to a people and keeps faith with them when they don't keep faith with him. Malachi rebukes men who had discarded their wives by reminding them that “the LORD has been a witness between you and the wife of your youth” (Malachi 2:14). A covenant marriage says to the other person that they are not on probation. That is not a chain binding anyone to harm. It is the promise that makes it safe to be fully known."
+      ],
+      "open": {
+        "kind": "doctrine",
+        "label": "Covenant",
+        "href": "/study/bible/doctrines/covenant",
+        "why": "How God binds himself to his people across the whole Bible, the pattern a marriage vow borrows and the faithfulness it is measured by."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "Promises that build: the covenants",
+          "href": "/study/explorer/watch/covenant",
+          "why": "A short film on the covenants God makes in Scripture, and how each one keeps faith with the last."
+        },
+        {
+          "kind": "howto",
+          "label": "How to Have a Weekly Marriage Check-In",
+          "href": "/how-tos/marriage-how-to-weekly-check-in",
+          "why": "A covenant is kept in small things, and this is a simple weekly way to keep the unsaid from piling up."
+        }
+      ],
+      "question": "In what part of your marriage are you keeping score, waiting for your spouse to do their part first?",
+      "do": "Find your wedding vows, or the words of the service you used, and read them again. Mark one promise you've let slide, and keep it this week without announcing it.",
+      "verse": {
+        "ref": "Matthew 19:6",
+        "text": "So they are no longer two, but one flesh. Therefore what God has joined together, let man not separate."
+      },
+      "care": [
+        "If you are being hurt, at home, at work or in a church, tell someone you trust and get help. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Where in ordinary life do you live by contracts, and do they serve you well?",
+        "discuss": [
+          "What is the difference between a promise kept because it still pays and a promise kept because you made it?",
+          "God keeps faith with his people when they don't keep faith with him. Where has your spouse done something like that for you?",
+          "Why does a covenant make it safer, not riskier, to be fully known by another person?"
+        ],
+        "pray": "Thank God that he keeps his covenant, and ask, each in your own words, for the grace to keep the promises you made on your wedding day."
+      }
+    },
+    {
+      "n": 3,
+      "title": "When you fight",
+      "minutes": 10,
+      "teaching": [
+        "Every marriage has conflict. The ones that look as though they don't usually have someone who has gone quiet to buy the peace. James asks the question every couple should ask in the middle of a fight: “What causes conflicts and quarrels among you? Don’t they come from the passions at war within you?” (James 4:1). His answer moves the trouble from across the room to inside the one asking. Most fights aren't really about the dishes or the in-laws. They're about something we want badly, such as respect, rest, control or simply being noticed, which has quietly become a demand.",
+        "That's why technique alone can't fix it, though technique helps. The aim of a fight is not to win, because a marriage where someone keeps winning is a marriage where someone keeps losing. Paul's counsel is short: “Do not let the sun set upon your anger” (Ephesians 4:26). Couples who last have not learned to avoid conflict. They have learned to come back after it: to own their part plainly, to name what they wanted underneath, and to ask what the other needed."
+      ],
+      "open": {
+        "kind": "howto",
+        "label": "How to Fight Fair",
+        "href": "/how-tos/marriage-how-to-fight-fair",
+        "why": "Practical, unsentimental counsel on arguing in a way that protects the marriage instead of scoring points against it."
+      },
+      "also": [
+        {
+          "kind": "howto",
+          "label": "How to Repair After a Blowup",
+          "href": "/how-tos/marriage-how-to-repair-after-blowup",
+          "why": "What to do the morning after a fight went badly, which matters more than never fighting at all."
+        },
+        {
+          "kind": "life",
+          "label": "How do you handle conflict and truly reconcile?",
+          "href": "/life/conflict-and-reconciliation",
+          "why": "The longer guide: the difference between peacemaking and peacekeeping, and the ministry of repair that holds families together."
+        },
+        {
+          "kind": "wisdom",
+          "label": "What the Bible says about conflict in marriage",
+          "href": "/wisdom/marriage-conflict",
+          "why": "The passages of Scripture that speak to quarrels between husband and wife, gathered in one place."
+        }
+      ],
+      "question": "Think of your last real argument. What did you want underneath it that you never said out loud?",
+      "do": "Next time a fight starts, stop and ask your spouse what they need from you right now, before you defend yourself. Then answer the same question honestly when they ask it of you.",
+      "verse": {
+        "ref": "James 4:1",
+        "text": "What causes conflicts and quarrels among you? Don’t they come from the passions at war within you?"
+      },
+      "care": [
+        "If anger has become something you cannot control, or if anger at home has made anyone afraid, that is more than a verse can fix. Please talk to someone you trust, and the Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "How did the home you grew up in handle conflict: loudly, silently, or not at all?",
+        "discuss": [
+          "James says quarrels come from desires at war within us. Which desire most often drives the fights in your marriage?",
+          "Why is a marriage where one person always wins really a marriage where both lose?",
+          "What does a good repair look like after a fight, and who usually makes the first move in your home?"
+        ],
+        "pray": "Pray for humility to see your own part first, and for the couples in the room who are in a season of frequent conflict."
+      }
+    },
+    {
+      "n": 4,
+      "title": "Forgiving the one you live with",
+      "minutes": 10,
+      "teaching": [
+        "In a marriage the wounds are rarely dramatic. They're small and daily, and they pile up: the sharp word, the forgotten promise, the habit you asked them to change ten years ago. Most of us keep a quiet ledger, and we keep it for reasons that feel sensible. Forgiving seems to let the other off, and an unpaid debt gives us a kind of power. Paul's description of love cuts straight across that habit, for love “keeps no account of wrongs” (1 Corinthians 13:5).",
+        "Forgiveness in Scripture is a costly decision to absorb a debt instead of collecting it, made because God has done exactly that for us: “Forgive as the Lord forgave you” (Colossians 3:13). It is usually decided before it is felt, and often decided again. But forgiveness is not the same as trust restored. Trust is rebuilt slowly by changed behaviour, and after a deep betrayal such as an affair, both take time and usually wise help from outside the marriage. Forgiveness never requires anyone to stay in reach of harm."
+      ],
+      "open": {
+        "kind": "howto",
+        "label": "How to Actually Forgive Your Spouse",
+        "href": "/how-tos/marriage-how-to-actually-forgive",
+        "why": "What forgiveness between husband and wife is and is not, and how to make the decision before the feeling arrives."
+      },
+      "also": [
+        {
+          "kind": "essay",
+          "label": "If I forgive them, do I have to trust them again?",
+          "href": "/writing/if-i-forgive-them-do-i-have-to-trust-them-again",
+          "why": "The essay that draws the line between forgiving a wrong and restoring trust, which many hurt people were never shown."
+        },
+        {
+          "kind": "wisdom",
+          "label": "What the Bible says about marriage after an affair",
+          "href": "/wisdom/marriage-after-an-affair",
+          "why": "For couples facing the deepest betrayal, the passages that speak to it, read with care and without hurry."
+        },
+        {
+          "kind": "plan",
+          "label": "Eight Weeks Toward Forgiving Someone",
+          "href": "/plans/forgiveness",
+          "why": "When one session is not enough, a slower plan of daily reading for a wrong that will take longer to forgive."
+        }
+      ],
+      "question": "What is written in the ledger you keep against your spouse, and what would it cost you to tear out one page?",
+      "do": "Choose one small, old grievance you still bring up. Tell God you are letting it go, and then don't mention it again this week, even when you're tempted.",
+      "verse": {
+        "ref": "Ephesians 4:32",
+        "text": "Be kind and tenderhearted to one another, forgiving each other just as in Christ God forgave you."
+      },
+      "care": [
+        "If you are being hurt, at home, at work or in a church, tell someone you trust and get help. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Who taught you, by example, what forgiveness looks like?",
+        "discuss": [
+          "Why do we keep a record of wrongs, and what does the record give us that is hard to give up?",
+          "How would you explain the difference between forgiving a spouse and trusting them again?",
+          "What does it mean that forgiveness is often decided before it is felt?"
+        ],
+        "pray": "Give thanks for God's forgiveness, and pray, each in your own words, for grace to forgive and to ask forgiveness at home this week."
+      }
+    },
+    {
+      "n": 5,
+      "title": "Sex and intimacy in marriage",
+      "minutes": 10,
+      "teaching": [
+        "The church has often said two unhelpful things about sex: almost nothing, or only warnings. Then couples marry and find they've been given no language for a good gift, while the culture around them treats sex either as the measure of a relationship or as a private appetite owed to no one. Both leave a marriage poorer. The Bible is less embarrassed than we are. It keeps a whole book of love poetry, the Song of Songs, and says of love that “Mighty waters cannot quench love; rivers cannot sweep it away” (Song of Songs 8:7).",
+        "Paul's word to married couples was startling in his world: a husband's body belongs to his wife as truly as hers belongs to him (1 Corinthians 7:4). Intimacy in Scripture is mutual self-giving, never something taken or demanded, and never a weapon or a reward. Across a long marriage desire changes with children, illness, age and sorrow, and wise couples talk about it instead of retreating into silence. Secrecy and pornography corrode it. Where there has been pressure or coercion, that is not a problem to fix in the bedroom. It is a wrong that needs help."
+      ],
+      "open": {
+        "kind": "life",
+        "label": "What does the Bible say about sex in marriage?",
+        "href": "/life/the-marriage-bed",
+        "why": "A serious, unembarrassed guide to desire within marriage, the Song of Songs, and tending intimacy across a whole married life."
+      },
+      "also": [
+        {
+          "kind": "howto",
+          "label": "How to Rekindle Desire in a Long Marriage",
+          "href": "/how-tos/marriage-how-to-rekindle-desire",
+          "why": "Why desire cools in a long marriage, and how the conditions that fed it can be patiently rebuilt."
+        },
+        {
+          "kind": "chapter",
+          "label": "1 Corinthians 7, passage by passage",
+          "href": "/study/bible/1-corinthians/7#plain",
+          "why": "Paul's plain words to married people about mutual belonging, read in the setting of the church he wrote to."
+        }
+      ],
+      "question": "What would it take for the two of you to talk about this part of your marriage honestly and kindly?",
+      "do": "If you're married, choose a calm hour, not late at night after a hard day, and ask your spouse one open question about what helps them feel close to you. Listen without defending yourself.",
+      "verse": {
+        "ref": "Song of Songs 8:7",
+        "text": "Mighty waters cannot quench love; rivers cannot sweep it away."
+      },
+      "care": [
+        "A word for anyone who has been sexually assaulted. What was done to you was wrong, and it was not your fault. Where you were, what you wore, whether you fought back: none of it makes it your fault. Please tell someone you trust and get help. The Find Help page on this site lists places to turn.",
+        "If you are being hurt, at home, at work or in a church, tell someone you trust and get help. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Why do you think the church has found it hard to speak about sex well?",
+        "discuss": [
+          "The Song of Songs is in the Bible. What does that say about how God regards desire within marriage?",
+          "Paul says each spouse's body belongs to the other. How is mutual belonging different from one person having rights over the other?",
+          "Without anyone sharing private details, what helps a couple keep talking about intimacy through children, illness and age?"
+        ],
+        "pray": "Pray for the marriages represented here, and for anyone carrying hurt in this part of life, without naming anyone or anything private."
+      }
+    },
+    {
+      "n": 6,
+      "title": "Money and the marriage",
+      "minutes": 10,
+      "teaching": [
+        "Money fights are rarely about money. Underneath the argument over a purchase lie worry, control, worth, and the habits each of you learned in the house you grew up in. One of you grew up where money was always short and now spends nothing; the other grew up where it was never mentioned and now spends without looking. Jesus treated money as a rival god, the only one he named as a master: “You cannot serve both God and money” (Matthew 6:24).",
+        "In a covenant, money becomes ours rather than his and hers, which means the hard conversation has to happen: what we owe, what we want, what worries us, what we give. Couples who do well tend to decide together, hide nothing, and give something away first, because generosity loosens the grip money has on both of them. When one spouse controls all the money in order to control the other, that is not a disagreement about budgets. It is a kind of harm. This session is not financial advice; for decisions about debt, budgets or investments, find a qualified adviser where you live."
+      ],
+      "open": {
+        "kind": "howto",
+        "label": "How to Have the Money Conversation Without a War",
+        "href": "/how-tos/marriage-how-to-money-conversation",
+        "why": "Why money fights are almost never about money, and how to talk about the worry and control underneath them."
+      },
+      "also": [
+        {
+          "kind": "howto",
+          "label": "How to Handle Money as a Couple",
+          "href": "/how-tos/wm-how-to-handle-money-as-a-couple",
+          "why": "The practical side: how a couple can decide together, keep nothing hidden, and put giving first."
+        },
+        {
+          "kind": "self-check",
+          "label": "Financial health check",
+          "href": "/tools/financial-health",
+          "why": "A short self-check to take together, so the conversation starts from the same facts rather than from two different fears."
+        }
+      ],
+      "question": "What did the home you grew up in teach you about money, and how does it shape your marriage now?",
+      "do": "Sit down together for thirty minutes this week with your accounts open. Name one thing each of you worries about with money, and choose one gift to give away together.",
+      "verse": {
+        "ref": "Hebrews 13:5",
+        "text": "Keep your lives free from the love of money and be content with what you have, for God has said: “Never will I leave you, never will I forsake you.”"
+      },
+      "care": [
+        "If you are being hurt, at home, at work or in a church, tell someone you trust and get help. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Are you, by nature, more of a saver or a spender, and where did that come from?",
+        "discuss": [
+          "Jesus named money as a rival master. How does that change the way a couple's money arguments look?",
+          "What is the difference between sharing money and one spouse controlling it?",
+          "Why might giving something away together help a couple who argue about money?"
+        ],
+        "pray": "Pray for couples under money strain, for contentment, and for open hands, each in your own words."
+      }
+    },
+    {
+      "n": 7,
+      "title": "The seasons of a marriage",
+      "minutes": 10,
+      "teaching": [
+        "A marriage that lasts forty years is several marriages to the same person. The baby years pour a couple's attention into the child until they barely speak to each other. Midlife and an emptying house can leave two people discovering they have become strangers who share a kitchen. Illness can turn a spouse into a caregiver in a single afternoon. Each season tempts us to think the marriage that worked before has failed, when what has changed is the shape of what love now asks.",
+        "The old vow saw this coming: for better, for worse, in sickness and in health. Scripture's wisdom is plain: “Two are better than one, because they have a good return for their labor” (Ecclesiastes 4:9). A season is easier carried when it is named out loud, when a little time is still protected for the two of you, when others are allowed to help in the hardest stretch, and when what has been lost is honestly mourned. Love does not stay the same through the seasons. It has to be relearned in each one."
+      ],
+      "open": {
+        "kind": "howto",
+        "label": "How to Stay Married in the Baby Years",
+        "href": "/how-tos/marriage-how-to-stay-married-baby-years",
+        "why": "How the way we organize our love around a new child can quietly crowd out the marriage, and how to keep both."
+      },
+      "also": [
+        {
+          "kind": "life",
+          "label": "Empty nest and midlife",
+          "href": "/life/the-empty-nest-and-midlife",
+          "why": "When the children are gone and the house is quiet, the reckoning that comes in the middle of a life and a marriage."
+        },
+        {
+          "kind": "life",
+          "label": "How should Christians think about sickness and health?",
+          "href": "/life/health-illness-and-pain",
+          "why": "For the marriage in which one spouse falls ill: the body that breaks, chronic pain, and a church that stays near."
+        },
+        {
+          "kind": "help",
+          "label": "Caring for someone is wearing me out",
+          "href": "/help/caregiving",
+          "why": "For the spouse who has become a caregiver and is running out of strength, a place to start finding help."
+        }
+      ],
+      "question": "What season is your marriage in now, and what is love asking of you in it that it did not ask before?",
+      "do": "Name your current season out loud to your spouse, in one sentence each. Then protect one hour this week for the two of you alone, even if it is only a walk.",
+      "verse": {
+        "ref": "Ecclesiastes 4:12",
+        "text": "And though one may be overpowered, two can resist. Moreover, a cord of three strands is not quickly broken."
+      },
+      "care": [
+        "It needs to be said plainly. The Bible does not teach that sickness comes from too little faith, or that a person who stays ill did not believe enough. Paul prayed and was not healed, and no one blames him. If you live with chronic illness, pain or disability, you are not a failure of faith. Your worth to God does not rise or fall with your body. If the weight of it is heavy, please share it with someone you trust: a friend, a pastor, a doctor. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Which season of marriage has surprised you most, or which do you expect will?",
+        "discuss": [
+          "Why might a hard season feel like proof that the marriage has failed, when it may only mean the marriage has changed?",
+          "What would it look like for others in this room to help a couple through a hard season?",
+          "What has your marriage lost in its current season that is worth mourning honestly?"
+        ],
+        "pray": "Pray for each couple in the season they are in, especially any carrying illness, young children or an empty house."
+      }
+    },
+    {
+      "n": 8,
+      "title": "When a marriage is in trouble",
+      "minutes": 12,
+      "teaching": [
+        "Many couples wait years too long to ask for help, treating counselling as the last stop before the lawyer. Pride keeps the trouble hidden, and churches have not always made it safe to say that a marriage is struggling, so couples smile on Sunday and drift through the week. The wiser course is to go early, while there is still warmth to build on, to a pastor, a counsellor, or both. Asking for help is not an admission of failure. It is what keeping a covenant looks like when the two of you can no longer keep it alone.",
+        "One thing must be said without qualification. If a spouse is violent, threatening or controlling, or if you or your children are afraid at home, this is not a marriage problem to work on together. It is harm, and safety comes first. The covenant was never a chain binding anyone to abuse, and no faithful reading of Scripture asks you to stay in reach of it. Find Help lists places to turn. Divorce and remarriage are questions faithful Christians answer differently, and the essay below sets out the views fairly."
+      ],
+      "open": {
+        "kind": "help",
+        "label": "My marriage is falling apart",
+        "href": "/help/marriage",
+        "why": "The Find Help page for a marriage in trouble: where to turn first, and what to do if you are not safe."
+      },
+      "also": [
+        {
+          "kind": "howto",
+          "label": "How to Know When to Get Help",
+          "href": "/how-tos/marriage-how-to-know-when-to-get-help",
+          "why": "Why couples wait too long, what good help looks like, and why abuse calls for a different road altogether."
+        },
+        {
+          "kind": "essay",
+          "label": "Divorce, remarriage and the church",
+          "href": "/writing/divorce-remarriage-and-the-church",
+          "why": "The views Christians hold on divorce and remarriage, each set out fairly, with care for those who have lived it."
+        },
+        {
+          "kind": "track",
+          "label": "Work, money and rest",
+          "href": "/tracks/living-work-money",
+          "why": "The next track in Living It takes the same questions into the working week, its money and its need for rest."
+        }
+      ],
+      "question": "Is there something in your marriage you have been carrying alone that you need to tell a pastor or counsellor about?",
+      "do": "If your marriage is struggling, make one call this week to a pastor or a counsellor and book a time. If it is unsafe, go to Find Help first.",
+      "verse": {
+        "ref": "Psalm 34:18",
+        "text": "The LORD is near to the brokenhearted; He saves the contrite in spirit."
+      },
+      "care": [
+        "Nothing in this passage asks anyone to stay where they or their children are in danger. If you are being hurt, at home, at work or in a church, tell someone you trust and get help. The Find Help page on this site lists places to turn.",
+        "Not every hardship comes from following Jesus, and not every hardship is meant to be endured in silence. If you are carrying something heavy, whether persecution, illness, loss, or harm at the hands of others, it is right to seek help and safety. Please share it with someone you trust: a friend, a pastor, a counsellor. If you are in danger, or the pain ever feels like more than you can bear, reach out today to a crisis line or emergency service. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Why do you think couples wait so long before asking anyone for help?",
+        "discuss": [
+          "How could a church make it safer for a couple to say their marriage is struggling?",
+          "Why is it wrong to tell someone in an abusive marriage to stay for the sake of the covenant?",
+          "Looking back over these eight sessions, what is one thing you now understand about marriage that you did not before?"
+        ],
+        "pray": "Pray for marriages that are hidden in trouble, for anyone who is not safe at home, and for the courage to ask for help early."
+      }
+    }
+  ]
+}
