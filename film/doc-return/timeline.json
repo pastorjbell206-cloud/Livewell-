@@ -1,0 +1,241 @@
+{
+ "length": 235.79,
+ "chapters": [
+  {
+   "id": "question",
+   "kicker": "The question",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 14.26,
+   "lines": [
+    {
+     "text": "Do Christians really believe Jesus is coming back? And if they do, why can't they agree on how?",
+     "start": 2.6,
+     "end": 8.28
+    },
+    {
+     "text": "Both are fair questions. Start with what every ancient creed confesses.",
+     "start": 8.96,
+     "end": 13.36
+    }
+   ]
+  },
+  {
+   "id": "confess",
+   "kicker": "What the church confesses",
+   "level": 0.3,
+   "start": 13.46,
+   "end": 46.68,
+   "lines": [
+    {
+     "text": "The same Jesus who was crucified, raised and taken up into heaven will come again. In person, in His body, in public glory.",
+     "start": 14.36,
+     "end": 23.3
+    },
+    {
+     "text": "He'll raise the dead, judge the world, and bring God's kingdom to completion in a renewed creation.",
+     "start": 23.82,
+     "end": 30.02
+    },
+    {
+     "text": "As He was taken up, two men dressed in white said it plainly.",
+     "start": 30.74,
+     "end": 34.02
+    },
+    {
+     "text": "\u201cMen of Galilee,\u201d they said, \u201cwhy do you stand here looking into the sky? This same Jesus, who has been taken from you into heaven, will come back in the same way you have seen Him go into heaven.\u201d",
+     "start": 34.6,
+     "end": 45.78
+    }
+   ]
+  },
+  {
+   "id": "promise",
+   "kicker": "What the prophets hoped for",
+   "level": 0.4,
+   "start": 45.88,
+   "end": 69.58,
+   "lines": [
+    {
+     "text": "The Old Testament doesn't speak of a second coming, because it hasn't seen the first. It hopes that God Himself will come.",
+     "start": 46.78,
+     "end": 53.42
+    },
+    {
+     "text": "In a vision, Daniel sees one like a Son of Man coming with the clouds, who is given a kingdom that will never be destroyed.",
+     "start": 54.14,
+     "end": 61.08
+    },
+    {
+     "text": "The prophets saw one great Day of the Lord. The New Testament finds it in two acts, and the first brought mostly mercy.",
+     "start": 61.74,
+     "end": 68.68
+    }
+   ]
+  },
+  {
+   "id": "jesus",
+   "kicker": "What Jesus said",
+   "level": 0.5,
+   "start": 68.78,
+   "end": 94.6,
+   "lines": [
+    {
+     "text": "Jesus spoke of His return most often with the title Son of Man, from that vision. His coming, He said, would be as public as lightning, as sudden as the flood, and as unexpected as a thief.",
+     "start": 69.68,
+     "end": 81.92
+    },
+    {
+     "text": "But the time is hidden, even from the angels in heaven. Only the Father knows it.",
+     "start": 82.64,
+     "end": 87.14
+    },
+    {
+     "text": "So His stories about it all teach one thing. Keep watch by being faithful at the work you were given.",
+     "start": 87.7,
+     "end": 93.7
+    }
+   ]
+  },
+  {
+   "id": "first",
+   "kicker": "The first Christians",
+   "level": 0.55,
+   "start": 93.8,
+   "end": 114.56,
+   "lines": [
+    {
+     "text": "Paul wrote to Christians grieving their dead. When the Lord comes, he told them, the dead in Christ will rise first.",
+     "start": 94.7,
+     "end": 101.22
+    },
+    {
+     "text": "The earliest believers prayed for that day in Aramaic, marana tha, which means Our Lord, come.",
+     "start": 102.02,
+     "end": 108.38
+    },
+    {
+     "text": "Every time the church shares the bread and cup, it proclaims His death until He comes.",
+     "start": 109.14,
+     "end": 113.66
+    }
+   ]
+  },
+  {
+   "id": "creeds",
+   "kicker": "Confessed, never calculated",
+   "level": 0.6,
+   "start": 113.76,
+   "end": 141.56,
+   "lines": [
+    {
+     "text": "In 381, the creed received at Constantinople said He will come again in glory, and His kingdom will have no end.",
+     "start": 114.66,
+     "end": 121.86
+    },
+    {
+     "text": "But the creeds never set a date. In the nineteenth century, William Miller calculated that Christ would return in 1843 or 1844.",
+     "start": 122.58,
+     "end": 131.58
+    },
+    {
+     "text": "When October 22, 1844 passed, it became known as the Great Disappointment. Every calculation so far has failed.",
+     "start": 132.24,
+     "end": 140.66
+    }
+   ]
+  },
+  {
+   "id": "differ",
+   "kicker": "Where Christians differ",
+   "level": 0.75,
+   "start": 140.76,
+   "end": 186.16,
+   "lines": [
+    {
+     "text": "Christians do divide over the order of events, most of all over the thousand years in Revelation 20.",
+     "start": 141.66,
+     "end": 147.6
+    },
+    {
+     "text": "Amillennialists read the thousand years as this present age, with Christ reigning now from heaven.",
+     "start": 148.3,
+     "end": 153.78
+    },
+    {
+     "text": "Postmillennialists expect the gospel, by the Spirit's power, to bring the nations broadly under Christ's rule before He returns.",
+     "start": 154.5,
+     "end": 161.68
+    },
+    {
+     "text": "Historic premillennialists expect Christ to return before a thousand-year reign on earth, with the church passing through the final tribulation.",
+     "start": 161.96,
+     "end": 169.58
+    },
+    {
+     "text": "Dispensational premillennialists expect God's promises to Israel to be kept to the letter, and Christ to come for His church in a rapture, most say before a seven-year tribulation.",
+     "start": 170.14,
+     "end": 180.58
+    },
+    {
+     "text": "Each view argues from Scripture, and all of them confess the same return.",
+     "start": 181.08,
+     "end": 185.26
+    }
+   ]
+  },
+  {
+   "id": "life",
+   "kicker": "What it changes",
+   "level": 0.85,
+   "start": 185.36,
+   "end": 213.5,
+   "lines": [
+    {
+     "text": "So what does it change? It means the story has an ending, and the ending has a face.",
+     "start": 186.26,
+     "end": 191.34
+    },
+    {
+     "text": "It changes grief. Paul doesn't tell believers not to grieve, only not to grieve like those without hope.",
+     "start": 191.86,
+     "end": 197.84
+    },
+    {
+     "text": "It gives ordinary work weight. Waiting for Him doesn't mean staring at the sky, but caring for the people and the work entrusted to you.",
+     "start": 198.44,
+     "end": 206.22
+    },
+    {
+     "text": "The hidden day keeps you steady, because the outcome is secure, and alert, because no one knows the hour.",
+     "start": 206.74,
+     "end": 212.6
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 212.7,
+   "end": 229.687,
+   "lines": [
+    {
+     "text": "The Bible ends with His promise and the church's answer.",
+     "start": 213.6,
+     "end": 216.46
+    },
+    {
+     "text": "He who testifies to these things says, \u201cYes, I am coming soon.\u201d Amen. Come, Lord Jesus!",
+     "start": 217.04,
+     "end": 224.18
+    },
+    {
+     "text": "Until then, keep watch, keep working, and keep praying it.",
+     "start": 224.64,
+     "end": 228.787
+    }
+   ]
+  }
+ ]
+}

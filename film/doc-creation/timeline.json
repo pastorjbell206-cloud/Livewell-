@@ -1,0 +1,226 @@
+{
+ "length": 233.91,
+ "chapters": [
+  {
+   "id": "question",
+   "kicker": "The question",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 13.06,
+   "lines": [
+    {
+     "text": "Where did all this come from? The stars, the sea, the breath in your lungs.",
+     "start": 2.6,
+     "end": 7.54
+    },
+    {
+     "text": "And if God made it, why do Christians argue over the Bible's first page?",
+     "start": 8.16,
+     "end": 12.16
+    }
+   ]
+  },
+  {
+   "id": "confess",
+   "kicker": "What the church confesses",
+   "level": 0.3,
+   "start": 12.26,
+   "end": 30.62,
+   "lines": [
+    {
+     "text": "The church confesses that God made everything other than Himself. He made it freely, by His word, from nothing, and it was good.",
+     "start": 13.16,
+     "end": 21.32
+    },
+    {
+     "text": "The world isn't God, and it isn't an accident. It's a gift from a God who needed nothing, and He holds it in being every moment.",
+     "start": 22.04,
+     "end": 29.72
+    }
+   ]
+  },
+  {
+   "id": "first",
+   "kicker": "The first sentence",
+   "level": 0.4,
+   "start": 29.82,
+   "end": 51.8,
+   "lines": [
+    {
+     "text": "The Bible's first sentence is a confession.",
+     "start": 30.72,
+     "end": 32.9
+    },
+    {
+     "text": "In the beginning God created the heavens and the earth.",
+     "start": 33.5,
+     "end": 36.38
+    },
+    {
+     "text": "Other nations told it differently. In the Babylonian epic, the Enuma Elish, the world is built after a war among the gods.",
+     "start": 37.22,
+     "end": 44.62
+    },
+    {
+     "text": "Genesis has one God, no battle, and no rival. He speaks, and things come to be.",
+     "start": 45.16,
+     "end": 50.9
+    }
+   ]
+  },
+  {
+   "id": "good",
+   "kicker": "And it was good",
+   "level": 0.5,
+   "start": 51.0,
+   "end": 65.82,
+   "lines": [
+    {
+     "text": "Even the sun and moon, which Israel's neighbors worshiped as gods, are simply lights, set in the sky to mark the seasons.",
+     "start": 51.9,
+     "end": 59.18
+    },
+    {
+     "text": "Seven times God sees that what He made is good. The last time, it's very good.",
+     "start": 59.78,
+     "end": 64.92
+    }
+   ]
+  },
+  {
+   "id": "son",
+   "kicker": "Through the Son",
+   "level": 0.55,
+   "start": 65.02,
+   "end": 87.7,
+   "lines": [
+    {
+     "text": "The New Testament says what Genesis couldn't yet say. God made the world through His Son.",
+     "start": 65.92,
+     "end": 71.1
+    },
+    {
+     "text": "Colossians says everything was made in Him, through Him, and for Him, and in Him it all holds together.",
+     "start": 71.72,
+     "end": 78.94
+    },
+    {
+     "text": "The Spirit hovered over the waters too. Creation is the work of one God, Father, Son, and Holy Spirit.",
+     "start": 79.68,
+     "end": 86.8
+    }
+   ]
+  },
+  {
+   "id": "nothing",
+   "kicker": "Out of nothing",
+   "level": 0.65,
+   "start": 86.9,
+   "end": 113.48,
+   "lines": [
+    {
+     "text": "The first Christians taught in a world shaped by Greek thinkers. Plato pictured a divine craftsman shaping material already there, and Aristotle held the world had always existed.",
+     "start": 87.8,
+     "end": 98.04
+    },
+    {
+     "text": "Around the year 180, Theophilus of Antioch answered that God made all things out of nothing.",
+     "start": 98.7,
+     "end": 104.36
+    },
+    {
+     "text": "The creeds made it the whole church's confession. One God, maker of heaven and earth, and of all things visible and invisible.",
+     "start": 105.02,
+     "end": 112.58
+    }
+   ]
+  },
+  {
+   "id": "differ",
+   "kicker": "Where Christians differ",
+   "level": 0.75,
+   "start": 112.68,
+   "end": 177.7,
+   "lines": [
+    {
+     "text": "Christians differ most over how to read the six days, and the age of the earth.",
+     "start": 113.58,
+     "end": 117.34
+    },
+    {
+     "text": "Young-earth creationists read the days as ordinary days and the genealogies as a real, fairly short chronology, so the earth is thousands of years old. Scripture's plain sense, they say, should govern how the evidence is read.",
+     "start": 118.12,
+     "end": 131.96
+    },
+    {
+     "text": "Old-earth creationists say the earth is billions of years old, and the Hebrew word for day can mean a long period. Across those ages God acted directly, bringing new kinds of life into being.",
+     "start": 132.66,
+     "end": 144.48
+    },
+    {
+     "text": "The framework view sees the days arranged by topic, not by clock, three days forming realms and three filling them. So the chapter teaches who made the world, not how old it is.",
+     "start": 145.26,
+     "end": 156.5
+    },
+    {
+     "text": "Evolutionary creationists believe God created life through the long process of evolution, which He sustains and directs. A patient process, they say, is no less God's act than an instant one.",
+     "start": 157.16,
+     "end": 169.2
+    },
+    {
+     "text": "Each view argues from Scripture. They differ on how to read the days, not on who made the world.",
+     "start": 169.46,
+     "end": 176.8
+    }
+   ]
+  },
+  {
+   "id": "life",
+   "kicker": "What it changes",
+   "level": 0.85,
+   "start": 176.9,
+   "end": 203.66,
+   "lines": [
+    {
+     "text": "So what does it change? Breath, food, work, beauty and your own body all come as gifts.",
+     "start": 177.8,
+     "end": 182.74
+    },
+    {
+     "text": "Because creation is good, you're free to enjoy it without guilt, and bound to care for it. Because it isn't God, you're free to study it, farm it, and build with it without fear.",
+     "start": 183.3,
+     "end": 194.04
+    },
+    {
+     "text": "Isaiah told exiles who felt forgotten to look up. The One who made the stars calls each one by name, and He doesn't grow weary.",
+     "start": 194.74,
+     "end": 202.76
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 202.86,
+   "end": 227.811,
+   "lines": [
+    {
+     "text": "Creation groans now, Paul says, waiting to be set free from decay. But the Bible begins and ends with God making.",
+     "start": 203.76,
+     "end": 211.62
+    },
+    {
+     "text": "And the One seated on the throne said, \u201cBehold, I make all things new.\u201d Then He said, \u201cWrite this down, for these words are faithful and true.\u201d",
+     "start": 212.16,
+     "end": 221.64
+    },
+    {
+     "text": "His last verdict over His world will be the same as His first. Good.",
+     "start": 222.28,
+     "end": 226.911
+    }
+   ]
+  }
+ ]
+}
