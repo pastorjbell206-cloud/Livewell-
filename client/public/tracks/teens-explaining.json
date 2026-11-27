@@ -1,0 +1,452 @@
+{
+  "slug": "teens-explaining",
+  "title": "Talking about your faith with friends",
+  "for": "I'm a teenager with friends who ask",
+  "subtitle": "Eight short sessions for a teenager whose friends ask questions: why say anything, your own story, the faith in two minutes, made up, science, hypocrites, other religions, and staying friends.",
+  "intro": [
+    "This track is for teenagers who want to be able to explain what they believe, and why, to friends who don't. Each session takes about six minutes: a short reading, a film or a page, one question, one thing to do and one verse.",
+    "It won't give you a script or a way to win arguments. It will help you understand the faith well enough to say it simply, take your friends' objections seriously, and stay their friend whatever they decide. Take it alone, with friends, with a youth group, or with a parent."
+  ],
+  "leader": {
+    "about": [
+      "This guide is for a youth leader or a parent taking teenagers through Talking about your faith with friends. The sessions cover why Christians speak about their faith at all, how to tell a personal story, the gospel in brief, and the objections teenagers hear most: that it's made up, that science disproved it, that Christians are hypocrites, and that all religions are the same. The leader's task is to help each person understand what Christians believe well enough to explain it, and to model treating every objection, and every friend, with respect.",
+      "Each person takes the session on their own first: a short reading, a film or a page, and a passage. The meeting doesn't repeat the teaching. It talks over what people found, using the group guide for that session, which is gathered below in order with the page each session opens and the question it asks."
+    ],
+    "sections": [
+      {
+        "id": "group",
+        "title": "The group",
+        "body": [
+          "Three to eight teenagers is a good size, small enough that everyone practises saying things aloud. A parent and one teenager can use the same guide at a kitchen table or in the car. Meet for about forty-five minutes, eight times, and keep the end time you promised. Have a second trusted adult present whenever a group meets. Some teenagers in the room may not believe what the sessions teach; make sure they know they're welcome and won't be treated as a project."
+        ]
+      },
+      {
+        "id": "room",
+        "title": "The room",
+        "body": [
+          "Pick somewhere ordinary: a living room, a kitchen, a corner with snacks. Sit in a circle. Phones can stay out for the film and the page, then go face down. Say at the first meeting that anyone may pass on any question, that what people share stays in the room unless someone is in danger, and that nobody will be made to pray aloud. Practising out loud is encouraged, but never forced."
+        ]
+      },
+      {
+        "id": "order",
+        "title": "The order of a meeting",
+        "body": [
+          "About forty-five minutes, in this order. Keep to the times loosely and to the end time strictly."
+        ],
+        "steps": [
+          "Five minutes: the opening question, once round the circle. Anyone may pass.",
+          "Ten minutes: watch the session's film or look at its page together, if not everyone has.",
+          "Five minutes: one person reads the verse aloud, with a few verses around it.",
+          "Fifteen minutes: the three questions to talk over, in order. Let a silence sit before you fill it.",
+          "Five minutes: in pairs, one person raises the session's objection as a friend would, and the other answers in two or three sentences.",
+          "Five minutes: the prayer prompt for those who pray, and quiet for everyone else, then name the next session."
+        ]
+      },
+      {
+        "id": "hard",
+        "title": "When a hard question comes",
+        "body": [
+          "These sessions invite objections, so expect some you can't answer on the spot. Say what is true in the objection before answering it, and state it as well as the friend who raised it would. If nobody knows, say so, write it down, and bring something back next time. Teenagers learn more from a leader who says that's a good question and I need to look into it than from one who always has a line ready.",
+          "Where Christians themselves disagree, such as how to read Genesis alongside science, say so plainly and show more than one view. The aim is understanding, not winning."
+        ]
+      },
+      {
+        "id": "hurting",
+        "title": "When someone is hurting",
+        "body": [
+          "A session on hypocrisy can bring up real harm: a family hurt by a church, or a young person treated badly by Christians. When that happens, stop the discussion. Listen, thank the person for saying it, don't defend the church, and don't explain their pain for them. Afterwards, speak with them, with another adult nearby, and ask what would help.",
+          "If a young person says that anyone is harming them, or that they have thought about harming themselves, take it seriously and never promise to keep it secret. A youth leader may be required by law, and by the church's own policy, to report harm to a child; know that policy before the first meeting. A parent should get help the same day."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "When to point someone to Find Help",
+        "body": [
+          "Point a teenager, or their parent, to Find Help when something has become too heavy to carry: hurt from a church, worry that stops sleep or school, sadness that will not lift, harm at home or anywhere else, or any sign that they no longer want to be alive. The Find Help page on this site lists places to turn, and its lines for help right now are open day and night. If anyone is in danger now, call your local emergency number. Stay with the young person while help is reached."
+        ]
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "n": 1,
+      "title": "Why you'd say anything",
+      "minutes": 6,
+      "teaching": [
+        "Most teenagers would rather not bring up faith with friends. It can feel pushy or awkward, as if you're judging them, and some Christians have given people good reason to expect exactly that. But if you think something is true and good, keeping it to yourself isn't obviously kind either. Peter told Christians, “Always be prepared to give a defense to everyone who asks you the reason for the hope that is in you. But respond with gentleness and respect” (1 Peter 3:15). Notice the order. Someone asks first. Your part is to live in a way that makes them curious, and to be ready when they do."
+      ],
+      "open": {
+        "kind": "howto",
+        "label": "How to Share Your Faith Without Being Weird",
+        "href": "/how-tos/wn-how-to-share-your-faith-without-being-weird",
+        "why": "Practical ways to talk about Jesus in ordinary friendships, without a script, a sales pitch or pressure."
+      },
+      "also": [
+        {
+          "kind": "life",
+          "label": "How Do You Share Your Faith Without Being Pushy?",
+          "href": "/life/witness-without-weirdness",
+          "why": "Witness for people who aren't salesmen: the gospel carried in friendship, presence and a life that holds together."
+        },
+        {
+          "kind": "chapter",
+          "label": "1 Peter 3, passage by passage",
+          "href": "/study/bible/1-peter/3#plain",
+          "why": "Peter on being ready to give a reason for your hope, with plain notes on what gentleness and respect mean."
+        },
+        {
+          "kind": "guide",
+          "label": "Evangelism: A Bible Study on Sharing Your Faith",
+          "href": "/studyguides/witness",
+          "why": "A Bible study on how the first Christians spoke about Jesus, for a group or for reading on your own."
+        }
+      ],
+      "question": "What makes you most nervous about talking about your faith with a friend?",
+      "do": "Think of one friend who has asked you, even in passing, about church or what you believe. Write down what you'd say if they asked again.",
+      "verse": {
+        "ref": "1 Peter 3:15",
+        "text": "But in your hearts sanctify Christ as Lord. Always be prepared to give a defense to everyone who asks you the reason for the hope that is in you. But respond with gentleness and respect,"
+      },
+      "group": {
+        "open": "What's the worst way you've seen someone talk about their faith?",
+        "discuss": [
+          "Why do you think Peter tells Christians to be ready for when someone asks, rather than to start every conversation?",
+          "Is keeping your faith to yourself kind, or not? Why?",
+          "What would gentleness and respect sound like with your actual friends?"
+        ],
+        "pray": "Those who pray can pray for one friend by name, not for a conversation, just for the friend. Anyone who doesn't pray can think of what that friend most needs right now."
+      }
+    },
+    {
+      "n": 2,
+      "title": "Your own story",
+      "minutes": 6,
+      "teaching": [
+        "You don't need to win an argument to say something true. A man Jesus healed of blindness was questioned again and again by religious leaders who didn't want to believe what had happened. He couldn't answer all their questions, so he said what he knew: “There is one thing I do know: I was blind, but now I see” (John 9:25). Your story may be quieter than his. You might have grown up in church with no dramatic moment at all. That's still a story: when faith began to matter, what difference Jesus makes on an ordinary day, and what you're still working out."
+      ],
+      "open": {
+        "kind": "howto",
+        "label": "How to Tell Your Story",
+        "href": "/how-tos/wn-how-to-tell-your-story",
+        "why": "How to put what Jesus has meant in your life into plain words, honestly, without exaggerating or preaching."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "John 9, passage by passage",
+          "href": "/study/bible/john/9#plain",
+          "why": "The man born blind, questioned by the leaders and holding to what he knew, with plain notes on each part."
+        },
+        {
+          "kind": "wisdom",
+          "label": "Why Follow Jesus?",
+          "href": "/wisdom/why-follow-jesus",
+          "why": "What the Bible says about why anyone would follow Jesus, worth reading before you try to say why you do."
+        }
+      ],
+      "question": "When did following Jesus start to matter to you, if it has?",
+      "do": "Write your story in five sentences: where you started, when faith began to matter, what changed, what's still hard, and why you keep going. Read it aloud once.",
+      "verse": {
+        "ref": "Mark 5:19",
+        "text": "But Jesus would not allow him. “Go home to your own people,” He said, “and tell them how much the Lord has done for you, and what mercy He has shown you.”"
+      },
+      "group": {
+        "open": "Whose faith story do you know, and what stuck with you about it?",
+        "discuss": [
+          "Why do you think the healed man's simple answer was so hard for the leaders to argue with?",
+          "Is a quiet story, with no dramatic moment, still worth telling? Why?",
+          "What part of your story would you be nervous to share, and why?"
+        ],
+        "pray": "Those who pray can give thanks for the people who were part of their story, and ask for courage to tell it. Anyone who doesn't pray can think about when their questions about faith began."
+      }
+    },
+    {
+      "n": 3,
+      "title": "What Christians believe, in two minutes",
+      "minutes": 6,
+      "teaching": [
+        "If a friend asked what Christians actually believe, could you say it before they lost interest? Here is the shape of it. There is one God, Father, Son and Holy Spirit, who made everything good. People turned away from him, and the damage runs through the world and through every one of us. God didn't leave it there. The Son became a man, Jesus, who lived the life we haven't, died on a cross for our sins, and was raised on the third day. Everyone who trusts him is forgiven and made new, and one day he will put the whole world right."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "The gospel in a minute",
+        "href": "/study/explorer/watch/gospel-in-a-minute",
+        "why": "The whole good news in one minute of pictures: God, what went wrong, what Jesus did, and what it means."
+      },
+      "also": [
+        {
+          "kind": "creed",
+          "label": "The Apostles' Creed",
+          "href": "/resources/creeds/apostles-creed",
+          "why": "What Christians everywhere have confessed for centuries, in a few lines, with notes on what each line means."
+        },
+        {
+          "kind": "catechism",
+          "label": "The family catechism",
+          "href": "/family/catechism",
+          "why": "Short questions and answers on the faith, useful for learning to say each part in a sentence or two."
+        },
+        {
+          "kind": "answer",
+          "label": "Was Jesus just a good teacher?",
+          "href": "/answers/was-jesus-just-a-good-teacher",
+          "why": "The answer to what many friends will say first: that Jesus was a wise man and nothing more."
+        }
+      ],
+      "question": "Which part of that summary would your friends find hardest to believe, and which most surprising?",
+      "do": "Say the gospel out loud in your own words, in under two minutes, to a parent, a youth leader or a mirror. Notice where you get stuck.",
+      "verse": {
+        "ref": "1 Corinthians 15:3-4",
+        "text": "For what I received I passed on to you as of first importance: that Christ died for our sins according to the Scriptures, that He was buried, that He was raised on the third day according to the Scriptures,"
+      },
+      "care": [
+        "Sometimes guilt that will not lift needs more than a Bible verse. It can be part of anxiety, depression or a habit of the mind that keeps returning to the same fear. That is not a failure of faith. Talk with a pastor or a friend you trust. If the fear will not let you rest, a counsellor or a doctor can help too, and the Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "If someone asked you what Christians believe, what would you say first?",
+        "discuss": [
+          "Why do you think Paul called the death and resurrection of Jesus a matter of first importance?",
+          "Which part of the summary do people most often leave out when they explain Christianity, and why?",
+          "How is the gospel different from being told to be a good person?"
+        ],
+        "pray": "Those who pray can give thanks for the gospel in their own words, and pray for a friend who has never heard it put plainly. Anyone who doesn't pray can name the part they find hardest to accept."
+      }
+    },
+    {
+      "n": 4,
+      "title": "When a friend says it's all made up",
+      "minutes": 6,
+      "teaching": [
+        "A friend says the Bible is just stories people made up. Take that seriously, because some ancient writings really are legends. The fair question is what kind of writing the Gospels are. Luke says he wrote after “having carefully investigated everything from the beginning” (Luke 1:3), and Peter insists “we did not follow cleverly devised fables” (2 Peter 1:16). Saying so doesn't prove it, of course. But historians, including many who aren't Christians, agree that Jesus lived and was crucified under Pontius Pilate. The real argument is about what happened next, and that's a question you and your friend can look into together."
+      ],
+      "open": {
+        "kind": "case",
+        "label": "Written decades later?",
+        "href": "/questions/authors/written-decades-later",
+        "why": "The objection that the Gospels came too late to be trusted, stated fairly, with what the evidence actually shows."
+      },
+      "also": [
+        {
+          "kind": "answer",
+          "label": "Did the resurrection actually happen?",
+          "href": "/answers/did-the-resurrection-actually-happen",
+          "why": "The claim everything rests on, with the evidence and the strongest alternative explanations weighed honestly."
+        },
+        {
+          "kind": "skeptics",
+          "label": "For skeptics",
+          "href": "/skeptics",
+          "why": "The strongest objections stated first, short answers, and longer reading, for a friend who wants to look for themselves."
+        }
+      ],
+      "question": "If a friend said the Bible was made up, what would you want to ask them before you answered?",
+      "do": "Read one piece from the case for the faith on how the Gospels were written. Write down one fact you didn't know and one question you still have.",
+      "verse": {
+        "ref": "2 Peter 1:16",
+        "text": "For we did not follow cleverly devised fables when we made known to you the power and coming of our Lord Jesus Christ, but we were eyewitnesses of His majesty."
+      },
+      "group": {
+        "open": "Has anyone ever told you the Bible is just made up? How did you respond?",
+        "discuss": [
+          "What's the difference between a legend and a careful historical account, and how could you tell which the Gospels are?",
+          "Why is it fair to admit that a book saying it's true doesn't prove it is?",
+          "What would it look like to look into the question with a friend rather than against them?"
+        ],
+        "pray": "Those who pray can ask for honest answers to hard questions, and pray for a friend who has questions of their own. Anyone who doesn't pray can name the question they would want answered first."
+      }
+    },
+    {
+      "n": 5,
+      "title": "When a friend says science disproved it",
+      "minutes": 6,
+      "teaching": [
+        "Many people assume science and Christianity have always been at war. The real history is more interesting: many of the people who built modern science believed God had made a world orderly enough to study. Science is very good at answering how things work. It can't by itself tell you why there is anything at all, or whether a life means anything. Christians do disagree about how to read Genesis alongside evolution and the age of the earth, and you don't need to settle that to answer your friend. You can start with what all Christians share: “In the beginning God created the heavens and the earth” (Genesis 1:1)."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "Are science and the Bible enemies?",
+        "href": "/study/explorer/watch/science-and-the-bible",
+        "why": "A short film on what science asks, what the Bible asks, and why the two need not be at war."
+      },
+      "also": [
+        {
+          "kind": "case",
+          "label": "Hasn't science made God unnecessary?",
+          "href": "/questions/science/has-science-made-god-unnecessary",
+          "why": "The strongest form of the objection, stated fairly, and what it can and cannot show."
+        },
+        {
+          "kind": "answer",
+          "label": "How should a Christian read Genesis 1?",
+          "href": "/answers/how-should-a-christian-read-genesis-1",
+          "why": "The main ways faithful Christians read the creation account, set out fairly, with the question left open."
+        },
+        {
+          "kind": "case",
+          "label": "Hasn't evolution disproved Genesis?",
+          "href": "/questions/science/evolution-and-genesis",
+          "why": "For the friend who thinks evolution settles it: what the science says and what Christians make of it."
+        }
+      ],
+      "question": "What scientific question do your friends raise most often about faith?",
+      "do": "Read one piece from the case for the faith on science. Then write two sentences you could say to a friend: one about what science can answer, and one about what it can't.",
+      "verse": {
+        "ref": "Romans 1:20",
+        "text": "For since the creation of the world God’s invisible qualities, His eternal power and divine nature, have been clearly seen, being understood from His workmanship, so that men are without excuse."
+      },
+      "group": {
+        "open": "Do most people at your school see science and faith as enemies? Why?",
+        "discuss": [
+          "What kinds of questions can science answer, and what kinds can't it?",
+          "Christians disagree about how to read Genesis 1. Why might it help to say so honestly to a friend?",
+          "If the world is orderly enough to study, what might that suggest about where it came from?"
+        ],
+        "pray": "Those who pray can give thanks for a world worth studying, and pray for curiosity and honesty in every conversation about it. Anyone who doesn't pray can name one thing in nature that amazes them."
+      }
+    },
+    {
+      "n": 6,
+      "title": "When a friend says Christians are hypocrites",
+      "minutes": 6,
+      "teaching": [
+        "Sometimes the honest answer is that your friend is right. Christians say one thing and do another, and some have done real harm in Jesus' name. Don't defend what can't be defended. Jesus saved his sharpest words for religious hypocrites, and asked why people look at the speck in someone else's eye and miss the beam in their own (Matthew 7:3). But the gospel never claimed Christians were good people. It claims Jesus came for people who aren't, and Paul called himself the worst of sinners. A church full of hypocrites is a sad thing. It isn't evidence that Jesus was wrong."
+      ],
+      "open": {
+        "kind": "wisdom",
+        "label": "Hypocrisy and the Mask",
+        "href": "/wisdom/hypocrisy",
+        "why": "What the Bible says about the gap between the face we show and the life we live, starting with our own."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Matthew 23, passage by passage",
+          "href": "/study/bible/matthew/23#plain",
+          "why": "Jesus' hardest words, spoken to religious leaders who said one thing and did another, with plain notes."
+        },
+        {
+          "kind": "case",
+          "label": "Does religion poison everything?",
+          "href": "/questions/morality/does-religion-poison-everything",
+          "why": "The charge that religion causes more harm than good, stated at full strength, with an honest reckoning."
+        },
+        {
+          "kind": "help",
+          "label": "The church hurt me",
+          "href": "/help/church-hurt",
+          "why": "A page for anyone harmed by a church or by Christians, worth knowing about for a friend who has been."
+        }
+      ],
+      "question": "Where do you see a gap between what you believe and how you live?",
+      "do": "Next time a friend criticizes Christians, start by naming what's true in it before you say anything else. Then ask what happened to make them think so.",
+      "verse": {
+        "ref": "Matthew 7:5",
+        "text": "You hypocrite! First take the beam out of your own eye, and then you will see clearly to remove the speck from your brother’s eye."
+      },
+      "care": [
+        "If you have been harmed by someone in a church, and were told to forgive and say nothing, what happened to you may have been wrong. Please talk with someone you trust outside that situation. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What do Christians do that makes it harder for your friends to take Jesus seriously?",
+        "discuss": [
+          "Why do you think Jesus was harder on religious hypocrites than on anyone else?",
+          "What's the difference between defending Christians and defending Jesus?",
+          "If someone has been hurt by a church, what's the first thing they need from you?"
+        ],
+        "pray": "Those who pray can tell God quietly where their own life doesn't match their words, and pray for anyone hurt by a church. Anyone who doesn't pray can think of one way to close the gap between what they say and what they do."
+      }
+    },
+    {
+      "n": 7,
+      "title": "Friends of other religions",
+      "minutes": 6,
+      "teaching": [
+        "You probably have friends who are Muslim, Jewish, Hindu, Sikh, Buddhist, or nothing in particular. Treat their faith with the respect you'd want for yours: learn what they actually believe from them, not from a stereotype. In Athens, Paul began by noticing that his listeners were “very religious” (Acts 17:22), and he quoted their own poets. Respect doesn't mean pretending all religions say the same thing. They don't, and your friends know it. Christians believe Jesus is the way to God because of who he is and what he did, and you can say that kindly while listening carefully to what your friends believe."
+      ],
+      "open": {
+        "kind": "case",
+        "label": "Are all religions the same?",
+        "href": "/questions/religions/are-all-religions-the-same",
+        "why": "The idea that every religion is a path up the same mountain, taken seriously, and why the religions themselves disagree."
+      },
+      "also": [
+        {
+          "kind": "answer",
+          "label": "What do Christianity and Islam actually dispute?",
+          "href": "/answers/christianity-and-islam-differences",
+          "why": "A fair account of where Christians and Muslims agree and where they truly differ, for talking with Muslim friends."
+        },
+        {
+          "kind": "answer",
+          "label": "Is Jesus the only way?",
+          "href": "/answers/is-jesus-the-only-way",
+          "why": "Why Christians say Jesus is the way to God, and how to hold that without arrogance toward anyone."
+        },
+        {
+          "kind": "chapter",
+          "label": "Acts 17, passage by passage",
+          "href": "/study/bible/acts/17#plain",
+          "why": "Paul in Athens, starting from what his hearers already believed, with plain notes on how he spoke."
+        }
+      ],
+      "question": "What do you actually know about what your friends of other religions believe, and where did you learn it?",
+      "do": "Ask a friend of another religion one honest question about what they believe and why it matters to them. Listen to the whole answer before you say anything about yours.",
+      "verse": {
+        "ref": "Acts 17:27",
+        "text": "God intended that they would seek Him and perhaps reach out for Him and find Him, though He is not far from each one of us."
+      },
+      "group": {
+        "open": "What religions are represented among your friends?",
+        "discuss": [
+          "Why do you think Paul started with what was true in Athens before he spoke about Jesus?",
+          "Why might saying all religions are the same actually be disrespectful to them?",
+          "How can you believe Jesus is the only way and still be someone your friends trust?"
+        ],
+        "pray": "Those who pray can pray for their friends of other faiths by name, with respect and love. Anyone who doesn't pray can think of one thing they admire in a friend who believes differently."
+      }
+    },
+    {
+      "n": 8,
+      "title": "Staying friends when you disagree",
+      "minutes": 6,
+      "teaching": [
+        "Some of your friends will hear everything you say and still not believe it. That isn't failure. It isn't your job to make anyone believe. Your job is to tell the truth, to listen, and to stay a good friend. Paul wrote, “Let your speech always be gracious, seasoned with salt, so that you may know how to answer everyone” (Colossians 4:6). Gracious comes first. You can disagree about the biggest questions there are and still sit together at lunch and look out for each other. A friendship that lasts through real disagreement may say more about Jesus than any argument you win."
+      ],
+      "open": {
+        "kind": "howto",
+        "label": "How to Disagree Without Losing the Relationship",
+        "href": "/how-tos/wn-how-to-disagree-without-losing-the-relationship",
+        "why": "How to hold a real difference with someone you care about without the friendship turning into a fight."
+      },
+      "also": [
+        {
+          "kind": "howto",
+          "label": "How to Pray for People Who Do Not Believe",
+          "href": "/how-tos/wn-how-to-pray-for-people-who-do-not-believe",
+          "why": "How to pray for friends who don't share your faith, for their good and not as a way to win them."
+        },
+        {
+          "kind": "track",
+          "label": "The tracks",
+          "href": "/tracks",
+          "why": "The rest of the Academy: whole books of the Bible, church history, hard questions and doctrine, a few minutes at a time."
+        }
+      ],
+      "question": "Which friendship do you most want to keep, whatever that friend ends up believing?",
+      "do": "Pray for one friend who doesn't believe, by name, every day this week. Then do one kind thing for them that has nothing to do with faith.",
+      "verse": {
+        "ref": "Colossians 4:5-6",
+        "text": "Act wisely toward outsiders, redeeming the time. Let your speech always be gracious, seasoned with salt, so that you may know how to answer everyone."
+      },
+      "group": {
+        "open": "Have you ever stayed friends with someone you disagreed with about something big? How?",
+        "discuss": [
+          "Why do you think Paul said speech should be gracious before he said it should have answers?",
+          "What's the difference between giving up on a friend and leaving the outcome to God?",
+          "What would help you keep talking about faith after these eight sessions end?"
+        ],
+        "pray": "Those who pray can pray for their friends by name, for the friendships to last, and for honest conversations. Anyone who doesn't pray can name one friend they want to keep, whatever happens."
+      }
+    }
+  ]
+}
