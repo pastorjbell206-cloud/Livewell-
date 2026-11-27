@@ -1,0 +1,297 @@
+<!doctype html>
+<!-- "Copies of copies" (apologetics film 1). One continuous picture in ten scenes: the original page that
+     dissolves, the chain of copies, fifteen centuries of hand copying, words against differences, a field of
+     copies and the one lonely copy of Tacitus, the sorting of differences into four trays, Matthew 24:36 and
+     its two readings, the family tree of copies from Egypt to Gaul, P75 beside Vaticanus, 666 and 616, the
+     honest limits on a timeline, the comparison with other ancient books, what the evidence proves, and
+     the grass that withers beside the word that stands.
+     Words and timing come from script.json and timeline.json. Open with ?t=42 to freeze on second 42. -->
+<html lang="en"><head><meta charset="utf-8"><title>Copies of copies</title></head><body>
+<script src="../lib/engine.js"></script>
+<script>
+Film.make((F) => {
+  const { el, txt, set, op, draw, line, move, clamp, ease, soft, up, span, mix, rng, S, E, TL, world, INK, BONE, WARM, MUTED, STONE, MUSTARD, LINE, CHAR } = F;
+  const PAPER = "#FBF9F5";
+  const CH = Object.fromEntries(TL.chapters.map((c) => [c.id, c]));
+  const CS = (id) => CH[id].start, CE = (id) => CH[id].end;
+  const T = (p, cls, x, y, s, size, anchor, fill) => { const e = txt(p, cls, x, y, s, size, fill ? { fill } : undefined); if (anchor) e.setAttribute("style", (e.getAttribute("style") || "") + `text-anchor:${anchor};`); return e; };
+  const G = (p) => el("g", {}, p || world);
+  // a sheet of writing: rectangle with rows of little word-bars
+  const sheet = (parent, w, h, rows, seed, o = {}) => {
+    const g = G(parent), r = rng(seed), bh = Math.max(2.4, h * 0.03);
+    g._rect = el("rect", { x: -w / 2, y: -h / 2, width: w, height: h, rx: 3, fill: o.fill || PAPER, stroke: INK, "stroke-width": o.sw || 2.2 }, g);
+    const bars = [], pad = w * 0.13;
+    for (let i = 0; i < rows; i++) {
+      const y = -h / 2 + h * 0.16 + i * (h * 0.68 / Math.max(1, rows - 1));
+      let x = -w / 2 + pad; const end = w / 2 - pad - (i === rows - 1 ? w * 0.28 : 0);
+      while (x < end - 5) { const bw = Math.min(end - x, 5 + r() * w * 0.17); const b = el("rect", { x, y: y - bh / 2, width: bw, height: bh, rx: bh / 2, fill: INK }, g); Object.assign(b, { _x: x, _y: y, _w: bw, _row: i }); bars.push(b); x += bw + Math.max(3, w * 0.025); }
+    }
+    g._bars = bars; return g;
+  };
+  const R = rng(23);
+
+  // ================= 1. the objection: the original page dissolves; copies of copies =================
+  const O0 = S("objection", 0), O1 = S("objection", 1), OE = E("objection");
+  const g1 = G(), orig = sheet(g1, 210, 280, 10, 3), ghost = el("rect", { x: -105, y: -140, width: 210, height: 280, rx: 3, fill: "none", stroke: STONE, "stroke-width": 2, "stroke-dasharray": "6 7" }, g1);
+  const origLab = T(g1, "lab", 0, 0, "THE ORIGINAL"), qOrig = T(g1, "disp", 0, 0, "?", 110, null, MUSTARD);
+  const motes = orig._bars.map((b) => ({ b, vx: (R() - 0.3) * 160, vy: -40 - R() * 160, d: R() * 1.2 }));
+  const copies = [0, 1, 2, 3, 4].map((i) => { const s = sheet(g1, 104, 138, 7, 40 + i); s._bars.forEach((b) => { if (R() < 0.05 + i * 0.05) b.setAttribute("fill", MUSTARD); }); return s; });
+  const arrows = [0, 1, 2, 3, 4].map((i) => line(g1, `M${380 + i * 150} 330 H${418 + i * 150}`, { stroke: STONE, "stroke-width": 2.2 }));
+  const copyLab = T(g1, "lab", 760, 470, "COPIES OF COPIES, BY HAND, FOR CENTURIES");
+  const draw1 = (t) => {
+    const v = span(t, 0.2, CS("true") + 0.6, 0.6, 0.8); op(g1, v); if (v <= 0) return;
+    const shift = up(t, O1 - 0.2, 1.4), ox = mix(640, 290, shift), oy = 330;
+    const dis = up(t, OE - 0 > 0 ? E("objection", 0) - 1.6 : 0, 1.0);
+    move(orig, ox, oy + 3 * Math.sin(t * 0.8)); move(ghost, ox, oy); move(qOrig, ox, oy + 36);
+    op(orig._rect, up(t, O0 - 1.4, 0.8) * (1 - dis)); op(ghost, dis);
+    motes.forEach((m) => { const k = clamp((t - (E("objection", 0) - 1.6) - m.d * 0.5) / 2.2); set(m.b, { transform: `translate(${(m.vx * k).toFixed(1)} ${(m.vy * k).toFixed(1)})` }); op(m.b, up(t, O0 - 1.2 + m.b._row * 0.08, 0.5) * (1 - k)); });
+    op(qOrig, up(t, E("objection", 0) - 0.6, 0.7) * (1 - up(t, CS("true"), 0.5)));
+    move(origLab, ox, oy - 168); op(origLab, up(t, O0 - 0.8, 0.6));
+    copies.forEach((c, i) => { const a = O1 + 0.4 + i * 0.75; const k = up(t, a, 0.8); move(c, mix(ox, 470 + i * 150, k), oy + (1 - k) * 0 + 2 * Math.sin(t + i), 1, (i % 2 ? 1 : -1) * (1 + i * 1.2) * k); op(c, k); draw(arrows[i], up(t, a + 0.1, 0.6)); op(arrows[i], k); });
+    op(copyLab, up(t, O1 + 2.4, 0.7));
+  };
+
+  // ================= 2. what's true: fifteen centuries by hand; words against differences =================
+  const T1 = S("true", 1), T2 = S("true", 2), TE = E("true");
+  const g2 = G(), tl = line(g2, "M150 330 H1130", { stroke: LINE, "stroke-width": 3 }), tlFill = el("line", { x1: 150, x2: 150, y1: 330, y2: 330, stroke: INK, "stroke-width": 4, "stroke-linecap": "round" }, g2);
+  const tlL = T(g2, "lab", 150, 378, "WRITTEN · FIRST CENTURY", 15, "start"), tlR = T(g2, "lab", 1130, 378, "1516 · FIRST PRINTED IN GREEK", 15, "end");
+  const tlMid = T(g2, "disp", 640, 232, "copied by hand for nearly 1,500 years", 40);
+  const pages = [...Array(26)].map((_, i) => { const s = sheet(g2, 16, 21, 3, 90 + i, { sw: 1.4 }); s._x = 170 + i * 35.5; return s; });
+  const pen = G(g2); el("path", { d: "M0 0 L-6 -40 Q0 -52 6 -40 Z", fill: INK }, pen); el("line", { x1: 0, y1: -52, x2: 0, y2: -78, stroke: STONE, "stroke-width": 2 }, pen);
+  const press = G(g2); el("rect", { x: -34, y: -64, width: 68, height: 12, fill: INK }, press); el("line", { x1: 0, y1: -110, x2: 0, y2: -64, stroke: INK, "stroke-width": 4 }, press); el("line", { x1: -26, y1: -110, x2: 26, y2: -110, stroke: INK, "stroke-width": 4, "stroke-linecap": "round" }, press);
+  const plate = el("rect", { x: -40, y: -50, width: 80, height: 50, fill: WARM, stroke: INK, "stroke-width": 2 }, press);
+  const SC = 220 / 138000, BX = 200;
+  const g2b = G(), wBar = el("rect", { x: BX, y: 270, height: 26, width: 0, rx: 4, fill: INK }, g2b), dBar = el("rect", { x: BX, y: 390, height: 26, width: 0, rx: 4, fill: MUSTARD }, g2b);
+  const dTail = el("line", { x1: BX + 200000 * SC, x2: BX + 200000 * SC, y1: 403, y2: 403, stroke: MUSTARD, "stroke-width": 26, "stroke-dasharray": "10 8" }, g2b);
+  const wLab = T(g2b, "lab", BX, 254, "WORDS IN THE GREEK NEW TESTAMENT · ABOUT 138,000", 15, "start");
+  const dLab = T(g2b, "lab", BX, 374, "DIFFERENCES AMONG THE COPIES · HUNDREDS OF THOUSANDS", 15, "start");
+  const estLab = T(g2b, "lab", BX + 500000 * SC, 452, "ESTIMATES VARY", 13, "end");
+  const noneLab = T(g2b, "disp", 640, 190, "not one original survives", 44);
+  const draw2 = (t) => {
+    const v = span(t, CS("true") - 0.2, T2 + 0.6, 0.7, 0.7); op(g2, v);
+    if (v > 0) { draw(tl, up(t, CS("true"), 1.2)); const k = up(t, T1 + 0.2, Math.max(2, E("true", 1) - T1 - 1.4)); set(tlFill, { x2: mix(150, 1130, k).toFixed(1) });
+      op(tlL, up(t, CS("true") + 0.6, 0.6)); op(tlR, up(t, E("true", 1) - 1.6, 0.6)); op(tlMid, up(t, T1 + 1.0, 0.8));
+      pages.forEach((p) => { const a = mix(150, 1130, k) > p._x ? 1 : 0; const pk = clamp((mix(150, 1130, k) - p._x) / 30); op(p, pk); move(p, p._x, 296 - 6 * pk + 2 * Math.sin(t * 1.2 + p._x)); });
+      move(pen, mix(150, 1130, k), 312 - 4 * Math.abs(Math.sin(t * 7)) * (k < 1 ? 1 : 0), 1, 18); op(pen, k > 0 && k < 1 ? 1 : up(t, T1 + 0.2, 0.3) * (1 - up(t, E("true", 1) - 0.6, 0.4)));
+      const pr = up(t, E("true", 1) - 1.4, 0.8); move(press, 1130, 314 - 30 * (1 - pr) + 10 * Math.max(0, Math.sin((t - E("true", 1) + 0.6) * 6)) * (t > E("true", 1) - 0.6 && t < E("true", 1) ? 1 : 0)); op(press, pr); }
+    const v2 = span(t, T2 - 0.4, CS("why") + 0.4, 0.6, 0.6); op(g2b, v2);
+    if (v2 > 0) { op(noneLab, up(t, T2, 0.7)); set(wBar, { width: (138000 * SC * up(t, T2 + 2.4, 1.0)).toFixed(1) }); op(wLab, up(t, T2 + 2.2, 0.6));
+      set(dBar, { width: (200000 * SC * up(t, T2 + 3.6, 1.4)).toFixed(1) }); op(dLab, up(t, T2 + 3.4, 0.6));
+      set(dTail, { x2: (BX + mix(200000, 500000, up(t, T2 + 5.0, 1.6)) * SC).toFixed(1) }); op(dTail, up(t, T2 + 5.0, 0.3)); op(estLab, up(t, T2 + 6.2, 0.6)); }
+  };
+
+  // ================= 3. why the number is big: the field of copies, and Tacitus's one =================
+  const W1 = S("why", 1), W2 = S("why", 2), W3 = S("why", 3);
+  const g3 = G(), field = G(g3), COLS = 14, ROWS = 6;
+  const cells = [...Array(COLS * ROWS)].map((_, i) => { const s = sheet(field, 34, 44, 4, 200 + i, { sw: 1.5 }); const c = i % COLS, r = Math.floor(i / COLS); s._c = c; s._r = r; s._x = -COLS * 26 + 26 + c * 52; s._y = -ROWS * 31 + 31 + r * 62; const slip = s._bars[Math.floor(R() * s._bars.length)]; s._slip = slip; s._at = R(); return s; });
+  const fieldLab = T(g3, "lab", 640, 528, "MORE COPIES, MORE SLIPS, AND MORE WAYS TO CATCH THEM");
+  const ntLab = T(g3, "lab", 360, 500, "THE NEW TESTAMENT · THOUSANDS OF COPIES", 15);
+  const tac = sheet(g3, 150, 196, 8, 777), tacSlip = tac._bars[17]; tacSlip.setAttribute("fill", INK);
+  const tacRing = el("rect", { x: tacSlip._x - 8, y: tacSlip._y - 12, width: tacSlip._w + 16, height: 24, rx: 12, fill: "none", stroke: MUSTARD, "stroke-width": 2.4, "stroke-dasharray": "5 5" }, tac);
+  const tacQ = T(tac, "disp", 105, -70, "?", 70, null, MUSTARD);
+  const tacLab = T(g3, "lab", 930, 450, "TACITUS, ANNALS 1–6", 15), tacLab2 = T(g3, "lab", 930, 476, "ONE MEDIEVAL COPY", 15);
+  const scan3 = el("line", { y1: 0, y2: 0, stroke: STONE, "stroke-width": 1.6 }, g3);
+  const draw3 = (t) => {
+    const v = span(t, CS("why") - 0.2, CS("kinds") + 0.4, 0.6, 0.7); op(g3, v); if (v <= 0) return;
+    const sh = up(t, W2 - 0.3, 1.3), sc = mix(1, 0.52, sh);
+    field.setAttribute("transform", `translate(${mix(640, 360, sh).toFixed(1)} ${mix(320, 330, sh).toFixed(1)}) scale(${sc.toFixed(3)})`);
+    cells.forEach((c) => { const a = CS("why") + 0.2 + (c._c + c._r) * 0.06; op(c, up(t, a, 0.5)); move(c, c._x, c._y + 2 * Math.sin(t * 0.9 + c._c * 0.6));
+      const slipOn = up(t, W1 + 0.6 + c._at * 3.2, 0.4); c._slip.setAttribute("fill", slipOn > 0.5 ? MUSTARD : INK); });
+    op(fieldLab, up(t, W1 + 2.0, 0.6) * (1 - sh)); op(ntLab, up(t, W2 + 0.6, 0.6));
+    const tk = up(t, W2 + 0.4, 1.0); op(tac, tk); move(tac, mix(1060, 930, tk), 300 + 3 * Math.sin(t * 0.7)); op(tacLab, up(t, W2 + 1.6, 0.6)); op(tacLab2, up(t, W2 + 2.2, 0.6));
+    const hid = up(t, W3 + 0.6, 0.8); op(tacRing, hid * (0.6 + 0.4 * Math.sin(t * 3))); op(tacQ, up(t, W3 + 1.6, 0.7));
+    const sk = up(t, W3 + 0.3, 3.2), sx = mix(170, 550, sk); set(scan3, { x1: sx.toFixed(1), x2: sx.toFixed(1), y1: 210, y2: 450 }); op(scan3, span(t, W3 + 0.2, CS("kinds"), 0.3, 0.4));
+  };
+
+  // ================= 4. the kinds of difference: four trays =================
+  const K = [0, 1, 2, 3, 4].map((k) => S("kinds", k));
+  const g4 = G(), TX = [250, 510, 770, 1030], TY = 470;
+  const trays = TX.map((x) => line(g4, `M${x - 105} ${TY - 60} V${TY} H${x + 105} V${TY - 60}`, { "stroke-width": 2.5 }));
+  const TL4 = [["SPELLING AND SLIPS"], ["UNSEEN IN ENGLISH"], ["ONE LATE COPY"], ["MEANING, AND A", "REAL CLAIM"]].map((ls, i) => ls.map((s, j) => T(g4, "lab", TX[i], TY + 34 + j * 22, s, 14)));
+  const hopper = line(g4, "M560 128 L720 128 L660 178 L620 178 Z", { "stroke-width": 2.5 });
+  const NB = [150, 66, 22, 2], dots = [];
+  NB.forEach((n, b) => { let row = 0, inRow = 0, perRow = 19; for (let i = 0; i < n; i++) { if (inRow >= perRow) { row++; inRow = 0; perRow = Math.max(3, perRow - 1); }
+    const x = TX[b] - (perRow - 1) * 5 + inRow * 10 + (row % 2) * 2, y = TY - 7 - row * 9.5; inRow++;
+    dots.push({ b, x, y, e: el("circle", { r: 4.3, fill: b === 3 ? MUSTARD : INK }, g4), i, n }); } });
+  const under = T(g4, "disp", 1030, 360, "under 1%", 46, null, MUSTARD), underRing = el("circle", { cx: 1030, cy: 455, r: 18, fill: "none", stroke: MUSTARD, "stroke-width": 3 }, g4);
+  const draw4 = (t) => {
+    const v = span(t, CS("kinds") - 0.2, CS("hard") + 0.3, 0.6, 0.7); op(g4, v); if (v <= 0) return;
+    draw(hopper, up(t, CS("kinds"), 0.8)); trays.forEach((tr, i) => { draw(tr, up(t, K[0] + 0.3 + i * 0.25, 0.8)); TL4[i].forEach((l) => op(l, up(t, K[i + 1] - 0.2, 0.6))); });
+    dots.forEach((d) => { const win = [K[1] + 0.2, K[2] + 0.2, K[3] + 0.2, K[4] + 2.4][d.b], dur = [K[2] - K[1] - 0.8, K[3] - K[2] - 0.8, K[4] - K[3] - 0.8, 1.6][d.b];
+      const a = win + (d.i / d.n) * dur, k = up(t, a, 0.9); op(d.e, k > 0 ? 1 : 0);
+      if (k > 0) { const sx = 640 + (d.i % 5 - 2) * 3, y = mix(170, d.y, k) - Math.sin(k * Math.PI) * 30 * (1 - k); set(d.e, { cx: mix(sx, d.x, ease(k)).toFixed(1), cy: (mix(170, d.y, k * k)).toFixed(1) }); } });
+    op(under, up(t, K[4] + 3.4, 0.7)); const rk = up(t, K[4] + 3.0, 0.8); op(underRing, rk * (0.5 + 0.5 * Math.sin(t * 3))); set(underRing, { r: (14 + 6 * Math.sin(t * 2)).toFixed(1) });
+  };
+
+  // ================= 5. a hard case: Matthew 24:36 =================
+  const H = [0, 1, 2, 3].map((k) => S("hard", k));
+  const g5 = G(), horizon = line(g5, "M180 400 H1100", { stroke: STONE, "stroke-width": 2.5 });
+  const sun = el("path", { d: "M-70 0 A70 70 0 0 1 70 0 Z", fill: MUSTARD, opacity: 0.85 }, g5), sunClip = el("clipPath", { id: "abovehz" }, g5); el("rect", { x: 0, y: 0, width: 1280, height: 400 }, sunClip); sun.setAttribute("clip-path", "url(#abovehz)");
+  const rays = [...Array(9)].map((_, i) => line(g5, `M${640 + Math.cos(Math.PI + (i + 1) * Math.PI / 10) * 96} ${400 + Math.sin(Math.PI + (i + 1) * Math.PI / 10) * 96} L${640 + Math.cos(Math.PI + (i + 1) * Math.PI / 10) * 128} ${400 + Math.sin(Math.PI + (i + 1) * Math.PI / 10) * 128}`, { stroke: MUSTARD, "stroke-width": 2.5 }));
+  const vG = G(g5), VL = ["No one knows about that day or hour,", "not even the angels in heaven, |nor the Son,|", "but only the Father."];
+  const vLines = VL.map((s, i) => { const e = el("text", { class: "disp", x: 640, y: 200 + i * 54, style: "font-size:42px;" }, vG); s.split("|").forEach((part, j) => { if (!part) return; const ts = el("tspan", j === 1 ? { style: `fill:${MUSTARD};` } : {}, e); ts.textContent = part; }); return e; });
+  const vRef = T(vG, "lab", 640, 350, "MATTHEW 24:36 · BEREAN STANDARD BIBLE", 15);
+  const stripA = G(g5), stripB = G(g5);
+  const mkStrip = (g, withPhrase) => { el("rect", { x: -300, y: -34, width: 600, height: 68, rx: 4, fill: PAPER, stroke: INK, "stroke-width": 2.2 }, g); const ws = [44, 30, 52, 36, 40, 48, 34]; let x = -270; const out = [];
+    ws.forEach((w, i) => { if (i === 4) { if (withPhrase) out.push(el("rect", { x, y: -6, width: 96, height: 12, rx: 6, fill: MUSTARD }, g)); else out.push(el("rect", { x, y: -14, width: 96, height: 28, rx: 6, fill: "none", stroke: STONE, "stroke-width": 2, "stroke-dasharray": "5 5" }, g)); x += 108; }
+      el("rect", { x, y: -6, width: w, height: 12, rx: 6, fill: INK }, g); x += w + 12; }); return out[0]; };
+  const phA = mkStrip(stripA, true), phB = mkStrip(stripB, false);
+  const labA = T(g5, "lab", 0, 0, "THE OLDEST COPIES", 15), labB = T(g5, "lab", 0, 0, "MANY LATER COPIES", 15);
+  const bothArc = line(g5, "M376 340 C300 380 300 440 376 480", { stroke: MUSTARD, "stroke-width": 2.5 }), bothLab = T(g5, "lab", 290, 416, "BOTH SURVIVE", 15, "end", MUSTARD);
+  const draw5 = (t) => {
+    const v = span(t, CS("hard") - 0.2, CS("tree") + 0.3, 0.6, 0.7); op(g5, v); if (v <= 0) return;
+    const hz = 1 - up(t, H[1] - 0.4, 0.8); draw(horizon, up(t, CS("hard"), 1.2)); op(horizon, hz);
+    const rise = up(t, H[0] + 0.6, 3.5); move(sun, 640, 400 + 70 * (1 - rise)); op(sun, hz); rays.forEach((r, i) => { draw(r, up(t, H[0] + 2.4 + i * 0.12, 0.6)); op(r, hz * (0.6 + 0.4 * Math.sin(t * 1.5 + i))); });
+    const vin = up(t, H[1] - 0.2, 0.8), vup = up(t, H[2] - 0.3, 1.0);
+    vLines.forEach((l, i) => op(l, up(t, H[1] + i * 1.1, 0.7))); op(vRef, up(t, H[1] + 3.2, 0.7));
+    vG.setAttribute("transform", `translate(640 ${mix(30, 6, vup).toFixed(1)}) scale(${mix(1, 0.72, vup).toFixed(3)}) translate(-640 0)`); op(vG, vin);
+    const sa = up(t, H[2] + 0.4, 0.9), sb = up(t, H[2] + 3.2, 0.9);
+    move(stripA, mix(700, 680, sa), 340); op(stripA, sa); move(stripB, mix(700, 680, sb), 480); op(stripB, sb);
+    move(labA, 680, 292); op(labA, sa); move(labB, 680, 432); op(labB, sb);
+    op(phB, sb * (0.55 + 0.45 * Math.sin(t * 2.6)));
+    draw(bothArc, up(t, H[3] + 1.6, 1.0)); op(bothArc, up(t, H[3] + 1.5, 0.3)); op(bothLab, up(t, H[3] + 2.3, 0.6));
+  };
+
+  // ================= 6. not a whisper: the family tree, P75 and Vaticanus, 666 =================
+  const Rr = [0, 1, 2, 3, 4, 5].map((k) => S("tree", k));
+  const g6 = G(), ROWX = (i) => 280 + i * 120;
+  const wDots = [...Array(7)].map(() => el("circle", { r: 13, fill: INK }, g6));
+  const wArcs = [...Array(6)].map((_, i) => line(g6, `M${ROWX(i)} 350 Q${ROWX(i) + 60} 395 ${ROWX(i + 1)} 350`, { stroke: STONE, "stroke-width": 2 }));
+  const whLab = T(g6, "lab", 640, 430, "ONE WHISPER · ONE LINE · NO WAY TO CHECK");
+  const SRC = { x: 760, y: 345 }, REG = [["GAUL", 300, 190], ["ITALY", 520, 260], ["SYRIA", 1040, 250], ["EGYPT", 880, 500]];
+  const tNodes = [], tEdges = [];
+  const addEdge = (a, b, at, branch) => { const mx = (a.x + b.x) / 2, my = (a.y + b.y) / 2 - 20; const e = line(g6, `M${a.x} ${a.y} Q${mx} ${my} ${b.x} ${b.y}`, { stroke: LINE, "stroke-width": 2 }); tEdges.push({ e, at, branch }); };
+  const src = { ...SRC, at: 0, branch: -1, e: el("circle", { r: 14, fill: INK }, g6) }; tNodes.push(src);
+  REG.forEach(([name, x, y], b) => { const n = { x, y, at: 0.2 + b * 0.25, branch: b, e: el("circle", { r: 10, fill: INK }, g6), lab: T(g6, "lab", x, y - 22, name, 14) }; tNodes.push(n); addEdge(src, n, n.at, b);
+    for (let j = 0; j < 3; j++) { const ang = Math.atan2(y - SRC.y, x - SRC.x) + (j - 1) * 0.55; const c = { x: x + Math.cos(ang) * 78, y: y + Math.sin(ang) * 62, at: n.at + 0.6 + j * 0.15, branch: b, kid: true, e: el("circle", { r: 7, fill: INK }, g6) }; tNodes.push(c); addEdge(n, c, c.at, b); } });
+  const slipRing = el("circle", { r: 46, fill: "none", stroke: MUSTARD, "stroke-width": 2.5, "stroke-dasharray": "6 6" }, g6), slipLab = T(g6, "lab", 1040, 140, "A SLIP IN ONE BRANCH", 14, null, MUSTARD);
+  const otherLab = T(g6, "lab", 420, 420, "THE OTHER BRANCHES DISAGREE WITH IT", 14);
+  const g6b = G(), p75 = sheet(g6b, 220, 280, 9, 501), vat = sheet(g6b, 220, 280, 9, 501);
+  const match = p75._bars.filter((_, i) => i % 5 === 2).map((b) => line(g6b, "M0 0 L1 0", { stroke: MUSTARD, "stroke-width": 1.4, "stroke-dasharray": "0.02 0.02" }));
+  const pLab = T(g6b, "lab", 400, 500, "P75 · ABOUT AD 200", 15), vLab = T(g6b, "lab", 880, 500, "CODEX VATICANUS · 300s", 15), centLab = T(g6b, "disp", 640, 162, "more than a century apart", 40);
+  const g6c = G(), revs = [0, 1, 2].map((i) => sheet(g6c, 150, 196, 7, 610 + i)), nums = ["666", "666", "616"].map((s, i) => T(g6c, "disp", 0, 0, s, 64, null, i === 2 ? STONE : INK));
+  const oldLab = T(g6c, "lab", 520, 526, "THE OLDEST COPIES", 15), iren = T(g6c, "lab", 640, 172, "IRENAEUS · ABOUT AD 180", 15);
+  const lens = G(g6c); el("circle", { r: 40, fill: "none", stroke: INK, "stroke-width": 4 }, lens); el("line", { x1: 28, y1: 28, x2: 62, y2: 62, stroke: INK, "stroke-width": 7, "stroke-linecap": "round" }, lens);
+  const draw6 = (t) => {
+    const v = span(t, CS("tree") - 0.2, Rr[3] + 0.3, 0.6, 0.8); op(g6, v);
+    if (v > 0) {
+      const gather = up(t, Rr[1] - 0.2, 1.2), hop = (Rr[1] - Rr[0] - 1.6) / 6;
+      wDots.forEach((d, i) => { const hk = clamp(1 - Math.abs(t - (Rr[0] + 0.8 + i * hop)) / 0.45); set(d, { cx: mix(ROWX(i), SRC.x, gather).toFixed(1), cy: mix(350, SRC.y, gather).toFixed(1), r: (13 + 3 * ease(hk)).toFixed(1) }); op(d, up(t, CS("tree") + i * 0.1, 0.5) * (1 - up(t, Rr[1] + 0.4, 0.5))); });
+      wArcs.forEach((a, i) => { draw(a, up(t, Rr[0] + 0.8 + i * hop, hop)); op(a, 1 - gather); }); op(whLab, span(t, Rr[0] + 1.5, Rr[1], 0.5));
+      const T0 = Rr[1] + 0.6, slip = up(t, Rr[2] + 0.4, 0.8);
+      tNodes.forEach((n) => { const k = up(t, T0 + n.at * 2.2, 0.5); op(n.e, k); set(n.e, { cx: n.x, cy: (n.y + 2 * Math.sin(t + n.x)).toFixed(1) }); if (n.lab) op(n.lab, k);
+        const isSlip = n.branch === 2 && (n.kid || n.at) && t > Rr[2] + 0.4 + (n.kid ? 0.9 : 0); n.e.setAttribute("fill", isSlip ? MUSTARD : INK); });
+      tEdges.forEach((ed) => { draw(ed.e, up(t, T0 + ed.at * 2.2 - 0.3, 0.7)); ed.e.setAttribute("stroke", ed.branch === 2 && t > Rr[2] + 0.6 ? MUSTARD : LINE); });
+      set(slipRing, { cx: 1040, cy: 250 }); op(slipRing, up(t, Rr[2] + 1.6, 0.6) * (0.6 + 0.4 * Math.sin(t * 3))); op(slipLab, up(t, Rr[2] + 1.8, 0.6)); op(otherLab, up(t, Rr[2] + 3.4, 0.6));
+    }
+    const v2 = span(t, Rr[3] - 0.3, Rr[4] + 0.3, 0.7, 0.7); op(g6b, v2);
+    if (v2 > 0) { const k = up(t, Rr[3] - 0.2, 1.1); move(p75, mix(640, 400, k), 330 + 2 * Math.sin(t)); move(vat, mix(640, 880, k), 330 + 2 * Math.sin(t + 1));
+      p75._bars.filter((_, i) => i % 5 === 2).forEach((b, i) => { const m = match[i]; m.setAttribute("d", `M${400 + b._x + b._w} ${330 + b._y} L${880 + b._x} ${330 + b._y}`); draw(m, up(t, Rr[3] + 2.4 + i * 0.12, 0.8)); });
+      op(pLab, up(t, Rr[3] + 0.8, 0.6)); op(vLab, up(t, Rr[3] + 2.0, 0.6)); op(centLab, up(t, Rr[3] + 3.6, 0.8)); }
+    const v3 = span(t, Rr[4] - 0.3, CS("limits") + 0.3, 0.7, 0.7); op(g6c, v3);
+    if (v3 > 0) { [[400, 0], [640, 0.5], [880, 1.0]].forEach(([x, d], i) => { const k = up(t, Rr[4] + 0.3 + d, 0.7); move(revs[i], x, 320 + 10 * (1 - k)); op(revs[i], k); move(nums[i], x, 482); op(nums[i], up(t, Rr[4] + 1.6 + i * 0.5, 0.6)); });
+      op(oldLab, up(t, Rr[4] + 3.4, 0.6)); op(iren, up(t, Rr[4] + 0.4, 0.6));
+      const lk = up(t, Rr[5] - 0.2, 2.6); move(lens, mix(330, 960, lk), 300 + 30 * Math.sin(lk * Math.PI * 2)); op(lens, up(t, Rr[5] - 0.3, 0.4)); }
+  };
+
+  // ================= 7. the honest limits, on a timeline =================
+  const L = [0, 1, 2, 3].map((k) => S("limits", k));
+  const g7 = G(), YX = (y) => 160 + (y - 40) * (960 / 360), TLY = 420;
+  const tl7 = line(g7, `M${YX(40)} ${TLY} H${YX(400)}`, { "stroke-width": 3 });
+  const ticks7 = [100, 200, 300, 400].map((y) => { const g = G(g7); el("line", { x1: YX(y), x2: YX(y), y1: TLY - 7, y2: TLY + 7, stroke: INK, "stroke-width": 2 }, g); T(g, "lab", YX(y), TLY + 34, `AD ${y}`, 14); return g; });
+  const fog = el("rect", { x: YX(45), y: TLY - 150, width: YX(150) - YX(45), height: 150, fill: MUTED, opacity: 0.6 }, g7);
+  const fogLab = T(g7, "lab", (YX(45) + YX(150)) / 2, TLY - 164, "THE FIRST STRETCH · UNSEEN", 13);
+  const frag = G(g7); el("path", { d: "M-16 -20 L14 -22 L18 4 L8 20 L-14 18 L-20 -2 Z", fill: WARM, stroke: INK, "stroke-width": 2 }, frag);
+  const whisk = el("line", { x1: YX(125), x2: YX(250), y1: TLY - 60, y2: TLY - 60, stroke: STONE, "stroke-width": 2.5 }, g7);
+  const fragLab = T(g7, "lab", YX(190), TLY - 96, "EARLIEST PIECES · DATES ARGUED", 13);
+  const card = G(g7); el("rect", { x: -88, y: -30, width: 176, height: 60, rx: 6, fill: PAPER, stroke: INK, "stroke-width": 2 }, card); T(card, "lab", 0, -6, "A FRAGMENT", 13); T(card, "lab", 0, 16, "OF MARK", 13);
+  const ann = T(g7, "lab", YX(70), 200, "ANNOUNCED: FIRST CENTURY", 14), pub = T(g7, "lab", YX(200), 200, "PUBLISHED: LATE 2ND OR EARLY 3RD", 14), sorry = T(g7, "disp", 640, 150, "and he apologized in public", 38);
+  const lanes = [0, 1, 2, 3].map((i) => line(g7, `M${YX(60)} ${TLY - 75} C${YX(110)} ${TLY - 75} ${YX(110)} ${TLY - 130 + i * 37} ${YX(170)} ${TLY - 130 + i * 37} H${YX(400)}`, { stroke: INK, "stroke-width": 3 }));
+  const lanesM = [0, 1, 2, 3].map((i) => line(g7, `M${YX(60)} ${TLY - 75} C${YX(110)} ${TLY - 75} ${YX(110)} ${TLY - 130 + i * 37} ${YX(170)} ${TLY - 130 + i * 37} H${YX(400)}`, { stroke: MUSTARD, "stroke-width": 5 }));
+  const possible = T(g7, "disp", 640, 180, "possible, but not the likeliest story", 38);
+  const draw7 = (t) => {
+    const v = span(t, CS("limits") - 0.2, CS("compare") + 0.3, 0.6, 0.7); op(g7, v); if (v <= 0) return;
+    draw(tl7, up(t, CS("limits"), 1.4)); ticks7.forEach((g, i) => op(g, up(t, CS("limits") + 0.4 + i * 0.2, 0.5)));
+    const s2 = 1 - up(t, L[3] - 0.4, 0.6);
+    op(fog, up(t, L[1] + 3.0, 1.0) * 0.6); op(fogLab, up(t, L[1] + 3.6, 0.6));
+    const fk = up(t, L[1] + 0.2, 0.8); move(frag, YX(190), TLY - 60 + 3 * Math.sin(t)); op(frag, fk * s2); draw; set(whisk, { x1: mix(YX(190), YX(125), up(t, L[1] + 1.0, 0.8)).toFixed(1), x2: mix(YX(190), YX(250), up(t, L[1] + 1.0, 0.8)).toFixed(1) }); op(whisk, fk * s2); op(fragLab, up(t, L[1] + 1.4, 0.6) * s2);
+    const ck = up(t, L[2] + 0.4, 0.7), mv = up(t, L[2] + 4.0, 1.6); move(card, mix(YX(70), YX(200), mv), 260); op(card, ck * s2);
+    op(ann, span(t, L[2] + 1.6, L[2] + 4.6, 0.6)); op(pub, up(t, L[2] + 5.0, 0.6) * s2); op(sorry, up(t, E("limits", 2) - 2.4, 0.8) * s2);
+    const lk = up(t, L[3] + 0.2, 1.2); lanes.forEach((l) => { draw(l, lk); op(l, lk > 0 ? 1 : 0); });
+    lanesM.forEach((l, i) => { draw(l, up(t, L[3] + 2.0 + i * 0.4, 2.2) * (i === 2 ? 0.45 : 1)); op(l, up(t, L[3] + 2.0, 0.3)); });
+    op(possible, up(t, E("limits") - 3.2, 0.8));
+  };
+
+  // ================= 8. beside other ancient books =================
+  const C = [0, 1, 2, 3].map((k) => S("compare", k));
+  const g8 = G(), BX8 = 470, NS8 = 540 / 10000;
+  const head1 = T(g8, "lab", 160, 160, "HANDWRITTEN COPIES THAT SURVIVE", 14, "start", INK);
+  const rowsN = [["TACITUS, ANNALS 1–6", 1, "1"], ["HOMER, ILIAD", 1757, "ABOUT 1,750"], ["NEW TESTAMENT, GREEK", 5100, "MORE THAN 5,000"], ["NEW TESTAMENT, LATIN", 10000, "MORE THAN 10,000"]];
+  const nRows = rowsN.map(([name, n, val], i) => { const y = 200 + i * 40; return { n, name: T(g8, "lab", BX8 - 16, y + 5, name, 13, "end"), bar: el("rect", { x: BX8, y: y - 8, height: 16, rx: 3, width: 0, fill: i >= 2 ? MUSTARD : INK }, g8), val: T(g8, "lab", 0, y + 5, val, 13, "start", INK) }; });
+  const head2 = T(g8, "lab", 160, 400, "YEARS FROM WRITING TO THE FIRST FULL COPIES", 14, "start", INK);
+  const YS8 = 0.66, gRows = [["CAESAR, THE GALLIC WAR", 900, "ABOUT 900 YEARS"], ["NEW TESTAMENT", 275, "ABOUT 250 TO 300 YEARS"]].map(([name, yrs, val], i) => { const y = 440 + i * 40; return { yrs, name: T(g8, "lab", BX8 - 16, y + 5, name, 13, "end"), bar: el("rect", { x: BX8, y: y - 8, height: 16, rx: 3, width: 0, fill: i ? MUSTARD : INK }, g8), val: T(g8, "lab", 0, y + 5, val, 13, "start", INK) }; });
+  const fragTicks = el("circle", { r: 6, cy: 480, fill: CHAR }, g8), fragNote = T(g8, "lab", 0, 518, "EARLIEST FRAGMENTS SOONER", 12, "start");
+  const draw8 = (t) => {
+    const v = span(t, CS("compare") - 0.2, CS("proves") + 0.3, 0.6, 0.7); op(g8, v); if (v <= 0) return;
+    op(head1, up(t, C[0] + 0.4, 0.6)); op(head2, up(t, C[2] - 0.2, 0.6));
+    const at = [C[0] + 1.2, C[1] + 0.6, C[3] + 2.6, C[3] + 3.6];
+    nRows.forEach((r, i) => { const k = up(t, at[i], 1.3), w = Math.max(4, r.n * NS8) * k; set(r.bar, { width: w.toFixed(1) }); op(r.bar, k > 0 ? 1 : 0); op(r.name, up(t, at[i] - 0.3, 0.5)); op(r.val, up(t, at[i] + 0.9, 0.5)); r.val.setAttribute("x", (BX8 + w + 12).toFixed(1)); });
+    const gat = [C[2] + 0.6, C[3] + 4.8];
+    gRows.forEach((r, i) => { const k = up(t, gat[i], 1.4), w = r.yrs * YS8 * k; set(r.bar, { width: w.toFixed(1) }); op(r.bar, k > 0 ? 1 : 0); op(r.name, up(t, gat[i] - 0.3, 0.5)); op(r.val, up(t, gat[i] + 1.0, 0.5)); r.val.setAttribute("x", (BX8 + w + 12).toFixed(1)); });
+    set(fragTicks, { cx: BX8 + 140 * YS8 }); op(fragTicks, up(t, C[3] + 6.4, 0.5) * 0); op(fragNote, 0);
+  };
+
+  // ================= 9. what this proves =================
+  const P = [0, 1, 2].map((k) => S("proves", k));
+  const g9 = G(), big = sheet(g9, 300, 380, 14, 909);
+  const unsure = [big._bars[9], big._bars[23], big._bars[41]].filter(Boolean);
+  const unsureBox = unsure.map((b) => el("rect", { x: b._x - 6, y: b._y - 10, width: b._w + 12, height: 20, rx: 10, fill: "none", stroke: MUSTARD, "stroke-width": 2, "stroke-dasharray": "4 4" }, big));
+  const sureLab = T(g9, "lab", 0, 0, "KNOWN WITH HIGH CONFIDENCE", 14, "end"), markLab = T(g9, "lab", 0, 0, "UNSURE, AND MARKED", 14, "start", MUSTARD);
+  const ehr = T(g9, "lab", 640, 134, "EVEN THE SKEPTIC WHO MADE THE NUMBER FAMOUS:", 14), ehr2 = T(g9, "ital", 640, 176, "the essential beliefs don't rest on a disputed reading", 34);
+  const path9 = line(g9, "M560 330 C700 250 860 250 980 330", { stroke: STONE, "stroke-width": 2.5, "stroke-dasharray": "0.02 0.025" });
+  const stop2 = el("circle", { cx: 1010, cy: 340, r: 52, fill: "none", stroke: INK, "stroke-width": 3 }, g9), stopQ = T(g9, "disp", 1010, 364, "?", 70, null, MUSTARD);
+  const sLab1 = T(g9, "lab", 0, 0, "WHAT IT SAYS", 14), sLab2 = T(g9, "lab", 1010, 432, "DID IT HAPPEN?", 14);
+  const walker9 = el("circle", { r: 9, fill: INK }, g9);
+  const draw9 = (t) => {
+    const v = span(t, CS("proves") - 0.2, CS("close") + 0.3, 0.6, 0.7); op(g9, v); if (v <= 0) return;
+    const sl = up(t, P[2] - 0.2, 1.2), shr = up(t, P[1] - 0.4, 0.9), bx = mix(640, 400, sl), by = mix(340, 380, shr) - 40 * sl;
+    move(big, bx, by + 2 * Math.sin(t * 0.8), mix(mix(1, 0.78, shr), 0.62, sl)); op(big, up(t, CS("proves"), 0.7));
+    big._bars.forEach((b, i) => op(b, up(t, CS("proves") + 0.2 + i * 0.015, 0.4)));
+    unsure.forEach((b) => b.setAttribute("opacity", t > P[0] + 4.2 ? "0.25" : "1"));
+    unsureBox.forEach((b, i) => op(b, up(t, P[0] + 4.0 + i * 0.3, 0.5) * (1 - sl)));
+    move(sureLab, bx - 170, by - 40); op(sureLab, span(t, P[0] + 2.0, P[2], 0.6)); move(markLab, bx + 170, by + 20); op(markLab, span(t, P[0] + 5.0, P[2], 0.6));
+    op(ehr, span(t, P[1] + 0.4, P[2] + 0.2, 0.6)); op(ehr2, span(t, P[1] + 1.6, P[2] + 0.2, 0.7));
+    draw(path9, up(t, P[2] + 1.6, 1.4)); op(path9, up(t, P[2] + 1.5, 0.3)); op(stop2, up(t, P[2] + 2.6, 0.6)); op(stopQ, up(t, P[2] + 3.0, 0.6));
+    move(sLab1, bx, 500); op(sLab1, up(t, P[2] + 0.8, 0.6)); op(sLab2, up(t, P[2] + 3.2, 0.6));
+    const wk = up(t, P[2] + 3.6, 2.4), wx = mix(560, 980, wk), wy = 330 - Math.sin(wk * Math.PI) * 60; set(walker9, { cx: wx.toFixed(1), cy: wy.toFixed(1) }); op(walker9, up(t, P[2] + 3.4, 0.4));
+  };
+
+  // ================= 10. the grass withers; the word stands =================
+  const Z = [0, 1].map((k) => S("close", k)), END = F.VOICE_END;
+  const g10 = G(), ground = line(g10, "M140 470 H1140", { "stroke-width": 2.5 });
+  const blades = [...Array(46)].map((_, i) => { const x = 160 + i * 21.5 + (R() - 0.5) * 8; if (x > 560 && x < 720) return null; const h = 40 + R() * 46; return { x, h, d: R(), e: el("path", { stroke: "#7A8B5A", "stroke-width": 2.4, "stroke-linecap": "round", fill: "none" }, g10) }; }).filter(Boolean);
+  const flowers = [0, 1, 2, 3, 4, 5].map((i) => { const x = [230, 340, 480, 800, 930, 1070][i]; const g = G(g10); const petals = [0, 1, 2, 3, 4].map((k) => el("circle", { r: 6, fill: MUSTARD }, g)); el("circle", { r: 4, fill: CHAR }, g); return { x, g, petals, h: 70 + R() * 20, d: R() }; });
+  const pageD = (s) => `M0 -50 C${-40 * s} -70 ${-110 * s} -70 ${-150 * s} -55 L${-150 * s} 55 C${-110 * s} 40 ${-40 * s} 40 0 60 Z`;
+  const book = G(g10), pgL = el("path", { d: pageD(1), fill: PAPER, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, book), pgR = el("path", { d: pageD(-1), fill: PAPER, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, book);
+  const bLines = []; [1, -1].forEach((s) => [-28, -10, 8, 26].forEach((dy) => bLines.push(line(book, `M${-22 * s} ${dy - 8} C${-60 * s} ${dy - 20} ${-100 * s} ${dy - 20} ${-132 * s} ${dy - 10}`, { stroke: STONE, "stroke-width": 2.2 }))));
+  const verse = [T(g10, "disp", 640, 166, "The grass withers and the flowers fall,", 40), T(g10, "disp", 640, 214, "but the word of our God stands forever.", 40)];
+  const zRef = T(g10, "lab", 640, 254, "ISAIAH 40:8 · BEREAN STANDARD BIBLE", 14);
+  const draw10 = (t) => {
+    const v = span(t, CS("close") - 0.2, END + 2.5, 0.7, 0.9); op(g10, v); if (v <= 0) return;
+    draw(ground, up(t, CS("close"), 1.2));
+    const wither = up(t, Z[0] + 1.6, 3.4);
+    blades.forEach((b) => { const g = up(t, CS("close") + 0.2 + b.d * 0.8, 0.9), w = clamp(wither * 1.3 - b.d * 0.3), sway = 4 * Math.sin(t * 1.4 + b.x) * (1 - w), h = b.h * g * mix(1, 0.55, w), bend = mix(sway, 22 + b.d * 10, w);
+      b.e.setAttribute("d", `M${b.x} 470 Q${(b.x + bend * 0.3).toFixed(1)} ${(470 - h * 0.6).toFixed(1)} ${(b.x + bend).toFixed(1)} ${(470 - h).toFixed(1)}`); b.e.setAttribute("stroke", w > 0.5 ? "#B8AF98" : "#7A8B5A"); op(b.e, g); });
+    flowers.forEach((f) => { const g = up(t, CS("close") + 0.4 + f.d, 0.9); op(f.g, g); move(f.g, f.x, 470 - f.h * g);
+      f.petals.forEach((p, k) => { const a = k * Math.PI * 2 / 5 + t * 0.2, fall = clamp(wither * 1.4 - k * 0.12 - f.d * 0.2); set(p, { cx: (Math.cos(a) * 9 + fall * (8 + k * 5)).toFixed(1), cy: (Math.sin(a) * 9 + fall * fall * (f.h + 0)).toFixed(1) }); op(p, 1 - up(fall, 0.85, 0.15)); }); });
+    move(book, 640, 400 + 2 * Math.sin(t * 0.8), mix(0.6, 0.95, up(t, CS("close") + 0.4, 1.4))); op(book, up(t, CS("close") + 0.4, 0.8));
+    bLines.forEach((l, i) => { draw(l, up(t, CS("close") + 1.0 + i * 0.07, 0.6)); l.setAttribute("stroke", t > Z[1] + 0.6 + i * 0.12 ? MUSTARD : STONE); });
+    verse.forEach((l, i) => op(l, up(t, Z[0] + i * 2.4, 0.8))); op(zRef, up(t, Z[0] + 4.2, 0.7));
+  };
+
+  F.title("Copies of copies");
+  F.endCard(window.SCRIPT.chapters.at(-1).titleCard, END + 0.9);
+  return (t) => { draw1(t); draw2(t); draw3(t); draw4(t); draw5(t); draw6(t); draw7(t); draw8(t); draw9(t); draw10(t); };
+});
+</script>
+</body></html>

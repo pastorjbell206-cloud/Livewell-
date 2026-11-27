@@ -1,0 +1,56 @@
+# In Christ: the facts in the script, and where each comes from
+
+Every fact below is taken from the Study Bible's doctrine page on union with Christ, `client/public/bible/doctrines/union.json` (page `/study/bible/doctrines/union`). Section names are the file's own fields: definition, ot, nt, keyTexts, history, differ, errors, life. Nothing in the film comes from anywhere else, apart from the two verses, which are copied from the Berean Standard Bible files.
+
+| Line | Fact | Source |
+|---|---|---|
+| "you keep running into a small phrase. In Christ." | The New Testament's most common way of saying this is a small phrase: a believer is "in Christ". | definition |
+| "A Christian isn't only helped by Jesus from a distance. A Christian is joined to him." | A Christian is not only helped by Christ from a distance but joined to him. | definition |
+| "What's true of him becomes true of them. They died with him, were raised with him, and will appear with him." | What is true of Christ becomes true of those who belong to him: they died with him, were raised with him, are hidden in him, and will appear with him. | definition |
+| "The Holy Spirit makes that bond, and faith receives it." | The bond is made by the Holy Spirit and received by faith. | definition; nt ("The bond is the Holy Spirit") |
+| "Paul uses it, and close cousins like in him, all through his letters." | "In Christ" and its close relatives ("in Christ Jesus", "in the Lord", "in him") run through Paul's letters. | definition |
+| "In 1892 the scholar Adolf Deissmann counted a hundred and sixty-four of them." | Deissmann counted 164 occurrences in his 1892 study of the formula. The picture's label says "Adolf Deissmann · 1892"; the film calls him "the scholar", not "German scholar", to save words. | definition |
+| "He also reaches for words that mean with. Crucified with. Buried with. Raised with." | Paul gathers verbs with the prefix syn-, "with": crucified with (Romans 6:6), buried with (Romans 6:4), raised with (Colossians 3:1). The picture's label: "The Greek prefix syn- means with". | definition |
+| "The Old Testament never says this outright. It gives the ground the idea grows from." | The Old Testament has no doctrine of union with the Messiah stated in so many words; it gives the ground from which the New Testament teaching grows. | ot |
+| "A God who makes his home in the middle of his people." | God's presence lived in the tabernacle and the temple, in the middle of the camp and the city (Leviticus 26:12). The picture labels it "The tabernacle". | ot |
+| "A Hebrew word for clinging, used when husband and wife become one flesh." | Hebrew dabaq, "to cling" or "hold fast", used of a husband joined to his wife (Genesis 2:24). The picture's label: "Dabaq · to cling", "One flesh". | definition; ot |
+| "The prophets made that bond a picture of God's love." | The prophets take the marriage bond as the image of God's covenant love (Isaiah 54:5, Jeremiah 31:32, Hosea 2:19). | ot |
+| "And one standing for many, the way Adam's choice reached the whole human race." | A pattern in which one person stands for many; Adam's act affects the whole race that comes from him. The film says "choice" for the file's "act". | ot |
+| "Israel had been God's vine. Jesus took the picture for himself." | Israel is God's vine (Psalm 80:8; Isaiah 5:1-7), an image Jesus claims for himself; "the true vine" (John 15:1). | ot; nt |
+| John 15:5, spoken | "I am the vine and you are the branches..." | nt; keyTexts (John 15:1-11) |
+| "Belonging to God's people now means being a branch in him." | Belonging to God's people means being a branch in him. | nt |
+| "Later the risen Jesus asked Saul, who was persecuting the church, why Saul was persecuting him." | On the Damascus road the risen Lord asks the persecutor of the church, "Saul, Saul, why do you persecute Me?" (Acts 9:4). Paraphrased, not quoted. The picture's label: "The road to Damascus". | nt; keyTexts (Acts 9:1-5) |
+| "To strike the church is to strike Christ." | The file's own sentence. | nt |
+| "For Paul, Adam and Christ each stand for a whole humanity. Joined to Adam, people share his death. Joined to Christ, they share his life." | Two representative men (1 Corinthians 15:22, 45; Romans 5:19). "Death comes through union with the first, righteousness and life through union with the second." | nt; keyTexts (Romans 5:12-21) |
+| "Believers were buried with him through baptism, so they could walk in a new life." | Baptized into his death, buried with him, so that "we too may walk in newness of life" (Romans 6:3-4). | nt; keyTexts (Romans 6:3-11) |
+| "Every spiritual blessing is given in him. Chosen in him. Redeemed in him. Sealed with the Spirit in him." | "Every spiritual blessing" in Christ (Ephesians 1:3); in 1:3-14, chosen in him, redeemed in him, sealed with the Spirit in him. | nt; keyTexts (Ephesians 1:3-14) |
+| "And no one is joined to him alone. Together, believers are his body." | "You are the body of Christ" (1 Corinthians 12:27); Paul never speaks of being joined to the head without being joined to the body. | nt; errors; keyTexts (1 Corinthians 12:12-27) |
+| "Around the year 180, Irenaeus taught that Jesus went back over the ground where Adam failed, obeying where Adam disobeyed, so those joined to him share his victory." | Irenaeus of Lyon, Against Heresies, around AD 180: recapitulation. The picture's label: "Irenaeus · about 180". | history |
+| "In his Institutes, John Calvin wrote that as long as Christ stays outside us, all he suffered and did is no use to us." | Calvin, Institutes 3.1.1, final edition 1559. The film says "In 1559" for the final edition. | history; errors |
+| "The Holy Spirit, he said, is the bond that joins us to him." | Same passage: the Holy Spirit is the bond by which Christ unites us to himself. | history |
+| "Christians describe this union in different ways." | Four accounts. | differ |
+| "Reformed Christians say believers receive two gifts in him, never separated. Declared right with God, and made new." | Justification (a legal verdict) and sanctification (a real renewal), distinct gifts never separated. | differ (Reformed) |
+| "Lutherans say Christ comes through Word and sacrament. Luther pictured a joyful exchange. Christ takes the believer's sins and gives his righteousness." | Through Word and sacrament Christ comes to the believer; Luther's joyful exchange (The Freedom of a Christian, 1520): Christ takes the believer's sins, the believer receives Christ's righteousness and life. | differ (Lutheran); history |
+| "Roman Catholics say baptism joins a person to Christ and his body, the church, and the Eucharist feeds that union." | Baptism incorporates a person into Christ and his Body, the church; the union is nourished above all in the Eucharist. | differ (Roman Catholic) |
+| "The Orthodox call it theosis, sharing by grace in God's life, while God's essence stays beyond every creature." | Theosis, being made by grace a partaker of the divine nature; God's essence remains beyond all creatures, his uncreated energies are truly shared. | differ (Eastern Orthodox); history |
+| "Every one of them insists it's by grace. A creature joined to God is still a creature." | "Every tradition that speaks of theosis or mystical union insists that it is by grace, not by nature"; "creatures joined to God remain creatures". The picture's labels: "By grace, not by nature", "A creature stays a creature". | errors; nt |
+| "This changes where a Christian finds who they are." | Union with Christ changes where a person looks for their identity. | life |
+| Colossians 3:3, spoken | "For you died, and your life is now hidden with Christ in God." | life; keyTexts (Colossians 3:1-4) |
+| "Failure and success are real. But they don't define someone whose life is found in another." | "Failure and success, praise and blame, are real, but they do not define someone whose life is found in another." | life |
+| "Suffering isn't proof that God is absent. It can be one of the ways the union is lived." | The file's own sentence, nearly word for word. | life |
+| "And the people beside them at the Lord's Supper, however different, belong to the same body." | Those who share the Supper, however different, are members of the same body. | life |
+| "Even death doesn't break it. Paul calls believers who have died the dead in Christ, still in him, waiting for the resurrection." | The union is not broken by death; "the dead in Christ" (1 Thessalonians 4:16), still in him, awaiting the resurrection. | life |
+| "No part of a Christian's life, not even its end, is outside of Christ." | No part of their life, including its end, is outside of Christ. | life |
+| John 15:5; Colossians 3:3 | Berean Standard Bible, copied character for character. | `client/public/bible/text/john/15.json`, `colossians/3.json` |
+
+## For James
+
+**What the film leaves out on purpose.** Deissmann's own caveat that not every "in Christ" carries the same weight (the file has it; the film keeps only the count). Jeremiah's loincloth picture, the Song of Solomon with Rabbi Akiva and Origen, Daniel's Son of Man and Isaiah's Servant. John 6 (eating his flesh and drinking his blood), because it pulls straight into the Supper debate. John 17, 2 Peter 1:4, Ephesians 5:31-32 and 1 Corinthians 6:15-17. Most of the history: Athanasius, Augustine's "whole Christ", Bernard, Aquinas, Osiander and the Formula of Concord, Westminster, Owen, Palamas by name, Pius XII, the Catechism, and every modern scholar (Schweitzer, Sanders, Gorman, Murray, Gaffin, Fesko, Campbell, Mannermaa). Inside "where Christians differ": the debate within the Reformed camp over order, the Finnish school debate among Lutherans, the Catholic teaching that grave sin can break the union and penance restore it, and the Orthodox judgment on Western debates. From "errors": Eckhart's condemnation and the error of union as an elite technique. The future raising of believers' bodies (Romans 8:11) and Paul's careful tenses are left to the close, which names the resurrection still to come.
+
+**Views named without choosing.** Reformed (two gifts in him, never separated), Lutheran (Christ through Word and sacrament; Luther's joyful exchange), Roman Catholic (baptism joins a person to Christ and his body; the Eucharist feeds the union), Eastern Orthodox (theosis, sharing by grace, God's essence beyond every creature). Each is said in its own terms and gets an identical panel in the picture; none is lit or placed above the others. The line under all four ("by grace") is the file's statement of what every tradition insists on, not a verdict between them.
+
+**In the picture.** Christ is never drawn. He is shown as a ring of light the person is drawn into, a cross, the vine (his own picture), and a beam of light on the Damascus road. The Holy Spirit is shown only as a gold thread, the bond, never as a dove or a figure.
+
+**For you to check.** "In 1559" is the date the file gives for the final edition of the Institutes. "Adam's choice" stands for the file's "Adam's act". The narration runs 599 words, at the top of the 480 to 600 range.
+
+**Names to listen for.** Deissmann (DICE-mahn), Irenaeus (eye-ren-AY-us), theosis (thee-OH-sis), Eucharist, Colossians. On the picture only, not spoken: dabaq, syn-, Damascus.

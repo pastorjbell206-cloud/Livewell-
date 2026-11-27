@@ -40,7 +40,7 @@ export default function RaisingBelievers() {
     <Layout>
       <SEOMeta
         title="Raising Believers: Christian Parenting in a Post-Christian World — by James Bell"
-        description="A pastor and father of five sons on what it actually takes to form faith in children — in the home, the church, and the long obedience of years."
+        description="A pastor and father of five sons on what it actually takes to form faith in children: in the home, in the church, and over the long obedience of years."
         image={`${SITE_URL}${COVER}`}
         url={`${SITE_URL}/books/raising-believers`}
         type="book"

@@ -1,0 +1,44 @@
+# What happens when we die?: the facts in the script, and where each was checked
+
+This film is a rebuild of the Bible Explorer film `client/public/explorer/films/when-we-die.json` (older captions; ledger rows "die 1" to "die 7", "die, care" and "die, left out" in `docs/work/elite/explorer-ledger.md`, section "The films: Why can't I see God?; What happens when we die?; ..."), deepened from the sources below. Nothing was added from outside them:
+
+- OF = the old film, `client/public/explorer/films/when-we-die.json`
+- IS = the Study Bible's study of the intermediate state, `client/public/bible/doctrines/intermediate.json`
+- RS = the study of the resurrection, `client/public/bible/doctrines/resurrection.json`
+- HS = the study of hope, `client/public/bible/doctrines/hope.json`
+- ND = the hard-question page `client/public/questions/science/near-death-experiences.json` (record `docs/work/elite/apol-pilot/science/near-death-experiences.md`; ledger `docs/work/elite/apol-ledger.md`, row "bv")
+- J14 = the Study Bible notes on John 14, `client/public/bible/notes/john/14.json`
+
+## Scripture (Berean Standard Bible)
+
+Each quotation in a `scripture` field was checked word for word against `client/public/bible/text/` by `film/tools/write-script.py` on 2026-11-26. The one quotation inside a line (Luke 23:43) was checked by hand against `client/public/bible/text/luke/23.json`.
+
+- **Psalm 139:8** (spoken): "if I make my bed in Sheol, You are there" (IS "ot", third paragraph, quotes the verse).
+- **1 Thessalonians 4:13** (spoken): "We do not want you to be uninformed about those who sleep in death, so that you will not grieve like the rest, who are without hope." Opens at "we"; "Brothers," left off.
+- **1 Corinthians 15:20** (spoken): "Christ has indeed been raised from the dead, the firstfruits of those who have fallen asleep." Opens after "But".
+- **Luke 23:43** (spoken, inside a caption, not shown as a verse card): "today you will be with Me in Paradise".
+- **Philippians 1:23** (spoken): "I desire to depart and be with Christ, which is far better indeed."
+- **1 Thessalonians 4:14** (spoken): "God will bring with Jesus those who have fallen asleep in Him." (the clause after "we also believe that").
+- **John 14:3** (spoken): "I will come back and welcome you into My presence, so that you also may be where I am." (the clause after "And if I go and prepare a place for you,").
+
+## Claims, by chapter
+
+1. **A big question.** Most people ask it first when death comes close to someone they love; hard to say out loud; the Bible doesn't tell everything but enough to hope: OF frame "question" (older); ledger "die 1".
+2. **Honest about death.** The Bible never pretends death isn't real: OF frame "sad" (older); ledger "die 2". Dust returns to dust: IS "ot" (Genesis 3:19, "The man made from dust returns to dust"); HS "ot". Sheol, the realm of the dead, used about sixty-five times: IS "definition", second paragraph. Several psalms ask who can praise God from Sheol (Psalm 6:5, Psalm 88:11): IS "ot". "The Old Testament does not rush to comfort": HS "ot", first paragraph. Psalm 139:8: IS "ot", third paragraph.
+3. **Not without hope.** Jesus stood at his friend's grave and wept; "Grief is not unbelief": ND "Where Christians differ", quoting the Study Bible's note on John 11 (ledger "bv", row 2). Paul did not tell grieving Christians to stop being sad: OF frame "sad" (older); RS "life"; HS "nt".
+4. **Back from the edge.** People revived after their hearts stopped report leaving their bodies, a light, meeting relatives who had died: ND "question". Raymond Moody, *Life After Life* (1975), many studies since: ND "The objection at its strongest". J. P. Moreland and Gary Habermas, *Beyond Death* (1998), the best-attested cases as evidence a person can survive the body: ND "The objection at its strongest" and "Where Christians differ"; `objectionSource`. The pause is a question only.
+5. **Close to an impasse.** The experiences are real; those who have them aren't lying or foolish: ND "What is true in it". Carol Zaleski, 1987, accounts vary with cultural expectations: ND "The evidence" (the book is named by description only, as the page does; see ledger "bv"). Similar experiences come to people who only believed they were dying: ND shortAnswer and "The evidence". Stanford Encyclopedia's entry on the afterlife: "we may be close to an impasse": ND "The evidence" (quoted there; ledger "bv"). Christians differ and the site takes no side: ND "Where Christians differ".
+6. **Not a glimpse.** Christian hope never rested on them; rests on something of another kind: ND shortAnswer ("Christians should not rest their hope on them, and the faith never has ... something of another kind"). A man certainly dead, executed by Rome, didn't stay dead: ND "The strongest reply, and an answer". The skeptic's reply that Easter is the same kind of story told long ago, granted as a fair question: same section. The earliest summary, which Paul received and passed on, is about events, not visions (died, buried, raised, appeared, 1 Corinthians 15:3-5): same section. Firstfruits: RS "definition".
+7. **The time between.** "Intermediate state", the theologians' term for the condition between death and the resurrection: IS "definition". Paul calls death sleep: IS "nt", third paragraph. Jesus' promise of Paradise "today" to the dying criminal: IS "nt", first paragraph; OF frame "with-him". Philippians 1:23: IS "nt"; IS keyTexts.
+8. **Where Christians differ.** Conscious presence with Christ at rest while the body waits; the Heidelberg Catechism (Question 57) and the Westminster Confession; most Protestant churches: IS "differ" ("Conscious presence with Christ"); IS "history". Catholic teaching of purgatory, a purification after death, which defenders stress is a work of grace: IS "differ" ("Purgatory"). The Orthodox pray for the departed: IS "differ" ("The Eastern Orthodox teaching"). The Reformers rejected purgatory: IS "history", third paragraph. Soul sleep: held by John Milton and the Seventh-day Adventist Church; the next moment of awareness is the resurrection: IS "differ" ("Soul sleep and Christian mortalism"); IS "history". No side taken: OF `differ`. The pause ("What does each picture protect?") is the study's own question: IS "questions", second item.
+9. **The same morning.** Christians who differ agree the dead in Christ are waiting for the same morning: IS "life", second paragraph; OF frame "morning"; ledger "die 5". The resurrection, not the intermediate state, is the final hope: IS "definition"; OF `differ`. Justin Martyr, about 160 (*Dialogue with Trypho* 80), counted as no true Christians those who deny the resurrection and say souls are taken up to heaven at death: IS "history", first paragraph; IS "errors" ("Justin's warning"). "Cemetery" from the Greek koimētērion, "a sleeping place", because the first Christians expected those laid there to wake: RS "life", first paragraph.
+10. **Sad and hopeful.** "Grief is not faithlessness, because the separation is real ... Comfort is not denial"; "God holds both sides of death": IS "life", first paragraph; OF frame "both"; ledger "die 6" (its sentence about "the one who has died" is again left out). The pause is the old film's own question: OF `think` (older).
+11. **Where I am.** On the night before he died, Jesus comforted his frightened friends with a promise of a place: OF frame "place"; J14 "teach" pitfalls ("spoken as comfort to frightened friends on the night before Jesus died"); ledger "die 3". "The rooms mean belonging and presence: the goal is to be where Jesus is (14:3)": J14 "teach" pitfalls; OF frame "place". Closing line ("Not a map of death, but a promise of a person"): IS "errors" (the church has warned against over-precise maps of the afterlife) and J14 "teach" pastoral (the promise "comforts because it is personal, not because it answers every question about death").
+
+## Notes
+
+- Care: the old film's `care` line and its "You are not alone" frame (with Psalm 23:4) stay on the film's page untouched; the near-death page's two Find Help lines stay on that page. None is in the narration and no new care line was written.
+- Death is named, never described: no account of how anyone died, nothing of the peace or reluctance some near-death reports include (as the ND page also leaves out), nothing on any person's eternal state, hell, or judgment.
+- The three pauses for the viewer (chapters 4, 8 and 10) are questions only.
+- Left for the sibling film life-to-come: the new creation, the resurrection body, the end-times views of Revelation 20.
+- Left out on purpose: the Lancet study of 2001 (cut for length), the Gallup figure (the ND page doesn't use it), Augustine's and Gregory's teaching on the departed, the descent into hell, Endor, and the Orthodox "toll-houses".

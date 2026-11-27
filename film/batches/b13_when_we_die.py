@@ -1,0 +1,74 @@
+"""Batch 13 film: "What happens when we die?" (when-we-die), rebuilt from the Bible Explorer film
+client/public/explorer/films/when-we-die.json and its rows ("die 1" to "die 7") in docs/work/elite/explorer-ledger.md;
+the Study Bible doctrine pages client/public/bible/doctrines/intermediate.json, resurrection.json and hope.json;
+the live hard-question page client/public/questions/science/near-death-experiences.json (record
+docs/work/elite/apol-pilot/science/near-death-experiences.md; ledger docs/work/elite/apol-ledger.md, key "bv");
+and the Study Bible notes on John 14 (client/public/bible/notes/john/14.json).
+The old film's care line and its "You are not alone" frame, and the near-death page's Find Help lines, stay on their
+pages, untouched, and are not in the narration. Death is named, never described. Where Christians differ (conscious
+presence with Christ, purgatory, the Orthodox teaching, soul sleep; how to regard near-death experiences), the views
+are named and none is chosen. The new creation is left for the sibling film, life-to-come."""
+import sys; sys.path.insert(0, "film/tools")
+from importlib import import_module
+write = import_module("write-script").write
+NOTE = "Written on 2026-11-26 from the Bible Explorer film of the same slug (its older captions and ledger rows), the Study Bible's studies of the intermediate state, the resurrection and hope, its notes on John 14, and the hard-question page on near-death experiences; every claim is sourced in film/when-we-die/facts.md, and Scripture is the Berean Standard Bible, checked by film/tools/write-script.py."
+S = lambda ref, text, spoken=False: {"reference": ref, "text": text, "spoken": spoken}
+P = lambda b: f"/study/explorer/watch/{b}"
+END = "LiveWell by James Bell"
+
+write("when-we-die", "What happens when we die?", P("when-we-die"), [
+  {"id": "question", "kicker": "A big question", "level": 0.2, "lines": [
+    "What happens when we die?",
+    "Most people ask it first when death comes close to someone they love, and it can be hard to say out loud.",
+    "The Bible doesn't tell us everything. It tells us enough to hope."]},
+  {"id": "sheol", "kicker": "Honest about death", "level": 0.3, "lines": [
+    "The Bible never pretends death isn't real. Dust returns to dust.",
+    "The Old Testament speaks of Sheol, the realm of the dead, about sixty-five times, and several psalms ask who can praise God from there. It doesn't rush to comfort.",
+    "Yet one psalm says to God, if I make my bed in Sheol, You are there."],
+   "scripture": S("Psalm 139:8", "if I make my bed in Sheol, You are there", True)},
+  {"id": "grief", "kicker": "Not without hope", "level": 0.35, "lines": [
+    "Jesus stood at his friend Lazarus' grave and wept. Grief is not unbelief.",
+    "Paul never told grieving Christians to stop being sad. He wrote,",
+    "We do not want you to be uninformed about those who sleep in death, so that you will not grieve like the rest, who are without hope."],
+   "scripture": S("1 Thessalonians 4:13", "we do not want you to be uninformed about those who sleep in death, so that you will not grieve like the rest, who are without hope", True)},
+  {"id": "edge", "kicker": "Back from the edge", "level": 0.45, "lines": [
+    "Some people revived after their hearts stopped report leaving their bodies, a light, and meeting relatives who had died.",
+    "Since Raymond Moody's Life After Life in 1975, many studies have followed.",
+    "In 1998 J. P. Moreland and Gary Habermas argued the best cases show a person can survive the body.",
+    "Pause here and ask yourself. If someone came back and told you what they saw, would that settle it?"]},
+  {"id": "impasse", "kicker": "Close to an impasse", "level": 0.5, "lines": [
+    "The experiences are real, and the people who have them aren't lying or foolish.",
+    "But in 1987 Carol Zaleski showed that the accounts vary with what each culture expects, and similar experiences come to people who only believed they were dying.",
+    "The Stanford Encyclopedia's entry on the afterlife says we may be close to an impasse. Christians differ over these experiences, and this film doesn't choose."]},
+  {"id": "easter", "kicker": "Not a glimpse", "level": 0.6, "lines": [
+    "Christian hope never rested on them. It rests on something of another kind.",
+    "Not that someone near death saw a light, but that a man who was certainly dead, executed by Rome, didn't stay dead.",
+    "A skeptic will say Easter is the same kind of story, told long ago. Fair. But the earliest summary, which Paul passed on, names events, not visions: died, buried, raised, appeared.",
+    "Christ has indeed been raised from the dead, the firstfruits of those who have fallen asleep."],
+   "scripture": S("1 Corinthians 15:20", "Christ has indeed been raised from the dead, the firstfruits of those who have fallen asleep.", True)},
+  {"id": "between", "kicker": "The time between", "level": 0.55, "lines": [
+    "So what happens between a believer's death and the resurrection? Theologians call it the intermediate state.",
+    "Paul calls death sleep. Yet Jesus told the criminal beside him, today you will be with Me in Paradise, and Paul wrote,",
+    "I desire to depart and be with Christ, which is far better indeed."],
+   "scripture": S("Philippians 1:23", "I desire to depart and be with Christ, which is far better indeed.", True)},
+  {"id": "differ", "kicker": "Where Christians differ", "level": 0.5, "lines": [
+    "Most Protestant churches, with the Heidelberg Catechism and the Westminster Confession, hold that believers go at once to be with Christ, at rest, while the body waits.",
+    "The Catholic Church teaches purgatory, a purification after death, which its defenders call a work of grace. The Orthodox pray for the departed. The Reformers rejected purgatory.",
+    "Others, among them John Milton and the Seventh-day Adventist Church, hold that the dead sleep, and their next waking moment is the resurrection.",
+    "Weigh it yourself. Paul calls death both sleep and being with Christ. What does each picture protect?"]},
+  {"id": "morning", "kicker": "The same morning", "level": 0.7, "lines": [
+    "Here they all agree. The dead in Christ are waiting for the same morning. The resurrection, not the time between, is the final hope.",
+    "Around 160 Justin Martyr warned against those who denied the resurrection and said souls simply go up to heaven at death.",
+    "Our word cemetery comes from a Greek word for a sleeping place. The first Christians expected those laid there to wake.",
+    "God will bring with Jesus those who have fallen asleep in Him."],
+   "scripture": S("1 Thessalonians 4:14", "God will bring with Jesus those who have fallen asleep in Him.", True)},
+  {"id": "both", "kicker": "Sad and hopeful", "level": 0.45, "lines": [
+    "Grief is not faithlessness, because the separation is real. Comfort is not denial. God holds both sides of death.",
+    "Ask yourself. What would it look like to be truly sad and truly hopeful at the same time?"]},
+  {"id": "close", "kicker": "Where I am", "level": 0.3, "lines": [
+    "On the night before he died, Jesus comforted his frightened friends with a promise of a place.",
+    "The rooms in his Father's house mean belonging and presence. The goal is to be where Jesus is.",
+    "I will come back and welcome you into My presence, so that you also may be where I am."],
+   "scripture": S("John 14:3", "I will come back and welcome you into My presence, so that you also may be where I am.", True),
+   "titleCard": ["Not a map of death, but a promise of a person.", END]},
+], NOTE)

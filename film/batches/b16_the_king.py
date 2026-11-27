@@ -1,0 +1,73 @@
+"""Batch 16 film: "The king" (slug the-king), a big-idea film that traces one theme through the Bible: humanity made
+to rule under God, Israel's request for a king like the nations, Saul, David and the promise of 2 Samuel 7, the kings
+who failed, the prophets' promised king, the Messiah, and Jesus, the king who serves, crowned with thorns, raised and
+enthroned. Sources, and nothing else: the old Bible Explorer film client/public/explorer/films/the-king.json (older
+captions, its differ note) with its rows in docs/work/elite/explorer-ledger.md ("king 1" to "king 7", "king, differ",
+the films' quotation row, and the Kingdom stop's story that "king 2" cites, client/public/explorer/stops/kingdom.json);
+the doctrine pages client/public/bible/doctrines/kingdom.json and messiah.json; and the Study Bible notes
+client/public/bible/notes/1-samuel/8.json, 2-samuel/7.json and isaiah/9.json. Views on the monarchy (God's will or
+concession) and on Isaiah's child are named fairly and no side is taken. Nothing ties any biblical king to a modern
+nation, party or ruler. The old film's care line stays on its page and is not in the narration.
+Scripture is the Berean Standard Bible, checked by film/tools/write-script.py."""
+import sys; sys.path.insert(0, "film/tools")
+from importlib import import_module
+write = import_module("write-script").write
+NOTE = "Written on 2026-11-27 from the Bible Explorer film the-king (older captions, with its explorer-ledger rows and the Kingdom stop it cites), the Study Bible doctrine pages on the kingdom and the Messiah, and the Study Bible notes on 1 Samuel 8, 2 Samuel 7 and Isaiah 9; Scripture is the Berean Standard Bible, checked by film/tools/write-script.py."
+S = lambda ref, text, spoken=False: {"reference": ref, "text": text, "spoken": spoken}
+END = "LiveWell by James Bell"
+
+write("the-king", "The king", "/study/explorer/watch/the-king", [
+  {"id": "image", "kicker": "Made to rule", "level": 0.2, "lines": [
+    "The story of kings starts before any crown.",
+    "Let Us make man in Our image, after Our likeness, to rule over the fish of the sea and the birds of the air.",
+    "People were made to govern God's world under him, as his representatives. The rest is that rule refused, then reclaimed."],
+   "scripture": S("Genesis 1:26", "Let Us make man in Our image, after Our likeness, to rule over the fish of the sea and the birds of the air", True)},
+  {"id": "nations", "kicker": "Like all the nations", "level": 0.3, "lines": [
+    "Near the end of the eleventh century BC, under Philistine pressure, Israel's elders come to Samuel. Appoint a king, they say, like all the other nations.",
+    "Pause here and ask yourself what they really wanted. Safety? To fit in?",
+    "God tells Samuel, it is not you they have rejected, but they have rejected Me as their king. And he gives them one anyway."],
+   "scripture": S("1 Samuel 8:7", "it is not you they have rejected, but they have rejected Me as their king", True)},
+  {"id": "differ", "kicker": "Gift or concession?", "level": 0.35, "lines": [
+    "So was the monarchy God's will, or a concession? Deuteronomy 17 had allowed a king, and readers differ.",
+    "Some fault the motive, wanting to be like the nations. Others, the timing, grabbing a crown before God's chosen king. Many critical scholars hear sources both warm and wary toward kings.",
+    "They agree on this much. The request came from a failure to trust God as king, and God took up the throne anyway."]},
+  {"id": "saul", "kicker": "A head taller", "level": 0.4, "lines": [
+    "The first king, Saul, looks the part, a head taller than anyone. But under pressure he takes things into his own hands, and Samuel tells him that obedience is better than sacrifice."],
+   "scripture": S("1 Samuel 15:22", "obedience is better than sacrifice", True)},
+  {"id": "david", "kicker": "From the sheepfolds", "level": 0.45, "lines": [
+    "The next king is the youngest of Jesse's sons, out tending the sheep, because man sees the outward appearance, but the LORD sees the heart.",
+    "Shepherd was an old royal title. Hammurabi of Babylon used it of himself. In Israel it meant the flock still belonged to God."],
+   "scripture": S("1 Samuel 16:7", "man sees the outward appearance, but the LORD sees the heart", True)},
+  {"id": "promise", "kicker": "A house forever", "level": 0.55, "lines": [
+    "David wants to build God a house. The Hebrew bayit means house, temple and dynasty, and God turns it around. He will build David a house, a royal line.",
+    "Your house and kingdom will endure forever before Me, and your throne will be established forever.",
+    "Most scholars read a ninth-century BC inscription from Tel Dan as naming this house of David."],
+   "scripture": S("2 Samuel 7:16", "Your house and kingdom will endure forever before Me, and your throne will be established forever.", True)},
+  {"id": "failed", "kicker": "The crown in the dust", "level": 0.6, "lines": [
+    "David's sons fail. Solomon turns to other gods, and many kings lead the people to idols.",
+    "The north falls to Assyria in 722 BC, and Judah to Babylon in 587 or 586 BC. No son of David sits on the throne again.",
+    "Scripture voices the objection itself. Psalm 89 prays, You have renounced the covenant with Your servant and sullied his crown in the dust.",
+    "Skeptics call the promise propaganda that history disproved. Jewish and Christian readers say it outlasted the failed kings, and part over how it's kept."],
+   "scripture": S("Psalm 89:39", "You have renounced the covenant with Your servant and sullied his crown in the dust.", True)},
+  {"id": "shoot", "kicker": "A shoot from a stump", "level": 0.65, "lines": [
+    "In the dark, Isaiah promises a child on David's throne, called Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace.",
+    "And a picture: a shoot will spring up from the stump of Jesse. The tree has been cut down, and still it grows.",
+    "Jewish tradition has read Isaiah's child as King Hezekiah, or as the Messiah. Christians confess him as Jesus."],
+   "scripture": S("Isaiah 11:1", "a shoot will spring up from the stump of Jesse", True)},
+  {"id": "donkey", "kicker": "Humble, on a donkey", "level": 0.7, "lines": [
+    "Messiah means anointed one. In Greek it's christos, Christ.",
+    "Zechariah sees that king arrive: See, your King comes to you, righteous and victorious, humble and riding on a donkey.",
+    "Pause and ask: what kind of king rides a donkey? A king of peace, not chariots. Jesus rides into Jerusalem that way, to shouts of Hosanna to the Son of David."],
+   "scripture": S("Zechariah 9:9", "See, your King comes to you, righteous and victorious, humble and riding on a donkey", True)},
+  {"id": "thorns", "kicker": "Crowned with thorns", "level": 0.75, "lines": [
+    "Soldiers crown him with thorns, and the charge over his cross reads, The King of the Jews.",
+    "By every expectation of the time, a crucified Messiah was a contradiction.",
+    "But remember Samuel's warning: the king will take. Jesus had said, For even the Son of Man did not come to be served, but to serve, and to give His life as a ransom for many."],
+   "scripture": S("Mark 10:45", "For even the Son of Man did not come to be served, but to serve, and to give His life as a ransom for many.", True)},
+  {"id": "enthroned", "kicker": "King of kings", "level": 0.8, "lines": [
+    "On the third day God raised him, and Peter preached that God had made him both Lord and Christ.",
+    "His kingdom is not of this world. It doesn't advance by the world's weapons, and it's no nation or party. Christians differ on how it relates to the church now.",
+    "Revelation names him King of kings and Lord of lords. And the rule given to humanity at the start is restored in him, and shared with his people."],
+   "scripture": S("Revelation 19:16", "And He has a name written on His robe and on His thigh: KING OF KINGS AND LORD OF LORDS."),
+   "titleCard": ["Samuel's king would take. This King gives.", END]},
+], NOTE)

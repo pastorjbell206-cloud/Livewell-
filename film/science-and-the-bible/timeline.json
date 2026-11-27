@@ -1,0 +1,264 @@
+{
+ "length": 272.56,
+ "chapters": [
+  {
+   "id": "choose",
+   "kicker": "Do I have to choose?",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 16.14,
+   "lines": [
+    {
+     "text": "An open Bible on one side of the table. A small telescope on the other.",
+     "start": 2.6,
+     "end": 6.84
+    },
+    {
+     "text": "Plenty of people say they're enemies, and that you'll have to pick one.",
+     "start": 7.5,
+     "end": 10.66
+    },
+    {
+     "text": "Pause and ask yourself where you first heard that. Then let's test it.",
+     "start": 11.36,
+     "end": 15.24
+    }
+   ]
+  },
+  {
+   "id": "armies",
+   "kicker": "Two armies",
+   "level": 0.35,
+   "start": 15.34,
+   "end": 36.0,
+   "lines": [
+    {
+     "text": "The war picture came from John William Draper in 1874, and Andrew Dickson White, the first president of Cornell, in 1896.",
+     "start": 16.24,
+     "end": 25.12
+    },
+    {
+     "text": "They gave the modern world two forces, one marching toward the light and the other holding it back. At the center stands Galileo.",
+     "start": 25.76,
+     "end": 35.1
+    }
+   ]
+  },
+  {
+   "id": "galileo",
+   "kicker": "What the church did",
+   "level": 0.5,
+   "start": 35.2,
+   "end": 58.68,
+   "lines": [
+    {
+     "text": "The core is true. In 1616 Rome's theologians judged the sun-centered view formally heretical.",
+     "start": 36.1,
+     "end": 41.58
+    },
+    {
+     "text": "In 1633 the Roman Inquisition declared Galileo vehemently suspected of heresy. He was made to renounce his view on his knees, and he lived under house arrest until he died.",
+     "start": 42.24,
+     "end": 53.8
+    },
+    {
+     "text": "The church was wrong, and Christians should say so plainly.",
+     "start": 54.54,
+     "end": 57.78
+    }
+   ]
+  },
+  {
+   "id": "legend",
+   "kicker": "What the legend leaves out",
+   "level": 0.5,
+   "start": 57.88,
+   "end": 76.92,
+   "lines": [
+    {
+     "text": "Galileo was a believer. He quoted Augustine: for an unbeliever to hear a Christian talk nonsense about the natural world was a disgraceful and dangerous thing.",
+     "start": 58.78,
+     "end": 68.92
+    },
+    {
+     "text": "And the earth's motion hadn't been proved. Friedrich Bessel first measured its decisive sign in 1838.",
+     "start": 69.64,
+     "end": 76.02
+    }
+   ]
+  },
+  {
+   "id": "lab",
+   "kicker": "Scientists who believed",
+   "level": 0.6,
+   "start": 76.12,
+   "end": 110.76,
+   "lines": [
+    {
+     "text": "When James Clerk Maxwell's Cavendish Laboratory opened at Cambridge in the 1870s, its doors carried a Psalm in Latin.",
+     "start": 77.02,
+     "end": 84.44
+    },
+    {
+     "text": "Great are the works of the LORD; they are pondered by all who delight in them.",
+     "start": 85.08,
+     "end": 89.36
+    },
+    {
+     "text": "Gregor Mendel, whose peas began genetics, was a friar. In 1927 Georges Lema\u00eetre, a Catholic priest, argued that the universe is expanding.",
+     "start": 90.2,
+     "end": 100.7
+    },
+    {
+     "text": "None of that proves Christianity. Plenty of great scientists have been unbelievers. It shows the war is a story about science, not a finding of it.",
+     "start": 101.38,
+     "end": 109.86
+    }
+   ]
+  },
+  {
+   "id": "quiet",
+   "kicker": "The quieter objection",
+   "level": 0.45,
+   "start": 109.96,
+   "end": 135.1,
+   "lines": [
+    {
+     "text": "The strong objection is quieter. Science keeps explaining what God was once used to explain. In 1859 Darwin gave a natural account of how living things fit their lives.",
+     "start": 110.86,
+     "end": 122.14
+    },
+    {
+     "text": "The biologist Jerry Coyne adds that science can find out it's wrong, and religion can't.",
+     "start": 122.8,
+     "end": 127.88
+    },
+    {
+     "text": "A fair question before the answer comes: if every gap closes, is anything left for God?",
+     "start": 128.5,
+     "end": 134.2
+    }
+   ]
+  },
+  {
+   "id": "gaps",
+   "kicker": "Not in the gaps",
+   "level": 0.6,
+   "start": 134.3,
+   "end": 161.74,
+   "lines": [
+    {
+     "text": "Christians have often put God in the gaps. In 1944 Dietrich Bonhoeffer warned against it: We are to find God in what we know, not in what we don't know.",
+     "start": 135.2,
+     "end": 145.48
+    },
+    {
+     "text": "Thomas Aquinas taught that God works through the causes he made, not in competition with them. An author is the cause of every line in a novel without being one of its characters.",
+     "start": 146.22,
+     "end": 156.46
+    },
+    {
+     "text": "He is before all things, and in Him all things hold together.",
+     "start": 156.98,
+     "end": 160.84
+    }
+   ]
+  },
+  {
+   "id": "kettle",
+   "kicker": "Two true answers",
+   "level": 0.5,
+   "start": 160.94,
+   "end": 189.94,
+   "lines": [
+    {
+     "text": "Water boils because the molecules are agitated. The kettle is on because someone wanted tea. Both answers are true, and they don't compete.",
+     "start": 161.84,
+     "end": 170.22
+    },
+    {
+     "text": "If God isn't found in the gaps, Christians can't argue for him from the gaps either.",
+     "start": 170.86,
+     "end": 175.3
+    },
+    {
+     "text": "The physicist Eugene Wigner, in 1960, called the power of mathematics to describe the world a wonderful gift which we neither understand nor deserve. Science rests on something it doesn't explain.",
+     "start": 175.98,
+     "end": 189.04
+    }
+   ]
+  },
+  {
+   "id": "differ",
+   "kicker": "Where Christians differ",
+   "level": 0.45,
+   "start": 189.14,
+   "end": 226.62,
+   "lines": [
+    {
+     "text": "Christians also argue over Genesis 1, and it isn't new. In the third century Origen asked how there were days before the sun. In the fourth, Basil said, For me grass is grass.",
+     "start": 190.04,
+     "end": 202.12
+    },
+    {
+     "text": "Today some read six ordinary days, not long ago. Some read long ages. Some read a literary frame, God's workweek, or a cosmic temple. Some hold that God created through evolution.",
+     "start": 202.68,
+     "end": 215.28
+    },
+    {
+     "text": "Each is held by believers who take Scripture seriously, and each has a hard question. This film takes no side. Which had you assumed was the only Christian view?",
+     "start": 215.92,
+     "end": 225.72
+    }
+   ]
+  },
+  {
+   "id": "confess",
+   "kicker": "What all of them confess",
+   "level": 0.65,
+   "start": 225.82,
+   "end": 243.82,
+   "lines": [
+    {
+     "text": "In the beginning God created the heavens and the earth.",
+     "start": 226.72,
+     "end": 229.42
+    },
+    {
+     "text": "Every reading confesses that God made everything, by his word, that it was good, and that we bear his image.",
+     "start": 230.22,
+     "end": 236.74
+    },
+    {
+     "text": "The Apostles' Creed confesses the Maker of heaven and earth. It says nothing of how long the making took.",
+     "start": 237.34,
+     "end": 242.92
+    }
+   ]
+  },
+  {
+   "id": "search",
+   "kicker": "Search it out",
+   "level": 0.4,
+   "start": 243.02,
+   "end": 266.464,
+   "lines": [
+    {
+     "text": "None of this proves God exists or settles the age of the earth. It clears away a false choice.",
+     "start": 243.92,
+     "end": 249.4
+    },
+    {
+     "text": "It is the glory of God to conceal a matter and the glory of kings to search it out.",
+     "start": 249.96,
+     "end": 254.62
+    },
+    {
+     "text": "Science is that searching, and Christians have every reason to love it. Science hands us a magnificent description of the house. It can't tell us whether anyone lives there.",
+     "start": 255.28,
+     "end": 265.564
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,284 @@
+{
+ "length": 265.53,
+ "chapters": [
+  {
+   "id": "question",
+   "kicker": "A big question",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 14.86,
+   "lines": [
+    {
+     "text": "What happens when we die?",
+     "start": 2.6,
+     "end": 3.96
+    },
+    {
+     "text": "Most people ask it first when death comes close to someone they love, and it can be hard to say out loud.",
+     "start": 4.62,
+     "end": 9.92
+    },
+    {
+     "text": "The Bible doesn't tell us everything. It tells us enough to hope.",
+     "start": 10.62,
+     "end": 13.96
+    }
+   ]
+  },
+  {
+   "id": "sheol",
+   "kicker": "Honest about death",
+   "level": 0.3,
+   "start": 14.06,
+   "end": 36.14,
+   "lines": [
+    {
+     "text": "The Bible never pretends death isn't real. Dust returns to dust.",
+     "start": 14.96,
+     "end": 19.2
+    },
+    {
+     "text": "The Old Testament speaks of Sheol, the realm of the dead, about sixty-five times, and several psalms ask who can praise God from there. It doesn't rush to comfort.",
+     "start": 19.82,
+     "end": 29.96
+    },
+    {
+     "text": "Yet one psalm says to God, if I make my bed in Sheol, You are there.",
+     "start": 30.58,
+     "end": 35.24
+    }
+   ]
+  },
+  {
+   "id": "grief",
+   "kicker": "Not without hope",
+   "level": 0.35,
+   "start": 35.34,
+   "end": 53.84,
+   "lines": [
+    {
+     "text": "Jesus stood at his friend Lazarus' grave and wept. Grief is not unbelief.",
+     "start": 36.24,
+     "end": 41.26
+    },
+    {
+     "text": "Paul never told grieving Christians to stop being sad. He wrote,",
+     "start": 41.86,
+     "end": 45.54
+    },
+    {
+     "text": "We do not want you to be uninformed about those who sleep in death, so that you will not grieve like the rest, who are without hope.",
+     "start": 46.0,
+     "end": 52.94
+    }
+   ]
+  },
+  {
+   "id": "edge",
+   "kicker": "Back from the edge",
+   "level": 0.45,
+   "start": 53.04,
+   "end": 80.46,
+   "lines": [
+    {
+     "text": "Some people revived after their hearts stopped report leaving their bodies, a light, and meeting relatives who had died.",
+     "start": 53.94,
+     "end": 60.42
+    },
+    {
+     "text": "Since Raymond Moody's Life After Life in 1975, many studies have followed.",
+     "start": 61.08,
+     "end": 65.92
+    },
+    {
+     "text": "In 1998 J. P. Moreland and Gary Habermas argued the best cases show a person can survive the body.",
+     "start": 66.56,
+     "end": 73.44
+    },
+    {
+     "text": "Pause here and ask yourself. If someone came back and told you what they saw, would that settle it?",
+     "start": 74.06,
+     "end": 79.56
+    }
+   ]
+  },
+  {
+   "id": "impasse",
+   "kicker": "Close to an impasse",
+   "level": 0.5,
+   "start": 79.66,
+   "end": 106.28,
+   "lines": [
+    {
+     "text": "The experiences are real, and the people who have them aren't lying or foolish.",
+     "start": 80.56,
+     "end": 84.66
+    },
+    {
+     "text": "But in 1987 Carol Zaleski showed that the accounts vary with what each culture expects, and similar experiences come to people who only believed they were dying.",
+     "start": 85.34,
+     "end": 95.24
+    },
+    {
+     "text": "The Stanford Encyclopedia's entry on the afterlife says we may be close to an impasse. Christians differ over these experiences, and this film doesn't choose.",
+     "start": 95.96,
+     "end": 105.38
+    }
+   ]
+  },
+  {
+   "id": "easter",
+   "kicker": "Not a glimpse",
+   "level": 0.6,
+   "start": 105.48,
+   "end": 138.54,
+   "lines": [
+    {
+     "text": "Christian hope never rested on them. It rests on something of another kind.",
+     "start": 106.38,
+     "end": 110.4
+    },
+    {
+     "text": "Not that someone near death saw a light, but that a man who was certainly dead, executed by Rome, didn't stay dead.",
+     "start": 111.08,
+     "end": 118.04
+    },
+    {
+     "text": "A skeptic will say Easter is the same kind of story, told long ago. Fair. But the earliest summary, which Paul passed on, names events, not visions: died, buried, raised, appeared.",
+     "start": 118.8,
+     "end": 130.64
+    },
+    {
+     "text": "Christ has indeed been raised from the dead, the firstfruits of those who have fallen asleep.",
+     "start": 131.02,
+     "end": 137.64
+    }
+   ]
+  },
+  {
+   "id": "between",
+   "kicker": "The time between",
+   "level": 0.55,
+   "start": 137.74,
+   "end": 158.44,
+   "lines": [
+    {
+     "text": "So what happens between a believer's death and the resurrection? Theologians call it the intermediate state.",
+     "start": 138.64,
+     "end": 144.66
+    },
+    {
+     "text": "Paul calls death sleep. Yet Jesus told the criminal beside him, today you will be with Me in Paradise, and Paul wrote,",
+     "start": 145.3,
+     "end": 153.12
+    },
+    {
+     "text": "I desire to depart and be with Christ, which is far better indeed.",
+     "start": 153.54,
+     "end": 157.54
+    }
+   ]
+  },
+  {
+   "id": "differ",
+   "kicker": "Where Christians differ",
+   "level": 0.5,
+   "start": 157.64,
+   "end": 197.74,
+   "lines": [
+    {
+     "text": "Most Protestant churches, with the Heidelberg Catechism and the Westminster Confession, hold that believers go at once to be with Christ, at rest, while the body waits.",
+     "start": 158.54,
+     "end": 168.58
+    },
+    {
+     "text": "The Catholic Church teaches purgatory, a purification after death, which its defenders call a work of grace. The Orthodox pray for the departed. The Reformers rejected purgatory.",
+     "start": 169.24,
+     "end": 180.96
+    },
+    {
+     "text": "Others, among them John Milton and the Seventh-day Adventist Church, hold that the dead sleep, and their next waking moment is the resurrection.",
+     "start": 181.52,
+     "end": 189.66
+    },
+    {
+     "text": "Weigh it yourself. Paul calls death both sleep and being with Christ. What does each picture protect?",
+     "start": 190.32,
+     "end": 196.84
+    }
+   ]
+  },
+  {
+   "id": "morning",
+   "kicker": "The same morning",
+   "level": 0.7,
+   "start": 196.94,
+   "end": 226.26,
+   "lines": [
+    {
+     "text": "Here they all agree. The dead in Christ are waiting for the same morning. The resurrection, not the time between, is the final hope.",
+     "start": 197.84,
+     "end": 205.66
+    },
+    {
+     "text": "Around 160 Justin Martyr warned against those who denied the resurrection and said souls simply go up to heaven at death.",
+     "start": 206.38,
+     "end": 214.1
+    },
+    {
+     "text": "Our word cemetery comes from a Greek word for a sleeping place. The first Christians expected those laid there to wake.",
+     "start": 214.92,
+     "end": 221.7
+    },
+    {
+     "text": "God will bring with Jesus those who have fallen asleep in Him.",
+     "start": 222.38,
+     "end": 225.36
+    }
+   ]
+  },
+  {
+   "id": "both",
+   "kicker": "Sad and hopeful",
+   "level": 0.45,
+   "start": 225.46,
+   "end": 241.22,
+   "lines": [
+    {
+     "text": "Grief is not faithlessness, because the separation is real. Comfort is not denial. God holds both sides of death.",
+     "start": 226.36,
+     "end": 234.12
+    },
+    {
+     "text": "Ask yourself. What would it look like to be truly sad and truly hopeful at the same time?",
+     "start": 234.94,
+     "end": 240.32
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "Where I am",
+   "level": 0.3,
+   "start": 240.42,
+   "end": 259.43,
+   "lines": [
+    {
+     "text": "On the night before he died, Jesus comforted his frightened friends with a promise of a place.",
+     "start": 241.32,
+     "end": 246.26
+    },
+    {
+     "text": "The rooms in his Father's house mean belonging and presence. The goal is to be where Jesus is.",
+     "start": 246.92,
+     "end": 252.46
+    },
+    {
+     "text": "I will come back and welcome you into My presence, so that you also may be where I am.",
+     "start": 253.06,
+     "end": 258.53
+    }
+   ]
+  }
+ ]
+}

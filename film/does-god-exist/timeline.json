@@ -1,0 +1,269 @@
+{
+ "length": 269.64,
+ "chapters": [
+  {
+   "id": "question",
+   "kicker": "A fair question",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 19.46,
+   "lines": [
+    {
+     "text": "Does God actually exist? The case against is stronger than many believers admit, and nothing here forces anyone to agree.",
+     "start": 2.6,
+     "end": 10.42
+    },
+    {
+     "text": "But there are reasons, each open to inspection. This film weighs one: that anything exists at all.",
+     "start": 11.02,
+     "end": 18.56
+    }
+   ]
+  },
+  {
+   "id": "something",
+   "kicker": "Something rather than nothing",
+   "level": 0.3,
+   "start": 18.66,
+   "end": 39.96,
+   "lines": [
+    {
+     "text": "In 1714 Gottfried Leibniz set down what he took to be the first question we have a right to ask.",
+     "start": 19.56,
+     "end": 25.72
+    },
+    {
+     "text": "\u201cWhy does something exist rather than nothing? For \u2018nothing\u2019 is simpler and easier than \u2018something.\u2019\u201d",
+     "start": 26.32,
+     "end": 31.98
+    },
+    {
+     "text": "The universe, all of space, time, matter and energy, could have been different, or not been at all.",
+     "start": 32.66,
+     "end": 39.06
+    }
+   ]
+  },
+  {
+   "id": "ball",
+   "kicker": "A ball in the woods",
+   "level": 0.4,
+   "start": 39.16,
+   "end": 60.04,
+   "lines": [
+    {
+     "text": "Pause here. In 1963 the philosopher Richard Taylor asked his readers to imagine finding a large translucent ball in the woods.",
+     "start": 40.06,
+     "end": 48.74
+    },
+    {
+     "text": "Would you think it simply exists, for no reason?",
+     "start": 49.36,
+     "end": 52.06
+    },
+    {
+     "text": "No one would. And making the ball the size of the universe doesn't make the question go away. It makes it bigger.",
+     "start": 52.68,
+     "end": 59.14
+    }
+   ]
+  },
+  {
+   "id": "chain",
+   "kicker": "No beginning needed",
+   "level": 0.45,
+   "start": 59.24,
+   "end": 85.08,
+   "lines": [
+    {
+     "text": "This argument doesn't need the universe to have had a beginning. Thomas Aquinas held that reason alone can't show the world began in time.",
+     "start": 60.14,
+     "end": 67.88
+    },
+    {
+     "text": "Alexander Pruss pictures an endless line of hens and eggs. Each hen is explained by an egg, each egg by a hen.",
+     "start": 68.46,
+     "end": 75.62
+    },
+    {
+     "text": "That still leaves untouched why there's such a line rather than none. A longer chain is still a chain that needs explaining.",
+     "start": 76.28,
+     "end": 84.18
+    }
+   ]
+  },
+  {
+   "id": "steps",
+   "kicker": "The argument, in three steps",
+   "level": 0.5,
+   "start": 84.28,
+   "end": 102.42,
+   "lines": [
+    {
+     "text": "One. Anything that exists but might not have existed has an explanation outside itself.",
+     "start": 85.18,
+     "end": 90.46
+    },
+    {
+     "text": "Two. The universe is that kind of thing.",
+     "start": 91.14,
+     "end": 93.72
+    },
+    {
+     "text": "Three. So its explanation is something that exists necessarily, not made of space, time or matter.",
+     "start": 94.36,
+     "end": 101.52
+    }
+   ]
+  },
+  {
+   "id": "against",
+   "kicker": "The case against",
+   "level": 0.6,
+   "start": 101.62,
+   "end": 133.72,
+   "lines": [
+    {
+     "text": "In David Hume's Dialogues, published in 1779 after his death, one speaker objects, \u201cwhy may not the material universe be the necessarily existent Being\u201d?",
+     "start": 102.52,
+     "end": 113.1
+    },
+    {
+     "text": "In 1948, debating the Jesuit Frederick Copleston on BBC radio, Bertrand Russell said, \u201cI should say that the universe is just there, and that's all.\u201d",
+     "start": 113.9,
+     "end": 124.12
+    },
+    {
+     "text": "To him, needing a cause for the whole because each part has one is like arguing that a wall must be small because each brick is.",
+     "start": 124.78,
+     "end": 132.82
+    }
+   ]
+  },
+  {
+   "id": "true",
+   "kicker": "What is true in it",
+   "level": 0.55,
+   "start": 132.92,
+   "end": 155.84,
+   "lines": [
+    {
+     "text": "Much of that is true. The principle that everything has an explanation can't be proved from anything more certain than itself.",
+     "start": 133.82,
+     "end": 140.82
+    },
+    {
+     "text": "In 2012 Lawrence Krauss argued that physical law can account for a universe coming to be without a creator.",
+     "start": 141.52,
+     "end": 147.84
+    },
+    {
+     "text": "And if the argument said everything needs a cause, God would need one too. That question has its own film.",
+     "start": 148.44,
+     "end": 154.94
+    }
+   ]
+  },
+  {
+   "id": "replies",
+   "kicker": "Weigh the replies",
+   "level": 0.6,
+   "start": 155.04,
+   "end": 181.96,
+   "lines": [
+    {
+     "text": "A fair question before the answers: if every part of the universe might not have existed, what would make the whole unable not to exist?",
+     "start": 155.94,
+     "end": 164.44
+    },
+    {
+     "text": "Not every step from parts to whole is a mistake. A wall made entirely of brick is a brick wall.",
+     "start": 165.24,
+     "end": 171.12
+    },
+    {
+     "text": "And the nothing in Krauss's book, the philosopher David Albert objected, is a state described by quantum laws. That's still a universe that might not have been.",
+     "start": 171.46,
+     "end": 181.06
+    }
+   ]
+  },
+  {
+   "id": "stops",
+   "kicker": "Where it stops",
+   "level": 0.7,
+   "start": 181.16,
+   "end": 211.94,
+   "lines": [
+    {
+     "text": "The strongest reply is parity. Every account of reality stops somewhere. The atheist may stop at the universe or its basic laws, and is no more irrational for doing so.",
+     "start": 182.06,
+     "end": 192.76
+    },
+    {
+     "text": "The answer is that the demand for a reason applies to what might not have been. Whether there can be a being whose existence isn't received from anything is the real crux, and philosophers divide over it.",
+     "start": 193.54,
+     "end": 205.94
+    },
+    {
+     "text": "Pause and ask yourself: where do you think explanations stop, and why?",
+     "start": 206.68,
+     "end": 211.04
+    }
+   ]
+  },
+  {
+   "id": "shows",
+   "kicker": "Not yet Christianity",
+   "level": 0.6,
+   "start": 211.14,
+   "end": 241.34,
+   "lines": [
+    {
+     "text": "If the argument is sound, it shows a necessary being that explains the universe. That's a large part of what believers in one God mean by the word.",
+     "start": 212.04,
+     "end": 220.34
+    },
+    {
+     "text": "It isn't proof in the mathematician's sense, and it isn't yet Christianity. It doesn't show that God is three persons, or that he became a man.",
+     "start": 221.02,
+     "end": 229.6
+    },
+    {
+     "text": "Paul in Athens began here.",
+     "start": 230.32,
+     "end": 231.8
+    },
+    {
+     "text": "The God who made the world and everything in it is the Lord of heaven and earth.",
+     "start": 232.46,
+     "end": 236.34
+    },
+    {
+     "text": "Then he went straight to the resurrection, a question of history.",
+     "start": 237.14,
+     "end": 240.44
+    }
+   ]
+  },
+  {
+   "id": "weigh",
+   "kicker": "Weigh it for yourself",
+   "level": 0.3,
+   "start": 240.54,
+   "end": 263.544,
+   "lines": [
+    {
+     "text": "Christians differ on how much this can carry. Some, following Aquinas, hold that reason can show God exists. Others hold that belief can be warranted without such arguments.",
+     "start": 241.44,
+     "end": 252.2
+    },
+    {
+     "text": "Russell's step is where an honest person can disagree. You can weigh all of this and still say no. What you can't honestly say is that there's nothing to weigh.",
+     "start": 252.92,
+     "end": 262.644
+    }
+   ]
+  }
+ ]
+}

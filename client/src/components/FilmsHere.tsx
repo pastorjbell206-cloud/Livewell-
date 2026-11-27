@@ -60,9 +60,12 @@ export default function FilmsHere({ path }: { path: string }) {
         background: "var(--card)",
       }}
     >
-      <h2 id={id} className="eyebrow" style={{ margin: "0 0 var(--s-3)" }}>
+      <h2 id={id} className="eyebrow" style={{ margin: "0 0 8px" }}>
         Watch and learn
       </h2>
+      <p style={{ fontFamily: "var(--U)", fontSize: "14px", lineHeight: 1.5, color: "var(--ink-muted)", margin: "0 0 var(--s-3)" }}>
+        {slugs.length === 1 ? "A short film, read aloud if you choose." : "Short films, each read aloud if you choose."}
+      </p>
       <ul
         style={{
           listStyle: "none",
@@ -125,7 +128,7 @@ export default function FilmsHere({ path }: { path: string }) {
                       color: "var(--ink-muted)",
                     }}
                   >
-                    A moving picture, with a voice if you want one. {film.line}
+                    {film.line}
                   </span>
                 </span>
               </Link>

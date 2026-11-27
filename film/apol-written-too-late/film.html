@@ -1,0 +1,183 @@
+<!doctype html>
+<!-- "Written too late?" (apologetics film 2). One timeline, AD 0 to 200, carries the film: the cross, the
+     four Gospels and their dates, one lifetime laid over the gap, Paul's letters and the summary he received,
+     fifteen days with Peter, Arrian's four centuries beside the Gospels' decades, the four names that never
+     vary, the Twelve and the two who were not, Papias and the elder, Luke gathering from eyewitnesses,
+     memory and the churches that held it, the questions still open, and the earliest witness.
+     Open with ?t=42 to freeze on second 42. -->
+<html lang="en"><head><meta charset="utf-8"><title>Written too late?</title></head><body>
+<script src="../lib/engine.js"></script>
+<script>
+Film.make((F) => {
+  const { el, txt, set, op, draw, line, move, clamp, ease, up, span, mix, rng, S, E, TL, world, INK, BONE, WARM, MUTED, STONE, MUSTARD, LINE, CHAR } = F;
+  const PAPER = "#FBF9F5";
+  const CH = Object.fromEntries(TL.chapters.map((c) => [c.id, c]));
+  const CS = (id) => CH[id].start;
+  const Ls = (id) => CH[id].lines.map((_, k) => S(id, k));
+  const T = (p, cls, x, y, s, size, anchor, fill) => { const e = txt(p, cls, x, y, s, size, fill ? { fill } : undefined); if (anchor) e.setAttribute("style", (e.getAttribute("style") || "") + `text-anchor:${anchor};`); return e; };
+  const G = (p) => el("g", {}, p || world);
+  const R = rng(31);
+  const book = (p, name, w = 64, h = 86) => { const g = G(p); el("rect", { x: -w / 2, y: -h / 2, width: w, height: h, rx: 3, fill: PAPER, stroke: INK, "stroke-width": 2.2 }, g); el("rect", { x: -w / 2, y: -h / 2, width: 9, height: h, fill: INK }, g);
+    g._name = T(g, "lab", 4, 5, name, 11); return g; };
+  const person = (p, r = 9, fill = INK) => el("circle", { r, fill }, p);
+  const vis = (t, a, b) => span(t, a, b, 0.6, 0.7);
+
+  // the one timeline
+  const YX = (y) => 140 + y * 5, TLY = 470;
+  const gT = G(); gT.setAttribute("transform", "translate(640 430) scale(1.12) translate(-640 -470)"); const axis = line(gT, `M${YX(0)} ${TLY} H${YX(200)}`, { "stroke-width": 3 });
+  const ticks = [0, 50, 100, 150, 200].map((y) => { const g = G(gT); el("line", { x1: YX(y), x2: YX(y), y1: TLY - 6, y2: TLY + 6, stroke: INK, "stroke-width": 2 }, g); T(g, "lab", YX(y), TLY + 30, y ? `AD ${y}` : "AD 1", 13); return g; });
+  const cross = G(gT); el("line", { x1: 0, y1: -34, x2: 0, y2: 0, stroke: INK, "stroke-width": 4, "stroke-linecap": "round" }, cross); el("line", { x1: -12, y1: -24, x2: 12, y2: -24, stroke: INK, "stroke-width": 4, "stroke-linecap": "round" }, cross); move(cross, YX(30), TLY - 6);
+  const crossLab = T(gT, "lab", YX(30) - 16, TLY - 14, "THE CROSS · ABOUT 30", 12, "end");
+  const GOS = [["MARK", 70, 70], ["MATTHEW", 80, 95], ["LUKE", 75, 90], ["JOHN", 90, 99]];
+  const gMarks = GOS.map(([n, a, b], i) => { const g = G(gT); const y = TLY - 26 - i * 22; const bar = el("rect", { x: YX(a) - 4, y: y - 5, width: Math.max(8, YX(b) - YX(a) + 8), height: 10, rx: 5, fill: MUSTARD }, g); const lab = T(g, "lab", YX(b) + 14, y + 4, n, 12, "start"); return { g, bar, lab }; });
+  const bracket = line(gT, `M${YX(30)} ${TLY + 52} V${TLY + 62} H${YX(95)} V${TLY + 52}`, { stroke: STONE, "stroke-width": 2 });
+  const brLab = T(gT, "lab", YX(62), TLY + 84, "FORTY TO SIXTY-FIVE YEARS", 13);
+  const ghosts = [55, 60].map((y, i) => el("rect", { x: YX(y) - 4, y: TLY - 26 - i * 22 - 5, width: 8 + 30 * i, height: 10, rx: 5, fill: "none", stroke: STONE, "stroke-width": 1.6, "stroke-dasharray": "4 3" }, gT));
+  const ghostLab = T(gT, "lab", YX(56), TLY - 86, "A MINORITY: EARLIER", 11, null, STONE);
+  // lifetime band
+  const life = el("rect", { x: YX(5), y: TLY - 150, height: 26, rx: 13, width: 0, fill: WARM, stroke: STONE, "stroke-width": 1.5 }, gT);
+  const lifeLab = T(gT, "lab", YX(48), TLY - 132, "ONE LIFETIME", 12);
+  const wit = [...Array(26)].map((_, i) => ({ y: 30 + R() * 60 * Math.sqrt(R()), row: R(), e: person(gT, 4.5) }));
+  const wit2 = [...Array(30)].map(() => ({ y: 40 + R() * 80, row: R(), e: person(gT, 3.5, LINE) }));
+  // Paul's letters
+  const letters = [50, 55].map((y) => { const g = G(gT); el("rect", { x: -13, y: -17, width: 26, height: 34, rx: 2, fill: PAPER, stroke: INK, "stroke-width": 2 }, g); [-8, -2, 4, 10].forEach((dy) => el("line", { x1: -7, x2: 7, y1: dy, y2: dy, stroke: INK, "stroke-width": 1.8 }, g)); move(g, YX(y), TLY - 120); return g; });
+  const letLab = T(gT, "lab", YX(52), TLY - 154, "PAUL'S LETTERS · 50s", 12);
+  const recv = line(gT, `M${YX(33)} ${TLY - 40} C${YX(36)} ${TLY - 120} ${YX(44)} ${TLY - 130} ${YX(49)} ${TLY - 124}`, { stroke: MUSTARD, "stroke-width": 2.5 });
+  const fewLab = T(gT, "lab", YX(26), TLY - 78, "WITHIN A FEW YEARS", 11, "end", MUSTARD);
+  const early = el("circle", { cx: YX(33), cy: TLY - 40, r: 7, fill: MUSTARD }, gT);
+
+  // verse (1 Corinthians 15:3-4)
+  const gV = G(), VL = ["For what I received I passed on to you as of first importance:", "that Christ died for our sins according to the Scriptures,", "that He was buried, that He was raised on the third day", "according to the Scriptures,"];
+  const vLines = VL.map((s, i) => T(gV, "disp", 640, 150 + i * 42, s, 33)), vRef = T(gV, "lab", 640, 330, "1 CORINTHIANS 15:3-4 · BEREAN STANDARD BIBLE", 13);
+  // fifteen days with Peter
+  const gJ = G(), jer = el("circle", { cx: 640, cy: 262, r: 112, fill: "none", stroke: LINE, "stroke-width": 2 }, gJ), jerLab = T(gJ, "lab", 640, 136, "JERUSALEM", 13);
+  const pPaul = person(gJ, 13), pPeter = person(gJ, 13), pJames = person(gJ, 11), pJohn = person(gJ, 11);
+  const nm = ["PAUL", "PETER", "JAMES", "JOHN"].map((s) => T(gJ, "lab", 0, 0, s, 11));
+  const days = [...Array(15)].map((_, i) => el("rect", { x: 465 + i * 24, y: 412, width: 16, height: 16, rx: 3, fill: "none", stroke: INK, "stroke-width": 1.6 }, gJ)), daysLab = T(gJ, "lab", 640, 452, "FIFTEEN DAYS", 12);
+
+  // Arrian
+  const gA = G(), SCA = 1.6;
+  const aBar = el("rect", { x: 160, y: 250, height: 22, width: 0, rx: 4, fill: INK }, gA), gBar = el("rect", { x: 160, y: 350, height: 22, width: 0, rx: 4, fill: MUSTARD }, gA);
+  const aLab = T(gA, "lab", 160, 236, "ALEXANDER'S CAMPAIGNS TO ARRIAN'S ACCOUNT · MORE THAN 400 YEARS", 13, "start"), gLab = T(gA, "lab", 160, 336, "THE CROSS TO THE GOSPELS · 40 TO 65 YEARS", 13, "start");
+  const fillDots = [...Array(18)].map((_, i) => el("circle", { cx: 166 + (i % 9) * 11, cy: 357 + Math.floor(i / 9) * 8, r: 3, fill: INK }, gA));
+  const fillLab = T(gA, "disp", 640, 470, "what stood inside the gap?", 40);
+
+  // the names
+  const gN = G(), books4 = ["MATTHEW", "MARK", "LUKE", "JOHN"].map((n) => book(gN, "", 92, 124));
+  const titles = ["ACCORDING TO", "ACCORDING TO", "ACCORDING TO", "ACCORDING TO"].map((s, i) => { const g = G(gN); T(g, "lab", 0, -6, s, 9); T(g, "lab", 0, 10, ["MATTHEW", "MARK", "LUKE", "JOHN"][i], 11, null, INK); return g; });
+  const copiesN = [...Array(4 * 7)].map((_, i) => { const b = book(gN, ["MATTHEW", "MARK", "LUKE", "JOHN"][i % 4], 44, 58); b._name.setAttribute("style", "font-size:7px;letter-spacing:1px;"); return b; });
+  const guesses = [["ANDREW?", 380, 224], ["PHILIP?", 900, 324], ["THOMAS?", 510, 424], ["BARTHOLOMEW?", 770, 224]].map(([s, x, y]) => ({ e: T(gN, "lab", x, y, s, 15, null, STONE), x, y }));
+  const none = T(gN, "disp", 640, 180, "we find none", 40);
+  const twelve = [...Array(12)].map((_, i) => ({ a: i / 12 * Math.PI * 2, e: person(gN, 9) })), twLab = T(gN, "lab", 520, 350, "THE TWELVE", 13);
+  const pMark = person(gN, 10, MUSTARD), pLuke = person(gN, 10, MUSTARD), mkLab = T(gN, "lab", 0, 0, "MARK", 12, null, INK), lkLab = T(gN, "lab", 0, 0, "LUKE", 12, null, INK);
+  const route = line(gN, "M820 200 C900 160 1000 200 1040 280", { stroke: STONE, "stroke-width": 2, "stroke-dasharray": "0.02 0.02" }), routeLab = T(gN, "lab", 960, 152, "PAUL'S FIRST MISSION", 11);
+  const petr = book(gN, "", 120, 160), petrT = T(petr, "lab", 4, -10, "A GOSPEL", 11), petrT2 = T(petr, "lab", 4, 10, "OF PETER", 11, null, INK), petrLab = T(gN, "lab", 640, 500, "UNDER AN APOSTLE'S NAME · ABOUT AD 200", 12);
+
+  // Papias and the elder; Luke
+  const gW = G(), chain = ["PETER", "MARK", "THE ELDER", "PAPIAS"].map((s, i) => { const g = G(gW); person(g, 14); T(g, "lab", 0, 36, s, 12); return g; });
+  const chainLinks = [0, 1, 2].map((i) => line(gW, `M${250 + i * 260 + 24} 260 H${250 + (i + 1) * 260 - 24}`, { stroke: MUSTARD, "stroke-width": 2.5 }));
+  const markBook = book(gW, "MARK", 60, 80), interp = T(gW, "lab", 380, 230, "INTERPRETER", 11, null, MUSTARD);
+  const eyes = [...Array(7)].map((_, i) => person(gW, 8)), lens = G(gW); el("circle", { r: 34, fill: "none", stroke: INK, "stroke-width": 4 }, lens); el("line", { x1: 24, y1: 24, x2: 52, y2: 52, stroke: INK, "stroke-width": 6, "stroke-linecap": "round" }, lens);
+  const lukeBook = book(gW, "LUKE", 70, 94), lukeV = T(gW, "ital", 640, 160, "having carefully investigated everything from the beginning", 32), lukeRef = T(gW, "lab", 640, 196, "LUKE 1:3 · BEREAN STANDARD BIBLE", 12);
+  const strands = eyes.map(() => line(gW, "M0 0 L1 1", { stroke: LINE, "stroke-width": 1.6 }));
+
+  // memory and the churches
+  const gR = G(), mem = el("path", { fill: "none", stroke: INK, "stroke-width": 3, "stroke-linecap": "round" }, gR);
+  const memLab = T(gR, "lab", 640, 200, "MEMORY BENDS", 13);
+  const churches = [260, 520, 780, 1040].map((x, i) => { const g = G(gR); el("path", { d: "M-34 0 V-38 L0 -66 L34 -38 V0 Z", fill: PAPER, stroke: INK, "stroke-width": 2.2 }, g); el("line", { x1: 0, y1: -66, x2: 0, y2: -84, stroke: INK, "stroke-width": 2 }, g); el("line", { x1: -6, y1: -78, x2: 6, y2: -78, stroke: INK, "stroke-width": 2 }, g);
+    const crowd = [...Array(7)].map((_, k) => person(g, 4.5, STONE)); crowd.forEach((c, k) => set(c, { cx: -40 + k * 13, cy: 22 + (k % 2) * 9 })); move(g, x, 420); return g; });
+  const chLab = ["PETER PREACHED", "JAMES", "JOHN", "THOSE WHO HEARD"].map((s, i) => T(gR, "lab", [260, 520, 780, 1040][i], 488, s, 11));
+  const rails = [376, 396].map((y) => line(gR, `M200 ${y} H1100`, { stroke: MUSTARD, "stroke-width": 2 })), story = el("circle", { r: 8, fill: INK }, gR);
+  const holdLab = T(gR, "disp", 640, 300, "not free to drift", 40);
+
+  // open questions
+  const gO = G(), qs = [["WHO WROTE MATTHEW,", "OR STANDS BEHIND IT?"], ["WHO WAS THE", "BELOVED DISCIPLE?"], ["WHEN, EXACTLY,", "DID MARK WRITE?"]].map((ls, i) => { const g = G(gO); el("rect", { x: -150, y: -70, width: 300, height: 140, rx: 8, fill: PAPER, stroke: INK, "stroke-width": 2 }, g); T(g, "disp", 0, -10, "?", 50, null, MUSTARD); ls.forEach((s, j) => T(g, "lab", 0, 28 + j * 20, s, 12)); return g; });
+  const differ = T(gO, "disp", 640, 470, "faithful Christians differ here", 38);
+
+  const t0 = Ls("objection"), t1 = Ls("true"), t2 = Ls("lifetime"), t3 = Ls("paul"), t4 = Ls("gaps"), t5 = Ls("names"), t6 = Ls("witness"), t7 = Ls("reply"), t8 = Ls("open"), t9 = Ls("close"), END = F.VOICE_END;
+  // the opening: four books, names that flicker
+  const gI = G(), ib = ["MATTHEW", "MARK", "LUKE", "JOHN"].map((n) => book(gI, n, 100, 136)), iq = ib.map(() => T(gI, "disp", 0, 0, "?", 46, null, MUSTARD));
+  const gapArrow = line(gI, "M220 470 H1060", { stroke: STONE, "stroke-width": 2.5 }), gapLab = T(gI, "lab", 640, 506, "DECADES LATER?", 14), icross = G(gI); el("line", { x1: 0, y1: -30, x2: 0, y2: 30, stroke: INK, "stroke-width": 4 }, icross); el("line", { x1: -14, y1: -14, x2: 14, y2: -14, stroke: INK, "stroke-width": 4 }, icross); move(icross, 190, 470);
+
+  F.title("Written too late?");
+  F.endCard(window.SCRIPT.chapters.at(-1).titleCard, END + 0.9);
+
+  return (t) => {
+    // 1 opening
+    const vI = vis(t, 0.3, CS("true") + 0.5); op(gI, vI);
+    if (vI > 0) { ib.forEach((b, i) => { const k = up(t, t0[0] - 0.8 + i * 0.25, 0.8); move(b, 340 + i * 200, 280 + 8 * (1 - k) + 3 * Math.sin(t + i)); op(b, k); const fl = up(t, t0[0] + 5.5 + i * 0.3, 0.5); op(b._name, 1 - fl); move(iq[i], 344 + i * 200, 300); op(iq[i], fl); });
+      draw(gapArrow, up(t, t0[0] + 2.2, 1.6)); op(icross, up(t, t0[0] + 1.6, 0.6)); op(gapLab, up(t, t0[0] + 3.2, 0.6)); }
+    // 2-4 the timeline
+    const vT = vis(t, CS("true") - 0.2, CS("gaps") + 0.4); op(gT, vT);
+    if (vT > 0) { draw(axis, up(t, CS("true"), 1.4)); ticks.forEach((g, i) => op(g, up(t, CS("true") + 0.3 + i * 0.2, 0.5)));
+      op(cross, up(t, t1[1] + 0.4, 0.6)); op(crossLab, up(t, t1[1] + 0.8, 0.6));
+      gMarks.forEach((m, i) => { const k = up(t, t1[1] + 2.4 + i * 0.9, 0.8); op(m.g, k); m.g.setAttribute("transform", `translate(0 ${(-14 * (1 - k)).toFixed(1)})`); });
+      draw(bracket, up(t, t1[2], 1.0)); op(brLab, up(t, t1[2] + 0.6, 0.6));
+      ghosts.forEach((g, i) => op(g, span(t, t1[2] + 3.6 + i * 0.3, CS("lifetime"), 0.6))); op(ghostLab, span(t, t1[2] + 4.0, CS("lifetime"), 0.6));
+      const lk = up(t, t2[0] + 1.6, 2.0); set(life, { width: ((YX(92) - YX(5)) * lk).toFixed(1) }); op(life, (lk > 0 ? 1 : 0) * (1 - up(t, CS("paul") + 0.2, 0.8))); op(lifeLab, up(t, t2[0] + 2.6, 0.6) * (1 - up(t, CS("paul") + 0.2, 0.8)));
+      const wk = 1 - up(t, CS("paul") + 0.4, 0.8);
+      wit.forEach((w, i) => { op(w.e, up(t, t2[1] + i * 0.05, 0.4) * wk); set(w.e, { cx: YX(w.y).toFixed(1), cy: (TLY - 205 + w.row * 40 + 2 * Math.sin(t + i)).toFixed(1) }); });
+      wit2.forEach((w, i) => { op(w.e, up(t, t2[1] + 2.0 + i * 0.04, 0.4) * wk); set(w.e, { cx: YX(w.y).toFixed(1), cy: (TLY - 203 + w.row * 40).toFixed(1) }); });
+      const pv = span(t, t3[0], t3[2] - 0.2, 0.6, 0.6) + span(t, t3[3] - 0.2, t3[4], 0.6, 0.6);
+      letters.forEach((l, i) => op(l, up(t, t3[0] + 0.6 + i * 0.4, 0.6) * clamp(pv))); op(letLab, up(t, t3[0] + 1.0, 0.6) * clamp(pv));
+      draw(recv, up(t, t3[1] + 0.6, 1.4)); op(recv, clamp(pv)); op(early, up(t, t3[1] + 0.3, 0.5) * clamp(pv)); op(fewLab, up(t, t3[3] + 1.4, 0.6) * clamp(pv));
+      gT.setAttribute("opacity", (vT * (1 - 0.85 * span(t, t3[2] - 0.4, t3[3] - 0.1, 0.5, 0.5)) * (1 - span(t, t3[4] - 0.3, CS("gaps") + 0.4, 0.5, 0.4))).toFixed(3)); }
+    // verse
+    const vV = span(t, t3[2] - 0.5, t3[3] + 0.1, 0.6, 0.6); op(gV, vV);
+    if (vV > 0) { vLines.forEach((l, i) => op(l, up(t, t3[2] + i * 2.0, 0.8))); op(vRef, up(t, t3[2] + 3.0, 0.7)); }
+    // Jerusalem
+    const vJ = span(t, t3[4] - 0.3, CS("gaps") + 0.3, 0.6, 0.6); op(gJ, vJ);
+    if (vJ > 0) { const meet = up(t, t3[4] + 0.6, 1.4); set(pPaul, { cx: mix(420, 600, meet).toFixed(1), cy: 262 }); set(pPeter, { cx: 680, cy: 262 });
+      const jk = up(t, t3[4] + 4.0, 1.0); set(pJames, { cx: 650, cy: mix(150, 320, jk).toFixed(1) }); set(pJohn, { cx: 720, cy: mix(380, 310, jk).toFixed(1) }); op(pJames, jk); op(pJohn, jk);
+      [[pPaul, 0], [pPeter, 1], [pJames, 2], [pJohn, 3]].forEach(([p, i]) => { move(nm[i], +p.getAttribute("cx"), +p.getAttribute("cy") - 22); op(nm[i], i < 2 ? up(t, t3[4] + 0.6, 0.5) : jk); });
+      days.forEach((d, i) => { const on = up(t, t3[4] + 1.4 + i * 0.12, 0.25); d.setAttribute("fill", on > 0.5 ? MUSTARD : "none"); op(d, up(t, t3[4] + 1.0, 0.5)); }); op(daysLab, up(t, t3[4] + 2.6, 0.5)); }
+    // Arrian
+    const vA = vis(t, CS("gaps") - 0.2, CS("names") + 0.3); op(gA, vA);
+    if (vA > 0) { set(aBar, { width: (420 * SCA * up(t, t4[1] + 1.0, 2.4)).toFixed(1) }); op(aLab, up(t, t4[1] + 0.6, 0.6)); set(gBar, { width: (65 * SCA * up(t, t4[1] + 3.6, 1.0)).toFixed(1) }); op(gLab, up(t, t4[1] + 3.4, 0.6));
+      fillDots.forEach((d, i) => op(d, up(t, t4[2] + 1.2 + i * 0.08, 0.3))); op(fillLab, up(t, t4[2] + 0.4, 0.8)); }
+    // names
+    const vN = vis(t, CS("names") - 0.2, CS("witness") + 0.3); op(gN, vN);
+    if (vN > 0) {
+      const s1 = 1 - up(t, t5[1] - 0.2, 0.7);
+      books4.forEach((b, i) => { move(b, 340 + i * 200, 300); op(b, up(t, CS("names") + i * 0.2, 0.6) * s1); const st = up(t, t5[0] + 2.4 + i * 0.5, 0.35); move(titles[i], 340 + i * 200 + 4, 300 - 26 * (1 - st), mix(1.5, 1, st)); op(titles[i], st * s1); });
+      const cv = span(t, t5[1] - 0.2, t5[3] - 0.2, 0.6, 0.6);
+      copiesN.forEach((c, i) => { const row = i % 4, col = Math.floor(i / 4); move(c, 250 + col * 130, 170 + row * 100 + 2 * Math.sin(t + i), 1); op(c, up(t, t5[1] + 0.3 + row * 0.12 + col * 0.05, 0.4) * cv); });
+      guesses.forEach((g, i) => { const k = span(t, t5[2] + 0.6 + i * 0.6, t5[2] + 3.6 + i * 0.3, 0.4, 0.6); op(g.e, k * cv); move(g.e, 0, -6 * k); });
+      op(none, span(t, t5[2] + 3.8, t5[3] - 0.2, 0.6, 0.6));
+      const tw = span(t, t5[3] - 0.1, t5[4] - 0.2, 0.6, 0.6);
+      twelve.forEach((p, i) => { set(p.e, { cx: (520 + Math.cos(p.a + t * 0.05) * 110).toFixed(1), cy: (330 + Math.sin(p.a + t * 0.05) * 110).toFixed(1) }); op(p.e, up(t, t5[3] + i * 0.08, 0.4) * tw); }); op(twLab, tw);
+      const back = up(t, t5[3] + 5.2, 2.2), rt = up(t, t5[3] + 4.6, 1.6);
+      draw(route, rt); op(route, tw); op(routeLab, up(t, t5[3] + 4.8, 0.6) * tw);
+      const mx = back < 1 ? mix(820, 930, ease(rt)) - 110 * ease(back) : 820, my = 200 - 18 * Math.sin(Math.PI * rt) * (1 - back);
+      set(pMark, { cx: (back > 0 ? mix(930, 820, back) : mix(820, 930, rt)).toFixed(1), cy: my.toFixed(1) }); op(pMark, up(t, t5[3] + 2.0, 0.5) * tw); move(mkLab, +pMark.getAttribute("cx"), my - 20); op(mkLab, up(t, t5[3] + 2.0, 0.5) * tw);
+      set(pLuke, { cx: 760, cy: 450 }); op(pLuke, up(t, t5[3] + 2.6, 0.5) * tw); move(lkLab, 760, 430); op(lkLab, up(t, t5[3] + 2.6, 0.5) * tw);
+      const pv = span(t, t5[4] - 0.2, CS("witness") + 0.3, 0.6, 0.6); move(petr, 640, 320 + 3 * Math.sin(t)); op(petr, pv); op(petrLab, up(t, t5[4] + 1.6, 0.6) * pv); }
+    // witnesses
+    const vW = vis(t, CS("witness") - 0.2, CS("reply") + 0.3); op(gW, vW);
+    if (vW > 0) { const s1 = 1 - up(t, t6[1] - 0.3, 0.7);
+      chain.forEach((g, i) => { move(g, 250 + i * 260, 260); op(g, up(t, t6[0] + 0.6 + i * 1.2, 0.6) * s1); }); chainLinks.forEach((l, i) => { draw(l, up(t, t6[0] + 1.2 + i * 1.2, 0.8)); op(l, s1); });
+      move(markBook, 510, 380); op(markBook, up(t, t6[0] + 7.0, 0.7) * s1); op(interp, up(t, t6[0] + 5.2, 0.6) * s1);
+      const s2 = up(t, t6[1] - 0.1, 0.7);
+      eyes.forEach((e, i) => { const a = -0.9 + i * 0.3, x = 640 + Math.cos(a - Math.PI / 2) * 0 + (i - 3) * 110, y = 300 + Math.abs(i - 3) * 22; set(e, { cx: x, cy: y }); op(e, up(t, t6[1] + 0.3 + i * 0.1, 0.4) * s2); strands[i].setAttribute("d", `M${x} ${y} L640 450`); op(strands[i], up(t, t6[1] + 2.0 + i * 0.15, 0.5) * s2); });
+      const lk = up(t, t6[1] + 0.8, 3.4); move(lens, mix(300, 980, lk), 300 - 30 * Math.sin(lk * Math.PI)); op(lens, s2 * (1 - up(t, t6[1] + 4.6, 0.5)));
+      move(lukeBook, 640, 470); op(lukeBook, up(t, t6[1] + 3.6, 0.7)); op(lukeV, up(t, t6[1] + 2.0, 0.8)); op(lukeRef, up(t, t6[1] + 3.0, 0.6)); }
+    // reply
+    const vR = vis(t, CS("reply") - 0.2, CS("open") + 0.3); op(gR, vR);
+    if (vR > 0) { const s1 = 1 - up(t, t7[2] - 0.3, 0.6), wob = up(t, t7[1] + 0.4, 2.0);
+      let d = "M240 260"; for (let x = 260; x <= 1040; x += 20) d += ` L${x} ${(260 + Math.sin(x / 50 + t * 1.2) * 40 * wob * (x - 240) / 800).toFixed(1)}`; mem.setAttribute("d", d); op(mem, up(t, t7[0] + 0.4, 0.6) * s1); op(memLab, up(t, t7[1] + 0.6, 0.6) * s1);
+      churches.forEach((g, i) => op(g, up(t, t7[2] + 0.2 + i * 0.4, 0.6))); chLab.forEach((l, i) => op(l, up(t, t7[2] + 0.6 + i * 0.4, 0.6)));
+      rails.forEach((r) => draw(r, up(t, t7[2] + 2.4, 1.6))); const sk = ((t - t7[2] - 3) / 5) % 1; set(story, { cx: mix(200, 1100, Math.max(0, sk)).toFixed(1), cy: 386 }); op(story, t > t7[2] + 3 ? 1 : 0); op(holdLab, up(t, t7[2] + 4.0, 0.7)); }
+    // open
+    const vO = vis(t, CS("open") - 0.2, CS("close") + 0.3); op(gO, vO);
+    if (vO > 0) { qs.forEach((g, i) => { const k = up(t, t8[0] + 1.0 + i * 2.2, 0.7); move(g, 260 + i * 380, 290 + 8 * Math.sin(t * 0.8 + i) + 14 * (1 - k)); op(g, k); }); op(differ, up(t, t8[1] + 0.3, 0.7)); }
+    // close: back to the timeline, the earliest witness
+    const vC = span(t, CS("close") - 0.2, END + 2.5, 0.6, 0.9);
+    if (vC > 0) { op(gT, 1); gT.setAttribute("opacity", vC.toFixed(3));
+      [life, lifeLab, letLab, ghostLab, ...ghosts, ...wit.map((w) => w.e), ...wit2.map((w) => w.e), fewLab].forEach((e) => op(e, 0));
+      gMarks.forEach((m) => { op(m.g, 1); m.g.removeAttribute("transform"); }); op(cross, 1); op(crossLab, 1); draw(axis, 1); ticks.forEach((g) => op(g, 1)); op(bracket, 1); draw(bracket, 1); op(brLab, 1);
+      letters.forEach((l) => op(l, up(t, t9[1] - 0.2, 0.6))); op(early, up(t, t9[1], 0.5)); draw(recv, up(t, t9[1] + 0.2, 1.2)); op(recv, 1);
+      const pulse = up(t, t9[1] + 1.4, 0.5); set(early, { r: (7 + 5 * pulse * (0.6 + 0.4 * Math.sin(t * 3))).toFixed(1) }); }
+  };
+});
+</script>
+</body></html>

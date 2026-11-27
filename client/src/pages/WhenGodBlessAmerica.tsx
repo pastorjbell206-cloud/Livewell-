@@ -47,7 +47,7 @@ export default function WhenGodBlessAmerica() {
     <Layout>
       <SEOMeta
         title="A Higher Allegiance"
-        description="A pastor's critique of political idolatry in the American church — from Scripture, from church history, and from inside the sanctuary. Available now as an ebook."
+        description="A pastor's critique of political idolatry in the American church, drawn from Scripture, from church history, and from inside the sanctuary. Available now as an ebook."
         image={`${SITE_URL}${SHARE}`}
         url={`${SITE_URL}/books/a-higher-allegiance`}
         type="book"

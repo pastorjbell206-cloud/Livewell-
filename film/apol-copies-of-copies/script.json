@@ -1,0 +1,132 @@
+{
+  "title": "Copies of copies",
+  "note": "Apologetics film 1, written 2026-11-26 in the Gather session at James's word (\"create several for apologetics that explain ... the reliability ... 3 to 5 minutes\"). Every fact comes from three LiveWell pages and their ledger: /questions/text/copies-of-copies, /questions/text/more-variants-than-words and /questions/text/compared-with-other-ancient-books. See facts.md. Scripture is the Berean Standard Bible, copied from client/public/bible/text/.",
+  "page": "/questions/text/copies-of-copies",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "objection",
+      "kicker": "The objection",
+      "level": 0.2,
+      "lines": [
+        "Here's an objection you may have heard. We don't have the original New Testament. Not one page.",
+        "Only copies of copies, made by hand for centuries. So how could anyone know what it first said?"
+      ]
+    },
+    {
+      "id": "true",
+      "kicker": "What's true in it",
+      "level": 0.3,
+      "lines": [
+        "Start with what's true, because a lot of it is.",
+        "The New Testament was copied by hand for nearly fifteen hundred years, until it was first printed in Greek in 1516.",
+        "None of the originals survives. And the copies differ from one another in more places than there are words in the New Testament."
+      ]
+    },
+    {
+      "id": "why",
+      "kicker": "Why the number is so big",
+      "level": 0.4,
+      "lines": [
+        "But think about why that number is so big.",
+        "Every copyist made mistakes. So the more copies survive, the more mistakes survive with them. And no book of the ancient world survives in more copies than this one.",
+        "Compare one of Rome's great histories. The first six books of the Annals of Tacitus survive in a single medieval copy.",
+        "One copy has no differences to count. That doesn't make it more reliable. It makes its mistakes invisible."
+      ]
+    },
+    {
+      "id": "kinds",
+      "kicker": "What kind of differences",
+      "level": 0.5,
+      "lines": [
+        "So what are all those differences?",
+        "Most are spelling and simple slips. A letter dropped. A word written twice.",
+        "Many more you couldn't even see in English, like the order of words in a Greek sentence.",
+        "Some change the meaning, but turn up in one late copy against all the rest.",
+        "And a small share both change the meaning and have a real claim to be original. One leading scholar puts them at less than one percent."
+      ]
+    },
+    {
+      "id": "hard",
+      "kicker": "A hard case",
+      "level": 0.55,
+      "lines": [
+        "Here's one of those hard cases. Jesus is speaking about the day He will return.",
+        "No one knows about that day or hour, not even the angels in heaven, nor the Son, but only the Father.",
+        "The oldest copies of Matthew have the words, nor the Son. Many later copies leave them out, most likely because they were hard to explain.",
+        "And that's how we know. The older wording didn't vanish. It survived in other copies, right beside the change."
+      ],
+      "scripture": {
+        "reference": "Matthew 24:36",
+        "translation": "Berean Standard Bible",
+        "text": "No one knows about that day or hour, not even the angels in heaven, nor the Son, but only the Father.",
+        "spoken": true
+      }
+    },
+    {
+      "id": "tree",
+      "kicker": "Not a whisper. A family tree.",
+      "level": 0.65,
+      "lines": [
+        "That's why the telephone game is the wrong picture. In that game, one whisper passes down one line, and nobody can check it.",
+        "The New Testament was written, not whispered. And it was copied in many places at once, from Egypt to Gaul, by people who never met.",
+        "A mistake made in one branch is passed down that branch and nowhere else. Lay the branches side by side, and the mistake stands out.",
+        "Older copies stayed in use, too. A copy of Luke and John from about the year two hundred agrees closely with a great Bible made more than a century later.",
+        "And the church argued about differences in the open. Around the year one eighty, Irenaeus said the oldest copies of Revelation read six hundred sixty-six, not six hundred sixteen.",
+        "Those are people checking, not people whispering."
+      ]
+    },
+    {
+      "id": "limits",
+      "kicker": "The honest limits",
+      "level": 0.6,
+      "lines": [
+        "There are honest limits, and you should hear them.",
+        "The earliest pieces we have are small, and their dates are argued over. The first stretch of copying is the part no one can see.",
+        "And Christians have sometimes claimed too much. A fragment of Mark was once announced as first century. It turned out to be from the late second or early third, and the scholar who announced it apologized in public.",
+        "Still, to hide in those early years, a change would have had to spread everywhere and erase the older wording in every branch. That's possible. It isn't the likeliest story."
+      ]
+    },
+    {
+      "id": "compare",
+      "kicker": "Beside other ancient books",
+      "level": 0.75,
+      "lines": [
+        "Now set the New Testament beside the other books of its world.",
+        "Homer's Iliad, the best-kept classical work, survives in about seventeen hundred and fifty manuscripts.",
+        "The earliest copies of Julius Caesar's war in Gaul were made about nine hundred years after he wrote it.",
+        "Historians quote those books every day, and they should. And on any honest count, the New Testament has more copies, in more languages, closer to its writing, than any of them."
+      ]
+    },
+    {
+      "id": "proves",
+      "kicker": "What this proves",
+      "level": 0.85,
+      "lines": [
+        "So here's where the evidence lands. We know what the New Testament says with high confidence in nearly every place. And where we don't, we know that we don't.",
+        "Even Bart Ehrman, the skeptic who made that big number famous, has said the essential Christian beliefs don't rest on a disputed reading.",
+        "But knowing what Matthew wrote doesn't tell you whether it happened. That's a different question, and it deserves its own answer."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "The grass withers and the flowers fall, but the word of our God stands forever.",
+        "So open it. Read it slowly. Then ask whether it's true."
+      ],
+      "scripture": {
+        "reference": "Isaiah 40:8",
+        "translation": "Berean Standard Bible",
+        "text": "The grass withers and the flowers fall, but the word of our God stands forever.",
+        "spoken": true
+      },
+      "titleCard": [
+        "Read it. Then ask if it's true.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

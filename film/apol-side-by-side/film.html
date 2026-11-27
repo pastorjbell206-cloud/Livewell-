@@ -1,0 +1,103 @@
+<!doctype html>
+<!-- "Side by side" (apologetics film 6: does the Bible contradict itself?). Four Gospel pages laid side by
+     side with the places they differ; Africanus and Augustine writing about it long ago; a Passover week
+     whose day is argued and whose frame is not; two family trees from David to Joseph; Herod's death and
+     Quirinius's census on one line; forty thousand and four thousand; four accounts that overlap at the
+     center; two ways of confessing under one roof. Open with ?t=42 to freeze on second 42. -->
+<html lang="en"><head><meta charset="utf-8"><title>Side by side</title></head><body>
+<script src="../lib/engine.js"></script>
+<script>
+Film.make((F) => {
+  const { el, txt, set, op, draw, line, move, clamp, ease, up, span, mix, rng, S, E, TL, world, INK, BONE, WARM, MUTED, STONE, MUSTARD, LINE, CHAR } = F;
+  const PAPER = "#FBF9F5";
+  const CH = Object.fromEntries(TL.chapters.map((c) => [c.id, c]));
+  const CS = (id) => CH[id].start;
+  const Ls = (id) => CH[id].lines.map((_, k) => S(id, k));
+  const T = (p, cls, x, y, s, size, anchor, fill) => { const e = txt(p, cls, x, y, s, size, fill ? { fill } : undefined); if (anchor) e.setAttribute("style", (e.getAttribute("style") || "") + `text-anchor:${anchor};`); return e; };
+  const G = (p) => el("g", {}, p || world);
+  const R = rng(13);
+  const vis = (t, a, b) => span(t, a, b, 0.6, 0.7);
+  const t0 = Ls("objection"), t1 = Ls("old"), t2 = Ls("day"), t3 = Ls("trees"), t4 = Ls("census"), t5 = Ls("numbers"), t6 = Ls("witnesses"), t7 = Ls("differ"), t8 = Ls("close"), END = F.VOICE_END;
+  const NAMES = ["MATTHEW", "MARK", "LUKE", "JOHN"];
+  // four Gospel pages: same core rows, edge rows that vary
+  const gospels = (p, diffAt) => NAMES.map((n, i) => { const g = G(p); el("rect", { x: -100, y: -150, width: 200, height: 300, rx: 4, fill: PAPER, stroke: INK, "stroke-width": 2 }, g); T(g, "lab", 0, -168, n, 12, null, INK);
+    const rows = [...Array(12)].map((_, k) => { const core = k >= 3 && k <= 8, w = core ? 140 : 70 + ((i * 31 + k * 17) % 70); const r = el("rect", { x: -76, y: -126 + k * 22, width: w, height: 8, rx: 4, fill: INK }, g); r._core = core; r._diff = !core && (k + i) % 3 === 0; return r; }); g._rows = rows; return g; });
+
+  // 1. four pages, the places they differ
+  const g1 = G(), p1 = gospels(g1), q1 = T(g1, "disp", 640, 600, "?", 0);
+  const draw1 = (t) => { const v = vis(t, 0.3, CS("old") + 0.4); op(g1, v); if (v <= 0) return;
+    p1.forEach((g, i) => { move(g, 250 + i * 260, 330 + 3 * Math.sin(t + i)); op(g, up(t, t0[0] - 1.0 + i * 0.3, 0.7)); g._rows.forEach((r) => r.setAttribute("fill", r._diff && t > t0[0] + 2.0 ? MUSTARD : INK)); }); };
+
+  // 2. nothing new: Africanus and Augustine
+  const g2 = G(), YX2 = (y) => 160 + y * (960 / 2000), ax2 = line(g2, `M${YX2(0)} 400 H${YX2(2000)}`, { "stroke-width": 3 });
+  const tk2 = [0, 500, 1000, 1500, 2000].map((y) => { const g = G(g2); el("line", { x1: YX2(y), x2: YX2(y), y1: 394, y2: 406, stroke: INK, "stroke-width": 2 }, g); T(g, "lab", YX2(y), 432, y ? `AD ${y}` : "AD 1", 12); return g; });
+  const mk2 = [[220, "JULIUS AFRICANUS", "THE TWO FAMILY TREES", 120], [400, "AUGUSTINE", "HOW THE GOSPELS AGREE", 210]].map(([y, a, b, h]) => { const g = G(g2); el("circle", { cx: YX2(y), cy: 400, r: 9, fill: MUSTARD }, g); el("line", { x1: YX2(y), x2: YX2(y), y1: 390, y2: 400 - h, stroke: MUSTARD, "stroke-width": 2 }, g); T(g, "lab", YX2(y), 400 - h - 34, a, 12, null, INK); T(g, "lab", YX2(y), 400 - h - 14, b, 11); const s = G(g); el("rect", { x: -16, y: -20, width: 32, height: 40, rx: 2, fill: PAPER, stroke: INK, "stroke-width": 1.8 }, s); [-10, -2, 6, 14].forEach((dy) => el("line", { x1: -9, x2: 9, y1: dy, y2: dy, stroke: INK, "stroke-width": 1.6 }, s)); move(s, YX2(y) + 40, 400 - h + 10); return g; });
+  const open2 = T(g2, "disp", 820, 230, "written about in the open", 40);
+  const draw2 = (t) => { const v = vis(t, CS("old") - 0.2, CS("day") + 0.3); op(g2, v); if (v <= 0) return;
+    draw(ax2, up(t, t1[0] + 0.4, 1.2)); tk2.forEach((g, i) => op(g, up(t, t1[0] + 0.8 + i * 0.15, 0.4))); op(mk2[0], up(t, t1[1] + 0.6, 0.7)); op(mk2[1], up(t, t1[1] + 4.0, 0.7)); op(open2, up(t, t1[2] + 0.6, 0.8)); };
+
+  // 3. the day he died
+  const g3 = G(), days = ["THU", "FRI", "SAT", "SUN"].map((d, i) => { const g = G(g3); const r = el("rect", { x: -100, y: -60, width: 200, height: 120, rx: 8, fill: PAPER, stroke: INK, "stroke-width": 2 }, g); T(g, "lab", 0, -30, d, 14, null, INK); g._r = r; move(g, 310 + i * 220, 330); return g; });
+  const syn = G(g3); el("rect", { x: -115, y: -16, width: 230, height: 32, rx: 16, fill: MUSTARD }, syn); T(syn, "lab", 0, 5, "MATTHEW · MARK · LUKE", 11, null, INK); const joh = G(g3); el("rect", { x: -90, y: -16, width: 180, height: 32, rx: 16, fill: "none", stroke: MUSTARD, "stroke-width": 2.5 }, joh); T(joh, "lab", 0, 5, "JOHN", 11, null, INK);
+  const synL = T(g3, "lab", 0, 0, "FRIDAY: THE FEAST DAY ITSELF", 11), johL = T(g3, "lab", 0, 0, "FRIDAY: THE DAY OF PREPARATION", 11), four = T(g3, "disp", 640, 140, "four solutions, none settled", 40);
+  const frame3 = T(g3, "lab", 640, 540, "UNDER PILATE · JERUSALEM · PASSOVER · FRIDAY", 14, null, INK), raised = T(g3, "lab", 970, 360, "RAISED", 13, null, MUSTARD), cross3 = G(g3); el("line", { x1: 0, y1: -30, x2: 0, y2: 26, stroke: INK, "stroke-width": 4 }, cross3); el("line", { x1: -12, y1: -16, x2: 12, y2: -16, stroke: INK, "stroke-width": 4 }, cross3); move(cross3, 530, 350);
+  const draw3 = (t) => { const v = vis(t, CS("day") - 0.2, CS("trees") + 0.3); op(g3, v); if (v <= 0) return;
+    days.forEach((g, i) => op(g, up(t, t2[0] + 0.2 + i * 0.2, 0.5)));
+    const sk = up(t, t2[0] + 1.8, 0.8); move(syn, 530, 432); op(syn, sk); move(synL, 530, 472); op(synL, sk); const jk = up(t, t2[0] + 6.0, 0.8); move(joh, 530, 228); op(joh, jk); move(johL, 530, 196); op(johL, jk);
+    const fade = 1 - up(t, t2[2] - 0.2, 0.6); [syn, joh, synL, johL].forEach((e) => e.setAttribute("opacity", Math.min(+e.getAttribute("opacity") || 1, fade).toFixed(2)));
+    op(four, span(t, t2[1] + 0.2, t2[2], 0.6)); op(cross3, up(t, t2[2] + 2.0, 0.6)); op(frame3, up(t, t2[2] + 1.0, 0.6)); op(raised, up(t, t2[2] + 6.6, 0.6)); days[3]._r.setAttribute("fill", t > t2[2] + 6.4 ? "#F3E3B0" : PAPER); };
+
+  // 4. two family trees
+  const g4 = G(), dav = G(g4); el("circle", { r: 14, fill: INK }, dav); T(dav, "lab", 0, -26, "DAVID", 13, null, INK); move(dav, 640, 140);
+  const jos = G(g4); el("circle", { r: 14, fill: INK }, jos); T(jos, "lab", 0, 36, "JOSEPH", 13, null, INK); move(jos, 640, 520);
+  const pathL = line(g4, "M640 140 C420 200 420 280 600 330 C460 380 440 460 640 520", { stroke: INK, "stroke-width": 3 }), pathR = line(g4, "M640 140 C860 200 860 280 680 330 C820 380 840 460 640 520", { stroke: MUSTARD, "stroke-width": 3 });
+  const lbs = [T(g4, "lab", 400, 220, "THROUGH SOLOMON · MATTHEW", 12, "end", INK), T(g4, "lab", 880, 220, "THROUGH NATHAN · LUKE", 12, "start", INK), T(g4, "lab", 640, 334, "SHEALTIEL · ZERUBBABEL", 11)];
+  const hod = T(g4, "disp", 640, 600 - 20, "", 0), hodLab = T(g4, "lab", 1000, 470, "BOTH: THE HOUSE OF DAVID", 13, null, MUSTARD);
+  const draw4 = (t) => { const v = vis(t, CS("trees") - 0.2, CS("census") + 0.3); op(g4, v); if (v <= 0) return;
+    op(dav, up(t, t3[0] + 0.2, 0.5)); op(jos, up(t, t3[0] + 0.4, 0.5)); draw(pathL, up(t, t3[0] + 1.2, 2.0)); draw(pathR, up(t, t3[0] + 2.4, 2.0)); op(lbs[0], up(t, t3[0] + 2.0, 0.6)); op(lbs[1], up(t, t3[0] + 3.4, 0.6)); op(lbs[2], up(t, t3[1] + 4.0, 0.6)); op(hodLab, up(t, t3[2] + 2.4, 0.6)); };
+
+  // 5. the census
+  const g5 = G(), YX5 = (y) => 200 + (y + 12) * (880 / 24), ax5 = line(g5, `M${YX5(-12)} 400 H${YX5(12)}`, { "stroke-width": 3 });
+  const tk5 = [-10, -5, 1, 5, 10].map((y) => { const g = G(g5); el("line", { x1: YX5(y), x2: YX5(y), y1: 394, y2: 406, stroke: INK, "stroke-width": 2 }, g); T(g, "lab", YX5(y), 432, y < 0 ? `${-y} BC` : `AD ${y}`, 12); return g; });
+  const herod = G(g5); el("circle", { cx: YX5(-4), cy: 400, r: 9, fill: INK }, herod); el("line", { x1: YX5(-4), x2: YX5(-4), y1: 390, y2: 300, stroke: INK, "stroke-width": 2 }, herod); T(herod, "lab", YX5(-4), 280, "HEROD DIES · 4 BC (USUAL RECKONING)", 11, null, INK);
+  const quir = G(g5); el("circle", { cx: YX5(6), cy: 400, r: 9, fill: MUSTARD }, quir); el("line", { x1: YX5(6), x2: YX5(6), y1: 390, y2: 230, stroke: MUSTARD, "stroke-width": 2 }, quir); T(quir, "lab", YX5(6), 210, "QUIRINIUS'S CENSUS · AD 6 (JOSEPHUS)", 11, null, INK);
+  const br5 = line(g5, `M${YX5(-4)} 460 V470 H${YX5(6)} V460`, { stroke: STONE, "stroke-width": 2 }), br5L = T(g5, "lab", YX5(1), 494, "ABOUT TEN YEARS", 12), q5 = T(g5, "disp", 640, 150, "open", 50, null, STONE);
+  const born = T(g5, "lab", 640, 540, "UNTOUCHED: BORN UNDER HEROD, IN DAVID'S TOWN", 13, null, INK);
+  const draw5 = (t) => { const v = vis(t, CS("census") - 0.2, CS("numbers") + 0.3); op(g5, v); if (v <= 0) return;
+    draw(ax5, up(t, t4[0], 1.0)); tk5.forEach((g, i) => op(g, up(t, t4[0] + 0.4 + i * 0.12, 0.4))); op(quir, up(t, t4[0] + 1.6, 0.6)); op(herod, up(t, t4[0] + 4.6, 0.6)); draw(br5, up(t, t4[0] + 5.6, 0.8)); op(br5L, up(t, t4[0] + 6.0, 0.5)); op(q5, up(t, t4[1] + 2.0, 0.7)); op(born, up(t, t4[2] + 1.0, 0.6)); };
+
+  // 6. numbers
+  const g6 = G(), cols = [["KINGS", 360, "40,000"], ["CHRONICLES", 920, "4,000"]].map(([n, x, num]) => { const g = G(g6); T(g, "lab", x, 170, n, 14, null, INK); T(g, "disp", x, 290, num, 84); T(g, "lab", x, 330, "STALLS", 12); return g; });
+  const zero = T(g6, "disp", 0, 0, "0", 84, null, MUSTARD), miscopy = T(g6, "lab", 640, 400, "NUMBERS WERE EASY TO MISCOPY", 13, null, INK);
+  const pageD = (s) => `M0 -50 C${-40 * s} -70 ${-110 * s} -70 ${-150 * s} -55 L${-150 * s} 55 C${-110 * s} 40 ${-40 * s} 40 0 60 Z`;
+  const bk = [0, 1].map((i) => { const g = G(g6); [1, -1].forEach((s) => el("path", { d: pageD(s), fill: PAPER, stroke: INK, "stroke-width": 2.5 }, g)); T(g, "lab", 0, 94, i ? "CHRONICLES" : "THE OLDER BOOKS, OPEN", 12, null, INK); move(g, i ? 860 : 420, 500, 0.62); return g; });
+  const draw6 = (t) => { const v = vis(t, CS("numbers") - 0.2, CS("witnesses") + 0.3); op(g6, v); if (v <= 0) return;
+    const s1 = 1 - up(t, t5[2] - 0.2, 0.6); cols.forEach((c, i) => op(c, up(t, t5[0] + 3.0 + i * 1.4, 0.6) * mix(1, 0.4, 1 - s1)));
+    const zk = up(t, t5[1] + 1.4, 1.6); move(zero, mix(380, 1010, zk), 290 + 60 * Math.sin(zk * Math.PI) * -1); op(zero, span(t, t5[1] + 1.2, t5[1] + 3.6, 0.4) * s1); op(miscopy, up(t, t5[1] + 1.6, 0.6) * s1);
+    bk.forEach((b, i) => op(b, up(t, t5[2] + 0.8 + i * 1.6, 0.7))); };
+
+  // 7. overlapping accounts
+  const g7 = G(), circles = [[-60, -40], [60, -40], [-60, 40], [60, 40]].map(([dx, dy], i) => el("circle", { cx: 640 + dx, cy: 320 + dy, r: 130, fill: "none", stroke: INK, "stroke-width": 2 }, g7));
+  const cn = [[-150, -120], [150, -120], [-150, 150], [150, 150]].map(([dx, dy], i) => T(g7, "lab", 640 + dx * 1.15, 320 + dy * 1.1, NAMES[i], 12, null, INK));
+  const core = el("circle", { cx: 640, cy: 320, r: 0, fill: MUSTARD, opacity: 0.85 }, g7), coreLab = T(g7, "lab", 640, 325, "THE CENTER", 12, null, INK), edgeLab = T(g7, "lab", 640, 560, "DIFFERENCES AT THE EDGES", 12);
+  const draw7 = (t) => { const v = vis(t, CS("witnesses") - 0.2, CS("differ") + 0.3); op(g7, v); if (v <= 0) return;
+    circles.forEach((c, i) => { op(c, up(t, t6[0] + 0.4 + i * 0.4, 0.6)); c.setAttribute("transform", `translate(${(4 * Math.sin(t * 0.7 + i)).toFixed(1)} ${(4 * Math.cos(t * 0.6 + i)).toFixed(1)})`); }); cn.forEach((c, i) => op(c, up(t, t6[0] + 0.6 + i * 0.4, 0.5)));
+    set(core, { r: (64 * up(t, t6[0] + 3.0, 1.2)).toFixed(1) }); op(coreLab, up(t, t6[0] + 3.8, 0.5)); op(edgeLab, up(t, t6[0] + 5.6, 0.6)); };
+
+  // 8. two ways of confessing, one roof
+  const g8 = G(), roof = line(g8, "M300 260 L640 150 L980 260", { stroke: INK, "stroke-width": 3 }), roofLab = T(g8, "lab", 640, 226, "GOD HAS SPOKEN · THE FINAL AUTHORITY", 13, null, INK);
+  const cards = [["WITHOUT ERROR", "IN ALL IT AFFIRMS", 450], ["INFALLIBLE IN WHAT", "GOD GAVE IT TO TEACH", 830]].map(([a, b, x]) => { const g = G(g8); el("rect", { x: -160, y: -60, width: 320, height: 120, rx: 10, fill: PAPER, stroke: INK, "stroke-width": 2 }, g); T(g, "lab", 0, -6, a, 13, null, INK); T(g, "lab", 0, 18, b, 13, null, INK); move(g, x, 360); return g; });
+  const draw8 = (t) => { const v = vis(t, CS("differ") - 0.2, CS("close") + 0.3); op(g8, v); if (v <= 0) return;
+    op(cards[0], up(t, t7[0] + 2.0, 0.7)); op(cards[1], up(t, t7[1] + 0.4, 0.7)); draw(roof, up(t, t7[2] + 0.2, 1.2)); op(roofLab, up(t, t7[2] + 1.0, 0.6)); };
+
+  // 9. side by side again, the center lit
+  const g9 = G(), p9 = gospels(g9);
+  const draw9 = (t) => { const v = span(t, CS("close") - 0.2, END + 2.5, 0.6, 0.9); op(g9, v); if (v <= 0) return;
+    p9.forEach((g, i) => { move(g, 250 + i * 260, 330 + 2 * Math.sin(t + i)); op(g, up(t, t8[0] + i * 0.3, 0.6)); g._rows.forEach((r) => { r.setAttribute("fill", r._core && t > t8[1] + 0.6 ? MUSTARD : r._diff ? STONE : INK); }); }); };
+
+  F.title("Side by side");
+  F.endCard(window.SCRIPT.chapters.at(-1).titleCard, END + 0.9);
+  return (t) => { draw1(t); draw2(t); draw3(t); draw4(t); draw5(t); draw6(t); draw7(t); draw8(t); draw9(t); };
+});
+</script>
+</body></html>

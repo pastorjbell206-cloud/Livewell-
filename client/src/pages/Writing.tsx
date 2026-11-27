@@ -239,7 +239,7 @@ export default function Writing() {
       ? trackSections[0].description
       : trackSections.length
         ? track?.description ?? "Essays on this subject."
-        : "A short shelf, kept short on purpose. Start with the three below, or read by section.";
+        : "Longer essays, grouped by subject. Start with the one below, or go to the subject you came for.";
   const canonical = sectionFilter
     ? `${SITE}/writing?section=${sectionFilter.slug}`
     : trackSections.length
@@ -270,7 +270,7 @@ export default function Writing() {
         door="Essays"
         doorHref={filtering ? "/writing" : undefined}
         title={heading}
-        line={filtering ? intro : "A short shelf, kept short on purpose."}
+        line={filtering ? intro : "Longer essays, grouped by subject. Start with the one below, or go to the subject you came for."}
         plate={sectionFilter ? SECTION_PLATE[sectionFilter.slug] ?? "quill" : "quill"}
       >
         {/* Where else James writes, on the unfiltered shelf (lib/channels.ts). */}

@@ -1,0 +1,150 @@
+{
+  "title": "Sacrifice: why blood?",
+  "note": "Written on 2026-11-27 from the Bible Explorer film why-blood (with its explorer-ledger rows), the Study Bible's atonement doctrine page, and the Study Bible notes on Leviticus 16 and 17 and Hebrews 9 and 10.",
+  "page": "/study/explorer/watch/why-blood",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "objection",
+      "kicker": "Why would God want blood?",
+      "level": 0.2,
+      "lines": [
+        "Blood runs through the Bible. To many people, sacrifice looks primitive and violent, like an angry God who must be paid off.",
+        "At its strongest: in 1793 Immanuel Kant argued that guilt is the most personal of all debts. Someone else can pay your money debt, but not your guilt.",
+        "Pause here and ask yourself: is that what the Bible means by sacrifice?"
+      ]
+    },
+    {
+      "id": "true",
+      "kicker": "What's true in it",
+      "level": 0.3,
+      "lines": [
+        "Some of this is fair. Israel's neighbors had rites for cleansing temples and carrying evil away. And Hebrews raises the objection itself.",
+        "It is impossible for the blood of bulls and goats to take away sins.",
+        "Yet Leviticus has no incantations, no demons to appease, no magic."
+      ],
+      "scripture": {
+        "reference": "Hebrews 10:4",
+        "text": "it is impossible for the blood of bulls and goats to take away sins.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "life",
+      "kicker": "The life is in the blood",
+      "level": 0.35,
+      "lines": [
+        "Why blood? The law answers in one sentence.",
+        "For the life of the flesh is in the blood, and I have given it to you to make atonement for your souls upon the altar.",
+        "Blood stands for life; blood poured out is a life given.",
+        "And notice who's speaking. I have given it to you. Sacrifice isn't a bribe offered to a reluctant god. It's a gift God appoints, so he can live among a sinful people without consuming them."
+      ],
+      "scripture": {
+        "reference": "Leviticus 17:11",
+        "text": "For the life of the flesh is in the blood, and I have given it to you to make atonement for your souls upon the altar",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "offerings",
+      "kicker": "Five kinds of offering",
+      "level": 0.45,
+      "lines": [
+        "Leviticus names five offerings. The burnt, the grain, and the peace offering, shared in a meal. The sin offering, which Jacob Milgrom called a purification offering. And the guilt offering, which came with paying back what was taken.",
+        "These covered unintentional sins. For defiant sin the law gave no sacrifice, though repentance and confession opened the way to mercy."
+      ]
+    },
+    {
+      "id": "day",
+      "kicker": "One day a year",
+      "level": 0.55,
+      "lines": [
+        "Once a year came the Day of Atonement. The high priest alone, in plain linen, went behind the veil.",
+        "In Leviticus, sin stains the place where God lives. Milgrom compared the sanctuary to the portrait of Dorian Gray, which records its owner's corruption.",
+        "Blood cleansed the sanctuary. Then the people's sins were confessed over a second goat, which wasn't killed but sent into the wilderness. Sin cleansed, and sin carried away."
+      ],
+      "scripture": {
+        "reference": "Leviticus 16:30",
+        "text": "because on this day atonement will be made for you to cleanse you, and you will be clean from all your sins before the LORD.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "prophets",
+      "kicker": "Mercy, not sacrifice",
+      "level": 0.6,
+      "lines": [
+        "The prophets push back. Through Hosea, God says, I desire mercy, not sacrifice. Micah asks whether God wants thousands of rams, and answers:",
+        "And what does the LORD require of you but to act justly, to love mercy, and to walk humbly with your God?",
+        "They didn't abolish the altar. They refused to let ritual replace repentance. The Mishnah says the Day of Atonement doesn't cover a wrong against your neighbor until you've made it right.",
+        "Which is harder: bringing an offering, or going back to the person you wronged?"
+      ],
+      "scripture": {
+        "reference": "Micah 6:8",
+        "text": "And what does the LORD require of you but to act justly, to love mercy, and to walk humbly with your God?",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "hebrews",
+      "kicker": "Every year again",
+      "level": 0.65,
+      "lines": [
+        "Hebrews reads that day point by point. The high priest went in once a year, never without blood, and again the next year.",
+        "That repetition was a confession: those sacrifices couldn't cleanse the conscience. But Christ is priest and sacrifice at once.",
+        "He entered the Most Holy Place once for all by His own blood, thus securing eternal redemption."
+      ],
+      "scripture": {
+        "reference": "Hebrews 9:12",
+        "text": "He entered the Most Holy Place once for all by His own blood, thus securing eternal redemption.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "seated",
+      "kicker": "The priest sat down",
+      "level": 0.75,
+      "lines": [
+        "There was no chair in the tabernacle. Priests stood; their work was never finished. Hebrews says Christ offered one sacrifice and sat down.",
+        "And where these have been forgiven, an offering for sin is no longer needed.",
+        "The sacrifice that ends sacrifices. Many Jewish readers see the old rite as complete in its own terms; after the temple fell in AD 70, they kept the day through prayer, fasting and repentance."
+      ],
+      "scripture": {
+        "reference": "Hebrews 10:18",
+        "text": "And where these have been forgiven, an offering for sin is no longer needed.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "differ",
+      "kicker": "Where Christians differ",
+      "level": 0.6,
+      "lines": [
+        "How does the cross save? No council ever defined one theory.",
+        "Penal substitution says Christ bore the judgment sinners deserved. Satisfaction, after Anselm in 1098, says his obedience repaired the offense to God's honor. Christus Victor says the cross defeated sin, death and the devil.",
+        "Moral influence says it shows God's love and wins ours. The governmental view of Hugo Grotius says it upholds God's just rule. This film doesn't choose."
+      ]
+    },
+    {
+      "id": "answer",
+      "kicker": "Back to the question",
+      "level": 0.8,
+      "lines": [
+        "So, an angry God who needs appeasing? Scholars argued over one Greek word: C. H. Dodd in 1931 for removing sin, Leon Morris in 1955 for turning away wrath. Many now hold it means both, and that God provides the sacrifice.",
+        "To Kant, Christian theologians answer that the cross isn't a debt passed between strangers. It's the act of one who is both God and the head of his people.",
+        "Ask the opening question again. In Leviticus, who gives the blood?"
+      ],
+      "titleCard": [
+        "Never a bribe we bring to God. A gift God gives.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

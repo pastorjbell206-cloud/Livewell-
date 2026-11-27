@@ -1,0 +1,264 @@
+{
+ "length": 271.38,
+ "chapters": [
+  {
+   "id": "question",
+   "kicker": "A fair question",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 14.54,
+   "lines": [
+    {
+     "text": "Christians say God raised Jesus from the dead, in his body. It's fair to ask whether that happened.",
+     "start": 2.6,
+     "end": 8.5
+    },
+    {
+     "text": "History can't prove a miracle. But the case is stronger than most people have been told.",
+     "start": 9.04,
+     "end": 13.64
+    }
+   ]
+  },
+  {
+   "id": "against",
+   "kicker": "The case against",
+   "level": 0.35,
+   "start": 13.74,
+   "end": 43.24,
+   "lines": [
+    {
+     "text": "In 1748 David Hume argued that the dead staying dead is as uniform as experience gets. A witness to a rising is always more likely deceived or deceiving.",
+     "start": 14.64,
+     "end": 26.06
+    },
+    {
+     "text": "Bart Ehrman, an agnostic scholar, adds that the Gospels came decades later and that Rome often left the crucified unburied.",
+     "start": 26.68,
+     "end": 34.46
+    },
+    {
+     "text": "Grant what's true. Legends do grow. Grief does produce visions. A claim like this should face a higher bar.",
+     "start": 35.24,
+     "end": 42.34
+    }
+   ]
+  },
+  {
+   "id": "facts",
+   "kicker": "What historians grant",
+   "level": 0.45,
+   "start": 42.44,
+   "end": 76.6,
+   "lines": [
+    {
+     "text": "Still, nearly every historian of the period, skeptics included, accepts a short list. First, Jesus was crucified under Pontius Pilate. Tacitus, a Roman historian who despised Christians, recorded it.",
+     "start": 43.34,
+     "end": 57.22
+    },
+    {
+     "text": "Second, his followers were soon convinced they'd seen him alive. Paul passes on a summary he received, which most scholars date within a few years.",
+     "start": 58.08,
+     "end": 67.06
+    },
+    {
+     "text": "E. P. Sanders, no apologist, judged their experiences a fact. What gave rise to them, he said, he did not know.",
+     "start": 67.74,
+     "end": 75.7
+    }
+   ]
+  },
+  {
+   "id": "changed",
+   "kicker": "Two unlikely witnesses",
+   "level": 0.55,
+   "start": 75.8,
+   "end": 100.5,
+   "lines": [
+    {
+     "text": "Third, two people with every reason not to believe came to believe. Paul had been trying to destroy the church. And James was Jesus' own brother.",
+     "start": 76.7,
+     "end": 86.22
+    },
+    {
+     "text": "For even His own brothers did not believe in Him.",
+     "start": 86.9,
+     "end": 89.32
+    },
+    {
+     "text": "Yet James went on to lead the church in Jerusalem until he was stoned around 62.",
+     "start": 90.02,
+     "end": 94.6
+    },
+    {
+     "text": "Pause here. What would it take to convince you your own brother had risen?",
+     "start": 95.48,
+     "end": 99.6
+    }
+   ]
+  },
+  {
+   "id": "city",
+   "kicker": "In the same city",
+   "level": 0.6,
+   "start": 99.7,
+   "end": 120.84,
+   "lines": [
+    {
+     "text": "Fourth, the preaching began within weeks in Jerusalem, where he was buried and the claim was easiest to refute.",
+     "start": 100.6,
+     "end": 107.28
+    },
+    {
+     "text": "The empty tomb itself is more disputed. Historians still divide over it.",
+     "start": 108.0,
+     "end": 112.16
+    },
+    {
+     "text": "So weigh a fair question first. If you were inventing this story, who would bury Jesus, and who would find the tomb empty?",
+     "start": 112.68,
+     "end": 119.94
+    }
+   ]
+  },
+  {
+   "id": "details",
+   "kicker": "Details no one would choose",
+   "level": 0.6,
+   "start": 120.04,
+   "end": 156.16,
+   "lines": [
+    {
+     "text": "Mark names the man who buried him: Joseph of Arimathea, a prominent Council member. An inventor would more likely have picked a disciple.",
+     "start": 120.94,
+     "end": 129.28
+    },
+    {
+     "text": "All four Gospels put women first at the tomb, though Josephus summed up the law as, let not the testimony of women be admitted. That was for courts, so don't press it far.",
+     "start": 130.1,
+     "end": 141.18
+    },
+    {
+     "text": "The earliest opponents we know of never said the body was still there. They said it was stolen.",
+     "start": 141.96,
+     "end": 147.0
+    },
+    {
+     "text": "It was an argument among first-century Jews, Jesus' followers among them, over how the tomb became empty, not whether.",
+     "start": 147.64,
+     "end": 155.26
+    }
+   ]
+  },
+  {
+   "id": "word",
+   "kicker": "The word they chose",
+   "level": 0.65,
+   "start": 155.36,
+   "end": 178.38,
+   "lines": [
+    {
+     "text": "Their world had words for seeing the dead. When Peter, freed from prison, knocked at a gate, the believers inside said, It must be his angel.",
+     "start": 156.26,
+     "end": 165.44
+    },
+    {
+     "text": "Resurrection, N. T. Wright argues, meant something else: the bodily raising of God's people at the end of history. No one expected one man raised ahead of everyone while the world went on.",
+     "start": 166.22,
+     "end": 177.48
+    }
+   ]
+  },
+  {
+   "id": "rivals",
+   "kicker": "The other explanations",
+   "level": 0.7,
+   "start": 177.58,
+   "end": 206.9,
+   "lines": [
+    {
+     "text": "Each rival explains a part. Visions fit Peter's grief. But Paul wasn't mourning Jesus. He was hunting his followers.",
+     "start": 178.48,
+     "end": 186.26
+    },
+    {
+     "text": "Legend needs time, and the list came within a few years. Fraud means men suffered for the claim while knowing where they'd put the body.",
+     "start": 186.68,
+     "end": 195.54
+    },
+    {
+     "text": "And survival? David Friedrich Strauss, a skeptic, saw that a half-dead man needing bandages could never convince anyone he had conquered death.",
+     "start": 196.12,
+     "end": 206.0
+    }
+   ]
+  },
+  {
+   "id": "reply",
+   "kicker": "The strongest reply",
+   "level": 0.75,
+   "start": 206.1,
+   "end": 232.22,
+   "lines": [
+    {
+     "text": "The best reply mixes them: a lost grave, a vision, a conviction that spread, later legend. Any ordinary story, it says, beats a miracle.",
+     "start": 207.0,
+     "end": 215.22
+    },
+    {
+     "text": "But the pieces multiply, each thin where it most needs to be thick. And whether a natural story beats a miracle depends on whether there's a God who might raise the dead.",
+     "start": 215.82,
+     "end": 225.36
+    },
+    {
+     "text": "So ask yourself honestly. Had you already decided that God can't act, before you looked?",
+     "start": 225.88,
+     "end": 231.32
+    }
+   ]
+  },
+  {
+   "id": "open",
+   "kicker": "What stays open",
+   "level": 0.55,
+   "start": 231.42,
+   "end": 248.32,
+   "lines": [
+    {
+     "text": "What exactly the witnesses saw is beyond the reach of history, and historians who grant their experiences disagree about the cause.",
+     "start": 232.32,
+     "end": 239.8
+    },
+    {
+     "text": "Christians differ on how much weight this kind of argument carries. Together they confess that the body that was buried was raised.",
+     "start": 240.38,
+     "end": 247.42
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "Weigh it",
+   "level": 0.3,
+   "start": 247.52,
+   "end": 265.276,
+   "lines": [
+    {
+     "text": "History won't carry anyone to faith. It can move a person from dismissing the claim to weighing it. Matthew doesn't hide the doubt.",
+     "start": 248.42,
+     "end": 255.68
+    },
+    {
+     "text": "When they saw Him, they worshiped Him, but some doubted.",
+     "start": 256.24,
+     "end": 259.44
+    },
+    {
+     "text": "You can weigh it all and still say no. Just don't say no without the weighing.",
+     "start": 259.92,
+     "end": 264.376
+    }
+   ]
+  }
+ ]
+}

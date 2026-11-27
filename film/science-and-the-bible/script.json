@@ -1,0 +1,146 @@
+{
+  "title": "Science and the Bible",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug, the hard-question pages galileo-and-the-war, has-science-made-god-unnecessary and evolution-and-genesis (with their record files), and the Honest Answers on faith and science and on reading Genesis 1; facts and sources are listed in film/science-and-the-bible/facts.md.",
+  "page": "/study/explorer/watch/science-and-the-bible",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "choose",
+      "kicker": "Do I have to choose?",
+      "level": 0.2,
+      "lines": [
+        "An open Bible on one side of the table. A small telescope on the other.",
+        "Plenty of people say they're enemies, and that you'll have to pick one.",
+        "Pause and ask yourself where you first heard that. Then let's test it."
+      ]
+    },
+    {
+      "id": "armies",
+      "kicker": "Two armies",
+      "level": 0.35,
+      "lines": [
+        "The war picture came from John William Draper in 1874, and Andrew Dickson White, the first president of Cornell, in 1896.",
+        "They gave the modern world two forces, one marching toward the light and the other holding it back. At the center stands Galileo."
+      ]
+    },
+    {
+      "id": "galileo",
+      "kicker": "What the church did",
+      "level": 0.5,
+      "lines": [
+        "The core is true. In 1616 Rome's theologians judged the sun-centered view formally heretical.",
+        "In 1633 the Roman Inquisition declared Galileo vehemently suspected of heresy. He was made to renounce his view on his knees, and he lived under house arrest until he died.",
+        "The church was wrong, and Christians should say so plainly."
+      ]
+    },
+    {
+      "id": "legend",
+      "kicker": "What the legend leaves out",
+      "level": 0.5,
+      "lines": [
+        "Galileo was a believer. He quoted Augustine: for an unbeliever to hear a Christian talk nonsense about the natural world was a disgraceful and dangerous thing.",
+        "And the earth's motion hadn't been proved. Friedrich Bessel first measured its decisive sign in 1838."
+      ]
+    },
+    {
+      "id": "lab",
+      "kicker": "Scientists who believed",
+      "level": 0.6,
+      "lines": [
+        "When James Clerk Maxwell's Cavendish Laboratory opened at Cambridge in the 1870s, its doors carried a Psalm in Latin.",
+        "Great are the works of the LORD; they are pondered by all who delight in them.",
+        "Gregor Mendel, whose peas began genetics, was a friar. In 1927 Georges Lemaître, a Catholic priest, argued that the universe is expanding.",
+        "None of that proves Christianity. Plenty of great scientists have been unbelievers. It shows the war is a story about science, not a finding of it."
+      ],
+      "scripture": {
+        "reference": "Psalm 111:2",
+        "text": "Great are the works of the LORD; they are pondered by all who delight in them.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "quiet",
+      "kicker": "The quieter objection",
+      "level": 0.45,
+      "lines": [
+        "The strong objection is quieter. Science keeps explaining what God was once used to explain. In 1859 Darwin gave a natural account of how living things fit their lives.",
+        "The biologist Jerry Coyne adds that science can find out it's wrong, and religion can't.",
+        "A fair question before the answer comes: if every gap closes, is anything left for God?"
+      ]
+    },
+    {
+      "id": "gaps",
+      "kicker": "Not in the gaps",
+      "level": 0.6,
+      "lines": [
+        "Christians have often put God in the gaps. In 1944 Dietrich Bonhoeffer warned against it: We are to find God in what we know, not in what we don't know.",
+        "Thomas Aquinas taught that God works through the causes he made, not in competition with them. An author is the cause of every line in a novel without being one of its characters.",
+        "He is before all things, and in Him all things hold together."
+      ],
+      "scripture": {
+        "reference": "Colossians 1:17",
+        "text": "He is before all things, and in Him all things hold together.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "kettle",
+      "kicker": "Two true answers",
+      "level": 0.5,
+      "lines": [
+        "Water boils because the molecules are agitated. The kettle is on because someone wanted tea. Both answers are true, and they don't compete.",
+        "If God isn't found in the gaps, Christians can't argue for him from the gaps either.",
+        "The physicist Eugene Wigner, in 1960, called the power of mathematics to describe the world a wonderful gift which we neither understand nor deserve. Science rests on something it doesn't explain."
+      ]
+    },
+    {
+      "id": "differ",
+      "kicker": "Where Christians differ",
+      "level": 0.45,
+      "lines": [
+        "Christians also argue over Genesis 1, and it isn't new. In the third century Origen asked how there were days before the sun. In the fourth, Basil said, For me grass is grass.",
+        "Today some read six ordinary days, not long ago. Some read long ages. Some read a literary frame, God's workweek, or a cosmic temple. Some hold that God created through evolution.",
+        "Each is held by believers who take Scripture seriously, and each has a hard question. This film takes no side. Which had you assumed was the only Christian view?"
+      ]
+    },
+    {
+      "id": "confess",
+      "kicker": "What all of them confess",
+      "level": 0.65,
+      "lines": [
+        "In the beginning God created the heavens and the earth.",
+        "Every reading confesses that God made everything, by his word, that it was good, and that we bear his image.",
+        "The Apostles' Creed confesses the Maker of heaven and earth. It says nothing of how long the making took."
+      ],
+      "scripture": {
+        "reference": "Genesis 1:1",
+        "text": "In the beginning God created the heavens and the earth.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "search",
+      "kicker": "Search it out",
+      "level": 0.4,
+      "lines": [
+        "None of this proves God exists or settles the age of the earth. It clears away a false choice.",
+        "It is the glory of God to conceal a matter and the glory of kings to search it out.",
+        "Science is that searching, and Christians have every reason to love it. Science hands us a magnificent description of the house. It can't tell us whether anyone lives there."
+      ],
+      "scripture": {
+        "reference": "Proverbs 25:2",
+        "text": "It is the glory of God to conceal a matter and the glory of kings to search it out.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      },
+      "titleCard": [
+        "The laboratory and the creed aren't rivals.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

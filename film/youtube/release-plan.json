@@ -1,0 +1,430 @@
+{
+ "publishNow": [
+  {
+   "slug": "bible-in-a-minute",
+   "videoId": "azGYnZ6nze0",
+   "title": "The Bible in a Minute | Bible Overview and Summary"
+  },
+  {
+   "slug": "gospel-in-a-minute",
+   "videoId": "IDew7UjHlSM",
+   "title": "The Gospel in 90 Seconds | The Good News of Jesus Explained Simply"
+  },
+  {
+   "slug": "who-jesus-is",
+   "videoId": "MglqBkpYkCM",
+   "title": "Who Is Jesus? Fully God and Fully Man Explained"
+  },
+  {
+   "slug": "why-jesus-died",
+   "videoId": "KMUQaHGA_4c",
+   "title": "Why Did Jesus Have to Die? Six Bible Pictures of the Cross"
+  },
+  {
+   "slug": "book-genesis",
+   "videoId": "wDdk36NM-Uw",
+   "title": "Book of Genesis Explained: The Book of Beginnings | Bible Summary"
+  }
+ ],
+ "schedule": [
+  {
+   "slug": "book-john",
+   "videoId": "AQJXDEv90bg",
+   "title": "Gospel of John Explained: The Word Made Flesh | Bible Summary",
+   "date": "2026-11-27",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "grace",
+   "videoId": "1cxoUAeIO9g",
+   "title": "What Is Grace? The Gift No One Earns | Grace Explained",
+   "date": "2026-11-28",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "book-psalms",
+   "videoId": "kKr7RhEdYtg",
+   "title": "Book of Psalms Explained: The Prayer Book of the Bible | Bible Summary",
+   "date": "2026-11-29",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "book-revelation",
+   "videoId": "ETglqRprx5s",
+   "title": "Book of Revelation Explained: The Lamb on the Throne | Bible Summary",
+   "date": "2026-11-30",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "trust-the-bible",
+   "videoId": "CdTIIgGSkXc",
+   "title": "Can You Trust the Bible? Has It Changed Over Time? | Bible Manuscripts Explained",
+   "date": "2026-12-01",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "bible-two-minutes",
+   "videoId": "_YOzLvIonBc",
+   "title": "The Whole Bible in Two Minutes | The Story of the Bible From Genesis to Revelation",
+   "date": "2026-12-02",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "what-sin-is",
+   "videoId": "d-wiaBBRxPE",
+   "title": "What Is Sin? What the Bible Really Says About Sin",
+   "date": "2026-12-03",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "book-romans",
+   "videoId": "onkrfrpJb6U",
+   "title": "Book of Romans Explained: The Gospel Set Out | Bible Summary",
+   "date": "2026-12-04",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "the-verse-next-door",
+   "videoId": "ldOUjIDIIyY",
+   "title": "\"I Can Do All Things Through Christ\": What Philippians 4:13 Really Means",
+   "date": "2026-12-05",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "who-god-is",
+   "videoId": "8L0QGOhW1I0",
+   "title": "Who Is God? The Trinity Explained: Father, Son and Holy Spirit",
+   "date": "2026-12-06",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "book-exodus",
+   "videoId": "h4X_QgtkDgg",
+   "title": "Book of Exodus Explained: Out of Slavery, to God | Bible Summary",
+   "date": "2026-12-07",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "the-resurrection",
+   "videoId": "C1l8lgWwAX8",
+   "title": "What Is the Resurrection of Jesus, and Why Does It Matter?",
+   "date": "2026-12-08",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "book-matthew",
+   "videoId": "RFrlWFe5cME",
+   "title": "Gospel of Matthew Explained: God With Us | Bible Summary",
+   "date": "2026-12-09",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "faith",
+   "videoId": "MurW6WyDWro",
+   "title": "What Is Faith? Biblical Faith Explained | Trusting the One Who Promised",
+   "date": "2026-12-10",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "how-long",
+   "videoId": "wh1FcMuag7w",
+   "title": "Is It OK to Complain to God? \"How Long, O LORD?\" | Lament in the Psalms",
+   "date": "2026-12-11",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "book-proverbs",
+   "videoId": "7qqEi8hB5TY",
+   "title": "Book of Proverbs Explained: Wisdom for Ordinary Days | Bible Summary",
+   "date": "2026-12-12",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "prayer",
+   "videoId": "JEnKXinx8mM",
+   "title": "How to Pray | What the Bible Teaches About Prayer and the Lord's Prayer",
+   "date": "2026-12-13",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "book-acts",
+   "videoId": "sGRVbfKBdyc",
+   "title": "Book of Acts Explained: To the Ends of the Earth | Bible Summary",
+   "date": "2026-12-14",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "the-oldest-report",
+   "videoId": "2r9_flScVH0",
+   "title": "Did Jesus Really Rise From the Dead? The Oldest Report (1 Corinthians 15)",
+   "date": "2026-12-15",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "how-salvation-works",
+   "videoId": "XuEBED4gbqo",
+   "title": "How Does Salvation Work? The Gospel Explained Step by Step",
+   "date": "2026-12-16",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "book-mark",
+   "videoId": "FuTRmhVsai4",
+   "title": "Gospel of Mark Explained: The Story at a Run | Bible Summary",
+   "date": "2026-12-17",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "sixty-six-books",
+   "videoId": "GZxQ_YSxSSU",
+   "title": "How the 66 Books of the Bible Fit Together | Old and New Testament Explained",
+   "date": "2026-12-18",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "book-isaiah",
+   "videoId": "87PKV9SCm2A",
+   "title": "Book of Isaiah Explained: The Holy One Who Comforts | Bible Summary",
+   "date": "2026-12-19",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "spirit-in-a-believer",
+   "videoId": "1-p-O4B_dFk",
+   "title": "What Does the Holy Spirit Do in a Believer? | The Holy Spirit Explained",
+   "date": "2026-12-20",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "you-are-that-man",
+   "videoId": "Z1Vn7SvgyGs",
+   "title": "\"You Are That Man\": David, Bathsheba and Nathan | Bible Story Explained",
+   "date": "2026-12-21",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "book-luke",
+   "videoId": "ehlSx5fVQX0",
+   "title": "Gospel of Luke Explained: Good News for the Lost | Bible Summary",
+   "date": "2026-12-22",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "the-church",
+   "videoId": "Putc5qraIlM",
+   "title": "What Is the Church? (It's Not a Building) | The Church Explained",
+   "date": "2026-12-23",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "book-james",
+   "videoId": "WbGnHEc0kF8",
+   "title": "Book of James Explained: Faith That Works | Bible Summary",
+   "date": "2026-12-24",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "one-story",
+   "videoId": "d7Aw6tdIdhw",
+   "title": "The Bible Is One Story | How 66 Books Point to Jesus",
+   "date": "2026-12-25",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "book-daniel",
+   "videoId": "Gnj_XeIR-7M",
+   "title": "Book of Daniel Explained: The Most High Rules | Bible Summary",
+   "date": "2026-12-26",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "image-of-god",
+   "videoId": "C81wWXXy7Rs",
+   "title": "What Does It Mean to Be Made in the Image of God? | Creation Explained",
+   "date": "2026-12-27",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "book-ephesians",
+   "videoId": "G8BNRCiJACY",
+   "title": "Book of Ephesians Explained: One New People in Christ | Bible Summary",
+   "date": "2026-12-28",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "whose-kingdom",
+   "videoId": "3hL1Yz4C9_M",
+   "title": "Jesus or Caesar: Whose Kingdom? | What \"Jesus Is Lord\" Meant in the Roman World",
+   "date": "2026-12-29",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "book-jonah",
+   "videoId": "UWp_XDjlK28",
+   "title": "Book of Jonah Explained: The Prophet Who Ran From Mercy | Bible Summary",
+   "date": "2026-12-30",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "the-bible",
+   "videoId": "P-aQRcFT7uQ",
+   "title": "How Did We Get the Bible? Who Wrote It, Copies, Canon and Translation",
+   "date": "2026-12-31",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "book-hebrews",
+   "videoId": "wSOLet3abGM",
+   "title": "Book of Hebrews Explained: Hold On to Jesus | Bible Summary",
+   "date": "2027-01-01",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "mark-in-a-minute",
+   "videoId": "jdaSkkZB340",
+   "title": "The Gospel of Mark in a Minute | Bible Summary",
+   "date": "2027-01-02",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "book-ruth",
+   "videoId": "ao3Yvvew4z0",
+   "title": "Book of Ruth Explained: Loyal Love in a Hard Time | Bible Summary",
+   "date": "2027-01-03",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "baptism-and-supper",
+   "videoId": "9T2Vi38R2Fo",
+   "title": "Baptism and the Lord's Supper Explained | Communion and Baptism in the Bible",
+   "date": "2027-01-04",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "book-1-corinthians",
+   "videoId": "f4vGyvvHsq0",
+   "title": "1 Corinthians Explained: A Gifted Church Coming Apart | Bible Summary",
+   "date": "2027-01-05",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "book-philippians",
+   "videoId": "qWPGnNyi4WU",
+   "title": "Book of Philippians Explained: Joy in Chains | Bible Summary",
+   "date": "2027-01-06",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "book-1-samuel",
+   "videoId": "_CpuzH8NwaA",
+   "title": "1 Samuel Explained: The Heart God Sees | Samuel, Saul and David | Bible Summary",
+   "date": "2027-01-07",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "book-galatians",
+   "videoId": "iUNT-JNoKtA",
+   "title": "Book of Galatians Explained: Nothing Added to Christ | Bible Summary",
+   "date": "2027-01-08",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "book-jeremiah",
+   "videoId": "tbWbHutWYeo",
+   "title": "Book of Jeremiah Explained: The Weeping Prophet | Bible Summary",
+   "date": "2027-01-09",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "book-1-john",
+   "videoId": "VeytLtjCrlE",
+   "title": "1 John Explained: So That You May Know | Bible Summary",
+   "date": "2027-01-10",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "book-2-samuel",
+   "videoId": "DwYqLjw3AyE",
+   "title": "2 Samuel Explained: King David and the Promise | Bible Summary",
+   "date": "2027-01-11",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "book-colossians",
+   "videoId": "qAsC0dQ4MEU",
+   "title": "Book of Colossians Explained: Complete in Christ | Bible Summary",
+   "date": "2027-01-12",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "book-leviticus",
+   "videoId": "hW90X52c0bo",
+   "title": "Book of Leviticus Explained: Living Near a Holy God | Bible Summary",
+   "date": "2027-01-13",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "book-1-peter",
+   "videoId": "bNYXFzbjCF4",
+   "title": "1 Peter Explained: Hope for Strangers | Bible Summary",
+   "date": "2027-01-14",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "book-nehemiah",
+   "videoId": "2F1UuchGYQQ",
+   "title": "Book of Nehemiah Explained: Rebuilding the Walls, and a People | Bible Summary",
+   "date": "2027-01-15",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "book-numbers",
+   "videoId": "qZLff4zfgyQ",
+   "title": "Book of Numbers Explained: Forty Years in the Wilderness | Bible Summary",
+   "date": "2027-01-16",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "book-2-corinthians",
+   "videoId": "IVokFpLxjKA",
+   "title": "2 Corinthians Explained: Power in Weakness | Bible Summary",
+   "date": "2027-01-17",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "book-deuteronomy",
+   "videoId": "Q6vp9269UCE",
+   "title": "Book of Deuteronomy Explained: Love the LORD With All Your Heart | Bible Summary",
+   "date": "2027-01-18",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "book-amos",
+   "videoId": "OX3XAM2K0cM",
+   "title": "Book of Amos Explained: Let Justice Roll On Like a River | Bible Summary",
+   "date": "2027-01-19",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "book-joshua",
+   "videoId": "m6D7hkjg1Lw",
+   "title": "Book of Joshua Explained: A Promise Kept | Bible Summary",
+   "date": "2027-01-20",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "book-1-thessalonians",
+   "videoId": "NhsFOfVO4Pc",
+   "title": "1 Thessalonians Explained: Hope That Does Not Give Up | Bible Summary",
+   "date": "2027-01-21",
+   "eastern": "6:00 PM"
+  },
+  {
+   "slug": "book-judges",
+   "videoId": "P0b-lsJt8Uc",
+   "title": "Book of Judges Explained: A People Coming Apart | Bible Summary",
+   "date": "2027-01-22",
+   "eastern": "6:00 PM"
+  }
+ ]
+}

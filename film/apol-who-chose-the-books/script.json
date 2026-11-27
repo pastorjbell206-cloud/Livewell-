@@ -1,0 +1,105 @@
+{
+  "title": "Who chose the books?",
+  "note": "Apologetics film 3, written 2026-11-26 in the Gather session at James's word. Every fact comes from two LiveWell pages and their ledger: /questions/authors/did-constantine-decide-the-bible and /questions/authors/four-gospels-and-the-rest. See facts.md. No Scripture is quoted.",
+  "page": "/questions/authors/did-constantine-decide-the-bible",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "objection",
+      "kicker": "The objection",
+      "level": 0.2,
+      "lines": [
+        "You've probably heard this one. The emperor Constantine decided what went into the Bible, at the Council of Nicaea in 325.",
+        "He kept the books that suited the church in power, and buried the rest."
+      ]
+    },
+    {
+      "id": "nicaea",
+      "kicker": "What Nicaea did",
+      "level": 0.35,
+      "lines": [
+        "So what did Nicaea actually do?",
+        "The bishops answered Arius, who taught that the Son was a created being, and they wrote a creed against him.",
+        "They dealt with the date of Easter, a split in the church in Egypt, and twenty rules of church order.",
+        "Not one of their surviving decisions lists the books of Scripture.",
+        "Constantine did order fifty copies of the Scriptures for his new city. His letter names no books."
+      ]
+    },
+    {
+      "id": "eusebius",
+      "kicker": "The emperor's own bishop",
+      "level": 0.45,
+      "lines": [
+        "Here's the telling part. Eusebius, a bishop who was at Nicaea and admired Constantine, wrote a list of the New Testament books in those very years.",
+        "The four Gospels, Acts and Paul's letters were accepted everywhere. A few, like James, Jude and Second Peter, were still disputed. And he wasn't sure where to put Revelation.",
+        "If the emperor had settled it, his admirer had every reason to say so. He doesn't."
+      ]
+    },
+    {
+      "id": "before",
+      "kicker": "Before any emperor",
+      "level": 0.55,
+      "lines": [
+        "Go back further. In the 150s, Justin Martyr describes Christians on Sunday reading the memoirs of the apostles, which, he says, are called Gospels.",
+        "Around 180, Irenaeus says the Gospels can't be more or fewer than four.",
+        "That's a century and a half before Nicaea, while Christians were still a persecuted minority."
+      ]
+    },
+    {
+      "id": "others",
+      "kicker": "The other gospels",
+      "level": 0.6,
+      "lines": [
+        "But weren't there other gospels? There were. Thomas, Peter, Mary, Judas.",
+        "Most scholars date them to the second century, after the four. None is earlier than the four on the usual dating, though some argue parts of Thomas carry older sayings.",
+        "Thomas is a collection of a hundred and fourteen sayings. It says nothing of Jesus' death and resurrection."
+      ]
+    },
+    {
+      "id": "serapion",
+      "kicker": "How the church judged",
+      "level": 0.7,
+      "lines": [
+        "Around the year two hundred, a bishop named Serapion found a church reading a gospel under Peter's name.",
+        "At first he let them read it. Then he read it himself, found much in it sound and some things added, and judged it against what his churches had received.",
+        "That isn't a council imposing a list. It's a pastor reading a book and testing it.",
+        "One historian who studied all of this concluded, in effect, that no one chose the four Gospels. They were received."
+      ]
+    },
+    {
+      "id": "granted",
+      "kicker": "What the objection gets right",
+      "level": 0.75,
+      "lines": [
+        "The objection does get some things right. Early Christianity was varied. Paul himself wrote against people preaching another gospel.",
+        "The church did test books by their teaching, as well as by their link to the apostles and their use across the churches.",
+        "And the edges took centuries to settle. The first list that matches our twenty-seven books exactly comes from Athanasius, in 367. He was driven out of his city five times. He was no emperor's man.",
+        "Protestant, Catholic and Orthodox Bibles still differ in the Old Testament. But all of them share the same twenty-seven books of the New."
+      ]
+    },
+    {
+      "id": "first",
+      "kicker": "Which faith came first",
+      "level": 0.85,
+      "lines": [
+        "So the real question is which faith was there first.",
+        "The earliest Christian writings we have, Paul's letters from the fifties, already carry the faith of the four Gospels. Christ died for our sins, was buried, and was raised on the third day.",
+        "None of the gospels the church set aside is attested that early."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "No emperor made the Bible. The churches received it, argued over its edges in the open, and said why.",
+        "You can read their reasons. Then read the books."
+      ],
+      "titleCard": [
+        "No emperor made the Bible.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

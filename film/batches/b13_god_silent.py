@@ -1,0 +1,73 @@
+"""Batch 13 film: "Why does God seem silent sometimes?" (god-silent), rebuilt from the Bible Explorer film
+client/public/explorer/films/god-silent.json and its rows in docs/work/elite/explorer-ledger.md ("silent 1" to
+"silent 7" and "silent, care"); the Wisdom topic "feeling-far-from-god" (client/public/wisdom/topics.json and
+client/public/wisdom/entry/feeling-far-from-god.json); and the Study Bible notes for Psalm 13 and 1 Kings 19
+(client/public/bible/notes/psalms/13.json and client/public/bible/notes/1-kings/19.json).
+The old film's care line stays on the page, untouched, and is not in the narration. Elijah's request to die is
+not quoted. No promise is made that a feeling will return on any schedule. Where readers differ (how Psalm 13
+turns so fast, how to translate 1 Kings 19:12), the views are named and none is chosen. The philosophical
+hiddenness argument belongs to the film "Why can't I see God?" and is mentioned only in passing."""
+import sys; sys.path.insert(0, "film/tools")
+from importlib import import_module
+write = import_module("write-script").write
+NOTE = "Written on 2026-11-26 from the Bible Explorer film of the same slug (its older captions and ledger rows), the Wisdom topic 'Feeling far from God', and the Study Bible notes on Psalm 13 and 1 Kings 19; every claim is sourced in film/god-silent/facts.md, and Scripture is the Berean Standard Bible, checked by film/tools/write-script.py."
+S = lambda ref, text, spoken=False: {"reference": ref, "text": text, "spoken": spoken}
+P = lambda b: f"/study/explorer/watch/{b}"
+END = "LiveWell by James Bell"
+
+write("god-silent", "Why does God seem silent sometimes?", P("god-silent"), [
+  {"id": "quiet", "kicker": "When heaven seems shut", "level": 0.2, "lines": [
+    "You pray, and nothing happens. No answer, no sign, only quiet.",
+    "Another film asks why we can't see God at all. This one is closer to home: the God you trust seems to have gone quiet.",
+    "Start with one sentence worth holding on to. Feeling far from God is not the same as being far from him."]},
+  {"id": "how-long", "kicker": "How long?", "level": 0.3, "lines": [
+    "The Bible doesn't hide this. In Psalm 13, David asks God the same question four times.",
+    "How long, O LORD? Will You forget me forever? How long will You hide Your face from me?",
+    "In Israel, God's face meant his favor and presence. And to be forgotten by God meant to be left without help.",
+    "David wasn't doubting that God was there. He was protesting an absence he felt. The lament was an act of faith, not its collapse."],
+   "scripture": S("Psalm 13:1", "How long, O LORD? Will You forget me forever? How long will You hide Your face from me?", True)},
+  {"id": "shape", "kicker": "The shape of a lament", "level": 0.4, "lines": [
+    "Since Hermann Gunkel, scholars have traced the shape of such prayers: complaint, petition, then trust and a promise to praise.",
+    "In Psalm 13 each part is shorter than the one before. The turn comes on one small word in verse five: But.",
+    "And nothing has changed. No rescue is reported. David trusts in the dark, leaning on God's loyal love, the Hebrew word chesed."],
+   "scripture": S("Psalm 13:5", "But I have trusted in Your loving devotion; my heart will rejoice in Your salvation.")},
+  {"id": "forced", "kicker": "Too fast?", "level": 0.45, "lines": [
+    "Pause here and ask yourself. Does that turn feel too quick, even forced?",
+    "Readers have asked the same. Some think a priest or prophet spoke a word of assurance. Others think the change happened inside the one praying.",
+    "Others say the psalm compresses what may take a long time, a prayer prayed many times before the ending feels true.",
+    "Whichever is right, the complaint stays in the psalm. Trust is spoken beside it, not in place of it."]},
+  {"id": "elijah", "kicker": "Elijah under the tree", "level": 0.5, "lines": [
+    "Elijah had just seen fire fall on Mount Carmel. Then one threat came from Jezebel, and he ran for his life into the wilderness.",
+    "Exhausted and afraid, he sat under a broom tree and told God, I have had enough, LORD.",
+    "The Bible doesn't criticize that prayer or hide it. And look at the order of God's answer: sleep, food, water, and a second meal, before any words at all."],
+   "scripture": S("1 Kings 19:5", "Then he lay down under the broom tree and fell asleep.")},
+  {"id": "whisper", "kicker": "A voice of thin silence", "level": 0.55, "lines": [
+    "Then at Horeb, the mountain of God, a great wind tore at the rocks. Then an earthquake, then a fire. God was in none of them.",
+    "And after the fire came a still, small voice.",
+    "The Hebrew is a paradox, literally a voice of thin silence. Translations differ: a gentle whisper, a sound of sheer silence.",
+    "God asked Elijah a question, gave him work, and told him he wasn't alone: seven thousand were still faithful."],
+   "scripture": S("1 Kings 19:12", "And after the fire came a still, small voice.", True)},
+  {"id": "night", "kicker": "The dark night", "level": 0.5, "lines": [
+    "The church has named this for centuries. The sixteenth-century Spanish mystic John of the Cross called it the dark night of the soul.",
+    "He treated the felt absence as a stage of love being purified, not as a punishment.",
+    "Mother Teresa, who served the dying in Calcutta, lived decades in this dryness and kept serving anyway.",
+    "Weigh this. If people like that felt it for years, what does your own quiet prove about you?"]},
+  {"id": "cross", "kicker": "Even Jesus", "level": 0.75, "lines": [
+    "On the cross, Jesus prayed the first line of Psalm 22, Israel's fullest prayer for the moment when God seems gone.",
+    "My God, My God, why have You forsaken Me?",
+    "The Son of God took that cry onto his own lips. And Psalm 22, at its lowest point, breaks off to declare that God has answered.",
+    "That afternoon wasn't the end. On the third day he was raised."],
+   "scripture": S("Mark 15:34", "My God, My God, why have You forsaken Me?", True)},
+  {"id": "keep", "kicker": "What to do meanwhile", "level": 0.45, "lines": [
+    "No one can promise when the quiet will lift. The psalm gives no date for the morning.",
+    "So don't measure God's nearness by your feelings. They rise and fall with sleep, grief and the weather.",
+    "Keep the practices when the warmth is gone. Tell one honest believer where you are.",
+    "And read the psalms of absence. They were written by people who felt exactly this and were not cast off."],
+   "scripture": S("Psalm 34:18", "The LORD is near to the brokenhearted; He saves the contrite in spirit.")},
+  {"id": "close", "kicker": "Near, though unseen", "level": 0.3, "lines": [
+    "Psalm 13 ends with a promise to sing, and a verb in the past tense.",
+    "I will sing to the LORD, for He has been good to me.",
+    "The complaint is still there. So is the trust. Both are prayer."],
+   "scripture": S("Psalm 13:6", "I will sing to the LORD, for He has been good to me.", True),
+   "titleCard": ["Feeling far from God is not the same as being far from him.", END]},
+], NOTE)

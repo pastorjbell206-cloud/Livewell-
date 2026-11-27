@@ -92,6 +92,7 @@ const ChapterWalk = lazy(() => import("@/pages/study-bible/ChapterWalk"));
 const VerseMarks = lazy(() => import("@/pages/study-bible/VerseMarks"));
 const ChapterMarksList = lazy(() => import("@/pages/study-bible/VerseMarks").then((m) => ({ default: m.ChapterMarksList })));
 const CrossRefList = lazy(() => import("@/pages/study-bible/CrossRefs"));
+const ChapterFilms = lazy(() => import("@/components/ChapterFilms"));
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const HEB: CSSProperties = { fontFamily: '"SBL Hebrew", "Ezra SIL", "Taamey Frank CLM", "Times New Roman", serif', direction: "rtl" };
@@ -532,6 +533,11 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
                   )}
                 </nav>
               </>
+            )}
+            {!reading && (data || readData) && (
+              <Suspense fallback={null}>
+                <ChapterFilms slug={book.slug} chapter={chapter} label={`${chapterBookName(book)} ${chapter}`} />
+              </Suspense>
             )}
             {!reading && note && <ChapterNotesBody books={books} book={book} chapter={chapter} note={note} data={data} place={place} verseNotes={verseNotes ?? null} onWord={onWord} onVerse={onVerse} />}
           </div>
