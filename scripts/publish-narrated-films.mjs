@@ -42,7 +42,9 @@ const PROJECT = "livewell-tn9v";
 const TEAM = "team_4ecrw7DznCbM9HwFxxWWyM74";
 const NPX = ["--cache", "/private/tmp/npm-cache-film", "--yes", "vercel"];
 
-const slugs = process.argv.slice(2);
+// --upload-only: upload and check the files, but add nothing to the films list (the site intro, which the homepage plays itself).
+const UPLOAD_ONLY = process.argv.includes("--upload-only");
+const slugs = process.argv.slice(2).filter((a) => a !== "--upload-only");
 if (!slugs.length) {
   console.error("usage: node scripts/publish-narrated-films.mjs <slug> [<slug> ...]");
   process.exit(1);
@@ -105,6 +107,8 @@ for (const slug of slugs) {
   console.log(`${ok ? "ok  " : "FAIL"} ${slug}: video ${head.status}, ${head.headers.get("content-length")} of ${size} bytes, range ${range.status}, poster ${poster.status}`);
   if (!ok) process.exit(1);
 }
+
+if (UPLOAD_ONLY) process.exit(0);
 
 // ---- the live list, and the data the pages read ----
 const next = [...live, ...slugs.filter((s) => !live.includes(s))];
