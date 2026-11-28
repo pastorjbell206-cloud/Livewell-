@@ -10,7 +10,7 @@ import { spawnSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 // @ts-expect-error a plain .mjs script module
-import { buildFamilyFilms, filmMinutes, loadFilms, matchFilm, nameKey, overlap, renderFamilyFilms, spans, subjectWords } from "../scripts/lib/family-films.mjs";
+import { BREATH_SECONDS, buildFamilyFilms, filmMinutes, loadFilms, matchFilm, nameKey, overlap, renderFamilyFilms, spans, subjectWords } from "../scripts/lib/family-films.mjs";
 
 const ROOT = path.resolve(__dirname, "..");
 const PUB = path.join(ROOT, "client/public");
@@ -76,6 +76,22 @@ describe("the rule", () => {
     const long = Array.from({ length: 9 }, () => ({ younger: Array(45).fill("word").join(" ") }));
     expect(filmMinutes(long)).toBe(3);
   });
+
+  it("takes a film's length from its recorded voice, with the player's breath between pictures", () => {
+    const short = ["a", "b", "c"].map((id) => ({ id, younger: "A short line." }));
+    // 89.5 seconds of voice is under a minute and a half; the two breaths between pictures carry it over.
+    expect(filmMinutes(short, [{ id: "a", seconds: 40 }, { id: "b", seconds: 40 }, { id: "c", seconds: 9.5 }])).toBe(2);
+    expect(filmMinutes(short)).toBe(1);
+  });
+
+  it("estimates from the words only for a film with no voice, or a voice that is not its frames", () => {
+    const long = Array.from({ length: 9 }, (_, i) => ({ id: `f${i}`, younger: Array(45).fill("word").join(" ") }));
+    const voice = long.map((f) => ({ id: f.id, seconds: 12 }));
+    expect(filmMinutes(long, voice)).toBe(2);
+    expect(filmMinutes(long)).toBe(3);
+    expect(filmMinutes(long, voice.slice(1))).toBe(3);
+    expect(filmMinutes(long, voice.map((v, i) => (i === 4 ? { ...v, id: "moved" } : v)))).toBe(3);
+  });
 });
 
 describe("the committed map", () => {
@@ -103,6 +119,25 @@ describe("the committed map", () => {
       expect(finished.has(f.slug), `question ${n} -> ${f.slug}`).toBe(true);
     }
     expect(Object.keys(map.devotions).length).toBeGreaterThan(0);
+  });
+
+  it("says each film's length as its recorded younger voice runs, with the breath between pictures", () => {
+    const voices = JSON.parse(fs.readFileSync(path.join(PUB, "explorer/audio/manifest.json"), "utf8")).films;
+    let measured = 0;
+    for (const f of [...Object.values<MadeFilm>(map.devotions), ...Object.values<MadeFilm>(map.catechism)]) {
+      const files: { seconds: number }[] | undefined = voices[f.slug]?.younger;
+      if (!files) continue;
+      const seconds = files.reduce((sum, x) => sum + x.seconds, 0) + BREATH_SECONDS * (files.length - 1);
+      expect(f.minutes, f.slug).toBe(Math.max(1, Math.round(seconds / 60)));
+      measured += 1;
+    }
+    expect(measured).toBeGreaterThan(0);
+  });
+
+  it("counts the same breath between pictures as the player", () => {
+    const player = fs.readFileSync(path.join(ROOT, "client/src/pages/explorer/films/FilmPlayer.tsx"), "utf8");
+    const ms = /breath = window\.setTimeout\([\s\S]*?\},\s*(\d+)\s*\)/.exec(player)?.[1];
+    expect(Number(ms) / 1000, "the breath after a frame is said, in FilmPlayer.tsx").toBe(BREATH_SECONDS);
   });
 
   it("gives every pick a reason", () => {

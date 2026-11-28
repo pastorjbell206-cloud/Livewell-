@@ -4,7 +4,7 @@
   "identity": {
    "slug": "image-of-god",
    "title": "Creation and the image of God",
-   "minutes": 2,
+   "minutes": 3,
    "by": "pick"
   },
   "who-is-jesus": {
@@ -16,7 +16,7 @@
   "why-we-pray": {
    "slug": "prayer",
    "title": "Prayer",
-   "minutes": 2,
+   "minutes": 3,
    "by": "pick"
   },
   "is-the-bible-true": {
@@ -28,19 +28,19 @@
   "faith": {
    "slug": "faith",
    "title": "Faith: trusting the one who promised",
-   "minutes": 2,
+   "minutes": 3,
    "by": "passage"
   },
   "caring-for-creation": {
    "slug": "image-of-god",
    "title": "Creation and the image of God",
-   "minutes": 2,
+   "minutes": 3,
    "by": "passage"
   },
   "the-church": {
    "slug": "the-church",
    "title": "What the church is",
-   "minutes": 2,
+   "minutes": 3,
    "by": "pick"
   },
   "the-lords-supper": {
@@ -52,7 +52,7 @@
   "heaven": {
    "slug": "life-to-come",
    "title": "The life to come",
-   "minutes": 2,
+   "minutes": 3,
    "by": "pick"
   },
   "the-cross": {
@@ -82,13 +82,13 @@
   "suffering": {
    "slug": "why-bad-things-happen",
    "title": "Why do bad things happen?",
-   "minutes": 2,
+   "minutes": 3,
    "by": "pick"
   },
   "the-fruit-of-the-spirit": {
    "slug": "spirit-in-a-believer",
    "title": "The Holy Spirit in a believer",
-   "minutes": 2,
+   "minutes": 3,
    "by": "passage"
   },
   "the-good-shepherd": {
@@ -106,25 +106,25 @@
   "the-image-of-god": {
    "slug": "image-of-god",
    "title": "Creation and the image of God",
-   "minutes": 2,
+   "minutes": 3,
    "by": "passage"
   },
   "prayer": {
    "slug": "prayer",
    "title": "Prayer",
-   "minutes": 2,
+   "minutes": 3,
    "by": "name"
   },
   "the-trinity": {
    "slug": "who-god-is",
    "title": "Who God is: Father, Son and Holy Spirit",
-   "minutes": 3,
+   "minutes": 4,
    "by": "pick"
   },
   "creation": {
    "slug": "image-of-god",
    "title": "Creation and the image of God",
-   "minutes": 2,
+   "minutes": 3,
    "by": "passage"
   },
   "the-fall": {
@@ -142,7 +142,7 @@
   "the-new-creation": {
    "slug": "life-to-come",
    "title": "The life to come",
-   "minutes": 2,
+   "minutes": 3,
    "by": "pick"
   },
   "advent-4": {
@@ -198,7 +198,7 @@
   "1": {
    "slug": "image-of-god",
    "title": "Creation and the image of God",
-   "minutes": 2,
+   "minutes": 3,
    "by": "pick"
   },
   "2": {
@@ -216,37 +216,37 @@
   "4": {
    "slug": "who-god-is",
    "title": "Who God is: Father, Son and Holy Spirit",
-   "minutes": 3,
+   "minutes": 4,
    "by": "named"
   },
   "5": {
    "slug": "image-of-god",
    "title": "Creation and the image of God",
-   "minutes": 2,
+   "minutes": 3,
    "by": "pick"
   },
   "6": {
    "slug": "image-of-god",
    "title": "Creation and the image of God",
-   "minutes": 2,
+   "minutes": 3,
    "by": "pick"
   },
   "7": {
    "slug": "image-of-god",
    "title": "Creation and the image of God",
-   "minutes": 2,
+   "minutes": 3,
    "by": "named"
   },
   "8": {
    "slug": "image-of-god",
    "title": "Creation and the image of God",
-   "minutes": 2,
+   "minutes": 3,
    "by": "pick"
   },
   "10": {
    "slug": "why-bad-things-happen",
    "title": "Why do bad things happen?",
-   "minutes": 2,
+   "minutes": 3,
    "by": "pick"
   },
   "12": {
@@ -348,19 +348,19 @@
   "43": {
    "slug": "spirit-in-a-believer",
    "title": "The Holy Spirit in a believer",
-   "minutes": 2,
+   "minutes": 3,
    "by": "pick"
   },
   "45": {
    "slug": "spirit-in-a-believer",
    "title": "The Holy Spirit in a believer",
-   "minutes": 2,
+   "minutes": 3,
    "by": "passage"
   },
   "46": {
    "slug": "the-church",
    "title": "What the church is",
-   "minutes": 2,
+   "minutes": 3,
    "by": "pick"
   },
   "47": {
@@ -378,31 +378,31 @@
   "49": {
    "slug": "prayer",
    "title": "Prayer",
-   "minutes": 2,
+   "minutes": 3,
    "by": "passage"
   },
   "50": {
    "slug": "prayer",
    "title": "Prayer",
-   "minutes": 2,
+   "minutes": 3,
    "by": "passage"
   },
   "52": {
    "slug": "life-to-come",
    "title": "The life to come",
-   "minutes": 2,
+   "minutes": 3,
    "by": "passage"
   },
   "53": {
    "slug": "prayer",
    "title": "Prayer",
-   "minutes": 2,
+   "minutes": 3,
    "by": "named"
   },
   "54": {
    "slug": "prayer",
    "title": "Prayer",
-   "minutes": 2,
+   "minutes": 3,
    "by": "passage"
   },
   "59": {
@@ -414,7 +414,7 @@
   "60": {
    "slug": "the-church",
    "title": "What the church is",
-   "minutes": 2,
+   "minutes": 3,
    "by": "pick"
   },
   "61": {
@@ -432,19 +432,19 @@
   "63": {
    "slug": "spirit-in-a-believer",
    "title": "The Holy Spirit in a believer",
-   "minutes": 2,
+   "minutes": 3,
    "by": "passage"
   },
   "64": {
    "slug": "image-of-god",
    "title": "Creation and the image of God",
-   "minutes": 2,
+   "minutes": 3,
    "by": "pick"
   },
   "65": {
    "slug": "why-bad-things-happen",
    "title": "Why do bad things happen?",
-   "minutes": 2,
+   "minutes": 3,
    "by": "pick"
   },
   "66": {
@@ -486,13 +486,13 @@
   "75": {
    "slug": "why-bad-things-happen",
    "title": "Why do bad things happen?",
-   "minutes": 2,
+   "minutes": 3,
    "by": "pick"
   },
   "76": {
    "slug": "who-god-is",
    "title": "Who God is: Father, Son and Holy Spirit",
-   "minutes": 3,
+   "minutes": 4,
    "by": "named"
   }
  }

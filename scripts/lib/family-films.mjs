@@ -9,6 +9,9 @@
  *                                         each film's frames (the verses it
  *                                         quotes) and its "deeper" links (the
  *                                         catechism questions it names)
+ *   client/public/explorer/audio/manifest.json
+ *                                         each frame's recorded voice and its
+ *                                         length in seconds (the film's minutes)
  *   client/public/family/index.json       every devotion's passage, theme and title
  *   client/public/family-catechism.json   every question and its proof text
  *   client/public/family-film-picks.json  the judgments a rule cannot make
@@ -36,8 +39,11 @@
  *     "catechism": { "<number>": { slug, title, minutes, by } } }
  *
  * `minutes` is the film's length read aloud at the younger level, rounded,
- * so the page can say "about 2 minutes" truthfully. `by` is the rule that
- * matched. New films appear on their devotions when this is rebuilt:
+ * so the page can say "about 2 minutes" truthfully: the seconds of its
+ * recorded voice and the player's breath between pictures, or an estimate
+ * from its words for a film with no voice (filmMinutes). `by` is the rule
+ * that matched. Rebuild after a film is added or its voice is made again
+ * (scripts/build-film-audio.mjs); new films then appear on their devotions:
  *
  *   node scripts/build-family-films.mjs           write the map
  *   node scripts/build-family-films.mjs --check   exit 1 on drift (CI)
@@ -91,14 +97,32 @@ export function overlap(a, b) {
 }
 const touches = (refA, refB) => spans(refA).some((a) => spans(refB).some((b) => overlap(a, b)));
 
-/** How long a film takes read aloud at the younger level, in whole minutes (at least 1). */
-export function filmMinutes(frames) {
+/** The player's breath between pictures with Listen on: FilmPlayer.tsx waits 700 ms after a frame is said. */
+export const BREATH_SECONDS = 0.7;
+
+/**
+ * How long a film takes read aloud at the younger level, in whole minutes (at least 1).
+ *
+ * `recorded` is the film's younger files in explorer/audio/manifest.json, one
+ * { id, seconds } for each frame. Where they are the film's frames in order,
+ * the length is what a family hears: each file's own seconds, with a breath
+ * between pictures. A film with no voice, or a voice that is not its frames
+ * (which build-film-audio.mjs --check refuses), is estimated from its words.
+ */
+export function filmMinutes(frames, recorded) {
+  const voiced =
+    frames.length > 0 &&
+    Array.isArray(recorded) &&
+    recorded.length === frames.length &&
+    recorded.every((r, i) => r?.id === frames[i].id && Number.isFinite(r.seconds) && r.seconds > 0);
   let seconds = 0;
-  for (const f of frames) {
-    const words = String(f.younger ?? "").trim().split(/\s+/).filter(Boolean).length + (f.verse?.text ? String(f.verse.text).trim().split(/\s+/).length : 0);
-    // The picture draws itself (about two seconds), then the words at a reading-aloud pace.
-    seconds += Math.max(5, 2 + words / 2.5);
-  }
+  if (voiced) seconds = recorded.reduce((sum, r) => sum + r.seconds, 0) + BREATH_SECONDS * (frames.length - 1);
+  else
+    for (const f of frames) {
+      const words = String(f.younger ?? "").trim().split(/\s+/).filter(Boolean).length + (f.verse?.text ? String(f.verse.text).trim().split(/\s+/).length : 0);
+      // The picture draws itself (about two seconds), then the words at a reading-aloud pace.
+      seconds += Math.max(5, 2 + words / 2.5);
+    }
   return Math.max(1, Math.round(seconds / 60));
 }
 
@@ -106,6 +130,9 @@ export function filmMinutes(frames) {
 export function loadFilms(root = ROOT) {
   const pub = path.join(root, "client/public");
   const index = readJson(path.join(pub, "explorer/index.json"));
+  // Each film's recorded voice (scripts/build-film-audio.mjs). "Watch first" plays the younger level.
+  const audio = path.join(pub, "explorer/audio/manifest.json");
+  const voices = fs.existsSync(audio) ? (readJson(audio).films ?? {}) : {};
   return (index.films ?? [])
     .filter((f) => f.status === "finished")
     .map((f) => {
@@ -119,7 +146,7 @@ export function loadFilms(root = ROOT) {
           .map((d) => /^\/family\/catechism#q(\d+)$/.exec(d.href ?? ""))
           .filter(Boolean)
           .map((m) => Number(m[1])),
-        minutes: filmMinutes(data.frames ?? []),
+        minutes: filmMinutes(data.frames ?? [], voices[f.slug]?.younger),
       };
     });
 }

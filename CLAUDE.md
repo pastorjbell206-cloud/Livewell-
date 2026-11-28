@@ -938,7 +938,9 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
   The match is `client/public/family/films.json`, written by
   `scripts/build-family-films.mjs` (drift-checked in CI) from the films' own
   data and the judgments in `client/public/family-film-picks.json`. Only real
-  matches; when unsure, no film. Rebuild it after a film is added.
+  matches; when unsure, no film. Rebuild it after a film is added or its
+  voice is made again: "about N minutes" is the recorded younger voice's
+  length with the player's breath between pictures.
 - **The catechism at a table (2026-11-22)**: every question carries
   `plainWords` and `talkAbout` beside its answer (no answer's wording
   changes; nothing added takes a side on baptism or the Supper). The week's

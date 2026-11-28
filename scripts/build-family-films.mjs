@@ -5,7 +5,9 @@
  * Writes client/public/family/films.json: which Bible Explorer film each
  * family devotion and each catechism question offers under "Watch first"
  * (scripts/lib/family-films.mjs has the rule). Run it after a film is added
- * or changed, after a devotion's passage or title changes, or after editing
+ * or changed, after its voice is made again (scripts/build-film-audio.mjs:
+ * the recorded voice's length is the film's minutes), after a devotion's
+ * passage or title changes, or after editing
  * client/public/family-film-picks.json. It reads the family index and the
  * Explorer index, so rebuild those first when their sources changed.
  *
