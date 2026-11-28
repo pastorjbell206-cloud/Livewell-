@@ -1,0 +1,457 @@
+{
+  "slug": "family-children",
+  "title": "Faith with children, ages 7 to 11",
+  "for": "I'm raising children",
+  "subtitle": "Eight sessions for parents of children from seven to eleven: the Bible as one story, reading it together, the catechism, prayer they lead, their big questions, friends and fairness, screens, and serving as a family.",
+  "intro": [
+    "This track is for anyone raising children from about seven to eleven: a mother or a father, a single parent, a grandparent raising grandchildren, an adoptive or foster parent, or the only believer in the house. These are the years when children want to know how things work and whether they're true. They can read a passage for themselves, follow the Bible from beginning to end, and ask why, and they deserve real answers.",
+    "There are eight sessions of about ten minutes. Each gives you a short teaching, one page on this site to open, a question for you, one thing to do with your child that week, and a verse to keep. Several of the pages are made for children of this age to use beside you, so expect to share the screen."
+  ],
+  "leader": {
+    "about": [
+      "This guide is for anyone leading a group of parents through Faith with children, ages 7 to 11, or two parents taking it together. The group is for mothers, fathers, grandparents, adoptive and foster parents, and anyone raising a child of primary school age, whether they grew up in church or are learning the faith alongside their children. A leader doesn't need every answer. A leader needs to be willing to say they don't know and to look it up with everyone else.",
+      "Each person reads the session and opens its page before the group meets. The meeting doesn't repeat the teaching. It talks over what happened at home that week, including the questions children asked that nobody could answer, using the group guide for each session, gathered below in order."
+    ],
+    "sections": [
+      {
+        "id": "group",
+        "title": "The group",
+        "body": [
+          "Four to ten parents is a good size. Meet for about seventy-five minutes, once a week or once a fortnight, for eight meetings, and keep to the end time you promised. Make room for single parents, for parents whose spouse doesn't share their faith, and for grandparents raising grandchildren, so that no one feels like the exception in the room."
+        ]
+      },
+      {
+        "id": "room",
+        "title": "The room",
+        "body": [
+          "A living room or kitchen table works well, with a screen nearby, since several sessions use a film or a page made for children. Say at the first meeting that no one's family is on trial, that anyone may pass on any question, that what is said about children and marriages stays in the room unless someone is in danger, and that no one has to pray aloud."
+        ]
+      },
+      {
+        "id": "order",
+        "title": "The order of a meeting",
+        "body": [
+          "About seventy-five minutes, in this order. Keep to the times loosely and to the end time strictly."
+        ],
+        "steps": [
+          "Ten minutes: the opening question, once round the circle. Anyone may pass.",
+          "Ten minutes: how last week's one thing to do went at home, and any question a child asked.",
+          "Five minutes: one person reads the session's verse aloud.",
+          "Thirty minutes: the three questions to talk over, in order, with room for what parents bring.",
+          "Ten minutes: the prayer prompt, praying for children by name. Nobody has to pray aloud.",
+          "Ten minutes: name the next session and its one thing to do, and say when you will meet."
+        ]
+      },
+      {
+        "id": "hard",
+        "title": "When a hard question comes",
+        "body": [
+          "Children of this age ask hard questions, and their parents bring them to the group: who made God, why prayers go unanswered, what happens to a grandparent who didn't believe, whether science and the Bible fight. Don't bluff. Say what Christians believe, say plainly what no one fully knows, and look things up together. The case for the faith on this site and the question films were written for exactly these moments.",
+          "Where Christians differ, as they do on baptism, when a child should take the Lord's Supper, and how to read the days of creation, say what they share and that faithful churches differ, and send each family to their own pastor. The track takes no side on these."
+        ]
+      },
+      {
+        "id": "hurting",
+        "title": "When someone is hurting",
+        "body": [
+          "A group of parents will meet real pain: a child who is anxious or bullied, a child with a disability or an illness, a marriage under strain or ended, a death in the family, a home where anger has frightened someone. When that comes into the room, stop and listen. Don't explain it and don't hurry back to the session. Ask whether the group should go on or pause, and speak with the person afterwards.",
+          "If anyone says that a child is being harmed, at home, online or anywhere else, take it seriously and don't promise to keep it secret. A child who may be in danger is a matter for the police and child protection services, not only for the group."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "When to point someone to Find Help",
+        "body": [
+          "Point a parent to Find Help when what they carry has grown too heavy: a child who speaks of not wanting to live, harm done to a child, anger at home that someone cannot control, a marriage where someone is afraid, grief that has taken their sleep, or a parent who no longer wants to go on. The Find Help page on this site lists places to turn, and its lines for help right now are open day and night. If anyone is in danger now, call your local emergency number. A leader is a friend in that moment, not a counsellor."
+        ]
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "n": 1,
+      "title": "The Bible's whole story",
+      "minutes": 15,
+      "teaching": [
+        "By seven, a child who has grown up around church usually knows a handful of Bible stories and very little of how they fit together. This is the age to show them. The Bible is one story, running from a good world made by God, through the damage done when people turned from him, through the promise to Abraham and the rescue of Israel, to Jesus, and on to the day God makes everything new. Once a child has the whole road in view, every story they hear afterwards has a place to go.",
+        "The Bible Explorer was made for this age, for readers from seven to sixteen. It lays the whole Bible out as one road on an illustrated map, with each stop told at two reading levels, the verses behind it, and something to do together. Threads run through the stops, so a child can follow one idea, like the promise of a king, from beginning to end. Let your child choose the stop and read it at their level while you read it at yours. Then ask them where on the road we are now."
+      ],
+      "open": {
+        "kind": "explorer",
+        "label": "The Bible Explorer",
+        "href": "/study/explorer",
+        "why": "The whole Bible as one road on an illustrated map, made for readers from seven to sixteen, with each stop told at two reading levels."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "How the 66 books fit together",
+          "href": "/study/explorer/watch/sixty-six-books",
+          "why": "A short film on how the Bible's sixty-six books belong to one story, to watch together before you open the map."
+        },
+        {
+          "kind": "story",
+          "label": "The Bible's story: Abraham",
+          "href": "/study/bible/story/abraham",
+          "why": "For you: the part of the story where God's promise to bless all the nations begins, so you can tell it well when the map reaches it."
+        },
+        {
+          "kind": "study-tool",
+          "label": "The 66 books at a glance",
+          "href": "/study/books-at-a-glance",
+          "why": "For you: each book of the Bible in one band, so you can answer when your child asks where a book belongs."
+        }
+      ],
+      "question": "Where on the Bible's road would your child put themselves, and where would you put yourself?",
+      "do": "Sit with your child for fifteen minutes this week and choose one stop on the Explorer's map together. Read it at your two levels, then ask them to tell you where it fits in the whole story.",
+      "verse": {
+        "ref": "Psalm 119:105",
+        "text": "Your word is a lamp to my feet and a light to my path."
+      },
+      "group": {
+        "open": "Which Bible stories did you know as a child, and did you know how they fit together?",
+        "discuss": [
+          "What changes for a child when they see the Bible as one story rather than many?",
+          "How could a parent who doesn't know the whole story well learn it alongside their child?",
+          "Where in the story do you think children find themselves most easily, and why?"
+        ],
+        "pray": "Pray for each child to come to know the whole story of the Bible, and to find their own place in it."
+      }
+    },
+    {
+      "n": 2,
+      "title": "Reading the Bible together",
+      "minutes": 10,
+      "teaching": [
+        "Children of this age can read the Bible itself, not only a retelling. A nine-year-old can follow a chapter of Mark, notice who does what, and ask a question an adult would miss. The family reading plans on this site give a passage and a prompt for each day: the life of Jesus in thirty days, the Old Testament story in thirty days written for children, thirty days in the Psalms, and a twenty-one-day start for a family new to faith or coming back to it.",
+        "Let your child read aloud some nights, and let them hold the Bible. Ask a few plain questions of any passage: what happens, what does it show us about God, and what would change if we believed it. Then don't answer your own question. Wait. A child who discovers something in the text has learned more than a child who is told it, and will remember it longer. Plans fail when they're too big, so choose three nights a week and keep those."
+      ],
+      "open": {
+        "kind": "plan",
+        "label": "Family reading plans",
+        "href": "/family/reading-plans",
+        "why": "Four plans with a passage and a prompt for each day, including the life of Jesus and the Old Testament story told for children."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Mark 1, passage by passage",
+          "href": "/study/bible/mark/1#plain",
+          "why": "The opening of Mark, where the life-of-Jesus plan spends most of its days, with plain-words notes to read the night before."
+        },
+        {
+          "kind": "study",
+          "label": "How to study the Bible",
+          "href": "/study/how-to-study",
+          "why": "For the parent who wants a method: a simple way to read any passage closely, before passing the habit on to a child."
+        }
+      ],
+      "question": "Which nights of the week could your family keep for reading the Bible, and what usually takes them?",
+      "do": "Choose one of the family reading plans and three nights this week. Let your child read the passage aloud, ask what happens and what it shows about God, and wait for their answer.",
+      "verse": {
+        "ref": "Psalm 119:130",
+        "text": "The unfolding of Your words gives light; it informs the simple."
+      },
+      "group": {
+        "open": "Did anyone read the Bible with you as a child, and what was it like?",
+        "discuss": [
+          "What does a child gain by reading the Bible's own words rather than only a retelling?",
+          "Why is it so hard for parents to wait for a child's answer instead of supplying it?",
+          "What would make three nights a week possible in your home?"
+        ],
+        "pray": "Pray for the reading in each home this week, that children would discover something in the text for themselves."
+      }
+    },
+    {
+      "n": 3,
+      "title": "The catechism",
+      "minutes": 10,
+      "teaching": [
+        "A catechism teaches the faith in questions and answers, short enough to learn at a table. Children of seven to eleven are at the best age for it: they learn by heart with ease, and they're starting to ask what the words mean. The family catechism on this site has seventy-six questions, each with an answer for adults, a shorter one for a child, a verse and a prayer. It runs from who made you, through the fall and the cross and grace, to the church and the life to come.",
+        "With this age, don't stop at the answer. Ask what it means, ask how we know it's true, and read the verse beside it. A child who can say that Jesus is the Son of God who became a man to save us has something to stand on. A child who has been asked why, and has looked it up in the Bible with a parent, has the beginning of a faith that can hold its own. The answers summarize Scripture, and the Apostles' Creed behind them is older than any denomination."
+      ],
+      "open": {
+        "kind": "catechism",
+        "label": "The family catechism",
+        "href": "/family/catechism",
+        "why": "Seventy-six questions, each with an answer for adults, a shorter one for a child, a verse and a prayer, and a way to practise aloud."
+      },
+      "also": [
+        {
+          "kind": "howto",
+          "label": "How to Use a Family Catechism",
+          "href": "/how-tos/fam-how-to-use-a-family-catechism",
+          "why": "Practical ways to learn a catechism at home one question at a time, without it turning into a classroom."
+        },
+        {
+          "kind": "creed",
+          "label": "The Apostles' Creed",
+          "href": "/resources/creeds/apostles-creed",
+          "why": "The ancient summary of the faith the catechism's answers rest on, to read line by line with an older child."
+        }
+      ],
+      "question": "Which question of the catechism do you think your child would find hardest to answer, and why that one?",
+      "do": "Choose one question for this week. Say it at a meal each day, let your child answer, read its verse, and on the last day ask them what they think the answer means.",
+      "verse": {
+        "ref": "2 Timothy 1:13",
+        "text": "Hold on to the pattern of sound teaching you have heard from me, with the faith and love that are in Christ Jesus."
+      },
+      "group": {
+        "open": "What did you learn by heart about God as a child, if anything?",
+        "discuss": [
+          "Why might learning an answer by heart matter before a child fully understands it?",
+          "How can a parent keep the catechism from feeling like a test?",
+          "Which question in the catechism would you like to understand better yourself?"
+        ],
+        "pray": "Pray for children to grow from knowing the answers to trusting the God the answers describe."
+      }
+    },
+    {
+      "n": 4,
+      "title": "Prayer they lead",
+      "minutes": 10,
+      "teaching": [
+        "By seven, a child who has heard prayer at home can begin to lead it, and that's a step worth taking on purpose. Let them pray at supper, open the evening prayer, or pray for a friend who is ill. Their prayers will be short and sometimes funny, and some nights they'll want to pass. Let them. The aim isn't fluency. It's a child who knows they can speak to God themselves, without needing a parent's words in their mouth.",
+        "When the disciples asked how to pray, Jesus gave them a pattern: “Our Father in heaven, hallowed be Your name” (Matthew 6:9). Walk through the Lord's Prayer with your child one line at a time, and let each line become a prompt. Praise God for something. Ask for his will in one situation. Ask for today's bread, for forgiveness, for help. Pray the psalms together too. They teach a child that praise and complaint, thanks and sorrow, all belong in prayer."
+      ],
+      "open": {
+        "kind": "chapter",
+        "label": "Matthew 6, passage by passage",
+        "href": "/study/bible/matthew/6#plain",
+        "why": "The Lord's Prayer in its own chapter, with plain-words notes on each line, to read on your own before you teach it."
+      },
+      "also": [
+        {
+          "kind": "psalms",
+          "label": "Pray Psalm 23 slowly",
+          "href": "/tools/pray-the-psalms?psalm=23",
+          "why": "A guided way to pray a psalm line by line, which an older child can lead for the whole family."
+        },
+        {
+          "kind": "catechism",
+          "label": "Question 50: What did Jesus teach us to pray?",
+          "href": "/family/catechism#q50",
+          "why": "The catechism's question on the Lord's Prayer, with a short answer for a child and a verse to read together."
+        },
+        {
+          "kind": "devotion",
+          "label": "Talking with God",
+          "href": "/family/devotions/prayer",
+          "why": "A family devotion on prayer as talking with a Father who loves to hear you, with no magic words."
+        }
+      ],
+      "question": "What would it mean for your child to pray without needing your words?",
+      "do": "Ask your child to lead prayer at one meal this week, using one line of the Lord's Prayer as a prompt. Thank them afterwards, and don't correct the prayer.",
+      "verse": {
+        "ref": "Psalm 145:18",
+        "text": "The LORD is near to all who call on Him, to all who call out to Him in truth."
+      },
+      "group": {
+        "open": "When did you first pray out loud in front of other people, and how did it feel?",
+        "discuss": [
+          "Why is it worth letting a child lead prayer even when the prayer is clumsy?",
+          "How can the Lord's Prayer give a child words without taking their own away?",
+          "What might a child learn about prayer from the psalms that complain to God?"
+        ],
+        "pray": "Pray for the children of each home to know that God hears them, and give thanks for the first prayers they have prayed."
+      }
+    },
+    {
+      "n": 5,
+      "title": "The big questions children ask",
+      "minutes": 15,
+      "teaching": [
+        "Children of this age ask the questions adults have learned to stop asking. Who made God? Why can't anyone see him? What happens when people die? Does God still love a child who does wrong? Why does he seem silent sometimes? Why do bad things happen? The Bible Explorer has a short film for each of these six, made to watch together and talk over afterwards. Watch it first on your own, so you know where it goes and what it leaves open.",
+        "The films don't pretend every answer is tidy. The one on suffering says what the Bible explains, what it doesn't, and who has the last word. The one on God's silence walks through the psalms of lament, Elijah at the mountain and Jesus' own cry from the cross. After watching, ask what your child thought before you say anything, and listen for the question underneath. A question about death is often about a grandparent who is ill, and a question about God's love is often about something the child did last week."
+      ],
+      "open": {
+        "kind": "study-tool",
+        "label": "The films",
+        "href": "/study/films",
+        "why": "Every Bible Explorer film in one place, including the good questions children ask, each answered from the Bible in a few pictures."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "What happens when we die?",
+          "href": "/study/explorer/watch/when-we-die",
+          "why": "A gentle film on what the Bible says happens when someone who belongs to Jesus dies, and why Christians can be sad and hopeful at once."
+        },
+        {
+          "kind": "film",
+          "label": "Does God still love me when I do wrong?",
+          "href": "/study/explorer/watch/love-when-i-do-wrong",
+          "why": "Jesus' story of a son who ran away and a father who ran too, for the child who wonders whether God gives up on them."
+        },
+        {
+          "kind": "film",
+          "label": "Why do bad things happen?",
+          "href": "/study/explorer/watch/why-bad-things-happen",
+          "why": "Eight pictures on what Christians can honestly say about pain, what they cannot, and who has the last word."
+        }
+      ],
+      "question": "Which of these six questions has your child asked, and which do you most hope they will bring to you rather than to someone else?",
+      "do": "Choose the question film nearest to something your child has asked. Watch it alone first, then together, and ask what they thought before you add anything. Write down anything you couldn't answer, to look up together.",
+      "verse": {
+        "ref": "1 Peter 3:15",
+        "text": "Always be prepared to give a defense to everyone who asks you the reason for the hope that is in you."
+      },
+      "care": [
+        "Paul wrote that Christians do grieve, but “not grieve like the rest, who are without hope” (1 Thessalonians 4:13). Grief is not a lack of faith. If your grief feels too heavy to carry, please tell someone you trust: a pastor, a friend or a doctor. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What question did you ask about God as a child that no one answered well?",
+        "discuss": [
+          "Why does a child who catches a parent bluffing often stop asking?",
+          "What is the difference between an honest answer and a complete one?",
+          "How can a parent listen for the question underneath the question?"
+        ],
+        "pray": "Pray for the children who are asking hard questions, and for parents to have the patience and honesty to answer them well."
+      }
+    },
+    {
+      "n": 6,
+      "title": "Friends and fairness",
+      "minutes": 10,
+      "teaching": [
+        "Between seven and eleven, friendships start to matter as much as home, and fairness becomes a child's great cause. They notice who was picked last, who got the bigger slice, and who wasn't invited to the party. That sense of fairness is a good gift, part of being made in the image of a just God. It also cuts both ways. A child who protests loudly when they're wronged can be slow to notice when they're the one leaving someone out.",
+        "Proverbs gives a child a picture of the friend worth being: “A friend loves at all times” (Proverbs 17:17). Talk about the friend who stays when things get hard, and about the child standing alone at the edge of the playground. Talk too about what to do when a friend hurts them. Forgiving isn't saying it was fine, and it doesn't mean staying close to someone who keeps doing harm. If your child is being bullied, or is bullying someone, take it seriously and talk with the school. And sometimes life simply isn't fair, which the Bible says plainly too."
+      ],
+      "open": {
+        "kind": "devotion",
+        "label": "The Friend Who Stays",
+        "href": "/family/devotions/friendship",
+        "why": "A family devotion on the friend who is still there when things get hard, with questions for younger and older children."
+      },
+      "also": [
+        {
+          "kind": "devotion",
+          "label": "The Empty Seat",
+          "href": "/family/devotions/kindness-to-the-outsider",
+          "why": "A devotion on noticing the person standing alone, for a child learning to see who has been left out."
+        },
+        {
+          "kind": "wisdom",
+          "label": "When Life Is Unfair",
+          "href": "/wisdom/when-life-is-unfair",
+          "why": "What Scripture says when life really isn't fair, for the parent and for an older child who keeps asking why."
+        }
+      ],
+      "question": "Where does your child's sense of fairness show most, and where do they find it hardest to see from someone else's side?",
+      "do": "At a meal this week, ask your child who sits alone at school or on the bus. Talk about what it would cost to sit with them, and pray for that child by name together.",
+      "verse": {
+        "ref": "Proverbs 17:17",
+        "text": "A friend loves at all times, and a brother is born for adversity."
+      },
+      "group": {
+        "open": "Who was your closest friend at nine or ten, and what made them a good friend?",
+        "discuss": [
+          "Why do you think fairness matters so much to children of this age?",
+          "How can a parent honor a child's sense of fairness while helping them see their own part?",
+          "What is the difference between forgiving a friend and staying close to someone who keeps hurting you?"
+        ],
+        "pray": "Pray for the friendships of the children in each home, for the children who are left out, and for courage to be a friend who stays."
+      }
+    },
+    {
+      "n": 7,
+      "title": "Screens and games",
+      "minutes": 10,
+      "teaching": [
+        "Most children of this age are offered a screen long before they're ready to manage one, and most parents feel a step behind. One of the family devotions puts the heart of it simply: what you keep looking at slowly becomes what you think about. A screen isn't neutral, and neither is a game. Paul's list makes a good filter for a household, for children and parents alike: “whatever is true, whatever is honorable, whatever is right, whatever is pure, whatever is lovely” (Philippians 4:8).",
+        "So make the rules together and keep them as a whole house, parents included. Many families keep screens out of bedrooms at night and off the table at meals, and agree on what a game or app has to be before it comes in. Games can be good, and a parent who plays one with their child learns a lot about their world. Above all, tell your child that if anything online ever makes them uneasy, or anyone asks them to keep a secret from you, they can tell you and won't be in trouble for telling."
+      ],
+      "open": {
+        "kind": "howto",
+        "label": "How to Have the Screen Conversation by Age",
+        "href": "/how-tos/parenting-how-to-have-the-screen-conversation-by-age",
+        "why": "How the conversation about screens changes as a child grows, and what to say at the ages this track covers."
+      },
+      "also": [
+        {
+          "kind": "howto",
+          "label": "How to Make a Family Screen Covenant",
+          "href": "/how-tos/fam-how-to-make-a-family-screen-covenant",
+          "why": "How a family can agree on its screen rules together and write them down, with the parents keeping them too."
+        },
+        {
+          "kind": "devotion",
+          "label": "Where Your Eyes Go",
+          "href": "/family/devotions/screens-and-attention",
+          "why": "A family devotion on Philippians 4:8 and attention, to read together before you sit down to make the rules."
+        },
+        {
+          "kind": "wisdom",
+          "label": "Technology and Distraction",
+          "href": "/wisdom/technology-and-distraction",
+          "why": "For the parent: what Scripture says about attention and distraction, since children learn screen habits by watching ours."
+        }
+      ],
+      "question": "What does your child's screen time teach them to want, and what does yours teach them?",
+      "do": "Sit down with your child this week and agree two or three screen rules for the whole household, parents included. Write them down, and tell your child plainly that they can always tell you about anything online.",
+      "verse": {
+        "ref": "Psalm 101:3",
+        "text": "I will set no worthless thing before my eyes."
+      },
+      "group": {
+        "open": "What did you do with your free time at ten years old?",
+        "discuss": [
+          "Why is it hard for parents to keep the screen rules they set for their children?",
+          "What good things can games and screens give a child, and what do they crowd out?",
+          "How can a parent make it safe for a child to tell them about something they saw or were sent online?"
+        ],
+        "pray": "Pray for the children in each home as they meet the world online, for wisdom in setting rules, and for homes where children can tell the truth."
+      }
+    },
+    {
+      "n": 8,
+      "title": "Serving others as a family",
+      "minutes": 10,
+      "teaching": [
+        "Children of this age want to be useful. They'll carry the heavy bag, help with the baby, and run the plate next door. That eagerness is worth giving somewhere to go. Jesus measured greatness by it: “For even the Son of Man did not come to be served, but to serve, and to give His life as a ransom for many” (Mark 10:45). A family that serves together teaches its children that faith is something done with the hands, not only something said at the table.",
+        "Start close to home. Take a meal to a family with a new baby or a recent loss. Visit an older neighbor and let the children talk. Set a place for someone who would otherwise eat alone, and give together, from the children's money as well as yours. Serving isn't for the family's reputation, and it isn't done to people but with them. Often the children notice first who needs it. The teenage years will bring harder questions, and a child who has served beside a parent carries something real into them."
+      ],
+      "open": {
+        "kind": "devotion",
+        "label": "The Towel and the Basin",
+        "href": "/family/devotions/serving-others",
+        "why": "A family devotion on Jesus washing feet: in God's family the great ones are the ones doing the serving."
+      },
+      "also": [
+        {
+          "kind": "howto",
+          "label": "How to Open Your Home in Hospitality as a Family",
+          "href": "/how-tos/fam-how-to-open-your-home-in-hospitality-as-a-family",
+          "why": "Practical ways for a family to welcome people to its table, with a part for the children to play."
+        },
+        {
+          "kind": "wisdom",
+          "label": "Serving Others",
+          "href": "/wisdom/serving-others",
+          "why": "What Scripture says about serving others, for the parent planning what the family will do together."
+        },
+        {
+          "kind": "track",
+          "label": "Is any of it true?",
+          "href": "/tracks/teens-is-it-true",
+          "why": "For when your child becomes a teenager: a track for a teenager with questions, to take alongside them or to hand to them."
+        }
+      ],
+      "question": "Who near your family needs help, and what could your children do for them that you couldn't do alone?",
+      "do": "Choose one person or family near you this month and serve them together: a meal, a visit, a job done. Let your children choose part of it, and talk afterwards about what Jesus did for us.",
+      "verse": {
+        "ref": "Mark 10:45",
+        "text": "For even the Son of Man did not come to be served, but to serve, and to give His life as a ransom for many."
+      },
+      "group": {
+        "open": "Who did you see serving others when you were a child, and what did it teach you?",
+        "discuss": [
+          "Why might serving together form a child more than being told to be kind?",
+          "What is the difference between serving people and doing things to them?",
+          "Looking back over these eight sessions, which practice will your family keep as your children become teenagers?"
+        ],
+        "pray": "Pray for the people your families could serve, and for children who will carry the habit of serving into the teenage years and beyond."
+      }
+    }
+  ]
+}

@@ -1,0 +1,475 @@
+{
+  "slug": "teens-hard-things",
+  "title": "When life gets hard",
+  "for": "I'm a teenager going through something",
+  "subtitle": "Eight short sessions for a teenager carrying something heavy: a death, parents splitting up, being bullied, school pressure, feeling low, having hurt someone, God's silence, and hope that holds.",
+  "intro": [
+    "This track is for when something in your life has gone wrong and the usual answers aren't helping. Each session takes about six minutes: a short reading, a film or a page, one question, one thing to do and one verse. Every session also says where to find help from real people.",
+    "Nothing here will tell you to cheer up or that everything happens for a reason. It will take you to what the Bible honestly says about pain, and it will keep pointing you to trusted adults. Take it alone, with a friend, with a youth group, or with a parent."
+  ],
+  "leader": {
+    "about": [
+      "This guide is for a youth leader or a parent taking teenagers through When life gets hard. These sessions go straight into painful places: death, divorce, bullying, failure, long sadness, harm done and harm suffered. Some of the young people in the room will be living through exactly what a session names. The leader's task is not to fix anyone. It is to keep the room safe, to listen far more than talk, and to make sure no one leaves carrying something heavy alone.",
+      "Each person takes the session on their own first: a short reading, a film or a page, and a passage. The meeting doesn't repeat the teaching. It talks over what people found, using the group guide for that session, which is gathered below in order with the page each session opens and the question it asks."
+    ],
+    "sections": [
+      {
+        "id": "group",
+        "title": "The group",
+        "body": [
+          "Keep it small: three to six teenagers, so that nobody has to speak in front of a crowd about something raw. A parent and one teenager can use the same guide, and for some of these sessions that may be the better setting. Meet for about forty-five minutes, eight times. Always have a second trusted adult present, and know before the first meeting who in your church or school you would call if a young person needs more help than the group can give."
+        ]
+      },
+      {
+        "id": "room",
+        "title": "The room",
+        "body": [
+          "Pick somewhere quiet and private, where nobody walks through. Sit in a circle. Say at the first meeting, and again whenever it's needed, that anyone may pass on any question, that nobody has to tell their own story, and that what people share stays in the room unless someone is in danger. Say plainly what that exception means, so nobody is surprised by it later. Nobody will be made to pray aloud."
+        ]
+      },
+      {
+        "id": "order",
+        "title": "The order of a meeting",
+        "body": [
+          "About forty-five minutes, in this order. Keep to the times loosely, and be ready to set the plan aside if someone needs to be heard."
+        ],
+        "steps": [
+          "Five minutes: the opening question, once round the circle. Anyone may pass.",
+          "Ten minutes: watch the session's film or look at its page together, if not everyone has.",
+          "Five minutes: one person reads the verse aloud, with a few verses around it.",
+          "Fifteen minutes: the three questions to talk over, in order. Let a silence sit before you fill it.",
+          "Five minutes: read the session's care lines aloud, and name the people and places someone could go to this week.",
+          "Five minutes: the prayer prompt for those who pray, and quiet for everyone else, then stay available afterwards."
+        ]
+      },
+      {
+        "id": "hard",
+        "title": "When a hard question comes",
+        "body": [
+          "Questions in these sessions often come with anger: why did God let this happen, why didn't he answer. Welcome them. The Psalms and Job are full of such questions, and God kept them in the Bible. Don't hurry to defend God or to explain anyone's suffering. Saying you don't know, and staying in the room, often helps more than a good answer.",
+          "Never tell a young person that their loss happened for a reason you can name, that they need more faith, or that they should be over it by now."
+        ]
+      },
+      {
+        "id": "hurting",
+        "title": "When someone is hurting",
+        "body": [
+          "Expect it. When someone speaks of something raw, stop the discussion. Listen, thank them for saying it, and don't explain their pain for them or compare it with anyone else's. Afterwards, speak with them, with another adult nearby, and ask what would help. Never put a young person on the spot to share in front of the group.",
+          "If a young person says that anyone is harming them, that they have hurt themselves, or that they have thought about ending their life, take it seriously, stay calm, and never promise to keep it secret. A youth leader may be required by law, and by the church's own policy, to report harm to a child; know that policy before the first meeting. Tell a parent or guardian, unless the harm is coming from home, and get help the same day."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "When to point someone to Find Help",
+        "body": [
+          "In this track, point to Find Help early and often, not only in a crisis. Point a teenager, or their parent, there when something has become too heavy to carry: grief that will not ease, worry that stops sleep or school, sadness that has lasted for weeks, harm at home or anywhere else, or any sign that they no longer want to be alive. The Find Help page on this site lists places to turn, and its lines for help right now are open day and night. If anyone is in danger now, call your local emergency number, and stay with the young person while help is reached."
+        ]
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "n": 1,
+      "title": "When someone you love dies",
+      "minutes": 6,
+      "teaching": [
+        "When someone you love dies, people say things meant to help that often don't: they're in a better place, everything happens for a reason, at least they're not suffering. The Bible is more honest than that. When Jesus came to the grave of his friend Lazarus, he knew he was about to raise him, and still “Jesus wept” (John 11:35). Grief isn't a lack of faith. It's what love does when someone is gone. Christians grieve with hope, but they still grieve. You don't have to hurry it, hide it, or feel what anyone expects you to feel."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "What happens when we die?",
+        "href": "/study/explorer/watch/when-we-die",
+        "why": "A short film on what the Bible says about death and what comes after, told gently and without pretending it doesn't hurt."
+      },
+      "also": [
+        {
+          "kind": "help",
+          "label": "Someone I love has died",
+          "href": "/help/grief",
+          "why": "A page for the weeks after a death: what grief does, what Scripture says, and places to turn for help."
+        },
+        {
+          "kind": "chapter",
+          "label": "John 11, passage by passage",
+          "href": "/study/bible/john/11#plain",
+          "why": "Jesus at the grave of Lazarus, weeping and then calling his friend out, with plain notes on each part."
+        },
+        {
+          "kind": "howto",
+          "label": "How to Grieve Well",
+          "href": "/how-tos/ss-how-to-grieve-well",
+          "why": "What helps in grief and what doesn't, and how to let yourself be sad without being swallowed by it."
+        }
+      ],
+      "question": "If you've lost someone, what has helped most since then, and what hasn't?",
+      "do": "Write down three things you remember about someone you've lost, or about someone you love who is still here. Tell one of them to a person who knew them.",
+      "verse": {
+        "ref": "1 Thessalonians 4:13",
+        "text": "Brothers, we do not want you to be uninformed about those who sleep in death, so that you will not grieve like the rest, who are without hope."
+      },
+      "care": [
+        "If your grief is so heavy that you cannot carry it, or you feel you do not want to go on, please tell someone: a pastor, a friend, a doctor or a counsellor. You do not have to carry it alone. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What's something people say after a death that doesn't help?",
+        "discuss": [
+          "Jesus knew he would raise Lazarus and still wept. What does that tell you about him?",
+          "What's the difference between grieving with hope and not grieving at all?",
+          "How can a friend actually help someone who is grieving?"
+        ],
+        "pray": "Those who pray can name the people they miss, aloud or in silence, and pray for anyone in the room who is grieving. Anyone who doesn't pray can say one person's name and one thing about them."
+      }
+    },
+    {
+      "n": 2,
+      "title": "When your parents split up",
+      "minutes": 6,
+      "teaching": [
+        "If your parents have separated or divorced, you might feel angry, relieved, ashamed, or all of it in one afternoon. A few things are worth saying plainly. It isn't your fault. It isn't your job to fix it, carry messages, or pick a side. You're allowed to love both parents, and to be sad even if home is calmer now. The Bible is full of families that broke, and God kept meeting people inside them. One psalm says “Though my father and mother forsake me, the LORD will receive me” (Psalm 27:10). Your parents may not have left you at all. Either way, God hasn't."
+      ],
+      "open": {
+        "kind": "psalms",
+        "label": "Pray Psalm 27 slowly",
+        "href": "/tools/pray-the-psalms?psalm=27",
+        "why": "A psalm of someone afraid and surrounded who still says God will take him in, prayed a line at a time."
+      },
+      "also": [
+        {
+          "kind": "wisdom",
+          "label": "Difficult Family",
+          "href": "/wisdom/difficult-family",
+          "why": "What the Bible says about families that wound and break, told honestly, without smoothing anything over."
+        },
+        {
+          "kind": "life",
+          "label": "Blended Family Struggles: How Do You Make It Work?",
+          "href": "/life/the-blended-family",
+          "why": "For homes rebuilt after a split, including the child caught between loyalties nobody chose."
+        }
+      ],
+      "question": "What's one thing about your family that you've never said to anyone?",
+      "do": "Name one trusted adult outside your home: a grandparent, a teacher, a youth leader. Tell them one true thing about how home feels right now.",
+      "verse": {
+        "ref": "Psalm 34:18",
+        "text": "The LORD is near to the brokenhearted; He saves the contrite in spirit."
+      },
+      "care": [
+        "If old wounds from your family still weigh on you, it can help a great deal to talk with someone you trust: a pastor, a counsellor or a wise friend. The Find Help page on this site lists places to turn.",
+        "If you are being hurt, at home, at work or in a church, tell someone you trust and get help. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What makes it hard to talk about home with people outside it?",
+        "discuss": [
+          "Why do you think so many kids blame themselves when their parents split up?",
+          "What would it look like to love both parents without carrying messages between them?",
+          "The Bible is full of broken families. Which one do you know, and how did God meet people in it?"
+        ],
+        "pray": "Those who pray can pray for their families as they really are, and for anyone in the room whose home is hard right now. Anyone who doesn't pray can think of one adult who could be a steady person for them."
+      }
+    },
+    {
+      "n": 3,
+      "title": "Being bullied or left out",
+      "minutes": 6,
+      "teaching": [
+        "Being mocked, shut out of the group chat, or picked on day after day can make you believe something false about yourself: that you deserve it. You don't. Jesus knows what this is like. Isaiah described him as “despised and rejected by men, a man of sorrows, acquainted with grief” (Isaiah 53:3). Being targeted says something about the people doing it, not about your worth. Telling an adult isn't snitching; it's how cruelty gets stopped. And Jesus' command to love your enemies never means staying quiet while you're hurt. It means refusing to become the one who hurts back."
+      ],
+      "open": {
+        "kind": "chapter",
+        "label": "Psalm 55, passage by passage",
+        "href": "/study/bible/psalms/55#plain",
+        "why": "A prayer from someone hurt by a person close to him, with plain notes on what to do with that kind of pain."
+      },
+      "also": [
+        {
+          "kind": "help",
+          "label": "I feel so alone",
+          "href": "/help/loneliness",
+          "why": "A page for the times being left out gets heavy, with Scripture, honest words, and places to turn for help."
+        },
+        {
+          "kind": "wisdom",
+          "label": "Loving Your Enemies",
+          "href": "/wisdom/loving-your-enemies",
+          "why": "What Jesus meant by loving enemies, and why it never means letting someone keep hurting you."
+        }
+      ],
+      "question": "Have you ever been the one left out, or the one leaving someone out? What happened?",
+      "do": "If someone is targeting you, tell one adult this week what has happened, with dates if you can. If you've watched it happen to someone else, go and sit with them once.",
+      "verse": {
+        "ref": "Psalm 147:3",
+        "text": "He heals the brokenhearted and binds up their wounds."
+      },
+      "care": [
+        "If someone is hurting you, at home, at work or in a church, your safety comes first. Tell someone you trust and get help; the Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What does being left out look like at your school or online?",
+        "discuss": [
+          "Why do people who are being bullied so often think they deserve it?",
+          "Is telling an adult the same as snitching? Why or why not?",
+          "What's the difference between loving an enemy and letting them keep hurting you?"
+        ],
+        "pray": "Those who pray can pray for anyone being targeted, and for the people doing the targeting. Anyone who doesn't pray can think of one person at school who needs someone to sit with them."
+      }
+    },
+    {
+      "n": 4,
+      "title": "Failure and pressure at school",
+      "minutes": 6,
+      "teaching": [
+        "Grades, tests, applications, coaches, and parents who want the best for you: the pressure can make it feel as if your whole future rides on this semester. It doesn't. Hard work matters, and Paul says “Whatever you do, work at it with your whole being, for the Lord and not for men” (Colossians 3:23). Notice what that does. It changes who you're working for. You work for the Lord, not for a number or anyone's approval, which means a bad grade is a bad grade, not a verdict on who you are. Failing a test is something that happened. It isn't something you are."
+      ],
+      "open": {
+        "kind": "life",
+        "label": "Why Do We Measure Ourselves by Success and Failure?",
+        "href": "/life/success-and-failure",
+        "why": "On the private scorecard most of us keep, and what Scripture says to the one winning and the one losing."
+      },
+      "also": [
+        {
+          "kind": "wisdom",
+          "label": "Perfectionism",
+          "href": "/wisdom/perfectionism",
+          "why": "Why high standards can run on fear of being found wanting, and what the Bible means by being made whole."
+        },
+        {
+          "kind": "tool",
+          "label": "Worry journal",
+          "href": "/tools/worry-journal",
+          "why": "A private place to write down what's weighing on you, sort what you can act on, and hand the rest to God."
+        }
+      ],
+      "question": "Whose approval are you really working for at school?",
+      "do": "Write down the next test or deadline you're dreading. Under it, write the worst that could realistically happen, and then one thing that would still be true about you if it did.",
+      "verse": {
+        "ref": "Colossians 3:23",
+        "text": "Whatever you do, work at it with your whole being, for the Lord and not for men,"
+      },
+      "care": [
+        "If you are worn down by failing again and again, or caught in an addiction you cannot break, you are not alone, and you are not beyond help. Please talk to someone: a doctor, a pastor, a counsellor, or a group that helps people with what you are facing. The Find Help page on this site lists places to turn.",
+        "If sleepless nights have become your normal, please tell someone you trust: a doctor, a pastor or a friend. Lost sleep and heavy thoughts are worth taking to a doctor, and doing so is not a failure of faith. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Where does most of the pressure in your life come from right now?",
+        "discuss": [
+          "What changes if you work for the Lord rather than for a grade or a person?",
+          "What's the difference between failing at something and being a failure?",
+          "For parents in the room: how can you tell your teenager what matters most without adding to the pressure?"
+        ],
+        "pray": "Those who pray can name one pressure each and hand it to God, and pray for anyone with a big test or deadline coming. Anyone who doesn't pray can say one thing that is true about them whatever their grades."
+      }
+    },
+    {
+      "n": 5,
+      "title": "Feeling low for a long time",
+      "minutes": 6,
+      "teaching": [
+        "Everyone has bad days. This is different: weeks when everything feels grey, sleep and food go strange, the things you used to enjoy go quiet, and you can't explain why. No page on this site can tell you what's going on inside you, and you shouldn't try to name it yourself either. Tell a trusted adult, and see a doctor. That isn't a failure of faith. When the prophet Elijah sank so low he wanted to give up, God didn't lecture him. An angel woke him and said, “Get up and eat, or the journey will be too much for you” (1 Kings 19:7). Rest and care came first."
+      ],
+      "open": {
+        "kind": "help",
+        "label": "I feel empty, and I don't know why",
+        "href": "/help/empty",
+        "why": "A page for the heaviness that won't lift and can't be explained: honest words, Scripture, and places to turn for help."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "1 Kings 19, passage by passage",
+          "href": "/study/bible/1-kings/19#plain",
+          "why": "Elijah under the broom tree, given sleep and food before any words, with plain notes on how God met him."
+        },
+        {
+          "kind": "life",
+          "label": "What Does the Bible Say About Depression?",
+          "href": "/life/the-heavy-mind",
+          "why": "What Scripture, the long memory of the church, and honest medicine say to someone whose lights have gone out."
+        },
+        {
+          "kind": "wisdom",
+          "label": "When You Have Lost Hope",
+          "href": "/wisdom/despair-and-hope",
+          "why": "How the Bible meets despair without scolding, answering God's own people with food, rest and presence."
+        }
+      ],
+      "question": "Who is one adult you would trust enough to tell if you'd been feeling low for weeks?",
+      "do": "If you've felt low for weeks, tell a parent, a school counsellor or a doctor this week. If a friend has, ask them how they really are, and listen to the whole answer.",
+      "verse": {
+        "ref": "Psalm 42:11",
+        "text": "Why are you downcast, O my soul? Why the unease within me? Put your hope in God, for I will yet praise Him, my Savior and my God."
+      },
+      "care": [
+        "If sadness has settled on you and will not lift, these verses do not shame you. When grief or sadness lasts and starts taking sleep, appetite or work, seeing a doctor is wise, and it is not a failure of faith. If you have thoughts of hurting yourself, please speak to someone now: a doctor, a pastor, a trusted friend, or a crisis line. The Find Help page on this site lists places to turn.",
+        "If you have thoughts of hurting yourself, speak to someone today: a doctor, a pastor, a trusted friend, or a crisis line in your country. If you are in danger right now, call your local emergency number. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What's the difference between a bad day and a long low season?",
+        "discuss": [
+          "Why do you think God gave Elijah food and sleep before he talked with him?",
+          "Why do some Christians feel that seeing a doctor means their faith has failed, and why is that wrong?",
+          "How can you tell when a friend needs more help than you can give, and what would you do?"
+        ],
+        "pray": "Those who pray can pray for anyone carrying a long heaviness, and for courage to tell someone. Anyone who doesn't pray can think of one person to check on this week."
+      }
+    },
+    {
+      "n": 6,
+      "title": "When you've hurt yourself or someone else",
+      "minutes": 6,
+      "teaching": [
+        "Some people reading this have hurt themselves. Others have hurt someone else, with words, with their hands, or with a post that can't be taken back. Both can leave you hiding, sure you're beyond help. You aren't. If you have hurt yourself, or think about it, God isn't disgusted with you, and you don't have to keep it secret. Tell a trusted adult today, and use Find Help. If you've hurt someone, the way back is honesty: own it, apologize without excuses, and put right what you can. Jesus said, “Come to Me, all you who are weary and burdened, and I will give you rest” (Matthew 11:28)."
+      ],
+      "open": {
+        "kind": "help",
+        "label": "Find Help",
+        "href": "/help",
+        "why": "The site's page for when something is too heavy to carry alone, with places to turn and lines open day and night."
+      },
+      "also": [
+        {
+          "kind": "wisdom",
+          "label": "Self-Hatred",
+          "href": "/wisdom/self-hatred",
+          "why": "Why hating yourself is not humility, and what Scripture says about whose you are and what you're worth."
+        },
+        {
+          "kind": "wisdom",
+          "label": "Apologizing Well",
+          "href": "/wisdom/apologizing-well",
+          "why": "What a real apology looks like: naming the wrong without softening it, and asking for nothing back."
+        },
+        {
+          "kind": "chapter",
+          "label": "Psalm 32, passage by passage",
+          "href": "/study/bible/psalms/32#plain",
+          "why": "A prayer from someone who kept a wrong hidden until it wore him down, and found mercy when he told the truth."
+        }
+      ],
+      "question": "Is there something you've been hiding that you need to tell one safe person about?",
+      "do": "Write down the name of one trusted adult. If you've hurt yourself, tell them today. If you've hurt someone else, write the apology you owe, with no excuses, and decide when to give it.",
+      "verse": {
+        "ref": "Matthew 11:28",
+        "text": "Come to Me, all you who are weary and burdened, and I will give you rest."
+      },
+      "care": [
+        "If you have thoughts of hurting yourself, speak to someone today: a doctor, a pastor, a trusted friend, or a crisis line in your country. If you are in danger right now, call your local emergency number. The Find Help page on this site lists places to turn.",
+        "Sometimes guilt that will not lift needs more than a Bible verse. It can be part of anxiety, depression or a habit of the mind that keeps returning to the same fear. That is not a failure of faith. Talk with a pastor or a friend you trust. If the fear will not let you rest, a counsellor or a doctor can help too, and the Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Why is it so hard to tell anyone when something is wrong?",
+        "discuss": [
+          "What makes an adult safe to tell something hard to?",
+          "What's the difference between a real apology and an apology with excuses?",
+          "Why do you think Jesus invites the weary and burdened, rather than the people who have it together?"
+        ],
+        "pray": "Those who pray can pray in silence for anyone carrying something hidden, and for courage to tell someone safe. Anyone who doesn't pray can think of the one adult they would tell."
+      }
+    },
+    {
+      "n": 7,
+      "title": "When God feels silent",
+      "minutes": 6,
+      "teaching": [
+        "You prayed about something that mattered, and nothing happened. No answer, no change, no sense that anyone heard. Many Christians have been there, and the Bible doesn't hide it. David prayed, “How long, O LORD? Will You forget me forever? How long will You hide Your face from me?” (Psalm 13:1). He said it to God, which means he hadn't stopped believing someone was there. Silence isn't the same as absence. On the cross, Jesus himself cried out asking why God had forsaken him. Telling God that he feels far away is still prayer, and one of the most honest kinds."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "Why does God seem silent sometimes?",
+        "href": "/study/explorer/watch/god-silent",
+        "why": "A short film on the times God seems quiet, and the people in the Bible who prayed through them."
+      },
+      "also": [
+        {
+          "kind": "psalms",
+          "label": "Pray Psalm 13 slowly",
+          "href": "/tools/pray-the-psalms?psalm=13",
+          "why": "Six verses that move from how long to trust, prayed a line at a time, for when God seems far away."
+        },
+        {
+          "kind": "life",
+          "label": "Why Does God Allow Suffering and Stay Silent?",
+          "href": "/life/suffering-and-the-silence-of-god",
+          "why": "Lament as the language faith speaks in the dark, and how to hold on when heaven seems to have gone quiet."
+        },
+        {
+          "kind": "answer",
+          "label": "Is it okay to be angry at God?",
+          "href": "/answers/is-it-okay-to-be-angry-at-god",
+          "why": "An honest answer for anyone furious that God didn't step in, drawn from the people in the Bible who said so."
+        }
+      ],
+      "question": "What have you prayed about that seemed to get no answer?",
+      "do": "Read Psalm 13 aloud. Then write your own version: what you're asking, how long it's been, and one thing you'll keep trusting while you wait.",
+      "verse": {
+        "ref": "Psalm 13:5",
+        "text": "But I have trusted in Your loving devotion; my heart will rejoice in Your salvation."
+      },
+      "care": [
+        "If you feel forsaken right now and the feeling will not lift, please tell someone you trust, a pastor, a friend or a doctor. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Have you ever felt like God wasn't listening? What was that like?",
+        "discuss": [
+          "Why do you think God kept Psalm 13 in the Bible?",
+          "What's the difference between God being silent and God being absent?",
+          "Jesus cried out on the cross that God had forsaken him. What might that mean for someone who feels the same way?"
+        ],
+        "pray": "Those who pray can tell God honestly where he feels silent, and pray for anyone in the room who is still waiting. Anyone who doesn't pray can name the question they would most want God to answer."
+      }
+    },
+    {
+      "n": 8,
+      "title": "Hope that's real",
+      "minutes": 6,
+      "teaching": [
+        "Hope isn't the same as being told everything will be fine. Things may not be fine soon, and the Bible never pretends they will be. Christian hope rests on something that already happened: Jesus was crucified, buried, and raised on the third day. Because he rose, death and grief don't get the last word. The Bible's last pages promise that God will wipe away “every tear from their eyes” (Revelation 21:4), a promise about a real future, not a mood. That kind of hope doesn't ask you to stop hurting. It gives you somewhere to stand while you hurt, and people to stand with."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "The resurrection",
+        "href": "/study/explorer/watch/the-resurrection",
+        "why": "A short film on the morning the tomb was found empty, and why everything Christians hope for rests on it."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Romans 8, passage by passage",
+          "href": "/study/bible/romans/8#plain",
+          "why": "Paul on suffering, groaning and the love nothing can break, with plain notes on each part."
+        },
+        {
+          "kind": "howto",
+          "label": "How to Find Hope When Nothing Changes",
+          "href": "/how-tos/ss-how-to-find-hope-when-nothing-changes",
+          "why": "For the long stretches when the situation stays the same: where hope comes from when circumstances don't move."
+        },
+        {
+          "kind": "track",
+          "label": "Talking about your faith with friends",
+          "href": "/tracks/teens-explaining",
+          "why": "The next track on the road, in Faith for Teenagers: Talking about your faith with friends. Take it up when this one has settled."
+        }
+      ],
+      "question": "What's the difference between hoping things get better and the hope this session describes?",
+      "do": "Read Romans 8:31-39 slowly. Write down the one line you most need to hear right now, and put it somewhere you'll see it every day.",
+      "verse": {
+        "ref": "Romans 8:38-39",
+        "text": "For I am convinced that neither death nor life, neither angels nor principalities, neither the present nor the future, nor any powers, neither height nor depth, nor anything else in all creation, will be able to separate us from the love of God that is in Christ Jesus our Lord."
+      },
+      "care": [
+        "If you are suffering now, for your faith or for any other reason, you do not have to carry it alone. The Find Help page on this site lists places to turn.",
+        "If you have thoughts of hurting yourself, speak to someone today: a doctor, a pastor, a trusted friend, or a crisis line in your country. If you are in danger right now, call your local emergency number. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What do people usually mean when they say everything will be fine?",
+        "discuss": [
+          "Why does it matter that Christian hope rests on something that already happened?",
+          "How can a person have real hope and still be sad?",
+          "Who would you want standing with you in a hard season, and who could you stand with?"
+        ],
+        "pray": "Those who pray can give thanks for the resurrection, and pray for each person in the group by name. Anyone who doesn't pray can name one thing from these sessions they want to keep."
+      }
+    }
+  ]
+}

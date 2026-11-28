@@ -492,7 +492,15 @@
           "What has this track given you that you would most want to hand on?"
         ],
         "pray": "Give thanks by name for the people who taught you the faith, and pray for the people each of you might take through a study next."
-      }
+      },
+      "also": [
+        {
+          "kind": "track",
+          "href": "/tracks/doctrine-scripture",
+          "label": "The doctrine of Scripture",
+          "why": "The next track on the road, in Theology in Depth: The doctrine of Scripture. Take it up when this one has settled."
+        }
+      ]
     }
   ]
 }

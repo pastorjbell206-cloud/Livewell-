@@ -4,7 +4,7 @@ James, 2026-11-27: "make this like one of the best Bible academies in the world.
 I want someone to be able to go from not understanding the Bible to being able
 to fully understand the Bible."
 
-The Academy (`/academy`) arranges tracks into ten programs
+The Academy (`/academy`) arranges tracks into programs on a road of five levels
 (`client/public/academy/programs.json`). A **track** is the site's existing unit of
 learning: numbered sessions of about ten minutes, each with its own short
 teaching, one real page of the site to open, one question, one thing to do, one

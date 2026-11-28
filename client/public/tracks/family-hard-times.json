@@ -1,0 +1,481 @@
+{
+  "slug": "family-hard-times",
+  "title": "When a family goes through hard things",
+  "for": "Our family is in a hard season",
+  "subtitle": "Eight sessions for a family in a hard season: a death, serious illness, divorce and two homes, a move, money trouble, a child who is struggling, conflict at home, and the hope a family can hold together.",
+  "intro": [
+    "This track is for any parent or grandparent raising children through something hard: a death, an illness, a divorce, a move, money trouble, a child who is struggling, or a home where the arguments have gone on too long. You don't need to take the sessions in order. Begin with the one you're living. Each is for you first, and each ends with something to do with your children, in words that fit their age.",
+    "This track isn't counselling, and it isn't legal, medical or financial advice. Where something needs more than a page can give, it says so and points to Find Help, which lists places to turn. If anyone in your home is in danger, that comes before everything here."
+  ],
+  "leader": {
+    "about": [
+      "This guide is for anyone leading a group of parents through When a family goes through hard things, or for two adults taking it together. The group is for parents and grandparents carrying a family through a loss, an illness, a divorce, a move, money trouble or a struggling child. A leader doesn't need to have come through the same thing. A leader needs to listen far more than they speak, and to know when something is beyond the group.",
+      "Each person reads the session and opens its page before the group meets, and anyone may skip a session that is too near. The meeting doesn't repeat the teaching. It gives parents room to say how their family is doing, using the group guide for each session, gathered below in order."
+    ],
+    "sections": [
+      {
+        "id": "group",
+        "title": "The group",
+        "body": [
+          "Three to eight parents is a good size for a group like this; smaller is often better. Meet for about seventy-five minutes, once a week or once a fortnight, and keep the end time you promised. Make room for single parents, for parents whose spouse doesn't share their faith, for grandparents raising grandchildren, and for adoptive and foster parents, whose children may carry losses from before they came home."
+        ]
+      },
+      {
+        "id": "room",
+        "title": "The room",
+        "body": [
+          "Choose a quiet room with tissues on the table, and childcare somewhere else. Say at the first meeting that no one's family is on trial, that anyone may pass on any question or leave the room, that what is said stays in the room unless someone is in danger, and that no one has to pray aloud. Silence is allowed. Don't rush to fill it."
+        ]
+      },
+      {
+        "id": "order",
+        "title": "The order of a meeting",
+        "body": [
+          "About seventy-five minutes, in this order. Let the order bend when someone needs it, and keep the end time."
+        ],
+        "steps": [
+          "Ten minutes: the opening question, once round the circle. Anyone may pass.",
+          "Fifteen minutes: how each family is doing this week, with no advice unless it is asked for.",
+          "Five minutes: one person reads the session's verse aloud.",
+          "Twenty-five minutes: the three questions to talk over, as many as there is room for.",
+          "Ten minutes: the prayer prompt, praying for each family by name. Nobody has to pray aloud.",
+          "Ten minutes: name the next session, ask who needs a meal or a call this week, and say when you will meet."
+        ]
+      },
+      {
+        "id": "hard",
+        "title": "When a hard question comes",
+        "body": [
+          "Parents in a hard season ask the hardest questions: why God didn't heal, whether a divorce was their fault, whether a child's struggle means they failed, whether someone who died is with God. Don't answer what no one can answer. Say what Christians believe, say plainly what Scripture doesn't tell us, and never use a verse to close a wound before it can be spoken.",
+          "Where Christians differ, as they do on the grounds for divorce and remarriage, say what they share and that faithful churches differ, and send each person to their own pastor. The track takes no side on these."
+        ]
+      },
+      {
+        "id": "hurting",
+        "title": "When someone is hurting",
+        "body": [
+          "Everyone in this group is hurting, so the group's first work is to stay. When a parent breaks down, stop and listen. Don't explain their suffering, don't compare it with someone else's, and don't hurry back to the session. Ask whether the group should go on or pause, and speak with them afterwards. Practical help, a meal or a lift or an afternoon with the children, often says more than words.",
+          "If anyone says that a child is being harmed, or that they or a child are not safe at home, take it seriously and don't promise to keep it secret. A child who may be in danger is a matter for the police and child protection services, not only for the group."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "When to point someone to Find Help",
+        "body": [
+          "Point a parent to Find Help when what they carry has grown too heavy: grief that has taken their sleep or their work for months, a child who is withdrawing or speaks of not wanting to live, anger or violence at home, a spouse or former spouse who frightens them, debts they cannot see a way through, or a parent who no longer wants to go on. The Find Help page on this site lists places to turn, and its lines for help right now are open day and night. If anyone is in danger now, call your local emergency number. A leader is a friend in that moment, not a counsellor."
+        ]
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "n": 1,
+      "title": "Talking to children about death",
+      "minutes": 10,
+      "teaching": [
+        "When someone dies, parents often want to shield children from it, and children notice anyway. They see the tears, hear the phone calls, and fill the silence with fears of their own. The page on grief gives a first rule plainly: with children, use plain words like ‘died’. A phrase like ‘we lost him’ can confuse a child, who may wonder why nobody is looking. Tell them the truth in short sentences, let them ask the same question many times, and let them see you grieve.",
+        "Jesus stood at his friend's grave and wept (John 11:35), though he knew what he was about to do. Christians grieve, Paul says, but not like those who have no hope. The film this session opens answers a child's question gently: what the Bible says happens when someone who belongs to Jesus dies, and why Christians can be sad and hopeful at once. Don't promise more than Scripture does, and don't hurry a child past sadness to comfort. A child allowed to grieve beside a parent learns something about God that lasts."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "What happens when we die?",
+        "href": "/study/explorer/watch/when-we-die",
+        "why": "A gentle film in seven pictures on what the Bible says happens when someone who belongs to Jesus dies. Watch it on your own first."
+      },
+      "also": [
+        {
+          "kind": "help",
+          "label": "Someone I love has died",
+          "href": "/help/grief",
+          "why": "For you and for anyone helping you: Scripture, what to do this week, plain words for children, and where to find help."
+        },
+        {
+          "kind": "devotion",
+          "label": "Every Sad Thing Undone",
+          "href": "/family/devotions/heaven",
+          "why": "A family devotion on Revelation 21, for an evening when a child is ready to talk about the day God makes everything right."
+        },
+        {
+          "kind": "catechism",
+          "label": "Question 70: What happens when we die?",
+          "href": "/family/catechism#q70",
+          "why": "The catechism's short answer for a child, with a verse to read together when the question comes."
+        }
+      ],
+      "question": "What words have you used with your children about death, and are they words a child can understand?",
+      "do": "If your family is grieving, tell your children what happened in plain, short words, and invite their questions. Watch the film on your own first, and then with them when they are ready.",
+      "verse": {
+        "ref": "1 Thessalonians 4:13",
+        "text": "Brothers, we do not want you to be uninformed about those who sleep in death, so that you will not grieve like the rest, who are without hope."
+      },
+      "care": [
+        "Paul wrote that Christians do grieve, but “not grieve like the rest, who are without hope” (1 Thessalonians 4:13). Grief is not a lack of faith. If your grief feels too heavy to carry, please tell someone you trust: a pastor, a friend or a doctor. The Find Help page on this site lists places to turn.",
+        "If your grief is so heavy that you cannot carry it, or you feel you do not want to go on, please tell someone: a pastor, a friend, a doctor or a counsellor. You do not have to carry it alone. If you have thoughts of hurting yourself, speak to someone today: a doctor, a pastor, a trusted friend, or a crisis line in your country. If you are in danger right now, call your local emergency number. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What were you told about death as a child, and was it the truth?",
+        "discuss": [
+          "Why do parents so often want to hide death from children, and what does that cost them?",
+          "What does it mean for a family to grieve, but not as those who have no hope?",
+          "How can a group like this help a grieving family in the first weeks, and in the months after?"
+        ],
+        "pray": "Pray for any family in the group who is grieving, naming the one who died, and for children carrying a loss they cannot yet put into words."
+      }
+    },
+    {
+      "n": 2,
+      "title": "Serious illness in the family",
+      "minutes": 10,
+      "teaching": [
+        "When a parent, a grandparent, a brother or a sister is seriously ill, the whole house changes. Routines break, a parent is away at the hospital, and the children are looked after by someone else. Children usually know more than they're told, and what they imagine can be worse than the truth. The page on a hard diagnosis says to tell children the truth in words that fit their age. Name the illness, say what will change for them this week, and say who will look after them. Promise only what you know.",
+        "Children may also carry a quiet worry that they caused it, or that it's a punishment. The Bible doesn't teach that sickness comes from too little faith, and it doesn't make illness anyone's fault. Pray for healing honestly and together, and let the children hear you. The psalms give a family words for long days: “God is our refuge and strength, an ever-present help in times of trouble” (Psalm 46:1). And let others help. A meal on Thursdays, a lift to school, an afternoon with the children is how a church carries a family."
+      ],
+      "open": {
+        "kind": "help",
+        "label": "I've been given a hard diagnosis",
+        "href": "/help/diagnosis",
+        "why": "Scripture, the first days after the news, and a section on how to tell children you are sick, with places to find help."
+      },
+      "also": [
+        {
+          "kind": "wisdom",
+          "label": "When You Are Seriously Ill",
+          "href": "/wisdom/serious-illness",
+          "why": "What Scripture says to a person who is seriously ill, and to the family keeping watch beside them."
+        },
+        {
+          "kind": "psalms",
+          "label": "Pray Psalm 46 slowly",
+          "href": "/tools/pray-the-psalms?psalm=46",
+          "why": "A psalm of refuge to pray slowly on a long day at the hospital, on your own or with an older child."
+        },
+        {
+          "kind": "life",
+          "label": "How Should Christians Think About Sickness and Health?",
+          "href": "/life/health-illness-and-pain",
+          "why": "For the parent: what Scripture, church history and honest medicine say about the body that breaks and the long road of illness."
+        }
+      ],
+      "question": "What do your children imagine about the illness in your family, and how could you find out?",
+      "do": "Sit with each child this week and tell them, in words for their age, what the illness is, what will change for them, and who will look after them. Then ask what they are wondering.",
+      "verse": {
+        "ref": "Psalm 46:1",
+        "text": "God is our refuge and strength, an ever-present help in times of trouble."
+      },
+      "care": [
+        "The Bible does not teach that sickness comes from too little faith, or that a person who stays ill did not believe enough. Paul prayed and was not healed, and no one blames him. If you live with chronic illness, pain or disability, you are not a failure of faith. Your worth to God does not rise or fall with your body. If the weight of it is heavy, please share it with someone you trust: a friend, a pastor, a doctor. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "When someone in your family was ill as you were growing up, what were you told?",
+        "discuss": [
+          "Why might a child think an illness in the family is their fault, and how can a parent answer that?",
+          "How can a family pray honestly for healing without promising children what God has not promised?",
+          "What practical help would carry a family in this group through a long illness?"
+        ],
+        "pray": "Pray for anyone in the group's families who is ill, for the children who are worried, and for those who care for them day after day."
+      }
+    },
+    {
+      "n": 3,
+      "title": "Divorce and two homes",
+      "minutes": 10,
+      "teaching": [
+        "When a marriage ends, children lose something real: a home, a routine, holidays as they were, and often time with a parent. Whatever happened between the adults, the children didn't cause it and can't fix it, and they need to hear that more than once. The page for a marriage that has ended says it plainly. Tell your children, in words that fit their age, that the divorce isn't their fault and isn't theirs to fix. Don't make them messengers, spies or confidants, and don't criticize their other parent where they can hear.",
+        "Being divorced doesn't make anyone a second-class Christian, or a home less of a Christian home. Keep bedtimes, school and church as steady as you can. Where the other parent is safe, let your children love them without guilt. Where they aren't safe, take that to a lawyer and an advocate, not to the children. If only one home shares the faith, keep it warm and ordinary in yours, never a weapon against the other. “The LORD is near to the brokenhearted; He saves the contrite in spirit” (Psalm 34:18)."
+      ],
+      "open": {
+        "kind": "help",
+        "label": "My marriage has ended",
+        "href": "/help/divorce",
+        "why": "For the parent whose marriage has ended: the grief, the children, the shame, what the Bible says, and help, with safety first."
+      },
+      "also": [
+        {
+          "kind": "guide",
+          "label": "Divorce and Blended Families",
+          "href": "/studyguides/divorce-and-blended-families",
+          "why": "A Bible study for starting over, for a parent rebuilding a home or bringing two families together into one."
+        },
+        {
+          "kind": "life",
+          "label": "Blended Family Struggles: How Do You Make It Work?",
+          "href": "/life/the-blended-family",
+          "why": "For stepparents and blended homes: why joining two families takes time, and how to keep the children at the center."
+        }
+      ],
+      "question": "What do your children most need to hear from you about the divorce, and have they heard it yet?",
+      "do": "This week, tell each child in words for their age that the divorce is not their fault and not theirs to fix. Then look for one way you have put them in the middle, and stop it.",
+      "verse": {
+        "ref": "Psalm 34:18",
+        "text": "The LORD is near to the brokenhearted; He saves the contrite in spirit."
+      },
+      "care": [
+        "Nothing in this passage asks anyone to stay where they or their children are in danger. If you are in an abusive marriage, seek safety first. Talk to a pastor or a counselor you trust, or call a local domestic violence line. These notes are not legal advice. The Find Help page on this site lists places to turn.",
+        "Grief is not a lack of faith. If your grief is so heavy that you cannot carry it, please tell someone: a pastor, a friend, a doctor or a counsellor. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What helps a child feel at home when they live in two houses?",
+        "discuss": [
+          "Why is it so tempting to make children messengers or confidants after a divorce, and what does it cost them?",
+          "How can a church make sure divorced parents and their children never feel second-class?",
+          "How can a parent keep faith warm in one home when it isn't shared in the other?"
+        ],
+        "pray": "Pray for children who live between two homes, for parents rebuilding a household alone, and for safety wherever anyone is afraid."
+      }
+    },
+    {
+      "n": 4,
+      "title": "Moving and loss",
+      "minutes": 10,
+      "teaching": [
+        "A move can look like good news to the adults and feel like a death to a child. They lose a bedroom, a school, a best friend, a church, the way to the park, sometimes a pet that couldn't come. Children grieve losses adults barely notice, and they often can't say what's wrong. Name it for them. Say that it's all right to be sad about what they're leaving, even if the new place will be good, and let them say goodbye properly, to people and to places.",
+        "Scripture is full of families on the move. Abraham set out without knowing where he was going, Ruth left her homeland with her mother-in-law, and the exiles in Babylon were told to build houses and plant gardens in a city they hadn't chosen. Before Israel crossed into a new land, Moses told them, “The LORD Himself goes before you; He will be with you. He will never leave you nor forsake you” (Deuteronomy 31:8). Read it on the last night in the old house and the first night in the new one, and find a church quickly."
+      ],
+      "open": {
+        "kind": "wisdom",
+        "label": "Moving and Relocation",
+        "href": "/wisdom/relocation",
+        "why": "What Scripture says about leaving one place for another, for the parent carrying a move and the children feeling it."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "Ruth: loyal love in a hard time",
+          "href": "/study/explorer/watch/book-ruth",
+          "why": "A short film on Ruth, who left her homeland and found God's care in a strange place, to watch together after a move."
+        },
+        {
+          "kind": "help",
+          "label": "Will I see my pet again?",
+          "href": "/help/pets-and-heaven",
+          "why": "For a child who has lost a pet, in a move or any other way: what Christians can honestly say, and what they cannot."
+        }
+      ],
+      "question": "What is your child losing in this change that you might not have noticed?",
+      "do": "Ask each child to name three things they will miss and one thing they are hoping for. Plan a proper goodbye for the first, and read Deuteronomy 31:8 together on the first night in a new place.",
+      "verse": {
+        "ref": "Deuteronomy 31:8",
+        "text": "The LORD Himself goes before you; He will be with you. He will never leave you nor forsake you. Do not be afraid or discouraged."
+      },
+      "care": [
+        "If you are in a hard place now, these verses do not ask you to feel comforted on demand. They tell you that God is called ‘the God of all comfort’, and that comfort often comes through people. If your trouble is heavy, please do not carry it alone. Tell someone you trust: a pastor, a friend, a doctor or a counsellor. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What move or change in childhood do you still remember, and what did you lose in it?",
+        "discuss": [
+          "Why do children often grieve losses that adults hardly notice?",
+          "What can a family learn from the people in Scripture who had to leave home?",
+          "How could a church welcome a newly arrived family so that the children find friends quickly?"
+        ],
+        "pray": "Pray for any family in the group facing a move or the loss of a home, and for children leaving friends, schools and familiar places behind."
+      }
+    },
+    {
+      "n": 5,
+      "title": "Money trouble",
+      "minutes": 10,
+      "teaching": [
+        "Money trouble rarely stays in the bank account. It shows up as a short fuse, sleepless nights, arguments behind a closed door, and children who sense something is wrong without knowing what. Children don't need the numbers, but they do need the truth at their size: that money is tight, that the adults are working on it, that they are safe and loved, and that it isn't their fault or theirs to solve. A child who is told nothing may decide the trouble is somehow about them.",
+        "Jesus taught his disciples to ask for “our daily bread” (Matthew 6:11), and that prayer belongs at a family table in a lean month. Pray it together, and give thanks for what there is. Let older children see a simple version of the budget, and let them help find what the family can do without. Don't tell them that God will make you rich if you give, because the Bible doesn't promise it. Ask for help early, from your church and from a trustworthy adviser. This isn't financial advice."
+      ],
+      "open": {
+        "kind": "help",
+        "label": "Money is a weight on me",
+        "href": "/help/money",
+        "why": "For a family under money strain: what Scripture says, what to do this week, and where to find trustworthy help, with no promise of riches."
+      },
+      "also": [
+        {
+          "kind": "howto",
+          "label": "How to Make a Budget That Honors God",
+          "href": "/how-tos/wm-how-to-make-a-budget-that-honors-god",
+          "why": "A plain way to make a household budget, simple enough to show an older child a version of it."
+        },
+        {
+          "kind": "wisdom",
+          "label": "Financial Hardship",
+          "href": "/wisdom/financial-hardship",
+          "why": "What Scripture says to people in financial hardship, gathered in one place for a parent carrying the weight."
+        },
+        {
+          "kind": "devotion",
+          "label": "Enough Right Here",
+          "href": "/family/devotions/contentment",
+          "why": "A family devotion on contentment as something learned, for a lean season when the children notice what others have."
+        }
+      ],
+      "question": "What do your children sense about money in your home right now, and what would help them feel safe?",
+      "do": "Tell your children in a few plain words that money is tight, that the adults are handling it, and that it is not their fault. Then pray the line about daily bread together at supper each night this week.",
+      "verse": {
+        "ref": "Matthew 6:11",
+        "text": "Give us this day our daily bread."
+      },
+      "care": [
+        "If you are in money trouble now, look for a trusted adviser where you live; these notes are not financial advice. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "How was money talked about, or not talked about, in the home you grew up in?",
+        "discuss": [
+          "Why might children blame themselves for trouble they don't understand?",
+          "What does praying for daily bread teach a child that a full cupboard might not?",
+          "How could this group or your church help a family through a lean season without embarrassing them?"
+        ],
+        "pray": "Pray for any family under money strain, for wisdom and work and daily bread, and for children to feel safe while the adults carry it."
+      }
+    },
+    {
+      "n": 6,
+      "title": "A child who is struggling",
+      "minutes": 10,
+      "teaching": [
+        "Sometimes the hard thing in a family is one child. They're anxious, or can't sleep, or have gone quiet, or school has become a daily battle. A parent's first instinct is to fix it fast. The how-to this session opens says that an anxious child is mostly asking whether they're safe, and whether you can hold what they can't. Don't argue with the fear, because fear rarely yields to argument. Name it, stay near it, and tell them you're right there.",
+        "Children borrow a parent's calm before they find their own, so slow your own breathing first. Pray with them, naming the real worry, and let them hear that people in the Bible were afraid too: “When I am afraid, I put my trust in You” (Psalm 56:3). Don't try to diagnose your child yourself, and don't wait too long. If a struggle lasts, takes sleep or appetite, keeps them from school, or worries you, talk to your child's doctor or the school counselor. Getting help is one of the ways God cares for a child."
+      ],
+      "open": {
+        "kind": "howto",
+        "label": "How to Help an Anxious Child",
+        "href": "/how-tos/parenting-how-to-help-an-anxious-child",
+        "why": "How to stay near a frightened child without arguing with the fear: be the calm they borrow, help the body, and pray honestly."
+      },
+      "also": [
+        {
+          "kind": "help",
+          "label": "I can't stop worrying",
+          "href": "/help/anxiety",
+          "why": "For the parent who is anxious too: what Scripture says, what to do this week, and when to look for more help."
+        },
+        {
+          "kind": "devotion",
+          "label": "When the Lights Go Out",
+          "href": "/family/devotions/fear-and-anxiety",
+          "why": "A family devotion on Psalm 56 for a frightened child: being scared is not a sin or a failure."
+        }
+      ],
+      "question": "What is your child carrying right now that they may not have words for?",
+      "do": "Spend ten unhurried minutes this week with the child who is struggling, with no fixing. Ask what is hardest right now and listen. If the struggle has lasted, call their doctor or school counselor.",
+      "verse": {
+        "ref": "Psalm 56:3",
+        "text": "When I am afraid, I put my trust in You."
+      },
+      "care": [
+        "When grief or sadness lasts and starts taking sleep, appetite or work, seeing a doctor is wise, and it is not a failure of faith. If you have thoughts of hurting yourself, please speak to someone now: a doctor, a pastor, a trusted friend, or a crisis line. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What helped you as a child when you were worried or upset?",
+        "discuss": [
+          "Why does arguing with a child's fear so rarely help?",
+          "What would it mean for a parent to go first into calm, so a child can follow?",
+          "What keeps parents from asking for help for a struggling child, and how could this group make it easier?"
+        ],
+        "pray": "Pray for each child who is struggling, by name if the parents wish, and for parents to know when and where to ask for help."
+      }
+    },
+    {
+      "n": 7,
+      "title": "Conflict and repair at home",
+      "minutes": 10,
+      "teaching": [
+        "Every home has conflict: siblings who fight, parents who argue, a parent and a child who can't be in the same room. Conflict itself isn't the failure. What a family does afterwards is the real teaching, and children learn repair by watching it. When parents argue, let the children see or hear that they made it up. When you've been harsh, go back, name what you did without adding a but, and ask forgiveness. “Be kind and tenderhearted to one another, forgiving each other just as in Christ God forgave you” (Ephesians 4:32).",
+        "But some things aren't ordinary conflict, and they must never be kept quiet for the sake of peace. If anyone in the home hits, threatens or frightens another, if a child is being harmed, or if you're afraid of your spouse, that isn't a matter for patience and forgiveness alone. It's a matter of safety. Abuse is never a family secret to keep, and no verse asks anyone to stay in danger. Tell someone you trust, contact the authorities where a child is at risk, and use Find Help, which lists places to turn."
+      ],
+      "open": {
+        "kind": "life",
+        "label": "How Do You Handle Conflict and Truly Reconcile?",
+        "href": "/life/conflict-and-reconciliation",
+        "why": "What Scripture says about conflict and how people are truly reconciled, for parents who want a home where wrongs get put right."
+      },
+      "also": [
+        {
+          "kind": "wisdom",
+          "label": "Sibling Conflict",
+          "href": "/wisdom/sibling-conflict",
+          "why": "What Scripture says about brothers and sisters who fight, from Cain and Abel to Joseph and his brothers."
+        },
+        {
+          "kind": "devotion",
+          "label": "What to Do with the Fire",
+          "href": "/family/devotions/handling-anger",
+          "why": "A family devotion on anger for children and parents alike: anger isn't always wrong, but it makes a terrible boss."
+        },
+        {
+          "kind": "help",
+          "label": "I can't control my anger",
+          "href": "/help/anger",
+          "why": "For the parent whose temper frightens them or their family: what Scripture says, what to do now, and where to find help."
+        }
+      ],
+      "question": "What does repair look like in your home after a fight, and what do your children learn from it?",
+      "do": "After the next argument in your home, go back within the day. Name your own part plainly, ask forgiveness, and let the children see or hear that it was put right.",
+      "verse": {
+        "ref": "Ephesians 4:32",
+        "text": "Be kind and tenderhearted to one another, forgiving each other just as in Christ God forgave you."
+      },
+      "care": [
+        "Abuse of a child is a crime. It is to be reported to the police and the proper authorities, not handled quietly inside a church. If a child is in danger, or you know of a child being harmed, contact the police or your local child protection service now. If you were harmed as a child, what was done to you was wrong, and it was not your fault. The Find Help page on this site lists places to turn.",
+        "If anger has become something you cannot control, or if anger at home has made anyone afraid, that is more than a verse can fix. Please talk to someone you trust, and the Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "How were arguments ended, or not ended, in the home you grew up in?",
+        "discuss": [
+          "Why might it matter for children to see their parents make up, and not only fight?",
+          "Where is the line between ordinary conflict and something that must not be kept quiet?",
+          "What makes it hard for a parent to apologize to a child, and what makes it possible?"
+        ],
+        "pray": "Pray for peace and repair in every home represented here, and for safety for anyone who is afraid at home."
+      }
+    },
+    {
+      "n": 8,
+      "title": "Hope a family can hold together",
+      "minutes": 10,
+      "teaching": [
+        "Hard seasons don't always end when we want them to. Some illnesses aren't healed, some marriages aren't mended, and some losses stay. A family can't honestly promise its children that everything will be fine. What it can do is hold on together to a hope that doesn't depend on how this season ends. Paul wrote it from a life of beatings, shipwreck and prison: “neither death nor life, neither angels nor principalities, neither the present nor the future, nor any powers, neither height nor depth, nor anything else in all creation, will be able to separate us from the love of God that is in Christ Jesus our Lord” (Romans 8:38-39).",
+        "That hope isn't a mood. It rests on something that happened: Christ was raised, and the Bible's story ends not with escape from the world but with God making it new and wiping away every tear. A family holds that hope in small, repeated ways, a meal kept together, a prayer said on the bad nights as well as the good, a story of God's faithfulness told again. Your children won't remember every word you said in the hard season. They'll remember whether you kept turning to God, and whether you kept turning toward them."
+      ],
+      "open": {
+        "kind": "chapter",
+        "label": "Romans 8, passage by passage",
+        "href": "/study/bible/romans/8#plain",
+        "why": "The chapter that ends with nothing able to separate us from God's love, with plain-words notes that read it honestly for people who suffer."
+      },
+      "also": [
+        {
+          "kind": "doctrine",
+          "label": "Hope",
+          "href": "/study/bible/doctrines/hope",
+          "why": "What the whole Bible means by hope, traced through Scripture in the Study Bible, for the parent who needs more than optimism."
+        },
+        {
+          "kind": "story",
+          "label": "The Bible's story: new creation",
+          "href": "/study/bible/story/new-creation",
+          "why": "The last part of the Bible's story, where God makes all things new, the ending a family's hope rests on."
+        },
+        {
+          "kind": "track",
+          "label": "The church year at home",
+          "href": "/tracks/family-church-year",
+          "why": "When the season eases, the next track in Faith at Home lets the church's year carry your family through Advent, Easter and the ordinary weeks."
+        }
+      ],
+      "question": "What is your family holding on to in this season, and what would it mean to hold it together?",
+      "do": "Choose one small practice your family can keep through this season: a meal, a prayer, a verse at bedtime. Tell your children you will keep it on the hard nights too, and begin tonight.",
+      "verse": {
+        "ref": "2 Corinthians 4:8-9",
+        "text": "We are hard pressed on all sides, but not crushed; perplexed, but not in despair; persecuted, but not forsaken; struck down, but not destroyed."
+      },
+      "care": [
+        "If you are suffering now, for your faith or for any other reason, you do not have to carry it alone. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What helped your family hold together through a hard time, if you have seen one do it?",
+        "discuss": [
+          "Why is a hope that rests on something that happened different from optimism about how things will turn out?",
+          "What small practices could keep a family turning toward God when the season does not end?",
+          "Looking back over these sessions, who in this group needs the others to keep carrying them?"
+        ],
+        "pray": "Pray for every family in the group by name, for the seasons that have not ended, and give thanks for the hope that holds when circumstances don't."
+      }
+    }
+  ]
+}

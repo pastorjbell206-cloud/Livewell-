@@ -1,0 +1,438 @@
+{
+  "slug": "teaching-others",
+  "title": "Teaching others the Bible",
+  "for": "I want to help someone else grow",
+  "subtitle": "Eight short sessions for helping someone else grow: discipling one person, leading a group, asking good questions, handling what you can't answer, teaching children and teenagers, and handing on the Academy.",
+  "intro": [
+    "This track is for anyone who has been helped to grow and now wants to help someone else: a parent, a small group leader, a youth volunteer, a friend meeting a new believer for coffee. It follows Explaining the faith to others and closes the Explain It program, and with it the Academy. It has eight sessions of about ten minutes, and you can take them a day apart or a week apart.",
+    "You don't need to be a pastor or a scholar to teach the Bible to one other person. You need to keep learning yourself, to ask more than you tell, and to be honest about what you don't know. Each session opens one page of the site and ends with one question, one thing to do and one verse to keep, with a guide for a group at the bottom."
+  ],
+  "leader": {
+    "about": [
+      "This guide is for anyone leading a group through Teaching others the Bible: parents, small group leaders, youth volunteers, and friends who are discipling one person. It closes the Explain It program and the Academy. A leader doesn't need to be a pastor. A leader needs to be teaching someone already, or willing to begin, and honest about how hard it is.",
+      "Each person reads the session and opens its page before the group meets. The meeting doesn't repeat the teaching. It talks over what people tried with the ones they teach, using the group guide for that session, which is gathered below in order with the page each session opens and the question it asks."
+    ],
+    "sections": [
+      {
+        "id": "group",
+        "title": "The group",
+        "body": [
+          "Three to eight people is a good size, and two work as well. Meet for about seventy-five minutes, once a week, for eight meetings, and keep the end time you promised. Because the track is about teaching, the group is a place to practise: each week someone leads the others through a short passage with three questions, and the group says what helped. Rotate who leads, and keep the practice kind."
+        ]
+      },
+      {
+        "id": "room",
+        "title": "The room",
+        "body": [
+          "A kitchen table or a living room works well. Have a Bible for each person and the session open on a phone or printed. Say plainly at the first meeting that anyone may pass on any question, that what people say about the children, teenagers and friends they teach stays in the room unless someone is in danger, and that no one has to pray aloud."
+        ]
+      },
+      {
+        "id": "order",
+        "title": "The order of a meeting",
+        "body": [
+          "About seventy-five minutes, in this order. Keep to the times loosely and to the end time strictly."
+        ],
+        "steps": [
+          "Ten minutes: the opening question, once round the circle. Anyone may pass.",
+          "Ten minutes: how each person got on with last week's one thing to do, told without boasting and without shame.",
+          "Five minutes: one person reads the session's verse aloud.",
+          "Twenty-five minutes: the three questions to talk over, in order.",
+          "Fifteen minutes: one person leads the group through a short passage with three questions, and the others say what helped.",
+          "Ten minutes: the prayer prompt, in your own words. Nobody has to pray aloud."
+        ]
+      },
+      {
+        "id": "hard",
+        "title": "When a hard question comes",
+        "body": [
+          "People who teach collect hard questions from the people they teach: a child's question about death, a teenager's about hell, a new believer's about why a prayer went unanswered. Bring them here. Work out together what Scripture and the church have said, and where faithful Christians differ, say so and take no side. Encourage each person to admit it when they don't know, and to follow the question up rather than let it drop."
+        ]
+      },
+      {
+        "id": "hurting",
+        "title": "When someone is hurting",
+        "body": [
+          "Teaching others brings the teacher's own wounds near the surface, and the people we teach bring theirs. When someone in the group shares a burden, stop and listen, and don't hurry back to the session. The way the group treats a hurting member is the way its members will treat the people they lead.",
+          "Anyone who teaches children or teenagers should know and keep their church's safeguarding policy. If a child or teenager says that someone is harming them, take it seriously, don't promise to keep it secret, and report it to the proper authorities. That is never a matter for a group or a church to handle on its own."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "When to point someone to Find Help",
+        "body": [
+          "Point someone to Find Help when what they carry has become too heavy to set down, and teach leaders to do the same for the people they teach: grief that will not lift, a habit that has a grip on someone, harm done to them at home or in a church, or any sign that a person no longer wants to be alive. The Find Help page on this site lists places to turn, including a page on when to refer someone to a counsellor. If anyone is in danger now, call your local emergency number. A leader is a friend in that moment, not a counsellor."
+        ]
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "n": 1,
+      "title": "Discipling one person",
+      "minutes": 10,
+      "teaching": [
+        "In the letter the church has long read as his last, Paul gave Timothy a plan that has outlasted every program the church has built: “the things that you have heard me say among many witnesses, entrust these to faithful men who will be qualified to teach others as well” (2 Timothy 2:2). Count the generations in that sentence: Paul, Timothy, faithful people, and others after them. The faith has always passed this way, one life to another, long before there were classes or curricula.",
+        "Jesus called twelve, and spent the most time with three of them. Discipling one person usually looks like that: a standing time, a Bible open between you, honest questions and prayer, kept up for months rather than weeks. Look for someone a step or two behind you who wants to grow, and look for faithfulness more than talent. You're not making a copy of yourself. You're helping someone follow Christ, and the aim from the start is that one day they'll do the same for someone else."
+      ],
+      "open": {
+        "kind": "howto",
+        "label": "How to Disciple One Person Over Coffee",
+        "href": "/how-tos/dm-how-to-disciple-one-person-over-coffee",
+        "why": "A practical guide to choosing one person, keeping a standing time, and what to actually do when you sit down together."
+      },
+      "also": [
+        {
+          "kind": "life",
+          "label": "How Do You Disciple One Person at a Time?",
+          "href": "/life/spiritual-friendship-and-the-long-walk",
+          "why": "A longer guide to discipleship as a long friendship, and why the church has so often grown one person at a time."
+        },
+        {
+          "kind": "chapter",
+          "label": "2 Timothy 2, passage by passage",
+          "href": "/study/bible/2-timothy/2#plain",
+          "why": "The chapter around Paul's charge to Timothy, explained in plain words, with its pictures of the soldier, the athlete and the farmer."
+        }
+      ],
+      "question": "Who is one person a step or two behind you whom you could ask to meet with regularly?",
+      "do": "Write down the name of one person you could meet with. Pray for them by name this week, and if it seems right, ask them to meet for coffee and read a Gospel together.",
+      "verse": {
+        "ref": "2 Timothy 2:2",
+        "text": "And the things that you have heard me say among many witnesses, entrust these to faithful men who will be qualified to teach others as well."
+      },
+      "group": {
+        "open": "Who helped you grow in faith, and what did they actually do?",
+        "discuss": [
+          "Why do you think Jesus gave the most time to so few people?",
+          "Why might faithfulness matter more than talent in someone you disciple?",
+          "What keeps people from discipling someone else, and which of those reasons applies to you?"
+        ],
+        "pray": "Give thanks for the people who taught you, and ask God to show you the person you could walk with next."
+      }
+    },
+    {
+      "n": 2,
+      "title": "Leading a small group Bible study",
+      "minutes": 10,
+      "teaching": [
+        "The first church met in houses, and Luke describes what it did there: “They devoted themselves to the apostles’ teaching and to the fellowship, to the breaking of bread and to prayer” (Acts 2:42). Teaching, friendship, a shared table and prayer are still the shape of a good small group. In the eighteenth century John Wesley gathered the early Methodists into weekly class meetings of about a dozen people, where each was asked how their soul was faring. The church has gathered like this whenever it has been serious.",
+        "A leader's main work isn't to teach most of the time. It's to open the passage, ask good questions, and keep the conversation on the text and on Christ. Begin and end when you said you would. Make it plain that anyone may pass on any question and that no one has to pray aloud. Read the passage aloud before anyone talks about it, and when the group goes quiet, wait. Keep the room safe enough that a person can say they don't understand, or don't believe, without being corrected for it."
+      ],
+      "open": {
+        "kind": "howto",
+        "label": "What to Actually Do at a Discipleship Table",
+        "href": "/how-tos/dm-what-to-actually-do-at-a-discipleship-table",
+        "why": "A simple shape for a gathering you can repeat every week, so that a new leader is never left wondering what comes next."
+      },
+      "also": [
+        {
+          "kind": "life",
+          "label": "How Did Jesus Make Disciples Without a Program?",
+          "href": "/life/making-disciples-at-the-table",
+          "why": "A longer guide to the table as the place Jesus formed his followers, and what that means for a group in a living room."
+        },
+        {
+          "kind": "guide",
+          "label": "The study guides",
+          "href": "/studyguides",
+          "why": "Every study guide on the site, each with sessions, questions and a leader's guide, for a group that wants a ready path through a book or a subject."
+        }
+      ],
+      "question": "What would have to change in you for you to lead a group by asking more than telling?",
+      "do": "Choose one short passage and write out how you would lead a group through it in forty-five minutes: the reading, three questions, and how you would close in prayer.",
+      "verse": {
+        "ref": "Acts 2:42",
+        "text": "They devoted themselves to the apostles’ teaching and to the fellowship, to the breaking of bread and to prayer."
+      },
+      "group": {
+        "open": "What is the best small group or class you have been part of, and what made it good?",
+        "discuss": [
+          "Which of the four things in Acts 2:42 do the groups you know tend to leave out?",
+          "Why might a leader who talks less help a group learn more?",
+          "What makes a room safe enough for someone to say they don't understand?"
+        ],
+        "pray": "Pray for the groups you belong to or might lead, and ask for patience and humility in leading them."
+      }
+    },
+    {
+      "n": 3,
+      "title": "Asking good questions",
+      "minutes": 10,
+      "teaching": [
+        "Jesus taught by asking. He asked a lawyer what was written in the law and how he read it. He asked blind Bartimaeus what he wanted him to do. Near Caesarea Philippi he asked his disciples the question everything turned on: “Who do you say I am?” (Mark 8:29). A good question does what a lecture can't. It makes a person look at the text, and at themselves, and do the thinking that turns information into conviction.",
+        "Three plain questions work on almost any passage. What does this show us about God? What does it show us about people, including us? What does it ask of us this week? Ask them in that order, because jumping straight to application is how the Bible gets made to say what we already believed. Then wait, and don't answer your own question. When someone says something odd, ask where they see it in the text, and let the passage do the correcting. A question with one obvious right answer rarely teaches anyone anything."
+      ],
+      "open": {
+        "kind": "howto",
+        "label": "The Three Questions That Make Any Passage Teachable",
+        "href": "/how-tos/dm-three-questions-that-make-any-passage-teachable",
+        "why": "The three questions in full, with how to run them in a room, how long to wait, and what to do when an answer goes astray."
+      },
+      "also": [
+        {
+          "kind": "study",
+          "label": "How to study the Bible",
+          "href": "/study/how-to-study",
+          "why": "The site's step-by-step method for studying a passage, the longer road behind the three questions, for preparing before you lead."
+        },
+        {
+          "kind": "study-tool",
+          "label": "Follow a verse",
+          "href": "/study/cross-references",
+          "why": "Follows a verse to the other places Scripture echoes it, so you can ask a group how one passage sheds light on another."
+        }
+      ],
+      "question": "What question has someone once asked you about the Bible that made you think harder than any lecture?",
+      "do": "Take the passage you chose last session and write the three questions for it in your own words. Then add one follow-up question to each that would take the group deeper.",
+      "verse": {
+        "ref": "Mark 8:29",
+        "text": "“But what about you?” Jesus asked. “Who do you say I am?” Peter answered, “You are the Christ.”"
+      },
+      "group": {
+        "open": "What is a question someone asked you that you still remember?",
+        "discuss": [
+          "Why do you think Jesus so often answered a question with another question?",
+          "What goes wrong when a group jumps to application before looking at what the text says?",
+          "Why is it so hard for a leader to wait in silence after asking a question?"
+        ],
+        "pray": "Ask for wisdom to ask good questions and for the patience to wait for the answers."
+      }
+    },
+    {
+      "n": 4,
+      "title": "When you can't answer a hard question",
+      "minutes": 10,
+      "teaching": [
+        "Sooner or later someone you teach will ask a question you can't answer: why a child suffered, what happens to those who never heard, why God commanded the wars in Joshua. Say plainly that you don't know. It costs a leader something, and it teaches more than a bluff ever could. Moses told Israel, “The secret things belong to the LORD our God, but the things revealed belong to us and to our children forever” (Deuteronomy 29:29). Some questions have answers you haven't found yet. Some have no full answer in this life. Both are honest places to stand.",
+        "Then find out. Ask gently what's behind the question, because people rarely ask about suffering in the abstract. Write it down, look into it, and bring it back the next week, or ask a pastor. Show the person where the church has wrestled with the same question before them. And never answer a wound with an argument. Sometimes the right response to a hard question is to sit with the one who asked it, pray with them, and keep meeting. The questions you can't answer are often the ones that keep a group honest."
+      ],
+      "open": {
+        "kind": "howto",
+        "label": "How to Answer Hard Questions About the Faith",
+        "href": "/how-tos/wn-how-to-answer-hard-questions-about-the-faith",
+        "why": "Help for the moment a hard question comes: finding the question under the question, admitting what you don't know, and following it up."
+      },
+      "also": [
+        {
+          "kind": "case",
+          "label": "The case for the faith",
+          "href": "/questions",
+          "why": "The library of hard questions, each set out with its strongest objections, to read before you bring a question back to the person who asked."
+        },
+        {
+          "kind": "study-tool",
+          "label": "Hard passages",
+          "href": "/study/hard-passages",
+          "why": "The Bible's hardest passages gathered in one place, each linked to its notes, for the week someone asks about one you've never studied."
+        }
+      ],
+      "question": "What is the hardest question about the faith you've been asked, or have asked, and what did you do with it?",
+      "do": "Write down the hard question you would least like to be asked. Spend twenty minutes reading about it on this site, and note what you learned and what is still open.",
+      "verse": {
+        "ref": "Deuteronomy 29:29",
+        "text": "The secret things belong to the LORD our God, but the things revealed belong to us and to our children forever, so that we may follow all the words of this law."
+      },
+      "group": {
+        "open": "When have you seen someone handle a question they couldn't answer well?",
+        "discuss": [
+          "Why might saying that you don't know build more trust than a quick answer?",
+          "Which questions do you think have no full answer in this life, and how can a Christian live with them?",
+          "How can you tell when a question is really a wound, and what changes when it is?"
+        ],
+        "pray": "Pray for those who carry questions with no answer yet, and ask for honesty and gentleness when hard questions come."
+      }
+    },
+    {
+      "n": 5,
+      "title": "Teaching children",
+      "minutes": 10,
+      "teaching": [
+        "Israel was told to teach God's words at home, in ordinary moments: to “speak of them when you sit at home and when you walk along the road, when you lie down and when you get up” (Deuteronomy 6:7). Children learn the faith less from a lesson than from watching what the adults around them love. When the disciples tried to send children away, Jesus called them back and treated them as anything but an interruption. A child's question deserves a real answer, in words the child can hold.",
+        "Keep it short, keep it regular, and keep it true. A few minutes at the table most nights does more than an hour now and then. Tell the Bible as one story, so a child learns where each part fits. The church has long used catechisms for this, short questions and answers learned by heart; Luther wrote his Small Catechism in 1529 so that the head of a household could teach it at home. Don't flatten the hard parts into tidy morals, and don't be embarrassed to say you don't know. Anyone who teaches other people's children should keep their church's rules for keeping children safe."
+      ],
+      "open": {
+        "kind": "devotion",
+        "label": "Tonight's family devotion",
+        "href": "/family/tonight",
+        "why": "A short devotion for tonight's table, with a passage, a few questions and a prayer, made for children and the adults with them."
+      },
+      "also": [
+        {
+          "kind": "catechism",
+          "label": "The family catechism",
+          "href": "/family/catechism",
+          "why": "Short questions and answers on the faith for a family to learn together, with plain words and things to talk about beside each answer."
+        },
+        {
+          "kind": "film",
+          "label": "The whole Bible in two minutes",
+          "href": "/study/explorer/watch/bible-two-minutes",
+          "why": "The whole story in a short film made with children in mind, a way to show them where every Bible story fits."
+        },
+        {
+          "kind": "howto",
+          "label": "How to Read the Bible With Young Children",
+          "href": "/how-tos/fam-how-to-read-the-bible-with-young-children",
+          "why": "Plain help for opening the Bible with small children, reading a little, and letting them see you take it seriously."
+        }
+      ],
+      "question": "What did you learn about God as a child, from what was said or from what you saw, that has stayed with you?",
+      "do": "Use tonight's family devotion with a child in your life, or read it as if leading one. Notice which question a child would most likely ask, and how you would answer it.",
+      "verse": {
+        "ref": "Matthew 19:14",
+        "text": "But Jesus said, “Let the little children come to Me, and do not hinder them! For the kingdom of heaven belongs to such as these.”"
+      },
+      "care": [
+        "Abuse of a child is a crime. It is to be reported to the police and the proper authorities, not handled quietly inside a church. If a child is in danger, or you know of a child being harmed, contact the police or your local child protection service now. If you were harmed as a child, what was done to you was wrong, and it was not your fault. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Who taught you about God when you were young, and how did they do it?",
+        "discuss": [
+          "Why do children learn more from what adults love than from what they say?",
+          "How can you tell children the hard parts of the Bible honestly without overwhelming them?",
+          "What would a few minutes of faith at the table look like in your home or church?"
+        ],
+        "pray": "Pray by name for the children in your family, church and street, and for everyone who teaches them."
+      }
+    },
+    {
+      "n": 6,
+      "title": "Teaching teenagers",
+      "minutes": 10,
+      "teaching": [
+        "Paul told a young pastor, “Let no one despise your youth, but set an example for the believers in speech, in conduct, in love, in faith, in purity” (1 Timothy 4:12). Teenagers can carry real weight, and they know at once when they're being talked down to. Their questions are sharper than they were at eight: whether any of it is true, why the church acts as it does, what following Jesus asks of their bodies, their phones and their friendships. Those questions deserve real answers, not a lecture and not a dodge.",
+        "Move from rules to reasons. A teenager who knows only what Christians don't do will drop it when the rules stop making sense. Stay in the room when they push back, and take the pushing back as a sign they're thinking. Let them see an adult who still has questions and still follows Christ. If a teenager says they no longer believe, don't panic and don't try to argue them back. Keep loving them, keep the door open, and keep the conversation going. A faith that has been tested by honest questions is often the one that finally becomes their own."
+      ],
+      "open": {
+        "kind": "howto",
+        "label": "How to Disciple Teenagers at Home",
+        "href": "/how-tos/fam-how-to-disciple-teenagers-at-home",
+        "why": "Help for staying in the room when a teenager pulls away, answering hard questions instead of dodging them, and moving from rules to reasons."
+      },
+      "also": [
+        {
+          "kind": "track",
+          "label": "Is any of it true?",
+          "href": "/tracks/teens-is-it-true",
+          "why": "The Academy's track for teenagers weighing whether the faith is true, written to take their questions seriously and good to go through with one."
+        },
+        {
+          "kind": "answer",
+          "label": "What do I do when my teenager says they don't believe?",
+          "href": "/answers/when-your-teenager-says-they-dont-believe",
+          "why": "An Honest Answer for the parent or leader whose teenager has said they no longer believe, on what helps and what pushes them further away."
+        }
+      ],
+      "question": "What question did you have as a teenager about faith that no one answered well?",
+      "do": "Ask a teenager you know which question about God or the church they would most like an honest answer to. Listen without correcting, and promise to come back to it.",
+      "verse": {
+        "ref": "1 Timothy 4:12",
+        "text": "Let no one despise your youth, but set an example for the believers in speech, in conduct, in love, in faith, in purity."
+      },
+      "group": {
+        "open": "What were you like at sixteen, and what would have helped your faith then?",
+        "discuss": [
+          "Why might a teenager who knows only rules walk away when the rules stop making sense?",
+          "What does it look like to take a teenager's pushing back as a sign they are thinking?",
+          "How can adults keep a door open for a teenager who says they no longer believe?"
+        ],
+        "pray": "Pray by name for the teenagers you know, that they would meet Christ for themselves, and for the adults who walk with them."
+      }
+    },
+    {
+      "n": 7,
+      "title": "Walking with someone new to faith",
+      "minutes": 10,
+      "teaching": [
+        "Paul wrote to a young church he had been forced to leave too soon: “We cared so deeply that we were delighted to share with you not only the gospel of God, but our own lives as well” (1 Thessalonians 2:8). That is most of the method. A new believer needs the gospel explained again, slowly, now that they're inside it, and they need a life near theirs that shows what following Jesus looks like on a Tuesday. Much of what they learn in the first year, they'll learn from watching someone.",
+        "Go at their pace. Read a Gospel together. Teach them to pray by praying with them, briefly and plainly. Help them find a church and sit with them the first few times. Expect questions you stopped asking long ago, and welcome them. Expect stumbles too, and don't treat a failure as proof their faith wasn't real. Point past yourself, to Christ, to the Bible, to the wider church. The aim isn't that they come to depend on you. It's that a year from now they're walking with Christ, and beginning to walk with someone else."
+      ],
+      "open": {
+        "kind": "plan",
+        "label": "Eight Weeks for a New Christian",
+        "href": "/plans/new-believer",
+        "why": "An eight-week plan for someone who has just come to faith, good to go through side by side with them, a week at a time."
+      },
+      "also": [
+        {
+          "kind": "track",
+          "label": "New to faith, or coming back",
+          "href": "/tracks/new-to-this",
+          "why": "The Academy's first track for a new believer, twelve sessions with a leader's guide, written to be gone through with a friend."
+        },
+        {
+          "kind": "film",
+          "label": "The gospel in a minute",
+          "href": "/study/explorer/watch/gospel-in-a-minute",
+          "why": "The good news in one short film, to watch together and talk over, so a new believer hears again what they have trusted."
+        },
+        {
+          "kind": "help",
+          "label": "I'm a new Christian. What do I do now?",
+          "href": "/help/new-believer",
+          "why": "The page this site gives to someone in their first weeks of faith, worth reading so you know what they will find there."
+        }
+      ],
+      "question": "Who walked with you when you were new to faith, or who do you wish had?",
+      "do": "If you know someone new to faith, ask them to go through New to faith, or coming back with you, one session a week. If you don't, ask God this week to bring someone across your path.",
+      "verse": {
+        "ref": "1 Thessalonians 2:8",
+        "text": "We cared so deeply that we were delighted to share with you not only the gospel of God, but our own lives as well. That is how beloved you have become to us."
+      },
+      "group": {
+        "open": "What was most confusing about your first year as a Christian?",
+        "discuss": [
+          "Why does a new believer need to see faith lived as much as hear it explained?",
+          "How should you respond when someone new to faith stumbles badly?",
+          "What does it look like to point past yourself rather than have someone depend on you?"
+        ],
+        "pray": "Pray for the people you know who are new to faith, and ask for the love to share your life as well as the gospel."
+      }
+    },
+    {
+      "n": 8,
+      "title": "Handing on the Academy",
+      "minutes": 10,
+      "teaching": [
+        "A psalm of Israel's history makes a promise about the things God has done: “We will not hide them from their children, but will declare to the next generation the praises of the LORD and His might, and the wonders He has performed” (Psalm 78:4). Everything you have learned in this Academy reached you because someone, across three thousand years, refused to keep it to themselves: prophets and apostles, copyists and translators, teachers of catechisms, the person who first put a Bible in your hands. Every track here has a leader's guide, so that what you learned can be learned again around your own table.",
+        "Choose a track and a few people. Read the leader's guide first. Let the group read each session and open its page before you meet, and spend the meeting on their questions rather than on repeating the teaching. You won't be ready in the way you'd like to be. No one ever was. The faith has never been carried forward by experts alone. It has been carried by ordinary people who loved Christ, kept learning, and handed on what they had received to someone who would hand it on again, long after they were gone."
+      ],
+      "open": {
+        "kind": "track",
+        "label": "All the tracks",
+        "href": "/tracks",
+        "why": "Every track in the Academy, each with a leader's guide and a print view, so you can choose one to lead with a group."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Psalm 78, passage by passage",
+          "href": "/study/bible/psalms/78#plain",
+          "why": "The psalm of handing on: what one generation owes the next, and what happened when Israel forgot what it had been told."
+        },
+        {
+          "kind": "creed",
+          "label": "The creeds",
+          "href": "/resources/creeds",
+          "why": "The confessions the church has handed down for centuries, the oldest way of passing the faith on whole to people not yet born."
+        }
+      ],
+      "question": "Who will you hand on what you have learned to, and where will you begin?",
+      "do": "Choose one track and one to three people. Read its leader's guide this week, and ask them to begin it with you on a set day.",
+      "verse": {
+        "ref": "Psalm 78:4",
+        "text": "We will not hide them from their children, but will declare to the next generation the praises of the LORD and His might, and the wonders He has performed."
+      },
+      "group": {
+        "open": "Who handed the faith on to you, and what did it cost them?",
+        "discuss": [
+          "Why do you think God has entrusted the faith to ordinary people rather than to experts alone?",
+          "Which track in the Academy would you most want to lead, and for whom?",
+          "Why does feeling unready keep people from teaching, and why might it be a good place to start?"
+        ],
+        "pray": "Give thanks for everyone who handed the faith on to you, and ask God for the people you will hand it on to."
+      }
+    }
+  ]
+}
