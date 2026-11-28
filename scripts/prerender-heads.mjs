@@ -1536,11 +1536,11 @@ function homeHeroHtml() {
               <nav class="home-roads" aria-labelledby="home-roads-label"><p id="home-roads-label" class="home-roads__label">Start where you are</p><ul class="home-roads__list">${chips}</ul></nav>`
     : "";
   return `
-        <section class="home-hero">
+        <section class="home-hero">${homeFilmHtml(esc)}
           <div class="home-hero__inner">
             <div class="home-hero__words">
               <h1 class="home-hero__title">${title}</h1>${line ? `
-              <p class="home-hero__line">${esc(line)}</p>` : ""}
+              <p class="home-hero__line">${esc(line)}</p>` : ""}${homeStepsHtml(esc)}
               <form role="search" class="home-find" action="/search" method="get" aria-label="${label}">
                 <div class="home-find__row">
                   <input class="home-find__input" type="search" name="q" autocomplete="off" placeholder="John 3:16, or your question" aria-label="${label}">
@@ -1552,6 +1552,54 @@ function homeHeroHtml() {
             <figure class="lw-frame-fig home-hero__art"><div class="lw-frame"><div class="lw-frame__in"></div></div><figcaption class="lw-cap"><span>Plate I</span><span>The road</span></figcaption></figure>
           </div>
         </section>`;
+}
+
+/** "1 minute 12 seconds", as lengthLabel in components/NarratedFilmBody.tsx says it. */
+function filmLength(seconds) {
+  const m = Math.floor(seconds / 60);
+  const s = seconds % 60;
+  const mins = m ? `${m} minute${m === 1 ? "" : "s"}` : "";
+  const secs = s ? `${s} second${s === 1 ? "" : "s"}` : "";
+  return [mins, secs].filter(Boolean).join(" ");
+}
+
+/**
+ * The welcome film at the top of the static hero, as pages/home/HomeIntro.tsx
+ * first draws it (the poster under its play button, the note, the words), from
+ * client/src/data/site-intro.json, so the swap to React moves nothing. The
+ * card before the film is type, not a picture: the hero carries no image
+ * (lib/static-hero.ts). The button does nothing until the app mounts; a tap
+ * mounts it at once.
+ */
+function homeFilmHtml(esc) {
+  const intro = readJsonSafe("client/src/data/site-intro.json");
+  if (!intro || !intro.video) return "";
+  const label = filmLength(intro.seconds);
+  const note = `Welcome to LiveWell, in ${label}. Read aloud by a computer-made voice, not a person.`;
+  const words = (intro.lines || []).map((l) => `<li>${esc(l)}</li>`).join("");
+  return `
+          <div class="home-film" data-home-intro>
+            <div class="home-film__frame"><button type="button" class="home-film__play" aria-label="${esc(`Play the film: ${intro.title} (${label})`)}"><span class="home-film__card" aria-hidden="true"><span class="home-film__kicker">Start here</span><span class="home-film__title">${esc(intro.title)}</span><span class="home-film__sub">The whole site in one minute</span><span class="home-film__pill"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72a1 1 0 0 0 1.52.85l10.6-6.86a1 1 0 0 0 0-1.7L9.52 4.29A1 1 0 0 0 8 5.14z"/></svg>Play the welcome</span></span></button></div>
+            <div class="home-film__under"><p class="home-film__note">${esc(note)}</p><details class="home-film__words"><summary>Read the words</summary><ol>${words}</ol></details></div>
+          </div>`;
+}
+
+/**
+ * The three steps under the headline, as pages/home/HomeSteps.tsx draws them:
+ * client/src/data/home-steps.json, each room's name and address read from the
+ * catalogue (client/src/lib/siteCatalog.ts), so a page keeps one name.
+ */
+function homeStepsHtml(esc) {
+  const steps = readJsonSafe("client/src/data/home-steps.json");
+  if (!Array.isArray(steps) || !steps.length) return "";
+  const catalog = fs.readFileSync(path.join(REPO_ROOT, "client/src/lib/siteCatalog.ts"), "utf8");
+  const items = steps.map((s, i) => {
+    const m = catalog.match(new RegExp(`id: "${s.room.replace(/\./g, "\\.")}", name: "([^"]+)", line: "[^"]*", href: "([^"]+)"`));
+    if (!m) throw new Error(`home-steps.json: no room "${s.room}" in siteCatalog.ts`);
+    return `<li><a href="${esc(m[2])}" class="hero-step"><span class="hero-step__n" aria-hidden="true">${i + 1}</span><span class="hero-step__body"><span class="hero-step__t">${esc(s.step)}</span><span class="hero-step__r">${esc(m[1])}</span></span></a></li>`;
+  });
+  return `
+              <ol class="hero-steps">${items.join("")}</ol>`;
 }
 
 /**

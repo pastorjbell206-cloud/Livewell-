@@ -46,6 +46,7 @@ import TonightSlot, { readShellLines } from "./home/TonightSlot";
 import { ROAD_CHIPS } from "./home/roadChips";
 import HomeLatest from "./home/HomeLatest";
 import HomeIntro from "./home/HomeIntro";
+import HomeSteps from "./home/HomeSteps";
 import DisciplineCards from "./explore/DisciplineCards";
 import "./home/home.css";
 
@@ -208,8 +209,11 @@ export default function Home() {
         structuredData={[getOrganizationSchema(), getWebSiteSchema()]}
       />
 
-      {/* THE HEADLINE, FIND, AND PLATE I. Mirrored by the static hero in prerender-heads.mjs. */}
+      {/* THE WELCOME FILM, THEN THE HEADLINE, THE THREE STEPS, FIND, AND PLATE I.
+          Mirrored by the static hero in prerender-heads.mjs. */}
       <section className="home-hero">
+        {/* The first thing under the menu (James, 2026-11-27). */}
+        <HomeIntro />
         <div className="home-hero__inner">
           <div className="home-hero__words">
             <h1 className="home-hero__title">
@@ -219,6 +223,8 @@ export default function Home() {
             </h1>
             {/* What the site is for, in James's own sentence (the end of HOME_WHY). */}
             <p className="home-hero__line">{HOME_LINE}</p>
+            {/* Know what you believe, why, and how to explain it: one room each. */}
+            <HomeSteps />
             <HomeFind />
             {/* Tonight's devotion, Continue, and the Advent line; empty when there is nothing to show. */}
             <Tonight />
@@ -230,9 +236,6 @@ export default function Home() {
           </PlateFrame>
         </div>
       </section>
-
-      {/* THE ONE-MINUTE WELCOME FILM (James, 2026-11-27). */}
-      <HomeIntro />
 
       {/* EIGHT WAYS IN: the disciplines, each its own page (/explore/<discipline>), then six more. */}
       <section className="home-sec home-sec--doors" aria-labelledby="home-doors-title">

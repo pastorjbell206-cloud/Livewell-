@@ -17,7 +17,7 @@ import { act, fireEvent, screen, within } from "@testing-library/react";
 
 import { renderWithProviders, offlineFetch } from "@/test/harness";
 import { HELP_LINK, LIBRARY_LINK, SEARCH_SHORTCUTS, SITE_NAV_GROUPS, headerLinks, soleHeaderLink } from "./siteNav";
-import { DOORS, EVERYTHING_ENTRY, START_LINK } from "./siteCatalog";
+import { DOORS, EVERYTHING_ENTRY, START_LINK, nameForHref } from "./siteCatalog";
 import { GIVING, supportRooms } from "./giving";
 import { BOOK_SHELF, isShelfBookHref } from "./bookShelf";
 import { START_WITH, SHELF_ESSAYS, isPublicEssay } from "./shelf";
@@ -316,9 +316,23 @@ describe("the home page", () => {
     expect(HOME_WHY.endsWith(HOME_LINE)).toBe(true);
     // ...and it stands under the headline, saying what the site is for.
     expect(document.querySelector(".home-hero__line")?.textContent).toBe(HOME_LINE);
-    // The hero's picture is the drawn plate, never a photograph.
+    // The hero's picture is the drawn plate, never a photograph; the film's card is type.
     expect(document.querySelector(".home-hero img")).toBeNull();
     expect(document.querySelector(".home-hero svg.lw-plate")).not.toBeNull();
+    // The welcome film is the first thing in the hero, under the menu (James, 2026-11-27).
+    expect(document.querySelector(".home-hero")?.firstElementChild?.classList.contains("home-film")).toBe(true);
+    // Three steps under the headline, each a room of the catalogue by its own name.
+    const steps = Array.from(document.querySelectorAll(".hero-steps a"));
+    expect(steps.map((a) => a.querySelector(".hero-step__t")?.textContent)).toEqual([
+      "Know what you believe",
+      "Know why you believe it",
+      "Learn how to explain it",
+    ]);
+    for (const a of steps) {
+      const href = a.getAttribute("href") ?? "";
+      expect(isRoute(href), href).toBe(true);
+      expect(a.querySelector(".hero-step__r")?.textContent).toBe(nameForHref(href));
+    }
 
     const doors = screen.getByRole("region", { name: "Where to begin." });
     for (const a of within(doors).getAllByRole("link")) expect(isRoute(a.getAttribute("href") ?? ""), a.getAttribute("href") ?? "").toBe(true);
@@ -347,6 +361,10 @@ describe("the home page", () => {
     // No photograph of James on the front page, in either copy.
     const hero = src.slice(src.indexOf("function homeHeroHtml"), src.indexOf("function writeRoute"));
     expect(hero).not.toContain("<img");
+    // The welcome film's card and the three steps, in the classes HomeIntro and HomeSteps draw.
+    for (const cls of ["home-film", "home-film__play", "home-film__card", "home-film__title", "home-film__pill", "home-film__note", "hero-steps", "hero-step"]) {
+      expect(hero, cls).toContain(`class="${cls}"`);
+    }
   });
 });
 

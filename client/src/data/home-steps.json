@@ -1,0 +1,5 @@
+[
+  { "step": "Know what you believe", "room": "questions.believe" },
+  { "step": "Know why you believe it", "room": "questions.case" },
+  { "step": "Learn how to explain it", "room": "questions.answers" }
+]

@@ -1,115 +1,87 @@
 /**
- * The homepage's one-minute welcome film (James, 2026-11-27: "I want it to be on
- * the front page"). It works like NarratedFilmBody: a poster with a play button,
- * no <video> element until play is pressed, and every spoken line under the film
- * so nobody needs sound. The film and its words are client/src/data/site-intro.json,
- * made from film/livewell-intro/ (uploaded with publish-narrated-films.mjs --upload-only).
+ * The one-minute welcome film, the first thing on the front page, right under
+ * the menu (James, 2026-11-27: "the first thing they will see is the menu ...
+ * and then the video ... make it like the main thing"). It sits at the top of
+ * the hero, so scripts/prerender-heads.mjs paints the same poster, button and
+ * note into the static "/" (homeHeroHtml) and React's mount moves nothing.
+ *
+ * Before the tap the frame is a title card drawn in type, not a picture: the
+ * hero carries no image (lib/static-hero.ts: an image would hold the front
+ * page's largest paint until it downloaded). The film itself opens on the same
+ * cream with "Welcome to LiveWell" fading in, so the tap moves from card to
+ * film without a flash; the <video> has no poster for the same reason.
+ *
+ * The <video> waits under the card with preload="none", so the page loads
+ * nothing heavy until someone asks. The tap on the card starts it inside the
+ * tap itself (James: "I want the video to be okay, there's no glitch"): a phone
+ * browser only lets a film play with sound from inside the tap, so a film that
+ * mounted after the tap needed a second one on an iPhone. Every spoken line is
+ * under the film, so nobody needs sound. The film and its words are
+ * client/src/data/site-intro.json, made from film/livewell-intro/.
  */
-import { useId, useState } from "react";
-import { Play } from "lucide-react";
+import { useRef, useState } from "react";
 import intro from "@/data/site-intro.json";
 import { lengthLabel } from "@/components/NarratedFilmBody";
 
+/** The note under the film; the static hero writes the same words. */
+export function introNote(seconds: number): string {
+  return `Welcome to LiveWell, in ${lengthLabel(seconds)}. Read aloud by a computer-made voice, not a person.`;
+}
+
 export default function HomeIntro() {
-  const [playing, setPlaying] = useState(false);
-  const titleId = useId();
+  const video = useRef<HTMLVideoElement>(null);
+  const [started, setStarted] = useState(false);
   const label = lengthLabel(intro.seconds);
 
-  return (
-    <section className="home-sec home-sec--warm" aria-labelledby={titleId} data-home-intro>
-      <div className="home-wrap" style={{ maxWidth: "var(--w-content)" }}>
-        <div className="eyebrow" style={{ marginBottom: "10px" }}>
-          Welcome
-        </div>
-        <h2
-          id={titleId}
-          style={{ fontFamily: "var(--F)", fontSize: "var(--fs-h2)", fontWeight: 400, lineHeight: 1.15, color: "var(--ink)", margin: "0 0 6px" }}
-        >
-          LiveWell in a minute
-        </h2>
-        <p style={{ fontFamily: "var(--U)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)", margin: "0 0 var(--s-2)" }}>
-          {label}. Read aloud by a computer-made voice, not a person. Every word is under the film.
-        </p>
+  const play = () => {
+    const v = video.current;
+    setStarted(true);
+    if (!v) return;
+    v.controls = true;
+    try {
+      // Called inside the tap, so phones allow sound. If a browser still refuses,
+      // the film's own controls are showing and one press starts it.
+      const p = v.play();
+      if (p && typeof p.catch === "function") p.catch(() => {});
+    } catch {
+      /* the controls are showing */
+    }
+  };
 
-        <div
-          style={{
-            position: "relative",
-            aspectRatio: "16 / 9",
-            background: "var(--bone-muted)",
-            border: "1px solid var(--line)",
-            borderRadius: "var(--radius-md)",
-            overflow: "hidden",
-          }}
-        >
-          {playing ? (
-            <video
-              controls
-              autoPlay
-              playsInline
-              poster={intro.poster}
-              aria-label={intro.title}
-              style={{ display: "block", width: "100%", height: "100%" }}
-            >
-              <source src={intro.video} type="video/mp4" />
-              <a href={intro.video}>Download the film</a>
-            </video>
-          ) : (
-            <button
-              type="button"
-              onClick={() => setPlaying(true)}
-              aria-label={`Play the film: ${intro.title} (${label})`}
-              style={{ position: "absolute", inset: 0, width: "100%", height: "100%", padding: 0, border: "none", background: "none", cursor: "pointer" }}
-            >
-              <img
-                src={intro.poster}
-                alt=""
-                width={1920}
-                height={1080}
-                loading="lazy"
-                decoding="async"
-                style={{ display: "block", width: "100%", height: "100%", objectFit: "cover" }}
-              />
-              <span
-                aria-hidden="true"
-                style={{
-                  position: "absolute",
-                  left: "50%",
-                  top: "50%",
-                  transform: "translate(-50%, -50%)",
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "10px",
-                  padding: "14px 22px",
-                  minHeight: "48px",
-                  borderRadius: "var(--radius-pill)",
-                  background: "var(--charcoal)",
-                  color: "var(--charcoal-fg)",
-                  fontFamily: "var(--U)",
-                  fontSize: "15px",
-                  fontWeight: 600,
-                  boxShadow: "var(--shadow-card)",
-                }}
-              >
-                <Play size={18} fill="currentColor" />
+  return (
+    <div className="home-film" data-home-intro>
+      <div className="home-film__frame">
+        <video ref={video} className="home-film__video" preload="none" playsInline controls={started} aria-label={intro.title}>
+          <source src={intro.video} type="video/mp4" />
+          <a href={intro.video}>Download the film</a>
+        </video>
+        {!started && (
+          <button type="button" className="home-film__play" onClick={play} aria-label={`Play the film: ${intro.title} (${label})`}>
+            <span className="home-film__card" aria-hidden="true">
+              <span className="home-film__kicker">Start here</span>
+              <span className="home-film__title">{intro.title}</span>
+              <span className="home-film__sub">The whole site in one minute</span>
+              <span className="home-film__pill">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M8 5.14v13.72a1 1 0 0 0 1.52.85l10.6-6.86a1 1 0 0 0 0-1.7L9.52 4.29A1 1 0 0 0 8 5.14z" />
+                </svg>
                 Play the welcome
               </span>
-            </button>
-          )}
-        </div>
-
-        <details style={{ marginTop: "var(--s-2)" }}>
-          <summary style={{ fontFamily: "var(--U)", fontSize: "15px", fontWeight: 600, color: "var(--ink)", cursor: "pointer", minHeight: "44px", display: "flex", alignItems: "center" }}>
-            Read the words
-          </summary>
-          <ol style={{ margin: "var(--s-1) 0 0", paddingLeft: "1.4em", maxWidth: "68ch", fontFamily: "var(--font-reading)", fontSize: "var(--fs-lede)", lineHeight: 1.65, color: "var(--ink)" }}>
+            </span>
+          </button>
+        )}
+      </div>
+      <div className="home-film__under">
+        <p className="home-film__note">{introNote(intro.seconds)}</p>
+        <details className="home-film__words">
+          <summary>Read the words</summary>
+          <ol>
             {intro.lines.map((line, i) => (
-              <li key={i} style={{ marginBottom: "0.5em" }}>
-                {line}
-              </li>
+              <li key={i}>{line}</li>
             ))}
           </ol>
         </details>
       </div>
-    </section>
+    </div>
   );
 }
