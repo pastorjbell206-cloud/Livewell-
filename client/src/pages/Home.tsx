@@ -45,6 +45,7 @@ import HomeFind from "./home/HomeFind";
 import TonightSlot, { readShellLines } from "./home/TonightSlot";
 import { ROAD_CHIPS } from "./home/roadChips";
 import HomeLatest from "./home/HomeLatest";
+import HomeIntro from "./home/HomeIntro";
 import DisciplineCards from "./explore/DisciplineCards";
 import "./home/home.css";
 
@@ -229,6 +230,9 @@ export default function Home() {
           </PlateFrame>
         </div>
       </section>
+
+      {/* THE ONE-MINUTE WELCOME FILM (James, 2026-11-27). */}
+      <HomeIntro />
 
       {/* EIGHT WAYS IN: the disciplines, each its own page (/explore/<discipline>), then six more. */}
       <section className="home-sec home-sec--doors" aria-labelledby="home-doors-title">
