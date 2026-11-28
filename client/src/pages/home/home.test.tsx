@@ -276,3 +276,25 @@ describe("Find on Home", () => {
     expect(window.location.pathname).toBe("/");
   });
 });
+
+describe("the welcome film at the top of Home", () => {
+  it("comes first under the menu, loads only its poster, and starts inside the tap", () => {
+    const play = vi.spyOn(window.HTMLMediaElement.prototype, "play").mockImplementation(() => Promise.resolve());
+    renderHome();
+    const hero = document.querySelector(".home-hero")!;
+    expect(hero.firstElementChild?.classList.contains("home-film")).toBe(true);
+    const video = hero.querySelector("video")!;
+    expect(video.getAttribute("preload")).toBe("none");
+    expect(video.controls).toBe(false);
+    // Before the tap the frame is a card drawn in type: no picture to download, and no poster on the film.
+    expect(hero.querySelector("img")).toBeNull();
+    expect(video.getAttribute("poster")).toBeNull();
+    expect(hero.querySelector(".home-film__title")?.textContent).toBe("Welcome to LiveWell");
+    fireEvent.click(screen.getByRole("button", { name: /^Play the film: Welcome to LiveWell/ }));
+    // One tap: the film plays from inside it, with its own controls, and the poster button is gone.
+    expect(play).toHaveBeenCalledTimes(1);
+    expect(video.controls).toBe(true);
+    expect(hero.querySelector(".home-film__play")).toBeNull();
+    play.mockRestore();
+  });
+});

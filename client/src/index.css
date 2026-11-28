@@ -552,6 +552,46 @@ img{display:block;max-width:100%}
   .home-hero__art .lw-cap{padding:0 var(--gutter);margin-top:7px}
   .home-hero__title{font-size:clamp(2.125rem,8.6vw,2.75rem);margin:var(--s-2) 0 var(--s-2)}
 }
+/* The welcome film, the first thing under the menu (James, 2026-11-27:
+   pages/home/HomeIntro.tsx, and the static copy in prerender-heads.mjs). The
+   poster sits over the waiting <video> until the tap starts it. On a phone the
+   film runs edge to edge and Plate I steps aside, so the headline follows it. */
+.home-hero{padding-top:var(--s-3)}
+.home-film{max-width:1040px;margin:0 auto var(--s-4)}
+.home-film__frame{position:relative;aspect-ratio:16/9;background:var(--bone);border:1px solid var(--line);border-radius:var(--radius-md);overflow:hidden}
+.home-film__video{position:absolute;inset:0;display:block;width:100%;height:100%;background:var(--bone)}
+.home-film__play{position:absolute;inset:0;z-index:1;display:block;width:100%;height:100%;padding:0;border:0;background:none;cursor:pointer}
+.home-film__play:focus-visible{outline:3px solid var(--mustard);outline-offset:-3px}
+.home-film__card{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0;width:100%;height:100%;padding:var(--s-2);text-align:center;color:var(--ink)}
+.home-film__kicker{font-family:var(--U);font-size:13px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--mustard);margin-bottom:clamp(8px,1.6vw,20px)}
+.home-film__title{font-family:var(--F);font-weight:400;font-size:clamp(2rem,5.2vw,4.25rem);line-height:1.04;letter-spacing:-0.02em;color:var(--ink)}
+.home-film__sub{font-family:var(--U);font-size:clamp(11px,1.1vw,14px);font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink-muted);margin:clamp(8px,1.4vw,18px) 0 clamp(14px,2.6vw,32px)}
+.home-film__pill{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:14px 26px;border-radius:var(--radius-pill);background:var(--charcoal);color:var(--charcoal-fg);font-family:var(--U);font-size:16px;font-weight:600;white-space:nowrap;box-shadow:var(--shadow-card)}
+.home-film__play:hover .home-film__pill,.home-film__play:focus-visible .home-film__pill{background:var(--charcoal-soft)}
+.home-film__under{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;column-gap:var(--s-3);margin-top:6px}
+.home-film__note{font-family:var(--U);font-size:14px;line-height:1.5;color:var(--ink-muted);margin:0}
+.home-film__words summary{display:flex;align-items:center;min-height:44px;font-family:var(--U);font-size:14px;font-weight:600;color:var(--ink);cursor:pointer}
+.home-film__words[open]{flex-basis:100%}
+.home-film__words ol{max-width:68ch;margin:var(--s-1) 0 var(--s-2);padding-left:1.4em;font-family:var(--font-reading);font-size:var(--fs-lede);line-height:1.65;color:var(--ink)}
+.home-film__words li{margin-bottom:0.5em}
+@media (max-width:900px){
+  .home-hero{padding-top:0}
+  .home-film{margin:0 calc(var(--gutter) * -1) var(--s-2)}
+  .home-film__frame{border-width:0 0 1px;border-radius:0}
+  .home-film__under{padding:0 var(--gutter)}
+  .home-film__pill{min-height:48px;padding:12px 22px;font-size:15px}
+  .home-hero__art{display:none}
+}
+/* What LiveWell is for, in three steps under the headline (pages/home/HomeSteps.tsx). */
+.hero-steps{list-style:none;max-width:34em;margin:0 0 var(--s-3);padding:0}
+.hero-step{display:flex;align-items:center;gap:14px;padding:12px 0;border-top:1px solid var(--line);color:inherit;text-decoration:none}
+.hero-steps li:last-child .hero-step{border-bottom:1px solid var(--line)}
+.hero-step__n{flex:none;display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border:1.5px solid var(--mustard);border-radius:var(--radius-pill);font-family:var(--U);font-size:14px;font-weight:600;color:var(--ink)}
+.hero-step__body{display:block}
+.hero-step__t{display:block;font-family:var(--F);font-size:clamp(1.25rem,1.1rem + 0.5vw,1.5rem);line-height:1.2;color:var(--ink)}
+.hero-step__r{display:block;margin-top:2px;font-family:var(--U);font-size:14px;line-height:1.4;color:var(--ink-muted)}
+.hero-step:hover .hero-step__t,.hero-step:focus-visible .hero-step__t{text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:0.14em}
+@media (max-width:900px){.hero-steps{margin-bottom:var(--s-2)}}
 /* The one sentence under the headline: what the site is for (HOME_LINE in
    positioning.ts). Both heroes carry it, so the swap moves nothing. */
 .home-hero__line{font-family:var(--B);font-size:var(--fs-lede);line-height:1.6;color:var(--ink-muted);max-width:34em;margin:calc(-1 * var(--s-2)) 0 var(--s-3);text-wrap:pretty}
